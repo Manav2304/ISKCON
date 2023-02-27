@@ -1,12 +1,11 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-import Sidebar from './components/Sidebar'
+import { NavBar } from './components/Navbar';
 
 import Home from './pages/Home';
 import Team from './pages/Team';
 import Tasks from './pages/Tasks';
-import Chats from './pages/AboutUs';
+import AboutUs from './pages/AboutUs';
 import Analytics from './pages/Analytics';
 
 
@@ -14,12 +13,12 @@ const App: React.FunctionComponent = () => {
   return (
     <>
       <Router>
-        <Sidebar />
+        <NavBar />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/team' element={<Team />} />            
           <Route path='/tasks' element={<Tasks />} />    
-          <Route path='/chats' element={<Chats />} />
+          <Route path='/aboutus' element={<AboutUs />} />
           <Route path='/analytics' element={<Analytics />} />
         </Routes>
       </Router> 
