@@ -6,7 +6,7 @@ import Sidebar from './components/Sidebar'
 import Home from './pages/Home';
 import Team from './pages/Team';
 import Tasks from './pages/Tasks';
-import Chats from './pages/Chats';
+import Chats from './pages/AboutUs';
 import Analytics from './pages/Analytics';
 
 
