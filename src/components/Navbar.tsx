@@ -4,8 +4,8 @@ export function NavBar() {
   const navBarStyle = {
     display: "flex",
     justifyContent: "space-around",
-    backgroundColor: "#FFDEAD",
-    color: "white",
+    backgroundColor: "transparent",
+    color: "black",
     fontSize: "20px",
     height: "50px",
     alignItems: "center",
@@ -16,17 +16,17 @@ export function NavBar() {
     color: "#A52A2A",
     padding: "5px",
     fontSize: "1.2em",
-    
   };
+ 
 
   
 
   return (
-    <nav style={navBarStyle}>
+    <nav className="navbar  fixed-top navbar-expand-lg bg-body-tertiary " style={navBarStyle} >
       <NavLink to="/" style={linkStyle} >
         Home
       </NavLink>
-      <NavLink to="/about" style={linkStyle} >
+      <NavLink to="/AboutUs" style={linkStyle} >
         AboutUs
       </NavLink>
       <NavLink to="/contact" style={linkStyle} >

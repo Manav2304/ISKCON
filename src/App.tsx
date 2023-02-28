@@ -5,8 +5,8 @@ import { NavBar } from './components/Navbar';
 import Home from './pages/Home';
 import Team from './pages/Team';
 import Tasks from './pages/Tasks';
-import AboutUs from './pages/AboutUs';
 import Analytics from './pages/Analytics';
+import AboutUs  from './pages/AboutUs';
 
 
 const App: React.FunctionComponent = () => {
@@ -18,8 +18,8 @@ const App: React.FunctionComponent = () => {
           <Route path='/' element={<Home />} />
           <Route path='/team' element={<Team />} />            
           <Route path='/tasks' element={<Tasks />} />    
-          <Route path='/aboutus' element={<AboutUs />} />
           <Route path='/analytics' element={<Analytics />} />
+          <Route path='/AboutUs' element={<AboutUs/>}/>
         </Routes>
       </Router> 
     </>
