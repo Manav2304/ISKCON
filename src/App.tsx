@@ -1,15 +1,13 @@
-import React from 'react'
-import { AboutUs } from './Pages/About'
-import { NavBar } from './Components/Navbar'
+import React from "react";
 
-
+import MyCarousel from "./Pages/Home";
+import NavigationBar from "./Components/Navbar";
 
 export const App: React.FunctionComponent = () => {
   return (
     <>
-      <NavBar/>
-      <AboutUs/>
+      <NavigationBar />
+      <MyCarousel />
     </>
-  )
-}
-
+  );
+};

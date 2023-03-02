@@ -1,28 +1,32 @@
-import { NavLink } from "react-router-dom";
-import { linkStyle, navBarStyle } from "./style";
-
-export function NavBar() {
-  
+import React from "react";
+import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap";
+const NavigationBar = () => {
   return (
-    <nav className="navbar  fixed-top navbar-expand-lg bg-body-tertiary " style={navBarStyle} >
-      <NavLink to="/" style={linkStyle} >
-        Home
-      </NavLink>
-      <NavLink to="/AboutUs" style={linkStyle} >
-        AboutUs
-      </NavLink>
-      <NavLink to="/contact" style={linkStyle} >
-        Contact
-      </NavLink>
-      <NavLink to="/Analytics" style={linkStyle} >
-        Analytics
-      </NavLink>
-      <NavLink to="/tasks" style={linkStyle} >
-        Tasks
-      </NavLink>
-      <NavLink to="/team" style={linkStyle} >
-        Team
-      </NavLink>
-    </nav>
+    <div className="container">
+      <Navbar bg="body-tertiary" expand="lg">
+        <Container>
+          <Navbar.Brand href="#">Navbar</Navbar.Brand>
+          <Navbar.Toggle aria-controls="navbarNavDropdown" />
+          <Navbar.Collapse id="navbarNavDropdown">
+            <Nav className="me-auto">
+              <Nav.Link href="#" active>
+                Home
+              </Nav.Link>
+              <Nav.Link href="#">Features</Nav.Link>
+              <Nav.Link href="#">Pricing</Nav.Link>
+              <NavDropdown title="Dropdown link" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#">Another action</NavDropdown.Item>
+                <NavDropdown.Item href="#">
+                  Something else here
+                </NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </div>
   );
-}
+};
+
+export default NavigationBar;
