@@ -18,7 +18,7 @@ const NavigationBar = () => {
               Donation
             </Link>
             <Link className="nav-link" to="#">
-              Seva
+              GO SEVA
             </Link>
           </div>
         </nav>
