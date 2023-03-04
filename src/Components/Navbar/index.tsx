@@ -20,6 +20,9 @@ const NavigationBar = () => {
             <Link className="nav-link" to="#">
               GO SEVA
             </Link>
+            <Link className="nav-link" to="Pages/Festival">
+              Festival           
+            </Link>
           </div>
         </nav>
       </div>
