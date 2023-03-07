@@ -1,44 +1,50 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const DonationForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
+export const Container = styled.div`
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 `;
 
-export const InputGroup = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-  width: 50%;
-`;
-
-export const InputLabel = styled.label`
-  font-size: 18px;
+export const Title = styled.h1`
+  font-size: 24px;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 `;
 
-export const InputField = styled.input`
+export const Table = styled.table`
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+`;
+
+export const TableHeader = styled.th`
+  font-weight: bold;
+  text-align: left;
   padding: 10px;
-  font-size: 16px;
+  border-bottom: 1px solid #ccc;
 `;
 
-export const SubmitButton = styled.button`
-  padding: 10px 20px;
-  background-color: #4caf50;
-  color: white;
-  font-size: 18px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+export const TableRow = styled.tr`
+  &:nth-child(even) {
+    background-color: #f2f2f2;
+  }
 `;
-export const PageBackground = styled.div`
-  .manav {
-    margin: 50px;
-    color: white;
-    border-radius: 5px;
-    background-image: url(" https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&w=600 ");
+
+export const TableCell = styled.td`
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+`;
+
+export const Button = styled.button`
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #3e8e41;
   }
 `;

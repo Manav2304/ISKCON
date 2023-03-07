@@ -1,75 +1,108 @@
 import React, { useState } from "react";
-import { DonationForm } from "./style";
-import { InputGroup } from "./style";
-import { InputLabel } from "./style";
-import { InputField } from "./style";
-import { SubmitButton } from "./style";
-import { PageBackground } from "./style";
+import {
+  Container,
+  Title,
+  Table,
+  TableHeader,
+  TableRow,
+  TableCell,
+  Button,
+} from "./style";
+import { DONATION_OPTIONS } from "./constant";
 
-interface DonationFormData {
-  name: string;
-  email: string;
+type Donation = {
+  id: number;
+  title: string;
   amount: number;
-}
+};
 
 const DonationPage: React.FC = () => {
-  const [formData, setFormData] = useState<DonationFormData>({
-    name: "",
-    email: "",
-    amount: 0,
-  });
+  const [selectedDonations, setSelectedDonations] = useState<Donation[]>([]);
+  const [customAmount, setCustomAmount] = useState<number>(0);
 
-  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = event.target;
-    setFormData({ ...formData, [name]: value });
+  const handleDonationSelect = (donation: Donation) => {
+    if (selectedDonations.find((d) => d.id === donation.id)) {
+      setSelectedDonations((prevState) =>
+        prevState.filter((d) => d.id !== donation.id)
+      );
+    } else {
+      setSelectedDonations((prevState) => [...prevState, donation]);
+    }
   };
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handleCustomAmountChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    setCustomAmount(Number(event.target.value));
+  };
+
+  const totalDonationAmount = selectedDonations.reduce(
+    (acc, curr) => acc + curr.amount,
+    customAmount
+  );
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
-    // TODO: Add Cashfree API integration here to process the payment
-
-    console.log("Submitting form data:", formData);
+    console.log("Submit", {
+      selectedDonations,
+      customAmount,
+      totalDonationAmount,
+    });
   };
 
   return (
-    <PageBackground>
-      <div className="manav">
-        <div className="conatainer ">
-          <h1>Donate to our Cause</h1>
-          <DonationForm onSubmit={handleSubmit}>
-            <InputGroup>
-              <InputLabel>Name:</InputLabel>
-              <InputField
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleInputChange}
-              />
-            </InputGroup>
-            <InputGroup>
-              <InputLabel>Email:</InputLabel>
-              <InputField
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-              />
-            </InputGroup>
-            <InputGroup>
-              <InputLabel>Amount:</InputLabel>
-              <InputField
-                type="number"
-                name="amount"
-                value={formData.amount}
-                onChange={handleInputChange}
-              />
-            </InputGroup>
-            <SubmitButton type="submit">Donate Now</SubmitButton>
-          </DonationForm>
-        </div>
-      </div>
-    </PageBackground>
+    <Container>
+      <Title>Donate Now</Title>
+      <form onSubmit={handleSubmit}>
+        <Table>
+          <thead>
+            <tr>
+              <TableHeader>Select</TableHeader>
+              <TableHeader>Donation</TableHeader>
+              <TableHeader>Amount</TableHeader>
+            </tr>
+          </thead>
+          <tbody>
+            {DONATION_OPTIONS.map((donation) => (
+              <TableRow key={donation.id}>
+                <TableCell>
+                  <input
+                    type="checkbox"
+                    checked={
+                      selectedDonations.find((d) => d.id === donation.id)
+                        ? true
+                        : false
+                    }
+                    onChange={() => handleDonationSelect(donation)}
+                  />
+                </TableCell>
+                <TableCell>{donation.title}</TableCell>
+                <TableCell>{donation.amount} ra per month</TableCell>
+              </TableRow>
+            ))}
+            <TableRow>
+              <TableCell colSpan={2}>
+                <input
+                  type="number"
+                  placeholder="Enter custom amount"
+                  value={customAmount}
+                  onChange={handleCustomAmountChange}
+                />
+              </TableCell>
+              <TableCell></TableCell>
+            </TableRow>
+          </tbody>
+          <tfoot>
+            <TableRow>
+              <TableCell>Total Donation Amount</TableCell>
+              <TableCell></TableCell>
+              <TableCell>{totalDonationAmount} ra per month</TableCell>
+            </TableRow>
+          </tfoot>
+        </Table>
+        <Button type="submit">Donate Now</Button>
+      </form>
+    </Container>
   );
 };
 
