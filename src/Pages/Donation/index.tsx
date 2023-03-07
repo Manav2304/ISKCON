@@ -7,8 +7,9 @@ import {
   TableRow,
   TableCell,
   Button,
+  DonationHeader,
 } from "./style";
-import { DONATION_OPTIONS } from "./constant";
+import { ADOPT_A_COW, ANNA_DAAN, FEED_COWS, VAISHNAV_BHOJAN } from "./constant";
 
 type Donation = {
   id: number;
@@ -54,8 +55,10 @@ const DonationPage: React.FC = () => {
     <Container>
       <Title>Donate Now</Title>
       <form onSubmit={handleSubmit}>
+        {/* 1st table */}
         <Table>
           <thead>
+            <DonationHeader>Feed Cows</DonationHeader>
             <tr>
               <TableHeader>Select</TableHeader>
               <TableHeader>Donation</TableHeader>
@@ -63,7 +66,7 @@ const DonationPage: React.FC = () => {
             </tr>
           </thead>
           <tbody>
-            {DONATION_OPTIONS.map((donation) => (
+            {FEED_COWS.map((donation: { id: any; title: any; amount: any }) => (
               <TableRow key={donation.id}>
                 <TableCell>
                   <input
@@ -77,7 +80,7 @@ const DonationPage: React.FC = () => {
                   />
                 </TableCell>
                 <TableCell>{donation.title}</TableCell>
-                <TableCell>{donation.amount} ra per month</TableCell>
+                <TableCell>₹{donation.amount} </TableCell>
               </TableRow>
             ))}
             <TableRow>
@@ -96,7 +99,155 @@ const DonationPage: React.FC = () => {
             <TableRow>
               <TableCell>Total Donation Amount</TableCell>
               <TableCell></TableCell>
-              <TableCell>{totalDonationAmount} ra per month</TableCell>
+              <TableCell>₹{totalDonationAmount} </TableCell>
+            </TableRow>
+          </tfoot>
+        </Table>
+        {/* 2ed table */}
+        <Table>
+          <thead>
+            <DonationHeader>Adopt a Cow</DonationHeader>
+            <tr>
+              <TableHeader>Select</TableHeader>
+              <TableHeader>Donation</TableHeader>
+              <TableHeader>Amount</TableHeader>
+            </tr>
+          </thead>
+          <tbody>
+            {ADOPT_A_COW.map(
+              (donation: { id: any; title: any; amount: any }) => (
+                <TableRow key={donation.id}>
+                  <TableCell>
+                    <input
+                      type="checkbox"
+                      checked={
+                        selectedDonations.find((d) => d.id === donation.id)
+                          ? true
+                          : false
+                      }
+                      onChange={() => handleDonationSelect(donation)}
+                    />
+                  </TableCell>
+                  <TableCell>{donation.title}</TableCell>
+                  <TableCell>₹{donation.amount}</TableCell>
+                </TableRow>
+              )
+            )}
+            <TableRow>
+              <TableCell colSpan={2}>
+                <input
+                  type="number"
+                  placeholder="Enter custom amount"
+                  value={customAmount}
+                  onChange={handleCustomAmountChange}
+                />
+              </TableCell>
+              <TableCell></TableCell>
+            </TableRow>
+          </tbody>
+          <tfoot>
+            <TableRow>
+              <TableCell>Total Donation Amount</TableCell>
+              <TableCell></TableCell>
+              <TableCell>₹{totalDonationAmount}</TableCell>
+            </TableRow>
+          </tfoot>
+        </Table>
+        {/* 3rd table */}
+        <Table>
+          <thead>
+            <DonationHeader>Anna Daan</DonationHeader>
+            <tr>
+              <TableHeader>Select</TableHeader>
+              <TableHeader>Donation</TableHeader>
+              <TableHeader>Amount</TableHeader>
+            </tr>
+          </thead>
+          <tbody>
+            {ANNA_DAAN.map((donation: { id: any; title: any; amount: any }) => (
+              <TableRow key={donation.id}>
+                <TableCell>
+                  <input
+                    type="checkbox"
+                    checked={
+                      selectedDonations.find((d) => d.id === donation.id)
+                        ? true
+                        : false
+                    }
+                    onChange={() => handleDonationSelect(donation)}
+                  />
+                </TableCell>
+                <TableCell>{donation.title}</TableCell>
+                <TableCell>₹{donation.amount}</TableCell>
+              </TableRow>
+            ))}
+            <TableRow>
+              <TableCell colSpan={2}>
+                <input
+                  type="number"
+                  placeholder="Enter custom amount"
+                  value={customAmount}
+                  onChange={handleCustomAmountChange}
+                />
+              </TableCell>
+              <TableCell></TableCell>
+            </TableRow>
+          </tbody>
+          <tfoot>
+            <TableRow>
+              <TableCell>Total Donation Amount</TableCell>
+              <TableCell></TableCell>
+              <TableCell>₹{totalDonationAmount} </TableCell>
+            </TableRow>
+          </tfoot>
+        </Table>
+        {/* 4th table */}
+        <Table>
+          <thead>
+            <DonationHeader>Vaishnav Bhojan</DonationHeader>
+            <tr>
+              <TableHeader>Select</TableHeader>
+              <TableHeader>Donation</TableHeader>
+              <TableHeader>Amount</TableHeader>
+            </tr>
+          </thead>
+          <tbody>
+            {VAISHNAV_BHOJAN.map(
+              (donation: { id: any; title: any; amount: any }) => (
+                <TableRow key={donation.id}>
+                  <TableCell>
+                    <input
+                      type="checkbox"
+                      checked={
+                        selectedDonations.find((d) => d.id === donation.id)
+                          ? true
+                          : false
+                      }
+                      onChange={() => handleDonationSelect(donation)}
+                    />
+                  </TableCell>
+                  <TableCell>{donation.title}</TableCell>
+                  <TableCell>₹{donation.amount} </TableCell>
+                </TableRow>
+              )
+            )}
+            <TableRow>
+              <TableCell colSpan={2}>
+                <input
+                  type="number"
+                  placeholder="Enter custom amount"
+                  value={customAmount}
+                  onChange={handleCustomAmountChange}
+                />
+              </TableCell>
+              <TableCell></TableCell>
+            </TableRow>
+          </tbody>
+          <tfoot>
+            <TableRow>
+              <TableCell>Total Donation Amount</TableCell>
+              <TableCell></TableCell>
+              <TableCell>₹{totalDonationAmount} </TableCell>
             </TableRow>
           </tfoot>
         </Table>

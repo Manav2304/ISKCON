@@ -7,7 +7,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
 `;
@@ -17,6 +17,13 @@ export const Table = styled.table`
   border-collapse: collapse;
   margin-bottom: 20px;
 `;
+
+export const DonationHeader = styled.th`
+font-weight: bold;
+font-size: 1.5rem;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ccc`;
 
 export const TableHeader = styled.th`
   font-weight: bold;
