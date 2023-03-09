@@ -9,7 +9,12 @@ import {
   Button,
   DonationHeader,
 } from "./style";
-import { ADOPT_A_COW, ANNA_DAAN, FEED_COWS, VAISHNAV_BHOJAN } from "./constant";
+import {
+  ADOPT_A_COW,
+  ANNA_DAAN,
+  FEED_COWS,
+  VAISHNAV_BHOJAN,
+} from "./constant";
 
 type Donation = {
   id: number;
@@ -20,6 +25,9 @@ type Donation = {
 const DonationPage: React.FC = () => {
   const [selectedDonations, setSelectedDonations] = useState<Donation[]>([]);
   const [customAmount, setCustomAmount] = useState<number>(0);
+  const [name, setName] = useState<string>("");
+  const [mobileNumber, setMobileNumber] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
 
   const handleDonationSelect = (donation: Donation) => {
     if (selectedDonations.find((d) => d.id === donation.id)) {
@@ -37,6 +45,20 @@ const DonationPage: React.FC = () => {
     setCustomAmount(Number(event.target.value));
   };
 
+  const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setName(event.target.value);
+  };
+
+  const handleMobileNumberChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    setMobileNumber(event.target.value);
+  };
+
+  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
+
   const totalDonationAmount = selectedDonations.reduce(
     (acc, curr) => acc + curr.amount,
     customAmount
@@ -45,6 +67,9 @@ const DonationPage: React.FC = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     console.log("Submit", {
+      name,
+      mobileNumber,
+      email,
       selectedDonations,
       customAmount,
       totalDonationAmount,
@@ -55,8 +80,33 @@ const DonationPage: React.FC = () => {
     <Container>
       <Title>Donate Now</Title>
       <form onSubmit={handleSubmit}>
-        {/* 1st table */}
-        <Table>
+        {/* Name input */}
+        <label>
+          Name:
+          <input type="text" value={name} onChange={handleNameChange} />
+        </label>
+        <br />
+
+        {/* Mobile number input */}
+        <label>
+          Mobile Number:
+          <input
+            type="text"
+            value={mobileNumber}
+            onChange={handleMobileNumberChange}
+          />
+        </label>
+        <br />
+
+        {/* Email input */}
+        <label>
+          Email:
+          <input type="text" value={email} onChange={handleEmailChange} />
+        </label>
+        <br />
+
+    {/* 1st table */}
+    <Table>
           <thead>
             <DonationHeader>Feed Cows</DonationHeader>
             <tr>
