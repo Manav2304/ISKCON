@@ -6,6 +6,7 @@ import {
   Link,
   BrowserRouter,
 } from "react-router-dom";
+import "./index.css";
 
 import NavigationBar from "./Components/Navbar";
 import MyCarousel from "./Pages/Home";
