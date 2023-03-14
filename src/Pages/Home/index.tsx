@@ -2,7 +2,7 @@ import React from "react";
 import { StyledCarousel } from "./style";
 import { Background } from "./style";
 
-const MyCarousel: React.FC = () => {
+const HomePage: React.FC = () => {
   return (
     <div className="manav">
       <Background>
@@ -107,4 +107,4 @@ const MyCarousel: React.FC = () => {
   );
 };
 
-export default MyCarousel;
+export default HomePage;
