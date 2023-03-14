@@ -6,26 +6,19 @@ const NavigationBar = () => {
     <NavStyle>
       <nav className="navbar fixed-top navbar-expand-lg bg-dark">
         <div className="container-fluid">
-          <Link className="nav-link" to="/Pages/Home">
+          {/* <Link className="nav-link" to="/">
             Home
-          </Link>
+          </Link> */}
 
-          <Link className="nav-link" to="#">
-            GO SEVA
-          </Link>
-          <Link className="nav-logo" to="/Pages/Home">
+          <Link className="nav-logo" to="/home">
             <img
               src="https://iskconvrindavan.com/_next/image?url=%2Fimages%2Flogo-black.png&w=1920&q=75"
               alt="Logo"
             />
           </Link>
 
-          <Link className="nav-link" to="/Pages/Donation">
+          <Link className="nav-link" to="/donation">
             Donation
-          </Link>
-
-          <Link className="nav-link" to="/Pages/Api">
-            check
           </Link>
         </div>
       </nav>

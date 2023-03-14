@@ -3,7 +3,6 @@ import { DonationForm } from "./style";
 import { InputGroup } from "./style";
 import { InputLabel } from "./style";
 import { InputField } from "./style";
-import { PageBackground } from "./style";
 import axios from "axios";
 
 const APP_ID = "33221729445f634e544edbc48c712233";

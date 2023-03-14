@@ -21,8 +21,8 @@ export const App: React.FunctionComponent = () => {
         <NavigationBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Pages/Home" element={<MyCarousel />} />
-          <Route path="/pages/Donation" element={<DonationPage />} />
+          {/* <Route path="/home" element={<MyCarousel />} /> */}
+          <Route path="/donation" element={<DonationPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
