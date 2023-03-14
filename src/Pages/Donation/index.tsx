@@ -1,75 +1,309 @@
 import React, { useState } from "react";
-import { DonationForm } from "./style";
-import { InputGroup } from "./style";
-import { InputLabel } from "./style";
-import { InputField } from "./style";
-import { SubmitButton } from "./style";
-import { PageBackground } from "./style";
+import {
+  Container,
+  Title,
+  Table,
+  TableHeader,
+  TableRow,
+  TableCell,
+  Button,
+  DonationHeader,
+} from "./style";
+import {
+  ADOPT_A_COW,
+  ANNA_DAAN,
+  FEED_COWS,
+  VAISHNAV_BHOJAN,
+} from "./constant";
 
-interface DonationFormData {
-  name: string;
-  email: string;
+type Donation = {
+  id: number;
+  title: string;
   amount: number;
-}
+};
 
 const DonationPage: React.FC = () => {
-  const [formData, setFormData] = useState<DonationFormData>({
-    name: "",
-    email: "",
-    amount: 0,
-  });
+  const [selectedDonations, setSelectedDonations] = useState<Donation[]>([]);
+  const [customAmount, setCustomAmount] = useState<number>(0);
+  const [name, setName] = useState<string>("");
+  const [mobileNumber, setMobileNumber] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
 
-  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = event.target;
-    setFormData({ ...formData, [name]: value });
+  const handleDonationSelect = (donation: Donation) => {
+    if (selectedDonations.find((d) => d.id === donation.id)) {
+      setSelectedDonations((prevState) =>
+        prevState.filter((d) => d.id !== donation.id)
+      );
+    } else {
+      setSelectedDonations((prevState) => [...prevState, donation]);
+    }
   };
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handleCustomAmountChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    setCustomAmount(Number(event.target.value));
+  };
+
+  const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setName(event.target.value);
+  };
+
+  const handleMobileNumberChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    setMobileNumber(event.target.value);
+  };
+
+  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
+
+  const totalDonationAmount = selectedDonations.reduce(
+    (acc, curr) => acc + curr.amount,
+    customAmount
+  );
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
-    // TODO: Add Cashfree API integration here to process the payment
-
-    console.log("Submitting form data:", formData);
+    console.log("Submit", {
+      name,
+      mobileNumber,
+      email,
+      selectedDonations,
+      customAmount,
+      totalDonationAmount,
+    });
   };
 
   return (
-    <PageBackground>
-      <div className="manav">
-        <div className="conatainer ">
-          <h1>Donate to our Cause</h1>
-          <DonationForm onSubmit={handleSubmit}>
-            <InputGroup>
-              <InputLabel>Name:</InputLabel>
-              <InputField
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleInputChange}
-              />
-            </InputGroup>
-            <InputGroup>
-              <InputLabel>Email:</InputLabel>
-              <InputField
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-              />
-            </InputGroup>
-            <InputGroup>
-              <InputLabel>Amount:</InputLabel>
-              <InputField
-                type="number"
-                name="amount"
-                value={formData.amount}
-                onChange={handleInputChange}
-              />
-            </InputGroup>
-            <SubmitButton type="submit">Donate Now</SubmitButton>
-          </DonationForm>
-        </div>
-      </div>
-    </PageBackground>
+    <Container>
+      <Title>Donate Now</Title>
+      <form onSubmit={handleSubmit}>
+        {/* Name input */}
+        <label>
+          Name:
+          <input type="text" value={name} onChange={handleNameChange} />
+        </label>
+        <br />
+
+        {/* Mobile number input */}
+        <label>
+          Mobile Number:
+          <input
+            type="text"
+            value={mobileNumber}
+            onChange={handleMobileNumberChange}
+          />
+        </label>
+        <br />
+
+        {/* Email input */}
+        <label>
+          Email:
+          <input type="text" value={email} onChange={handleEmailChange} />
+        </label>
+        <br />
+
+    {/* 1st table */}
+    <Table>
+          <thead>
+            <DonationHeader>Feed Cows</DonationHeader>
+            <tr>
+              <TableHeader>Select</TableHeader>
+              <TableHeader>Donation</TableHeader>
+              <TableHeader>Amount</TableHeader>
+            </tr>
+          </thead>
+          <tbody>
+            {FEED_COWS.map((donation: { id: any; title: any; amount: any }) => (
+              <TableRow key={donation.id}>
+                <TableCell>
+                  <input
+                    type="checkbox"
+                    checked={
+                      selectedDonations.find((d) => d.id === donation.id)
+                        ? true
+                        : false
+                    }
+                    onChange={() => handleDonationSelect(donation)}
+                  />
+                </TableCell>
+                <TableCell>{donation.title}</TableCell>
+                <TableCell>₹{donation.amount} </TableCell>
+              </TableRow>
+            ))}
+            <TableRow>
+              <TableCell colSpan={2}>
+                <input
+                  type="number"
+                  placeholder="Enter custom amount"
+                  value={customAmount}
+                  onChange={handleCustomAmountChange}
+                />
+              </TableCell>
+              <TableCell></TableCell>
+            </TableRow>
+          </tbody>
+          <tfoot>
+            <TableRow>
+              <TableCell>Total Donation Amount</TableCell>
+              <TableCell></TableCell>
+              <TableCell>₹{totalDonationAmount} </TableCell>
+            </TableRow>
+          </tfoot>
+        </Table>
+        {/* 2ed table */}
+        <Table>
+          <thead>
+            <DonationHeader>Adopt a Cow</DonationHeader>
+            <tr>
+              <TableHeader>Select</TableHeader>
+              <TableHeader>Donation</TableHeader>
+              <TableHeader>Amount</TableHeader>
+            </tr>
+          </thead>
+          <tbody>
+            {ADOPT_A_COW.map(
+              (donation: { id: any; title: any; amount: any }) => (
+                <TableRow key={donation.id}>
+                  <TableCell>
+                    <input
+                      type="checkbox"
+                      checked={
+                        selectedDonations.find((d) => d.id === donation.id)
+                          ? true
+                          : false
+                      }
+                      onChange={() => handleDonationSelect(donation)}
+                    />
+                  </TableCell>
+                  <TableCell>{donation.title}</TableCell>
+                  <TableCell>₹{donation.amount}</TableCell>
+                </TableRow>
+              )
+            )}
+            <TableRow>
+              <TableCell colSpan={2}>
+                <input
+                  type="number"
+                  placeholder="Enter custom amount"
+                  value={customAmount}
+                  onChange={handleCustomAmountChange}
+                />
+              </TableCell>
+              <TableCell></TableCell>
+            </TableRow>
+          </tbody>
+          <tfoot>
+            <TableRow>
+              <TableCell>Total Donation Amount</TableCell>
+              <TableCell></TableCell>
+              <TableCell>₹{totalDonationAmount}</TableCell>
+            </TableRow>
+          </tfoot>
+        </Table>
+        {/* 3rd table */}
+        <Table>
+          <thead>
+            <DonationHeader>Anna Daan</DonationHeader>
+            <tr>
+              <TableHeader>Select</TableHeader>
+              <TableHeader>Donation</TableHeader>
+              <TableHeader>Amount</TableHeader>
+            </tr>
+          </thead>
+          <tbody>
+            {ANNA_DAAN.map((donation: { id: any; title: any; amount: any }) => (
+              <TableRow key={donation.id}>
+                <TableCell>
+                  <input
+                    type="checkbox"
+                    checked={
+                      selectedDonations.find((d) => d.id === donation.id)
+                        ? true
+                        : false
+                    }
+                    onChange={() => handleDonationSelect(donation)}
+                  />
+                </TableCell>
+                <TableCell>{donation.title}</TableCell>
+                <TableCell>₹{donation.amount}</TableCell>
+              </TableRow>
+            ))}
+            <TableRow>
+              <TableCell colSpan={2}>
+                <input
+                  type="number"
+                  placeholder="Enter custom amount"
+                  value={customAmount}
+                  onChange={handleCustomAmountChange}
+                />
+              </TableCell>
+              <TableCell></TableCell>
+            </TableRow>
+          </tbody>
+          <tfoot>
+            <TableRow>
+              <TableCell>Total Donation Amount</TableCell>
+              <TableCell></TableCell>
+              <TableCell>₹{totalDonationAmount} </TableCell>
+            </TableRow>
+          </tfoot>
+        </Table>
+        {/* 4th table */}
+        <Table>
+          <thead>
+            <DonationHeader>Vaishnav Bhojan</DonationHeader>
+            <tr>
+              <TableHeader>Select</TableHeader>
+              <TableHeader>Donation</TableHeader>
+              <TableHeader>Amount</TableHeader>
+            </tr>
+          </thead>
+          <tbody>
+            {VAISHNAV_BHOJAN.map(
+              (donation: { id: any; title: any; amount: any }) => (
+                <TableRow key={donation.id}>
+                  <TableCell>
+                    <input
+                      type="checkbox"
+                      checked={
+                        selectedDonations.find((d) => d.id === donation.id)
+                          ? true
+                          : false
+                      }
+                      onChange={() => handleDonationSelect(donation)}
+                    />
+                  </TableCell>
+                  <TableCell>{donation.title}</TableCell>
+                  <TableCell>₹{donation.amount} </TableCell>
+                </TableRow>
+              )
+            )}
+            <TableRow>
+              <TableCell colSpan={2}>
+                <input
+                  type="number"
+                  placeholder="Enter custom amount"
+                  value={customAmount}
+                  onChange={handleCustomAmountChange}
+                />
+              </TableCell>
+              <TableCell></TableCell>
+            </TableRow>
+          </tbody>
+          <tfoot>
+            <TableRow>
+              <TableCell>Total Donation Amount</TableCell>
+              <TableCell></TableCell>
+              <TableCell>₹{totalDonationAmount} </TableCell>
+            </TableRow>
+          </tfoot>
+        </Table>
+        <Button type="submit">Donate Now</Button>
+      </form>
+    </Container>
   );
 };
 
