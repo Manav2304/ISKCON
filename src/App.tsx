@@ -9,7 +9,6 @@ import {
 import "./styles.css";
 
 import NavigationBar from "./Components/Navbar";
-import MyCarousel from "./Pages/Home";
 import Home from "./Pages/Home";
 import DonationPage from "./Pages/Donation";
 import { Footer } from "./Components/Footer";
@@ -21,7 +20,6 @@ export const App: React.FunctionComponent = () => {
         <NavigationBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/home" element={<MyCarousel />} /> */}
           <Route path="/donation" element={<DonationPage />} />
         </Routes>
         <Footer />

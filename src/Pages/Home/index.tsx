@@ -21,7 +21,7 @@ import {
   History6,
   History7,
 } from "./constant";
-const MyCarousel: React.FC = () => {
+const Home: React.FC = () => {
   return (
     <div>
       <div>
@@ -197,4 +197,4 @@ const MyCarousel: React.FC = () => {
   );
 };
 
-export default MyCarousel;
+export default Home;

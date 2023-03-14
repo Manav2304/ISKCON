@@ -6,11 +6,7 @@ const NavigationBar = () => {
     <NavStyle>
       <nav className="navbar fixed-top navbar-expand-lg bg-dark">
         <div className="container-fluid">
-          {/* <Link className="nav-link" to="/">
-            Home
-          </Link> */}
-
-          <Link className="nav-logo" to="/home">
+          <Link className="nav-logo" to="/">
             <img
               src="https://iskconvrindavan.com/_next/image?url=%2Fimages%2Flogo-black.png&w=1920&q=75"
               alt="Logo"
