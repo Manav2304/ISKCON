@@ -55,50 +55,49 @@ const DonationPage: React.FC = () => {
   const isFormValid = formData.name && formData.email && formData.amount;
 
   return (
-    <PageBackground>
-      <div>
-        <div className="conatainer ">
-          <div className="m1">
-            <h1>Donate to our Cause</h1>
-            <DonationForm onSubmit={handleSubmit}>
-              <InputGroup>
-                <InputLabel>Name:</InputLabel>
-                <InputField
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  required
-                />
-              </InputGroup>
-              <InputGroup>
-                <InputLabel>Email:</InputLabel>
-                <InputField
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  required
-                />
-              </InputGroup>
-              <InputGroup>
-                <InputLabel>Amount:</InputLabel>
-                <InputField
-                  type="number"
-                  name="amount"
-                  value={formData.amount}
-                  onChange={handleInputChange}
-                  required
-                />
-              </InputGroup>
-              <button onClick={handleDonateButtonClick} disabled={!isFormValid}>
-                Donate
-              </button>
-            </DonationForm>
-          </div>
+    <div>
+      <div className="conatainer ">
+        <div className="m1">
+          <br />
+          <h1>Donate to our Cause</h1>
+          <DonationForm onSubmit={handleSubmit}>
+            <InputGroup>
+              <InputLabel>Name:</InputLabel>
+              <InputField
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                required
+              />
+            </InputGroup>
+            <InputGroup>
+              <InputLabel>Email:</InputLabel>
+              <InputField
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+              />
+            </InputGroup>
+            <InputGroup>
+              <InputLabel>Amount:</InputLabel>
+              <InputField
+                type="number"
+                name="amount"
+                value={formData.amount}
+                onChange={handleInputChange}
+                required
+              />
+            </InputGroup>
+            <button onClick={handleDonateButtonClick} disabled={!isFormValid}>
+              Donate
+            </button>
+          </DonationForm>
         </div>
       </div>
-    </PageBackground>
+    </div>
   );
 };
 

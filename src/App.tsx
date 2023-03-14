@@ -12,6 +12,7 @@ import NavigationBar from "./Components/Navbar";
 import MyCarousel from "./Pages/Home";
 import Home from "./Pages/Home";
 import DonationPage from "./Pages/Donation";
+import { Footer } from "./Components/Footer";
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -23,6 +24,7 @@ export const App: React.FunctionComponent = () => {
           <Route path="/Pages/Home" element={<MyCarousel />} />
           <Route path="/pages/Donation" element={<DonationPage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
