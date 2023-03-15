@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledCarousel, Style11 } from "./style";
+import { StyledCarousel } from "./style";
 import { aboutUs, history, goals } from "./constant";
 
 const mapAboutUs = aboutUs.map((paragraph) => <p>{paragraph}</p>);
@@ -105,7 +105,7 @@ const MyCarousel: React.FC = () => {
         </StyledCarousel>
       </div>
       <br />
-      <Style11>
+      <StyledCarousel>
         <div className="container">
           <h2>About Us</h2>
           {mapAboutUs}
@@ -114,7 +114,7 @@ const MyCarousel: React.FC = () => {
           <h2>Goals</h2>
           {mapGoals}
         </div>
-      </Style11>
+      </StyledCarousel>
     </div>
   );
 };

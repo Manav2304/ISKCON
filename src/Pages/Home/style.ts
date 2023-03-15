@@ -22,8 +22,6 @@ export const StyledCarousel = styled.div`
   .carousel-caption p {
     font-size: 1.2rem;
   }
-`;
-export const Style11 = styled.div`
   .container {
     text-align: justify;
   }

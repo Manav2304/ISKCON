@@ -5,9 +5,7 @@ export const NavStyle = styled.div`
   padding: 1.6rem;
   display: flex;
   justify-content: space-between;
-  // align-items: center;
-  // background-color: #fff;
-  // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+ 
     img {
       margin-right: 0.5rem;
       width: 60px;
