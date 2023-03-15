@@ -1,5 +1,5 @@
 body {
-  background-image: url("C:\Users\lenovo\OneDrive\Desktop\New folder\ISKCON\src\images\image.png");
+  background-image: url("../src/images/bgimage.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
