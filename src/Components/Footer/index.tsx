@@ -16,27 +16,42 @@ export const Footer = () => {
         </div>
 
         <div>
-          <a
-            href="https://www.facebook.com/groups/254840054550446"
-            className="me-4 text-reset"
-          >
-            <MDBIcon color="secondary" fab icon="facebook-f" />
-          </a>
-          <a href="https://twitter.com/iskcon_vvn" className="me-4 text-reset">
-            <MDBIcon color="secondary" fab icon="twitter" />
-          </a>
-          <a href="#" className="me-4 text-reset">
-            <MDBIcon color="secondary" fab icon="google" />
-          </a>
-          <a href="#" className="me-4 text-reset">
-            <MDBIcon color="secondary" fab icon="instagram" />
-          </a>
-          <a href="#" className="me-4 text-reset">
-            <MDBIcon color="secondary" fab icon="linkedin" />
-          </a>
-          <a href="https://t.me/iskconvvn" className="me-4 text-reset">
-            <MDBIcon color="secondary" fab icon="telegram" />
-          </a>
+          {[
+            {
+              name: "Facebook",
+              href: "https://www.facebook.com/groups/254840054550446",
+              icon: "facebook-f",
+            },
+            {
+              name: "Twitter",
+              href: "https://twitter.com/iskcon_vvn",
+              icon: "twitter",
+            },
+            {
+              name: "Google",
+              href: "#",
+              icon: "google",
+            },
+            {
+              name: "Instagram",
+              href: "#",
+              icon: "instagram",
+            },
+            {
+              name: "LinkedIn",
+              href: "#",
+              icon: "linkedin",
+            },
+            {
+              name: "Telegram",
+              href: "https://t.me/iskconvvn",
+              icon: "telegram",
+            },
+          ].map((item) => (
+            <a key={item.name} href={item.href} className="me-4 text-reset">
+              <MDBIcon color="secondary" fab icon={item.icon} />
+            </a>
+          ))}
         </div>
       </section>
 
