@@ -27,7 +27,4 @@ export const Style11 = styled.div`
   .container {
     text-align: justify;
   }
-  .m1 {
-    text=align: center;
-  }
 `;

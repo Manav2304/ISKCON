@@ -6,7 +6,7 @@ import {
   MDBCol,
   MDBIcon,
 } from "mdb-react-ui-kit";
-import { t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12 } from "./constant";
+import { templeTimes } from "./constant";
 export const Footer = () => {
   return (
     <MDBFooter className="text-center text-lg-start text-muted bg-dark ">
@@ -48,34 +48,7 @@ export const Footer = () => {
                 <MDBIcon color="secondary" icon="gem" className="me-3" />
                 Timings
               </h6>
-              <p>
-                {t1}
-                <br />
-                {t2}
-                <br />
-                {t3}
-                <br />
-                {t4}
-                <br />
-                {t5}
-                <br />
-                {t6}
-                <br />
-                {t7}
-                <br />
-                {t8}
-                <br />
-                {t8}
-                <br />
-                {t9}
-                <br />
-                {t10}
-                <br />
-                {t11}
-                <br />
-
-                {t12}
-              </p>
+              <div dangerouslySetInnerHTML={{ __html: templeTimes }} />
             </MDBCol>
 
             {/* <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">

@@ -1,27 +1,12 @@
 import React from "react";
-import { StyledCarousel } from "./style";
-import { aboutUs1, aboutUs2, aboutUs3, aboutUs4 } from "./constant";
-import { AboutUsText } from "./style";
-import {
-  Goals1,
-  Goals2,
-  Goals3,
-  Goals4,
-  Goals5,
-  Goals6,
-  Goals7,
-  Goals8,
-} from "./constant";
-import {
-  History1,
-  History2,
-  History3,
-  History4,
-  History5,
-  History6,
-  History7,
-} from "./constant";
-const Home: React.FC = () => {
+import { StyledCarousel, Style11 } from "./style";
+import { aboutUs, history, goals } from "./constant";
+
+const mapAboutUs = aboutUs.map((paragraph) => <p>{paragraph}</p>);
+const mapHistory = history.map((paragraph) => <p>{paragraph}</p>);
+const mapGoals = goals.map((paragraph) => <p>{paragraph}</p>);
+
+const MyCarousel: React.FC = () => {
   return (
     <div>
       <div>
@@ -120,81 +105,18 @@ const Home: React.FC = () => {
         </StyledCarousel>
       </div>
       <br />
-
-      <AboutUsText>
-        <div className="m1">
-          <br />
-          <h2 style={{ textAlign: "center", color: "#fc9e39" }}>About Us</h2>
-          <br />
-          {aboutUs1}
-          <br />
-          <br />
-          {aboutUs2}
-          <br />
-          <br />
-          {aboutUs3}
-          <br />
-          <br />
-          {aboutUs4}
-          <br />
-          <hr />
-          <h2 style={{ textAlign: "center", color: "#fc9e39" }}>History</h2>
-          <br />
-          {History1}
-          <br />
-          <br />
-          {History2}
-          <br />
-          <br />
-          {History3}
-          <br />
-          <br />
-          {History4}
-          <br />
-          <br />
-          {History5}
-          <br />
-          <br />
-          {History6}
-          <br />
-          <br />
-          {History7}
-          <br />
-          <br />
-          <hr></hr>
-          <h2 style={{ textAlign: "center", color: "#fc9e39" }}>
-            Goals Of Iskcon
-          </h2>
-
-          <br />
-          {Goals1}
-          <br />
-          <br />
-          {Goals2}
-          <br />
-          <br />
-          {Goals3}
-          <br />
-          <br />
-          {Goals4}
-          <br />
-          <br />
-          {Goals5}
-          <br />
-          <br />
-          {Goals6}
-          <br />
-          <br />
-          {Goals7}
-          <br />
-          <br />
-          {Goals8}
-          <br />
-          <br />
+      <Style11>
+        <div className="container">
+          <h2>About Us</h2>
+          {mapAboutUs}
+          <h2>History</h2>
+          {mapHistory}
+          <h2>Goals</h2>
+          {mapGoals}
         </div>
-      </AboutUsText>
+      </Style11>
     </div>
   );
 };
 
-export default Home;
+export default MyCarousel;
