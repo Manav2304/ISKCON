@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from "react";
 import {
   Container,
@@ -8,6 +9,8 @@ import {
   TableCell,
   Button,
   DonationHeader,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  NameInput,
 } from "./style";
 import {
   ADOPT_A_COW,
@@ -15,6 +18,8 @@ import {
   FEED_COWS,
   VAISHNAV_BHOJAN,
 } from "./constant";
+import { Link } from "react-router-dom";
+
 
 type Donation = {
   id: number;
@@ -80,30 +85,6 @@ const DonationPage: React.FC = () => {
     <Container>
       <Title>Donate Now</Title>
       <form onSubmit={handleSubmit}>
-        {/* Name input */}
-        <label>
-          Name:
-          <input type="text" value={name} onChange={handleNameChange} />
-        </label>
-        <br />
-
-        {/* Mobile number input */}
-        <label>
-          Mobile Number:
-          <input
-            type="text"
-            value={mobileNumber}
-            onChange={handleMobileNumberChange}
-          />
-        </label>
-        <br />
-
-        {/* Email input */}
-        <label>
-          Email:
-          <input type="text" value={email} onChange={handleEmailChange} />
-        </label>
-        <br />
 
     {/* 1st table */}
     <Table>
@@ -301,7 +282,11 @@ const DonationPage: React.FC = () => {
             </TableRow>
           </tfoot>
         </Table>
-        <Button type="submit">Donate Now</Button>
+        <Button type="submit">
+        <div>
+      <Link to="/donate">Donate Now</Link>
+    </div>
+        </Button>
       </form>
     </Container>
   );
