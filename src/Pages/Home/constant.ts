@@ -1,0 +1,26 @@
+export const aboutUs = [
+  `Welcome to Sri Sri Radha Giridhariji Temple, dedicated to the worship of Lord Krishna and the promotion of spiritual awareness among people. His Divine Grace A. C. Bhaktivedanta Swami Prabhupada founded the International Society of Krishna Consciousness (ISKCON), also known as the Hare Krishna Movement, in 1966. ISKCON is a worldwide organisation of devotees of Lord Krishna, the Supreme Personality of Godhead, with 10,000 temple devotees and 250,000 congregational devotees as members. Over the course of four decades, ISKCON has expanded to include over 350 temples, 60 rural communities, 50 schools, and 60 restaurants. One of the primary goals of ISKCON is to promote societal well-being by teaching the science of Krishna consciousness as taught in the Bhagavad-Gita and other timeless Vedic scriptures.`,
+  `Our mission is to spread the teachings of Lord Krishna and the Vaishnava tradition to all those who seek spiritual knowledge and enlightenment. We believe that the path of devotion to Lord Krishna is the key to achieving inner peace and happiness in life.`,
+  `We offer a wide range of religious and spiritual activities for visitors to participate in, including kirtans, bhajans, and discourses on the teachings of Lord Krishna. Our programs are designed to help people connect with their inner selves and develop a deeper understanding of the spiritual world.`,
+  `Our temple is located in the town of Vallabh Vidya Nagar in the Anand district of the Indian state of Gujarat.`,
+];
+export const history = [
+  ` International Society for Krishna Consciousness), also known as the Hare Krishna movement, is a worldwide spiritual organization that was founded in 1966 by A.C. Bhaktivedanta Swami Prabhupada. The movement is based on the teachings of the Bhagavad-gita and the Srimad Bhagavatam, two ancient Hindu scriptures that describe the philosophy of Krishna consciousness.`,
+  `The roots of ISKCON can be traced back to the early 20th century, when a young boy named Abhay Charan De (later known as A.C. Bhaktivedanta Swami Prabhupada) was born in Calcutta, India. Abhay Charan De was deeply influenced by his spiritual teacher, Bhaktisiddhanta Sarasvati Thakura, who urged him to spread the teachings of Lord Krishna to the Western world.`,
+  `In 1965, at the age of 70, A.C. Bhaktivedanta Swami Prabhupada set sail for New York City with only a few dollars in his pocket and a crate of books containing his translations and commentaries on the Bhagavad-gita. He arrived in America alone and without any contacts or resources, but he was determined to fulfill his spiritual master's wishes.`,
+  `After several months of struggle and hardship, A.C. Bhaktivedanta Swami Prabhupada established the first ISKCON temple in New York City in 1966. The movement quickly gained popularity among young people who were seeking an alternative to the materialistic culture of the 1960s.`,
+  `By the early 1970s, ISKCON had spread to other parts of the world, including Europe, Australia, and South America. The movement's emphasis on vegetarianism, meditation, and devotion to Lord Krishna resonated with people from all walks of life, and ISKCON grew into a global spiritual community.`,
+  `Over the years, ISKCON movement has made significant contributions to the fields of spirituality, vegetarianism, and sustainable living.`,
+  `Today, ISKCON has hundreds of temples, ashrams, and centers around the world, and its members continue to spread the teachings of Lord Krishna through various activities, including kirtans, festivals, and humanitarian projects. The movement remains a vibrant and important part of the global spiritual landscape, attracting seekers of all ages and backgrounds who are drawn to its message of love, compassion, and devotion.`,
+];
+export const goals = [
+  `When Srila Prabhupada established in July 1966 in New York Krsna consciousness movement (ISKCON), he set its seven goals:`,
+  `1. To systematically spread spiritual knowledge in the whole society and educate all people in principles of spiritual life to check the imbalance of life values and to achieve real unity and peace in the world.`,
+  `2. To spread Krsna consciousness in the way it is revealed in the Bhagavad-gita and Srimad-Bhagavatam.`,
+  `3. To bring together members of the movement and lead them to Krsna, the original person, and in this way develop in them and the whole humanity the idea that every soul is part and parcel of God (Krsna).`,
+  `3. To bring together members of the movement and lead them to Krsna, the original person, and in this way develop in them and the whole humanity the idea that every soul is part and parcel of God (Krsna).`,
+  `4. To teach and support sankirtana movement, congregational chanting of the holy names of God, as it is revealed in the teaching of Lord Sri Caitanya Mahaprabhu.`,
+  `5. To develop places of pilgrimage related to the pastimes of Lord Krsna for the benefit of members and the whole society.`,
+  `6. To associate members for the purpose of teaching a more simple and natural way of life.`,
+  `7. To print and spread periodical publications, books and other literature to fulfill above-mentioned goals.`,
+];

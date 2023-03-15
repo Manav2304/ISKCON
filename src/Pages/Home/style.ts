@@ -23,8 +23,11 @@ export const StyledCarousel = styled.div`
     font-size: 1.2rem;
   }
 `;
-export const Background = styled.div`
-  border-radius: 5px;
-
-  background-image: url("https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=600");
+export const Style11 = styled.div`
+  .container {
+    text-align: justify;
+  }
+  .m1 {
+    text=align: center;
+  }
 `;
