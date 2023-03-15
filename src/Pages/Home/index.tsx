@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledCarousel, Style11 } from "./style";
 import { aboutUs, history, goals } from "./constant";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 const mapAboutUs = aboutUs.map((paragraph) => <p>{paragraph}</p>);
 const mapHistory = history.map((paragraph) => <p>{paragraph}</p>);
 const mapGoals = goals.map((paragraph) => <p>{paragraph}</p>);
