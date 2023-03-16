@@ -1,0 +1,14 @@
+
+export const paragraph1 = `ISKCON, kirtan involves singing and chanting the names of God in a call-and-response style, with the leader singing a line and the congregation responding in unison.`;
+
+export const paragraph2 = ` The practice of kirtan is rooted in ancient Vedic tradition and has been passed down through generations of saints, sages, and devotees. It is said that the chanting of God's names has the power to purify the heart and mind, awaken the soul, and bring one closer to the divine.`;
+
+export const paragraph3 = ` In ISKCON, kirtan is often accompanied by traditional Indian instruments such as the mridanga, harmonium, and kartals, which add depth and richness to the music. The melodies are often simple and easy to follow, making it easy for even those with no prior musical experience to participate.`;
+
+export const paragraph4 = ` During kirtan, participants focus their attention on the names and qualities of God, allowing themselves to be fully absorbed in the devotional mood of the music. As the chanting builds in intensity, the atmosphere becomes charged with spiritual energy, and it is not uncommon for participants to experience feelings of deep joy, peace, and connection to the divine.`;
+
+export const paragraph5 = ` Kirtan is a powerful tool for spiritual transformation and is an essential part of the practice of bhakti yoga. Whether you are a seasoned practitioner or a newcomer to the path, the Practice of kirtan can help to awaken your heart and soul and bring you closer to the divine.`;
+
+export const paragraph6 = ` The chanting and singing of the 16 syllable “ Hare Krishna Hare Krishna Krishna Krishna Hare Hare, Hare Rama Hare Rama Rama Rama Hare Hare! is the core of our movement as prescribed by Sri Chaitanya Mahaprabhu and as the followers of Sri Mahaprabhu, the ultimate goal is to preach the Mahamantra to each and every town of the world, which was fulfilled by the gracious efforts of Srila Prabhupada.`;
+
+export const paragraph7 = ` We have the Narasimha’s Kirtan Mandali in our temple for this seva as well various devotees engaged in this service.`;

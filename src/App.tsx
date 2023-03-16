@@ -16,6 +16,7 @@ import { GuestHouse } from "./Pages/Servicespage/GuestHouse";
 import { Gaushala } from "./Pages/Servicespage/Gaushala";
 import { DeityWorship } from "./Pages/Servicespage/DeityWorship";
 import { DevoteeKitchen } from "./Pages/Servicespage/DevoteeKitchen";
+import { KirtanAtIskcon } from "./Pages/Servicespage/KirtanAtIskcon";
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -33,7 +34,7 @@ export const App: React.FunctionComponent = () => {
           <Route path="/Pages/Servicespage/Gaushala" element={<Gaushala />} />
           <Route path="/Pages/Servicespage/DeityWorship" element={<DeityWorship />} />
           <Route path="/Pages/Servicespage/DevoteeKitchen" element={<DevoteeKitchen />} />
-
+          <Route path="/Pages/Servicespage/KirtanAtIskcon" element={<KirtanAtIskcon />} />
         </Routes>
       </BrowserRouter>
     </>
