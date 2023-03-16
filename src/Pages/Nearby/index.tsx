@@ -1,13 +1,15 @@
 import React from 'react';
 import { IMAGES} from './constant';
 import { paragraph1,paragraph2,paragraph3,paragraph4,paragraph5,paragraph6 } from './constant';
-import { ServiceWrapper, ImageSlide, TextWrapper} from './style';
+import { ServiceWrapper, ImageSlide, TextWrapper, HeadIng1, ParaGraph} from './style';
 
 
 const Nearby = () => {
   return (
     <ServiceWrapper>
-      <h1>Dakor Dham </h1>
+    <HeadIng1>
+       <h1>Dakor Dham </h1>
+    </HeadIng1>
     <TextWrapper>
        
         <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
@@ -27,21 +29,18 @@ const Nearby = () => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-
+    <ParaGraph>
         <p>
-  {[
-
-    paragraph1,paragraph2,paragraph3,paragraph4,paragraph5,paragraph6,
-
-  ].map((paragraph, index) => (
-    <React.Fragment key={index}>
-      {paragraph}
-      <br /><br/>
-    </React.Fragment>
-  ))}
+      {[
+          paragraph1,paragraph2,paragraph3,paragraph4,paragraph5,paragraph6,
+       ].map((paragraph, index) => (
+        <React.Fragment key={index}>
+        {paragraph}
+        <br /><br/>
+         </React.Fragment>
+        ))}
         </p>
-
-
+    </ParaGraph>
     </TextWrapper>
     </ServiceWrapper>
   );

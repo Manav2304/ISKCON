@@ -5,12 +5,12 @@ export const ServiceWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   color:#17202A;
+`;
 
-  h1 {
-    font-size: 3 rem;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
+export const HeadIng1 = styled.h1`
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
 `;
 
 export const ImageSlide = styled.img`
@@ -22,15 +22,16 @@ export const ImageSlide = styled.img`
   border: 1px solid #ddd;
   margin-bottom: 2rem;
 `;
+
 export const TextWrapper = styled.div`
   max-width: 1024px;
   color:#17202A;
-  
-  p {
-    font-size: 1.12rem;
-    line-height: 1.5;
-    text-align: left;
-  }
+  `;
+
+export const ParaGraph = styled.p`
+  font-size: 1.12rem;
+  line-height: 1.5;
+  text-align: left;
 
   br {
     margin-bottom: 2rem;
