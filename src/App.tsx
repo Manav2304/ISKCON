@@ -9,7 +9,7 @@ import {
 import "./styles.css";
 
 import NavigationBar from "./Components/Navbar";
-import Home from "./Pages/Home";
+import HomePage from "./Pages/Home";
 import DonationPage from "./Pages/Donation";
 import { Footer } from "./Components/Footer";
 
@@ -19,7 +19,7 @@ export const App: React.FunctionComponent = () => {
       <BrowserRouter>
         <NavigationBar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/donation" element={<DonationPage />} />
         </Routes>
         <Footer />

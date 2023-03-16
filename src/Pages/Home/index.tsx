@@ -1,13 +1,14 @@
 import React from "react";
-import { StyledCarousel } from "./style";
+import { StyledCarousel, ImageStyle, TextStyle, HeadingStyle } from "./style";
 import { aboutUs, history, goals, philosophy, founder } from "./constant";
+import bgimage from "../../images/bgimage.png";
 
 const mapAboutUs = aboutUs.map((paragraph) => <p>{paragraph}</p>);
 const mapHistory = history.map((paragraph) => <p>{paragraph}</p>);
 const mapGoals = goals.map((paragraph) => <p>{paragraph}</p>);
 const mapPhilosophy = philosophy.map((paragraph) => <p>{paragraph}</p>);
 const mapFounder = founder.map((paragraph) => <p>{paragraph}</p>);
-const MyCarousel: React.FC = () => {
+const Homepage: React.FC = () => {
   return (
     <div>
       <div>
@@ -65,11 +66,7 @@ const MyCarousel: React.FC = () => {
                 </div>
               </div>
               <div className="carousel-item">
-                <img
-                  src="https://www.shutterstock.com/image-illustration/scene-battlefield-mahabharata-krishna-arjuna-600w-2091772597.jpg"
-                  className="d-block w-100"
-                  alt="..."
-                />
+                <img src={bgimage} className="d-block w-100" alt="" />
                 <div className="carousel-caption d-none d-md-block">
                   <h5>Third slide label</h5>
                   <p>
@@ -106,26 +103,38 @@ const MyCarousel: React.FC = () => {
         </StyledCarousel>
       </div>
       <br />
-      <StyledCarousel>
-        <div className="container">
+      <div>
+        <HeadingStyle>
           <h2>ABOUT US</h2>
-          {mapAboutUs}
-          <hr />
+          <ImageStyle>
+            <img src="https://www.shutterstock.com/image-illustration/scene-battlefield-mahabharata-krishna-arjuna-600w-2091772597.jpg" />
+          </ImageStyle>
+          <TextStyle> {mapAboutUs}</TextStyle>
           <h2>HISTORY</h2>
-          {mapHistory}
-          <hr />
+          <ImageStyle>
+            <img src="https://www.shutterstock.com/image-illustration/scene-battlefield-mahabharata-krishna-arjuna-600w-2091772597.jpg" />
+          </ImageStyle>
+          <TextStyle>{mapHistory}</TextStyle>
           <h2>Goals of ISKCON</h2>
-          {mapGoals}
-          <hr />
+          <ImageStyle>
+            <img src="https://www.shutterstock.com/image-illustration/scene-battlefield-mahabharata-krishna-arjuna-600w-2091772597.jpg" />
+          </ImageStyle>
+          <TextStyle>{mapGoals}</TextStyle>
+
           <h2>PHILOSOPHY </h2>
-          {mapPhilosophy}
-          <hr />
+          <ImageStyle>
+            <img src="https://www.shutterstock.com/image-illustration/scene-battlefield-mahabharata-krishna-arjuna-600w-2091772597.jpg" />
+          </ImageStyle>
+          <TextStyle> {mapPhilosophy}</TextStyle>
           <h2>FOUNDER</h2>
-          {mapFounder}
-        </div>
-      </StyledCarousel>
+          <ImageStyle>
+            <img src="https://www.shutterstock.com/image-illustration/scene-battlefield-mahabharata-krishna-arjuna-600w-2091772597.jpg" />
+          </ImageStyle>
+          <TextStyle>{mapFounder}</TextStyle>
+        </HeadingStyle>
+      </div>
     </div>
   );
 };
 
-export default MyCarousel;
+export default Homepage;
