@@ -2,6 +2,28 @@
   "name": "iskcontmp",
   "version": "0.1.0",
   "private": true,
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "import-sort-cli --check",
+      "prettier --check"
+    ],
+    "*.{ts,tsx,json,md}": [
+      "prettier --check"
+    ],
+    "*.hbs": [
+      "prettier --check"
+    ]
+  },
+  "prettier": {
+    "useTabs": false,
+    "semi": true,
+    "trailingComma": "all"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -11,6 +33,7 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "bootstrap": "^5.2.3",
+    "lint-staged": "^13.2.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
@@ -45,6 +68,9 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.26",
+    "husky": "^8.0.3",
+    "import-sort-cli": "^6.0.0",
+    "import-sort-style-renke": "^6.0.0",
     "react-router-dom": "^6.8.2"
   }
 }
