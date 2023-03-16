@@ -21,7 +21,3 @@ const FestivalPage = () => {
 };
 
 export default FestivalPage;
-
-
-
-
