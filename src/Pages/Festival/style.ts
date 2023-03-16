@@ -2,16 +2,15 @@ import styled from "styled-components";
 
 export const FestivalContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20x;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
   margin: 100px;
 `;
 
 export const FestivalImage = styled.img`
-  width: 150;
+  width: 100%;
   height: 350px;
   object-fit: cover;
-
 `;
 
 export const FestivalInfo = styled.div`
@@ -30,9 +29,8 @@ export const FestivalInfo = styled.div`
     margin: 0;
     font-size: 1rem;
     color: #666;
-    
   }
 `;
-
-
-
+export const Button = styled.div`
+color: #800000;
+`;
