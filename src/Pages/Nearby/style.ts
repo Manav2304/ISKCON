@@ -22,3 +22,17 @@ export const ImageSlide = styled.img`
   border: 1px solid #ddd;
   margin-bottom: 2rem;
 `;
+export const TextWrapper = styled.div`
+  max-width: 1024px;
+  color:#17202A;
+  
+  p {
+    font-size: 1.12rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  br {
+    margin-bottom: 2rem;
+  }
+`;
