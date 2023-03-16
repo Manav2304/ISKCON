@@ -30,6 +30,7 @@ const NavigationBar = () => {
                 <Dropdown.Item href="/Pages/Servicespage/IskconYouthForum">Iskcon Youth Forum - IYF</Dropdown.Item>
                 <Dropdown.Item href="/Pages/Servicespage/GuestHouse">Prabhupada Ashrya Guest House</Dropdown.Item>
                 <Dropdown.Item href="/Pages/Servicespage/Gaushala">Goverdhan Gaushala</Dropdown.Item>
+                <Dropdown.Item href="/Pages/Servicespage/DeityWorship">Deity Worship</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
 
