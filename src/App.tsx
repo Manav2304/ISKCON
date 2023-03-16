@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  Routes,
-  Route,
-  BrowserRouter,
-} from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import NavigationBar from "./Components/Navbar";
 import MyCarousel from "./Pages/Home";
@@ -29,14 +25,35 @@ export const App: React.FunctionComponent = () => {
           <Route path="/Pages/Home" element={<MyCarousel />} />
           <Route path="/Pages/About" element={<AboutUs />} />
           <Route path="/Pages/Donation" element={<DonationPage />} />
-          <Route path="/Pages/Servicespage/LifeTimeMembership" element={<LifeTimeMembership />} />
-          <Route path="/Pages/Servicespage/IskconYouthForum" element={<IskconYouthForum />} />
-          <Route path="/Pages/Servicespage/GuestHouse" element={<GuestHouse />} />
+          <Route
+            path="/Pages/Servicespage/LifeTimeMembership"
+            element={<LifeTimeMembership />}
+          />
+          <Route
+            path="/Pages/Servicespage/IskconYouthForum"
+            element={<IskconYouthForum />}
+          />
+          <Route
+            path="/Pages/Servicespage/GuestHouse"
+            element={<GuestHouse />}
+          />
           <Route path="/Pages/Servicespage/Gaushala" element={<Gaushala />} />
-          <Route path="/Pages/Servicespage/DeityWorship" element={<DeityWorship />} />
-          <Route path="/Pages/Servicespage/DevoteeKitchen" element={<DevoteeKitchen />} />
-          <Route path="/Pages/Servicespage/KirtanAtIskcon" element={<KirtanAtIskcon />} />
-          <Route path="/Pages/Servicespage/Bookdistribution" element={<BookDistribution />} />
+          <Route
+            path="/Pages/Servicespage/DeityWorship"
+            element={<DeityWorship />}
+          />
+          <Route
+            path="/Pages/Servicespage/DevoteeKitchen"
+            element={<DevoteeKitchen />}
+          />
+          <Route
+            path="/Pages/Servicespage/KirtanAtIskcon"
+            element={<KirtanAtIskcon />}
+          />
+          <Route
+            path="/Pages/Servicespage/Bookdistribution"
+            element={<BookDistribution />}
+          />
         </Routes>
       </BrowserRouter>
     </>

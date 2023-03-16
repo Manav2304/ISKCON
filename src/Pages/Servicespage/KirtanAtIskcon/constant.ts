@@ -1,4 +1,3 @@
-
 export const paragraph1 = `ISKCON, kirtan involves singing and chanting the names of God in a call-and-response style, with the leader singing a line and the congregation responding in unison.`;
 
 export const paragraph2 = ` The practice of kirtan is rooted in ancient Vedic tradition and has been passed down through generations of saints, sages, and devotees. It is said that the chanting of God's names has the power to purify the heart and mind, awaken the soul, and bring one closer to the divine.`;

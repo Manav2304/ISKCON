@@ -1,16 +1,27 @@
-import React from 'react';
+import React from "react";
 //import { IMAGES } from './constant';
-import { paragraph1, paragraph2, paragraph3, paragraph4, paragraph5, } from './constant';
-import { HeadStyle, ParagraphStyle, ServiceWrapper, TextWrapper } from './style';
-
+import {
+  paragraph1,
+  paragraph2,
+  paragraph3,
+  paragraph4,
+  paragraph5,
+} from "./constant";
+import {
+  HeadStyle,
+  ParagraphStyle,
+  ServiceWrapper,
+  TextWrapper,
+} from "./style";
 
 export const GuestHouse = () => {
-    return (
-        <ServiceWrapper>
-            <HeadStyle><h1>Prabhupada Ashrya Guest House</h1></HeadStyle>
-            <TextWrapper>
-
-                {/*  <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+  return (
+    <ServiceWrapper>
+      <HeadStyle>
+        <h1>Prabhupada Ashrya Guest House</h1>
+      </HeadStyle>
+      <TextWrapper>
+        {/*  <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
                     <div className="carousel-inner">
                         {IMAGES.map((image, index) => (
                             <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
@@ -27,22 +38,20 @@ export const GuestHouse = () => {
                         <span className="visually-hidden">Next</span>
                     </button>
                 </div> */}
-                <ParagraphStyle>
-                    <p>
-                        {[
-
-                            paragraph1, paragraph2, paragraph3, paragraph4, paragraph5,
-
-                        ].map((paragraph, index) => (
-                            <React.Fragment key={index}>
-                                {paragraph}
-                                <br /><br />
-                            </React.Fragment>
-                        ))}
-                    </p>
-                </ParagraphStyle>
-
-            </TextWrapper>
-        </ServiceWrapper>
-    );
+        <ParagraphStyle>
+          <p>
+            {[paragraph1, paragraph2, paragraph3, paragraph4, paragraph5].map(
+              (paragraph, index) => (
+                <React.Fragment key={index}>
+                  {paragraph}
+                  <br />
+                  <br />
+                </React.Fragment>
+              ),
+            )}
+          </p>
+        </ParagraphStyle>
+      </TextWrapper>
+    </ServiceWrapper>
+  );
 };

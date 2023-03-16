@@ -1,4 +1,3 @@
-
 export const paragraph1 = `The ISKCON Youth Forum in Vallabh Vidya Nagar is an active and vibrant group that provides a space for young people to come together and explore their spirituality in a fun and supportive environment. With a wide range of activities and programs on offer, the Youth Forum is an important part of the ISKCON community in Vallabh Vidya Nagar.`;
 
 export const paragraph2 = ` One of the main focuses of the Youth Forum is to provide opportunities for young people to engage in devotional activities and deepen their spiritual practice. This includes regular kirtans, bhajans, and japa sessions, as well as workshops and classes on various aspects of bhakti yoga.`;

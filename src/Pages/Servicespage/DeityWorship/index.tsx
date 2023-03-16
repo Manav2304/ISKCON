@@ -1,15 +1,27 @@
-import React from 'react';
+import React from "react";
 //import { IMAGES } from './constant';
-import { paragraph1, paragraph2, paragraph3, paragraph4, paragraph5, paragraph6 } from './constant';
-import { HeadStyle, ParagraphStyle, ServiceWrapper, TextWrapper } from './style';
-
+import {
+    paragraph1,
+    paragraph2,
+    paragraph3,
+    paragraph4,
+    paragraph5,
+    paragraph6,
+} from "./constant";
+import {
+    HeadStyle,
+    ParagraphStyle,
+    ServiceWrapper,
+    TextWrapper,
+} from "./style";
 
 export const DeityWorship = () => {
     return (
         <ServiceWrapper>
-            <HeadStyle><h1> Deity Worship</h1></HeadStyle>
+            <HeadStyle>
+                <h1> Deity Worship</h1>
+            </HeadStyle>
             <TextWrapper>
-
                 {/*  <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
                     <div className="carousel-inner">
                         {IMAGES.map((image, index) => (
@@ -30,18 +42,21 @@ export const DeityWorship = () => {
                 <ParagraphStyle>
                     <p>
                         {[
-
-                            paragraph1, paragraph2, paragraph3, paragraph4, paragraph5, paragraph6,
-
+                            paragraph1,
+                            paragraph2,
+                            paragraph3,
+                            paragraph4,
+                            paragraph5,
+                            paragraph6,
                         ].map((paragraph, index) => (
                             <React.Fragment key={index}>
                                 {paragraph}
-                                <br /><br />
+                                <br />
+                                <br />
                             </React.Fragment>
                         ))}
                     </p>
                 </ParagraphStyle>
-
             </TextWrapper>
         </ServiceWrapper>
     );
