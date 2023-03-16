@@ -1,7 +1,7 @@
 import styled from "styled-components";
 export const StyledCarousel = styled.div`
   .carousel-item {
-    height: 400px;
+    height: 500px;
   }
 
   .carousel-caption {
@@ -24,5 +24,9 @@ export const StyledCarousel = styled.div`
   }
   .container {
     text-align: justify;
+  }
+  .container h2 {
+    text-align: center;
+    margin: 20px;
   }
 `;

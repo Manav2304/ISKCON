@@ -1,11 +1,12 @@
 import React from "react";
 import { StyledCarousel } from "./style";
-import { aboutUs, history, goals } from "./constant";
+import { aboutUs, history, goals, philosophy, founder } from "./constant";
 
 const mapAboutUs = aboutUs.map((paragraph) => <p>{paragraph}</p>);
 const mapHistory = history.map((paragraph) => <p>{paragraph}</p>);
 const mapGoals = goals.map((paragraph) => <p>{paragraph}</p>);
-
+const mapPhilosophy = philosophy.map((paragraph) => <p>{paragraph}</p>);
+const mapFounder = founder.map((paragraph) => <p>{paragraph}</p>);
 const MyCarousel: React.FC = () => {
   return (
     <div>
@@ -107,12 +108,20 @@ const MyCarousel: React.FC = () => {
       <br />
       <StyledCarousel>
         <div className="container">
-          <h2>About Us</h2>
+          <h2>ABOUT US</h2>
           {mapAboutUs}
-          <h2>History</h2>
+          <hr />
+          <h2>HISTORY</h2>
           {mapHistory}
-          <h2>Goals</h2>
+          <hr />
+          <h2>Goals of ISKCON</h2>
           {mapGoals}
+          <hr />
+          <h2>PHILOSOPHY </h2>
+          {mapPhilosophy}
+          <hr />
+          <h2>FOUNDER</h2>
+          {mapFounder}
         </div>
       </StyledCarousel>
     </div>
