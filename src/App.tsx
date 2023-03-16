@@ -13,6 +13,7 @@ import DonationPage from "./Pages/Donation";
 import { LifeTimeMembership } from "./Pages/Servicespage/LifeTimeMembership";
 import { IskconYouthForum } from "./Pages/Servicespage/IskconYouthForum";
 import { GuestHouse } from "./Pages/Servicespage/GuestHouse";
+import { Gaushala } from "./Pages/Servicespage/Gaushala";
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -27,6 +28,7 @@ export const App: React.FunctionComponent = () => {
           <Route path="/Pages/Servicespage/LifeTimeMembership" element={<LifeTimeMembership />} />
           <Route path="/Pages/Servicespage/IskconYouthForum" element={<IskconYouthForum />} />
           <Route path="/Pages/Servicespage/GuestHouse" element={<GuestHouse />} />
+          <Route path="/Pages/Servicespage/Gaushala" element={<Gaushala />} />
         </Routes>
       </BrowserRouter>
     </>
