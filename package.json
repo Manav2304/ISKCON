@@ -37,7 +37,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "format:fix":"prettier --write src/*",
+    "lint:fix": "eslint --fix",
+    "format:fix": "prettier --write src/*",
     "format": "prettier --check",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -64,6 +65,10 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.3",
     "import-sort-cli": "^6.0.0",
     "import-sort-style-renke": "^6.0.0",
