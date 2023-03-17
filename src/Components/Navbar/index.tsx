@@ -10,10 +10,6 @@ const NavigationBar = () => {
           <Link className="nav-logo" to="/">
             <img src={logo} alt="Logo" />
           </Link>
-
-          <Link className="nav-link" to="/donation">
-            Donation
-          </Link>
         </div>
       </nav>
     </NavStyle>
