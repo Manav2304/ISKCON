@@ -1,10 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background: Transparent ;
+  background: Transparent;
 `;
 
 export const Title = styled.h1`
@@ -17,22 +17,22 @@ export const Table = styled.table`
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
-  background: Transparent ;
+  background: Transparent;
 `;
 
 export const DonationHeader = styled.th`
-font-weight: bold;
-font-size: 2rem;
+  font-weight: bold;
+  font-size: 2rem;
   text-align: left;
   padding: 10px;
-  border-bottom: 0.3rem solid #A0522D;
-  `;
+  border-bottom: 0.3rem solid #a0522d;
+`;
 
 export const TableHeader = styled.th`
   font-weight: bold;
   text-align: left;
   padding: 10px;
-  border-bottom: 0.3rem solid #A0522D;
+  border-bottom: 0.3rem solid #a0522d;
 `;
 
 export const TableRow = styled.tr`
@@ -43,14 +43,14 @@ export const TableRow = styled.tr`
 
 export const TableCell = styled.td`
   padding: 10px;
-  color: #A52A2A;
-  border-bottom: 0.19rem solid #8B0000;
+  color: #a52a2a;
+  border-bottom: 0.19rem solid #8b0000;
   background: Transparent;
 `;
 
 export const Button = styled.button`
   background-color: #800000;
-  color: #F5DEB3;
+  color: #f5deb3;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
@@ -83,15 +83,14 @@ export const Input = styled.input`
   }
 `;
 
-
 export const NameInput = styled.form`
-color: #A52A2A;
+  color: #a52a2a;
 `;
 
 export const PhoneInput = styled.form`
-color: #A52A2A;
+  color: #a52a2a;
 `;
 
 export const EmailInput = styled.form`
-color: #A52A2A;
+  color: #a52a2a;
 `;

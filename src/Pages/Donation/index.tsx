@@ -12,14 +12,8 @@ import {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   NameInput,
 } from "./style";
-import {
-  ADOPT_A_COW,
-  ANNA_DAAN,
-  FEED_COWS,
-  VAISHNAV_BHOJAN,
-} from "./constant";
+import { ADOPT_A_COW, ANNA_DAAN, FEED_COWS, VAISHNAV_BHOJAN } from "./constant";
 import { Link } from "react-router-dom";
-
 
 type Donation = {
   id: number;
@@ -85,9 +79,8 @@ const DonationPage: React.FC = () => {
     <Container>
       <Title>Donate Now</Title>
       <form onSubmit={handleSubmit}>
-
-    {/* 1st table */}
-    <Table>
+        {/* 1st table */}
+        <Table>
           <thead>
             <DonationHeader>Feed Cows</DonationHeader>
             <tr>
@@ -283,9 +276,9 @@ const DonationPage: React.FC = () => {
           </tfoot>
         </Table>
         <Button type="submit">
-        <div>
-      <Link to="/donate">Donate Now</Link>
-    </div>
+          <div>
+            <Link to="/donate">Donate Now</Link>
+          </div>
         </Button>
       </form>
     </Container>

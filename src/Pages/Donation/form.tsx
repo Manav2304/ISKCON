@@ -1,6 +1,6 @@
-import React from 'react';
-import { useLocation } from 'react-router-dom';
-import { Container, Form, Label, Input, Button } from './style';
+import React from "react";
+import { useLocation } from "react-router-dom";
+import { Container, Form, Label, Input, Button } from "./style";
 
 const DonationFormPage: React.FC = () => {
   const location = useLocation();
@@ -11,7 +11,7 @@ const DonationFormPage: React.FC = () => {
       <h2>Donation Form</h2>
       {selectedItems && totalAmount && (
         <div>
-          <p>Selected Items: {selectedItems.join(', ')}</p>
+          <p>Selected Items: {selectedItems.join(", ")}</p>
           <p>Total Amount: {totalAmount}</p>
         </div>
       )}
