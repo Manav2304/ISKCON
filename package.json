@@ -37,9 +37,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "lint:fix": "eslint --fix",
+    "prepare": "husky install",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix --ext .ts,.tsx .",
     "format:fix": "prettier --write src/*",
-    "format": "prettier --check/*",
+    "format": "prettier --check src/*",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
