@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  BrowserRouter,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import NavigationBar from "./Components/Navbar";
 import MyCarousel from "./Pages/Home";
@@ -16,7 +10,7 @@ import DonationPage from "./Pages/Donation";
 export const App: React.FunctionComponent = () => {
   return (
     <>
-      <BrowserRouter>
+      <Router>
         <NavigationBar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -24,7 +18,7 @@ export const App: React.FunctionComponent = () => {
           <Route path="/Pages/About" element={<AboutUs />} />
           <Route path="/pages/Donation" element={<DonationPage />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </>
   );
 };

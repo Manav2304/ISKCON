@@ -3,8 +3,10 @@ import styled from "styled-components";
 export const AboutUsText = styled.div`
   .container {
     margin: 50px;
-    border: solid black;
-    cursor: auto;
+
+  border: solid black;
+
+      cursor: auto;
     color: white;
     background-image: url(" https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&w=600 ");
   }
