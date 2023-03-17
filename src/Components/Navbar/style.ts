@@ -8,8 +8,8 @@ export const NavStyle = styled.div`
  
     img {
       margin-right: 0.5rem;
-      width: 60px;
-      height: 60px;
+      width: 20vh;
+      height: 12vh;
     }
   }
 

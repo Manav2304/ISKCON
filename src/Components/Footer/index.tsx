@@ -7,6 +7,8 @@ import {
   MDBIcon,
 } from "mdb-react-ui-kit";
 import { templeTimes } from "./constant";
+import footerlogo from "../../images/footerlogo.jpeg";
+import { FooterLogoStyle } from "./style";
 export const Footer = () => {
   return (
     <MDBFooter className="text-center text-lg-start text-muted bg-dark ">
@@ -70,29 +72,11 @@ export const Footer = () => {
               <img url="C:\Users\lenovo\OneDrive\Desktop\New folder\ISKCON\src\images\footer.jpeg" />
             </MDBCol> */}
 
-            <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
-              <p>
-                <a href="#!" className="text-reset">
-                  Pricing
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Settings
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Orders
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Help
-                </a>
-              </p>
-            </MDBCol>
+            <FooterLogoStyle>
+              <MDBRow>
+                <img src={footerlogo} />
+              </MDBRow>
+            </FooterLogoStyle>
 
             <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
