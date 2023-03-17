@@ -6,22 +6,23 @@ import {
   Link,
   BrowserRouter,
 } from "react-router-dom";
-import "./styles.css";
 
 import NavigationBar from "./Components/Navbar";
 import HomePage from "./Pages/Home";
 import { Footer } from "./Components/Footer";
-
+import { bgimage } from "./bgImage";
 export const App: React.FunctionComponent = () => {
   return (
     <>
-      <BrowserRouter>
-        <NavigationBar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <div style={bgimage.body}>
+        <BrowserRouter>
+          <NavigationBar />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </div>
     </>
   );
 };
