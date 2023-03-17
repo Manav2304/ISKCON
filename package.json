@@ -4,7 +4,7 @@
   "private": true,
   "husky": {
     "hooks": {
-      "pre-commit": "format:fix"
+      "pre-commit": "format:fix format lint:fix"
     }
   },
   "lint-staged": {
