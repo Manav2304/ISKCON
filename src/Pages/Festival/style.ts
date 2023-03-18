@@ -17,20 +17,39 @@ export const FestivalInfo = styled.div`
   background-color: #fff;
   padding: 10px;
   text-align: center;
+`;
 
-  h2 {
-    margin: 0;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
-  }
+export const HeadIng2 = styled.h2`
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+`;
 
-  p {
-    margin: 0;
-    font-size: 1rem;
-    color: #666;
-  }
+export const ParaGraph1 = styled.p`
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
 `;
 export const Button = styled.div`
-color: #800000;
+  color: #800000;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+export const Description = styled.p`
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 0;
+`;
+export const HeadIng1 = styled.h1`
+   font-size:1rem;
+   text-align:center;
 `;
