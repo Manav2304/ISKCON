@@ -6,10 +6,9 @@ import {
   MDBCol,
   MDBIcon,
 } from "mdb-react-ui-kit";
-import { templeTimes } from "./constant";
 import footerlogo from "../../assets/footerlogo.jpeg";
 import { FooterLogoStyle, ContactStyle } from "./style";
-import { socialmediaIcon, contactInfo } from "./constant";
+import { socialmediaIcon, contactInfo, templeTimes } from "./constant";
 
 export const Footer = () => {
   return (
@@ -36,7 +35,13 @@ export const Footer = () => {
                 <MDBIcon color="secondary" icon="gem" className="me-3" />
                 Timings
               </h6>
-              <div dangerouslySetInnerHTML={{ __html: templeTimes }} />
+              <div>
+                {templeTimes.map((time, index) => (
+                  <p key={index}>
+                    {time.name}: {time.time}
+                  </p>
+                ))}
+              </div>
             </MDBCol>
 
             <FooterLogoStyle>

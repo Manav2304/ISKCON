@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledCarousel = styled.div`
   .carousel-item {
-    height: 500px;
+    height: 570px;
   }
 
   .carousel-caption {
@@ -31,7 +31,6 @@ export const ImageStyle = styled.div`
   align-items: center;
   margin: 40px;
 
-  // margin-bottom: 40px;
   @media only screen and (max-width: 768px) {
     img {
       max-width: 100%;

@@ -6,7 +6,7 @@ interface TileData {
   author: string;
 }
 
-export const ExampleComponent: React.FC = () => {
+export const Grid: React.FC = () => {
   return (
     <Container>
       <Row xs={1} md={2} lg={3} className="g-4">
