@@ -4,7 +4,7 @@ export const FestivalContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
-  margin: 100px;
+  margin: 50px;
 `;
 
 export const FestivalImage = styled.img`
@@ -48,7 +48,7 @@ export const Button = styled.div`
 export const Description = styled.p`
   font-size: 1rem;
   color: #666;
-  margin: 10px 0;
+  margin: 10px;
 `;
 
 export const HeadIng1 = styled.h1`

@@ -5,6 +5,8 @@ import img4 from "../../image/img4.jpg";
 import img5 from "../../image/img5.jpg";
 import img6 from "../../image/img6.jpg";
 import { Festival } from "./Festival";
+
+
 export const festivals: Festival[] = [
   {
     name: "Janmashtami",
