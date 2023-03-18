@@ -31,6 +31,7 @@ export const ParaGraph1 = styled.p`
   font-size: 1rem;
   color: #666;
 `;
+
 export const Button = styled.div`
   color: #800000;
   background-color: transparent;
@@ -49,6 +50,7 @@ export const Description = styled.p`
   color: #666;
   margin: 10px 0;
 `;
+
 export const HeadIng1 = styled.h1`
    font-size:1rem;
    text-align:center;
