@@ -1,13 +1,12 @@
-import dakor from "../../assets/Dakor.jpg";
-import gomtiLake from "../../assets/Gomti Lake.jpg";
-import temple from "../../assets/Temple.jpg";
+import dakor from "../../assets/images/Dakor.jpg";
+import gomtiLake from "../../assets/images/GomtiLake.jpg";
+import temple from "../../assets/images/Temple.jpg";
 
 export const IMAGES = [
    dakor,
    gomtiLake,
    temple
 ];
-
 
 export const dakorInfo = [
 
