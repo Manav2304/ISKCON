@@ -13,7 +13,7 @@ const NavigationBar = () => {
             <Link className="nav-link " aria-current="page" to="/Pages/About">
               AboutUs
             </Link>
-            <Link className="nav-link" to="pages/Nearby">
+            <Link className="nav-link" to="Pages/Nearby">
               Nearby Place
                </Link>
 

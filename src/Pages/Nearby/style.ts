@@ -16,7 +16,7 @@ export const HeadIng1 = styled.h1`
 export const ImageSlide = styled.img`
   width: 500px;
   height: 500px;
-  object-fit:auto;
+  object-fit: auto;
   padding: 0.5rem;
   margin: 0.5rem;
   margin-bottom: 2rem;
@@ -31,5 +31,5 @@ export const ParaGraph = styled.p`
   font-size: 1.12rem;
   line-height: 1.5;
   text-align: left;
-  white-space: pre-wrap;
+  text-align: justify;
 `;

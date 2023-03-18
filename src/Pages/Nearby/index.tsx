@@ -1,17 +1,17 @@
 import React from 'react';
-import {IMAGES} from './constant';
-import {dakorInfo} from './constant';
-import { ServiceWrapper, ImageSlide, TextWrapper, HeadIng1, ParaGraph} from './style';
+import { IMAGES } from './constant';
+import { dakorInfo } from './constant';
+import { ServiceWrapper, ImageSlide, TextWrapper, HeadIng1, ParaGraph } from './style';
 
-
+const mapDakorInfo = dakorInfo.map((paragraph) => <p>{paragraph}</p>);
 const Nearby = () => {
   return (
     <ServiceWrapper>
-    <HeadIng1>
-       <h1>Dakor Dham </h1>
-    </HeadIng1>
-    <TextWrapper>
-       
+      <HeadIng1>
+        <h1>Dakor Dham </h1>
+      </HeadIng1>
+      <TextWrapper>
+
         <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
           <div className="carousel-inner">
             {IMAGES.map((image, index) => (
@@ -29,12 +29,12 @@ const Nearby = () => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-    <ParaGraph>
-        <p>
-     {dakorInfo}
-        </p>
-    </ParaGraph>
-    </TextWrapper>
+        <ParaGraph>
+          <p>
+            {mapDakorInfo}
+          </p>
+        </ParaGraph>
+      </TextWrapper>
     </ServiceWrapper>
   );
 };
