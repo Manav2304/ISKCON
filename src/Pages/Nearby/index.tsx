@@ -1,6 +1,6 @@
 import React from 'react';
-import { IMAGES} from './constant';
-import { paragraph1,paragraph2,paragraph3,paragraph4,paragraph5,paragraph6 } from './constant';
+import {IMAGES} from './constant';
+import {dakorInfo} from './constant';
 import { ServiceWrapper, ImageSlide, TextWrapper, HeadIng1, ParaGraph} from './style';
 
 
@@ -31,14 +31,7 @@ const Nearby = () => {
         </div>
     <ParaGraph>
         <p>
-      {[
-          paragraph1,paragraph2,paragraph3,paragraph4,paragraph5,paragraph6,
-       ].map((paragraph, index) => (
-        <React.Fragment key={index}>
-        {paragraph}
-        <br /><br/>
-         </React.Fragment>
-        ))}
+     {dakorInfo}
         </p>
     </ParaGraph>
     </TextWrapper>
