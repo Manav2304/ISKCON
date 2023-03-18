@@ -7,8 +7,10 @@ import {
   MDBIcon,
 } from "mdb-react-ui-kit";
 import { templeTimes } from "./constant";
-import footerlogo from "../../images/footerlogo.jpeg";
-import { FooterLogoStyle } from "./style";
+import footerlogo from "../../assets/footerlogo.jpeg";
+import { FooterLogoStyle, ContactStyle } from "./style";
+import { socialmediaIcon, contactInfo } from "./constant";
+
 export const Footer = () => {
   return (
     <MDBFooter className="text-center text-lg-start text-muted bg-dark ">
@@ -18,38 +20,7 @@ export const Footer = () => {
         </div>
 
         <div>
-          {[
-            {
-              name: "Facebook",
-              href: "https://www.facebook.com/groups/254840054550446",
-              icon: "facebook-f",
-            },
-            {
-              name: "Twitter",
-              href: "https://twitter.com/iskcon_vvn",
-              icon: "twitter",
-            },
-            {
-              name: "Google",
-              href: "#",
-              icon: "google",
-            },
-            {
-              name: "Instagram",
-              href: "#",
-              icon: "instagram",
-            },
-            {
-              name: "LinkedIn",
-              href: "#",
-              icon: "linkedin",
-            },
-            {
-              name: "Telegram",
-              href: "https://t.me/iskconvvn",
-              icon: "telegram",
-            },
-          ].map((item) => (
+          {socialmediaIcon.map((item) => (
             <a key={item.name} href={item.href} className="me-4 text-reset">
               <MDBIcon color="secondary" fab icon={item.icon} />
             </a>
@@ -57,7 +28,7 @@ export const Footer = () => {
         </div>
       </section>
 
-      <section className="">
+      <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <MDBContainer className="text-center text-md-start mt-5">
           <MDBRow className="mt-3">
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
@@ -68,34 +39,20 @@ export const Footer = () => {
               <div dangerouslySetInnerHTML={{ __html: templeTimes }} />
             </MDBCol>
 
-            {/* <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
-              <img url="C:\Users\lenovo\OneDrive\Desktop\New folder\ISKCON\src\images\footer.jpeg" />
-            </MDBCol> */}
-
             <FooterLogoStyle>
               <MDBRow>
                 <img src={footerlogo} />
               </MDBRow>
             </FooterLogoStyle>
-
-            <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
-              <p>
-                <MDBIcon color="secondary" icon="home" className="me-2" />
-                New York, NY 10012, US
-              </p>
-              <p>
-                <MDBIcon color="secondary" icon="envelope" className="me-3" />
-                info@example.com
-              </p>
-              <p>
-                <MDBIcon color="secondary" icon="phone" className="me-3" /> + 01
-                234 567 88
-              </p>
-              <p>
-                <MDBIcon color="secondary" icon="print" className="me-3" /> + 01
-                234 567 89
-              </p>
+            <MDBCol>
+              <ContactStyle>
+                {contactInfo.map((info, index) => (
+                  <div key={index}>
+                    <i className={`fa fa-${info.icon}`} />
+                    <span>{info.text}</span>
+                  </div>
+                ))}
+              </ContactStyle>
             </MDBCol>
           </MDBRow>
         </MDBContainer>

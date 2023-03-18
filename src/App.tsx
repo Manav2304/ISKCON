@@ -10,11 +10,11 @@ import {
 import NavigationBar from "./Components/Navbar";
 import HomePage from "./Pages/Home";
 import { Footer } from "./Components/Footer";
-import { bgimage } from "./bgImage";
+import { bgImage } from "./bgImage";
 export const App: React.FunctionComponent = () => {
   return (
     <>
-      <div style={bgimage.body}>
+      <div style={bgImage.body}>
         <BrowserRouter>
           <NavigationBar />
           <Routes>

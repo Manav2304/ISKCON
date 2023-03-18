@@ -1,7 +1,6 @@
-export const bgimage = {
+export const bgImage = {
   body: {
-    backgroundImage: `url(${require("./images/bgimage.png")})`,
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
+    backgroundImage: `url(${require("./assets/bgimage.png")})`,
+    backgroundRepeat: "repeat",
   },
 };
