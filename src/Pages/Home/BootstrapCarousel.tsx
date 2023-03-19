@@ -1,22 +1,17 @@
 import { SetStateAction, useState } from "react";
-import bgimage from "../../assets/bgimage.png";
+import About from "../../assets/About.jpg";
+import image1 from "../../assets/image2.jpg";
+import image2 from "../../assets/image2.jpg";
 import { StyledCarousel } from "./style";
 const images = [
   {
-    src: "https://www.shutterstock.com/image-illustration/illustration-lord-krishna-happy-janmashtami-260nw-2027812538.jpg",
-    caption: "First slide label",
-    description: "Some representative placeholder content for the first slide.",
+    src: image1,
   },
   {
-    src: "https://www.shutterstock.com/image-vector/janmashtami-festival-vector-lord-krishna-260nw-2178627335.jpg",
-    caption: "Second slide label",
-    description:
-      "Some representative placeholder content for the second slide.",
+    src: image2,
   },
   {
-    src: bgimage,
-    caption: "Third slide label",
-    description: "Some representative placeholder content for the third slide.",
+    src: About,
   },
 ];
 
@@ -46,7 +41,7 @@ export function BootstrapCarousel() {
             ))}
           </div>
           <div className="carousel-inner">
-            {images.map(({ src, caption, description }, index) => (
+            {images.map(({ src }, index) => (
               <div
                 className={`carousel-item ${
                   index === activeIndex ? "active" : ""
@@ -54,10 +49,6 @@ export function BootstrapCarousel() {
                 key={index}
               >
                 <img src={src} className="d-block w-100" alt="..." />
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>{caption}</h5>
-                  <p>{description}</p>
-                </div>
               </div>
             ))}
           </div>

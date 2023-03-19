@@ -1,27 +1,10 @@
 import styled from "styled-components";
 
 export const StyledCarousel = styled.div`
-  .carousel-item {
-    height: 570px;
-  }
+  margin-top: 69px;
 
-  .carousel-caption {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    color: #fff;
-  }
-
-  .carousel-caption h5 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  .carousel-caption p {
-    font-size: 1.2rem;
+  .d-block {
+    margin-top: 80px;
   }
 `;
 
@@ -31,6 +14,9 @@ export const ImageStyle = styled.div`
   align-items: center;
   margin: 40px;
 
+  .card-img-top {
+    height: 50vh;
+  }
   @media only screen and (max-width: 768px) {
     img {
       max-width: 100%;
@@ -43,7 +29,8 @@ export const TextStyle = styled.div`
   text-align: justify;
   margin-left: 50px;
   margin-right: 50px;
-  // color: #fc9e39;
+  margin-bottom: 50px;
+  color: #ad0d0d;
   font-family: "Times New Roman", Times, serif;
   @media only screen and (max-width: 768px) {
     margin: 10px;
@@ -53,8 +40,13 @@ export const TextStyle = styled.div`
 export const HeadingStyle = styled.div`
   text-align: center;
   font-family: "Times New Roman", Times, serif;
+  color: #7e5959;
 
   @media only screen and (max-width: 768px) {
     font-size: 1.5rem;
   }
+`;
+export const Image = styled.img`
+  width: 100%;
+  max-width: 500px;
 `;
