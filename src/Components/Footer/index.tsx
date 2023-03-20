@@ -7,12 +7,7 @@ import {
   MDBIcon,
 } from "mdb-react-ui-kit";
 import footerlogo from "../../assets/footerlogo.jpeg";
-import {
-  FooterLogoStyle,
-  ContactStyle,
-  TempletimeStyle,
-  BgColor,
-} from "./style";
+import { FooterLogoStyle, ContactStyle, BgColor } from "./style";
 import { socialmediaIcon, contactInfo, templeTimes } from "./constant";
 
 export const Footer = () => {

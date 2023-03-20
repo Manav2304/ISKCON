@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledCarousel = styled.div`
   margin-top: 69px;
-
+  margin-bottom: 50px;
   .d-block {
     margin-top: 80px;
   }
@@ -41,12 +41,16 @@ export const HeadingStyle = styled.div`
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   color: #7e5959;
-
+  .image {
+    margin-top: 0px;
+  }
+  padding: 60px;
+  text-align: center;
   @media only screen and (max-width: 768px) {
     font-size: 1.5rem;
   }
 `;
 export const Image = styled.img`
   width: 100%;
-  max-width: 500px;
+  max-width: 300px;
 `;

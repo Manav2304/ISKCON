@@ -8,9 +8,7 @@ export const ContactStyle = styled.div`
   margin-left: 80px;
   margin-top: 50px;
 `;
-export const TempletimeStyle = styled.div`
-  height: 50vh;
-`;
+
 export const BgColor = styled.div`
   background-color: #996633;
   color: white;

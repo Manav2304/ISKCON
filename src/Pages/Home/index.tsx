@@ -7,7 +7,7 @@ import {
   Image,
 } from "./style";
 import { aboutUs, history, goals, philosophy, founder } from "./constant";
-import Titlebase from "../../assets/Titel Base.png";
+import Titlebase from "../../assets/Titel+Base.png";
 import about from "../../assets/About.jpg";
 import { BootstrapCarousel } from "./BootstrapCarousel";
 const mapAboutUs = aboutUs.map((paragraph) => <p>{paragraph}</p>);
@@ -22,8 +22,8 @@ const Homepage: React.FC = () => {
         <BootstrapCarousel />
       </StyledCarousel>
       <HeadingStyle>
-        <Image src={Titlebase} className="image" />
-        <h2>ABOUT US</h2>
+        <h1>ABOUT US</h1>
+        <Image src={Titlebase} />
         <ImageStyle>
           <img src={about} className="rounded" />
         </ImageStyle>
