@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const StyledCarousel = styled.div`
-  margin-top: 69px;
+  margin-top: 19.5px;
   margin-bottom: 50px;
+
   .d-block {
     margin-top: 80px;
   }
@@ -17,10 +18,23 @@ export const ImageStyle = styled.div`
   .card-img-top {
     height: 50vh;
   }
+
   @media only screen and (max-width: 768px) {
     img {
       max-width: 100%;
       max-height: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    .card-img-top {
+      height: 30vh;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .card-img-top {
+      height: 40vh;
     }
   }
 `;
@@ -32,8 +46,18 @@ export const TextStyle = styled.div`
   margin-bottom: 50px;
   color: #ad0d0d;
   font-family: "Times New Roman", Times, serif;
+
   @media only screen and (max-width: 768px) {
     margin: 10px;
+    font-size: 0.8rem;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    font-size: 1rem;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 1.2rem;
   }
 `;
 
@@ -41,15 +65,25 @@ export const HeadingStyle = styled.div`
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   color: #7e5959;
-  .image {
-    margin-top: 0px;
-  }
   padding: 60px;
   text-align: center;
+
   @media only screen and (max-width: 768px) {
     font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    font-size: 2rem;
+    padding: 40px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 3rem;
+    padding: 60px;
   }
 `;
+
 export const Image = styled.img`
   width: 100%;
   max-width: 300px;
