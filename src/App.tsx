@@ -2,18 +2,14 @@ import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import NavigationBar from "./Components/Navbar";
-import MyCarousel from "./Pages/Home";
-import AboutUs from "./Pages/About";
-import Home from "./Pages/Home";
-import DonationPage from "./Pages/Donation";
-import { LifeTimeMembership } from "./Pages/Servicespage/LifeTimeMembership";
-import { IskconYouthForum } from "./Pages/Servicespage/IskconYouthForum";
-import { GuestHouse } from "./Pages/Servicespage/GuestHouse";
+import { LifeTimeMembership } from "./Pages/Servicespage/Life-Time-Membership";
+import { IskconYouthForum } from "./Pages/Servicespage/Iskcon-Youth-Forum";
+import { GuestHouse } from "./Pages/Servicespage/Guest-House";
 import { Gaushala } from "./Pages/Servicespage/Gaushala";
-import { DeityWorship } from "./Pages/Servicespage/DeityWorship";
-import { DevoteeKitchen } from "./Pages/Servicespage/DevoteeKitchen";
-import { KirtanAtIskcon } from "./Pages/Servicespage/KirtanAtIskcon";
-import { BookDistribution } from "./Pages/Servicespage/BookDistribution";
+import { DeityWorship } from "./Pages/Servicespage/Deity-Worship";
+import { DevoteeKitchen } from "./Pages/Servicespage/Devotee-Kitchen";
+import { KirtanAtIskcon } from "./Pages/Servicespage/Kirtan-At-Iskcon";
+import { Book } from "./Pages/Servicespage/Book-Distribution";
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -21,10 +17,6 @@ export const App: React.FunctionComponent = () => {
       <BrowserRouter>
         <NavigationBar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Pages/Home" element={<MyCarousel />} />
-          <Route path="/Pages/About" element={<AboutUs />} />
-          <Route path="/Pages/Donation" element={<DonationPage />} />
           <Route
             path="/Pages/Servicespage/LifeTimeMembership"
             element={<LifeTimeMembership />}
@@ -51,8 +43,8 @@ export const App: React.FunctionComponent = () => {
             element={<KirtanAtIskcon />}
           />
           <Route
-            path="/Pages/Servicespage/Bookdistribution"
-            element={<BookDistribution />}
+            path="/Pages/Servicespage/Book-Distribution"
+            element={<Book />}
           />
         </Routes>
       </BrowserRouter>

@@ -1,5 +1,5 @@
 import React from "react";
-import { gaushala } from "./constant";
+import { kirtanatiskcon } from "./constant";
 import {
   HeadStyle,
   ParagraphStyle,
@@ -7,15 +7,15 @@ import {
   TextWrapper,
 } from "../style";
 
-const mapgaushala = gaushala.map((paragraph) => <p>{paragraph}</p>);
-export const Gaushala = () => {
+const mapkirtanatiskcon = kirtanatiskcon.map((paragraph) => <p>{paragraph}</p>);
+export const KirtanAtIskcon = () => {
   return (
     <ServiceWrapper>
       <HeadStyle>
-        <h1> Goverdhan Gaushala</h1>
+        <h1>Kirtan At Iskcon </h1>
       </HeadStyle>
       <TextWrapper>
-        <ParagraphStyle>{gaushala}</ParagraphStyle>
+        <ParagraphStyle>{mapkirtanatiskcon}</ParagraphStyle>
       </TextWrapper>
     </ServiceWrapper>
   );

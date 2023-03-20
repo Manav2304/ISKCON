@@ -8,8 +8,8 @@ export const ServiceWrapper = styled.div`
 `;
 
 export const HeadStyle = styled.h1`
-  font-size: 3 rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin: 2rem;
   text-align: center;
 `;
 
@@ -28,13 +28,9 @@ export const TextWrapper = styled.div`
   color: #17202a;
 `;
 
-export const ParagraphStyle = styled.p`
+export const ParagraphStyle = styled.div`
     font-size: 1.12rem;
     line-height: 1.5;
-    text-align: left;
-
-
-  br {
-  margin - bottom: 2rem;
+    text-align: justify;
 }
 `;

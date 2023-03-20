@@ -15,19 +15,16 @@ const NavigationBar = () => {
             <Link className="nav-link " to="/About">
               AboutUs
             </Link>
-
             <Link className="nav-link" to="/Donation">
               Donation
             </Link>
-
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
                 Services
               </Dropdown.Toggle>
-
               <Dropdown.Menu>
                 <Dropdown.Item href="/Pages/Servicespage/LifeTimeMembership">
-                  Life Time Membership{" "}
+                  Life Time Membership
                 </Dropdown.Item>
                 <Dropdown.Item href="/Pages/Servicespage/IskconYouthForum">
                   Iskcon Youth Forum - IYF
