@@ -18,60 +18,19 @@ interface Festival {
   description: string;
 }
 
-interface FestivalCardProps {
-  festival: Festival;
-  showMore: boolean;
-  onLearnMoreClick: () => void;
-  onShowLessClick: () => void;
-}
+const FestivalPage = () => {
+  const [selectedFestivals, setSelectedFestivals] = useState<Festival[]>([]);
 
-const FestivalCard = ({
-  festival,
-  showMore,
-  onLearnMoreClick,
-  onShowLessClick,
-}: FestivalCardProps) => {
-  const isFestivalSelected = () => showMore;
-
-  return (
-    <div>
-      <FestivalImage src={festival.image} />
-      <FestivalInfo>
-        <HeadIng2>
-          <h2>{festival.name}</h2>
-        </HeadIng2>
-        <ParaGraph1>
-          <p>{festival.date}</p>
-        </ParaGraph1>
-        {isFestivalSelected() ? (
-          <>
-            <Description>{festival.description}</Description>
-            <Button>
-              <button onClick={() => onShowLessClick()}>Show Less</button>
-            </Button>
-          </>
-        ) : (
-          <>
-            <Description>{festival.description.substring(0, 100)}...</Description>
-            <Button>
-              <button onClick={() => onLearnMoreClick()}>Read More</button>
-            </Button>
-          </>
-        )}
-      </FestivalInfo>
-    </div>
-  );
-};
-
-export const FestivalPage = () => {
-  const [showMore, setShowMore] = useState<boolean>(false);
-
-  const handleLearnMoreClick = () => {
-    setShowMore(true);
+  const handleLearnMoreClick = (festival: Festival) => {
+    setSelectedFestivals((selectedFestivals) => [...selectedFestivals, festival]);
   };
 
-  const handleShowLessClick = () => {
-    setShowMore(false);
+  const handleShowLessClick = (festival: Festival) => {
+    setSelectedFestivals((selectedFestivals) => selectedFestivals.filter((selectedFestival) => selectedFestival !== festival));
+  };
+
+  const isFestivalSelected = (festival: Festival) => {
+    return selectedFestivals.some((selectedFestival) => selectedFestival === festival);
   };
 
   return (
@@ -81,16 +40,38 @@ export const FestivalPage = () => {
       </HeadIng1>
       <FestivalContainer>
         {festivals.map((festival: Festival) => (
-          <FestivalCard
-            key={festival.name}
-            festival={festival}
-            showMore={showMore}
-            onLearnMoreClick={handleLearnMoreClick}
-            onShowLessClick={handleShowLessClick}
-          />
+          <div key={festival.name}>
+            <FestivalImage src={festival.image} />
+            <FestivalInfo>
+              <HeadIng2>
+                <h2>{festival.name}</h2>
+              </HeadIng2>
+              <ParaGraph1>
+                <p>{festival.date}</p>
+              </ParaGraph1>
+              {isFestivalSelected(festival) ? (
+                <>
+                  <Description>{festival.description}</Description>
+                  <Button>
+                    <button onClick={() => handleShowLessClick(festival)}>Show Less</button>
+                  </Button>
+                </>
+              ) : (
+                <>
+                  <Description>{festival.description.substring(0, 100)}...</Description>
+                  <Button>
+                    <button onClick={() => handleLearnMoreClick(festival)}>
+                      Read More
+                    </button>
+                  </Button>
+                </>
+              )}
+            </FestivalInfo>
+          </div>
         ))}
       </FestivalContainer>
     </>
   );
 };
+
 export default FestivalPage;

@@ -4,7 +4,7 @@ import img3 from "../../image/img3.jpg";
 import img4 from "../../image/img4.jpg";
 import img5 from "../../image/img5.jpg";
 import img6 from "../../image/img6.jpg";
-import { Festival } from "./Festival";
+import { Festival } from "./types";
 
 
 export const festivals: Festival[] = [

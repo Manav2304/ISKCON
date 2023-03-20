@@ -1,5 +1,3 @@
-import React from "react";
-import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import FestivalDropdown from "../../Pages/Festival/Dropdown";
 import { NavStyle } from "./style";
