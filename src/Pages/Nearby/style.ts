@@ -5,20 +5,21 @@ export const ServiceWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   color: #17202A;
+  padding: 1rem;
+  margin: 1rem;
 `;
 
 export const HeadIng1 = styled.h1`
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  text-align: center;
+font-size: 3rem; 
+font-weight: bold;
+text-align: center;
 `;
 
 export const ImageSlide = styled.img`
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
   object-fit: auto;
   padding: 0.5rem;
-  margin: 0.5rem;
   margin-bottom: 2rem;
 `;
 

@@ -8,7 +8,7 @@ const Nearby = () => {
   return (
     <ServiceWrapper>
       <HeadIng1>
-        <h1>Dakor Dham </h1>
+       Dakor Dham 
       </HeadIng1>
       <TextWrapper>
 
