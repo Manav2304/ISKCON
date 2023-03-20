@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AboutUsText = styled.div`
   .container {
-    margin: "50px";
+    margin: 50px;
     border: solid black;
     cursor: auto;
     color: white;
