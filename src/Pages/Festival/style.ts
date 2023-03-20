@@ -3,13 +3,13 @@ import styled from "styled-components";
 export const FestivalContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
+  gap: 80px;
   margin: 50px;
 `;
 
 export const FestivalImage = styled.img`
-  width: 100%;
-  height: 350px;
+  width: 470px;
+  height: 300px;
   object-fit: cover;
 `;
 

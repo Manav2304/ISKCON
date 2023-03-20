@@ -16,7 +16,7 @@ export const festivals: Festival[] = [
     image: img1,
   },
   {
-    name: "Ratha Yatra",
+    name: "Rath Yatra",
     date: "Jun 20, 2023",
     description:
       "Ratha Yatra is a Hindu festival that celebrates the journey of Lord Jagannath, his brother Balabhadra, and sister Subhadra from their temple to their aunt's temple. It is celebrated with great pomp and show at ISKCON temples around the world.",
@@ -30,7 +30,7 @@ export const festivals: Festival[] = [
     image: img3,
   },
   {
-    name: "Radhastami",
+    name: "Radhasthami",
     date: "September 23, 2023",
     description:
       "Radhastami, another important festival celebrated at ISKCON Vallabh Vidya Nagar, is dedicated to the worship of Radha, the consort of Lord Krishna. The temple is transformed into a veritable wonderland, with an array of flowers, lights, and other decorations, all in honor of Radha. Devotees engage in joyful kirtan and dance performances, and offer bhog to Radha. The festival is a celebration of love and devotion, and is a beautiful reminder of the eternal bond between Radha and Krishna. ",
@@ -44,7 +44,7 @@ export const festivals: Festival[] = [
     image: img5,
   },
   {
-    name: "Diwali",
+    name: "Kartik Dipawali",
     date: "November 12, 2023",
     description:
       "Diwali, the festival of lights, is celebrated with great gusto at ISKCON Vallabh Vidya Nagar. The temple is illuminated with countless diyas (oil lamps), and the air is filled with the fragrance of incense and flowers. Devotees engage in special prayers and rituals, and offer bhog to the deity. The festival is a celebration of the victory of light over darkness, and is a beautiful reminder of the eternal wisdom and grace of Lord Krishna.",

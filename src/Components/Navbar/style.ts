@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const NavStyle = styled.div`
   background-color: black;
-  padding: 1rem;
+  padding: 1.5rem;
 
   .nav-link {
     color: dark black;

@@ -1,5 +1,7 @@
 import React from "react";
+import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import FestivalDropdown from "../../Pages/Festival/Dropdown";
 import { NavStyle } from "./style";
 const NavigationBar = () => {
   return (
@@ -10,19 +12,9 @@ const NavigationBar = () => {
             <Link className="nav-link" to="/Pages/Home">
               Home
             </Link>
-            <Link className="nav-link " aria-current="page" to="/Pages/About">
-              AboutUs
-            </Link>
-
-            <Link className="nav-link" to="Pages/Donation">
-              Donation
-            </Link>
-            <Link className="nav-link" to="#">
-              GO SEVA
-            </Link>
-            <Link className="nav-link" to="Pages/Festival">
-              Festival           
-            </Link>
+            <Link className="nav-link" to="/Pages/Festival">
+              <FestivalDropdown />
+            </Link>    
           </div>
         </nav>
       </div>
