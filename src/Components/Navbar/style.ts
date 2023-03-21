@@ -3,7 +3,7 @@ import title from "../../assets/bgimage.png";
 
 export const NavStyle = styled.div`
   .navbar {
-    height: 100px;
+    height: 90px;
     background-image: url(${title});
     background-repeat: repeat;
     @media (max-width: 767px) {

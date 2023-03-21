@@ -15,20 +15,6 @@ export const Footer = () => {
     <MDBFooter className="text-center text-lg-start text-muted  ">
       <BgColor>
         <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-          <div className="me-5 d-none d-lg-block">
-            <span>Get connected with us on social networks:</span>
-          </div>
-
-          <div>
-            {socialmediaIcon.map((item) => (
-              <a key={item.name} href={item.href} className="me-4 text-reset">
-                <MDBIcon fab icon={item.icon} />
-              </a>
-            ))}
-          </div>
-        </section>
-
-        <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <MDBContainer className="text-center text-md-start mt-5">
             <MDBRow className="mt-3">
               <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
