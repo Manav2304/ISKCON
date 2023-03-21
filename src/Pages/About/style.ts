@@ -12,7 +12,6 @@ export const AboutUsText = styled.div`
 export const PageBackground = styled.div`
   .manav {
     border-radius: 5px;
-
     background-repeat: repeat;
     background-image: url("https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=600");
   }
