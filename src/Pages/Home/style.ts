@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledCarousel = styled.div`
-  margin-top: 13px;
+  margin-top: 5px;
   margin-bottom: 50px;
 
   .d-block {

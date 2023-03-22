@@ -24,21 +24,7 @@ export const socialmediaIcon = [
     href: "https://twitter.com/iskcon_vvn",
     icon: "twitter",
   },
-  // {
-  //   name: "Google",
-  //   href: "#",
-  //   icon: "google",
-  // },
-  // {
-  //   name: "Instagram",
-  //   href: "#",
-  //   icon: "instagram",
-  // },
-  // {
-  //   name: "LinkedIn",
-  //   href: "#",
-  //   icon: "linkedin",
-  // },
+
   {
     name: "Telegram",
     href: "https://t.me/iskconvvn",
@@ -58,8 +44,4 @@ export const contactInfo = [
     icon: "phone",
     text: "+ 01 234 567 88",
   },
-  // {
-  //   icon: "print",
-  //   text: "+ 01 234 567 89",
-  // },
 ];

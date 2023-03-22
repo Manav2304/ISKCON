@@ -59,7 +59,7 @@ export function BootstrapCarousel() {
             data-bs-slide="prev"
             onClick={() =>
               handleSlideChange(
-                (activeIndex + images.length - 1) % images.length
+                (activeIndex + images.length - 1) % images.length,
               )
             }
           >

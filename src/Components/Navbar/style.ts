@@ -111,3 +111,6 @@ export const TransparentDropdown = styled(Dropdown)`
     color: white;
   }
 `;
+export const Image = styled.div`
+  justify-content: center;
+`;
