@@ -1,14 +1,5 @@
 import styled from "styled-components";
 
-export const StyledCarousel = styled.div`
-  margin-top: 13px;
-  margin-bottom: 50px;
-
-  .d-block {
-    margin-top: 80px;
-  }
-`;
-
 export const ImageStyle = styled.div`
   display: flex;
   justify-content: center;
@@ -62,7 +53,6 @@ export const TextStyle = styled.div`
 `;
 
 export const HeadingStyle = styled.div`
-  text-align: center;
   font-family: "Times New Roman", Times, serif;
   color: #7e5959;
   padding: 60px;

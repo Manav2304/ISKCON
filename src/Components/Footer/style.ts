@@ -16,14 +16,14 @@ export const ContactStyle = styled.div`
 `;
 
 export const BgColor = styled.div`
-  background-color: #996633;
+  background-color: #963;
   color: white;
 
   @media only screen and (max-width: 768px) {
-    background-color: #663300;
+    background-color: #630;
   }
 
   @media only screen and (min-width: 1200px) {
-    background-color: #cc9966;
+    background-color: #c96;
   }
 `;

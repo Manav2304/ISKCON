@@ -62,7 +62,6 @@ export const TextStyle = styled.div`
 `;
 
 export const HeadingStyle = styled.div`
-  text-align: center;
   font-family: "Times New Roman", Times, serif;
   color: #7e5959;
   padding: 60px;

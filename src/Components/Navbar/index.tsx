@@ -4,12 +4,12 @@ import { NavStyle } from "./style";
 import logo from "../../assets/isckonlogo.png";
 import { socialmediaIcon } from "../../Components/Footer/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
-import { DropDown } from "../Dropdown";
+import { DropDown } from "./Dropdown/index";
 
 const NavigationBar = () => {
   return (
     <NavStyle>
-      <nav className="navbar fixed-top navbar-expand-lg bg-dark ">
+      <nav className="navbar fixed-top navbar-expand-lg ">
         <div className="container-fluid">
           <Link to="#">ISKCON</Link>
           <Link to="/donation">Donation</Link>

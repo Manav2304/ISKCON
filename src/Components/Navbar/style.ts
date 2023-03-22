@@ -6,10 +6,12 @@ export const NavStyle = styled.div`
     height: 90px;
     background-image: url(${title});
     background-repeat: repeat;
+
     @media (max-width: 767px) {
       .navbar {
         height: 80px;
       }
+
       img {
         height: 60px;
       }
@@ -19,14 +21,17 @@ export const NavStyle = styled.div`
       .navbar {
         height: 120px;
       }
+
       img {
         height: 100px;
       }
     }
+
     @media (max-width: 480px) {
       .navbar {
         height: 60px;
       }
+
       img {
         height: 40px;
       }
