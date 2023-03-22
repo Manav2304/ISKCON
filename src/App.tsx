@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  BrowserRouter,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import NavigationBar from "./Components/Navbar";
 import MyCarousel from "./Pages/Home";
@@ -17,7 +11,7 @@ import Nearby from "./Pages/Nearby";
 export const App: React.FunctionComponent = () => {
   return (
     <>
-      <BrowserRouter>
+      <Router>
         <NavigationBar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -26,7 +20,7 @@ export const App: React.FunctionComponent = () => {
           <Route path="/pages/Donation" element={<DonationPage />} />
           <Route path="/Pages/Nearby"element={<Nearby />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </>
   );
 };
