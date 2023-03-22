@@ -1,96 +1,97 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Container = styled.div`
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background: Transparent;
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
 `;
 
 export const Title = styled.h1`
   font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+`;
+
+export const Paragraph = styled.div`
+font-size: 1rem;
+text-align: justify;
+font-family: 'Times New Roman', Times, serif;
+`;
+
+export const TableWrapper = styled.div`
+  margin-top: 20px;
 `;
 
 export const Table = styled.table`
-  width: 100%;
   border-collapse: collapse;
-  margin-bottom: 20px;
-  background: Transparent;
-`;
-
-export const DonationHeader = styled.th`
-  font-weight: bold;
-  font-size: 2rem;
-  text-align: left;
-  padding: 10px;
-  border-bottom: 0.3rem solid #a0522d;
-`;
-
-export const TableHeader = styled.th`
-  font-weight: bold;
-  text-align: left;
-  padding: 10px;
-  border-bottom: 0.3rem solid #a0522d;
+  width: 100%;
 `;
 
 export const TableRow = styled.tr`
-  &:nth-child(even) {
-    background: Transparent;
-  }
+  border-bottom: 1px solid #ccc;
 `;
 
-export const TableCell = styled.td`
+export const TableHeader = styled.th`
+  text-align: left;
   padding: 10px;
-  color: #a52a2a;
-  border-bottom: 0.19rem solid #8b0000;
-  background: Transparent;
 `;
 
-export const Button = styled.button`
-  background-color: #800000;
-  color: #f5deb3;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #3e8e41;
-  }
+export const TableData = styled.td`
+  text-align: left;
+  padding: 10px;
+`;
+export const InfoList = styled.ul`
+  list-style: none;
+  margin: 0;
+  padding: 0;
 `;
 
-export const Form = styled.form`
+export const InfoItem = styled.li`
   display: flex;
   flex-direction: column;
-`;
-
-export const Label = styled.label`
-  margin-bottom: 10px;
-`;
-
-export const Input = styled.input`
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 8px;
   margin-bottom: 20px;
-  font-size: 16px;
+`;
 
+export const Label = styled.span`
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+`;
+
+export const Detail = styled.span`
+  font-size: 16px;
+  margin-bottom: 5px;
+`;
+
+interface CopyButtonProps {
+  copied: boolean;
+}
+
+export const CopyButton = styled.button<CopyButtonProps>`
+  background-color: ${({ copied }) => (copied ? '#34a853' : '#ad0d0d')};
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.5s ease-in-out;
+
+  &:hover {
+    background-color: ${({ copied }) => (copied ? '#5cb85c' : '#0069d9')};
+  }
+  
   &:focus {
     outline: none;
-    border-color: #0077ff;
   }
-`;
-
-export const NameInput = styled.form`
-  color: #a52a2a;
-`;
-
-export const PhoneInput = styled.form`
-  color: #a52a2a;
-`;
-
-export const EmailInput = styled.form`
-  color: #a52a2a;
+  
+  &:active {
+    background-color: ${({ copied }) => (copied ? '#5cb85c' : '#007bff')};
+  }
+  
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    padding: 3px 8px;
+  }
 `;

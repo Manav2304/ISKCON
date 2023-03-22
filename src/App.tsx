@@ -9,7 +9,7 @@ import NavigationBar from "./Components/Navbar";
 import MyCarousel from "./Pages/Home";
 import Home from "./Pages/Home";
 import DonationPage from "./Pages/Donation";
-import DonationFormPage from "./Pages/Donation/form";
+
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -19,8 +19,7 @@ export const App: React.FunctionComponent = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Pages/Home" element={<MyCarousel />} />
-          <Route path="/pages/Donation/" element={<DonationPage />} />
-               <Route path="/donate" element={<DonationFormPage />} />
+          <Route path="/pages/Donation/" element={<DonationPage />} />      
         </Routes>
       </BrowserRouter>
     </>
