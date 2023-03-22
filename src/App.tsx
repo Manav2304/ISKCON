@@ -6,7 +6,6 @@ import MyCarousel from "./Pages/Home";
 import Home from "./Pages/Home";
 import Visitus from "./Pages/Visitus";
 
-
 export const App: React.FunctionComponent = () => {
   return (
     <>
