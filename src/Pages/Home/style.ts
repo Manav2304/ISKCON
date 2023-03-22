@@ -85,5 +85,5 @@ export const HeadingStyle = styled.div`
 
 export const Image = styled.img`
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
 `;

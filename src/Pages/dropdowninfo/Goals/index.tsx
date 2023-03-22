@@ -1,4 +1,4 @@
-import { goals } from "../constant";
+import { goals } from "./constant";
 import TextSection from "../TesxtSection";
 
 export const Goalspage: React.FC = () => {

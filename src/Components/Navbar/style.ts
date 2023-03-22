@@ -7,6 +7,7 @@ export const NavStyle = styled.div`
     height: 85px;
     background-image: url(${title});
     background-repeat: repeat;
+    color: #7e5959;
 
     @media (max-width: 767px) {
       .navbar {
@@ -110,7 +111,4 @@ export const TransparentDropdown = styled(Dropdown)`
   .dropdown-item {
     color: white;
   }
-`;
-export const Image = styled.div`
-  justify-content: center;
 `;

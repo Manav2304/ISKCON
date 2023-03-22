@@ -1,5 +1,5 @@
 import TextSection from "../TesxtSection";
-import { history } from "../constant";
+import { history } from "./constant";
 
 export const Historypage: React.FC = () => {
   return (

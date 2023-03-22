@@ -1,5 +1,5 @@
 import TextSection from "../TesxtSection";
-import { philosophy } from "../constant";
+import { philosophy } from "./constant";
 
 export const Philosophypage: React.FC = () => {
   return (

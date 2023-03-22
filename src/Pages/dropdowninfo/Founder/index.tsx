@@ -1,4 +1,4 @@
-import { founder } from "../constant";
+import { founder } from "./constant";
 import TextSection from "../TesxtSection";
 
 export const Founderpage: React.FC = () => {
