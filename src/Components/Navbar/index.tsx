@@ -11,12 +11,15 @@ const NavigationBar = () => {
     <NavStyle>
       <nav className="navbar fixed-top navbar-expand-lg ">
         <div className="container-fluid">
-          <Link to="#">ISKCON</Link>
-          <Link to="/donation">Donation</Link>
+          <DropDown />
+          <Link to="#">Festival</Link>
+          <Link to="#">Services</Link>
           <Link to="/">
             <img src={logo} alt="Logo" />
           </Link>
-          <DropDown />
+          <Link to="#">Conatact</Link>
+          <Link to="#">Media</Link>
+          <Link to="/donation">Donation</Link>
           <div>
             {socialmediaIcon.map((item) => (
               <a key={item.name} href={item.href} className="me-4 text-reset">
