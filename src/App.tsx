@@ -14,7 +14,7 @@ import DonationPage from "./Pages/Donation";
 export const App: React.FunctionComponent = () => {
   return (
     <>
-      <BrowserRouter>
+    <BrowserRouter>
         <NavigationBar />
         <Routes>
           <Route path="/" element={<Home />} />
