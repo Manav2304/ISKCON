@@ -1,22 +1,11 @@
-import React from "react";
+import TextSection from "../PageLayout/index";
 import { gaushala } from "./constant";
-import {
-  HeadStyle,
-  ParagraphStyle,
-  ServiceWrapper,
-  TextWrapper,
-} from "../style";
 
-const mapgaushala = gaushala.map((paragraph) => <p>{paragraph}</p>);
-export const Gaushala = () => {
+export const Gaushala: React.FC = () => {
   return (
-    <ServiceWrapper>
-      <HeadStyle>
-        <h1> Goverdhan Gaushala</h1>
-      </HeadStyle>
-      <TextWrapper>
-        <ParagraphStyle>{gaushala}</ParagraphStyle>
-      </TextWrapper>
-    </ServiceWrapper>
+    <TextSection
+      title="Goverdhan Gaushala"
+      content={gaushala} 
+      imageUrl={""}    />
   );
-};
+}

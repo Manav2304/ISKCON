@@ -2,14 +2,14 @@ import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import NavigationBar from "./Components/Navbar";
-import { LifeTimeMembership } from "./Pages/Servicespage/Life-Time-Membership";
-import { IskconYouthForum } from "./Pages/Servicespage/Iskcon-Youth-Forum";
-import { GuestHouse } from "./Pages/Servicespage/Guest-House";
+import { LifeTimeMembership } from "./Pages/Servicespage/LifeTimeMembership";
+import { IskconYouthForun } from "./Pages/Servicespage/IskconYouthForum";
+import { GuestHouse } from "./Pages/Servicespage/GuestHouse";
 import { Gaushala } from "./Pages/Servicespage/Gaushala";
-import { DeityWorship } from "./Pages/Servicespage/Deity-Worship";
-import { DevoteeKitchen } from "./Pages/Servicespage/Devotee-Kitchen";
-import { KirtanAtIskcon } from "./Pages/Servicespage/Kirtan-At-Iskcon";
-import { Book } from "./Pages/Servicespage/Book-Distribution";
+import { DeityWorship } from "./Pages/Servicespage/DeityWorship";
+import { DevoteeKitchen } from "./Pages/Servicespage/DevoteeKitchen";
+import { KirtanAtIskcon } from "./Pages/Servicespage/KirtanAtIskcon";
+import { BookDistribution } from "./Pages/Servicespage/BookDistribution";
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -23,7 +23,7 @@ export const App: React.FunctionComponent = () => {
           />
           <Route
             path="/Pages/Servicespage/IskconYouthForum"
-            element={<IskconYouthForum />}
+            element={<IskconYouthForun />}
           />
           <Route
             path="/Pages/Servicespage/GuestHouse"
@@ -43,8 +43,8 @@ export const App: React.FunctionComponent = () => {
             element={<KirtanAtIskcon />}
           />
           <Route
-            path="/Pages/Servicespage/Book-Distribution"
-            element={<Book />}
+            path="/Pages/Servicespage/BookDistribution"
+            element={<BookDistribution />}
           />
         </Routes>
       </BrowserRouter>
