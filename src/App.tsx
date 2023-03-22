@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 
 import NavigationBar from "./Components/Navbar";
 import { LifeTimeMembership } from "./Pages/Servicespage/LifeTimeMembership";
@@ -14,7 +14,7 @@ import { BookDistribution } from "./Pages/Servicespage/BookDistribution";
 export const App: React.FunctionComponent = () => {
   return (
     <>
-      <BrowserRouter>
+      <Router>
         <NavigationBar />
         <Routes>
           <Route
@@ -47,7 +47,7 @@ export const App: React.FunctionComponent = () => {
             element={<BookDistribution />}
           />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </>
   );
 };
