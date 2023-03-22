@@ -7,15 +7,17 @@ const NavigationBar = () => {
     <NavStyle>
       <div className="container ">
         <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-          <div className="container-fluid"> 
-           <Link className="nav-link" to="Pages/Nearby">
+          <div className="container-fluid">  
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Nearby Place
+                Visit Us
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item href="/Pages/Nearby">
+                <Dropdown.Item href="./Pages/Visitus">
                   Dakor Dham
+                </Dropdown.Item>
+                <Dropdown.Item href="">
+                 Goverdhan Goushala 
                 </Dropdown.Item>
                 <Dropdown.Item href="">
                   Dining Options
@@ -27,8 +29,7 @@ const NavigationBar = () => {
                   Visitor Facility
                 </Dropdown.Item>
               </Dropdown.Menu>
-            </Dropdown>
-          </Link>
+            </Dropdown>         
           </div>
         </nav>
       </div>
