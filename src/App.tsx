@@ -25,10 +25,14 @@ export const App: React.FunctionComponent = () => {
         <NavigationBar />
         <Routes>
           <Route caseSensitive path="/" element={<HomePage />} />
-          <Route path="/history" element={<HistoryPage />} />
-          <Route path="/founder" element={<FounderPage />} />
-          <Route path="/philosophy" element={<PhilosophyPage />} />
-          <Route path="/goals" element={<GoalsPage />} />
+          <Route caseSensitive path="/history" element={<HistoryPage />} />
+          <Route caseSensitive path="/founder" element={<FounderPage />} />
+          <Route
+            caseSensitive
+            path="/philosophy"
+            element={<PhilosophyPage />}
+          />
+          <Route caseSensitive path="/goals" element={<GoalsPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

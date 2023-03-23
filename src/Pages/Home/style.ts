@@ -78,17 +78,51 @@ export const HeadingStyle = styled.div`
 export const Image = styled.img`
   width: 100%;
   max-width: 400px;
+
+  @media only screen and (max-width: 767px) {
+    max-width: 100%;
+  }
 `;
 
 export const Reviews = styled.div`
   max-width: 1600px;
   margin-top: 90px;
+
+  @media only screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 70px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    margin-top: 90px;
+  }
 `;
 
 export const CarouselItem = styled(Carousel.Item)`
   img {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    height: 500px;
+    object-fit: contain cover;
+  }
+
+  @media only screen and (max-width: 767px) {
+    img {
+      height: 300px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    img {
+      height: 300px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    img {
+      height: 500px;
+    }
   }
 `;
