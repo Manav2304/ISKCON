@@ -10,9 +10,9 @@ export const ServiceWrapper = styled.div`
 `;
 
 export const HeadIng1 = styled.h1`
-font-size: 3rem; 
-font-weight: bold;
-text-align: center;
+  font-size: 3rem; 
+  font-weight: bold;
+  text-align: center;
 `;
 
 export const ImageSlide = styled.img`
@@ -33,4 +33,22 @@ export const ParaGraph = styled.p`
   line-height: 1.5;
   text-align: left;
   text-align: justify;
+`;
+
+export const Button = styled.button`
+  background-color: #2196f3;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  
+  &:hover {
+    background-color: #0d8bf5;
+  }
+  
+  &:active {
+    background-color: #0b6abf;
+  }
 `;

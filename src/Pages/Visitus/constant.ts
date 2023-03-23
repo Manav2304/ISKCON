@@ -5,8 +5,8 @@ import goushala1 from "../../assets/images/Goushala1.jpg";
 import goushala2 from "../../assets/images/Goushala2.jpg";
 import goushala3 from "../../assets/images/Gouhala3.png";
 
-export const IMAGES1 = [dakor,gomtiLake, temple];
-export const IMAGES2 = [goushala2,goushala3,goushala1];
+export const dakorImage = [dakor,gomtiLake, temple];
+export const goushalaImage = [goushala2,goushala3,goushala1];
 
 
 export const dakorInfo = [
@@ -35,7 +35,7 @@ export const goushala = [
    
    "At present we have 110 cows calves and bulls at our Goshalla and the annual budget is Rs. 29,04,395/-. The cost of maintaining one cow per month is Rs. 2200/-You can take the privilege of feeding and maintaining the cows as follows:",
 
-   "      One cow for a whole year for just Rs. 26400/- or One cow for six month for  Rs.  13200/- or All the 110 cows for one full day for just  Rs. 8065/- or One cow for a month for just  Rs. 2200/- or One cow for 15 days for just  Rs. 1100/- When you think of the wonderful effect of your gift on the cows you shall experience the magnificent satisfaction of serving these beautiful cows.",
+   "One cow for a whole year for just Rs. 26400/- or One cow for six month for  Rs.  13200/- or All the 110 cows for one full day for just  Rs. 8065/- or One cow for a month for just  Rs. 2200/- or One cow for 15 days for just  Rs. 1100/- When you think of the wonderful effect of your gift on the cows you shall experience the magnificent satisfaction of serving these beautiful cows.",
 
    "Dear welwishers, Kindly take your best pen and let your love for the cows flow from the core of your lotus heart by generously filling in the donation card and making a cheque payable to “ISKCON VIDYANAGAR” and post it in the reply paid envelope at your earliest convenience or online transaction as advised in donation form.Thank you very much for your heartfelt compassion and generosity. For your generous support we shall send you a memorandum gift, mahaprasadam and your receipt.",
    

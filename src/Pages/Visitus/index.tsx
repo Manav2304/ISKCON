@@ -1,37 +1,44 @@
-import React from 'react';
-import {  IMAGES1,IMAGES2 } from './constant';
-import { dakorInfo ,goushala} from './constant';
-import { ServiceWrapper, TextWrapper, HeadIng1, ParaGraph } from './style';
-import Carousel from "./carousel";
-
-const mapDakorInfo = dakorInfo.map((paragraph) => <p>{paragraph}</p>);
-const mapGoushala = goushala.map((paragraph) => <p>{paragraph}</p>);
-
+import React, { useState } from 'react';
+import { dakorImage,goushalaImage  } from './constant';
+import { dakorInfo, goushala } from './constant';
+import { ServiceWrapper, TextWrapper, HeadIng1, ParaGraph, Button } from './style';
+import Carousel from './carousel';
 
 const Visitus = () => {
+  const [showMoreDakor, setShowMoreDakor] = useState(false);
+  const [showMoreGoushala, setShowMoreGoushala] = useState(false);
+
+  const toggleShowMoreDakor = () => setShowMoreDakor(!showMoreDakor);
+  const toggleShowMoreGoushala = () => setShowMoreGoushala(!showMoreGoushala);
+
   return (
     <ServiceWrapper>
-      <HeadIng1>
-       Dakor Dham 
-      </HeadIng1>
       <TextWrapper>
-        <Carousel images={IMAGES1} />
+        <HeadIng1>Dakor Dham</HeadIng1>
+        <Carousel images={dakorImage} />
         <ParaGraph>
-          <p>
-            {mapDakorInfo}
-          </p>
-        </ParaGraph>
-        </TextWrapper>
-        <TextWrapper>
-        <HeadIng1>
-        Goverdhan Goushala 
-        </HeadIng1>
-        <Carousel images={IMAGES2} />
+          {dakorInfo.map((paragraph, index) => (
+            <p key={index} style={{ display: showMoreDakor || index < 2 ? 'block' : 'none' }}>{paragraph}</p>
+          ))}        
+        </ParaGraph> 
+        {dakorInfo.length > 2 && (
+            <Button onClick={toggleShowMoreDakor}>
+              {showMoreDakor ? 'Read less' : 'Read more'}
+            </Button>
+          )}       
+        <HeadIng1>Goverdhan Goushala</HeadIng1>
+        <Carousel images={goushalaImage} />
         <ParaGraph>
-          <p>
-            {mapGoushala}
-          </p>
-        </ParaGraph>
+          {goushala.map((paragraph, index) => (
+            <p key={index} style={{ display: showMoreGoushala || index < 2 ? 'block' : 'none' }}>{paragraph}</p>
+          ))}
+          
+        </ParaGraph>      
+        {goushala.length > 2 && (
+            <Button onClick={toggleShowMoreGoushala}>
+              {showMoreGoushala ? 'Read less' : 'Read more'}
+            </Button>
+          )}
       </TextWrapper>
     </ServiceWrapper>
   );

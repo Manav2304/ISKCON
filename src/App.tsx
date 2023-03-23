@@ -14,7 +14,7 @@ export const App: React.FunctionComponent = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Pages/Home" element={<MyCarousel />} />
-          <Route path="/Pages/Visitus"element={<Visitus />} />
+          <Route path="/Visitus"element={<Visitus />} />
         </Routes>
       </Router>
     </>
