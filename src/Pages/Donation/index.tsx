@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 import {
   Wrapper,
   Title,
@@ -7,10 +7,12 @@ import {
   TableCell,
   CopyButton,
   Paragraph,
-} from './style';
-import { accountInfo, bhagavadGita } from './constant';
+} from "./style";
+import { accountInfo, bhagavadGita } from "./constant";
 
-const mapBHAGAVAD_GITA = bhagavadGita.map((paragraph) => <Paragraph key={paragraph}>{paragraph}</Paragraph>);
+const mapBHAGAVAD_GITA = bhagavadGita.map((paragraph) => (
+  <Paragraph key={paragraph}>{paragraph}</Paragraph>
+));
 
 const CopiedTableRow = ({ label, value }: { label: string; value: string }) => {
   const [isCopied, setIsCopied] = useState(false);
@@ -27,7 +29,7 @@ const CopiedTableRow = ({ label, value }: { label: string; value: string }) => {
       <TableCell>{value}</TableCell>
       <TableCell>
         <CopyButton copied={isCopied} onClick={() => copyToClipboard(value)}>
-          {isCopied ? 'Copied!' : 'Copy'}
+          {isCopied ? "Copied!" : "Copy"}
         </CopyButton>
       </TableCell>
     </TableRow>
