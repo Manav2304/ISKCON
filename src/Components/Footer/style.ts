@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const FooterLogoStyle = styled.div`
   width: 500px;
   align-content: center;
+  margin: 5px;
+  margin-top: 50px;
 `;
 
 export const ContactStyle = styled.div`
@@ -26,4 +28,7 @@ export const BgColor = styled.div`
   @media only screen and (min-width: 1200px) {
     background-color: #c96;
   }
+`;
+export const TimeStyle = styled.div`
+  text-align: justify;
 `;

@@ -7,8 +7,8 @@ import {
   MDBIcon,
 } from "mdb-react-ui-kit";
 import footerlogo from "../../assets/footerlogo.jpeg";
-import { FooterLogoStyle, ContactStyle, BgColor } from "./style";
-import { socialmediaIcon, contactInfo, templeTimes } from "./constant";
+import { FooterLogoStyle, ContactStyle, BgColor, TimeStyle } from "./style";
+import { contactInfo, templeTimes } from "./constant";
 
 export const Footer = () => {
   return (
@@ -23,11 +23,13 @@ export const Footer = () => {
                   Timings
                 </h6>
                 <div>
-                  {templeTimes.map((time, index) => (
-                    <div key={index}>
-                      {time.name}:{time.time}
-                    </div>
-                  ))}
+                  <TimeStyle>
+                    {templeTimes.map((time, index) => (
+                      <div key={index}>
+                        {time.name}:{time.time}
+                      </div>
+                    ))}
+                  </TimeStyle>
                 </div>
               </MDBCol>
 

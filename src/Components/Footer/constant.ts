@@ -12,25 +12,10 @@ export const templeTimes = [
   { time: "08:00PM", name: "Shayan Arati" },
   { time: "08:15PM", name: "Temple Closes" },
 ];
+templeTimes.forEach((item) => {
+  item.time = ` ${item.time}`;
+});
 
-export const socialmediaIcon = [
-  {
-    name: "Facebook",
-    href: "https://www.facebook.com/groups/254840054550446",
-    icon: "facebook-f",
-  },
-  {
-    name: "Twitter",
-    href: "https://twitter.com/iskcon_vvn",
-    icon: "twitter",
-  },
-
-  {
-    name: "Telegram",
-    href: "https://t.me/iskconvvn",
-    icon: "telegram",
-  },
-];
 export const contactInfo = [
   {
     icon: "home",
@@ -45,3 +30,6 @@ export const contactInfo = [
     text: "+ 01 234 567 88",
   },
 ];
+contactInfo.forEach((item) => {
+  item.text = ` ${item.text}`;
+});
