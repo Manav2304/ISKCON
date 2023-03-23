@@ -6,7 +6,7 @@ import {
   Link,
   BrowserRouter,
 } from "react-router-dom";
-import NavigationBar from "./Components/Navbar";
+import { NavigationBar } from "./Components/Navbar/index";
 import HomePage from "./Pages/Home";
 import { Footer } from "./Components/Footer";
 import "@fortawesome/fontawesome-free/css/all.min.css";

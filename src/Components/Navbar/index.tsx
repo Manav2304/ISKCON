@@ -1,28 +1,28 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import styled from "styled-components";
 import { NavStyle } from "./style";
-import logo from "../../assets/images/isckonlogo.png";
-import { socialmediaIcon } from "../../Components/Navbar/Dropdown/constant";
+import { DropDown } from "./Dropdown";
+import { socialmediaIcon } from "./Dropdown/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
-import { DropDown } from "./Dropdown/index";
-const NavigationBar = () => {
+import logo from "../../assets/images/isckonlogo.png";
+import { StyledLink } from "./style";
+export const NavigationBar = () => {
   return (
     <NavStyle>
       <nav className="navbar fixed-top navbar-expand-lg ">
         <div className="container">
           <DropDown />
-          <NavLink to="#">GO Seva</NavLink>
-          <Link to="#">Festival</Link>
-          <Link to="#">Services</Link>
-          <Link to="/">
+          <StyledLink to="#">GO Seva</StyledLink>
+          <StyledLink to="#">Festival</StyledLink>
+          <StyledLink to="#">Services</StyledLink>
+          <StyledLink to="/">
             <img src={logo} alt="Logo" />
-          </Link>
-          <Link to="#">Conatact</Link>
-          <Link to="#">Media</Link>
-          <Link to="/donation">Donation</Link>
+          </StyledLink>
+          <StyledLink to="#">Conatact</StyledLink>
+          <StyledLink to="#">Media</StyledLink>
+          <StyledLink to="/donation">Donation</StyledLink>
           <div>
             {socialmediaIcon.map((item) => (
-              <a key={item.name} href={item.href} className="me-4 text-reset">
+              <a key={item.name} href={item.href} className="me-1 text-reset">
                 <MDBIcon fab icon={item.icon} />
               </a>
             ))}
@@ -32,5 +32,3 @@ const NavigationBar = () => {
     </NavStyle>
   );
 };
-
-export default NavigationBar;

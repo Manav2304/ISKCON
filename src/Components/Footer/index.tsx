@@ -18,7 +18,7 @@ export const Footer = () => {
             <MDBRow className="mt-3">
               <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">
-                  <MDBIcon color="secondary" icon="clock" className="me-3" />
+                  <MDBIcon icon="clock" className="me-3" />
                   Timings
                 </h6>
                 <div>
@@ -50,12 +50,12 @@ export const Footer = () => {
             </MDBRow>
           </MDBContainer>
         </section>
-        {/* <div className="text-center p-4">
+        <div className="text-center p-4">
           © 2021 Copyright:
           <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
             MDBootstrap.com
           </a>
-        </div> */}
+        </div>
       </BgColor>
     </MDBFooter>
   );

@@ -1,9 +1,12 @@
 import styled from "styled-components";
 import title from "../../assets/images/bgimage.png";
 import { Dropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 export const NavStyle = styled.div`
   .navbar {
     height: 85px;
+    width: 100%;
     background-image: url(${title});
     background-repeat: repeat;
     color: #7e5959;
@@ -101,7 +104,7 @@ export const TransparentDropdown = styled(Dropdown)`
   .dropdown-toggle {
     color: #7e5959;
     background-color: transparent;
-    border: solid black;
+    // border: solid black;
   }
 
   .dropdown-menu {
@@ -111,4 +114,7 @@ export const TransparentDropdown = styled(Dropdown)`
   .dropdown-item {
     color: white;
   }
+`;
+export const StyledLink = styled(Link)`
+  color: red;
 `;
