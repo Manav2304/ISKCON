@@ -10,7 +10,7 @@ const mapHistory = history.map((paragraph) => <p>{paragraph}</p>);
 const mapGoals = goals.map((paragraph) => <p>{paragraph}</p>);
 const mapPhilosophy = philosophy.map((paragraph) => <p>{paragraph}</p>);
 const mapFounder = founder.map((paragraph) => <p>{paragraph}</p>);
-const Homepage: React.FC = () => {
+const homePage: React.FC = () => {
   return (
     <div>
       <ReactCarousel />
@@ -53,4 +53,4 @@ const Homepage: React.FC = () => {
   );
 };
 
-export default Homepage;
+export default homePage;

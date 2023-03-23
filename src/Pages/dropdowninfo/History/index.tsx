@@ -1,7 +1,7 @@
 import TextSection from "../TesxtSection";
 import { history } from "./constant";
 
-export const Historypage: React.FC = () => {
+export const HistoryPage: React.FC = () => {
   return (
     <TextSection
       title="History"

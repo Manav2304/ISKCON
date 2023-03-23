@@ -8,7 +8,7 @@ import {
 } from "mdb-react-ui-kit";
 import footerlogo from "../../assets/footerlogo.jpeg";
 import { FooterLogoStyle, ContactStyle, BgColor, TimeStyle } from "./style";
-import { contactInfo, templeTimes } from "./constant";
+import { contactInfo, schedules } from "./constant";
 
 export const Footer = () => {
   return (
@@ -24,7 +24,7 @@ export const Footer = () => {
                 </h6>
                 <div>
                   <TimeStyle>
-                    {templeTimes.map((time, index) => (
+                    {schedules.map((time, index) => (
                       <div key={index}>
                         {time.name}:{time.time}
                       </div>

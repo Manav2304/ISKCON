@@ -14,10 +14,10 @@ import { Footer } from "./Components/Footer";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "@fortawesome/fontawesome-free/css/fontawesome.css";
 import "@fortawesome/fontawesome-free/css/brands.css";
-import { Historypage } from "./Pages/dropdowninfo/History";
-import { Founderpage } from "./Pages/dropdowninfo/Founder";
-import { Philosophypage } from "./Pages/dropdowninfo/Philosophy";
-import { Goalspage } from "./Pages/dropdowninfo/Goals";
+import { HistoryPage } from "./Pages/dropdowninfo/History";
+import { FounderPage } from "./Pages/dropdowninfo/Founder";
+import { PhilosophyPage } from "./Pages/dropdowninfo/Philosophy";
+import { GoalsPage } from "./Pages/dropdowninfo/Goals";
 export const App: React.FunctionComponent = () => {
   return (
     <>
@@ -25,10 +25,10 @@ export const App: React.FunctionComponent = () => {
         <NavigationBar />
         <Routes>
           <Route caseSensitive path="/" element={<HomePage />} />
-          <Route path="/history" element={<Historypage />} />
-          <Route path="/Founder" element={<Founderpage />} />
-          <Route path="/Philosophy" element={<Philosophypage />} />
-          <Route path="/Goals" element={<Goalspage />} />
+          <Route path="/history" element={<HistoryPage />} />
+          <Route path="/founder" element={<FounderPage />} />
+          <Route path="/philosophy" element={<PhilosophyPage />} />
+          <Route path="/goals" element={<GoalsPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

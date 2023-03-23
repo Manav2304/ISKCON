@@ -1,4 +1,4 @@
-export const templeTimes = [
+export const schedules = [
   { time: "04:10AM", name: "Samadhi Arati" },
   { time: "04:30AM", name: "Mangala Arati" },
   { time: "07:15AM", name: "Shringar Arati" },
@@ -12,7 +12,7 @@ export const templeTimes = [
   { time: "08:00PM", name: "Shayan Arati" },
   { time: "08:15PM", name: "Temple Closes" },
 ];
-templeTimes.forEach((item) => {
+schedules.forEach((item) => {
   item.time = ` ${item.time}`;
 });
 

@@ -1,7 +1,7 @@
 import { founder } from "./constant";
 import TextSection from "../TesxtSection";
 
-export const Founderpage: React.FC = () => {
+export const FounderPage: React.FC = () => {
   return (
     <div>
       <TextSection

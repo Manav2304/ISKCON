@@ -1,7 +1,7 @@
 import TextSection from "../TesxtSection";
 import { philosophy } from "./constant";
 
-export const Philosophypage: React.FC = () => {
+export const PhilosophyPage: React.FC = () => {
   return (
     <TextSection
       title="Philosophy"
