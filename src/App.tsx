@@ -18,7 +18,6 @@ import { Historypage } from "./Pages/dropdowninfo/History";
 import { Founderpage } from "./Pages/dropdowninfo/Founder";
 import { Philosophypage } from "./Pages/dropdowninfo/Philosophy";
 import { Goalspage } from "./Pages/dropdowninfo/Goals";
-
 export const App: React.FunctionComponent = () => {
   return (
     <>

@@ -1,13 +1,5 @@
+import { Carousel } from "react-bootstrap";
 import styled from "styled-components";
-
-export const StyledCarousel = styled.div`
-  margin-top: 5px;
-  margin-bottom: 50px;
-
-  .d-block {
-    margin-top: 80px;
-  }
-`;
 
 export const ImageStyle = styled.div`
   display: flex;
@@ -86,4 +78,17 @@ export const HeadingStyle = styled.div`
 export const Image = styled.img`
   width: 100%;
   max-width: 400px;
+`;
+
+export const Reviews = styled.div`
+  max-width: 1600px;
+  margin-top: 90px;
+`;
+
+export const CarouselItem = styled(Carousel.Item)`
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 `;

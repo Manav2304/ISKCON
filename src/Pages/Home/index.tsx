@@ -1,15 +1,10 @@
 import React from "react";
-import {
-  StyledCarousel,
-  ImageStyle,
-  TextStyle,
-  HeadingStyle,
-  Image,
-} from "./style";
+import { ImageStyle, TextStyle, HeadingStyle, Image } from "./style";
 import { aboutUs, history, goals, philosophy, founder } from "./constant";
 import Titlebase from "../../assets/Titel Base 16bit.png";
+
 import about from "../../assets/About.jpg";
-import { BootstrapCarousel } from "./BootstrapCarousel";
+import ReactCarousel from "./Reactcoursal";
 const mapAboutUs = aboutUs.map((paragraph) => <p>{paragraph}</p>);
 const mapHistory = history.map((paragraph) => <p>{paragraph}</p>);
 const mapGoals = goals.map((paragraph) => <p>{paragraph}</p>);
@@ -18,9 +13,7 @@ const mapFounder = founder.map((paragraph) => <p>{paragraph}</p>);
 const Homepage: React.FC = () => {
   return (
     <div>
-      <StyledCarousel>
-        <BootstrapCarousel />
-      </StyledCarousel>
+      <ReactCarousel />
       <HeadingStyle>
         <h1>ABOUT US</h1>
         <Image src={Titlebase} />

@@ -86,6 +86,7 @@ export const NavStyle = styled.div`
 
       img {
         height: 90px;
+        width: 180px;
       }
     }
 
