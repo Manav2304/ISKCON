@@ -6,10 +6,6 @@ export const ImageStyle = styled.div`
   align-items: center;
   margin: 40px;
 
-  .card-img-top {
-    height: 50vh;
-  }
-
   @media only screen and (max-width: 768px) {
     img {
       max-width: 100%;
@@ -75,6 +71,6 @@ export const HeadingStyle = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 100%;
-  max-width: 300px;
+  width: 60%;
+  max-width: 50%;
 `;

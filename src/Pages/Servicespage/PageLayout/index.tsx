@@ -1,8 +1,7 @@
-import { TextStyle, HeadingStyle } from "./style";
-
-// import Titlebase from "../../assets/Titel+Base.png";
+import { TextStyle, HeadingStyle, Image } from "./style";
+import Titlebase from "../../../assets/image/titlebase.png";
 interface TextSectionProps {
-  title: string;
+  title: string; 
   content: string[];
   imageUrl: string;
 }
@@ -21,7 +20,7 @@ const TextSection: React.FC<TextSectionProps> = ({
       <HeadingStyle>
         <br />
         <h2>{title}</h2>
-        
+        <Image src={Titlebase} />
         <TextStyle>{mappedContent}</TextStyle>
       </HeadingStyle>
     </div>
