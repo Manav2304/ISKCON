@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React ,{ useState } from 'react';
 import { dakorImage,goushalaImage,dakorInfo,goushala,titleBase} from './constant';
 import { ServiceWrapper,TextWrapper,HeadIng1,ParaGraph,Button ,ImageDiv, TitleImage} from './style';
 import Carousel from './carousel';
@@ -10,8 +10,8 @@ const VisitUs = () => {
   const toggleShowMoreGoushala = () => setShowMoreGoushala(!showMoreGoushala);
 
   return (
-    <ServiceWrapper>
-      <TextWrapper>
+       <ServiceWrapper>
+        <TextWrapper>
         <HeadIng1>Dakor Dham</HeadIng1>
         <ImageDiv>
          <TitleImage src={titleBase} alt="TitleBase" />
@@ -42,8 +42,8 @@ const VisitUs = () => {
             {showMoreGoushala ? 'Read less' : 'Read more'}
           </Button>
         )}
-      </TextWrapper>
-    </ServiceWrapper>
+       </TextWrapper>
+       </ServiceWrapper>  
   );
 };
 

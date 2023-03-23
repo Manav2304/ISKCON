@@ -4,8 +4,11 @@ export const ServiceWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #17202A;
   padding: 1rem; 
+`;
+
+export const TextWrapper = styled.div`  
+  color: #ad0d0d;
 `;
 
 export const ImageDiv = styled.div`
@@ -22,6 +25,7 @@ export const TitleImage = styled.img`
 export const HeadIng1 = styled.h1`
   font-size: 3rem; 
   text-align: center;
+  color: #7e5959;
 `;
 
 export const ImageSlide = styled.img`
@@ -29,11 +33,6 @@ export const ImageSlide = styled.img`
   height: 600px;
   object-fit: auto;
   margin-bottom: 2rem;
-`;
-
-export const TextWrapper = styled.div`
-  width: 1024px;
-  color: #17202A;
 `;
 
 export const ParaGraph = styled.p`
@@ -44,19 +43,11 @@ export const ParaGraph = styled.p`
 `;
 
 export const Button = styled.button`
-  background-color: #2196f3;
-  color: white;
+  background-color: #00FFFF;
+  color: #0C090A;
   font-size: 16px;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
-  
-  &:hover {
-    background-color: #0d8bf5;
-  }
-  
-  &:active {
-    background-color: #0b6abf;
-  }
 `;

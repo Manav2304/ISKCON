@@ -8,7 +8,7 @@ const NavigationBar = () => {
       <div className="container ">
         <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid"> 
-          <Link className="nav-link" to="/Visitus">  
+          <Link className="nav-link" to="/VisitUs">  
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
                 Visit Us
