@@ -14,12 +14,12 @@ import DonationPage from "./Pages/Donation";
 export const App: React.FunctionComponent = () => {
   return (
     <>
-    <BrowserRouter>
+      <BrowserRouter>
         <NavigationBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Pages/Home" element={<MyCarousel />} />
-          <Route path="/pages/Donation/" element={<DonationPage />} />      
+          <Route path="/" element={<MyCarousel />} />
+          <Route path="/Donation/" element={<DonationPage />} />
         </Routes>
       </BrowserRouter>
     </>
