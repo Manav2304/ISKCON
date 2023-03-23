@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import { dakorImage, goushalaImage } from './constant';
-import { dakorInfo, goushala } from './constant';
-import { ServiceWrapper, TextWrapper, HeadIng1, ParaGraph, Button } from './style';
+import { dakorImage,goushalaImage,dakorInfo,goushala } from './constant';
+import { ServiceWrapper,TextWrapper,HeadIng1,ParaGraph,Button } from './style';
 import Carousel from './carousel';
 
-const Visitus = () => {
+const VisitUs = () => {
   const [showMoreDakor, setShowMoreDakor] = useState(false);
-  const [showMoreGoushala, setShowMoreGoushala] = useState(false);
-
+  const [showMoreGoushala, setShowMoreGoushala] = useState(false)
   const toggleShowMoreDakor = () => setShowMoreDakor(!showMoreDakor);
   const toggleShowMoreGoushala = () => setShowMoreGoushala(!showMoreGoushala);
 
@@ -43,4 +41,4 @@ const Visitus = () => {
   );
 };
 
-export default Visitus;
+export default VisitUs;

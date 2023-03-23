@@ -1,10 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import NavigationBar from "./Components/Navbar";
 import MyCarousel from "./Pages/Home";
 import Home from "./Pages/Home";
-import Visitus from "./Pages/Visitus";
+import VisitUs from "./Pages/VisitUs";
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -13,8 +12,8 @@ export const App: React.FunctionComponent = () => {
         <NavigationBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Pages/Home" element={<MyCarousel />} />
-          <Route path="/Visitus"element={<Visitus />} />
+          <Route path="/home" element={<MyCarousel />} />
+          <Route path="/visitus"element={<VisitUs />} />
         </Routes>
       </Router>
     </>

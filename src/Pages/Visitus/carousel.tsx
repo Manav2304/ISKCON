@@ -13,7 +13,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
       {images.map((image) => (
     <div key={Math.random()} className={`carousel-item ${image === images[0] ? "active" : ""}`}>
      <ImageSlide src={image} className="d-block w-100" alt="..." />
-  </div>
+    </div>
         ))}
        <button className="carousel-control-prev" type="button" data-bs-target={`#${id}`}  data-bs-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>

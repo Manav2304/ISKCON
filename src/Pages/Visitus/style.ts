@@ -5,8 +5,7 @@ export const ServiceWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   color: #17202A;
-  padding: 1rem;
-  
+  padding: 1rem; 
 `;
 
 export const HeadIng1 = styled.h1`

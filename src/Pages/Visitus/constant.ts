@@ -8,7 +8,6 @@ import goushala3 from "../../assets/images/Gouhala3.png";
 export const dakorImage = [dakor,gomtiLake, temple];
 export const goushalaImage = [goushala2,goushala3,goushala1];
 
-
 export const dakorInfo = [
 
    "At the heart of Dakor lies the Ranchhodraiji Temple, a sacred place where Lord Krishna is worshipped in the form of Ranchhodrai. The temple, with its grand architecture and intricate carvings, is a stunning masterpiece that leaves visitors awestruck.",
@@ -46,6 +45,6 @@ export const goushala = [
    "Green Grass           Rs. 9,17,555/- ",
    "Dan & Khor            Rs. 5,67,815/- ",
    "Labour                Rs. 3,05,375/- ", 
-   "Medical Expenses      Rs.1,71,885/-   ",                 
+   "Medical Expenses      Rs. 1,71,885/-   ",                 
    "Total                 Rs.29,04,395/-  "
 ];
