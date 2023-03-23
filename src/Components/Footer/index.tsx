@@ -6,10 +6,9 @@ import {
   MDBCol,
   MDBIcon,
 } from "mdb-react-ui-kit";
-import footerlogo from "../../assets/footerlogo.jpeg";
+import footerlogo from "../../assets/images/footerlogo.jpeg";
 import { FooterLogoStyle, ContactStyle, BgColor, TimeStyle } from "./style";
 import { contactInfos, schedules } from "./constant";
-
 export const Footer = () => {
   return (
     <MDBFooter className="text-center text-lg-start text-muted  ">
@@ -32,7 +31,6 @@ export const Footer = () => {
                   </TimeStyle>
                 </div>
               </MDBCol>
-
               <FooterLogoStyle>
                 <MDBRow>
                   <img src={footerlogo} />
@@ -52,7 +50,6 @@ export const Footer = () => {
             </MDBRow>
           </MDBContainer>
         </section>
-
         {/* <div className="text-center p-4">
           © 2021 Copyright:
           <a className="text-reset fw-bold" href="https://mdbootstrap.com/">

@@ -1,11 +1,10 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { NavStyle } from "./style";
-import logo from "../../assets/isckonlogo.png";
+import logo from "../../assets/images/isckonlogo.png";
 import { socialmediaIcon } from "../../Components/Navbar/Dropdown/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
 import { DropDown } from "./Dropdown/index";
-
 const NavigationBar = () => {
   return (
     <NavStyle>

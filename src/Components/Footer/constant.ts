@@ -15,7 +15,6 @@ export const schedules = [
 schedules.forEach((item) => {
   item.time = ` ${item.time}`;
 });
-
 export const contactInfos = [
   {
     icon: "home",

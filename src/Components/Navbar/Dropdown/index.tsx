@@ -2,7 +2,6 @@ import React from "react";
 import { Dropdown } from "react-bootstrap";
 import { TransparentDropdown } from "../style";
 import { Dropdownitems } from "../Dropdown/constant";
-
 export const DropDown: React.FC = () => {
   const handleItemClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
     const href = event.currentTarget.getAttribute("href");
@@ -10,7 +9,6 @@ export const DropDown: React.FC = () => {
       window.location.href = href;
     }
   };
-
   return (
     <div>
       <TransparentDropdown>

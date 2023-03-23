@@ -2,7 +2,6 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import { carouselimg } from "./constant";
 import { Reviews, CarouselItem } from "./style";
-
 function ReactCarousel() {
   return (
     <Reviews>
@@ -16,5 +15,4 @@ function ReactCarousel() {
     </Reviews>
   );
 }
-
 export default ReactCarousel;
