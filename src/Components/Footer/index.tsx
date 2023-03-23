@@ -8,7 +8,7 @@ import {
 } from "mdb-react-ui-kit";
 import footerlogo from "../../assets/footerlogo.jpeg";
 import { FooterLogoStyle, ContactStyle, BgColor, TimeStyle } from "./style";
-import { contactInfo, schedules } from "./constant";
+import { contactInfos, schedules } from "./constant";
 
 export const Footer = () => {
   return (
@@ -40,7 +40,7 @@ export const Footer = () => {
               </FooterLogoStyle>
               <MDBCol>
                 <ContactStyle>
-                  {contactInfo.map((info, index) => (
+                  {contactInfos.map((info, index) => (
                     <div key={index}>
                       <br />
                       <i className={`fa fa-${info.icon}`} />

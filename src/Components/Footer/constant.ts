@@ -16,7 +16,7 @@ schedules.forEach((item) => {
   item.time = ` ${item.time}`;
 });
 
-export const contactInfo = [
+export const contactInfos = [
   {
     icon: "home",
     text: "Mota Bazar,VV Nagar,Anand,Gujarat",
@@ -30,6 +30,6 @@ export const contactInfo = [
     text: "+ 01 234 567 88",
   },
 ];
-contactInfo.forEach((item) => {
+contactInfos.forEach((item) => {
   item.text = ` ${item.text}`;
 });
