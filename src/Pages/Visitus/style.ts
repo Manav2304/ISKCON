@@ -10,7 +10,6 @@ export const ServiceWrapper = styled.div`
 
 export const HeadIng1 = styled.h1`
   font-size: 3rem; 
-  font-weight: bold;
   text-align: center;
 `;
 

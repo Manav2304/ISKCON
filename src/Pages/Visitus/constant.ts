@@ -4,9 +4,11 @@ import temple from "../../assets/images/Temple.jpg";
 import goushala1 from "../../assets/images/Goushala1.jpg";
 import goushala2 from "../../assets/images/Goushala2.jpg";
 import goushala3 from "../../assets/images/Gouhala3.png";
+import titleBase from "../../assets/images/TitelBase.png";
 
 export const dakorImage = [dakor,gomtiLake, temple];
 export const goushalaImage = [goushala2,goushala3,goushala1];
+export { titleBase };
 
 export const dakorInfo = [
 
@@ -41,10 +43,12 @@ export const goushala = [
    "All Glories To Your Goseva and GorakshaMay Sri Sri Radha Giridhariji Bless You For Serving The Cows.",
 
    "Goshala Budget (For 110 cows)", 
-   "Dry Grass  -          Rs. 9,41,765/- ", 
-   "Green Grass           Rs. 9,17,555/- ",
-   "Dan & Khor            Rs. 5,67,815/- ",
-   "Labour                Rs. 3,05,375/- ", 
-   "Medical Expenses      Rs. 1,71,885/-   ",                 
-   "Total                 Rs.29,04,395/-  "
+   "Dry Grass  -           Rs. 9,41,765/-", 
+   "Green Grass -          Rs. 9,17,555/-",
+   "Dan & Khor -           Rs. 5,67,815/-",
+   "Labour -               Rs. 3,05,375/-", 
+   "Medical Expenses -     Rs. 1,71,885/-",                 
+   "Total -                Rs. 29,04,395/-"
 ];
+
+
