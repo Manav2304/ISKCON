@@ -6,7 +6,7 @@ export const ServiceWrapper = styled.div`
   align-items: center;
   color: #17202A;
   padding: 1rem;
-  margin: 1rem;
+  
 `;
 
 export const HeadIng1 = styled.h1`
@@ -19,12 +19,11 @@ export const ImageSlide = styled.img`
   width: 600px;
   height: 600px;
   object-fit: auto;
-  padding: 0.5rem;
   margin-bottom: 2rem;
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 1024px;
+  width: 1024px;
   color: #17202A;
 `;
 
