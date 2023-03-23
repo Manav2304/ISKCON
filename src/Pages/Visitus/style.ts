@@ -8,6 +8,17 @@ export const ServiceWrapper = styled.div`
   padding: 1rem; 
 `;
 
+export const ImageDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const TitleImage = styled.img`
+  width: 580px;
+  height: 80px;
+`;
+
 export const HeadIng1 = styled.h1`
   font-size: 3rem; 
   text-align: center;

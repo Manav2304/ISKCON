@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { dakorImage,goushalaImage,dakorInfo,goushala,titleBase} from './constant';
-import { ServiceWrapper,TextWrapper,HeadIng1,ParaGraph,Button } from './style';
+import { ServiceWrapper,TextWrapper,HeadIng1,ParaGraph,Button ,ImageDiv, TitleImage} from './style';
 import Carousel from './carousel';
 
 const VisitUs = () => {
@@ -13,7 +13,9 @@ const VisitUs = () => {
     <ServiceWrapper>
       <TextWrapper>
         <HeadIng1>Dakor Dham</HeadIng1>
-        <img src={titleBase} alt="TitleBase" />
+        <ImageDiv>
+         <TitleImage src={titleBase} alt="TitleBase" />
+        </ImageDiv>
         <Carousel images={dakorImage} />
         <ParaGraph>
           {dakorInfo.map((paragraph, index) => (
@@ -26,7 +28,9 @@ const VisitUs = () => {
           </Button>
         )}
         <HeadIng1>Goverdhan Goushala</HeadIng1>
-        <img src={titleBase} alt="TitleBase" />
+        <ImageDiv>
+         <TitleImage src={titleBase} alt="TitleBase" />
+        </ImageDiv>
         <Carousel images={goushalaImage} />
         <ParaGraph>
           {goushala.map((paragraph, index) => (
