@@ -2,6 +2,16 @@
   "name": "iskcontmp",
   "version": "0.1.0",
   "private": true,
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint:fix && format:fix"
+    }
+  },
+  "prettier": {
+    "useTabs": false,
+    "semi": true,
+    "trailingComma": "all"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -11,6 +21,8 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "bootstrap": "^5.2.3",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.4",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
@@ -21,6 +33,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "lint:css": "stylelint **/*.{ts,tsx}",
+    "lint:css:fix":"stylelint --fix **/*.{ts,tsx}",
+    "prepare": "husky install",
+    "lint": "eslint --ext .ts",
+    "lint:fix": "eslint --fix --ext .ts,.tsx .",
+    "format:fix": "prettier --write src/*",
+    "format": "prettier --check src/*",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -29,7 +48,8 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "prettier"
     ]
   },
   "browserslist": {
@@ -46,7 +66,6 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.26",
-   
     "react-router-dom": "^6.8.2"
   }
 }
