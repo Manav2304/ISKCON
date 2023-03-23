@@ -1,9 +1,9 @@
-import img1 from "../../image/img1.jpg";
-import img2 from "../../image/img2.jpg";
-import img3 from "../../image/img3.jpg";
-import img4 from "../../image/img4.jpg";
-import img5 from "../../image/img5.jpg";
-import img6 from "../../image/img6.jpg";
+import img1 from "../../image/Janmashtami.jpg";
+import img2 from "../../image/Rath Yatra.jpg";
+import img3 from "../../image/Holi.jpg";
+import img4 from "../../image/Radhasthami.jpg";
+import img5 from "../../image/Govardhan Puja.jpg";
+import img6 from "../../image/Kartik Dipawali.jpg";
 import { Festival } from "./types";
 
 

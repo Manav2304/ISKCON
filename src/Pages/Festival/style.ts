@@ -5,12 +5,31 @@ export const FestivalContainer = styled.div`
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 80px;
   margin: 50px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 40px;
+    margin: 20px;
+  }
 `;
 
 export const FestivalImage = styled.img`
   width: 470px;
   height: 300px;
   object-fit: cover;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 200px;
+  }
+
+  @media (max-width: 480px) {
+    height: 150px;
+  }
 `;
 
 export const FestivalInfo = styled.div`
@@ -52,6 +71,15 @@ export const Description = styled.p`
 `;
 
 export const HeadIng1 = styled.h1`
-   font-size:1rem;
-   text-align:center;
+  font-size: 1rem;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+  }
+  
 `;
