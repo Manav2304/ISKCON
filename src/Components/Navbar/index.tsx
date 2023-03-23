@@ -7,13 +7,13 @@ const NavigationBar = () => {
       <div className="container ">
         <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
-            <Link className="nav-link" to="/Pages/Home">
+            <Link className="nav-link" to="/">
               Home
             </Link>
-            <Link className="nav-link " aria-current="page" to="/Pages/About">
+            <Link className="nav-link " aria-current="page" to="/About">
               AboutUs
             </Link>
-            <Link className="nav-link" to="Pages/Contact">
+            <Link className="nav-link" to="/Contact">
               Contact
             </Link>
             <Link className="nav-link" to="#">
