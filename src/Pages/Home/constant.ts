@@ -58,17 +58,7 @@ export const founder = [
   "1972 Kartik at Radha-Damodara, delivers famous Nectar of Devotion Lectures",
   "1977 Enters the eternal lila of Radha and Krishna in Goloka Vrindavan.",
 ];
-export const tileData = [
-  {
-    img: "https://tse1.mm.bing.net/th?id=OIP.U_wJU2VA-9MLX6jP_tHmtQHaFj&pid=Api&P=0",
-  },
-  {
-    img: "https://tse2.mm.bing.net/th?id=OIP.jBjQ8nHyCyPMcFashb0ryAHaEK&pid=Api&P=0",
-  },
-  {
-    img: "https://wallpapercave.com/wp/wp5087115.gif",
-  },
-];
+
 export const carouselimg = [
   {
     id: 1,
