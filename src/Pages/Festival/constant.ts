@@ -6,7 +6,6 @@ import img5 from "../../image/Govardhan Puja.jpg";
 import img6 from "../../image/Kartik Dipawali.jpg";
 import { Festival } from "./types";
 
-
 export const festivals: Festival[] = [
   {
     name: "Janmashtami",
@@ -50,5 +49,4 @@ export const festivals: Festival[] = [
       "Diwali, the festival of lights, is celebrated with great gusto at ISKCON Vallabh Vidya Nagar. The temple is illuminated with countless diyas (oil lamps), and the air is filled with the fragrance of incense and flowers. Devotees engage in special prayers and rituals, and offer bhog to the deity. The festival is a celebration of the victory of light over darkness, and is a beautiful reminder of the eternal wisdom and grace of Lord Krishna.",
     image: img6,
   },
-  // add 6 more festivals here
 ];

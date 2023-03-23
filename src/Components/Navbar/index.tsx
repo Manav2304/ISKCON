@@ -7,10 +7,10 @@ const NavigationBar = () => {
       <div className="container ">
         <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
-            <Link className="nav-link" to="/Pages/Home">
+            <Link className="nav-link" to="/Home">
               Home
             </Link>
-            <Link className="nav-link" to="/Pages/Festival">
+            <Link className="nav-link" to="/Festival">
               <FestivalDropdown />
             </Link>    
           </div>
