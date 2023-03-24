@@ -1,5 +1,6 @@
 import { goals } from "./constant";
 import TextSection from "../TesxtSection";
+
 export const GoalsPage: React.FC = () => {
   return (
     <div>

@@ -9,6 +9,7 @@ import {
 import footerlogo from "../../assets/images/footerlogo.jpeg";
 import { FooterLogoStyle, ContactStyle, BgColor, TimeStyle } from "./style";
 import { contactInfos, schedules } from "./constant";
+
 export const Footer = () => {
   return (
     <MDBFooter className="text-center text-lg-start text-muted  ">

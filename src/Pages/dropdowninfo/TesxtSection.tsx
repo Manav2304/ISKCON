@@ -1,5 +1,6 @@
 import { ImageStyle, TextStyle, HeadingStyle, Image } from "./style";
 import Titlebase from "../../assets/images/Titel+Base.png";
+
 interface TextSectionProps {
   title: string;
   content: string[];

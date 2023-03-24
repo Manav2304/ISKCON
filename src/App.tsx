@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  BrowserRouter,
-} from "react-router-dom";
+import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
 import { NavigationBar } from "./Components/Navbar/index";
 import HomePage from "./Pages/Home";
 import { Footer } from "./Components/Footer";

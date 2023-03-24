@@ -4,6 +4,7 @@ import { aboutUs, history, goals, philosophy, founder } from "./constant";
 import Titlebase from "../../assets/images/Titel Base 16bit.png";
 import about from "../../assets/images/About.jpg";
 import ReactCarousel from "./Reactcoursal";
+
 const mapAboutUs = aboutUs.map((paragraph) => <p>{paragraph}</p>);
 const mapHistory = history.map((paragraph) => <p>{paragraph}</p>);
 const mapGoals = goals.map((paragraph) => <p>{paragraph}</p>);

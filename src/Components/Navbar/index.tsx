@@ -1,9 +1,9 @@
-import { NavStyle } from "./style";
+import { NavStyle, StyledLink } from "./style";
 import { DropDown } from "./Dropdown";
 import { socialmediaIcon } from "./Dropdown/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
 import logo from "../../assets/images/isckonlogo.png";
-import { StyledLink } from "./style";
+
 export const NavigationBar = () => {
   return (
     <NavStyle>
