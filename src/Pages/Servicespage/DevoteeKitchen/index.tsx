@@ -6,6 +6,6 @@ export const DevoteeKitchen: React.FC = () => {
     <TextSection
       title="Devotee Kitchen"
       content={devoteekitchen} 
-      imageUrl={""}    />
+      imageUrl={""}/>
   );
 }

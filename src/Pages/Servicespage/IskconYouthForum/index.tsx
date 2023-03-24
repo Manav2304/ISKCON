@@ -6,6 +6,6 @@ export const IskconYouthForun: React.FC = () => {
     <TextSection
       title="Iskon Youth Forum"
       content={iskconyouthforum} 
-      imageUrl={""}    />
+      imageUrl={""}/>
   );
 }

@@ -6,6 +6,6 @@ export const Gaushala: React.FC = () => {
     <TextSection
       title="Goverdhan Gaushala"
       content={gaushala} 
-      imageUrl={""}    />
+      imageUrl={""}/>
   );
 }

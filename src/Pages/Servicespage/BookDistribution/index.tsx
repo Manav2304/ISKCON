@@ -6,6 +6,6 @@ export const BookDistribution: React.FC = () => {
     <TextSection
       title="Book Distribution"
       content={bookdistribution} 
-      imageUrl={""}    />
+      imageUrl={""}/>
   );
 }

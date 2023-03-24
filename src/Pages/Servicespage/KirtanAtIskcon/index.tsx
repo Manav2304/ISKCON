@@ -5,6 +5,7 @@ export const KirtanAtIskcon: React.FC = () => {
   return (
     <TextSection
       title="Kirtan At Iskcon"
-      content={kirtanatiskcon} imageUrl={""}    />
+      content={kirtanatiskcon} 
+      imageUrl={""}/>
   );
 }

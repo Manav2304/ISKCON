@@ -5,6 +5,7 @@ export const GuestHouse: React.FC = () => {
   return (
     <TextSection
       title="Prabhupada Ashrya Guest House"
-      content={guesthouse} imageUrl={""}    />
+      content={guesthouse} 
+      imageUrl={""}/>
   );
 }
