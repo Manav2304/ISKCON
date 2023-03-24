@@ -1,12 +1,12 @@
 import dakor from "../../assets/images/Dakor.jpg";
 import gomtiLake from "../../assets/images/GomtiLake.jpg";
-import temple from "../../assets/images/Temple.jpg";
+import templeimage  from "../../assets/images/Temple.jpg";
 import goushala1 from "../../assets/images/Goushala1.jpg";
 import goushala2 from "../../assets/images/Goushala2.jpg";
 import goushala3 from "../../assets/images/Gouhala3.png";
 import titleBase from "../../assets/images/TitelBase.png";
 
-export const dakorImage = [dakor,gomtiLake, temple];
+export const dakorImage = [dakor,gomtiLake, templeimage];
 export const goushalaImage = [goushala2,goushala3,goushala1];
 export { titleBase };
 

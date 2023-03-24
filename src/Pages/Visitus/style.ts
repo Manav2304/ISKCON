@@ -22,7 +22,7 @@ export const TitleImage = styled.img`
   height: 80px;
 `;
 
-export const HeadIng1 = styled.h1`
+export const Heading = styled.h1`
   font-size: 3rem; 
   text-align: center;
   color: #7e5959;
@@ -35,7 +35,7 @@ export const ImageSlide = styled.img`
   margin-bottom: 2rem;
 `;
 
-export const ParaGraph = styled.p`
+export const Paragraph = styled.p`
   font-size: 1.12rem;
   line-height: 1.5;
   text-align: left;
