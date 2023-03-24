@@ -23,28 +23,28 @@ const NavigationBar = () => {
                 Services
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item href="/Pages/Servicespage/LifeTimeMembership">
+                <Dropdown.Item href="/Servicespage/LifeTimeMembership">
                   Life Time Membership
                 </Dropdown.Item>
-                <Dropdown.Item href="/Pages/Servicespage/IskconYouthForum">
+                <Dropdown.Item href="/Servicespage/IskconYouthForum">
                   Iskcon Youth Forum - IYF
                 </Dropdown.Item>
-                <Dropdown.Item href="/Pages/Servicespage/GuestHouse">
+                <Dropdown.Item href="/Servicespage/GuestHouse">
                   Prabhupada Ashrya Guest House
                 </Dropdown.Item>
-                <Dropdown.Item href="/Pages/Servicespage/Gaushala">
+                <Dropdown.Item href="/Servicespage/Gaushala">
                   Goverdhan Gaushala
                 </Dropdown.Item>
-                <Dropdown.Item href="/Pages/Servicespage/DeityWorship">
+                <Dropdown.Item href="/Servicespage/DeityWorship">
                   Deity Worship
                 </Dropdown.Item>
-                <Dropdown.Item href="/Pages/Servicespage/DevoteeKitchen">
+                <Dropdown.Item href="/Servicespage/DevoteeKitchen">
                   Devotee Kitchen
                 </Dropdown.Item>
-                <Dropdown.Item href="/Pages/Servicespage/KirtanAtIskcon">
+                <Dropdown.Item href="/Servicespage/KirtanAtIskcon">
                   Kirtan At Iskcon
                 </Dropdown.Item>
-                <Dropdown.Item href="/Pages/Servicespage/BookDistribution">
+                <Dropdown.Item href="/Servicespage/BookDistribution">
                   Book Distribution
                 </Dropdown.Item>
               </Dropdown.Menu>
