@@ -11,11 +11,7 @@ const NavigationBar = () => {
             <Link className="nav-link" to="/">
               Home
             </Link>
-            <Link className="nav-link " aria-current="page" to="/About">
-              AboutUs
-            </Link>
-
-            <Link className="nav-link" to="/Donation">
+            <Link className="nav-link" to="/donation">
               Donation
             </Link>
             <Link className="nav-link" to="#">
