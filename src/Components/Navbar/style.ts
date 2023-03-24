@@ -104,7 +104,6 @@ export const TransparentDropdown = styled(Dropdown)`
   .dropdown-toggle {
     color: #7e5959;
     background-color: transparent;
-    // border: solid black;
   }
 
   .dropdown-menu {

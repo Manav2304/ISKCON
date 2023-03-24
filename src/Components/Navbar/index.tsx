@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { NavStyle } from "./style";
 import { DropDown } from "./Dropdown";
 import { socialmediaIcon } from "./Dropdown/constant";
