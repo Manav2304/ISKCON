@@ -18,32 +18,32 @@ export const App: React.FunctionComponent = () => {
         <NavigationBar />
         <Routes>
           <Route
-            path="/Pages/Servicespage/LifeTimeMembership"
+            path="/Servicespage/LifeTimeMembership"
             element={<LifeTimeMembership />}
           />
           <Route
-            path="/Pages/Servicespage/IskconYouthForum"
+            path="/Servicespage/IskconYouthForum"
             element={<IskconYouthForun />}
           />
           <Route
-            path="/Pages/Servicespage/GuestHouse"
+            path="/Servicespage/GuestHouse"
             element={<GuestHouse />}
           />
-          <Route path="/Pages/Servicespage/Gaushala" element={<Gaushala />} />
+          <Route path="/Servicespage/Gaushala" element={<Gaushala />} />
           <Route
-            path="/Pages/Servicespage/DeityWorship"
+            path="/Servicespage/DeityWorship"
             element={<DeityWorship />}
           />
           <Route
-            path="/Pages/Servicespage/DevoteeKitchen"
+            path="/Servicespage/DevoteeKitchen"
             element={<DevoteeKitchen />}
           />
           <Route
-            path="/Pages/Servicespage/KirtanAtIskcon"
+            path="/Servicespage/KirtanAtIskcon"
             element={<KirtanAtIskcon />}
           />
           <Route
-            path="/Pages/Servicespage/BookDistribution"
+            path="/Servicespage/BookDistribution"
             element={<BookDistribution />}
           />
         </Routes>
