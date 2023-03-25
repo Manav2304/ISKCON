@@ -13,7 +13,7 @@ export const App: React.FunctionComponent = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<MyCarousel />} />
-          <Route path="/visitus"element={<VisitUs />} />
+          <Route path="/visit-us" element={<VisitUs />} />
         </Routes>
       </Router>
     </>

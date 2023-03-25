@@ -7,31 +7,21 @@ const NavigationBar = () => {
     <NavStyle>
       <div className="container ">
         <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-          <div className="container-fluid"> 
-          <Link className="nav-link" to="/VisitUs">  
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Visit Us
-              </Dropdown.Toggle>
-              <Dropdown.Menu>
-                <Dropdown.Item href="">
-                  Dakor Dham
-                </Dropdown.Item>
-                <Dropdown.Item href="">
-                 Goverdhan Goushala 
-                </Dropdown.Item>
-                <Dropdown.Item href="">
-                  Dining Options
-                </Dropdown.Item>
-                <Dropdown.Item href="">
-                  Safety Tips
-                </Dropdown.Item>
-                <Dropdown.Item href="">
-                  Visitor Facility
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown> 
-            </Link>        
+          <div className="container-fluid">
+            <Link className="nav-link" to="/visit-us">
+              <Dropdown>
+                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                  Visit V.V.Nagar
+                </Dropdown.Toggle>
+                <Dropdown.Menu>
+                  <Dropdown.Item href="">Dakor Dham</Dropdown.Item>
+                  <Dropdown.Item href="">Goverdhan Goushala</Dropdown.Item>
+                  <Dropdown.Item href="">Dining Options</Dropdown.Item>
+                  <Dropdown.Item href="">Safety Tips</Dropdown.Item>
+                  <Dropdown.Item href="">Visitor Facility</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </Link>
           </div>
         </nav>
       </div>

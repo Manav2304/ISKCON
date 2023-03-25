@@ -9,6 +9,7 @@ export const ServiceWrapper = styled.div`
 
 export const TextWrapper = styled.div`  
   color: #ad0d0d;
+  font-family: Times New Roman;
 `;
 
 export const ImageDiv = styled.div`
@@ -18,12 +19,11 @@ export const ImageDiv = styled.div`
 `;
 
 export const TitleImage = styled.img`
-  width: 580px;
-  height: 80px;
+  width: 500px;
+  height: 60px;
 `;
 
 export const Heading = styled.h1`
-  font-size: 3rem; 
   text-align: center;
   color: #7e5959;
 `;
