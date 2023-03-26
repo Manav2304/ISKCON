@@ -1,7 +1,7 @@
 import React from "react";
 import { Dropdown } from "react-bootstrap";
-import { TransparentDropdown } from "../style";
-import { Dropdownitems } from "../Dropdown/constant";
+import { TransparentDropdown } from "../Navbar/style";
+import { Dropdownitems } from "./constant";
 export const DropDown: React.FC = () => {
   const handleItemClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
     const href = event.currentTarget.getAttribute("href");

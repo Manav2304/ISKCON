@@ -1,4 +1,4 @@
-import TextSection from "../TesxtSection";
+import TextSection from "../dropdowninfo/TesxtSection";
 import { philosophy } from "./constant";
 
 export const PhilosophyPage: React.FC = () => {

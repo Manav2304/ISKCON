@@ -6,10 +6,10 @@ import { Footer } from "./Components/Footer";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "@fortawesome/fontawesome-free/css/fontawesome.css";
 import "@fortawesome/fontawesome-free/css/brands.css";
-import { HistoryPage } from "./Pages/dropdowninfo/History";
-import { FounderPage } from "./Pages/dropdowninfo/Founder";
-import { PhilosophyPage } from "./Pages/dropdowninfo/Philosophy";
-import { GoalsPage } from "./Pages/dropdowninfo/Goals";
+import { HistoryPage } from "./Pages/History";
+import { FounderPage } from "./Pages/Founder";
+import { PhilosophyPage } from "./Pages/Philosophy";
+import { GoalsPage } from "./Pages/Goals";
 export const App: React.FunctionComponent = () => {
   return (
     <>
