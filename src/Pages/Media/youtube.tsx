@@ -5,7 +5,7 @@ interface Props {
   videoId: string;
 }
 
-const YouTubeVideo: React.FC<Props> = ({ videoId }) => {
+export const YouTubeVideo: React.FC<Props> = ({ videoId }) => {
   const opts = {
     height: "400",
     width: "1000",
@@ -16,5 +16,3 @@ const YouTubeVideo: React.FC<Props> = ({ videoId }) => {
 
   return <YouTube videoId={videoId} opts={opts} />;
 };
-
-export default YouTubeVideo;

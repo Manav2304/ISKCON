@@ -2,7 +2,7 @@ import React from "react";
 import { PageWrapper, CarouselWrapper } from "./style";
 import { IMAGES1, IMAGES2 } from "./constant";
 import Carousel from "./Carousel";
-import YouTubeVideo from "./youtube";
+import { YouTubeVideo } from "./youtube";
 
 const Media: React.FC = () => {
   return (

@@ -12,7 +12,7 @@ export const CarouselWrapper = styled.div`
   width: ${CAROUSEL_WIDTH};
   height: ${CAROUSEL_HEIGHT};
   margin: 50px;
-  padding: 20px; 
+  padding: 20px;
 `;
 
 export const ImageSlide = styled.img`
@@ -20,4 +20,3 @@ export const ImageSlide = styled.img`
   height: 300px;
   object-fit: auto;
 `;
-
