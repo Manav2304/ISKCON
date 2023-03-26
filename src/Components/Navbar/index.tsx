@@ -9,10 +9,10 @@ const NavigationBar = () => {
             <Link className="nav-link" to="/">
               Home
             </Link>
-            <Link className="nav-link " aria-current="page" to="/About">
+            <Link className="nav-link " aria-current="page" to="/about">
               AboutUs
             </Link>
-            <Link className="nav-link" to="/Contact">
+            <Link className="nav-link" to="/contact">
               Contact
             </Link>
             <Link className="nav-link" to="#">
