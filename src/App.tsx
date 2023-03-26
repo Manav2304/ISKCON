@@ -5,7 +5,7 @@ import NavigationBar from "./Components/Navbar";
 import MyCarousel from "./Pages/Home";
 import Home from "./Pages/Home";
 import Media from "./Pages/Media";
-import Audio from "./Pages/Audio";
+import Audio from "./Pages/Media/Audio";
 
 export const App: React.FunctionComponent = () => {
   return (
