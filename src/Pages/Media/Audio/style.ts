@@ -4,6 +4,7 @@ export const Heading = styled.h1`
   font-size: 2rem;
   text-align: center;
   margin-top: 2rem;
+  color: #7e5959;
 `;
 
 export const LinkName = styled.p`

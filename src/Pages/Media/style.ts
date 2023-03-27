@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { CAROUSEL_WIDTH, CAROUSEL_HEIGHT } from "./constant";
+
 
 export const PageWrapper = styled.div`
   display: flex;
@@ -9,11 +9,10 @@ export const PageWrapper = styled.div`
 `;
 
 export const CarouselWrapper = styled.div`
-  width: ${CAROUSEL_WIDTH};
-  height: ${CAROUSEL_HEIGHT};
-  margin: 50px;
-  padding: 20px;
-  margin-bottom:150px;
+  width: 500px;
+  height: 300px;
+  margin: 60px;
+  margin-bottom: 100px;
 `;
 
 export const ImageSlide = styled.img`

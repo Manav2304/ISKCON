@@ -1,13 +1,11 @@
-import img1 from "../../assets/images/image1.jpg";
-import img2 from "../../assets/images/image2.jpg";
-import img3 from "../../assets/images/image3.jpg";
+import sringar1 from "../../assets/images/sringar1.jpg";
+import sringar2 from "../../assets/images/sringar2.jpg";
+import sringar3 from "../../assets/images/sringar3.jpg";
+import darshan1 from "../../assets/images/darshan1.jpg";
+import darshan2 from "../../assets/images/darshan2.jpg";
+import darshan3 from "../../assets/images/darshan3.jpg";
 import titleBase from "../../assets/images/TitelBase.png";
 
-
 export { titleBase };
-
-export const CAROUSEL_WIDTH = "500px";
-export const CAROUSEL_HEIGHT = "300px";
-
-export const IMAGES1 = [img1, img2, img3];
-export const IMAGES2 = [img1, img2, img3];
+export const sringar = [sringar1, sringar2, sringar3];
+export const darshan = [darshan1,darshan2,darshan3];
