@@ -1,10 +1,14 @@
-import Janmashtami  from "../../image/Janmashtami.jpg";
-import RathYatra  from "../../image/Rath Yatra.jpg";
-import Holi from "../../image/Holi.jpg";
-import Radhasthami  from "../../image/Radhasthami.jpg";
-import GovardhanPuja  from "../../image/Govardhan Puja.jpg";
-import KartikDipawali  from "../../image/Kartik Dipawali.jpg";
+import Janmashtami from "../../assets/image/Janmashtami.jpg";
+import RathYatra from "../../assets/image/Rath Yatra.jpg";
+import Holi from "../../assets/image/Holi.jpg";
+import Radhasthami from "../../assets/image/Radhasthami.jpg";
+import GovardhanPuja from "../../assets/image/Govardhan Puja.jpg";
+import KartikDipawali from "../../assets/image/Kartik Dipawali.jpg";
+import titleBase from "../../assets/image/Titlebase.png";
+
 import { Festival } from "./types";
+
+export { titleBase };
 
 export const festivals: Festival[] = [
   {

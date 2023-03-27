@@ -51,19 +51,6 @@ export const ParaGraph1 = styled.p`
   color: #666;
 `;
 
-export const Button = styled.div`
-  color: #800000;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  margin-top: 10px;
-
-  &:hover {
-    text-decoration: underline;
-  }
-`;
-
 export const Description = styled.p`
   font-size: 1rem;
   color: #666;
@@ -81,5 +68,24 @@ export const HeadIng1 = styled.h1`
   @media (max-width: 480px) {
     font-size: 1.2rem;
   }
-  
+`;
+
+export const ImageDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const TitleImage = styled.img`
+  width: 500px;
+  height: 60px;
+`;
+
+export const ButtonStyle = styled.div`
+  color: transparent;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
 `;

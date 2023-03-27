@@ -4,7 +4,7 @@ import { Dropdown } from "react-bootstrap";
 const FestivalDropdown = () => {
   return (
     <Dropdown>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
+      <Dropdown.Toggle variant="success">
         Festival
       </Dropdown.Toggle>
       <Dropdown.Menu>

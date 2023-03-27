@@ -1,15 +1,7 @@
 import { useState } from "react";
-import { festivals } from "./constant";
-import {
-  Button,
-  FestivalContainer,
-  FestivalImage,
-  FestivalInfo,
-  HeadIng2,
-  ParaGraph1,
-  Description,
-  HeadIng1,
-} from "./style";
+import { festivals, titleBase } from "./constant";
+import { FestivalCard } from "./FestivalCard";
+import { FestivalContainer, HeadIng1, ImageDiv, TitleImage } from "./style";
 
 interface Festival {
   name: string;
@@ -18,52 +10,8 @@ interface Festival {
   description: string;
 }
 
-interface FestivalCardProps {
-  festival: Festival;
-  isFestivalSelected: boolean;
-  handleLearnMoreClick: (festival: Festival) => void;
-  handleShowLessClick: (festival: Festival) => void;
-}
-
-const FestivalCard = ({
-  festival,
-  isFestivalSelected,
-  handleLearnMoreClick,
-  handleShowLessClick,
-}: FestivalCardProps) => (
-  <div key={festival.name}>
-    <FestivalImage src={festival.image} />
-    <FestivalInfo>
-      <HeadIng2>
-        <h2>{festival.name}</h2>
-      </HeadIng2>
-      <ParaGraph1>
-        <p>{festival.date}</p>
-      </ParaGraph1>
-      {isFestivalSelected ? (
-        <>
-          <Description>{festival.description}</Description>
-          <Button>
-            <button onClick={() => handleShowLessClick(festival)}>Show Less</button>
-          </Button>
-        </>
-      ) : (
-        <>
-          <Description>{festival.description.substring(0, 100)}...</Description>
-          <Button>
-            <button onClick={() => handleLearnMoreClick(festival)}>
-              Read More
-            </button>
-          </Button>
-        </>
-      )}
-    </FestivalInfo>
-  </div>
-);
-
 const FestivalPage = () => {
   const [selectedFestivals, setSelectedFestivals] = useState<Festival[]>([]);
-
   const handleLearnMoreClick = (festival: Festival) => {
     setSelectedFestivals((selectedFestivals) => [
       ...selectedFestivals,
@@ -74,14 +22,14 @@ const FestivalPage = () => {
   const handleShowLessClick = (festival: Festival) => {
     setSelectedFestivals((selectedFestivals) =>
       selectedFestivals.filter(
-        (selectedFestival) => selectedFestival !== festival
-      )
+        (selectedFestival) => selectedFestival !== festival,
+      ),
     );
   };
 
   const isFestivalSelected = (festival: Festival) => {
     return selectedFestivals.some(
-      (selectedFestival) => selectedFestival === festival
+      (selectedFestival) => selectedFestival === festival,
     );
   };
 
@@ -90,6 +38,9 @@ const FestivalPage = () => {
       <HeadIng1>
         <h1>Festival</h1>
       </HeadIng1>
+      <ImageDiv>
+        <TitleImage src={titleBase} alt="TitleBase" />
+      </ImageDiv>
       <FestivalContainer>
         {festivals.map((festival: Festival) => (
           <FestivalCard
