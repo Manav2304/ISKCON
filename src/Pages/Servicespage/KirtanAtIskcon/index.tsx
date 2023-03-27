@@ -1,10 +1,12 @@
-import TextSection from "../PageLayout/index";
+import ServiceDiscription from "../PageLayout/index";
 import { kirtanatiskcon } from "./constant";
+import Images from "../../../assets/image/kirtanatisckon.jpg";
 
 export const KirtanAtIskcon: React.FC = () => {
   return (
-    <TextSection
+    <ServiceDiscription
       title="Kirtan At Iskcon"
-      content={kirtanatiskcon} imageUrl={""}    />
+      content={kirtanatiskcon}
+      imageUrl={Images}/>
   );
 }

@@ -1,10 +1,12 @@
-import TextSection from "../PageLayout/index";
+import ServiceDiscription from "../PageLayout/index";
 import { lifetimemembership } from "./constant";
+import Images from "../../../assets/image/lifetimemembership.jpg";
 
 export const LifeTimeMembership: React.FC = () => {
   return (
-    <TextSection
+    <ServiceDiscription
       title="Life Time Membership"
-      content={lifetimemembership} imageUrl={""}    />
+      content={lifetimemembership} 
+      imageUrl={Images}/>
   );
 }

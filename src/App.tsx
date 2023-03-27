@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
-
 import NavigationBar from "./Components/Navbar";
 import { LifeTimeMembership } from "./Pages/Servicespage/LifeTimeMembership";
 import { IskconYouthForun } from "./Pages/Servicespage/IskconYouthForum";
@@ -18,32 +17,32 @@ export const App: React.FunctionComponent = () => {
         <NavigationBar />
         <Routes>
           <Route
-            path="/Servicespage/LifeTimeMembership"
+            path="/services-page/life-time-membership"
             element={<LifeTimeMembership />}
           />
           <Route
-            path="/Servicespage/IskconYouthForum"
+            path="/services-page/iskcon-youth-forum"
             element={<IskconYouthForun />}
           />
           <Route
-            path="/Servicespage/GuestHouse"
+            path="/services-page/guest-house"
             element={<GuestHouse />}
           />
-          <Route path="/Servicespage/Gaushala" element={<Gaushala />} />
+          <Route path="/services-page/gaushala" element={<Gaushala />} />
           <Route
-            path="/Servicespage/DeityWorship"
+            path="/services-page/deity-worship"
             element={<DeityWorship />}
           />
           <Route
-            path="/Servicespage/DevoteeKitchen"
+            path="/services-page/devotee-kitchen"
             element={<DevoteeKitchen />}
           />
           <Route
-            path="/Servicespage/KirtanAtIskcon"
+            path="/services-page/kirtan-at-iskcon"
             element={<KirtanAtIskcon />}
           />
           <Route
-            path="/Servicespage/BookDistribution"
+            path="/services-page/book-distribution"
             element={<BookDistribution />}
           />
         </Routes>

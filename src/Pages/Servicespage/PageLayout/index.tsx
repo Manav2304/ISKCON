@@ -1,12 +1,12 @@
-import { TextStyle, HeadingStyle, Image } from "./style";
+import { TextStyle, HeadingStyle, Image, ImageStyle } from "./style";
 import Titlebase from "../../../assets/image/titlebase.png";
-interface TextSectionProps {
+interface ServiceDiscriptionProps {
   title: string; 
   content: string[];
   imageUrl: string;
 }
 
-const TextSection: React.FC<TextSectionProps> = ({
+const ServiceDiscription: React.FC<ServiceDiscriptionProps> = ({
   title,
   content,
   imageUrl,
@@ -21,10 +21,11 @@ const TextSection: React.FC<TextSectionProps> = ({
         <br />
         <h2>{title}</h2>
         <Image src={Titlebase} />
+        <ImageStyle><img src={imageUrl}/> </ImageStyle>
         <TextStyle>{mappedContent}</TextStyle>
       </HeadingStyle>
     </div>
   );
 };
 
-export default TextSection;
+export default ServiceDiscription;

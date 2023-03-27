@@ -1,11 +1,12 @@
-import TextSection from "../PageLayout/index";
+import ServiceDiscription from "../PageLayout/index";
 import { gaushala } from "./constant";
+import Images from "../../../assets/image/gaushala.jpg";
 
 export const Gaushala: React.FC = () => {
   return (
-    <TextSection
+    <ServiceDiscription
       title="Goverdhan Gaushala"
       content={gaushala} 
-      imageUrl={""}    />
+      imageUrl={Images}/>
   );
 }

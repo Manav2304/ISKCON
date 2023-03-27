@@ -73,4 +73,17 @@ export const HeadingStyle = styled.div`
 export const Image = styled.img`
   width: 60%;
   max-width: 50%;
+  justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    /* For mobile devices */
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: 769px) {
+    /* For desktop devices */
+    width: 60%;
+    max-width: 50%;
+  }
 `;
