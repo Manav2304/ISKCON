@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-
 import { address, email, guestHouse, mobileNumber } from "./constant";
 import { Box, Container } from "./style";
 
