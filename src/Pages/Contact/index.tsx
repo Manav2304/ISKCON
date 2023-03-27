@@ -8,18 +8,26 @@ const MapContainer = styled.div`
   grid-column: 1 / span 2;
 `;
 
+const MapFrame = styled.iframe`
+  border: none;
+  height: 350px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 1150px;
+  }
+`;
+
 export const Contact: React.FC = () => {
   return (
     <Container>
       <MapContainer>
         <h4>Map</h4>
-        <iframe
-          title="Iskcon Google map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.822512820993!2d72.9239412!3d22.548320499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4e755a0a0f43%3A0x2c838153538b28f0!2sIskcon%20Rd%2C%20Patel%20Society%2C%20Vallabh%20Vidyanagar%2C%20Anand%2C%20Gujarat%20388120!5e0!3m2!1sen!2sin!4v1679494883968!5m2!1sen!2sin"
-          width="1150"
-          height="450"
+        <MapFrame
+          title="Google Map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1311.187149836103!2d72.92189300103102!3d22.549684103735032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4e752de042c5%3A0x8361692ec6b1086!2sISKCON%20Vidyanagar(Sri%20Sri%20Radha%20Giridhariji)!5e1!3m2!1sen!2sin!4v1679894745057!5m2!1sen!2sin"
           loading="lazy"
-        ></iframe>
+        ></MapFrame>
       </MapContainer>
 
       <Box>

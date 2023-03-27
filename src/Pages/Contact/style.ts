@@ -34,12 +34,14 @@ export const Box = styled.div`
   }
 
   @media (min-width: 768px) {
-    width: auto;
+    width: 100%;
     max-width: none;
   }
 
   @media (max-width: 767px) {
-    grid-column: 1 / span 1;
+    width: 100%;
+    max-width: none;
+    grid-column: 1 / -1; /* this will span the Box to occupy the full width of the grid */
   }
 `;
 
@@ -50,18 +52,9 @@ export const GuestHouseInfo = styled.p`
 
 export const MapContainer = styled.div`
   margin-bottom: 20px;
+  grid-column: 1 / span 2;
 
   h4 {
     margin-bottom: 10px;
-  }
-
-  iframe {
-    width: 100%;
-    height: 400px;
-    border: none;
-  }
-
-  @media (min-width: 768px) {
-    grid-column: 1 / span 2;
   }
 `;
