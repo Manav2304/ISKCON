@@ -26,7 +26,29 @@ export const Paragraph = styled.div`
 export const Title = styled.h1`
   font-size: 2rem;
   font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
   margin-bottom: 1rem;
+`;
+
+export const ImageDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Image = styled.img`
+  width: 500px;
+  height: 60px;
+  @media screen and (max-width: 768px) {
+    /* For mobile devices */
+    width: 100%;
+    max-width: 100%;
+  }
+  @media screen and (min-width: 769px) {
+    /* For desktop devices */
+    width: 60%;
+    max-width: 50%;
+  }
 `;
 
 export const TableWrapper = styled.table`
