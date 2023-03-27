@@ -58,3 +58,13 @@ export const MapContainer = styled.div`
     margin-bottom: 10px;
   }
 `;
+
+export const MapFrame = styled.iframe`
+  border: none;
+  height: 350px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 1150px;
+  }
+`;

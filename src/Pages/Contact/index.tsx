@@ -1,21 +1,6 @@
 import React from "react";
-import styled from "styled-components";
 import { address, email, guestHouse, mobileNumber } from "./constant";
-import { Box, Container } from "./style";
-
-const MapContainer = styled.div`
-  grid-column: 1 / span 2;
-`;
-
-const MapFrame = styled.iframe`
-  border: none;
-  height: 350px;
-  width: 100%;
-
-  @media (min-width: 768px) {
-    width: 1150px;
-  }
-`;
+import { Box, Container, MapContainer, MapFrame } from "./style";
 
 export const Contact: React.FC = () => {
   return (
