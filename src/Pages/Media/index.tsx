@@ -1,9 +1,15 @@
 import React from "react";
-import { PageWrapper, CarouselWrapper } from "./style";
+import {
+  PageWrapper,
+  CarouselWrapper,
+  Heading,
+  ImageDiv,
+  TitleImage,
+} from "./style";
 import { darshan, sringar, titleBase } from "./constant";
 import Carousel from "./Carousel";
-import { YouTubeVideo } from "./youtube";
-import { Heading, ImageDiv, TitleImage } from "./Audio/style";
+import { YouTubeVideo } from "./Youtube";
+import AudioContent from "./Audio";
 
 const Media: React.FC = () => {
   return (
@@ -20,6 +26,7 @@ const Media: React.FC = () => {
           <Carousel images={darshan} />
         </CarouselWrapper>
         <YouTubeVideo videoId="lVk6qJ4cmB8" />
+        <AudioContent />
       </PageWrapper>
     </>
   );

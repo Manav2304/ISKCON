@@ -17,9 +17,7 @@ const NavigationBar = () => {
               </Dropdown.Toggle>
               <Dropdown.Menu>
                 <Dropdown.Item href="/media">Live Darshan</Dropdown.Item>
-                <Dropdown.Item href="/media/audio">
-                  Kirtan & Lecture
-                </Dropdown.Item>
+                <Dropdown.Item href="">Kirtan & Lecture</Dropdown.Item>
                 <Dropdown.Item href="">Daily Singar Darshan</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>

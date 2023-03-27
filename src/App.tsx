@@ -5,7 +5,6 @@ import NavigationBar from "./Components/Navbar";
 import MyCarousel from "./Pages/Home";
 import Home from "./Pages/Home";
 import Media from "./Pages/Media";
-import Audio from "./Pages/Media/Audio";
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -16,7 +15,6 @@ export const App: React.FunctionComponent = () => {
           <Route path="/" element={<Home />} />
           <Route path="/" element={<MyCarousel />} />
           <Route path="/media" element={<Media />} />
-          <Route path="/media/audio" element={<Audio />} />
         </Routes>
       </Router>
     </>
