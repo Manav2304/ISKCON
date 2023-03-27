@@ -12,7 +12,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
       id={id}
       className="carousel slide"
       data-bs-ride="carousel"
-      data-bs-interval="1000"
+      data-bs-interval="2000"
     >
       <div className="carousel-inner">
         {images.map((image) => (

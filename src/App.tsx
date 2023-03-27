@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavigationBar from "./Components/Navbar";
 import MyCarousel from "./Pages/Home";
 import Home from "./Pages/Home";
-import VisitUs from "./Pages/VisitUs";
+import VisitUs from "./Pages/Visitus";
 
 export const App: React.FunctionComponent = () => {
   return (

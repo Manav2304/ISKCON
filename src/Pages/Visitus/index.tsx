@@ -32,10 +32,17 @@ const VisitUs = () => {
         </ImageDiv>
         <Carousel images={dakorImage} />
         <Paragraph>
-          {dakorInfo.map((paragraph, index) => (
+          {dakorInfo.map((paragraph) => (
             <p
-              key={index}
-              style={{ display: showMoreDakor || index < 2 ? "block" : "none" }}
+              key={paragraph.substring(0, 10)}
+              style={{
+                display:
+                  showMoreDakor ||
+                  paragraph === dakorInfo[0] ||
+                  paragraph === dakorInfo[1]
+                    ? "block"
+                    : "none",
+              }}
             >
               {paragraph}
             </p>
@@ -52,11 +59,16 @@ const VisitUs = () => {
         </ImageDiv>
         <Carousel images={goushalaImage} />
         <Paragraph>
-          {goushala.map((paragraph, index) => (
+          {goushala.map((paragraph) => (
             <p
-              key={index}
+              key={paragraph.substring(0, 10)}
               style={{
-                display: showMoreGoushala || index < 2 ? "block" : "none",
+                display:
+                  showMoreGoushala ||
+                  paragraph === goushala[0] ||
+                  paragraph === goushala[1]
+                    ? "block"
+                    : "none",
               }}
             >
               {paragraph}
