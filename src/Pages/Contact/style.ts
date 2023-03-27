@@ -78,3 +78,24 @@ export const MapFrame = styled.iframe`
     width: 1150px;
   }
 `;
+
+export const ImageDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Image = styled.img`
+  width: 500px;
+  height: 60px;
+  @media screen and (max-width: 768px) {
+    /* For mobile devices */
+    width: 100%;
+    max-width: 100%;
+  }
+  @media screen and (min-width: 769px) {
+    /* For desktop devices */
+    width: 60%;
+    max-width: 50%;
+  }
+`;
