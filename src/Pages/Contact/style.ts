@@ -14,7 +14,7 @@ export const Container = styled.div`
 `;
 
 export const Heading = styled.h1`
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: "Times New Roman", Times, serif;
   align-content: center;
   text-align: center;
