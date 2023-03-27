@@ -7,7 +7,7 @@ const NavigationBar = () => {
         <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
             <Link to="/">Home</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">Contact Us</Link>
           </div>
         </nav>
       </div>

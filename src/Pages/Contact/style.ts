@@ -13,6 +13,14 @@ export const Container = styled.div`
   }
 `;
 
+export const Heading = styled.h1`
+  font-size: 3rem;
+  font-family: "Times New Roman", Times, serif;
+  align-content: center;
+  text-align: center;
+  font-style: bold;
+`;
+
 export const Box = styled.div`
   padding: 20px;
   border: 1px solid #fb3cca;
@@ -27,10 +35,12 @@ export const Box = styled.div`
 
   h4 {
     margin-bottom: 10px;
+    font-family: "Times New Roman", Times, serif;
   }
 
   p {
     margin-bottom: 0;
+    font-family: "Times New Roman", Times, serif;
   }
 
   @media (min-width: 768px) {
