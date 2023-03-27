@@ -1,35 +1,6 @@
 import { Carousel } from "react-bootstrap";
 import styled from "styled-components";
 
-export const ImageStyle = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px;
-
-  .card-img-top {
-    height: 50vh;
-  }
-
-  @media only screen and (max-width: 768px) {
-    img {
-      max-width: 100%;
-      max-height: 100%;
-    }
-  }
-
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
-    .card-img-top {
-      height: 30vh;
-    }
-  }
-
-  @media only screen and (min-width: 1200px) {
-    .card-img-top {
-      height: 40vh;
-    }
-  }
-`;
 export const TextStyle = styled.div`
   text-align: justify;
   margin-left: 50px;
@@ -120,4 +91,11 @@ export const CarouselItem = styled(Carousel.Item)`
       height: 500px;
     }
   }
+`;
+
+export const ImageStyle = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
 `;

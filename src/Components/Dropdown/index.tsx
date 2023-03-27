@@ -1,7 +1,8 @@
 import React from "react";
 import { Dropdown } from "react-bootstrap";
-import { TransparentDropdown } from "../Navbar/style";
+import { TransparentDropdown } from "./style";
 import { Dropdownitems } from "./constant";
+import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
 export const DropDown: React.FC = () => {
   const handleItemClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
     const href = event.currentTarget.getAttribute("href");
@@ -14,6 +15,7 @@ export const DropDown: React.FC = () => {
       <TransparentDropdown>
         <Dropdown>
           <Dropdown.Toggle>ISKCON</Dropdown.Toggle>
+
           <Dropdown.Menu>
             {Dropdownitems.map((item) => (
               <Dropdown.Item onClick={handleItemClick} href={item.href}>

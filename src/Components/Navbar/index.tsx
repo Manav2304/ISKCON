@@ -1,6 +1,6 @@
 import { NavStyle, StyledLink } from "./style";
 import { DropDown } from "../Dropdown";
-import { socialmediaIcon } from "../Dropdown/constant";
+import { socialmediaIcon } from "../Navbar/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
 import logo from "../../assets/images/isckonlogo.png";
 
