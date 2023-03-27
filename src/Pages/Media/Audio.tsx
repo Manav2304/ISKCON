@@ -13,8 +13,8 @@ const AudioContent = () => {
       <iframe
         title="Spotify Playlist"
         src="https://open.spotify.com/embed/playlist/1KXfZjF90PK1sObXlSPxU1?utm_source=generator"
-        width="100%"
-        height="352"
+        width="1100"
+        height="400"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>

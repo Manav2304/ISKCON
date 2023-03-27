@@ -2,6 +2,7 @@ import React from "react";
 import {
   PageWrapper,
   CarouselWrapper,
+  YouTubeWrapper,
   Heading,
   ImageDiv,
   TitleImage,
@@ -25,7 +26,12 @@ const Media: React.FC = () => {
         <CarouselWrapper>
           <Carousel images={darshan} />
         </CarouselWrapper>
-        <YouTubeVideo videoId="lVk6qJ4cmB8" />
+        <YouTubeWrapper>
+          <YouTubeVideo videoId="lVk6qJ4cmB8" />
+        </YouTubeWrapper>
+        <YouTubeWrapper>
+          <YouTubeVideo videoId="lVk6qJ4cmB8" />
+        </YouTubeWrapper>
         <AudioContent />
       </PageWrapper>
     </>

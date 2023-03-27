@@ -8,4 +8,4 @@ import titleBase from "../../assets/images/TitelBase.png";
 
 export { titleBase };
 export const sringar = [sringar1, sringar2, sringar3];
-export const darshan = [darshan1,darshan2,darshan3];
+export const darshan = [darshan1, darshan2, darshan3];

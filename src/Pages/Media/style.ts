@@ -1,18 +1,20 @@
 import styled from "styled-components";
 
-
 export const PageWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 2rem;
 `;
 
 export const CarouselWrapper = styled.div`
   width: 500px;
   height: 300px;
-  margin: 60px;
-  margin-bottom: 100px;
+  margin: 0px 60px 60px;
+`;
+export const YouTubeWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 0px 60px 0px;
 `;
 
 export const ImageSlide = styled.img`
@@ -21,18 +23,18 @@ export const ImageSlide = styled.img`
   object-fit: auto;
 `;
 
-
 export const Heading = styled.h1`
-  font-size: 2rem;
   text-align: center;
   margin-top: 2rem;
   color: #7e5959;
+  font-family: Times New Roman;
 `;
 
 export const LinkName = styled.p`
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: red;
   text-align: center;
+  font-family: Times New Roman;
 `;
 
 export const ImageDiv = styled.div`

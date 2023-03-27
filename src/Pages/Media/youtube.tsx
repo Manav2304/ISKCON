@@ -7,8 +7,8 @@ interface Props {
 
 export const YouTubeVideo: React.FC<Props> = ({ videoId }) => {
   const opts = {
-    height: "400",
-    width: "1000",
+    height: "300",
+    width: "500",
     playerVars: {
       autoplay: 0,
     },
