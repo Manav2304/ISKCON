@@ -9,6 +9,7 @@ export const YouTubeVideo: React.FC<Props> = ({ videoId }) => {
   const opts = {
     height: "400",
     width: "1000",
+
     playerVars: {
       autoplay: 0,
     },

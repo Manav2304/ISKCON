@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Heading = styled.h1`
   font-size: 2rem;
   text-align: center;
+  margin-top: 2rem;
 `;
 
 export const LinkName = styled.p`
@@ -17,4 +18,15 @@ export const PageWrapper = styled.div`
   justify-content: center;
   height: 100vh;
   margin-bottom: 2rem;
+`;
+
+export const ImageDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const TitleImage = styled.img`
+  width: 450px;
+  height: auto;
 `;

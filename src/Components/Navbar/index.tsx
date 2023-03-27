@@ -11,20 +11,18 @@ const NavigationBar = () => {
             <Link className="nav-link" to="/home">
               Home
             </Link>
-            <Link className="nav-link" to="/media">
-              <Dropdown>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  Media
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item href="">Live Darshan</Dropdown.Item>
-                  <Dropdown.Item href="">Daily Singar Darshan</Dropdown.Item>
-                  <Dropdown.Item href="/media/audio">
-                    Kirtan & Lecture
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </Link>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Media
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item href="/media">Live Darshan</Dropdown.Item>
+                <Dropdown.Item href="/media/audio">
+                  Kirtan & Lecture
+                </Dropdown.Item>
+                <Dropdown.Item href="">Daily Singar Darshan</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </div>
         </nav>
       </div>

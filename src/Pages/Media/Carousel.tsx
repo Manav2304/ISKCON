@@ -12,13 +12,13 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
       id={id}
       className="carousel slide"
       data-bs-ride="carousel"
-      data-bs-interval="1000"
+      data-bs-interval="2000"
     >
       <div className="carousel-inner">
-        {images.map((image, index) => (
+        {images.map((image) => (
           <div
             key={Math.random()}
-            className={`carousel-item ${index === 0 ? "active" : ""}`}
+            className={`carousel-item ${image === images[0] ? "active" : ""}`}
           >
             <ImageSlide src={image} className="d-block w-100" alt="..." />
           </div>

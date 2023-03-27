@@ -16,7 +16,7 @@ export const App: React.FunctionComponent = () => {
           <Route path="/" element={<Home />} />
           <Route path="/" element={<MyCarousel />} />
           <Route path="/Media" element={<Media />} />
-          <Route path="/Audio" element={<Audio />} />
+          <Route path="/media/audio" element={<Audio />} />
         </Routes>
       </Router>
     </>
