@@ -1,5 +1,5 @@
 import { ImageStyle, TextStyle, HeadingStyle, Image } from "./style";
-import Titlebase from "../../assets/images/Titel+Base.png";
+import Titlebase from "../../assets/images/Titel Base 16bit.png";
 
 interface TextSectionProps {
   title: string;
