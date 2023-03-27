@@ -17,7 +17,7 @@ import {
 } from "./style";
 import Carousel from "./Carousel";
 
-const VisitUs = () => {
+const Visitus = () => {
   const [showMoreDakor, setShowMoreDakor] = useState(false);
   const [showMoreGoushala, setShowMoreGoushala] = useState(false);
   const toggleShowMoreDakor = () => setShowMoreDakor(!showMoreDakor);
@@ -85,4 +85,4 @@ const VisitUs = () => {
   );
 };
 
-export default VisitUs;
+export default Visitus;
