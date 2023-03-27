@@ -10,6 +10,7 @@ import { HistoryPage } from "./Pages/History";
 import { FounderPage } from "./Pages/Founder";
 import { PhilosophyPage } from "./Pages/Philosophy";
 import { GoalsPage } from "./Pages/Goals";
+
 export const App: React.FunctionComponent = () => {
   return (
     <>

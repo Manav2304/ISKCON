@@ -7,7 +7,7 @@ import logo from "../../assets/images/isckonlogo.png";
 export const NavigationBar = () => {
   return (
     <NavStyle>
-      <nav className="navbar fixed-top navbar-expand-lg ">
+      <nav className="navbar  ">
         <div className="container">
           <DropDown />
           <StyledLink to="#">GO Seva</StyledLink>

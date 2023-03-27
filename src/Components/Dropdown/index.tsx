@@ -1,6 +1,10 @@
 import React from "react";
 import { Dropdown } from "react-bootstrap";
-import { TransparentDropdown } from "./style";
+import {
+  DropdownmenuStyle,
+  DropdowntoggleStyle,
+  TransparentDropdown,
+} from "./style";
 import { Dropdownitems } from "./constant";
 import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
 export const DropDown: React.FC = () => {
@@ -14,15 +18,18 @@ export const DropDown: React.FC = () => {
     <div>
       <TransparentDropdown>
         <Dropdown>
-          <Dropdown.Toggle>ISKCON</Dropdown.Toggle>
-
-          <Dropdown.Menu>
-            {Dropdownitems.map((item) => (
-              <Dropdown.Item onClick={handleItemClick} href={item.href}>
-                {item.title}
-              </Dropdown.Item>
-            ))}
-          </Dropdown.Menu>
+          <DropdowntoggleStyle>
+            <Dropdown.Toggle>ISKCON</Dropdown.Toggle>
+          </DropdowntoggleStyle>
+          <DropdownmenuStyle>
+            <Dropdown.Menu>
+              {Dropdownitems.map((item) => (
+                <Dropdown.Item onClick={handleItemClick} href={item.href}>
+                  {item.title}
+                </Dropdown.Item>
+              ))}
+            </Dropdown.Menu>
+          </DropdownmenuStyle>
         </Dropdown>
       </TransparentDropdown>
     </div>

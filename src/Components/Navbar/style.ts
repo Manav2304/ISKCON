@@ -2,18 +2,23 @@ import styled from "styled-components";
 import title from "../../assets/images/bgimage.png";
 import { Link } from "react-router-dom";
 
-export const NavStyle = styled.div`
-  .navbar {
-    height: 85px;
+export const NavStyle = styled.nav`
+   {
     width: 100%;
+    margin-top: 1px;
+    top: 1px;
     background-image: url(${title});
-    background-repeat: repeat;
-    color: #7e5959;
+    background-size: repeat;
+    position: fixed;
+    height: 70px;
+    z-index: 1;
+
+    img {
+      height: 50px;
+    }
 
     @media (max-width: 767px) {
-      .navbar {
-        height: 80px;
-      }
+      height: 50px;
 
       img {
         height: 30px;
@@ -21,9 +26,7 @@ export const NavStyle = styled.div`
     }
 
     @media (min-width: 768px) and (max-width: 991px) {
-      .navbar {
-        height: 100px;
-      }
+      height: 70px;
 
       img {
         height: 50px;
@@ -31,63 +34,26 @@ export const NavStyle = styled.div`
     }
 
     @media (min-width: 992px) and (max-width: 1199px) {
-      .navbar {
-        height: 110px;
-      }
+      height: 70px;
 
       img {
         height: 60px;
       }
     }
 
-    @media (min-width: 1200px) {
-      .navbar {
-        height: 120px;
-      }
+    @media (min-width: 1200px) and (max-width: 1399px) {
+      height: 80px;
 
       img {
         height: 70px;
       }
     }
 
-    @media (max-width: 480px) {
-      .navbar {
-        height: 60px;
-      }
+    @media (min-width: 1400px) {
+      height: 95px;
 
       img {
-        height: 10px;
-      }
-    }
-
-    @media (orientation: landscape) and (max-width: 991px) {
-      .navbar {
-        height: 70px;
-      }
-
-      img {
-        height: 20px;
-      }
-    }
-
-    @media (orientation: landscape) and (min-width: 992px) and (max-width: 1199px) {
-      .navbar {
-        height: 80px;
-      }
-
-      img {
-        height: 30px;
-      }
-    }
-
-    @media (orientation: landscape) and (min-width: 1200px) {
-      .navbar {
-        height: 140px;
-      }
-
-      img {
-        height: 90px;
-        width: 140px;
+        height: 85px;
       }
     }
 
@@ -99,4 +65,10 @@ export const NavStyle = styled.div`
 
 export const StyledLink = styled(Link)`
   color: red;
+`;
+export const Navbar = styled.nav`
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 `;

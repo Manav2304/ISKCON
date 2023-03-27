@@ -74,6 +74,8 @@ export const CarouselItem = styled(Carousel.Item)`
     object-fit: contain cover;
   }
 
+  margin-top: 10px;
+
   @media only screen and (max-width: 767px) {
     img {
       height: 300px;
