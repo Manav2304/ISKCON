@@ -4,7 +4,7 @@ import {
   goushalaImage,
   dakorInfo,
   goushala,
-  titleBase,
+  titleBaseUrl,
 } from "./constant";
 import {
   ServiceWrapper,
@@ -17,7 +17,7 @@ import {
 } from "./style";
 import Carousel from "./Carousel";
 
-const Visitus = () => {
+const VisitUs = () => {
   const [showMoreDakor, setShowMoreDakor] = useState(false);
   const [showMoreGoushala, setShowMoreGoushala] = useState(false);
   const toggleShowMoreDakor = () => setShowMoreDakor(!showMoreDakor);
@@ -28,7 +28,7 @@ const Visitus = () => {
       <TextWrapper>
         <Heading>Dakor Dham</Heading>
         <ImageDiv>
-          <TitleImage src={titleBase} alt="TitleBase" />
+          <TitleImage src={titleBaseUrl} alt="TitleBase" />
         </ImageDiv>
         <Carousel images={dakorImage} />
         <Paragraph>
@@ -55,7 +55,7 @@ const Visitus = () => {
         )}
         <Heading>Goverdhan Goushala</Heading>
         <ImageDiv>
-          <TitleImage src={titleBase} alt="TitleBase" />
+          <TitleImage src={titleBaseUrl} alt="TitleBase" />
         </ImageDiv>
         <Carousel images={goushalaImage} />
         <Paragraph>
@@ -85,4 +85,4 @@ const Visitus = () => {
   );
 };
 
-export default Visitus;
+export default VisitUs;

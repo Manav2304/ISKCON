@@ -20,31 +20,29 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
             key={Math.random()}
             className={`carousel-item ${image === images[0] ? "active" : ""}`}
           >
-            <ImageSlide src={image} className="d-block w-100" alt="..." />
+            <ImageSlide
+              src={image}
+              className="d-block w-100"
+              alt="carousel-images"
+            />
           </div>
         ))}
         <button
           className="carousel-control-prev"
           type="button"
-          data-bs-target={`#${id}`}
+          dataBs-target={`#${id}`}
           data-bs-slide="prev"
         >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
+          <span className="carousel-control-prev-icon" aria-hidden="true" />
           <span className="visually-hidden">Previous</span>
         </button>
         <button
           className="carousel-control-next"
           type="button"
-          data-bs-target={`#${id}`}
+          dataBs-target={`#${id}`}
           data-bs-slide="next"
         >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
+          <span className="carousel-control-next-icon" aria-hidden="true" />
           <span className="visually-hidden">Next</span>
         </button>
       </div>
