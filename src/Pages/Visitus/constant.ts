@@ -4,7 +4,7 @@ import templeimage  from "../../assets/images/Temple.jpg";
 import goushala1 from "../../assets/images/Goushala1.jpg";
 import goushala2 from "../../assets/images/Goushala2.jpg";
 import goushala3 from "../../assets/images/Gouhala3.png";
-import titleBaseUrl from "../../assets/images/TitleBaseUrl.png";
+import titleBaseUrl from "../../assets/images/TitelBaseUrl.png";
 
 export const dakorImage = [dakor,gomtiLake, templeimage];
 export const goushalaImage = [goushala2,goushala3,goushala1];
