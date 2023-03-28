@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { DonationDropDown } from "../Dropdown";
 import { NavStyle } from "./style";
 
 const NavigationBar = () => {
@@ -12,7 +13,7 @@ const NavigationBar = () => {
               Home
             </Link>
             <Link className="nav-link" to="/donation">
-              Donation
+              <DonationDropDown />
             </Link>
             <Link className="nav-link" to="#">
               GO SEVA
