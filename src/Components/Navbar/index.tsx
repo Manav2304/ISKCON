@@ -20,32 +20,32 @@ const NavigationBar = () => {
                 Donation
               </Link>
               <Dropdown>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                <Dropdown.Toggle variant="success">
                   Services
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                  <Dropdown.Item href="/services-page/life-time-membership">
+                  <Dropdown.Item href="/services/life-time-membership">
                     Life Time Membership
                   </Dropdown.Item>
-                  <Dropdown.Item href="/services-page/iskcon-youth-forum">
+                  <Dropdown.Item href="/services/iskcon-youth-forum">
                     Iskcon Youth Forum - IYF
                   </Dropdown.Item>
-                  <Dropdown.Item href="/services-page/guest-house">
+                  <Dropdown.Item href="/services/guest-house">
                     Prabhupada Ashrya Guest House
                   </Dropdown.Item>
-                  <Dropdown.Item href="/services-page/gaushala">
+                  <Dropdown.Item href="/services/gaushala">
                     Goverdhan Gaushala
                   </Dropdown.Item>
-                  <Dropdown.Item href="/services-page/deity-worship">
+                  <Dropdown.Item href="/services/deity-worship">
                     Deity Worship
                   </Dropdown.Item>
-                  <Dropdown.Item href="/services-page/devotee-kitchen">
+                  <Dropdown.Item href="/services/devotee-kitchen">
                     Devotee Kitchen
                   </Dropdown.Item>
-                  <Dropdown.Item href="/services-page/kirtan-at-iskcon">
+                  <Dropdown.Item href="/services/kirtan-at-iskcon">
                     Kirtan At Iskcon
                   </Dropdown.Item>
-                  <Dropdown.Item href="/services-page/book-distribution">
+                  <Dropdown.Item href="/services/book-distribution">
                     Book Distribution
                   </Dropdown.Item>
                 </Dropdown.Menu>

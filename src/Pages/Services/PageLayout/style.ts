@@ -14,15 +14,11 @@ export const ImageStyle = styled.div`
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1199px) {
-    .card-img-top {
-      height: 30vh;
-    }
+      height: 50%;
   }
 
   @media only screen and (min-width: 1200px) {
-    .card-img-top {
-      height: 40vh;
-    }
+      height: 50%;
   }
 `;
 
