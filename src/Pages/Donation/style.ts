@@ -24,10 +24,10 @@ export const Paragraph = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
 `;
 
 export const ImageDiv = styled.div`
@@ -37,8 +37,8 @@ export const ImageDiv = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 500px;
-  height: 60px;
+  width: 600px;
+  height: 90px;
   @media screen and (max-width: 768px) {
     /* For mobile devices */
     width: 100%;

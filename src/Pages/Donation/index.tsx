@@ -1,14 +1,14 @@
 import { Wrapper, Title, Table, Paragraph, ImageDiv, Image } from "./style";
 import { accountInfo, bhagavadGita } from "./constant";
 import { CopiedTableRow } from "./CopiedTableRow";
-import Titlebase from "../../assets/images/Titlebase.png";
+import TitleBase from "../../assets/images/Titlebase.png";
 
 const DonationPage = () => {
   return (
     <Wrapper>
-      <Title>Donate Now</Title>
+      <Title>Donation</Title>
       <ImageDiv>
-        <Image src={Titlebase} />
+        <Image src={TitleBase} />
       </ImageDiv>
       {bhagavadGita.map((paragraph) => (
         <Paragraph key={paragraph}>{paragraph}</Paragraph>
