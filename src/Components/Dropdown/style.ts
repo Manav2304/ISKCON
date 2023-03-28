@@ -8,15 +8,15 @@ export const TransparentDropdown = styled(Dropdown)`
 export const StyledLink = styled(Link)`
   color: red;
 `;
-export const DropdowntoggleStyle = styled.div`
+export const DropdownToggleStyle = styled.div`
    {
     color: #7e5959;
     background-color: transparent;
   }
 `;
-export const DropdownmenuStyle = styled.div`
+export const DropdownMenuStyle = styled.div`
   background-color: #7e5959;
 `;
-export const DropdownitemStyle = styled.div`
+export const DropdownItemStyle = styled.div`
   color: white;
 `;

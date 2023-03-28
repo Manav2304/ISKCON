@@ -5,11 +5,13 @@ import Titlebase from "../../assets/images/Titel Base 16bit.png";
 import about from "../../assets/images/About.jpg";
 import ReactCarousel from "./Reactcoursal";
 
-const mapAboutUs = aboutUs.map((paragraph) => <p>{paragraph}</p>);
-const mapHistory = history.map((paragraph) => <p>{paragraph}</p>);
-const mapGoals = goals.map((paragraph) => <p>{paragraph}</p>);
-const mapPhilosophy = philosophy.map((paragraph) => <p>{paragraph}</p>);
-const mapFounder = founder.map((paragraph) => <p>{paragraph}</p>);
+const [mapAboutUs, mapHistory, mapGoals, mapPhilosophy, mapFounder] = [
+  aboutUs,
+  history,
+  goals,
+  philosophy,
+  founder,
+].map((array) => array.map((paragraph) => <p>{paragraph}</p>));
 const homePage: React.FC = () => {
   return (
     <div>

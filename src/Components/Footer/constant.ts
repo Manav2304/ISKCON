@@ -12,9 +12,7 @@ export const schedules = [
   { time: "08:00PM", name: "Shayan Arati" },
   { time: "08:15PM", name: "Temple Closes" },
 ];
-schedules.forEach((item) => {
-  item.time = ` ${item.time}`;
-});
+
 export const contactInfos = [
   {
     icon: "home",
@@ -29,6 +27,3 @@ export const contactInfos = [
     text: "+ 01 234 567 88",
   },
 ];
-contactInfos.forEach((item) => {
-  item.text = ` ${item.text}`;
-});

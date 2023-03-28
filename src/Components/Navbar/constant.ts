@@ -17,7 +17,7 @@ export const socialMediaIcon = [
   },
   {
     name: "Instagram",
-    href: "https://instagram.com/iskcon_vallabh_vidhyanagar?utm_medium=copy_link",
+    href: "https://instagram.com/iskcon_vallabh_vidhyanagar",
     icon: "instagram",
   },
   {

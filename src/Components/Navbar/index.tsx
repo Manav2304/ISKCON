@@ -7,16 +7,16 @@ import logo from "../../assets/images/isckonlogo.png";
 export const NavigationBar = () => {
   return (
     <NavStyle>
-      <nav className="navbar  ">
+      <nav className="navbar">
         <div className="container">
           <DropDown />
-          <StyledLink to="#">GO Seva</StyledLink>
+          <StyledLink to="#">Go Seva</StyledLink>
           <StyledLink to="#">Festival</StyledLink>
           <StyledLink to="#">Services</StyledLink>
           <StyledLink to="/">
             <img src={logo} alt="Logo" />
           </StyledLink>
-          <StyledLink to="#">Conatact</StyledLink>
+          <StyledLink to="#">Contact</StyledLink>
           <StyledLink to="#">Media</StyledLink>
           <StyledLink to="/donation">Donation</StyledLink>
           <div>
