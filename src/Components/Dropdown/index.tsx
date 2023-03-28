@@ -6,13 +6,15 @@ import {
   TransparentDropdown,
 } from "./style";
 import { dropdownItems } from "./constant";
+import { useNavigate } from "react-router-dom";
+
 export const DropDown: React.FC = () => {
-  const handleItemClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    const href = event.currentTarget.getAttribute("href");
-    if (href) {
-      window.location.href = href;
-    }
+  const navigate = useNavigate();
+
+  const handleItemClick = (path: string) => {
+    navigate(path);
   };
+
   return (
     <div>
       <TransparentDropdown>
@@ -23,7 +25,7 @@ export const DropDown: React.FC = () => {
           <DropdownMenuStyle>
             <Dropdown.Menu>
               {dropdownItems.map((item) => (
-                <Dropdown.Item onClick={handleItemClick} href={item.href}>
+                <Dropdown.Item onClick={() => handleItemClick(item.path)}>
                   {item.title}
                 </Dropdown.Item>
               ))}
