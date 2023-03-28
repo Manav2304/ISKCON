@@ -10,8 +10,8 @@ export const App: React.FunctionComponent = () => {
       <BrowserRouter>
         <NavigationBar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/donation" element={<DonationPage />} />
+          <Route caseSensitive path="/" element={<Home />} />
+          <Route caseSensitive path="/donation" element={<DonationPage />} />
         </Routes>
       </BrowserRouter>
     </>
