@@ -9,7 +9,7 @@ import {
   Image,
   ImageDiv,
 } from "./style";
-import Titlebase from "../../assets/images/Titlebase.png";
+import TitleBase from "../../assets/images/Titlebase.png";
 
 export const Contact: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ export const Contact: React.FC = () => {
       <MapContainer>
         <Heading>Contact Us</Heading>
         <ImageDiv>
-          <Image src={Titlebase} />
+          <Image src={TitleBase} />
         </ImageDiv>
         <MapFrame
           title="Google Map"
