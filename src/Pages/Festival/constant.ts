@@ -4,11 +4,11 @@ import Holi from "../../assets/image/Holi.jpg";
 import Radhasthami from "../../assets/image/Radhasthami.jpg";
 import GovardhanPuja from "../../assets/image/Govardhan Puja.jpg";
 import KartikDipawali from "../../assets/image/Kartik Dipawali.jpg";
-import titleBase from "../../assets/image/Titlebase.png";
+import Titlebase from "../../assets/image/Titlebase.png";
 
 import { Festival } from "./types";
 
-export { titleBase };
+export { Titlebase };
 
 export const festivals: Festival[] = [
   {

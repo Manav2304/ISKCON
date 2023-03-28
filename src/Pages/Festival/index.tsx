@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { festivals, titleBase } from "./constant";
+import { festivals, Titlebase } from "./constant";
 import { FestivalCard } from "./FestivalCard";
-import { FestivalContainer, HeadIng1, ImageDiv, TitleImage } from "./style";
+import { FestivalContainer, Heading1, ImageDiv, TitleImage } from "./style";
 
 interface Festival {
   name: string;
@@ -35,11 +35,11 @@ const FestivalPage = () => {
 
   return (
     <>
-      <HeadIng1>
+      <Heading1>
         <h1>Festival</h1>
-      </HeadIng1>
+      </Heading1>
       <ImageDiv>
-        <TitleImage src={titleBase} alt="TitleBase" />
+        <TitleImage src={Titlebase} alt="TitleBase" />
       </ImageDiv>
       <FestivalContainer>
         {festivals.map((festival: Festival) => (

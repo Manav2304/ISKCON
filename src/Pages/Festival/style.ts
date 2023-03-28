@@ -38,14 +38,14 @@ export const FestivalInfo = styled.div`
   text-align: center;
 `;
 
-export const HeadIng2 = styled.h2`
+export const Heading2 = styled.h2`
   margin: 0;
   font-size: 2rem;
   font-weight: bold;
   color: #333;
 `;
 
-export const ParaGraph1 = styled.p`
+export const Paragraph1 = styled.p`
   margin: 0;
   font-size: 1rem;
   color: #666;
@@ -57,7 +57,7 @@ export const Description = styled.p`
   margin: 10px;
 `;
 
-export const HeadIng1 = styled.h1`
+export const Heading1 = styled.h1`
   font-size: 1rem;
   text-align: center;
 
@@ -79,6 +79,16 @@ export const ImageDiv = styled.div`
 export const TitleImage = styled.img`
   width: 500px;
   height: 60px;
+
+  @media (max-width: 768px) {
+    width: 400px;
+    height: 48px;
+  }
+
+  @media (max-width: 480px) {
+    width: 300px;
+    height: 36px;
+  }
 `;
 
 export const ButtonStyle = styled.div`

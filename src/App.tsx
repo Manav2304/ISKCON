@@ -11,7 +11,7 @@ export const App: React.FunctionComponent = () => {
         <NavigationBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Festival" element={<FestivalPage />} />
+          <Route path="/festival" element={<FestivalPage />} />
         </Routes>
       </Router>
     </>

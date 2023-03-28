@@ -1,8 +1,8 @@
 import {
   FestivalImage,
   FestivalInfo,
-  HeadIng2,
-  ParaGraph1,
+  Heading2,
+  Paragraph1,
   Description,
   ButtonStyle,
 } from "./style";
@@ -24,12 +24,12 @@ export const FestivalCard = ({
   <div key={festival.name}>
     <FestivalImage src={festival.image} />
     <FestivalInfo>
-      <HeadIng2>
+      <Heading2>
         <h2>{festival.name}</h2>
-      </HeadIng2>
-      <ParaGraph1>
+      </Heading2>
+      <Paragraph1>
         <p>{festival.date}</p>
-      </ParaGraph1>
+      </Paragraph1>
       {isFestivalSelected ? (
         <>
           <Description>{festival.description}</Description>
