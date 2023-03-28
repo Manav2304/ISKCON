@@ -9,7 +9,7 @@ import {
 } from "./style";
 import { darshan, sringar, titleBase } from "./constant";
 import Carousel from "./Carousel";
-import { YouTubeVideo } from "./Youtube";
+import { YouTubeVideo } from "./youtube";
 import AudioContent from "./Audio";
 
 const Media: React.FC = () => {
