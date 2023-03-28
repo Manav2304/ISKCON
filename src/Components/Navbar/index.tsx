@@ -1,6 +1,6 @@
 import { NavStyle, StyledLink } from "./style";
 import { DropDown } from "../Dropdown";
-import { socialmediaIcon } from "../Navbar/constant";
+import { socialMediaIcon } from "../Navbar/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
 import logo from "../../assets/images/isckonlogo.png";
 
@@ -20,7 +20,7 @@ export const NavigationBar = () => {
           <StyledLink to="#">Media</StyledLink>
           <StyledLink to="/donation">Donation</StyledLink>
           <div>
-            {socialmediaIcon.map((item) => (
+            {socialMediaIcon.map((item) => (
               <a key={item.name} href={item.href} className="me-1 text-reset">
                 <MDBIcon fab icon={item.icon} />
               </a>
