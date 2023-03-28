@@ -1,4 +1,3 @@
-import React from "react";
 import {
   MDBFooter,
   MDBContainer,
@@ -24,8 +23,8 @@ export const Footer = () => {
                 </h6>
                 <div>
                   <TimeStyle>
-                    {schedules.map((time, Darshan) => (
-                      <div key={Darshan}>
+                    {schedules.map((time) => (
+                      <div key={time.name}>
                         {time.name}:{time.time}
                       </div>
                     ))}
@@ -39,9 +38,9 @@ export const Footer = () => {
               </FooterLogoStyle>
               <MDBCol>
                 <ContactStyle>
-                  {contactInfos.map((info, Detail) => (
-                    <div key={Detail}>
-                      <i className={`fa fa-${info.icon}`} />
+                  {contactInfos.map((info) => (
+                    <div key={info.text}>
+                      <i className={`fa fa-${info.icon} `} />
                       <span>{info.text}</span>
                     </div>
                   ))}

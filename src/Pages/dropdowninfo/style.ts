@@ -45,6 +45,7 @@ export const HeadingStyle = styled.div`
   color: #7e5959;
   padding: 60px;
   text-align: center;
+  margin: 40px;
 
   @media only screen and (max-width: 767px) {
     font-size: 1.5rem;

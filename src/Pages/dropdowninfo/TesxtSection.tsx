@@ -11,13 +11,12 @@ const TextSection: React.FC<TextSectionProps> = ({
   content,
   imageUrl,
 }) => {
-  const mappedContent = content.map((paragraph, index) => (
-    <p key={index}>{paragraph}</p>
+  const mappedContent = content.map((paragraph, Dropdowninfo) => (
+    <p key={Dropdowninfo}>{paragraph}</p>
   ));
   return (
     <div>
       <HeadingStyle>
-        <br />
         <h2>{title}</h2>
         <Image src={TitleBase} />
         <ImageStyle>
