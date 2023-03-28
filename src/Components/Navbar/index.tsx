@@ -11,11 +11,11 @@ const NavigationBar = () => {
             <Link className="nav-link" to="/visit-us">
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  Visit V.V.Nagar
+                  Visit Us
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item href="">Dakor Dham</Dropdown.Item>
-                  <Dropdown.Item href="">Goverdhan Goushala</Dropdown.Item>
+                  <Dropdown.Item href="">Govardhan Goushala</Dropdown.Item>
                   <Dropdown.Item href="">Dining Options</Dropdown.Item>
                   <Dropdown.Item href="">Safety Tips</Dropdown.Item>
                   <Dropdown.Item href="">Visitor Facility</Dropdown.Item>
