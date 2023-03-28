@@ -1,14 +1,14 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import { carouselimg } from "./constant";
+import { carouselImg } from "./constant";
 import { Reviews, CarouselItem } from "./style";
 function ReactCarousel() {
   return (
     <Reviews>
       <Carousel>
-        {carouselimg.map((carouselimg) => (
-          <CarouselItem key={carouselimg.id}>
-            <img src={carouselimg.image} alt={`Review ${carouselimg.id}`} />
+        {carouselImg.map((carouselImg) => (
+          <CarouselItem key={carouselImg.id}>
+            <img src={carouselImg.image} alt={`Review ${carouselImg.id}`} />
           </CarouselItem>
         ))}
       </Carousel>

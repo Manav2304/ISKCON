@@ -60,7 +60,7 @@ export const founder = [
   "1977 Enters the eternal lila of Radha and Krishna in Goloka Vrindavan.",
 ];
 
-export const carouselimg = [
+export const carouselImg = [
   {
     id: 1,
     image: radhagiridhariji,

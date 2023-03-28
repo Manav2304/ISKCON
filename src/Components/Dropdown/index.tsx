@@ -1,12 +1,11 @@
 import React from "react";
 import { Dropdown } from "react-bootstrap";
 import {
-  DropdownmenuStyle,
-  DropdowntoggleStyle,
+  DropdownMenuStyle,
+  DropdownToggleStyle,
   TransparentDropdown,
 } from "./style";
-import { Dropdownitems } from "./constant";
-import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
+import { dropdownItems } from "./constant";
 export const DropDown: React.FC = () => {
   const handleItemClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
     const href = event.currentTarget.getAttribute("href");
@@ -18,18 +17,18 @@ export const DropDown: React.FC = () => {
     <div>
       <TransparentDropdown>
         <Dropdown>
-          <DropdowntoggleStyle>
+          <DropdownToggleStyle>
             <Dropdown.Toggle>ISKCON</Dropdown.Toggle>
-          </DropdowntoggleStyle>
-          <DropdownmenuStyle>
+          </DropdownToggleStyle>
+          <DropdownMenuStyle>
             <Dropdown.Menu>
-              {Dropdownitems.map((item) => (
+              {dropdownItems.map((item) => (
                 <Dropdown.Item onClick={handleItemClick} href={item.href}>
                   {item.title}
                 </Dropdown.Item>
               ))}
             </Dropdown.Menu>
-          </DropdownmenuStyle>
+          </DropdownMenuStyle>
         </Dropdown>
       </TransparentDropdown>
     </div>

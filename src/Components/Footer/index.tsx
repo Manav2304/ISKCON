@@ -6,7 +6,7 @@ import {
   MDBCol,
   MDBIcon,
 } from "mdb-react-ui-kit";
-import footerlogo from "../../assets/images/footerlogo.jpeg";
+import footerLogo from "../../assets/images/footerlogo.jpeg";
 import { FooterLogoStyle, ContactStyle, BgColor, TimeStyle } from "./style";
 import { contactInfos, schedules } from "./constant";
 
@@ -34,7 +34,7 @@ export const Footer = () => {
               </MDBCol>
               <FooterLogoStyle>
                 <MDBRow>
-                  <img src={footerlogo} />
+                  <img src={footerLogo} />
                 </MDBRow>
               </FooterLogoStyle>
               <MDBCol>

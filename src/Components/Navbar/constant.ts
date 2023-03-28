@@ -1,4 +1,4 @@
-export const socialmediaIcon = [
+export const socialMediaIcon = [
   {
     name: "Facebook",
     href: "https://www.facebook.com/groups/254840054550446",
