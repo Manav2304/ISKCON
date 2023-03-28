@@ -4,6 +4,7 @@ export const FooterLogoStyle = styled.div`
   align-content: center;
   margin: 5px;
   margin-top: 50px;
+  margin-left: 85px;
 `;
 export const ContactStyle = styled.div`
   margin-left: 120px;

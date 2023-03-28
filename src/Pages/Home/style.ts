@@ -68,31 +68,7 @@ export const Reviews = styled.div`
   }
 `;
 export const CarouselItem = styled(Carousel.Item)`
-  img {
-    width: 100%;
-    height: 500px;
-    object-fit: contain cover;
-  }
-
   margin-top: 10px;
-
-  @media only screen and (max-width: 767px) {
-    img {
-      height: 300px;
-    }
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    img {
-      height: 300px;
-    }
-  }
-
-  @media only screen and (min-width: 1200px) {
-    img {
-      height: 500px;
-    }
-  }
 `;
 
 export const ImageStyle = styled.div`
@@ -100,4 +76,21 @@ export const ImageStyle = styled.div`
   justify-content: center;
   align-items: center;
   margin: 40px;
+`;
+export const ImageCarousel = styled.img`
+  width: 100%;
+  height: 500px;
+  object-fit: contain cover;
+
+  @media only screen and (max-width: 767px) {
+    height: 300px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 300px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    height: 500px;
+  }
 `;

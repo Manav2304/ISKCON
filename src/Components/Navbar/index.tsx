@@ -1,4 +1,4 @@
-import { NavStyle, StyledLink } from "./style";
+import { NavStyle, StyledLink, ImgStyle } from "./style";
 import { DropDown } from "../Dropdown";
 import { socialMediaIcon } from "../Navbar/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
@@ -14,7 +14,7 @@ export const NavigationBar = () => {
           <StyledLink to="#">Festival</StyledLink>
           <StyledLink to="#">Services</StyledLink>
           <StyledLink to="/">
-            <img src={logo} alt="Logo" />
+            <ImgStyle src={logo} alt="Logo" />
           </StyledLink>
           <StyledLink to="#">Contact</StyledLink>
           <StyledLink to="#">Media</StyledLink>

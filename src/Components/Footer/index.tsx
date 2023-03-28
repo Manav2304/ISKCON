@@ -51,8 +51,8 @@ export const Footer = () => {
         </section>
         <div className="text-center p-4">
           © 2021 Copyright:
-          <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-            MDBootstrap.com
+          <a className="text-reset fw-bold" href="#">
+            ISKCON
           </a>
         </div>
       </BgColor>

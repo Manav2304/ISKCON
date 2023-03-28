@@ -4,13 +4,6 @@ export const ImageStyle = styled.div`
   justify-content: center;
   align-items: center;
   margin: 40px;
-
-  @media only screen and (max-width: 767px) {
-    img {
-      max-width: 100%;
-      max-height: 100%;
-    }
-  }
 `;
 
 export const TextStyle = styled.div`
