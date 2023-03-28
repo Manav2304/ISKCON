@@ -1,14 +1,13 @@
 import Janmashtami from "../../assets/image/Janmashtami.jpg";
 import RathYatra from "../../assets/image/Rath Yatra.jpg";
 import Holi from "../../assets/image/Holi.jpg";
-import Radhasthami from "../../assets/image/Radhasthami.jpg";
+import Radhashtami from "../../assets/image/Radhashtami.jpg";
 import GovardhanPuja from "../../assets/image/Govardhan Puja.jpg";
 import KartikDipawali from "../../assets/image/Kartik Dipawali.jpg";
-import Titlebase from "../../assets/image/Titlebase.png";
-
+import TitleBase from "../../assets/image/TitleBase.png";
 import { Festival } from "./types";
 
-export { Titlebase };
+export { TitleBase };
 
 export const festivals: Festival[] = [
   {
@@ -33,11 +32,11 @@ export const festivals: Festival[] = [
     image: Holi,
   },
   {
-    name: "Radhasthami",
+    name: "Radhashtami",
     date: "September 23, 2023",
     description:
-      "Radhastami, another important festival celebrated at ISKCON Vallabh Vidya Nagar, is dedicated to the worship of Radha, the consort of Lord Krishna. The temple is transformed into a veritable wonderland, with an array of flowers, lights, and other decorations, all in honor of Radha. Devotees engage in joyful kirtan and dance performances, and offer bhog to Radha. The festival is a celebration of love and devotion, and is a beautiful reminder of the eternal bond between Radha and Krishna. ",
-    image: Radhasthami,
+      "Radhashtami, another important festival celebrated at ISKCON Vallabh Vidya Nagar, is dedicated to the worship of Radha, the consort of Lord Krishna. The temple is transformed into a veritable wonderland, with an array of flowers, lights, and other decorations, all in honor of Radha. Devotees engage in joyful kirtan and dance performances, and offer bhog to Radha. The festival is a celebration of love and devotion, and is a beautiful reminder of the eternal bond between Radha and Krishna. ",
+    image: Radhashtami,
   },
   {
     name: "Govardhan Puja",

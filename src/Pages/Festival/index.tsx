@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { festivals, Titlebase } from "./constant";
+import { festivals, TitleBase } from "./constant";
 import { FestivalCard } from "./FestivalCard";
 import { FestivalContainer, Heading1, ImageDiv, TitleImage } from "./style";
 
@@ -39,7 +39,7 @@ const FestivalPage = () => {
         <h1>Festival</h1>
       </Heading1>
       <ImageDiv>
-        <TitleImage src={Titlebase} alt="TitleBase" />
+        <TitleImage src={TitleBase} alt="TitleBase" />
       </ImageDiv>
       <FestivalContainer>
         {festivals.map((festival: Festival) => (
