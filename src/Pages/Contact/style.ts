@@ -39,7 +39,6 @@ export const Box = styled.div`
   }
 
   p {
-    margin-bottom: 0;
     font-family: "Times New Roman", Times, serif;
   }
 
@@ -51,7 +50,7 @@ export const Box = styled.div`
   @media (max-width: 767px) {
     width: 100%;
     max-width: none;
-    grid-column: 1 / -1; /* this will span the Box to occupy the full width of the grid */
+    grid-column: 1 / -1;
   }
 `;
 
@@ -89,12 +88,10 @@ export const Image = styled.img`
   width: 500px;
   height: 60px;
   @media screen and (max-width: 768px) {
-    /* For mobile devices */
     width: 100%;
     max-width: 100%;
   }
   @media screen and (min-width: 769px) {
-    /* For desktop devices */
     width: 60%;
     max-width: 50%;
   }
