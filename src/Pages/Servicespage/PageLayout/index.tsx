@@ -1,5 +1,5 @@
 import { TextStyle, HeadingStyle, Image, ImageStyle } from "./style";
-import Titlebase from "../../../assets/image/titlebase.png";
+import titlebBaseimage from "../../../assets/image/titlebase.png";
 interface ServiceDiscriptionProps {
   title: string; 
   content: string[];
@@ -20,7 +20,7 @@ const ServiceDiscription: React.FC<ServiceDiscriptionProps> = ({
       <HeadingStyle>
         <br />
         <h2>{title}</h2>
-        <Image src={Titlebase} />
+        <Image src={titlebBaseimage} />
         <ImageStyle><img src={imageUrl}/> </ImageStyle>
         <TextStyle>{mappedContent}</TextStyle>
       </HeadingStyle>
