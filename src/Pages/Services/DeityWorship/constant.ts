@@ -1,4 +1,4 @@
-export const deityworship = [
+export const deityWorship = [
   "Deity worship is an important aspect of the spiritual practices at ISKCON Vallabh Vidya Nagar, which is a temple of the International Society for Krishna Consciousness (ISKCON) located in the city of Vallabh Vidya Nagar in Gujarat, India. The temple’s primary deity is Lord Krishna, who is worshiped with great devotion and reverence by the devotees.",
 
   "The main presiding deities are Sri Sri Radha Giridhariji along with Sri Sri Jagannath Sri Baladev and Shrimati Subhadra Devi.The process of deity worship at ISKCON Vallabh Vidya Nagar is based on the principles of Bhakti-yoga, which emphasizes the importance of developing a personal relationship with God through devotional service. The temple follows strict guidelines for the worship of the deities, which include daily rituals, offerings of food and flowers, and chanting of mantras and prayers.",

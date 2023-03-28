@@ -1,4 +1,4 @@
-export const guesthouse = [
+export const guestHouse = [
   "The ISKCON Prabhupada Ashrya Bhavan is a welcoming and comfortable guesthouse located on the grounds of the ISKCON Vallabh Vidya Nagar temple. With 12 guestrooms available, including 2 AC and 10 non-AC rooms, the guesthouse is an ideal place to stay for both life patrons and non-life members who are looking for a comfortable and convenient place to rest during their visit.",
 
   "For life members, the guesthouse offers a special rate that includes prasad, or blessed vegetarian food, as part of their stay. Non-AC life members can enjoy this exclusive benefit for only 400₹ per day, while those who prefer the comfort of an air-conditioned room can opt for the AC life member package, which includes prasad for 750₹ per day.",
