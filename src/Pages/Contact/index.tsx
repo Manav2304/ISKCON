@@ -40,7 +40,7 @@ export const Contact: React.FC = () => {
       </Box>
       <Box>
         <h2>Guest House Booking </h2>
-        {guestHouse}
+        <p>{guestHouse}</p>
       </Box>
     </Container>
   );
