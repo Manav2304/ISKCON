@@ -18,7 +18,6 @@ const ServiceDiscription: React.FC<ServiceDiscriptionProps> = ({
   return (
     <div>
       <HeadingStyle>
-        <br />
         <h2>{title}</h2>
         <Image src={titlebBaseimage} />
         <ImageStyle><img src={imageUrl}/> </ImageStyle>
