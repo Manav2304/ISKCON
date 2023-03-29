@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavigationBar from "./Components/Navbar";
 import Home from "./Pages/Home";
-import { Contact } from "./Pages/Contact";
+import FestivalPage from "./Pages/Festival";
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -11,7 +11,7 @@ export const App: React.FunctionComponent = () => {
         <NavigationBar />
         <Routes>
           <Route caseSensitive path="/" element={<Home />} />
-          <Route caseSensitive path="/contact" element={<Contact />} />
+          <Route caseSensitive path="/festival" element={<FestivalPage />} />
         </Routes>
       </Router>
     </>
