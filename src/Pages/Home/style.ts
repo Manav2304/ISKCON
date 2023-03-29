@@ -1,4 +1,3 @@
-import { Carousel } from "react-bootstrap";
 import styled from "styled-components";
 
 export const TextStyle = styled.div`
@@ -67,10 +66,6 @@ export const Reviews = styled.div`
     margin-top: 90px;
   }
 `;
-export const CarouselItem = styled(Carousel.Item)`
-  margin-top: 10px;
-`;
-
 export const ImageStyle = styled.div`
   display: flex;
   justify-content: center;

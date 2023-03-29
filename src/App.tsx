@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
 import { NavigationBar } from "./Components/Navbar/index";
-import HomePage from "./Pages/Home";
+import { HomePage } from "./Pages/Home";
 import { Footer } from "./Components/Footer";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "@fortawesome/fontawesome-free/css/fontawesome.css";

@@ -3,9 +3,9 @@ import { ImageStyle, TextStyle, HeadingStyle, Image } from "./style";
 import { aboutUs, history, goals, philosophy, founder } from "./constant";
 import TitlebaseUrl from "../../assets/images/Titel Base 16bit.png";
 import about from "../../assets/images/About.jpg";
-import ReactCarousel from "./Reactcoursal";
+import { ReactCarousel } from "./Reactcarousal";
 
-const homePage: React.FC = () => {
+export const HomePage: React.FC = () => {
   return (
     <div>
       <ReactCarousel />
@@ -61,4 +61,3 @@ const homePage: React.FC = () => {
     </div>
   );
 };
-export default homePage;
