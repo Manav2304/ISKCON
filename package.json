@@ -33,7 +33,7 @@
   },
   "scripts": {
     "lint:css": "stylelint **/*.{ts,tsx}",
-    "lint:css:fix":"stylelint --fix **/*.{ts,tsx}",
+    "lint:css:fix": "stylelint --fix **/*.{ts,tsx}",
     "prepare": "husky install",
     "lint": "eslint --ext .ts",
     "lint:fix": "eslint --fix --ext .ts,.tsx .",
@@ -47,8 +47,7 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest",
-      "prettier"
+      "react-app/jest"
     ]
   },
   "browserslist": {
