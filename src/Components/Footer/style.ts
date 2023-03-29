@@ -8,8 +8,8 @@ export const FooterLogoStyle = styled.div`
   margin-left: 85px;
 `;
 export const ContactStyle = styled.div`
-  margin-left: 120px;
   margin-top: 50px;
+  float: right;
 
   @media only screen and (max-width: 768px) {
     margin-left: 20px;

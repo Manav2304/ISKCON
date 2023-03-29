@@ -3,7 +3,7 @@ import { ImageStyle, TextStyle, HeadingStyle, Image } from "./style";
 import { aboutUs, history, goals, philosophy, founder } from "./constant";
 import TitlebaseUrl from "../../assets/images/Titel Base 16bit.png";
 import about from "../../assets/images/About.jpg";
-import { ReactCarousel } from "./Reactcarousal";
+import { ReactCarousel } from "./ReactCarousal";
 
 export const HomePage: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ export const HomePage: React.FC = () => {
         </ImageStyle>
         <TextStyle>
           {aboutUs.map((paragraph) => (
-            <p>{paragraph}</p>
+            <p key={paragraph}>{paragraph}</p>
           ))}
         </TextStyle>
         <h2>HISTORY</h2>
@@ -27,14 +27,14 @@ export const HomePage: React.FC = () => {
         </ImageStyle>
         <TextStyle>
           {history.map((paragraph) => (
-            <p>{paragraph}</p>
+            <p key={paragraph}>{paragraph}</p>
           ))}
         </TextStyle>
         <h2>Goals of ISKCON</h2>
         <Image src={TitlebaseUrl} />
         <TextStyle>
           {goals.map((paragraph) => (
-            <p>{paragraph}</p>
+            <p key={paragraph}>{paragraph}</p>
           ))}
         </TextStyle>
         <h2>PHILOSOPHY </h2>
@@ -44,7 +44,7 @@ export const HomePage: React.FC = () => {
         </ImageStyle>
         <TextStyle>
           {philosophy.map((paragraph) => (
-            <p>{paragraph}</p>
+            <p key={paragraph}>{paragraph}</p>
           ))}
         </TextStyle>
         <h2>FOUNDER</h2>
@@ -54,7 +54,7 @@ export const HomePage: React.FC = () => {
         </ImageStyle>
         <TextStyle>
           {founder.map((paragraph) => (
-            <p>{paragraph}</p>
+            <p key={paragraph}>{paragraph}</p>
           ))}
         </TextStyle>
       </HeadingStyle>
