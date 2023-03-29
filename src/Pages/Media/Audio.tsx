@@ -1,11 +1,11 @@
 import { Heading, LinkName, ImageDiv, TitleImage } from "./style";
-import { titleBase } from "./constant";
+import titleBaseUrl from "../../assets/images/titelBaseUrl.png";
 const AudioContent = () => {
   return (
     <div>
       <Heading>Kirtan</Heading>
       <ImageDiv>
-        <TitleImage src={titleBase} alt="TitleBase" />
+        <TitleImage src={titleBaseUrl} alt="TitleBase" />
       </ImageDiv>
       <a href="https://drive.google.com/" title="Google Drive Link">
         <LinkName>Google Drive Link</LinkName>

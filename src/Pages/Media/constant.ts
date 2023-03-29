@@ -4,8 +4,6 @@ import sringar3 from "../../assets/images/sringar3.jpg";
 import darshan1 from "../../assets/images/darshan1.jpg";
 import darshan2 from "../../assets/images/darshan2.jpg";
 import darshan3 from "../../assets/images/darshan3.jpg";
-import titleBase from "../../assets/images/TitelBase.png";
 
-export { titleBase };
 export const sringar = [sringar1, sringar2, sringar3];
 export const darshan = [darshan1, darshan2, darshan3];

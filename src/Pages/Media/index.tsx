@@ -7,17 +7,17 @@ import {
   ImageDiv,
   TitleImage,
 } from "./style";
-import { darshan, sringar, titleBase } from "./constant";
+import { darshan, sringar } from "./constant";
 import Carousel from "./Carousel";
 import { YouTubeVideo } from "./youtube";
 import AudioContent from "./Audio";
-
+import titleBaseUrl from "../../assets/images/titelBaseUrl.png";
 const Media: React.FC = () => {
   return (
     <>
       <Heading>Live Darshan </Heading>
       <ImageDiv>
-        <TitleImage src={titleBase} alt="TitleBase" />
+        <TitleImage src={titleBaseUrl} alt="TitleBase" />
       </ImageDiv>
       <PageWrapper>
         <CarouselWrapper>
