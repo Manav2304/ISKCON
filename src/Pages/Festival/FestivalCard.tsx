@@ -21,7 +21,7 @@ export const FestivalCard = ({ festival }: FestivalCardProps) => {
   };
 
   return (
-    <div key={festival.name}>
+    <div>
       <FestivalImage src={festival.image} />
       <FestivalInfo>
         <Heading2>
