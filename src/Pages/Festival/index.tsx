@@ -5,18 +5,6 @@ import { Festival } from "./types";
 import titleBaseUrl from "../../assets/image/titleBaseUrl.png";
 
 const FestivalPage = () => {
-  const handleLearnMoreClick = (festival: Festival) => {
-    console.log("Learn more clicked for:", festival);
-  };
-
-  const handleShowLessClick = (festival: Festival) => {
-    console.log("Show less clicked for:", festival);
-  };
-
-  const isFestivalSelected = (festival: Festival) => {
-    return false;
-  };
-
   return (
     <>
       <Heading1>
@@ -27,13 +15,7 @@ const FestivalPage = () => {
       </ImageDiv>
       <FestivalContainer>
         {festivals.map((festival: Festival) => (
-          <FestivalCard
-            key={festival.name}
-            festival={festival}
-            isFestivalSelected={isFestivalSelected(festival)}
-            handleLearnMoreClick={handleLearnMoreClick}
-            handleShowLessClick={handleShowLessClick}
-          />
+          <FestivalCard key={festival.name} festival={festival} />
         ))}
       </FestivalContainer>
     </>

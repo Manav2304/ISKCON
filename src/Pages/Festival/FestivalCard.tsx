@@ -11,26 +11,13 @@ import { Festival } from "./types";
 
 interface FestivalCardProps {
   festival: Festival;
-  isFestivalSelected: boolean;
-  handleLearnMoreClick: (festival: Festival) => void;
-  handleShowLessClick: (festival: Festival) => void;
 }
 
-export const FestivalCard = ({
-  festival,
-  isFestivalSelected,
-  handleLearnMoreClick,
-  handleShowLessClick,
-}: FestivalCardProps) => {
-  const [isSelected, setIsSelected] = useState<boolean>(isFestivalSelected);
+export const FestivalCard = ({ festival }: FestivalCardProps) => {
+  const [isSelected, setIsSelected] = useState<boolean>(false);
 
   const toggleSelected = () => {
     setIsSelected(!isSelected);
-    if (!isSelected) {
-      handleLearnMoreClick(festival);
-    } else {
-      handleShowLessClick(festival);
-    }
   };
 
   return (
