@@ -41,6 +41,13 @@ export const Paragraph = styled.p`
   text-align: left;
   text-align: justify;
 `;
+export const HiddenParagraph = styled.p`
+  display: none;
+`;
+
+export const VisibleParagraph = styled.p`
+  display: block;
+`;
 
 export const Button = styled.button`
   background-color: #00FFFF;

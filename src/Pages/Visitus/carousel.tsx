@@ -30,7 +30,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
         <button
           className="carousel-control-prev"
           type="button"
-          dataBs-target={`#${id}`}
+          data-bs-target={`#${id}`}
           data-bs-slide="prev"
         >
           <span className="carousel-control-prev-icon" aria-hidden="true" />
@@ -39,7 +39,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
         <button
           className="carousel-control-next"
           type="button"
-          dataBs-target={`#${id}`}
+          data-bs-target={`#${id}`}
           data-bs-slide="next"
         >
           <span className="carousel-control-next-icon" aria-hidden="true" />

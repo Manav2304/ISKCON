@@ -1,11 +1,6 @@
 import React, { useState } from "react";
-import {
-  dakorImage,
-  goushalaImage,
-  dakorInfo,
-  goushala,
-  titleBaseUrl,
-} from "./constant";
+import { dakorImage, goushalaImage, dakorInfo, goushala } from "./constant";
+import titleBaseUrl from "../../assets/images/titelBaseUrl.png";
 import {
   ServiceWrapper,
   TextWrapper,
@@ -14,6 +9,8 @@ import {
   Button,
   ImageDiv,
   TitleImage,
+  VisibleParagraph,
+  HiddenParagraph,
 } from "./style";
 import Carousel from "./Carousel";
 
@@ -32,54 +29,38 @@ const VisitUs = () => {
         </ImageDiv>
         <Carousel images={dakorImage} />
         <Paragraph>
-          {dakorInfo.map((paragraph) => (
-            <p
-              key={paragraph.substring(0, 10)}
-              style={{
-                display:
-                  showMoreDakor ||
-                  paragraph === dakorInfo[0] ||
-                  paragraph === dakorInfo[1]
-                    ? "block"
-                    : "none",
-              }}
-            >
-              {paragraph}
-            </p>
-          ))}
+          {dakorInfo.map((paragraph) =>
+            showMoreDakor ||
+            paragraph === dakorInfo[0] ||
+            paragraph === dakorInfo[1] ? (
+              <VisibleParagraph key={paragraph}>{paragraph}</VisibleParagraph>
+            ) : (
+              <HiddenParagraph key={paragraph}>{paragraph}</HiddenParagraph>
+            ),
+          )}
         </Paragraph>
-        {dakorInfo.length > 2 && (
-          <Button onClick={toggleShowMoreDakor}>
-            {showMoreDakor ? "Read less" : "Read more"}
-          </Button>
-        )}
+        <Button onClick={toggleShowMoreDakor}>
+          {showMoreDakor ? "Read less" : "Read more"}
+        </Button>
         <Heading>Goverdhan Goushala</Heading>
         <ImageDiv>
           <TitleImage src={titleBaseUrl} alt="TitleBase" />
         </ImageDiv>
         <Carousel images={goushalaImage} />
         <Paragraph>
-          {goushala.map((paragraph) => (
-            <p
-              key={paragraph.substring(0, 10)}
-              style={{
-                display:
-                  showMoreGoushala ||
-                  paragraph === goushala[0] ||
-                  paragraph === goushala[1]
-                    ? "block"
-                    : "none",
-              }}
-            >
-              {paragraph}
-            </p>
-          ))}
+          {goushala.map((paragraph) =>
+            showMoreGoushala ||
+            paragraph === goushala[0] ||
+            paragraph === goushala[1] ? (
+              <VisibleParagraph key={paragraph}>{paragraph}</VisibleParagraph>
+            ) : (
+              <HiddenParagraph key={paragraph}>{paragraph}</HiddenParagraph>
+            ),
+          )}
         </Paragraph>
-        {goushala.length > 2 && (
-          <Button onClick={toggleShowMoreGoushala}>
-            {showMoreGoushala ? "Read less" : "Read more"}
-          </Button>
-        )}
+        <Button onClick={toggleShowMoreGoushala}>
+          {showMoreGoushala ? "Read less" : "Read more"}
+        </Button>
       </TextWrapper>
     </ServiceWrapper>
   );

@@ -1,18 +1,15 @@
-import dakor from "../../assets/images/Dakor.jpg";
-import gomtiLake from "../../assets/images/GomtiLake.jpg";
-import templeImage  from "../../assets/images/Temple.jpg";
-import goushala1 from "../../assets/images/Goushala1.jpg";
-import goushala2 from "../../assets/images/Goushala2.jpg";
-import goushala3 from "../../assets/images/Gouhala3.png";
-import titleBaseUrl from "../../assets/images/TitelBaseUrl.png";
+import dakor from "../../assets/images/dakor.jpg";
+import gomtiLake from "../../assets/images/gomtiLake.jpg";
+import templeImage  from "../../assets/images/templeImage.jpg";
+import gouShala1 from "../../assets/images/gouShala1.jpg";
+import gouShala2 from "../../assets/images/gouShala2.jpg";
+import gouShala3 from "../../assets/images/gouShala3.png";
 
 export const dakorImage = [dakor,gomtiLake, templeImage];
-export const goushalaImage = [goushala2,goushala3,goushala1];
-export { titleBaseUrl };
+export const goushalaImage = [gouShala2,gouShala3,gouShala1];
 
 export const dakorInfo = [
-
-   "At the heart of Dakor lies the Ranchhodraiji Temple, a sacred place where Lord Krishna is worshipped in the form of Ranchhodrai. The temple, with its grand architecture and intricate carvings, is a stunning masterpiece that leaves visitors awestruck.",
+  "At the heart of Dakor lies the Ranchhodraiji Temple, a sacred place where Lord Krishna is worshipped in the form of Ranchhodrai. The temple, with its grand architecture and intricate carvings, is a stunning masterpiece that leaves visitors awestruck.",
 
    "Every year, the temple comes alive with the vibrant colors and sounds of the annual Rath Yatra festival, which is celebrated with great pomp and show. Thousands of devotees flock to the temple to pull the grand chariot through the streets of Dakor, singing and chanting praises of Lord Krishna.",
 
