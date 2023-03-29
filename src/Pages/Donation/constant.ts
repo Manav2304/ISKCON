@@ -26,3 +26,26 @@ export const accountInfo = [
     value: "ABCD1234567",
   },
 ];
+
+export const accountInfo1 = [
+  {
+    label: "Account Name",
+    value: "Doe",
+  },
+  {
+    label: "Bank Name",
+    value: "Bank",
+  },
+  {
+    label: "Branch Name",
+    value: "Branch",
+  },
+  {
+    label: "Account Number",
+    value: "1234567890",
+  },
+  {
+    label: "IFSC Code",
+    value: "ABCD1234567",
+  },
+];

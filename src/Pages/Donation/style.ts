@@ -39,13 +39,12 @@ export const ImageDiv = styled.div`
 export const Image = styled.img`
   width: 600px;
   height: 90px;
+
   @media screen and (max-width: 768px) {
-    /* For mobile devices */
     width: 100%;
     max-width: 100%;
   }
   @media screen and (min-width: 769px) {
-    /* For desktop devices */
     width: 60%;
     max-width: 50%;
   }
@@ -93,4 +92,12 @@ export const CopyButton = styled.button<{ copied: boolean }>`
   &:active {
     background-color: ${({ copied }) => (copied ? "green" : "#4caf50")};
   }
+`;
+
+export const TableStyle1 = styled.div`
+  margin: 0px 50px 10px;
+`;
+
+export const TableStyle2 = styled.div`
+  margin: 0px 50px 10px;
 `;
