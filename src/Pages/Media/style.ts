@@ -11,6 +11,7 @@ export const CarouselWrapper = styled.div`
   height: 300px;
   margin: 0px 60px 60px;
 `;
+
 export const YouTubeWrapper = styled.div`
   display: flex;
   justify-content: center;
