@@ -16,9 +16,7 @@ export const HomePage: React.FC = () => {
           <img src={about} className="rounded" />
         </ImageStyle>
         <TextStyle>
-          {aboutUs.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
+          {aboutUs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}
         </TextStyle>
         <h2>HISTORY</h2>
         <Image src={TitlebaseUrl} />
