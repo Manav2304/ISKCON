@@ -1,13 +1,13 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ServiceWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem; 
+  padding: 1rem;
 `;
 
-export const TextWrapper = styled.div`  
+export const TextWrapper = styled.div`
   color: #ad0d0d;
   font-family: Times New Roman;
 `;
@@ -50,8 +50,8 @@ export const VisibleParagraph = styled.p`
 `;
 
 export const Button = styled.button`
-  background-color: #00FFFF;
-  color: #0C090A;
+  background-color: #00ffff;
+  color: #0c090a;
   font-size: 16px;
   border: none;
   padding: 10px 20px;
