@@ -33,8 +33,7 @@ export const FestivalCard = ({ festival }: FestivalCardProps) => {
         <Description>
           {isSelected
             ? festival.description
-            : festival.description.substring(0, 100)}
-          ...
+            : `${festival.description.substring(0, 100)}...`}
         </Description>
         <ButtonStyle>
           <button onClick={toggleSelected}>
