@@ -6,14 +6,16 @@ interface TextSectionProps {
   content: string[];
   imageUrl: string;
 }
+
 const TextSection: React.FC<TextSectionProps> = ({
   title,
   content,
   imageUrl,
 }) => {
-  const mappedContent = content.map((paragraph, Dropdowninfo) => (
-    <p key={Dropdowninfo}>{paragraph}</p>
+  const mappedContent = content.map((paragraph) => (
+    <p key={paragraph}>{paragraph}</p>
   ));
+
   return (
     <div>
       <HeadingStyle>
@@ -27,4 +29,5 @@ const TextSection: React.FC<TextSectionProps> = ({
     </div>
   );
 };
+
 export default TextSection;

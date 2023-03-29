@@ -5,13 +5,6 @@ import TitlebaseUrl from "../../assets/images/Titel Base 16bit.png";
 import about from "../../assets/images/About.jpg";
 import ReactCarousel from "./Reactcoursal";
 
-const [mapAboutUs, mapHistory, mapGoals, mapPhilosophy, mapFounder] = [
-  aboutUs,
-  history,
-  goals,
-  philosophy,
-  founder,
-].map((array) => array.map((paragraph) => <p>{paragraph}</p>));
 const homePage: React.FC = () => {
   return (
     <div>
@@ -22,28 +15,48 @@ const homePage: React.FC = () => {
         <ImageStyle>
           <img src={about} className="rounded" />
         </ImageStyle>
-        <TextStyle> {mapAboutUs}</TextStyle>
+        <TextStyle>
+          {aboutUs.map((paragraph) => (
+            <p>{paragraph}</p>
+          ))}
+        </TextStyle>
         <h2>HISTORY</h2>
         <Image src={TitlebaseUrl} />
         <ImageStyle>
           <img src="https://www.shutterstock.com/image-illustration/scene-battlefield-mahabharata-krishna-arjuna-600w-2091772597.jpg" />
         </ImageStyle>
-        <TextStyle>{mapHistory}</TextStyle>
+        <TextStyle>
+          {history.map((paragraph) => (
+            <p>{paragraph}</p>
+          ))}
+        </TextStyle>
         <h2>Goals of ISKCON</h2>
         <Image src={TitlebaseUrl} />
-        <TextStyle>{mapGoals}</TextStyle>
+        <TextStyle>
+          {goals.map((paragraph) => (
+            <p>{paragraph}</p>
+          ))}
+        </TextStyle>
         <h2>PHILOSOPHY </h2>
         <Image src={TitlebaseUrl} />
         <ImageStyle>
           <img src="https://www.shutterstock.com/image-illustration/scene-battlefield-mahabharata-krishna-arjuna-600w-2091772597.jpg" />
         </ImageStyle>
-        <TextStyle> {mapPhilosophy}</TextStyle>
+        <TextStyle>
+          {philosophy.map((paragraph) => (
+            <p>{paragraph}</p>
+          ))}
+        </TextStyle>
         <h2>FOUNDER</h2>
         <Image src={TitlebaseUrl} />
         <ImageStyle>
           <img src="https://www.shutterstock.com/image-illustration/scene-battlefield-mahabharata-krishna-arjuna-600w-2091772597.jpg" />
         </ImageStyle>
-        <TextStyle>{mapFounder}</TextStyle>
+        <TextStyle>
+          {founder.map((paragraph) => (
+            <p>{paragraph}</p>
+          ))}
+        </TextStyle>
       </HeadingStyle>
     </div>
   );
