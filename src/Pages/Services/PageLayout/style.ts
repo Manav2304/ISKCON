@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ImageStyle = styled.div`
+export const ImageStyle = styled.img`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,11 +14,11 @@ export const ImageStyle = styled.div`
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1199px) {
-      height: 50%;
+    height: 50%;
   }
 
   @media only screen and (min-width: 1200px) {
-      height: 50%;
+    height: 50%;
   }
 `;
 

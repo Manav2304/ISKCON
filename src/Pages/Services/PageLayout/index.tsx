@@ -7,7 +7,7 @@ interface ServiceDiscriptionProps {
   imageUrl: string;
 }
 
-const ServiceDiscription: React.FC<ServiceDiscriptionProps> = ({
+export const ServiceDiscription: React.FC<ServiceDiscriptionProps> = ({
   title,
   content,
   imageUrl,
@@ -19,14 +19,9 @@ const ServiceDiscription: React.FC<ServiceDiscriptionProps> = ({
       <HeadingStyle>
         <h2>{title}</h2>
         <Image src={titlebBaseImage} />
-        <ImageStyle>
-          <img src={imageUrl} />
-        </ImageStyle>
-
+        <ImageStyle src={imageUrl} />
         <TextStyle>{mappedContent}</TextStyle>
       </HeadingStyle>
     </div>
   );
 };
-
-export default ServiceDiscription;
