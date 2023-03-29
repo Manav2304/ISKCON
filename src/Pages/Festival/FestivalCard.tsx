@@ -30,23 +30,17 @@ export const FestivalCard = ({ festival }: FestivalCardProps) => {
         <Paragraph1>
           <p>{festival.date}</p>
         </Paragraph1>
-        {isSelected ? (
-          <>
-            <Description>{festival.description}</Description>
-            <ButtonStyle>
-              <button onClick={toggleSelected}>Show Less</button>
-            </ButtonStyle>
-          </>
-        ) : (
-          <>
-            <Description>
-              {festival.description.substring(0, 100)}...
-            </Description>
-            <ButtonStyle>
-              <button onClick={toggleSelected}>Read More</button>
-            </ButtonStyle>
-          </>
-        )}
+        <Description>
+          {isSelected
+            ? festival.description
+            : festival.description.substring(0, 100)}
+          ...
+        </Description>
+        <ButtonStyle>
+          <button onClick={toggleSelected}>
+            {isSelected ? "Show Less" : "Read More"}
+          </button>
+        </ButtonStyle>
       </FestivalInfo>
     </div>
   );
