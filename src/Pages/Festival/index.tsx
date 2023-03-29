@@ -1,36 +1,20 @@
-import { useState } from "react";
-import { festivals, TitleBase } from "./constant";
+import { festivals } from "./constant";
 import { FestivalCard } from "./FestivalCard";
 import { FestivalContainer, Heading1, ImageDiv, TitleImage } from "./style";
-
-interface Festival {
-  name: string;
-  date: string;
-  image: string;
-  description: string;
-}
+import { Festival } from "./types";
+import titleBaseUrl from "../../assets/image/titleBaseUrl.png";
 
 const FestivalPage = () => {
-  const [selectedFestivals, setSelectedFestivals] = useState<Festival[]>([]);
   const handleLearnMoreClick = (festival: Festival) => {
-    setSelectedFestivals((selectedFestivals) => [
-      ...selectedFestivals,
-      festival,
-    ]);
+    console.log("Learn more clicked for:", festival);
   };
 
   const handleShowLessClick = (festival: Festival) => {
-    setSelectedFestivals((selectedFestivals) =>
-      selectedFestivals.filter(
-        (selectedFestival) => selectedFestival !== festival,
-      ),
-    );
+    console.log("Show less clicked for:", festival);
   };
 
   const isFestivalSelected = (festival: Festival) => {
-    return selectedFestivals.some(
-      (selectedFestival) => selectedFestival === festival,
-    );
+    return false;
   };
 
   return (
@@ -39,11 +23,12 @@ const FestivalPage = () => {
         <h1>Festival</h1>
       </Heading1>
       <ImageDiv>
-        <TitleImage src={TitleBase} alt="TitleBase" />
+        <TitleImage src={titleBaseUrl} alt="titleBaseImg" />
       </ImageDiv>
       <FestivalContainer>
         {festivals.map((festival: Festival) => (
           <FestivalCard
+            key={festival.name}
             festival={festival}
             isFestivalSelected={isFestivalSelected(festival)}
             handleLearnMoreClick={handleLearnMoreClick}

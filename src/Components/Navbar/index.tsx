@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import FestivalDropdown from "../../Pages/Festival/Dropdown";
 import { NavStyle } from "./style";
 
 const NavigationBar = () => {
@@ -11,9 +10,9 @@ const NavigationBar = () => {
             <Link className="link" to="/">
               Home
             </Link>
-            <Link className="link" to="/Festival">
-              <FestivalDropdown />
-            </Link>    
+            <Link className="link" to="/festival">
+              Festival
+            </Link>
           </div>
         </nav>
       </div>

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   FestivalImage,
   FestivalInfo,
@@ -20,35 +21,46 @@ export const FestivalCard = ({
   isFestivalSelected,
   handleLearnMoreClick,
   handleShowLessClick,
-}: FestivalCardProps) => (
-  <div key={festival.name}>
-    <FestivalImage src={festival.image} />
-    <FestivalInfo>
-      <Heading2>
-        <h2>{festival.name}</h2>
-      </Heading2>
-      <Paragraph1>
-        <p>{festival.date}</p>
-      </Paragraph1>
-      {isFestivalSelected ? (
-        <>
-          <Description>{festival.description}</Description>
-          <ButtonStyle>
-            <button onClick={() => handleShowLessClick(festival)}>
-              Show Less
-            </button>
-          </ButtonStyle>
-        </>
-      ) : (
-        <>
-          <Description>{festival.description.substring(0, 100)}...</Description>
-          <ButtonStyle>
-            <button onClick={() => handleLearnMoreClick(festival)}>
-              Read More
-            </button>
-          </ButtonStyle>
-        </>
-      )}
-    </FestivalInfo>
-  </div>
-);
+}: FestivalCardProps) => {
+  const [isSelected, setIsSelected] = useState<boolean>(isFestivalSelected);
+
+  const toggleSelected = () => {
+    setIsSelected(!isSelected);
+    if (!isSelected) {
+      handleLearnMoreClick(festival);
+    } else {
+      handleShowLessClick(festival);
+    }
+  };
+
+  return (
+    <div key={festival.name}>
+      <FestivalImage src={festival.image} />
+      <FestivalInfo>
+        <Heading2>
+          <h2>{festival.name}</h2>
+        </Heading2>
+        <Paragraph1>
+          <p>{festival.date}</p>
+        </Paragraph1>
+        {isSelected ? (
+          <>
+            <Description>{festival.description}</Description>
+            <ButtonStyle>
+              <button onClick={toggleSelected}>Show Less</button>
+            </ButtonStyle>
+          </>
+        ) : (
+          <>
+            <Description>
+              {festival.description.substring(0, 100)}...
+            </Description>
+            <ButtonStyle>
+              <button onClick={toggleSelected}>Read More</button>
+            </ButtonStyle>
+          </>
+        )}
+      </FestivalInfo>
+    </div>
+  );
+};

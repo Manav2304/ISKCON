@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const NavStyle = styled.div`
   background-color: black;
   padding: 1.5rem;
+`;
 
-  .nav-link {
-    color: dark black;
-    font-weight: 500;
-    margin-right: 1rem;
-  }
+export const LinkStyle = styled.div`
+  color: dark black;
+  font-weight: 500;
+  margin-right: 1rem;
 `;
