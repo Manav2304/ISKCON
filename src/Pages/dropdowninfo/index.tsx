@@ -1,5 +1,5 @@
 import { ImageStyle, TextStyle, HeadingStyle, Image } from "./style";
-import TitleBase from "../../assets/images/Titel Base 16bit.png";
+import TitleBase from "../../assets/images/titelBaseImg.png";
 
 interface TextSectionProps {
   title: string;
@@ -7,7 +7,7 @@ interface TextSectionProps {
   imageUrl: string;
 }
 
-const TextSection: React.FC<TextSectionProps> = ({
+export const TextSection: React.FC<TextSectionProps> = ({
   title,
   content,
   imageUrl,
@@ -29,5 +29,3 @@ const TextSection: React.FC<TextSectionProps> = ({
     </div>
   );
 };
-
-export default TextSection;

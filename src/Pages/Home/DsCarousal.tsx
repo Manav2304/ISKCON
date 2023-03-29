@@ -10,7 +10,7 @@ export const ReactCarousel = () => {
           <Carousel.Item key={carouselItem.id}>
             <ImageCarousel
               src={carouselItem.image}
-              alt={`Review ${carouselItem.id}`}
+              alt={`Carousel Image  ${carouselItem.id}`}
             />
           </Carousel.Item>
         ))}

@@ -1,5 +1,5 @@
 import { founder } from "./constant";
-import TextSection from "../dropdowninfo/TesxtSection";
+import { TextSection } from "../DropDownInfo";
 
 export const FounderPage: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
 import { goals } from "./constant";
-import TextSection from "../dropdowninfo/TesxtSection";
+import { TextSection } from "../DropDownInfo";
 
 export const GoalsPage: React.FC = () => {
   return (

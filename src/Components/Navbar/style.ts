@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import title from "../../assets/images/bgimage.png";
+import title from "../../assets/images/bgImage.png";
 import { Link } from "react-router-dom";
 
 export const NavStyle = styled.nav`

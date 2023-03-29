@@ -1,4 +1,4 @@
-import TextSection from "../dropdowninfo/TesxtSection";
+import { TextSection } from "../DropDownInfo";
 import { history } from "./constant";
 
 export const HistoryPage: React.FC = () => {

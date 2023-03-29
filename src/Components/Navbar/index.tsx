@@ -2,7 +2,7 @@ import { NavStyle, StyledLink, ImgStyle } from "./style";
 import { DropDown } from "../Dropdown";
 import { socialMediaIcon } from "../Navbar/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
-import logoUrl from "../../assets/images/isckonlogo.png";
+import logoUrl from "../../assets/images/isckonLogo.png";
 
 export const NavigationBar = () => {
   return (
