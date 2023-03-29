@@ -1,23 +1,31 @@
-import { Link } from "react-router-dom";
-import { NavStyle } from "./style";
+import { NavStyle, StyledLink, ImgStyle } from "./style";
+import { socialMediaIcon } from "../Navbar/constant";
+import { MDBIcon } from "mdb-react-ui-kit";
+import logoUrl from "../../assets/images/iskconLogo.png";
 
-const NavigationBar = () => {
+export const NavigationBar = () => {
   return (
     <NavStyle>
-      <div className="container ">
-        <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-          <div className="container-fluid">
-            <Link className="link" to="/">
-              Home
-            </Link>
-            <Link className="link" to="/festival">
-              Festival
-            </Link>
+      <nav className="navbar">
+        <div className="container">
+          <StyledLink to="#">Go Seva</StyledLink>
+          <StyledLink to="#">Festival</StyledLink>
+          <StyledLink to="#">Services</StyledLink>
+          <StyledLink to="/">
+            <ImgStyle src={logoUrl} alt="Logo" />
+          </StyledLink>
+          <StyledLink to="#">Contact</StyledLink>
+          <StyledLink to="#">Media</StyledLink>
+          <StyledLink to="/donation">Donation</StyledLink>
+          <div>
+            {socialMediaIcon.map((item) => (
+              <a key={item.name} href={item.href} className="me-1 text-reset">
+                <MDBIcon fab icon={item.icon} />
+              </a>
+            ))}
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </NavStyle>
   );
 };
-
-export default NavigationBar;
