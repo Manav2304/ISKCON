@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 export const FooterLogoStyle = styled.div`
   width: 500px;
   align-content: center;
