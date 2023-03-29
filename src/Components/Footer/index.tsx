@@ -33,7 +33,7 @@ export const Footer = () => {
               </MDBCol>
               <FooterLogoStyle>
                 <MDBRow>
-                  <img src={footerLogo} />
+                  <img src={footerLogo} alt="Footer Logo" />
                 </MDBRow>
               </FooterLogoStyle>
               <MDBCol>
