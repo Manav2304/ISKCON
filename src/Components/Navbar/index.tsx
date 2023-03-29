@@ -1,7 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { NavStyle } from "./style";
 import { Dropdown } from "react-bootstrap";
+
 const NavigationBar = () => {
   return (
     <NavStyle>
