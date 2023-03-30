@@ -10,14 +10,14 @@ import {
 } from "./style";
 import { accountInfo, accountInfo1, bhagavadGita } from "./constant";
 import { CopiedTableRow } from "./CopiedTableRow";
-import TitleBase from "../../assets/images/Titlebase.png";
+import titleBaseUrl from "../../assets/images/Titlebase.png";
 
-const DonationPage = () => {
+export const DonationPage = () => {
   return (
     <Wrapper>
       <Title>Donation</Title>
       <ImageDiv>
-        <Image src={TitleBase} />
+        <Image src={titleBaseUrl} />
       </ImageDiv>
       {bhagavadGita.map((paragraph) => (
         <Paragraph key={paragraph}>{paragraph}</Paragraph>
@@ -43,5 +43,3 @@ const DonationPage = () => {
     </Wrapper>
   );
 };
-
-export default DonationPage;
