@@ -10,7 +10,7 @@ export const NavStyle = styled.nav`
   background-size: repeat;
   position: fixed;
   height: 95px;
-  z-index: 2;
+  z-index: 1;
 `;
 
 export const StyledLink = styled(Link)`

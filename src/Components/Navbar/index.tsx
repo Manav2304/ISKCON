@@ -17,7 +17,7 @@ export const NavigationBar = () => {
             <ImgStyle src={logoUrl} alt="Logo" />
           </StyledLink>
           <DropDown items={mediaInfo} toggleTitle="media" />
-          <StyledLink to="#">Contact</StyledLink>
+          <StyledLink to="Contact">Contact</StyledLink>
           <DropDown items={donationInfo} toggleTitle="Donate" />
           <div>
             {socialMediaIcon.map((item) => (

@@ -9,7 +9,7 @@ import {
   Image,
   ImageDiv,
 } from "./style";
-import titleBaseUrl from "../../assets/images/Titlebase.png";
+import titleBaseUrl from "../../assets/images/titleBaseUrl.png";
 
 export const Contact: React.FC = () => {
   return (
