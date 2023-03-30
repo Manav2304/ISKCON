@@ -1,5 +1,6 @@
 import { Heading, LinkName, ImageDiv, TitleImage } from "./style";
-import titleBaseUrl from "../../assets/images/titelBaseUrl.png";
+import titleBaseUrl from "../../assets/images/titel-base-url.png";
+
 const AudioContent = () => {
   return (
     <div>

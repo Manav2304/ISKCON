@@ -9,9 +9,10 @@ import {
 } from "./style";
 import { darshan, sringar } from "./constant";
 import Carousel from "./Carousel";
-import { YouTubeVideo } from "./youtube";
+import { YouTubeVideo } from "./Youtube";
 import AudioContent from "./Audio";
-import titleBaseUrl from "../../assets/images/titelBaseUrl.png";
+import titleBaseUrl from "../../assets/images/titel-base-url.png";
+
 const Media: React.FC = () => {
   return (
     <>
