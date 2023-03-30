@@ -1,10 +1,10 @@
-import ServiceDiscriptoin from "../PageLayout/index";
+import { ServiceDiscription } from "../PageLayout/index";
 import { bookDistribution } from "./constant";
-import bookDistributionImage from "../../../assets/image/book-distribution.jpg";
+import bookDistributionImage from "../../../assets/images/bookDistribution.jpg";
 
 export const BookDistribution: React.FC = () => {
   return (
-    <ServiceDiscriptoin
+    <ServiceDiscription
       title="Book Distribution"
       content={bookDistribution}
       imageUrl={bookDistributionImage}

@@ -1,6 +1,6 @@
-import ServiceDiscription from "../PageLayout/index";
+import { ServiceDiscription } from "../PageLayout/index";
 import { devoteeKitchen } from "./constant";
-import devoteeKitchenImage from "../../../assets/image/devotee-kitchen.jpg";
+import devoteeKitchenImage from "../../../assets/images/devoteeKitchen.jpg";
 
 export const DevoteeKitchen: React.FC = () => {
   return (

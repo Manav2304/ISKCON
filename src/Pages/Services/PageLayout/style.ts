@@ -4,21 +4,18 @@ export const ImageStyle = styled.img`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
 
+  /* Media query for mobile devices */
   @media only screen and (max-width: 768px) {
-    img {
-      max-width: 100%;
-      max-height: 100%;
-    }
+    margin: 20px;
   }
 
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
-    height: 50%;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    height: 50%;
+  /* Media query for desktop devices */
+  @media only screen and (min-width: 769px) {
+    margin: 40px;
   }
 `;
 
@@ -30,56 +27,66 @@ export const TextStyle = styled.div`
   color: #ad0d0d;
   font-family: "Times New Roman", Times, serif;
 
-  @media only screen and (max-width: 768px) {
+  /* Media query for mobile devices */
+  @media only screen and (max-width: 480px) {
     margin: 10px;
     font-size: 0.8rem;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+  /* Media query for tablet devices */
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
     font-size: 1rem;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
-  @media only screen and (min-width: 1200px) {
+  /* Media query for desktop devices */
+  @media only screen and (min-width: 768px) {
     font-size: 1.2rem;
   }
 `;
 
 export const HeadingStyle = styled.div`
-  text-align: center;
   font-family: "Times New Roman", Times, serif;
   color: #7e5959;
   padding: 60px;
-  margin-bottom: 50px;
-  @media only screen and (max-width: 768px) {
+  text-align: center;
+  margin: 40px;
+
+  /* Media query for mobile devices */
+  @media only screen and (max-width: 480px) {
     font-size: 1.5rem;
     padding: 20px;
+    margin: 20px;
   }
 
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+  /* Media query for tablet devices */
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
     font-size: 2rem;
     padding: 40px;
+    margin: 30px;
   }
 
-  @media only screen and (min-width: 1200px) {
+  /* Media query for desktop devices */
+  @media only screen and (min-width: 768px) {
     font-size: 3rem;
     padding: 60px;
+    margin: 40px;
   }
 `;
 
 export const Image = styled.img`
-  width: 60%;
-  max-width: 50%;
-  justify-content: center;
+  width: 100%;
 
-  @media screen and (max-width: 768px) {
-    /* For mobile devices */
-    width: 100%;
-    max-width: 100%;
+  /* Media query for mobile devices */
+  @media only screen and (max-width: 480px) {
+    max-width: 200px;
   }
 
-  @media screen and (min-width: 769px) {
-    /* For desktop devices */
-    width: 60%;
-    max-width: 50%;
+  /* Media query for tablet and desktop devices */
+  @media only screen and (min-width: 481px) {
+    max-width: 300px;
   }
 `;

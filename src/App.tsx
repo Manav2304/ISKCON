@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
-import NavigationBar from "./Components/Navbar";
+import { NavigationBar } from "./Components/Navbar";
 import { LifeTimeMembership } from "./Pages/Services/LifeTimeMembership";
 import { IskconYouthForun } from "./Pages/Services/IskconYouthForum";
 import { GuestHouse } from "./Pages/Services/GuestHouse";
@@ -24,15 +24,9 @@ export const App: React.FunctionComponent = () => {
             path="/services/iskcon-youth-forum"
             element={<IskconYouthForun />}
           />
-          <Route
-            path="/services/guest-house"
-            element={<GuestHouse />}
-          />
+          <Route path="/services/guest-house" element={<GuestHouse />} />
           <Route path="/services/gaushala" element={<Gaushala />} />
-          <Route
-            path="/services/deity-worship"
-            element={<DeityWorship />}
-          />
+          <Route path="/services/deity-worship" element={<DeityWorship />} />
           <Route
             path="/services/devotee-kitchen"
             element={<DevoteeKitchen />}

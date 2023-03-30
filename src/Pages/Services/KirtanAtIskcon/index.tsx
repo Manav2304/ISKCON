@@ -1,6 +1,6 @@
-import ServiceDiscription from "../PageLayout/index";
+import { ServiceDiscription } from "../PageLayout/index";
 import { kirtanAtIskcon } from "./constant";
-import kirtanAtIskconImage from "../../../assets/image/kirtan-at-iskcon.jpg";
+import kirtanAtIskconImage from "../../../assets/images/kirtanAtIskcon.jpg";
 
 export const KirtanAtIskcon: React.FC = () => {
   return (
