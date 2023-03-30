@@ -9,6 +9,8 @@ import { DeityWorship } from "./Pages/Services/DeityWorship";
 import { DevoteeKitchen } from "./Pages/Services/DevoteeKitchen";
 import { KirtanAtIskcon } from "./Pages/Services/KirtanAtIskcon";
 import { BookDistribution } from "./Pages/Services/BookDistribution";
+import Home from "./Pages/Home";
+import FestivalPage from "./Pages/Festival";
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -39,6 +41,8 @@ export const App: React.FunctionComponent = () => {
             path="/services/book-distribution"
             element={<BookDistribution />}
           />
+          <Route caseSensitive path="/" element={<Home />} />
+          <Route caseSensitive path="/festival" element={<FestivalPage />} />
         </Routes>
       </Router>
     </>
