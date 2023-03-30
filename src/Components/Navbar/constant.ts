@@ -34,5 +34,5 @@ export const dropdownItems = [
 ];
 export const festivalInfo = [{ title: "festival", path: "/festival" }];
 export const servicesInfo = [{ title: "services", path: "/services" }];
-export const mediaInfo = [{ title: "Media", path: "/media" }];
+export const mediaInfo = [{ title: "media", path: "/media" }];
 export const donationInfo = [{ title: "donate", path: "/donate" }];

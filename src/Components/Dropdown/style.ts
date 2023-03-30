@@ -1,4 +1,3 @@
-import { Dropdown } from "react-bootstrap";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -18,9 +17,9 @@ export const DropdownMenuStyle = styled.div`
 `;
 
 export const DropdownItemStyle = styled.div`
-  color: white;
+  color: #ffffff;
 `;
 
 export const StyledLink = styled(Link)`
-  color: red;
+  color: #ff0000;
 `;

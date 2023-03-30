@@ -14,7 +14,7 @@ export const NavStyle = styled.nav`
 `;
 
 export const StyledLink = styled(Link)`
-  color: red;
+  color: #ff0000;
   text-decoration: none;
 `;
 
