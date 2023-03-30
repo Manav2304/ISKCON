@@ -41,6 +41,7 @@ export const Paragraph = styled.p`
   text-align: left;
   text-align: justify;
 `;
+
 export const HiddenParagraph = styled.p`
   display: none;
 `;
