@@ -12,10 +12,6 @@ export const HomePageInfo: React.FC<HomePageProps> = ({
   content,
   imageUrl,
 }) => {
-  const mappedContent = content.map((paragraph) => (
-    <p key={paragraph}>{paragraph}</p>
-  ));
-
   return (
     <div>
       <HeadingStyle>
@@ -24,7 +20,11 @@ export const HomePageInfo: React.FC<HomePageProps> = ({
         <ImageStyle>
           <img src={imageUrl} />
         </ImageStyle>
-        <TextStyle>{mappedContent}</TextStyle>
+        <TextStyle>
+          {content.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </TextStyle>
       </HeadingStyle>
     </div>
   );
