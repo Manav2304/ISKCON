@@ -1,9 +1,6 @@
 import React from "react";
-import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { HomePage } from "./Pages/Home";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import "@fortawesome/fontawesome-free/css/fontawesome.css";
-import "@fortawesome/fontawesome-free/css/brands.css";
 import { HistoryPage } from "./Pages/History";
 import { FounderPage } from "./Pages/Founder";
 import { PhilosophyPage } from "./Pages/Philosophy";

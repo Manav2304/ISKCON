@@ -1,13 +1,13 @@
 import { ImageStyle, TextStyle, HeadingStyle, Image } from "./style";
-import TitleBase from "../../assets/images/titelBaseImg.png";
+import titleBase from "../../assets/images/titel-base-image.png";
 
-interface TextSectionProps {
+interface HomePageProps {
   title: string;
   content: string[];
   imageUrl: string;
 }
 
-export const TextSection: React.FC<TextSectionProps> = ({
+export const HomePageInfo: React.FC<HomePageProps> = ({
   title,
   content,
   imageUrl,
@@ -20,7 +20,7 @@ export const TextSection: React.FC<TextSectionProps> = ({
     <div>
       <HeadingStyle>
         <h2>{title}</h2>
-        <Image src={TitleBase} />
+        <Image src={titleBase} />
         <ImageStyle>
           <img src={imageUrl} />
         </ImageStyle>

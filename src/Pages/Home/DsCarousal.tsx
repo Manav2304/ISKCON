@@ -2,7 +2,7 @@ import { Carousel } from "react-bootstrap";
 import { carouselImg } from "./constant";
 import { Reviews, ImageCarousel } from "./style";
 
-export const ReactCarousel = () => {
+export const HomeCarousel = () => {
   return (
     <Reviews>
       <Carousel>

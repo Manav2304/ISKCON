@@ -1,17 +1,17 @@
 import React from "react";
 import { ImageStyle, TextStyle, HeadingStyle, Image } from "./style";
 import { aboutUs, history, goals, philosophy, founder } from "./constant";
-import TitlebaseUrl from "../../assets/images/titelBaseImg.png";
+import titleBaseUrl from "../../assets/images/titel-base-image.png";
 import about from "../../assets/images/about.jpg";
-import { ReactCarousel } from "./DsCarousal";
+import { HomeCarousel } from "./DsCarousal";
 
 export const HomePage: React.FC = () => {
   return (
     <div>
-      <ReactCarousel />
+      <HomeCarousel />
       <HeadingStyle>
         <h1>ABOUT US</h1>
-        <Image src={TitlebaseUrl} />
+        <Image src={titleBaseUrl} />
         <ImageStyle>
           <img src={about} className="rounded" alt="About Img" />
         </ImageStyle>
@@ -21,7 +21,7 @@ export const HomePage: React.FC = () => {
           ))}
         </TextStyle>
         <h2>HISTORY</h2>
-        <Image src={TitlebaseUrl} />
+        <Image src={titleBaseUrl} />
         <ImageStyle>
           <img
             src="https://www.shutterstock.com/image-illustration/scene-battlefield-mahabharata-krishna-arjuna-600w-2091772597.jpg"
@@ -34,14 +34,14 @@ export const HomePage: React.FC = () => {
           ))}
         </TextStyle>
         <h2>Goals of ISKCON</h2>
-        <Image src={TitlebaseUrl} />
+        <Image src={titleBaseUrl} />
         <TextStyle>
           {goals.map((paragraph) => (
             <p>{paragraph}</p>
           ))}
         </TextStyle>
         <h2>PHILOSOPHY </h2>
-        <Image src={TitlebaseUrl} />
+        <Image src={titleBaseUrl} />
         <ImageStyle>
           <img
             src="https://www.shutterstock.com/image-illustration/scene-battlefield-mahabharata-krishna-arjuna-600w-2091772597.jpg"
@@ -54,7 +54,7 @@ export const HomePage: React.FC = () => {
           ))}
         </TextStyle>
         <h2>FOUNDER</h2>
-        <Image src={TitlebaseUrl} />
+        <Image src={titleBaseUrl} />
         <ImageStyle>
           <img
             src="https://www.shutterstock.com/image-illustration/scene-battlefield-mahabharata-krishna-arjuna-600w-2091772597.jpg"
