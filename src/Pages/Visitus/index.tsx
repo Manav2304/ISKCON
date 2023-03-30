@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { dakorImage, goushalaImage, dakorInfo, goushala } from "./constant";
-import titleBaseUrl from "../../assets/images/titelBaseUrl.png";
+import titleBaseUrl from "../../assets/images/titel-base-url.png";
 import {
   ServiceWrapper,
   TextWrapper,
@@ -12,7 +12,7 @@ import {
   VisibleParagraph,
   HiddenParagraph,
 } from "./style";
-import Carousel from "./carousel";
+import Carousel from "./Carousel";
 
 const VisitUs = () => {
   const [showMoreDakor, setShowMoreDakor] = useState(false);
