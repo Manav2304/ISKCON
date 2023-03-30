@@ -17,7 +17,7 @@ export const ContactStyle = styled.div`
 `;
 export const BgColor = styled.div`
   background-color: #963;
-  color: white;
+  color:;#FFFFFF
 `;
 export const TimeStyle = styled.div`
   text-align: justify;

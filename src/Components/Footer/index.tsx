@@ -5,7 +5,7 @@ import {
   MDBCol,
   MDBIcon,
 } from "mdb-react-ui-kit";
-import footerLogo from "../../assets/images/footerLogo.jpeg";
+import footerLogo from "../../assets/images/footer-logo.jpeg";
 import { FooterLogoStyle, ContactStyle, BgColor, TimeStyle } from "./style";
 import { contactInfos, schedules } from "./constant";
 
