@@ -20,7 +20,7 @@ export const contactInfos = [
   },
   {
     icon: "envelope",
-    text: "iskconvvnagar@yahoo.in",
+    text: "abcd@gmail.com",
   },
   {
     icon: "phone",
