@@ -38,7 +38,7 @@ export const LinkName = styled.p`
   font-family: Times New Roman;
 `;
 
-export const ImageDiv = styled.div`
+export const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;

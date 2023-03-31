@@ -4,10 +4,10 @@ import {
   CarouselWrapper,
   YouTubeWrapper,
   Heading,
-  ImageDiv,
+  ImageWrapper,
   TitleImage,
 } from "./style";
-import { darshan, sringar } from "./constant";
+import { darshan, sringarImages } from "./constant";
 import Carousel from "./Carousel";
 import { YouTubeVideo } from "./Youtube";
 import AudioContent from "./Audio";
@@ -17,12 +17,12 @@ const Media: React.FC = () => {
   return (
     <>
       <Heading>Live Darshan </Heading>
-      <ImageDiv>
+      <ImageWrapper>
         <TitleImage src={titleBaseUrl} alt="TitleBase" />
-      </ImageDiv>
+      </ImageWrapper>
       <PageWrapper>
         <CarouselWrapper>
-          <Carousel images={sringar} />
+          <Carousel images={sringarImages} />
         </CarouselWrapper>
         <CarouselWrapper>
           <Carousel images={darshan} />
