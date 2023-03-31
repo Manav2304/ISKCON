@@ -5,20 +5,22 @@ interface HomePageProps {
   title: string;
   content: string[];
   imageUrl: string;
+  altText?: string;
 }
 
 export const HomePageDropDownInfo: React.FC<HomePageProps> = ({
   title,
   content,
   imageUrl,
+  altText = "",
 }) => {
   return (
     <div>
       <HeadingStyle>
         <h2>{title}</h2>
-        <Image src={titleBase} />
+        <Image src={titleBase} alt="Title img" />
         <ImageStyle>
-          <img src={imageUrl} />
+          <img src={imageUrl} alt={altText} />
         </ImageStyle>
         <TextStyle>
           {content.map((paragraph) => (
