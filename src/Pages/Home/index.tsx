@@ -2,7 +2,7 @@ import React from "react";
 import { ImageStyle, TextStyle, HeadingStyle, Image } from "./style";
 import { aboutUs, history, goals, philosophy, founder } from "./constant";
 import titleBaseUrl from "../../assets/images/titel-base-image.png";
-import about from "../../assets/images/about.jpg";
+import about from "../../assets/images/about-img.jpg";
 import { HomeCarousel } from "./DsCarousel";
 
 export const HomePage: React.FC = () => {
