@@ -7,11 +7,13 @@ import { PhilosophyPage } from "./Pages/Philosophy";
 import { GoalsPage } from "./Pages/Goals";
 import FestivalPage from "./Pages/Festival";
 import { Contact } from "./Pages/Contact";
+import { NavigationBar } from "./Components/Navbar";
 
 export const App: React.FunctionComponent = () => {
   return (
     <>
       <BrowserRouter>
+        <NavigationBar />
         <Routes>
           <Route caseSensitive path="/" element={<HomePage />} />
           <Route caseSensitive path="/festival" element={<FestivalPage />} />
