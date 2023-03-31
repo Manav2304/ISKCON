@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { dakorImage, goushalaImage, dakorInfo, goushala } from "./constant";
+import { dakorImage, goushalaImage, dakorInfo, goushalaInfo } from "./constant";
 import titleBaseUrl from "../../assets/images/titel-base-url.png";
 import {
   ServiceWrapper,
@@ -48,10 +48,10 @@ const VisitUs = () => {
         </ImageDiv>
         <Carousel images={goushalaImage} />
         <Paragraph>
-          {goushala.map((paragraph) =>
+          {goushalaInfo.map((paragraph) =>
             showMoreGoushala ||
-            paragraph === goushala[0] ||
-            paragraph === goushala[1] ? (
+            paragraph === goushalaInfo[0] ||
+            paragraph === goushalaInfo[1] ? (
               <VisibleParagraph key={paragraph}>{paragraph}</VisibleParagraph>
             ) : (
               <HiddenParagraph key={paragraph}>{paragraph}</HiddenParagraph>

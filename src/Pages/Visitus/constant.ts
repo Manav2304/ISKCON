@@ -1,12 +1,12 @@
 import dakor from "../../assets/images/dakor.jpg";
 import gomtiLake from "../../assets/images/gomti-lake.jpg";
 import templeImage from "../../assets/images/temple-image.jpg";
-import gouShala1 from "../../assets/images/goushala1.jpg";
-import gouShala2 from "../../assets/images/goushala2.jpg";
-import gouShala3 from "../../assets/images/goushala3.png";
+import goushala1 from "../../assets/images/goushala1.jpg";
+import goushala2 from "../../assets/images/goushala2.jpg";
+import goushala3 from "../../assets/images/goushala3.png";
 
 export const dakorImage = [dakor, gomtiLake, templeImage];
-export const goushalaImage = [gouShala2, gouShala3, gouShala1];
+export const goushalaImage = [goushala2, goushala3, goushala1];
 
 export const dakorInfo = [
   "At the heart of Dakor lies the Ranchhodraiji Temple, a sacred place where Lord Krishna is worshipped in the form of Ranchhodrai. The temple, with its grand architecture and intricate carvings, is a stunning masterpiece that leaves visitors awestruck.",
@@ -20,7 +20,7 @@ export const dakorInfo = [
   "In conclusion, Dakor is a magical place that captures the essence of India's rich cultural and spiritual heritage. A visit to this holy town is sure to leave you feeling uplifted and inspired, and you will be mesmerised by its beauty and serenity. So, come and explore the divine wonders of Dakor and experience the timeless enchantment of Lord Krishna's divine abode.",
 ];
 
-export const goushala = [
+export const goushalaInfo = [
   "Dear Well Wishers ",
 
   " Hare Krishna. Hope you are well and in joyful spirit for the holy Adhik Purusottama month. I am very much thankful to you for your generous support. Once again I would like to appreciate the fact that I have such wonderful supportive friends such as your good self. Yes the yearly golden opportunity to serve the cows is here. ",
