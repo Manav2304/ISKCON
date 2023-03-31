@@ -2,7 +2,7 @@ import { festivals } from "./constant";
 import { FestivalCard } from "./FestivalCard";
 import { FestivalContainer, Heading1, ImageDiv, TitleImage } from "./style";
 import { Festival } from "./types";
-import titleBaseUrl from "../../assets/image/titleBaseUrl.png";
+import titleBaseUrl from "../../assets/image/title-base.png";
 
 const FestivalPage = () => {
   return (
