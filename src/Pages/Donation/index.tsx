@@ -3,10 +3,9 @@ import {
   Title,
   Table,
   Paragraph,
-  ImageDiv,
+  ImageWrapper,
   Image,
-  TableStyle1,
-  TableStyle2,
+  TableStyle,
 } from "./style";
 import { accountInfo1, accountInfo2, bhagavadGita } from "./constant";
 import { CopiedTableRow } from "./CopiedTableRow";
@@ -16,13 +15,14 @@ export const DonationPage = () => {
   return (
     <Wrapper>
       <Title>Donation</Title>
-      <ImageDiv>
+      <ImageWrapper>
         <Image src={titleBaseUrl} />
-      </ImageDiv>
+      </ImageWrapper>
       {bhagavadGita.map((paragraph) => (
         <Paragraph key={paragraph}>{paragraph}</Paragraph>
       ))}
-      <TableStyle1>
+      <>
+      <TableStyle>
         <Table>
           <tbody>
             {accountInfo1.map((info) => (
@@ -30,8 +30,7 @@ export const DonationPage = () => {
             ))}
           </tbody>
         </Table>
-      </TableStyle1>
-      <TableStyle2>
+      <br/>
         <Table>
           <tbody>
             {accountInfo2.map((info) => (
@@ -39,7 +38,8 @@ export const DonationPage = () => {
             ))}
           </tbody>
         </Table>
-      </TableStyle2>
+      </TableStyle>
+      </>
     </Wrapper>
   );
 };

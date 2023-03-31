@@ -30,7 +30,7 @@ export const Title = styled.h1`
   margin-top: 2rem;
 `;
 
-export const ImageDiv = styled.div`
+export const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,12 +48,6 @@ export const Image = styled.img`
     width: 60%;
     max-width: 50%;
   }
-`;
-
-export const TableWrapper = styled.table`
-  width: 80%;
-  border-collapse: collapse;
-  margin-bottom: 2rem;
 `;
 
 export const TableHeader = styled.th`
@@ -94,10 +88,7 @@ export const CopyButton = styled.button<{ copied: boolean }>`
   }
 `;
 
-export const TableStyle1 = styled.div`
+export const TableStyle = styled.div`
   margin: 0px 50px 10px;
 `;
 
-export const TableStyle2 = styled.div`
-  margin: 0px 50px 10px;
-`;
