@@ -1,7 +1,7 @@
-import Janmashtami from "../../assets/image/janmashtami.jpg";
+import Janmashtami from "../../assets/image/Janmashtami.jpg";
 import RathYatra from "../../assets/image/rathYatra.jpg";
-import Holi from "../../assets/image/holi.jpg";
-import Radhashtami from "../../assets/image/radhashtami.jpg";
+import Holi from "../../assets/image/Holi.jpg";
+import Radhashtami from "../../assets/image/Radhashtami.jpg";
 import GovardhanPuja from "../../assets/image/govardhanPuja.jpg";
 import KartikDipawali from "../../assets/image/kartikDipawali.jpg";
 import { Festival } from "./types";
