@@ -7,7 +7,7 @@ export const TransparentDropdown = styled.div`
   z-index: 1;
 `;
 
-export const DropdownToggleStyle = styled.div`
+export const DropdownTitleStyle = styled.div`
   color: #7e5959;
   background-color: transparent;
 `;

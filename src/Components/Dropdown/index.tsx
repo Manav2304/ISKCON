@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Dropdown } from "react-bootstrap";
 import {
   DropdownMenuStyle,
-  DropdownToggleStyle,
+  DropdownTitleStyle,
   TransparentDropdown,
 } from "./style";
 import { useNavigate } from "react-router-dom";
@@ -14,10 +14,10 @@ interface DropdownItem {
 
 interface DropdownProps {
   items: DropdownItem[];
-  toggleTitle: string;
+  dropdownTitle: string;
 }
 
-export const DropDown: React.FC<DropdownProps> = ({ items, toggleTitle }) => {
+export const DropDown: React.FC<DropdownProps> = ({ items, dropdownTitle }) => {
   const navigate = useNavigate();
   const [isHovered, setIsHovered] = useState(false);
 
@@ -37,9 +37,9 @@ export const DropDown: React.FC<DropdownProps> = ({ items, toggleTitle }) => {
     <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
       <TransparentDropdown>
         <Dropdown show={isHovered}>
-          <DropdownToggleStyle>
-            <Dropdown.Toggle>{toggleTitle}</Dropdown.Toggle>
-          </DropdownToggleStyle>
+          <DropdownTitleStyle>
+            <Dropdown.Toggle>{dropdownTitle}</Dropdown.Toggle>
+          </DropdownTitleStyle>
           <DropdownMenuStyle>
             <Dropdown.Menu>
               {items.map((item) => (
