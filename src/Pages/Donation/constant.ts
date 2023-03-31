@@ -4,7 +4,7 @@ export const bhagavadGita = [
   "Please donate and attain the supreme blessings of Supreme Lord Krishna.",
 ];
 
-export const accountInfo = [
+export const accountInfo1 = [
   {
     label: "Account Name",
     value: "John Doe",
@@ -27,7 +27,7 @@ export const accountInfo = [
   },
 ];
 
-export const accountInfo1 = [
+export const accountInfo2 = [
   {
     label: "Account Name",
     value: "Doe",

@@ -8,9 +8,9 @@ import {
   TableStyle1,
   TableStyle2,
 } from "./style";
-import { accountInfo, accountInfo1, bhagavadGita } from "./constant";
+import { accountInfo1, accountInfo2, bhagavadGita } from "./constant";
 import { CopiedTableRow } from "./CopiedTableRow";
-import titleBaseUrl from "../../assets/images/Titlebase.png";
+import titleBaseUrl from "../../assets/images/title-base-url.png";
 
 export const DonationPage = () => {
   return (
@@ -25,7 +25,7 @@ export const DonationPage = () => {
       <TableStyle1>
         <Table>
           <tbody>
-            {accountInfo.map((info) => (
+            {accountInfo1.map((info) => (
               <CopiedTableRow label={info.label} value={info.value} />
             ))}
           </tbody>
@@ -34,7 +34,7 @@ export const DonationPage = () => {
       <TableStyle2>
         <Table>
           <tbody>
-            {accountInfo1.map((info) => (
+            {accountInfo2.map((info) => (
               <CopiedTableRow label={info.label} value={info.value} />
             ))}
           </tbody>
