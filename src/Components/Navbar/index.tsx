@@ -13,6 +13,9 @@ const NavigationBar = () => {
             <Link className="link" to="/festival">
               Festival
             </Link>
+            <Link className="link" to="/contact">
+              Contact
+            </Link>
           </div>
         </nav>
       </div>
