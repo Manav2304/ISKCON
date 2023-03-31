@@ -6,4 +6,4 @@ import darshan2 from "../../assets/images/darshan2.jpg";
 import darshan3 from "../../assets/images/darshan3.jpg";
 
 export const sringarImages = [sringar1, sringar2, sringar3];
-export const darshan = [darshan1, darshan2, darshan3];
+export const darshanImages = [darshan1, darshan2, darshan3];

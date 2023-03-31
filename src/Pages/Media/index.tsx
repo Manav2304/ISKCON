@@ -7,7 +7,7 @@ import {
   ImageWrapper,
   TitleImage,
 } from "./style";
-import { darshan, sringarImages } from "./constant";
+import { darshanImages, sringarImages } from "./constant";
 import Carousel from "./Carousel";
 import { YouTubeVideo } from "./Youtube";
 import AudioContent from "./Audio";
@@ -25,7 +25,7 @@ const Media: React.FC = () => {
           <Carousel images={sringarImages} />
         </CarouselWrapper>
         <CarouselWrapper>
-          <Carousel images={darshan} />
+          <Carousel images={darshanImages} />
         </CarouselWrapper>
         <YouTubeWrapper>
           <YouTubeVideo videoId="lVk6qJ4cmB8" />
