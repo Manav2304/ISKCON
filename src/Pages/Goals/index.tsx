@@ -1,5 +1,5 @@
 import { goals } from "./constant";
-import { HomePageInfo } from "../HomePageInfo";
+import { HomePageInfo } from "../HomePageDropDownInfo";
 
 export const GoalsPage: React.FC = () => {
   return (

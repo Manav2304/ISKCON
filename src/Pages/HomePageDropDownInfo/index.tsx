@@ -7,7 +7,7 @@ interface HomePageProps {
   imageUrl: string;
 }
 
-export const HomePageInfo: React.FC<HomePageProps> = ({
+export const HomePageDropDownInfo: React.FC<HomePageProps> = ({
   title,
   content,
   imageUrl,

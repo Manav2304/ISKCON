@@ -1,9 +1,9 @@
-import { HomePageInfo } from "../HomePageInfo";
+import { HomePageDropDownInfo } from "../HomePageDropDownInfo";
 import { philosophy } from "./constant";
 
 export const PhilosophyPage: React.FC = () => {
   return (
-    <HomePageInfo
+    <HomePageDropDownInfo
       title="Philosophy"
       content={philosophy}
       imageUrl="https://www.shutterstock.com/image-illustration/scene-battlefield-mahabharata-krishna-arjuna-600w-2091772597.jpg"
