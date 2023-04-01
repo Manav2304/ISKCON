@@ -26,6 +26,7 @@ export const HomePage: React.FC = () => {
           <img
             src="https://www.shutterstock.com/image-illustration/scene-battlefield-mahabharata-krishna-arjuna-600w-2091772597.jpg"
             alt="History Img"
+            className="rounded"
           />
         </ImageStyle>
         <TextStyle>
@@ -45,6 +46,7 @@ export const HomePage: React.FC = () => {
         <ImageStyle>
           <img
             src="https://www.shutterstock.com/image-illustration/scene-battlefield-mahabharata-krishna-arjuna-600w-2091772597.jpg"
+            className="rounded"
             alt="Philosophy Img"
           />
         </ImageStyle>
