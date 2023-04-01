@@ -7,7 +7,7 @@ import {
   MapContainer,
   MapFrame,
   TitleBaseImgWrapper,
-  TitleBaseImgSize,
+  TitleBaseImg,
 } from "./style";
 import titleBaseImg from "../../assets/images/title-base.png";
 
@@ -17,7 +17,7 @@ export const Contact: React.FC = () => {
       <MapContainer>
         <Heading>Contact Us</Heading>
         <TitleBaseImgWrapper>
-          <TitleBaseImgSize src={titleBaseImg} />
+          <TitleBaseImg src={titleBaseImg} />
         </TitleBaseImgWrapper>
         <MapFrame
           title="Google Map"
