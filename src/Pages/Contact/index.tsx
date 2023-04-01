@@ -9,7 +9,7 @@ import {
   TitleBaseImgStyle,
   TitleBaseImgSize,
 } from "./style";
-import titleBaseImg from "../../assets/images/title-base-img.png";
+import titleBaseImg from "../../assets/images/title-base.png";
 
 export const Contact: React.FC = () => {
   return (
