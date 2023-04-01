@@ -78,7 +78,7 @@ export const MapFrame = styled.iframe`
   }
 `;
 
-export const TitleBaseImgStyle = styled.div`
+export const TitleBaseImgWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
