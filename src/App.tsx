@@ -6,8 +6,8 @@ import { FounderPage } from "./Pages/Founder";
 import { PhilosophyPage } from "./Pages/Philosophy";
 import { GoalsPage } from "./Pages/Goals";
 import { FestivalPage } from "./Pages/Festival";
-import { Contact } from "./Pages/Contact";
 import { NavigationBar } from "./Components/Navbar";
+import { Contact } from "./Pages/Contact";
 
 export const App: React.FunctionComponent = () => {
   return (
