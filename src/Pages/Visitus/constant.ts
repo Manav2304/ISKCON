@@ -1,4 +1,4 @@
-import dakor from "../../assets/images/dakor.jpg";
+import dakor from "../../assets/images/dakor-image.jpg";
 import gomtiLake from "../../assets/images/gomti-lake.jpg";
 import templeImage from "../../assets/images/temple-image.jpg";
 import goushala1 from "../../assets/images/goushala1.jpg";
