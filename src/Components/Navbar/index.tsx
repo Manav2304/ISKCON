@@ -39,6 +39,9 @@ export const NavigationBar = () => {
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
+              <Link className="link" to="/contact">
+                Contact Us
+              </Link>
             </div>
           </nav>
         </NavLink>

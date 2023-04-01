@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import { NavigationBar } from "./Components/Navbar";
+import { Contact } from "./Pages/Contact";
 import { LifeTimeMembership } from "./Pages/Services/LifeTimeMembership";
 import { IskconYouthForun } from "./Pages/Services/IskconYouthForum";
 import { GuestHouse } from "./Pages/Services/GuestHouse";
@@ -39,6 +40,7 @@ export const App: React.FunctionComponent = () => {
             path="/services/book-distribution"
             element={<BookDistribution />}
           />
+          <Route caseSensitive path="/contact" element={<Contact />} />
         </Routes>
       </Router>
     </>

@@ -17,10 +17,10 @@ export const ServiceDiscription: React.FC<ServiceDiscriptionProps> = ({
     <div>
       <HeadingStyle>
         <h2>{title}</h2>
-        <Image src={titlebBaseImage} />
-        <ImageStyle src={imageUrl} />
-        <TextStyle>{mappedContent}</TextStyle>
       </HeadingStyle>
+      <Image src={titlebBaseImage} />
+      <ImageStyle src={imageUrl} />
+      <TextStyle>{mappedContent}</TextStyle>
     </div>
   );
 };
