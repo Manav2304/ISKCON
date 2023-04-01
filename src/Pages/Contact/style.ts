@@ -84,7 +84,7 @@ export const TitleBaseImgWrapper = styled.div`
   align-items: center;
 `;
 
-export const TitleBaseImgSize = styled.img`
+export const TitleBaseImg = styled.img`
   width: 500px;
   height: 60px;
   @media screen and (max-width: 768px) {
