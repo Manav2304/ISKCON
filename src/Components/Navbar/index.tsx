@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { NavStyle, NavLink } from "./style";
 import { Dropdown } from "react-bootstrap";
@@ -10,19 +9,9 @@ export const NavigationBar = () => {
         <NavLink>
           <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
-              <Link className="nav-link" to="/">
-                Home
-              </Link>
-              <Link className="nav-link " to="/about">
-                AboutUs
-              </Link>
-              <Link className="nav-link" to="/donation">
-                Donation
-              </Link>
+              <Link to="/">Home</Link>
               <Dropdown>
-                <Dropdown.Toggle variant="success">
-                  Services
-                </Dropdown.Toggle>
+                <Dropdown.Toggle variant="success">Services</Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item href="/services/life-time-membership">
                     Life Time Membership

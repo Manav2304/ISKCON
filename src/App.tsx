@@ -24,15 +24,9 @@ export const App: React.FunctionComponent = () => {
             path="/services/iskcon-youth-forum"
             element={<IskconYouthForun />}
           />
-          <Route
-            path="/services/guest-house"
-            element={<GuestHouse />}
-          />
+          <Route path="/services/guest-house" element={<GuestHouse />} />
           <Route path="/services/gaushala" element={<Gaushala />} />
-          <Route
-            path="/services/deity-worship"
-            element={<DeityWorship />}
-          />
+          <Route path="/services/deity-worship" element={<DeityWorship />} />
           <Route
             path="/services/devotee-kitchen"
             element={<DevoteeKitchen />}

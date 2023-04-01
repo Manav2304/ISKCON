@@ -1,12 +1,13 @@
-import ServiceDiscription from "../PageLayout/index";
-import { guesthouse } from "./constant";
+import { ServiceDiscription } from "../PageLayout/index";
+import { guestHouse } from "./constant";
 import guestHouseImage from "../../../assets/images/guest-house.jpg";
 
 export const GuestHouse: React.FC = () => {
   return (
     <ServiceDiscription
       title="Prabhupada Ashrya Guest House"
-      content={guesthouse} 
-      imageUrl={guestHouseImage}/>
+      content={guestHouse}
+      imageUrl={guestHouseImage}
+    />
   );
-}
+};
