@@ -4,18 +4,21 @@ export const ImageStyle = styled.img`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin: 0 auto;
+  height: 100vh;
+  max-width: 100%;
 
   @media only screen and (max-width: 768px) {
-    max-width: 100%;
     max-height: 100%;
+    height: auto;
   }
 
   @media only screen and (min-width: 769px) {
-    max-width: 100%;
     max-height: 100%;
+    height: auto;
   }
 `;
+
 
 export const TextStyle = styled.div`
   text-align: justify;
@@ -46,30 +49,28 @@ export const TextStyle = styled.div`
 export const HeadingStyle = styled.div`
   font-family: "Times New Roman", Times, serif;
   color: #7e5959;
-  padding: 60px;
+  padding: 10px;
   text-align: center;
-  margin: 40px;
 
   @media only screen and (max-width: 480px) {
     font-size: 1.5rem;
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
   }
 
   @media only screen and (min-width: 481px) and (max-width: 767px) {
     font-size: 2rem;
-    padding: 40px;
-    margin: 30px;
+    padding: 10px;
   }
 
   @media only screen and (min-width: 768px) {
     font-size: 3rem;
-    padding: 60px;
-    margin: 40px;
+    padding: 10px;
   }
 `;
 
 export const Image = styled.img`
+  display: block;
+  margin: 0 auto;
   width: 50%;
 
   @media only screen and (max-width: 480px) {
@@ -80,3 +81,4 @@ export const Image = styled.img`
     max-width: 100%;
   }
 `;
+
