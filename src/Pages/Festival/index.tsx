@@ -4,7 +4,7 @@ import { FestivalContainer, Heading1, ImageDiv, TitleImage } from "./style";
 import { Festival } from "./types";
 import titleBaseUrl from "../../assets/image/titleBaseUrl.png";
 
-const FestivalPage = () => {
+export const FestivalPage = () => {
   return (
     <>
       <Heading1>
@@ -21,5 +21,3 @@ const FestivalPage = () => {
     </>
   );
 };
-
-export default FestivalPage;

@@ -5,7 +5,7 @@ import { HistoryPage } from "./Pages/History";
 import { FounderPage } from "./Pages/Founder";
 import { PhilosophyPage } from "./Pages/Philosophy";
 import { GoalsPage } from "./Pages/Goals";
-import FestivalPage from "./Pages/Festival";
+import { FestivalPage } from "./Pages/Festival";
 import { Contact } from "./Pages/Contact";
 import { NavigationBar } from "./Components/Navbar";
 
