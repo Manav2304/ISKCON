@@ -9,11 +9,7 @@ import {
   TitleBaseImgWrapper,
   TitleBaseImg,
 } from "./style";
-<<<<<<< HEAD
-import titleBaseUrl from "../../assets/image/titleBaseUrl.png";
-=======
 import titleBaseImg from "../../assets/images/title-base.png";
->>>>>>> main
 
 export const Contact: React.FC = () => {
   return (

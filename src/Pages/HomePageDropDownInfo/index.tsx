@@ -1,5 +1,6 @@
+import React from "react";
 import { ImageStyle, TextStyle, HeadingStyle, Image } from "./style";
-import titleBase from "../../assets/images/titel-base-image.png";
+import titleBase from "../../assets/images/title-base.png";
 
 interface HomePageProps {
   title: string;
