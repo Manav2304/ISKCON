@@ -1,5 +1,5 @@
 import { TextStyle, HeadingStyle, Image, ImageStyle } from "./style";
-import titlebBaseImage from "../../../assets/image/title-base.png";
+import titlebBaseImage from "../../../assets/images/title-base-img.png";
 interface ServiceDiscriptionProps {
   title: string; 
   content: string[];

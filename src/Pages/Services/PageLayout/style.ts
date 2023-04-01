@@ -7,10 +7,8 @@ export const ImageStyle = styled.div`
   margin: 40px;
 
   @media only screen and (max-width: 768px) {
-    img {
-      max-width: 100%;
-      max-height: 100%;
-    }
+    max-width: 100%;
+    max-height: 100%;
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1199px) {

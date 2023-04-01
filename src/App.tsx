@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
-import NavigationBar from "./Components/Navbar";
+import { NavigationBar } from "./Components/Navbar";
 import { LifeTimeMembership } from "./Pages/Services/LifeTimeMembership";
 import { IskconYouthForun } from "./Pages/Services/IskconYouthForum";
 import { GuestHouse } from "./Pages/Services/GuestHouse";

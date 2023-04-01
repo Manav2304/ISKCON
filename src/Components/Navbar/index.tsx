@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { NavStyle, NavLink } from "./style";
 import { Dropdown } from "react-bootstrap";
 
-const NavigationBar = () => {
+export const NavigationBar = () => {
   return (
     <NavStyle>
       <div className="container ">
@@ -57,5 +57,3 @@ const NavigationBar = () => {
     </NavStyle>
   );
 };
-
-export default NavigationBar;

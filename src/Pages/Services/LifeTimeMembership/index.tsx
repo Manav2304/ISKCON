@@ -1,6 +1,6 @@
 import ServiceDiscription from "../PageLayout/index";
 import { lifetimemembership } from "./constant";
-import lifeTimeMembershipImage from "../../../assets/image/life-time-membership.jpg";
+import lifeTimeMembershipImage from "../../../assets/images/life-time-membership.jpg";
 
 export const LifeTimeMembership: React.FC = () => {
   return (
