@@ -2,7 +2,7 @@ import { festivals } from "./constant";
 import { FestivalCard } from "./FestivalCard";
 import { FestivalContainer, Heading1, ImageDiv, TitleImage } from "./style";
 import { Festival } from "./types";
-import titleBaseUrl from "../../assets/image/titleBaseUrl.png";
+import titleBaseImg from "../../assets/images/title-base.png";
 
 const FestivalPage = () => {
   return (
@@ -11,7 +11,7 @@ const FestivalPage = () => {
         <h1>Festival</h1>
       </Heading1>
       <ImageDiv>
-        <TitleImage src={titleBaseUrl} alt="titleBaseImg" />
+        <TitleImage src={titleBaseImg} alt="titleBaseImg" />
       </ImageDiv>
       <FestivalContainer>
         {festivals.map((festival: Festival) => (
