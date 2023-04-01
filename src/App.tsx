@@ -9,13 +9,13 @@ import { Contact } from "./Pages/Contact";
 export const App: React.FunctionComponent = () => {
   return (
     <>
-      <Media />
       <Router>
         <NavigationBar />
         <Routes>
           <Route caseSensitive path="/" element={<Home />} />
           <Route caseSensitive path="/festival" element={<FestivalPage />} />
           <Route caseSensitive path="/contact" element={<Contact />} />
+          <Route caseSensitive path="/media" element={<Media />} />
         </Routes>
       </Router>
     </>

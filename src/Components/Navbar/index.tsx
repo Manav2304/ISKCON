@@ -16,6 +16,9 @@ const NavigationBar = () => {
             <Link className="link" to="/contact">
               Contact Us
             </Link>
+            <Link className="link" to="/media">
+              Media
+            </Link>
           </div>
         </nav>
       </div>

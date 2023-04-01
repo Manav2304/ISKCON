@@ -11,7 +11,7 @@ import { darshanImages, sringarImages } from "./constant";
 import Carousel from "./Carousel";
 import { YouTubeVideo } from "./Youtube";
 import AudioContent from "./Audio";
-import titleBaseUrl from "../../assets/images/title-base-url.png";
+import titleBaseUrl from "../../assets/images/title-base.png";
 
 const Media: React.FC = () => {
   return (
