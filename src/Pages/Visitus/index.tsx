@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { dakorImage, goushalaImage, dakorInfo, goushalaInfo } from "./constant";
-import titleBaseUrl from "../../assets/images/titel-base.png";
+import titleBaseUrl from "../../assets/images/title-base.png";
 import {
   ServiceWrapper,
   TextWrapper,
