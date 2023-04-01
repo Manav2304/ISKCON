@@ -9,7 +9,7 @@ import {
   TitleBaseImgStyle,
   TitleBaseImgSize,
 } from "./style";
-import titleBaseUrl from "../../assets/images/title-base-url.png";
+import titleBaseImg from "../../assets/images/title-base-url.png";
 
 export const Contact: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ export const Contact: React.FC = () => {
       <MapContainer>
         <Heading>Contact Us</Heading>
         <TitleBaseImgStyle>
-          <TitleBaseImgSize src={titleBaseUrl} />
+          <TitleBaseImgSize src={titleBaseImg} />
         </TitleBaseImgStyle>
         <MapFrame
           title="Google Map"
