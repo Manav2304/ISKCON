@@ -2,14 +2,14 @@ import React from "react";
 import { ImageStyle, TextStyle, HeadingStyle, Image } from "./style";
 import titleBase from "../../assets/images/title-base.png";
 
-interface HomePageProps {
+interface PageLayoutProps {
   title: string;
   content: string[];
   imageUrl: string;
   altText?: string;
 }
 
-export const HomePageDropDownInfo: React.FC<HomePageProps> = ({
+export const PageLayout: React.FC<PageLayoutProps> = ({
   title,
   content,
   imageUrl,
