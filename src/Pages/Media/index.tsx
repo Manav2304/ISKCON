@@ -16,7 +16,7 @@ import titleBaseImg from "../../assets/images/title-base.png";
 const Media: React.FC = () => {
   return (
     <>
-      <Heading>Live Darshan </Heading>
+      <Heading>Daily Darshan </Heading>
       <ImageWrapper>
         <TitleImage src={titleBaseImg} alt="TitleBase" />
       </ImageWrapper>
@@ -28,10 +28,10 @@ const Media: React.FC = () => {
           <Carousel images={darshanImages} />
         </CarouselWrapper>
         <YouTubeWrapper>
-          <YouTubeVideo videoId="lVk6qJ4cmB8" />
+          <YouTubeVideo videoId="R3tNVAtzaAw" />
         </YouTubeWrapper>
         <YouTubeWrapper>
-          <YouTubeVideo videoId="lVk6qJ4cmB8" />
+          <YouTubeVideo videoId="Q9TUIuRVc4I" />
         </YouTubeWrapper>
         <AudioContent />
       </PageWrapper>
