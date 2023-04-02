@@ -7,6 +7,7 @@ import {
   ImageWrapper,
   TitleImage,
   TitleName,
+  YoutubeTitle,
 } from "./style";
 import { darshanImages, sringarImages } from "./constant";
 import Carousel from "./Carousel";
@@ -17,7 +18,7 @@ import titleBaseImg from "../../assets/images/title-base.png";
 const Media: React.FC = () => {
   return (
     <>
-      <Heading>Daily Darshan </Heading>
+      <Heading> Daily Darshan </Heading>
       <ImageWrapper>
         <TitleImage src={titleBaseImg} alt="TitleBase" />
       </ImageWrapper>
@@ -30,14 +31,26 @@ const Media: React.FC = () => {
           <Carousel images={darshanImages} />
           <TitleName>Today's Darshan </TitleName>
         </CarouselWrapper>
-        <YouTubeWrapper>
-          <YouTubeVideo videoId="R3tNVAtzaAw" />
-        </YouTubeWrapper>
-        <YouTubeWrapper>
-          <YouTubeVideo videoId="Q9TUIuRVc4I" />
-        </YouTubeWrapper>
-        <AudioContent />
       </PageWrapper>
+      <>
+        <Heading> Lecture </Heading>
+        <ImageWrapper>
+          <TitleImage src={titleBaseImg} alt="TitleBase" />
+        </ImageWrapper>
+        <PageWrapper>
+          <YoutubeTitle> YouTubeTittle </YoutubeTitle>
+          <YoutubeTitle> YouTubeTittle </YoutubeTitle>
+        </PageWrapper>
+        <PageWrapper>
+          <YouTubeWrapper>
+            <YouTubeVideo videoId="R3tNVAtzaAw" />
+          </YouTubeWrapper>
+          <YouTubeWrapper>
+            <YouTubeVideo videoId="Q9TUIuRVc4I" />
+          </YouTubeWrapper>
+          <AudioContent />
+        </PageWrapper>
+      </>
     </>
   );
 };
