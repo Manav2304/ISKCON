@@ -6,10 +6,11 @@ import {
   ImageWrapper,
   Image,
   TableStyle,
+  Heading,
 } from "./style";
 import { accountInfo1, accountInfo2, bhagavadGita } from "./constant";
 import { CopiedTableRow } from "./CopiedTableRow";
-import titleBaseUrl from "../../assets/images/title-base-url.png";
+import titleBaseUrl from "../../assets/images/title-base.png";
 
 export const DonationPage = () => {
   return (
@@ -23,6 +24,7 @@ export const DonationPage = () => {
       ))}
       <>
       <TableStyle>
+        <Heading>YES bank</Heading>
         <Table>
           <tbody>
             {accountInfo1.map((info) => (
@@ -31,6 +33,7 @@ export const DonationPage = () => {
           </tbody>
         </Table>
       <br/>
+        <Heading>ICICI Bank</Heading>
         <Table>
           <tbody>
             {accountInfo2.map((info) => (

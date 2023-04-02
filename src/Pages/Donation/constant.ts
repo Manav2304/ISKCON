@@ -7,45 +7,45 @@ export const bhagavadGita = [
 export const accountInfo1 = [
   {
     label: "Account Name",
-    value: "John Doe",
+    value: "ISKCON (International Society for Krishna Conciousness)",
   },
   {
     label: "Bank Name",
-    value: "Example Bank",
+    value: "Yes Bank",
   },
   {
     label: "Branch Name",
-    value: "New York Branch",
+    value: "Vallabh Vidyanagar Branch",
   },
   {
     label: "Account Number",
-    value: "1234567890",
+    value: "019494600000047",
   },
   {
     label: "IFSC Code",
-    value: "ABCD1234567",
+    value: "YESB 0000194",
   },
 ];
 
 export const accountInfo2 = [
   {
     label: "Account Name",
-    value: "Doe",
+    value: "ISKCON (International Society for Krishna Conciousness)",
   },
   {
     label: "Bank Name",
-    value: "Bank",
+    value: "ICICI Bank",
   },
   {
     label: "Branch Name",
-    value: "Branch",
+    value: "Vallabh Vidyanagar Branch",
   },
   {
     label: "Account Number",
-    value: "1234567890",
+    value: "008501008973",
   },
   {
     label: "IFSC Code",
-    value: "ABCD1234567",
+    value: "ICICI0000085",
   },
 ];

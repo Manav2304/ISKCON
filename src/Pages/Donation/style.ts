@@ -19,8 +19,29 @@ export const TableData = styled.td`
 
 export const Paragraph = styled.div`
   font-size: 1rem;
-  text-align: justify;
+  text-align: justify center;
   font-family: "Times New Roman", Times, serif;
+  margin-right: 100px;
+  margin-left: 100px;
+  position: relative;
+  padding: 10px;
+
+  &::before,
+  &::after {
+    content: '"';
+    font-size: 3rem;
+    color: #F4C2C2;
+    position: absolute;
+    top: -0.5rem;
+  }
+
+  &::before {
+    left: -10px;
+  }
+
+  &::after {
+    right: -10px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -59,7 +80,7 @@ export const TableHeader = styled.th`
 
 export const TableRow = styled.tr`
   &:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: 	#F4C2C2;
   }
 `;
 
@@ -80,15 +101,23 @@ export const CopyButton = styled.button<{ copied: boolean }>`
   transition: background-color 0.2s ease-in-out;
 
   &:hover {
-    background-color: ${({ copied }) => (copied ? "green" : "#2e8b57")};
+    background-color: ${({ copied }) => (copied ? "purple" : "#630063")};
   }
 
   &:active {
-    background-color: ${({ copied }) => (copied ? "green" : "#4caf50")};
+    background-color: ${({ copied }) => (copied ? "blue" : "#FFFFFCF4")};
   }
 `;
 
 export const TableStyle = styled.div`
   margin: 0px 50px 10px;
+`;
+
+export const Heading = styled.h1`
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  align-content: center;
+  text-align: center;
+  font-style: bold;
 `;
 
