@@ -6,6 +6,7 @@ import {
   Heading,
   ImageWrapper,
   TitleImage,
+  TitleName,
 } from "./style";
 import { darshanImages, sringarImages } from "./constant";
 import Carousel from "./Carousel";
@@ -23,9 +24,11 @@ const Media: React.FC = () => {
       <PageWrapper>
         <CarouselWrapper>
           <Carousel images={sringarImages} />
+          <TitleName>Yesterday's Darshan </TitleName>
         </CarouselWrapper>
         <CarouselWrapper>
           <Carousel images={darshanImages} />
+          <TitleName>Today's Darshan </TitleName>
         </CarouselWrapper>
         <YouTubeWrapper>
           <YouTubeVideo videoId="R3tNVAtzaAw" />

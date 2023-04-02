@@ -9,7 +9,7 @@ export const PageWrapper = styled.div`
 export const CarouselWrapper = styled.div`
   width: 500px;
   height: 300px;
-  margin: 0px 60px 60px;
+  margin: 0px 60px 70px;
 `;
 
 export const YouTubeWrapper = styled.div`
@@ -18,6 +18,12 @@ export const YouTubeWrapper = styled.div`
   margin: 0px 60px 0px;
 `;
 
+export const TitleName = styled.h3`
+  color: #7e5959;
+  text-align: center;
+  font-family: Times New Roman;
+  margin-top: 10px;
+`;
 export const ImageSlide = styled.img`
   width: 500px;
   height: 300px;
