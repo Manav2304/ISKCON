@@ -1,12 +1,20 @@
 import dakor from "../../assets/images/dakor-image.jpg";
-import gomtiLake from "../../assets/images/gomti-lake.jpg";
-import templeImage from "../../assets/images/temple-image.jpg";
 import goushala1 from "../../assets/images/goushala1.jpg";
 import goushala2 from "../../assets/images/goushala2.jpg";
-import goushala3 from "../../assets/images/goushala3.png";
+import goushala3 from "../../assets/images/goushala3.jpg";
+import goushala4 from "../../assets/images/goushala4.jpg";
+import goushala5 from "../../assets/images/goushala5.jpg";
+import goushala6 from "../../assets/images/goushala6.jpg";
 
-export const dakorImage = [dakor, gomtiLake, templeImage];
-export const goushalaImage = [goushala2, goushala3, goushala1];
+export const dakorImage = [dakor, dakor];
+export const goushalaImage = [
+  goushala1,
+  goushala2,
+  goushala3,
+  goushala4,
+  goushala5,
+  goushala6,
+];
 
 export const dakorInfo = [
   "At the heart of Dakor lies the Ranchhodraiji Temple, a sacred place where Lord Krishna is worshipped in the form of Ranchhodrai. The temple, with its grand architecture and intricate carvings, is a stunning masterpiece that leaves visitors awestruck.",
@@ -21,29 +29,11 @@ export const dakorInfo = [
 ];
 
 export const goushalaInfo = [
-  "Dear Well Wishers ",
+  "The Goverdhan gaushala at ISKCON is a haven for cows, providing them with a safe and loving environment where they can thrive and live out their lives in peace. Located on the grounds of the temple, the gaushala is home to a herd of cows who are treated with the utmost care and respect.",
 
-  " Hare Krishna. Hope you are well and in joyful spirit for the holy Adhik Purusottama month. I am very much thankful to you for your generous support. Once again I would like to appreciate the fact that I have such wonderful supportive friends such as your good self. Yes the yearly golden opportunity to serve the cows is here. ",
+  "We accept these cows and our team led by Gau-premi H.G Laxmikant Das render selfless service to gau mata.",
 
-  "Please read mahatmya from Gavopanisad:-",
+  "Visitors to the gaushala are immediately struck by the serene and peaceful atmosphere, which is filled with the gentle sound of mooing cows and the rustling of leaves in the breeze. The cows roam freely throughout the spacious grounds, grazing on fresh grass and enjoying the sunshine.",
 
-  "Saudasa said, “ O my lord! O sinless sage, what is that pure object within the three worlds that simply by taking its name, human beings can accumulate great piety?”. The great sage Vasistha said, “O king, many varieties of aroma emanate from the body of a cow. The cow is the support of all living entities, and the ocean of auspiciousness.”. “The cow is the past and future. She nourishes the health of all living entities, and she is the root of prosperity. The piety one achieves by feeding a cow is never destroyed.”. “Do not go to bed at night without praising the cows. Do not get up in the morning without remembering the cow. Offer respect to the cow daily,in the morning. By doing so, a human being achieves strength and nourishment.”. “Do not hate cow urine and cow dung. Never eat cow meat. By following this advice, human beings can become prosperous.”. “Chant the name of the cow daily and never insult her. If one sees a bad dream, one should immediately remember the cow.”. A person who, either during the day or at night, either in happiness or at a time of fearful conditions, remembers or glorifies the cow, certainly becomes freed from all fearful conditions. One should see, offer obeisances to, and circumambulate the cow. By doing so, one is supposed to have circumambulated the entire earth, with it’s seven islands. The cow is the mother of all. She gives happiness to everyone. People who desire prosperity should daily circumambulate the cow.",
-
-  "You are a man of intelligent caliber and you very well know that Goseva Is Uttama Seva. Our mother feeds us with milk for a few years but mother cow nourishes us with her vital milk throughout our lives. ",
-
-  "At present we have 110 cows calves and bulls at our Goshalla and the annual budget is Rs. 29,04,395/-. The cost of maintaining one cow per month is Rs. 2200/-You can take the privilege of feeding and maintaining the cows as follows:",
-
-  "One cow for a whole year for just Rs. 26400/- or One cow for six month for  Rs.  13200/- or All the 110 cows for one full day for just  Rs. 8065/- or One cow for a month for just  Rs. 2200/- or One cow for 15 days for just  Rs. 1100/- When you think of the wonderful effect of your gift on the cows you shall experience the magnificent satisfaction of serving these beautiful cows.",
-
-  "Dear welwishers, Kindly take your best pen and let your love for the cows flow from the core of your lotus heart by generously filling in the donation card and making a cheque payable to “ISKCON VIDYANAGAR” and post it in the reply paid envelope at your earliest convenience or online transaction as advised in donation form.Thank you very much for your heartfelt compassion and generosity. For your generous support we shall send you a memorandum gift, mahaprasadam and your receipt.",
-
-  "All Glories To Your Goseva and GorakshaMay Sri Sri Radha Giridhariji Bless You For Serving The Cows.",
-
-  "Goshala Budget (For 110 cows)",
-  "Dry Grass  -           Rs. 9,41,765/-",
-  "Green Grass -          Rs. 9,17,555/-",
-  "Dan & Khor -           Rs. 5,67,815/-",
-  "Labour -               Rs. 3,05,375/-",
-  "Medical Expenses -     Rs. 1,71,885/-",
-  "Total -                Rs. 29,04,395/-",
+  "The gaushala is not just a sanctuary for cows, however - it is also a place of learning and inspiration for visitors. Guests can take part in guided tours of the facility, where they can learn about the importance of cow protection and the vital role that cows play in Vedic culture.",
 ];

@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { dakorImage, goushalaImage, dakorInfo, goushalaInfo } from "./constant";
-import titleBaseUrl from "../../assets/images/title-base.png";
+import titleBaseImg from "../../assets/images/title-base.png";
 import {
   ServiceWrapper,
   TextWrapper,
   Heading,
   Paragraph,
   Button,
-  ImageDiv,
+  ImageWrapper,
   TitleImage,
   VisibleParagraph,
   HiddenParagraph,
@@ -24,9 +24,9 @@ const VisitUs = () => {
     <ServiceWrapper>
       <TextWrapper>
         <Heading>Dakor Dham</Heading>
-        <ImageDiv>
-          <TitleImage src={titleBaseUrl} alt="TitleBase" />
-        </ImageDiv>
+        <ImageWrapper>
+          <TitleImage src={titleBaseImg} alt="TitleBase" />
+        </ImageWrapper>
         <Carousel images={dakorImage} />
         <Paragraph>
           {dakorInfo.map((paragraph) =>
@@ -43,9 +43,9 @@ const VisitUs = () => {
           {showMoreDakor ? "Read less" : "Read more"}
         </Button>
         <Heading>Goverdhan Goushala</Heading>
-        <ImageDiv>
-          <TitleImage src={titleBaseUrl} alt="TitleBase" />
-        </ImageDiv>
+        <ImageWrapper>
+          <TitleImage src={titleBaseImg} alt="TitleBase" />
+        </ImageWrapper>
         <Carousel images={goushalaImage} />
         <Paragraph>
           {goushalaInfo.map((paragraph) =>

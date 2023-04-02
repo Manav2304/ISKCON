@@ -12,7 +12,7 @@ export const TextWrapper = styled.div`
   font-family: Times New Roman;
 `;
 
-export const ImageDiv = styled.div`
+export const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +51,7 @@ export const VisibleParagraph = styled.p`
 `;
 
 export const Button = styled.button`
-  background-color: #00ffff;
+  background-color: #7e5959;
   color: #0c090a;
   font-size: 16px;
   border: none;
