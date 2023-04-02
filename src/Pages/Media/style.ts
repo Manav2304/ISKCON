@@ -36,6 +36,7 @@ export const LinkName = styled.p`
   color: red;
   text-align: center;
   font-family: Times New Roman;
+  margin: 20px 0px 20px;
 `;
 
 export const ImageWrapper = styled.div`
