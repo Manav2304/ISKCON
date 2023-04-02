@@ -78,13 +78,13 @@ export const MapFrame = styled.iframe`
   }
 `;
 
-export const ImageDiv = styled.div`
+export const TitleBaseImgWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
-export const Image = styled.img`
+export const TitleBaseImg = styled.img`
   width: 500px;
   height: 60px;
   @media screen and (max-width: 768px) {
