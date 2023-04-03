@@ -110,12 +110,12 @@ export const Image = styled.img`
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    height: 95%;
-    width: 95%;
+    height: 88%;
+    width: 88%;
   }
 
   @media only screen and (min-width: 1200px) {
-    height: 100%;
-    width: 100%;
+    height: 92%;
+    width: 92%;
   }
 `;
