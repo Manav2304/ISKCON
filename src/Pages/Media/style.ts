@@ -5,6 +5,18 @@ export const Heading = styled.h1`
   margin-top: 20px;
   color: #7e5959;
   font-family: "Times New Roman", Times, serif;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px; /* mobile view */
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 32px; /* tablet view */
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 48px; /* desktop view */
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -16,6 +28,15 @@ export const ImageWrapper = styled.div`
 export const TitleImage = styled.img`
   width: 450px;
   height: auto;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    width: 60%;
+  }
 `;
 
 export const PageWrapper = styled.div`
@@ -27,7 +48,7 @@ export const PageWrapper = styled.div`
 export const CarouselWrapper = styled.div`
   width: 500px;
   height: 300px;
-  margin: 40px 60px 40px;
+  margin: 40px 60px 50px;
 `;
 
 export const TitleName = styled.h2`
@@ -41,6 +62,29 @@ export const YouTubeWrapper = styled.div`
   display: flex;
   justify-content: center;
   margin: 40px 60px 40px;
+
+  @media only screen and (max-width: 767px) {
+    /* Mobile view */
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Tablet view */
+    margin: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    /* Desktop view */
+    margin: 40px 60px 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 `;
 
 export const ImageSlide = styled.img`
