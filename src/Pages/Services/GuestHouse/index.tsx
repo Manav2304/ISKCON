@@ -1,6 +1,5 @@
 import { ServiceDiscription } from "../PageLayout/index";
-import { guestHouse } from "./constant";
-import guestHouseImage from "../../../assets/images/guest-house.jpg";
+import { guestHouse,guestHouseImage } from "./constant";
 
 export const GuestHouse: React.FC = () => {
   return (

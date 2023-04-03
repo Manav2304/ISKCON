@@ -1,9 +1,17 @@
-import { ImageStyle, TextStyle, HeadingStyle, Image } from "./style";
+import {
+  Heading,
+  ImageWrapper,
+  Paragraph,
+  TextWrapper,
+  TitleImage,
+} from "./style";
 import titlebBaseImage from "../../../assets/images/title-base.png";
+import { Carousel } from "./Carousel";
+
 interface ServiceDiscriptionProps {
   title: string;
   content: string[];
-  imageUrl: string;
+  imageUrl: string[];
 }
 
 export const ServiceDiscription: React.FC<ServiceDiscriptionProps> = ({
@@ -15,12 +23,14 @@ export const ServiceDiscription: React.FC<ServiceDiscriptionProps> = ({
 
   return (
     <div>
-      <HeadingStyle>
-        <h2>{title}</h2>
-      </HeadingStyle>
-      <Image src={titlebBaseImage} />
-      <ImageStyle src={imageUrl} />
-      <TextStyle>{mappedContent}</TextStyle>
+      <TextWrapper>
+        <Heading>{title}</Heading>
+        <ImageWrapper>
+          <TitleImage src={titlebBaseImage} alt="TitleBase" />
+        </ImageWrapper>
+        <Carousel images={imageUrl} />
+        <Paragraph>{mappedContent}</Paragraph>
+      </TextWrapper>
     </div>
   );
 };

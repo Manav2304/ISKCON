@@ -1,3 +1,17 @@
+import deityWorship1 from "../../../assets/images/deity-worship1.jpg";
+import deityWorship2 from "../../../assets/images/deity-worship2.jpg";
+import deityWorship3 from "../../../assets/images/deity-worship3.jpg";
+import deityWorship4 from "../../../assets/images/deity-worship4.jpg";
+import deityWorship5 from "../../../assets/images/deity-worship5.jpg";
+
+export const deityWorshipImage = [
+  deityWorship1,
+  deityWorship2,
+  deityWorship3,
+  deityWorship4,
+  deityWorship5,
+];
+
 export const deityWorship = [
   "Deity worship is an important aspect of the spiritual practices at ISKCON Vallabh Vidya Nagar, which is a temple of the International Society for Krishna Consciousness (ISKCON) located in the city of Vallabh Vidya Nagar in Gujarat, India. The temple’s primary deity is Lord Krishna, who is worshiped with great devotion and reverence by the devotees.",
 

@@ -1,3 +1,18 @@
+import iyf1 from "../../../assets/images/iyf1.jpg";
+import iyf2 from "../../../assets/images/iyf2.jpg";
+import iyf3 from "../../../assets/images/iyf3.jpg";
+import iyf4 from "../../../assets/images/iyf4.jpg";
+import iyf5 from "../../../assets/images/iyf5.jpg";
+import iyf6 from "../../../assets/images/iyf6.jpg";
+export const iskconYouthForumImage = [
+  iyf1,
+  iyf2,
+  iyf3,
+  iyf4,
+  iyf5,
+  iyf6,
+];
+
 export const iskconYouthForum = [
   "The ISKCON Youth Forum in Vallabh Vidya Nagar is an active and vibrant group that provides a space for young people to come together and explore their spirituality in a fun and supportive environment. With a wide range of activities and programs on offer, the Youth Forum is an important part of the ISKCON community in Vallabh Vidya Nagar.",
 

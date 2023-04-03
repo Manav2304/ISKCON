@@ -1,6 +1,6 @@
 import { ServiceDiscription } from "../PageLayout/index";
-import { bookDistribution } from "./constant";
-import bookDistributionImage from "../../../assets/images/book-distribution.jpg";
+import { bookDistribution ,bookDistributionImage} from "./constant";
+
 
 export const BookDistribution: React.FC = () => {
   return (

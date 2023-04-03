@@ -1,6 +1,5 @@
 import { ServiceDiscription } from "../PageLayout/index";
-import { iskconYouthForum } from "./constant";
-import iskconYouthForumImage from "../../../assets/images/iskcon-youth-forum.jpg";
+import { iskconYouthForum,iskconYouthForumImage } from "./constant";
 
 export const IskconYouthForun: React.FC = () => {
   return (

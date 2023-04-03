@@ -1,3 +1,21 @@
+import kirtanAtIskcon1 from "../../../assets/images/kirtan-at-iskcon1.jpg";
+import kirtanAtIskcon2 from "../../../assets/images/kirtan-at-iskcon2.jpg";
+import kirtanAtIskcon3 from "../../../assets/images/kirtan-at-iskcon3.jpg";
+import kirtanAtIskcon4 from "../../../assets/images/kirtan-at-iskcon4.jpg";
+import kirtanAtIskcon5 from "../../../assets/images/kirtan-at-iskcon5.jpg";
+import kirtanAtIskcon6 from "../../../assets/images/kirtan-at-iskcon6.jpg";
+import kirtanAtIskcon7 from "../../../assets/images/kirtan-at-iskcon7.jpg";
+
+export const kirtanAtIskconImage = [
+  kirtanAtIskcon1,
+  kirtanAtIskcon2,
+  kirtanAtIskcon3,
+  kirtanAtIskcon4,
+  kirtanAtIskcon5,
+  kirtanAtIskcon6,
+  kirtanAtIskcon7,
+];
+
 export const kirtanAtIskcon = [
   "ISKCON, kirtan involves singing and chanting the names of God in a call-and-response style, with the leader singing a line and the congregation responding in unison.",
 

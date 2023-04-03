@@ -1,3 +1,19 @@
+import gaushala1 from "../../../assets/images/gaushala1.jpg";
+import gaushala2 from "../../../assets/images/gaushala2.jpg";
+import gaushala3 from "../../../assets/images/gaushala3.jpg";
+import gaushala4 from "../../../assets/images/gaushala4.jpg";
+import gaushala5 from "../../../assets/images/gaushala5.jpg";
+import gaushala6 from "../../../assets/images/gaushala5.jpg";
+
+export const goverdhanGaushalaImage = [
+  gaushala1,
+  gaushala2,
+  gaushala3,
+  gaushala4,
+  gaushala5,
+  gaushala6,
+];
+
 export const gaushala = [
   "The Goverdhan gaushala at ISKCON is a haven for cows, providing them with a safe and loving environment where they can thrive and live out their lives in peace. Located on thegrounds of the temple, the gaushala is home to a herd of cows who are treated with the almost care and respect.",
 
