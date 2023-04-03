@@ -1,17 +1,20 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import { carouselImg } from "./constant";
 import { Reviews, ImageCarousel } from "./style";
 
-export const HomeCarousel = () => {
+interface Props {
+  images: { id: number; image: string }[];
+}
+
+export const GlobalCarousel: React.FC<Props> = ({ images }) => {
   return (
     <Reviews>
       <Carousel>
-        {carouselImg.map((carouselItem) => (
-          <Carousel.Item key={carouselItem.id}>
+        {images.map((image) => (
+          <Carousel.Item key={image.id}>
             <ImageCarousel
-              src={carouselItem.image}
-              alt={`Carousel Image ${carouselItem.id}`}
+              src={image.image}
+              alt={`Carousel Image ${image.id}`}
             />
           </Carousel.Item>
         ))}

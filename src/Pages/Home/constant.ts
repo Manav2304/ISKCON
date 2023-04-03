@@ -1,6 +1,10 @@
 import radhaGiridhariji from "../../assets/images/welcome.jpg";
 import founderImage from "../../assets/images/founder.png";
 import chantImage from "../../assets/images/chant.jpg";
+import krishnaImage from "../../assets/images/krishna.jpg";
+import history1Image from "../../assets/images/history-1.jpg";
+import history2Image from "../../assets/images/history-2.jpg";
+import history3Image from "../../assets/images/history-3.jpg";
 
 export const aboutUs = [
   "Welcome to Sri Sri Radha Giridhariji Temple, dedicated to the worship of Lord Krishna and the promotion of spiritual awareness among people. His Divine Grace A. C. Bhaktivedanta Swami Prabhupada founded the International Society of Krishna Consciousness (ISKCON), also known as the Hare Krishna Movement, in 1966. ISKCON is a worldwide organisation of devotees of Lord Krishna, the Supreme Personality of Godhead, with 10,000 temple devotees and 250,000 congregational devotees as members. Over the course of four decades, ISKCON has expanded to include over 350 temples, 60 rural communities, 50 schools, and 60 restaurants. One of the primary goals of ISKCON is to promote societal well-being by teaching the science of Krishna consciousness as taught in the Bhagavad-Gita and other timeless Vedic scriptures.",
@@ -73,5 +77,23 @@ export const carouselImg = [
   {
     id: 3,
     image: chantImage,
+  },
+  {
+    id: 4,
+    image: krishnaImage,
+  },
+];
+export const historyImage = [
+  {
+    id: 1,
+    image: history1Image,
+  },
+  {
+    id: 2,
+    image: history2Image,
+  },
+  {
+    id: 3,
+    image: history3Image,
   },
 ];
