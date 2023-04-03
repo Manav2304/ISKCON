@@ -10,14 +10,14 @@ import {
 } from "./style";
 import { accountInfo1, accountInfo2, bhagavadGita } from "./constant";
 import { CopiedTableRow } from "./CopiedTableRow";
-import titleBaseUrl from "../../assets/images/title-base.png";
+import titleBaseImg from "../../assets/images/title-base.png";
 
 export const DonationPage = () => {
   return (
     <Wrapper>
       <Title>Donation</Title>
       <ImageWrapper>
-        <Image src={titleBaseUrl} />
+        <Image src={titleBaseImg} />
       </ImageWrapper>
       {bhagavadGita.map((paragraph) => (
         <Paragraph key={paragraph}>{paragraph}</Paragraph>

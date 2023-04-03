@@ -25,12 +25,13 @@ export const Paragraph = styled.div`
   margin-left: 100px;
   position: relative;
   padding: 10px;
+  color: #ad0d0d;
 
   &::before,
   &::after {
     content: '"';
     font-size: 3rem;
-    color: #F4C2C2;
+    color: #f4c2c2;
     position: absolute;
     top: -0.5rem;
   }
@@ -46,7 +47,7 @@ export const Paragraph = styled.div`
 
 export const Title = styled.h1`
   font-size: 3rem;
-  font-weight: bold;
+  color: #7e5959;
   font-family: "Times New Roman", Times, serif;
   margin-top: 2rem;
 `;
@@ -58,13 +59,14 @@ export const ImageWrapper = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 600px;
-  height: 90px;
+  width: 450px;
+  height: auto;
 
   @media screen and (max-width: 768px) {
     width: 100%;
     max-width: 100%;
   }
+
   @media screen and (min-width: 769px) {
     width: 60%;
     max-width: 50%;
@@ -80,7 +82,7 @@ export const TableHeader = styled.th`
 
 export const TableRow = styled.tr`
   &:nth-child(even) {
-    background-color: 	#F4C2C2;
+    background-color: #f4c2c2;
   }
 `;
 
@@ -110,7 +112,7 @@ export const CopyButton = styled.button<{ copied: boolean }>`
 `;
 
 export const TableStyle = styled.div`
-  margin: 0px 50px 10px;
+  margin: 1px 50px 10px;
 `;
 
 export const Heading = styled.h1`
@@ -120,4 +122,3 @@ export const Heading = styled.h1`
   text-align: center;
   font-style: bold;
 `;
-

@@ -4,7 +4,7 @@ import NavigationBar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import { DonationPage } from "./Pages/Donation";
 import FestivalPage from "./Pages/Festival";
-import {Contact} from "./Pages/Contact"
+import { Contact } from "./Pages/Contact";
 
 export const App: React.FunctionComponent = () => {
   return (
