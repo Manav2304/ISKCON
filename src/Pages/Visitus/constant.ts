@@ -6,7 +6,7 @@ import goushala4 from "../../assets/images/goushala4.jpg";
 import goushala5 from "../../assets/images/goushala5.jpg";
 import goushala6 from "../../assets/images/goushala6.jpg";
 
-export const dakorImage = [dakor, dakor];
+export const dakorImage = [dakor];
 export const goushalaImage = [
   goushala1,
   goushala2,

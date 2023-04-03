@@ -4,7 +4,19 @@ export const ServiceWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 20px;
+
+  @media (max-width: 767px) {
+    padding: 10px;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding: 20px 40px;
+  }
+
+  @media (min-width: 992px) {
+    padding: 20px 80px;
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -16,12 +28,7 @@ export const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
-`;
-
-export const TitleImage = styled.img`
-  width: 500px;
-  height: auto;
+  margin-bottom: 30px;
 `;
 
 export const Heading = styled.h1`
@@ -29,18 +36,55 @@ export const Heading = styled.h1`
   color: #7e5959;
 `;
 
+export const TitleImage = styled.img`
+  width: 500px;
+  height: auto;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 80%;
+  }
+`;
+
 export const ImageSlide = styled.img`
   width: 600px;
   height: 600px;
   object-fit: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 80%;
+  }
 `;
 
 export const Paragraph = styled.p`
-  font-size: 1.12rem;
+  font-size: 20px;
   line-height: 1.5;
   text-align: justify;
-  padding: 20px;
+  padding: 0px 10px 0px;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    padding: 0px 5px 0px;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 18px;
+    padding: 0px 20px 0px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 20px;
+    padding: 0px 30px 0px;
+  }
 `;
 
 export const HiddenParagraph = styled.p`
@@ -59,4 +103,9 @@ export const Button = styled.button`
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 `;
