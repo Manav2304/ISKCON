@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import title from "../../assets/images/bg-image.png";
+import { DropDown } from "../Dropdown";
 import { Link } from "react-router-dom";
 
 export const NavStyle = styled.nav`
@@ -39,5 +40,22 @@ export const ImgStyle = styled.img`
 
   @media (min-width: 1400px) {
     height: 85px;
+  }
+`;
+
+export const TransparentDropdown = styled(DropDown)`
+  border: none;
+
+  .dropdown-toggle {
+    color: #7e5959;
+    background-color: transparent;
+  }
+
+  .dropdown-menu {
+    background-color: #7e5959;
+  }
+
+  .dropdown-item {
+    color: white;
   }
 `;

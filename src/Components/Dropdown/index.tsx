@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Dropdown } from "react-bootstrap";
 import {
+  DropdownMenu,
   DropdownMenuStyle,
   DropdownTitleStyle,
+  DropdownToggle,
   TransparentDropdown,
 } from "./style";
 import { useNavigate } from "react-router-dom";
@@ -38,7 +40,7 @@ export const DropDown: React.FC<DropdownProps> = ({ items, dropdownTitle }) => {
       <TransparentDropdown>
         <Dropdown show={isHovered}>
           <DropdownTitleStyle>
-            <Dropdown.Toggle>{dropdownTitle}</Dropdown.Toggle>
+            <DropdownToggle>{dropdownTitle}</DropdownToggle>
           </DropdownTitleStyle>
           <DropdownMenuStyle>
             <Dropdown.Menu>
