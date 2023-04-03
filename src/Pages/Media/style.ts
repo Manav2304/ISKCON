@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const Heading = styled.h1`
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 20px;
   color: #7e5959;
-  font-family: Times New Roman;
+  font-family: "Times New Roman", Times, serif;
 `;
 
 export const ImageWrapper = styled.div`
@@ -27,26 +27,20 @@ export const PageWrapper = styled.div`
 export const CarouselWrapper = styled.div`
   width: 500px;
   height: 300px;
-  margin: 0px 60px 30px;
+  margin: 40px 60px 40px;
 `;
 
 export const TitleName = styled.h2`
   color: #7e5959;
   text-align: center;
-  font-family: Times New Roman;
+  font-family: "Times New Roman", Times, serif;
   margin-top: 20px;
 `;
 
 export const YouTubeWrapper = styled.div`
   display: flex;
   justify-content: center;
-  margin: 10px 60px 30px;
-`;
-
-export const YoutubeTitle = styled.h2`
-  color: #7e5959;
-  font-family: Times New Roman;
-  margin: 10px 230px 10px;
+  margin: 40px 60px 40px;
 `;
 
 export const ImageSlide = styled.img`
@@ -55,10 +49,9 @@ export const ImageSlide = styled.img`
   object-fit: auto;
 `;
 
-export const LinkName = styled.p`
-  font-size: 2.5rem;
-  color: red;
+export const LinkName = styled.h1`
+  color: #ad0d0d;
   text-align: center;
-  font-family: Times New Roman;
+  font-family: "Times New Roman", Times, serif;
   margin: 20px 0px 20px;
 `;
