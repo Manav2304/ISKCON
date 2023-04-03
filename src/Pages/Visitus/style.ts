@@ -9,18 +9,19 @@ export const ServiceWrapper = styled.div`
 
 export const TextWrapper = styled.div`
   color: #ad0d0d;
-  font-family: Times New Roman;
+  font-family: "Times New Roman", Times, serif;
 `;
 
 export const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 `;
 
 export const TitleImage = styled.img`
   width: 500px;
-  height: 60px;
+  height: auto;
 `;
 
 export const Heading = styled.h1`
@@ -38,8 +39,8 @@ export const ImageSlide = styled.img`
 export const Paragraph = styled.p`
   font-size: 1.12rem;
   line-height: 1.5;
-  text-align: left;
   text-align: justify;
+  padding: 20px;
 `;
 
 export const HiddenParagraph = styled.p`
