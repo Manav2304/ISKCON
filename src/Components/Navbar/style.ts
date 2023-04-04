@@ -56,6 +56,6 @@ export const TransparentDropdown = styled(DropDown)`
   }
 
   .dropdown-item {
-    color: white;
+    color: #ffffff;
   }
 `;

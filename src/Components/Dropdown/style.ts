@@ -1,14 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-// export const TransparentDropdown = styled.div`
-//   display: inline-block;
-//   position: relative;
-//   z-index: 1;
-//   background: transparent;
-//   border: none;
-// `;
-
 export const DropdownTitleStyle = styled.div`
   color: #7e5959;
   background: transparent;
@@ -34,7 +26,7 @@ export const TransparentDropdown = styled.div`
 export const DropdownMenu = styled.div`
   border: none;
   box-shadow: none;
-  background-color: white;
+  background-color: #ffffff;
 `;
 
 export const DropdownToggle = styled.div`
