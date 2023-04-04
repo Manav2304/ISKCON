@@ -1,12 +1,12 @@
-import { ServiceDiscription } from "../PageLayout/index";
-import { deityWorship,deityWorshipImage  } from "./constant";
+import { ServiceDescription } from "../PageLayout/index";
+import { deityWorship,deityWorshipImages } from "./constant";
 
 export const DeityWorship: React.FC = () => {
   return (
-    <ServiceDiscription
+    <ServiceDescription
       title="Deity Worship"
       content={deityWorship}
-      imageUrl={deityWorshipImage}
+      imageUrl={deityWorshipImages}
     />
   );
 };

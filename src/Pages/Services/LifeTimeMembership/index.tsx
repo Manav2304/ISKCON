@@ -1,9 +1,9 @@
-import { ServiceDiscription } from "../PageLayout/index";
+import { ServiceDescription } from "../PageLayout/index";
 import { lifeTimeMembership } from "./constant";
 
 export const LifeTimeMembership: React.FC = () => {
   return (
-    <ServiceDiscription
+    <ServiceDescription
       title="Life Time Membership"
       content={lifeTimeMembership} 
       imageUrl={[]}      

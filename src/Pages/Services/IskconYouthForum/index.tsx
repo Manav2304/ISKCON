@@ -1,12 +1,12 @@
-import { ServiceDiscription } from "../PageLayout/index";
-import { iskconYouthForum,iskconYouthForumImage } from "./constant";
+import { ServiceDescription } from "../PageLayout/index";
+import { iskconYouthForum,iskconYouthForumImages } from "./constant";
 
-export const IskconYouthForun: React.FC = () => {
+export const IskconYouthForum: React.FC = () => {
   return (
-    <ServiceDiscription
+    <ServiceDescription
       title="Iskon Youth Forum"
       content={iskconYouthForum}
-      imageUrl={iskconYouthForumImage}
+      imageUrl={iskconYouthForumImages}
     />
   );
 };

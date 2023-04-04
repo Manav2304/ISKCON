@@ -3,7 +3,7 @@ import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import { NavigationBar } from "./Components/Navbar";
 import { Contact } from "./Pages/Contact";
 import { LifeTimeMembership } from "./Pages/Services/LifeTimeMembership";
-import { IskconYouthForun } from "./Pages/Services/IskconYouthForum";
+import { IskconYouthForum } from "./Pages/Services/IskconYouthForum";
 import { GuestHouse } from "./Pages/Services/GuestHouse";
 import { Gaushala } from "./Pages/Services/Gaushala";
 import { DeityWorship } from "./Pages/Services/DeityWorship";
@@ -23,7 +23,7 @@ export const App: React.FunctionComponent = () => {
           />
           <Route
             path="/services/iskcon-youth-forum"
-            element={<IskconYouthForun />}
+            element={<IskconYouthForum />}
           />
           <Route path="/services/guest-house" element={<GuestHouse />} />
           <Route path="/services/gaushala" element={<Gaushala />} />

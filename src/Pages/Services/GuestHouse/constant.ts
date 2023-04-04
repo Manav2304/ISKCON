@@ -1,7 +1,7 @@
 import guestHouse1 from "../../../assets/images/guest-house1.jpg";
 import guestHouse2 from "../../../assets/images/guest-house2.jpg";
 
-export const guestHouseImage = [
+export const guestHouseImages = [
   guestHouse1,
   guestHouse2,
 ];

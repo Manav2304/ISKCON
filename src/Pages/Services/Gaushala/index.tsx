@@ -1,12 +1,12 @@
-import { ServiceDiscription } from "../PageLayout/index";
-import { gaushala, goverdhanGaushalaImage } from "./constant";
+import { ServiceDescription } from "../PageLayout/index";
+import { gaushala, goverdhanGaushalaImages } from "./constant";
 
 export const Gaushala: React.FC = () => {
   return (
-    <ServiceDiscription
+    <ServiceDescription
       title="Goverdhan Gaushala"
       content={gaushala}
-      imageUrl={goverdhanGaushalaImage}
+      imageUrl={goverdhanGaushalaImages}
     />
   );
 };

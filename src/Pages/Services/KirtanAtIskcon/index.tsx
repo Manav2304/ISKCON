@@ -1,12 +1,12 @@
-import { ServiceDiscription } from "../PageLayout/index";
-import { kirtanAtIskcon,kirtanAtIskconImage } from "./constant";
+import { ServiceDescription } from "../PageLayout/index";
+import { kirtanAtIskcon,kirtanAtIskconImages } from "./constant";
 
 export const KirtanAtIskcon: React.FC = () => {
   return (
-    <ServiceDiscription
+    <ServiceDescription
       title="Kirtan At Iskcon"
       content={kirtanAtIskcon}
-      imageUrl={kirtanAtIskconImage}
+      imageUrl={kirtanAtIskconImages}
     />
   );
 };

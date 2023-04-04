@@ -4,7 +4,7 @@ import deityWorship3 from "../../../assets/images/deity-worship3.jpg";
 import deityWorship4 from "../../../assets/images/deity-worship4.jpg";
 import deityWorship5 from "../../../assets/images/deity-worship5.jpg";
 
-export const deityWorshipImage = [
+export const deityWorshipImages = [
   deityWorship1,
   deityWorship2,
   deityWorship3,

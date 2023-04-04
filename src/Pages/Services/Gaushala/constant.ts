@@ -5,7 +5,7 @@ import gaushala4 from "../../../assets/images/gaushala4.jpg";
 import gaushala5 from "../../../assets/images/gaushala5.jpg";
 import gaushala6 from "../../../assets/images/gaushala5.jpg";
 
-export const goverdhanGaushalaImage = [
+export const goverdhanGaushalaImages = [
   gaushala1,
   gaushala2,
   gaushala3,

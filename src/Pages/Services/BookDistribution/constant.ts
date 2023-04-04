@@ -8,7 +8,7 @@ import bookDistribution7 from "../../../assets/images/book-distribution7.jpg";
 import bookDistribution8 from "../../../assets/images/book-distribution8.jpg";
 import bookDistribution9 from "../../../assets/images/book-distribution9.jpg";
 
-export const bookDistributionImage = [
+export const bookDistributionImages = [
   bookDistribution1,
   bookDistribution2,
   bookDistribution3,

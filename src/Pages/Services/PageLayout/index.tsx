@@ -8,13 +8,13 @@ import {
 import titlebBaseImage from "../../../assets/images/title-base.png";
 import { Carousel } from "./Carousel";
 
-interface ServiceDiscriptionProps {
+interface ServiceDescriptionProps {
   title: string;
   content: string[];
   imageUrl: string[];
 }
 
-export const ServiceDiscription: React.FC<ServiceDiscriptionProps> = ({
+export const ServiceDescription: React.FC<ServiceDescriptionProps> = ({
   title,
   content,
   imageUrl,

@@ -6,7 +6,7 @@ import kirtanAtIskcon5 from "../../../assets/images/kirtan-at-iskcon5.jpg";
 import kirtanAtIskcon6 from "../../../assets/images/kirtan-at-iskcon6.jpg";
 import kirtanAtIskcon7 from "../../../assets/images/kirtan-at-iskcon7.jpg";
 
-export const kirtanAtIskconImage = [
+export const kirtanAtIskconImages = [
   kirtanAtIskcon1,
   kirtanAtIskcon2,
   kirtanAtIskcon3,

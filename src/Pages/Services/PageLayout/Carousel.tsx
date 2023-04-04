@@ -15,10 +15,10 @@ export const Carousel: React.FC<CarouselProps> = ({ images }) => {
       data-bs-interval="2000"
     >
       <div className="carousel-inner">
-        {images.map((image) => (
+        {images.map((image, index) => (
           <div
             key={Math.random()}
-            className={`carousel-item ${image === images[0] ? "active" : ""}`}
+            className={`carousel-item ${index === 1 ? "active" : ""}`}
           >
             <ImageSlide src={image} className="d-block w-100" alt="..." />
           </div>

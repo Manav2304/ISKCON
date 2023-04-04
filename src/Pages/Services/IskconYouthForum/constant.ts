@@ -1,16 +1,17 @@
-import iyf1 from "../../../assets/images/iyf1.jpg";
-import iyf2 from "../../../assets/images/iyf2.jpg";
-import iyf3 from "../../../assets/images/iyf3.jpg";
-import iyf4 from "../../../assets/images/iyf4.jpg";
-import iyf5 from "../../../assets/images/iyf5.jpg";
-import iyf6 from "../../../assets/images/iyf6.jpg";
-export const iskconYouthForumImage = [
-  iyf1,
-  iyf2,
-  iyf3,
-  iyf4,
-  iyf5,
-  iyf6,
+import iskconYouthForum1 from "../../../assets/images/iskcon-youth-forum1.jpg";
+import iskconYouthForum2 from "../../../assets/images/iskcon-youth-forum2.jpg";
+import iskconYouthForum3 from "../../../assets/images/iskcon-youth-forum3.jpg";
+import iskconYouthForum4 from "../../../assets/images/iskcon-youth-forum4.jpg";
+import iskconYouthForum5 from "../../../assets/images/iskcon-youth-forum5.jpg";
+import iskconYouthForum6 from "../../../assets/images/iskcon-youth-forum6.jpg";
+
+export const iskconYouthForumImages = [
+  iskconYouthForum1,
+  iskconYouthForum2,
+  iskconYouthForum3,
+  iskconYouthForum4,
+  iskconYouthForum5,
+  iskconYouthForum6,
 ];
 
 export const iskconYouthForum = [
