@@ -33,7 +33,7 @@ export const FestivalImage = styled.img`
 `;
 
 export const FestivalInfo = styled.div`
-  background-color: #fff;
+  background-color: transparent;
   padding: 10px;
   text-align: center;
 `;

@@ -10,6 +10,12 @@ export const NavigationBar = () => {
           <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
               <Link to="/">Home</Link>
+              <Link className="link" to="/festival">
+                Festival
+              </Link>
+              <Link className="link" to="/contact">
+                Contact Us
+              </Link>
               <Dropdown>
                 <Dropdown.Toggle variant="success">Services</Dropdown.Toggle>
                 <Dropdown.Menu>
@@ -39,9 +45,6 @@ export const NavigationBar = () => {
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
-              <Link className="link" to="/contact">
-                Contact Us
-              </Link>
             </div>
           </nav>
         </NavLink>
