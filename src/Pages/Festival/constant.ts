@@ -1,4 +1,4 @@
-import Janmashtami from "../../assets/images/janmashtami.jpg";
+import janmashtamiImage from "../../assets/images/janmashtami.jpg";
 import RathYatra from "../../assets/images/rathYatra.jpg";
 import Holi from "../../assets/images/holi.jpg";
 import Radhashtami from "../../assets/images/radhashtami.jpg";
