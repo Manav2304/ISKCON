@@ -95,7 +95,7 @@ export const TableCell = styled.td`
 export const CopyButton = styled.button<{ copied: boolean }>`
   margin-left: 1rem;
   padding: 0.5rem;
-  background-color: ${({ copied }) => (copied ? "green" : "#4caf50")};
+  background-color: #4caf50;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -103,11 +103,7 @@ export const CopyButton = styled.button<{ copied: boolean }>`
   transition: background-color 0.2s ease-in-out;
 
   &:hover {
-    background-color: ${({ copied }) => (copied ? "purple" : "#630063")};
-  }
-
-  &:active {
-    background-color: ${({ copied }) => (copied ? "blue" : "#FFFFFCF4")};
+    background-color: #630063;
   }
 `;
 

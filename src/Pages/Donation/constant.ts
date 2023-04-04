@@ -4,7 +4,7 @@ export const bhagavadGita = [
   "Please donate and attain the supreme blessings of Supreme Lord Krishna.",
 ];
 
-export const accountInfo1 = [
+export const yesBankAccountInfo = [
   {
     label: "Account Name",
     value: "ISKCON (International Society for Krishna Conciousness)",
@@ -27,7 +27,7 @@ export const accountInfo1 = [
   },
 ];
 
-export const accountInfo2 = [
+export const iciciBankAccountInfo = [
   {
     label: "Account Name",
     value: "ISKCON (International Society for Krishna Conciousness)",
