@@ -11,7 +11,7 @@ import { contactInfos, schedules } from "./constant";
 
 export const Footer = () => {
   return (
-    <MDBFooter className="text-center text-lg-start text-muted  ">
+    <MDBFooter className="text-center text-lg-start text-muted">
       <BgColor>
         <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <MDBContainer className="text-center text-md-start mt-5">
