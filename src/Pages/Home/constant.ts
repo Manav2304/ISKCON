@@ -16,7 +16,7 @@ const aboutUs = [
   "We offer a wide range of religious and spiritual activities for visitors to participate in, including kirtans, bhajans, and discourses on the teachings of Lord Krishna. Our programs are designed to help people connect with their inner selves and develop a deeper understanding of the spiritual world.",
   "Our temple is located in the town of Vallabh Vidya Nagar in the Anand district of the Indian state of Gujarat.",
 ];
-const history = [
+const histories = [
   "International Society for Krishna Consciousness), also known as the Hare Krishna movement, is a worldwide spiritual organization that was founded in 1966 by A.C. Bhaktivedanta Swami Prabhupada. The movement is based on the teachings of the Bhagavad-gita and the Srimad Bhagavatam, two ancient Hindu scriptures that describe the philosophy of Krishna consciousness.",
   "The roots of ISKCON can be traced back to the early 20th century, when a young boy named Abhay Charan De (later known as A.C. Bhaktivedanta Swami Prabhupada) was born in Calcutta, India. Abhay Charan De was deeply influenced by his spiritual teacher, Bhaktisiddhanta Sarasvati Thakura, who urged him to spread the teachings of Lord Krishna to the Western world.",
   "In 1965, at the age of 70, A.C. Bhaktivedanta Swami Prabhupada set sail for New York City with only a few dollars in his pocket and a crate of books containing his translations and commentaries on the Bhagavad-gita. He arrived in America alone and without any contacts or resources, but he was determined to fulfill his spiritual master's wishes.",
@@ -101,7 +101,7 @@ const historyImages = [
     image: history3Image,
   },
 ];
-export const titleTile = [
+export const titleTiles = [
   {
     title: "ABOUT US",
     image: about,
@@ -110,7 +110,7 @@ export const titleTile = [
   {
     title: "HISTORY",
     images: historyImages,
-    content: history,
+    content: histories,
   },
   {
     title: "GOALS OF ISKCON",

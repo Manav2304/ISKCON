@@ -9,28 +9,28 @@ import {
 import { carouselImages } from "./constant";
 import { GlobalCarousel } from "./GlobalCarousel";
 import titleBaseUrl from "../../assets/images/title-base.png";
-import { titleTile } from "./constant";
+import { titleTiles } from "./constant";
 
 export const HomePage: React.FC = () => {
   return (
     <div>
       <GlobalCarousel images={carouselImages} />
-      {titleTile.map((titleTile) => (
+      {titleTiles.map((titleTiles) => (
         <div>
           <HeadingStyle>
-            <h1>{titleTile.title}</h1>
+            <h1>{titleTiles.title}</h1>
             <ImageTitle src={titleBaseUrl} alt="Title Image" />
           </HeadingStyle>
-          {titleTile.images && <GlobalCarousel images={titleTile.images} />}
+          {titleTiles.images && <GlobalCarousel images={titleTiles.images} />}
           <ImageStyle>
             <Image
-              src={titleTile.image}
+              src={titleTiles.image}
               className="rounded"
-              alt={`${titleTile.title} Image`}
+              alt={`${titleTiles.title} Image`}
             />
           </ImageStyle>
           <TextStyle>
-            {titleTile.content.map((paragraph) => (
+            {titleTiles.content.map((paragraph) => (
               <p>{paragraph}</p>
             ))}
           </TextStyle>
