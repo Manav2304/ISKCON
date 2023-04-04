@@ -10,13 +10,13 @@ import founderAcharya from "../../assets/images/founder-acharya.png";
 import goal from "../../assets/images/goal.jpg";
 import philosophyImg from "../../assets/images/philosophy.jpg";
 
-export const aboutUs = [
+const aboutUs = [
   "Welcome to Sri Sri Radha Giridhariji Temple, dedicated to the worship of Lord Krishna and the promotion of spiritual awareness among people. His Divine Grace A. C. Bhaktivedanta Swami Prabhupada founded the International Society of Krishna Consciousness (ISKCON), also known as the Hare Krishna Movement, in 1966. ISKCON is a worldwide organisation of devotees of Lord Krishna, the Supreme Personality of Godhead, with 10,000 temple devotees and 250,000 congregational devotees as members. Over the course of four decades, ISKCON has expanded to include over 350 temples, 60 rural communities, 50 schools, and 60 restaurants. One of the primary goals of ISKCON is to promote societal well-being by teaching the science of Krishna consciousness as taught in the Bhagavad-Gita and other timeless Vedic scriptures.",
   "Our mission is to spread the teachings of Lord Krishna and the Vaishnava tradition to all those who seek spiritual knowledge and enlightenment. We believe that the path of devotion to Lord Krishna is the key to achieving inner peace and happiness in life.",
   "We offer a wide range of religious and spiritual activities for visitors to participate in, including kirtans, bhajans, and discourses on the teachings of Lord Krishna. Our programs are designed to help people connect with their inner selves and develop a deeper understanding of the spiritual world.",
   "Our temple is located in the town of Vallabh Vidya Nagar in the Anand district of the Indian state of Gujarat.",
 ];
-export const history = [
+const history = [
   "International Society for Krishna Consciousness), also known as the Hare Krishna movement, is a worldwide spiritual organization that was founded in 1966 by A.C. Bhaktivedanta Swami Prabhupada. The movement is based on the teachings of the Bhagavad-gita and the Srimad Bhagavatam, two ancient Hindu scriptures that describe the philosophy of Krishna consciousness.",
   "The roots of ISKCON can be traced back to the early 20th century, when a young boy named Abhay Charan De (later known as A.C. Bhaktivedanta Swami Prabhupada) was born in Calcutta, India. Abhay Charan De was deeply influenced by his spiritual teacher, Bhaktisiddhanta Sarasvati Thakura, who urged him to spread the teachings of Lord Krishna to the Western world.",
   "In 1965, at the age of 70, A.C. Bhaktivedanta Swami Prabhupada set sail for New York City with only a few dollars in his pocket and a crate of books containing his translations and commentaries on the Bhagavad-gita. He arrived in America alone and without any contacts or resources, but he was determined to fulfill his spiritual master's wishes.",
@@ -25,7 +25,7 @@ export const history = [
   "Over the years, ISKCON movement has made significant contributions to the fields of spirituality, vegetarianism, and sustainable living.",
   "Today, ISKCON has hundreds of temples, ashrams, and centers around the world, and its members continue to spread the teachings of Lord Krishna through various activities, including kirtans, festivals, and humanitarian projects. The movement remains a vibrant and important part of the global spiritual landscape, attracting seekers of all ages and backgrounds who are drawn to its message of love, compassion, and devotion.",
 ];
-export const goals = [
+const goals = [
   "When Srila Prabhupada established in July 1966 in New York Krsna consciousness movement (ISKCON), he set its seven goals:",
   "1. To systematically spread spiritual knowledge in the whole society and educate all people in principles of spiritual life to check the imbalance of life values and to achieve real unity and peace in the world.",
   "2. To spread Krsna consciousness in the way it is revealed in the Bhagavad-gita and Srimad-Bhagavatam.",
@@ -36,7 +36,7 @@ export const goals = [
   "6. To associate members for the purpose of teaching a more simple and natural way of life.",
   "7. To print and spread periodical publications, books and other literature to fulfill above-mentioned goals.",
 ];
-export const philosophy = [
+const philosophies = [
   "The philosophy of ISKCON is like a beautiful flower, with each petal representing a different aspect of the teachings of Lord Krishna. At its core, ISKCON is a spiritual movement that emphasizes the importance of love, compassion, and devotion to God.",
   "One petal of this flower is the belief that we are all eternal spiritual beings, temporarily residing in material bodies. According to ISKCON philosophy, our true nature is pure and spiritual, and our ultimate goal is to realize this nature and return to our eternal home in the spiritual world.",
   "Another petal of the ISKCON flower is the importance of karma and reincarnation. The movement teaches that our actions in this life determine our future destiny, and that we will continue to take birth in different forms until we achieve spiritual perfection.",
@@ -44,7 +44,7 @@ export const philosophy = [
   "Yet another petal of the ISKCON flower is the importance of compassion and service to others. The movement believes that by serving others and alleviating their suffering, we can purify our hearts and develop a deeper connection with God.",
   "Together, these petals form a beautiful and intricate philosophy that offers a path to spiritual fulfillment and inner peace. ISKCON teaches that by cultivating love and devotion to God, and by serving others with compassion and humility, we can achieve our ultimate goal of spiritual liberation and eternal happiness. It is a philosophy that transcends all boundaries of race, religion, and nationality, and offers a message of hope and inspiration to people all over the world.",
 ];
-export const founder = [
+const founders = [
   "Srila A.C. Bhaktivedanta Swami Prabhupada was a spiritual master, a founder-acharya of the International Society for Krishna Consciousness (ISKCON), and a profound scholar of the Vedic scriptures. Born Abhay Charan De in Calcutta, India, in 1896, and spent his early life studying the Vedic scriptures and practicing devotional service to Lord Krishna.",
   "In 1965, at the age of 69, Srila Prabhupada boarded a cargo ship bound for New York City with only a few belongings and a burning desire to spread the teachings of Lord Krishna to the Western world, as per the instructions of his spiritual master Srila Bhaktisiddhanta Saraswati Goswami Maharaj Prabhupada. Despite numerous obstacles and setbacks, he persevered, living in poverty and facing countless challenges as he worked tirelessly to establish the first ISKCON temple in New York City.",
   "Over the next 11 years, Srila Prabhupada traveled extensively, establishing temples, ashrams, and centers around the world and inspiring countless individuals to embrace the path of bhakti-yoga. His teachings on love, compassion, and devotion to God continue to resonate with people of all backgrounds, and his legacy has touched the lives of millions.",
@@ -69,7 +69,7 @@ export const founder = [
   "1977 Enters the eternal lila of Radha and Krishna in Goloka Vrindavan.",
 ];
 
-export const carouselImg = [
+export const carouselImages = [
   {
     id: 1,
     image: radhaGiridhariji,
@@ -87,7 +87,7 @@ export const carouselImg = [
     image: krishnaImage,
   },
 ];
-export const historyImage = [
+const historyImages = [
   {
     id: 1,
     image: history1Image,
@@ -101,7 +101,7 @@ export const historyImage = [
     image: history3Image,
   },
 ];
-export const titletile = [
+export const titleTile = [
   {
     title: "ABOUT US",
     image: about,
@@ -109,7 +109,7 @@ export const titletile = [
   },
   {
     title: "HISTORY",
-    images: historyImage,
+    images: historyImages,
     content: history,
   },
   {
@@ -120,11 +120,11 @@ export const titletile = [
   {
     title: "PHILOSOPHY",
     image: philosophyImg,
-    content: philosophy,
+    content: philosophies,
   },
   {
     title: "FOUNDER",
     image: founderAcharya,
-    content: founder,
+    content: founders,
   },
 ];
