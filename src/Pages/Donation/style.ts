@@ -12,7 +12,7 @@ export const Table = styled.table`
   width: 100%;
 `;
 
-export const TableData = styled.td`
+export const TableColumn = styled.td`
   text-align: left;
   padding: 10px;
 `;

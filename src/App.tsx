@@ -1,23 +1,32 @@
 import React from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavigationBar from "./Components/Navbar";
 import Home from "./Pages/Home";
-import { DonationPage } from "./Pages/Donation";
-import FestivalPage from "./Pages/Festival";
+import { FestivalPage } from "./Pages/Festival";
 import { Contact } from "./Pages/Contact";
+import { routes } from "./routes";
+import { DonationPage } from "./Pages/Donation";
 
 export const App: React.FunctionComponent = () => {
   return (
     <>
-      <BrowserRouter>
+      <Router>
         <NavigationBar />
         <Routes>
-          <Route caseSensitive path="/" element={<Home />} />
-          <Route caseSensitive path="/donation" element={<DonationPage />} />
-          <Route caseSensitive path="/festival" element={<FestivalPage />} />
-          <Route caseSensitive path="/contact" element={<Contact />} />
+          <Route caseSensitive path={routes.home} element={<Home />} />
+          <Route
+            caseSensitive
+            path={routes.festival}
+            element={<FestivalPage />}
+          />
+          <Route caseSensitive path={routes.contact} element={<Contact />} />
+          <Route
+            caseSensitive
+            path={routes.donation}
+            element={<DonationPage />}
+          />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </>
   );
 };

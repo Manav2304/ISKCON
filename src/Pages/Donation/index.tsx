@@ -26,27 +26,25 @@ export const DonationPage = () => {
       {bhagavadGita.map((paragraph) => (
         <Paragraph key={paragraph}>{paragraph}</Paragraph>
       ))}
-      <>
-        <TableStyle>
-          <Heading>YES bank</Heading>
-          <Table>
-            <tbody>
-              {yesBankAccountInfo.map((info) => (
-                <CopiedTableRow label={info.label} value={info.value} />
-              ))}
-            </tbody>
-          </Table>
-          <br />
-          <Heading>ICICI Bank</Heading>
-          <Table>
-            <tbody>
-              {iciciBankAccountInfo.map((info) => (
-                <CopiedTableRow label={info.label} value={info.value} />
-              ))}
-            </tbody>
-          </Table>
-        </TableStyle>
-      </>
+      <TableStyle>
+        <Heading>YES bank</Heading>
+        <Table>
+          <tbody>
+            {yesBankAccountInfo.map((info) => (
+              <CopiedTableRow label={info.label} value={info.value} />
+            ))}
+          </tbody>
+        </Table>
+        <br />
+        <Heading>ICICI Bank</Heading>
+        <Table>
+          <tbody>
+            {iciciBankAccountInfo.map((info) => (
+              <CopiedTableRow label={info.label} value={info.value} />
+            ))}
+          </tbody>
+        </Table>
+      </TableStyle>
     </Wrapper>
   );
 };
