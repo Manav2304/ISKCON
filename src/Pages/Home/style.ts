@@ -46,12 +46,12 @@ export const ImageTitle = styled.img`
   max-width: 400px;
 
   @media only screen and (max-width: 768px) {
-    width: 100%;
+    width: 70%;
     max-width: 200px;
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1199px) {
-    width: 100%;
+    width: 70%;
     max-width: 300px;
   }
 
