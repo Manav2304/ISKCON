@@ -1,8 +1,13 @@
 import React from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  BrowserRouter,
+} from "react-router-dom";
+import { NavigationBar } from "./Components/Navbar";
 import { HomePage } from "./Pages/Home";
 import { FestivalPage } from "./Pages/Festival";
-import { NavigationBar } from "./Components/Navbar";
 import { Contact } from "./Pages/Contact";
 
 export const App: React.FunctionComponent = () => {
