@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 export const TextStyle = styled.div`
   text-align: justify;
   margin: 40px 50px 50px;
