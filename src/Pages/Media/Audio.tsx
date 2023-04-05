@@ -1,4 +1,10 @@
-import { Heading, LinkName, ImageWrapper, TitleImage } from "./style";
+import {
+  Heading,
+  LinkName,
+  ImageWrapper,
+  TitleImage,
+  IframeWrapper,
+} from "./style";
 import titleBaseImg from "../../assets/images/title-base.png";
 
 const AudioContent = () => {
@@ -11,14 +17,18 @@ const AudioContent = () => {
       <ImageWrapper>
         <TitleImage src={titleBaseImg} alt="TitleBase" />
       </ImageWrapper>
-      <iframe
-        title="Spotify Playlist"
-        src="https://open.spotify.com/embed/playlist/3ZPZj8PSYOIyJmHpEI4YLK?utm_source=generator"
-        width="1100"
-        height="400"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
+      {/* <br />
+      <br /> */}
+      <IframeWrapper>
+        <iframe
+          title="Spotify Playlist"
+          src="https://open.spotify.com/embed/playlist/3ZPZj8PSYOIyJmHpEI4YLK?utm_source=generator"
+          width="352"
+          height="400"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </IframeWrapper>
     </div>
   );
 };

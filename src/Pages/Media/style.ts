@@ -49,6 +49,18 @@ export const CarouselWrapper = styled.div`
   width: 500px;
   height: 300px;
   margin: 40px 60px 50px;
+
+  @media only screen and (max-width: 768px) {
+    /* Mobile view */
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Tablet view */
+    width: 60%;
+    margin: 30px 0;
+  }
 `;
 
 export const TitleName = styled.h2`
@@ -91,6 +103,17 @@ export const ImageSlide = styled.img`
   width: 500px;
   height: 300px;
   object-fit: auto;
+
+  @media only screen and (max-width: 768px) {
+    /* Mobile view */
+    width: 100%;
+    height: auto;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Tablet view */
+    width: 60%;
+  }
 `;
 
 export const LinkName = styled.h1`
@@ -98,4 +121,8 @@ export const LinkName = styled.h1`
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   margin: 20px 0px 20px;
+`;
+export const IframeWrapper = styled.div`
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 `;
