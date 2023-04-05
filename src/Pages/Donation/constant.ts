@@ -23,7 +23,7 @@ export const yesBankAccountInfo = [
   },
   {
     label: "IFSC Code",
-    value: "YESB 0000194",
+    value: "YESB0000194",
   },
 ];
 

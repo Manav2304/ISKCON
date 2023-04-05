@@ -21,8 +21,6 @@ export const Paragraph = styled.div`
   font-size: 1rem;
   text-align: justify center;
   font-family: "Times New Roman", Times, serif;
-  margin-right: 100px;
-  margin-left: 100px;
   position: relative;
   padding: 10px;
   color: #ad0d0d;
@@ -104,6 +102,10 @@ export const CopyButton = styled.button<{ copied: boolean }>`
 
   &:hover {
     background-color: #630063;
+  }
+
+  &:active {
+    background-color: #fffffcf4;
   }
 `;
 
