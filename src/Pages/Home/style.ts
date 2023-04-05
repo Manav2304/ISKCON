@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const TextStyle = styled.div`
   text-align: justify;
   margin: 40px 50px 50px;
@@ -65,15 +64,15 @@ export const Reviews = styled.div`
   max-width: 1600px;
 
   @media only screen and (max-width: 767px) {
-    margin-top: 10px;
+    margin: 20px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-top: 10px;
+    margin: 10px;
   }
 
   @media only screen and (min-width: 1200px) {
-    margin-top: 10px;
+    margin: 5px;
   }
 `;
 export const ImageStyle = styled.div`
@@ -89,7 +88,7 @@ export const ImageCarousel = styled.img`
   object-fit: contain cover;
 
   @media only screen and (max-width: 767px) {
-    height: 300px;
+    height: 150px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -101,7 +100,9 @@ export const ImageCarousel = styled.img`
     width: 100%;
   }
 `;
-export const Image = styled.img`
+export const Image = styled.img.attrs((props) => ({
+  alt: props.alt,
+}))`
   object-fit: contain;
 
   @media only screen and (max-width: 767px) {
