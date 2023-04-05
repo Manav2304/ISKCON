@@ -14,35 +14,35 @@ export const HomePage: React.FC = () => {
   return (
     <div>
       <GlobalCarousel images={carouselImages} />
-      {titleTiles.map((titleTiles) => (
+      {titleTiles.map((titleTile) => (
         <div>
           <HeadingStyle>
-            <h1>{titleTiles.title}</h1>
+            <h1>{titleTile.title}</h1>
             <ImageTitle src={titleBaseUrl} alt="Title Image" />
           </HeadingStyle>
-          <GlobalCarousel images={titleTiles.images} />
+          <GlobalCarousel images={titleTile.images} />
           <TextStyle>
-            {titleTiles.paragraphs.map((paragraph) => (
+            {titleTile.paragraphs.map((paragraph) => (
               <p>{paragraph}</p>
             ))}
           </TextStyle>
         </div>
       ))}
-      {sections.map((sections) => (
+      {sections.map((section) => (
         <div>
           <HeadingStyle>
-            <h2>{sections.title}</h2>
+            <h2>{section.title}</h2>
             <ImageTitle src={titleBaseUrl} alt="Title Image" />
           </HeadingStyle>
           <ImageStyle>
             <Image
-              src={sections.image}
-              alt={`${sections.title} Img`}
+              src={section.image}
+              alt={`${section.title} Img`}
               className="rounded"
             />
           </ImageStyle>
           <TextStyle>
-            {sections.paragraphs.map((paragraph) => (
+            {section.paragraphs.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
           </TextStyle>
