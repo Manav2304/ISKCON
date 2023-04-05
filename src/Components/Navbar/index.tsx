@@ -17,6 +17,9 @@ const NavigationBar = () => {
             <Link className="link" to={routes.contact}>
               Contact
             </Link>
+            <Link className="link" to={routes.visitUs}>
+              Visit Us
+            </Link>
           </div>
         </nav>
       </div>
