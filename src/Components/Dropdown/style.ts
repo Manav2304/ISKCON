@@ -30,7 +30,7 @@ export const DropdownMenu = styled.div`
 `;
 
 export const DropdownToggle = styled.div`
-  color: red;
+  color: #ff0000;
   background: transparent;
   border: none;
   padding: 0;

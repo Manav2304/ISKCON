@@ -43,19 +43,3 @@ export const ImgStyle = styled.img`
   }
 `;
 
-export const TransparentDropdown = styled(DropDown)`
-  border: none;
-
-  .dropdown-toggle {
-    color: #7e5959;
-    background-color: transparent;
-  }
-
-  .dropdown-menu {
-    background-color: #7e5959;
-  }
-
-  .dropdown-item {
-    color: #ffffff;
-  }
-`;

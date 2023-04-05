@@ -25,7 +25,7 @@ export const NavigationBar = () => {
             <ImgStyle src={logoUrl} alt="Logo" />
           </StyledLink>
           <DropDown items={dropdownMediaInfo} dropdownTitle="media" />
-          <StyledLink to="Contact">Contact</StyledLink>
+          <StyledLink to="/contact">Contact</StyledLink>
           <DropDown items={dropdownDonationInfo} dropdownTitle="Donate" />
           <div>
             {socialMediaIcon.map((item) => (
