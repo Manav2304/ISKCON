@@ -100,9 +100,7 @@ export const ImageCarousel = styled.img`
     width: 100%;
   }
 `;
-export const Image = styled.img.attrs((props) => ({
-  alt: props.alt,
-}))`
+export const Image = styled.img`
   object-fit: contain;
 
   @media only screen and (max-width: 767px) {
