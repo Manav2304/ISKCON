@@ -1,14 +1,10 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  BrowserRouter,
-} from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { NavigationBar } from "./Components/Navbar";
 import { HomePage } from "./Pages/Home";
 import { FestivalPage } from "./Pages/Festival";
 import { Contact } from "./Pages/Contact";
+import { routes } from "./routes";
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -16,9 +12,13 @@ export const App: React.FunctionComponent = () => {
       <BrowserRouter>
         <NavigationBar />
         <Routes>
-          <Route caseSensitive path="/" element={<HomePage />} />
-          <Route caseSensitive path="/festival" element={<FestivalPage />} />
-          <Route caseSensitive path="/contact" element={<Contact />} />
+          <Route caseSensitive path={routes.home} element={<HomePage />} />
+          <Route
+            caseSensitive
+            path={routes.festival}
+            element={<FestivalPage />}
+          />
+          <Route caseSensitive path={routes.contact} element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </>
