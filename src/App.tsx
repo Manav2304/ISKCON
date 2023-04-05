@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import { DonationPage } from "./Pages/Donation";
 import { FestivalPage } from "./Pages/Festival";
 import { Contact } from "./Pages/Contact";
+import VisitUs from "./Pages/VisitUs";
 import { routes } from "./routes";
 
 export const App: React.FunctionComponent = () => {
@@ -19,6 +20,7 @@ export const App: React.FunctionComponent = () => {
             path={routes.festival}
             element={<FestivalPage />}
           />
+          <Route caseSensitive path={routes.visitUs} element={<VisitUs />} />
           <Route caseSensitive path={routes.contact} element={<Contact />} />
           <Route
             caseSensitive

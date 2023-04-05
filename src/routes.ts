@@ -3,4 +3,5 @@ export const routes = {
   festival: "/festival",
   contact: "/contact",
   donation: "/donation",
+  visitUs: "/visit-us",
 };
