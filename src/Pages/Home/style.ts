@@ -1,3 +1,4 @@
+import { Carousel } from "react-bootstrap";
 import styled from "styled-components";
 
 export const TextStyle = styled.div`
@@ -115,5 +116,43 @@ export const Image = styled.img`
   @media only screen and (min-width: 1200px) {
     height: 92%;
     width: 92%;
+  }
+`;
+/*Used class name for handle the size of icon*/
+export const StyleCarousel = styled(Carousel)`
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .carousel-indicators {
+    height: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 10px;
+      width: 10px;
+    }
+
+    .carousel-indicators {
+      height: 5px;
+      width: 5px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 30px;
+      width: 30px;
+      margin: 80px;
+    }
+
+    .carousel-indicators {
+      height: 15px;
+    }
   }
 `;
