@@ -19,7 +19,7 @@ export const NavigationBar = () => {
           <DropDown items={mediaInfo} dropdownTitle="media" />
           <StyledLink to="Contact">Contact</StyledLink>
           <DropDown items={donationInfo} dropdownTitle="Donate" />
-          <div>
+          <div style={{ display: "flex", gap: "10px" }}>
             {socialMediaIcon.map((item) => (
               <a key={item.name} href={item.href}>
                 <MDBIcon fab icon={item.icon} />
