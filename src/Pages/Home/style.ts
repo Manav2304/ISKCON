@@ -39,9 +39,7 @@ export const HeadingStyle = styled.div`
     padding: 60px;
   }
 `;
-export const ImageTitle = styled.img.attrs((props) => ({
-  alt: props.alt,
-}))`
+export const ImageTitle = styled.img`
   width: 100%;
   max-width: 400px;
 
