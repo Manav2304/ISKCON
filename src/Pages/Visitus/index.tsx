@@ -12,7 +12,6 @@ import {
   VisibleParagraph,
   HiddenParagraph,
 } from "./style";
-
 import Carousel from "./Carousel";
 
 export const VisitUs = () => {
