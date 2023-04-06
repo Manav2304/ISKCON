@@ -1,8 +1,8 @@
 import { NavStyle, StyledLink, ImgStyle } from "./style";
-import { DropDown } from "../Dorpdown";
+import { DropDown } from "../Dropdown";
 import { donationInfo, mediaInfo, socialMediaIcon } from "../Navbar/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
-import logoUrl from "../../assets/images/isckonLogo.png";
+import logoUrl from "../../assets/images/isckon-logo.png";
 import { servicesInfo, dropdownItems, festivanInfo } from "./constant";
 
 export const NavigationBar = () => {
@@ -17,7 +17,7 @@ export const NavigationBar = () => {
             <ImgStyle src={logoUrl} alt="Logo" />
           </StyledLink>
           <DropDown items={mediaInfo} toggleTitle="media" />
-          <StyledLink to="#">Contact</StyledLink>
+          <StyledLink to="/contact">Contact</StyledLink>
           <DropDown items={donationInfo} toggleTitle="Donate" />
           <div>
             {socialMediaIcon.map((item) => (

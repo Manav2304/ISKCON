@@ -1,76 +1,53 @@
-import React, { useState } from "react";
-import { DonationForm } from "./style";
-import { InputGroup } from "./style";
-import { InputLabel } from "./style";
-import { InputField } from "./style";
-import { SubmitButton } from "./style";
-import { PageBackground } from "./style";
+import {
+  Wrapper,
+  Title,
+  Table,
+  Paragraph,
+  ImageWrapper,
+  Image,
+  TableStyle,
+  Heading,
+} from "./style";
+import {
+  yesBankAccountInfo,
+  iciciBankAccountInfo,
+  bhagavadGita,
+} from "./constant";
+import { CopiedTableRow } from "./CopiedTableRow";
+import titleBaseImg from "../../assets/images/title-base.png";
+import { PageWrapperStyle } from "../Home/style";
 
-interface DonationFormData {
-  name: string;
-  email: string;
-  amount: number;
-}
-
-const DonationPage: React.FC = () => {
-  const [formData, setFormData] = useState<DonationFormData>({
-    name: "",
-    email: "",
-    amount: 0,
-  });
-
-  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = event.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-
-    // TODO: Add Cashfree API integration here to process the payment
-
-    console.log("Submitting form data:", formData);
-  };
-
+export const DonationPage = () => {
   return (
-    <PageBackground>
-      <div className="manav">
-        <div className="conatainer ">
-          <h1>Donate to our Cause</h1>
-          <DonationForm onSubmit={handleSubmit}>
-            <InputGroup>
-              <InputLabel>Name:</InputLabel>
-              <InputField
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleInputChange}
-              />
-            </InputGroup>
-            <InputGroup>
-              <InputLabel>Email:</InputLabel>
-              <InputField
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-              />
-            </InputGroup>
-            <InputGroup>
-              <InputLabel>Amount:</InputLabel>
-              <InputField
-                type="number"
-                name="amount"
-                value={formData.amount}
-                onChange={handleInputChange}
-              />
-            </InputGroup>
-            <SubmitButton type="submit">Donate Now</SubmitButton>
-          </DonationForm>
-        </div>
-      </div>
-    </PageBackground>
+    <PageWrapperStyle>
+      <Wrapper>
+        <Title>Donation</Title>
+        <ImageWrapper>
+          <Image src={titleBaseImg} />
+        </ImageWrapper>
+        {bhagavadGita.map((paragraph) => (
+          <Paragraph key={paragraph}>{paragraph}</Paragraph>
+        ))}
+        <TableStyle>
+          <Heading>YES bank</Heading>
+          <Table>
+            <tbody>
+              {yesBankAccountInfo.map((info) => (
+                <CopiedTableRow label={info.label} value={info.value} />
+              ))}
+            </tbody>
+          </Table>
+          <br />
+          <Heading>ICICI Bank</Heading>
+          <Table>
+            <tbody>
+              {iciciBankAccountInfo.map((info) => (
+                <CopiedTableRow label={info.label} value={info.value} />
+              ))}
+            </tbody>
+          </Table>
+        </TableStyle>
+      </Wrapper>
+    </PageWrapperStyle>
   );
 };
-
-export default DonationPage;

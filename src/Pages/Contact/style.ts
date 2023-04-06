@@ -98,3 +98,6 @@ export const TitleBaseImg = styled.img`
     max-width: 50%;
   }
 `;
+export const PageWrapper = styled.div`
+  margin-top: 50px;
+`;

@@ -4,4 +4,5 @@ export const routes = {
   contact: "/contact",
   donation: "/donation",
   visitUs: "/visit-us",
+  media: "/media",
 };
