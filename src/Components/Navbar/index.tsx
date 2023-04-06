@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { NavStyle } from "./style";
 import { routes } from "../../routes";
 
-const NavigationBar = () => {
+export const NavigationBar = () => {
   return (
     <NavStyle>
       <div className="container ">
@@ -32,5 +32,3 @@ const NavigationBar = () => {
     </NavStyle>
   );
 };
-
-export default NavigationBar;

@@ -14,7 +14,7 @@ import AudioContent from "./Audio";
 import titleBaseImg from "../../assets/images/title-base.png";
 import YouTube from "react-youtube";
 
-const Media: React.FC = () => {
+export const Media: React.FC = () => {
   return (
     <>
       <Heading> Daily Darshan </Heading>
@@ -49,5 +49,3 @@ const Media: React.FC = () => {
     </>
   );
 };
-
-export default Media;
