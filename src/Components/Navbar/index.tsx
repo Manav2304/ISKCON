@@ -3,14 +3,14 @@ import { DropDown } from "../Dropdown";
 import { donationInfo, mediaInfo, socialMediaIcon } from "../Navbar/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
 import logoUrl from "../../assets/images/isckon-logo.png";
-import { servicesInfo, dropdownItems, festivanInfo } from "./constant";
+import { servicesInfo, dropdownHomeInfo, festivanInfo } from "./constant";
 
 export const NavigationBar = () => {
   return (
     <NavStyle>
       <nav className="navbar fixed-top">
         <div className="container">
-          <DropDown items={dropdownItems} toggleTitle="ISKCON" />
+          <DropDown items={dropdownHomeInfo} toggleTitle="ISKCON" />
           <DropDown items={festivanInfo} toggleTitle="Festival" />
           <DropDown items={servicesInfo} toggleTitle="Services" />
           <StyledLink to="/">

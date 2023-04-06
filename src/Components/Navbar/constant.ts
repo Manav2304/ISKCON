@@ -26,7 +26,7 @@ export const socialMediaIcon = [
     icon: "youtube",
   },
 ];
-export const dropdownItems = [
+export const dropdownHomeInfo = [
   { title: "History", path: "#" },
   { title: "Founder", path: "#" },
   { title: "Philosophy", path: "#" },
