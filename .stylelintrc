@@ -3,5 +3,7 @@
     "stylelint-config-standard",
     "stylelint-config-styled-components"
   ],
-  "overrides": [{ "files": ["**/*.ts","**/*.tsx"], "customSyntax": "postcss-styled" }]
+  "overrides": [
+    { "files": ["**/*.ts", "**/*.tsx"], "customSyntax": "postcss-styled" }
+  ]
 }

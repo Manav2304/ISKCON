@@ -12,9 +12,10 @@ import {
   VisibleParagraph,
   HiddenParagraph,
 } from "./style";
+
 import Carousel from "./Carousel";
 
-const VisitUs = () => {
+export const VisitUs = () => {
   const [showMoreDakor, setShowMoreDakor] = useState(false);
   const [showMoreGoushala, setShowMoreGoushala] = useState(false);
   const toggleShowMoreDakor = () => setShowMoreDakor(!showMoreDakor);
@@ -65,5 +66,3 @@ const VisitUs = () => {
     </ServiceWrapper>
   );
 };
-
-export default VisitUs;
