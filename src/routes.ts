@@ -12,4 +12,5 @@ export const routes = {
   iskconYouthForum: "/srevices/iskcon-youth-forum",
   kirtanAtIskcon: "/services/kirtan-at-iskcon",
   lifeTimeMembership: "/services/life-time-membership",
+  media: "/media",
 };

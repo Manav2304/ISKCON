@@ -1,4 +1,5 @@
 import React from "react";
+import { Media } from "./Pages/Media";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { NavigationBar } from "./Components/Navbar";
 import { HomePage } from "./Pages/Home";
@@ -29,6 +30,7 @@ export const App: React.FunctionComponent = () => {
             element={<FestivalPage />}
           />
           <Route caseSensitive path={routes.visitUs} element={<VisitUs />} />
+          <Route caseSensitive path={routes.media} element={<Media />} />
           <Route caseSensitive path={routes.contact} element={<Contact />} />
           <Route
             caseSensitive
