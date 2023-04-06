@@ -34,7 +34,6 @@ export const ImageWrapper = styled.div`
 export const Heading = styled.h1`
   text-align: center;
   color: #7e5959;
-  margin-top: 20px;
 `;
 
 export const TitleImage = styled.img`
