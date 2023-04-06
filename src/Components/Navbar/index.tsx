@@ -26,9 +26,6 @@ export const NavigationBar = () => {
               <Link className="link" to={routes.media}>
                 Media
               </Link>
-              <Link className="link" to={routes.media}>
-                Media
-              </Link>
               <Dropdown>
                 <Dropdown.Toggle variant="success">Services</Dropdown.Toggle>
                 <Dropdown.Menu>
