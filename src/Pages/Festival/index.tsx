@@ -1,10 +1,11 @@
+import React from "react";
 import { festivals } from "./constant";
 import { FestivalCard } from "./FestivalCard";
 import { FestivalContainer, Heading1, ImageDiv, TitleImage } from "./style";
 import { Festival } from "./types";
 import titleBaseImg from "../../assets/images/title-base.png";
 
-const FestivalPage = () => {
+export const FestivalPage = () => {
   return (
     <>
       <Heading1>
@@ -21,5 +22,3 @@ const FestivalPage = () => {
     </>
   );
 };
-
-export default FestivalPage;
