@@ -26,13 +26,13 @@ export const socialMediaIcon = [
     icon: "youtube",
   },
 ];
-export const dropdownItems = [
+export const dropdownHomeInfo = [
   { title: "History", path: "/history" },
   { title: "Founder", path: "/founder" },
   { title: "Philosophy", path: "/philosophy" },
   { title: "Goals", path: "/goals" },
 ];
 export const dropdownFestivalInfo = [{ title: "festival", path: "/festival" }];
-export const servicesInfo = [{ title: "services", path: "/services" }];
-export const mediaInfo = [{ title: "media", path: "/media" }];
-export const donationInfo = [{ title: "donate", path: "/donate" }];
+export const dropdownServicesInfo = [{ title: "services", path: "/services" }];
+export const dropdownMediaInfo = [{ title: "media", path: "/media" }];
+export const dropdownDonationInfo = [{ title: "donate", path: "/donate" }];
