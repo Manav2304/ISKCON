@@ -5,7 +5,7 @@ interface CarouselProps {
   images: string[];
 }
 
-const Carousel: React.FC<CarouselProps> = ({ images }) => {
+export const Carousel: React.FC<CarouselProps> = ({ images }) => {
   const id = `carousel-auto-play-${Math.random()}`;
   return (
     <div
@@ -49,5 +49,3 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
     </div>
   );
 };
-
-export default Carousel;
