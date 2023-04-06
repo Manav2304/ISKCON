@@ -19,8 +19,6 @@ export const ServiceDescription: React.FC<ServiceDescriptionProps> = ({
   content,
   imageUrl,
 }) => {
-  const mappedContent = content.map((paragraph) => <p>{paragraph}</p>);
-
   return (
     <div>
       <TextWrapper>
@@ -29,7 +27,11 @@ export const ServiceDescription: React.FC<ServiceDescriptionProps> = ({
           <TitleImage src={titlebBaseImage} alt="TitleBase" />
         </ImageWrapper>
         <Carousel images={imageUrl} />
-        <Paragraph>{mappedContent}</Paragraph>
+        <Paragraph>
+          {content.map((paragraph) => (
+            <p>{paragraph}</p>
+          ))}
+        </Paragraph>
       </TextWrapper>
     </div>
   );
