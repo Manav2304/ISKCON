@@ -33,6 +33,24 @@ export const NavigationBar = () => {
                 <MDBIcon fab icon={item.icon} />
               </a>
             ))}
+      <div className="container ">
+        <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+          <div className="container-fluid">
+            <Link className="nav-link" to={routes.donation}>
+              Donation
+            </Link>
+            <Link className="link" to={routes.home}>
+              Home
+            </Link>
+            <Link className="link" to={routes.festival}>
+              Festival
+            </Link>
+            <Link className="link" to={routes.contact}>
+              Contact
+            </Link>
+            <Link className="link" to={routes.visitUs}>
+              Visit Us
+            </Link>
           </div>
         </div>
       </nav>
