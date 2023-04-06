@@ -48,19 +48,7 @@ export const PageWrapper = styled.div`
 export const CarouselWrapper = styled.div`
   width: 500px;
   height: 300px;
-  margin: 40px 60px 50px;
-
-  @media only screen and (max-width: 768px) {
-    /* Mobile view */
-    width: 100%;
-    margin: 20px 0;
-  }
-
-  @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    /* Tablet view */
-    width: 60%;
-    margin: 30px 0;
-  }
+  margin: 40px 60px 40px;
 `;
 
 export const TitleName = styled.h2`
@@ -120,9 +108,6 @@ export const LinkName = styled.h1`
   color: #ad0d0d;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
-  margin: 20px 0px 20px;
-`;
-export const IframeWrapper = styled.div`
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
 `;

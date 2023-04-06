@@ -87,10 +87,12 @@ export const TitleBaseImgWrapper = styled.div`
 export const TitleBaseImg = styled.img`
   width: 500px;
   height: 60px;
+
   @media screen and (max-width: 768px) {
     width: 100%;
     max-width: 100%;
   }
+
   @media screen and (min-width: 769px) {
     width: 60%;
     max-width: 50%;
