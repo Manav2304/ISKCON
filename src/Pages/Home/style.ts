@@ -62,6 +62,7 @@ export const ImageTitle = styled.img`
 `;
 export const Reviews = styled.div`
   max-width: 1600px;
+
   @media only screen and (max-width: 767px) {
     margin: 4px;
   }
