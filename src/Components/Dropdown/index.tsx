@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Dropdown } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import {
   DropdownMenuStyle,
   DropdownToggleStyle,
   TransparentDropdown,
 } from "./style";
-import { useNavigate } from "react-router-dom";
 
 interface DropdownItem {
   title: string;
