@@ -1,4 +1,4 @@
-import { NavStyle, StyledLink, ImgStyle } from "./style";
+import { NavStyle, StyledLink, ImgStyle, SocialMediaIconsStyle } from "./style";
 import { DropDown } from "../Dropdown";
 import { donationInfo, mediaInfo, socialMediaIcon } from "../Navbar/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
@@ -8,7 +8,7 @@ import { servicesInfo, dropdownItems, festivanInfo } from "./constant";
 export const NavigationBar = () => {
   return (
     <NavStyle>
-      <nav className="navbar">
+      <nav className="navbar fixed-top">
         <div className="container">
           <DropDown items={dropdownItems} toggleTitle="ISKCON" />
           <DropDown items={festivanInfo} toggleTitle="Festival" />
@@ -19,13 +19,13 @@ export const NavigationBar = () => {
           <DropDown items={mediaInfo} toggleTitle="media" />
           <StyledLink to="/contact">Contact</StyledLink>
           <DropDown items={donationInfo} toggleTitle="Donate" />
-          <div>
+          <SocialMediaIconsStyle>
             {socialMediaIcon.map((item) => (
               <a key={item.name} href={item.href}>
                 <MDBIcon fab icon={item.icon} />
               </a>
             ))}
-          </div>
+          </SocialMediaIconsStyle>
         </div>
       </nav>
     </NavStyle>

@@ -9,11 +9,11 @@ export const TransparentDropdown = styled.div`
   .dropdown-menu {
     border: none;
     box-shadow: none;
-    background-color: white;
+    background-color: #fffaf0;
   }
 
   .dropdown-toggle {
-    color: red;
+    color: #f00;
     background: transparent;
     border: none;
     padding: 0;
@@ -36,9 +36,9 @@ export const DropdownMenuStyle = styled.div`
 `;
 
 export const DropdownItemStyle = styled.div`
-  color: white;
+  color: #f5fffa;
 `;
 
 export const StyledLink = styled(Link)`
-  color: red;
+  color: #f00;
 `;

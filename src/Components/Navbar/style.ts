@@ -2,18 +2,17 @@ import styled from "styled-components";
 import title from "../../assets/images/bg.png";
 import { Link } from "react-router-dom";
 
-export const NavStyle = styled.nav`
-  width: 100%;
-  top: 1px;
-  background-image: url(${title});
-  background-size: repeat;
-  position: fixed;
-  height: 95px;
-  z-index: 2;
+export const NavStyle = styled.div`
+  nav {
+    background-image: url(${title});
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+  }
 `;
 
 export const StyledLink = styled(Link)`
-  color: red;
+  color: #f00;
   text-decoration: none;
 `;
 
@@ -38,5 +37,23 @@ export const ImgStyle = styled.img`
 
   @media (min-width: 1400px) {
     height: 85px;
+  }
+`;
+export const SocialMediaIconsStyle = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    margin-right: 10px;
+    color: #8b0000;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #f5fffa;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: #555;
+    }
   }
 `;

@@ -27,12 +27,12 @@ export const socialMediaIcon = [
   },
 ];
 export const dropdownItems = [
-  { title: "History", path: "/history" },
-  { title: "Founder", path: "/founder" },
-  { title: "Philosophy", path: "/philosophy" },
-  { title: "Goals", path: "/goals" },
+  { title: "History", path: "#" },
+  { title: "Founder", path: "#" },
+  { title: "Philosophy", path: "#" },
+  { title: "Goals", path: "#" },
 ];
 export const festivanInfo = [{ title: "festival", path: "/festival" }];
-export const servicesInfo = [{ title: "services", path: "/services" }];
+export const servicesInfo = [{ title: "services", path: "#" }];
 export const mediaInfo = [{ title: "media", path: "/media" }];
 export const donationInfo = [{ title: "donate", path: "/donation" }];
