@@ -75,6 +75,7 @@ export const Reviews = styled.div`
     margin: 5px;
   }
 `;
+
 export const ImageStyle = styled.div`
   display: flex;
   justify-content: center;
