@@ -8,6 +8,8 @@ import {
 import footerLogo from "../../assets/images/footer-logo.jpeg";
 import { FooterLogoStyle, ContactStyle, BgColor, TimeStyle } from "./style";
 import { contactInfos, schedules } from "./constant";
+import { Link } from "react-router-dom";
+import { routes } from "../../routes";
 
 export const Footer = () => {
   return (
@@ -49,11 +51,33 @@ export const Footer = () => {
             </MDBRow>
           </MDBContainer>
         </section>
+        <section className="bg-light py-3">
+          <MDBContainer>
+            <MDBRow>
+              <MDBCol>
+                <h6 className="fw-bold mb-3">
+                  <Link to={routes.termsAndCondition}>
+                    Terms and Conditions
+                  </Link>
+                </h6>
+              </MDBCol>
+              <MDBCol>
+                <h6 className="fw-bold mb-3">
+                  <Link to={routes.cancellationPolicy}>
+                    Cancellation Policy
+                  </Link>
+                </h6>
+              </MDBCol>
+              <MDBCol>
+                <h6 className="fw-bold mb-3">
+                  <Link to={routes.privacyPolicy}>Privacy Policy</Link>
+                </h6>
+              </MDBCol>
+            </MDBRow>
+          </MDBContainer>
+        </section>
         <div className="text-center p-4">
-          © 2021 Copyright:
-          <a className="text-reset fw-bold" href="#">
-            ISKCON
-          </a>
+          © 2021 ISKCON. All rights reserved.
         </div>
       </BgColor>
     </MDBFooter>

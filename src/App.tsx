@@ -9,6 +9,9 @@ import { FestivalPage } from "./Pages/Festival";
 import { Contact } from "./Pages/Contact";
 import { VisitUs } from "./Pages/VisitUs";
 import { routes } from "./routes";
+import { TermsAndCondition } from "./Components/Footer/TermsAndCondition";
+import { CancellationPolicy } from "./Components/Footer/CancellationPolicy";
+import { PrivacyPolicy } from "./Components/Footer/PrivacyPolicy";
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -29,6 +32,21 @@ export const App: React.FunctionComponent = () => {
             caseSensitive
             path={routes.donation}
             element={<DonationPage />}
+          />
+          <Route
+            caseSensitive
+            path={routes.termsAndCondition}
+            element={<TermsAndCondition />}
+          />
+          <Route
+            caseSensitive
+            path={routes.cancellationPolicy}
+            element={<CancellationPolicy />}
+          />
+          <Route
+            caseSensitive
+            path={routes.privacyPolicy}
+            element={<PrivacyPolicy />}
           />
         </Routes>
         <Footer />

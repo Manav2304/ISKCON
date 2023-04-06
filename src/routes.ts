@@ -5,4 +5,7 @@ export const routes = {
   donation: "/donation",
   visitUs: "/visit-us",
   media: "/media",
+  cancellationPolicy: "/footer/cancellation-policy",
+  privacyPolicy: "/footer/privacy-policy",
+  termsAndCondition: "/footer/terms-and-condition,",
 };

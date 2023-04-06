@@ -43,7 +43,7 @@ export const festivals: Festival[] = [
     date: "November 13, 2023",
     description:
       "Govardhan Puja is a Hindu festival that celebrates the pastime of Lord Krishna lifting Govardhan Hill to protect the residents of Vrindavan from the wrath of Lord Indra. It is celebrated with great joy at ISKCON temples around the world.",
-    image: GovardhanPuja,
+    image: govardhanPuja,
   },
   {
     name: "Kartik Dipawali",
