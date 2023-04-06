@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { dakorImage, goushalaImage, dakorInfo, goushalaInfo } from "./constant";
 import titleBaseImg from "../../assets/images/title-base.png";
 import {
@@ -12,7 +12,8 @@ import {
   VisibleParagraph,
   HiddenParagraph,
 } from "./style";
-import Carousel from "./carousel";
+import { GlobalCarousel } from "../Home/GlobalCarousel";
+import { HeadingStyle, ImageTitle } from "../Home/style";
 
 export const VisitUs = () => {
   const [showMoreDakor, setShowMoreDakor] = useState(false);
@@ -23,11 +24,12 @@ export const VisitUs = () => {
   return (
     <ServiceWrapper>
       <TextWrapper>
-        <Heading>Dakor Dham</Heading>
-        <ImageWrapper>
-          <TitleImage src={titleBaseImg} alt="TitleBase" />
-        </ImageWrapper>
-        <Carousel images={dakorImage} />
+        <HeadingStyle>
+          <h1>Dakor Dham </h1>
+          <ImageTitle src={titleBaseImg} alt="Title Image" />
+        </HeadingStyle>
+        {/* <Carousel images={goushalaImage} /> */}
+        <GlobalCarousel images={dakorImage} />
         <Paragraph>
           {dakorInfo.map((paragraph) =>
             showMoreDakor ||
@@ -42,11 +44,17 @@ export const VisitUs = () => {
         <Button onClick={toggleShowMoreDakor}>
           {showMoreDakor ? "Read less" : "Read more"}
         </Button>
-        <Heading>Goverdhan Goushala</Heading>
+        {/* <Heading>
+          <p>Goverdhan Goushala</p>
+        </Heading>
         <ImageWrapper>
           <TitleImage src={titleBaseImg} alt="TitleBase" />
-        </ImageWrapper>
-        <Carousel images={goushalaImage} />
+        </ImageWrapper> */}
+        <HeadingStyle>
+          <h1>Goverdhan Goushala </h1>
+          <ImageTitle src={titleBaseImg} alt="Title Image" />
+        </HeadingStyle>
+        <GlobalCarousel images={goushalaImage} />
         <Paragraph>
           {goushalaInfo.map((paragraph) =>
             showMoreGoushala ||

@@ -4,7 +4,8 @@ export const FestivalContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 80px;
-  margin: 50px;
+  margin: 10px;
+  overflow-x: hidden;
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -42,18 +43,18 @@ export const Heading2 = styled.h2`
   margin: 0;
   font-size: 2rem;
   font-weight: bold;
-  color: #333;
+  color: #7e5959;
 `;
 
 export const Paragraph1 = styled.p`
   margin: 0;
   font-size: 1rem;
-  color: #666;
+  color: #7e5959;
 `;
 
 export const Description = styled.p`
   font-size: 1rem;
-  color: #666;
+  color: #7e5959;
   margin: 10px;
 `;
 

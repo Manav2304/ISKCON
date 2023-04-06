@@ -62,17 +62,16 @@ export const ImageTitle = styled.img`
 `;
 export const Reviews = styled.div`
   max-width: 1600px;
-
   @media only screen and (max-width: 767px) {
-    margin: 20px;
+    margin: 4px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    margin: 10px;
+    margin: 2px;
   }
 
   @media only screen and (min-width: 1200px) {
-    margin: 5px;
+    margin: 1px;
   }
 `;
 export const ImageStyle = styled.div`
@@ -88,15 +87,15 @@ export const ImageCarousel = styled.img`
   object-fit: contain cover;
 
   @media only screen and (max-width: 767px) {
-    height: 150px;
+    height: 200px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    height: 300px;
+    height: 400px;
   }
 
   @media only screen and (min-width: 1200px) {
-    height: 500px;
+    height: 600px;
     width: 100%;
   }
 `;

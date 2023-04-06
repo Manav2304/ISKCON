@@ -6,16 +6,30 @@ import goushala4 from "../../assets/images/goushala4.jpg";
 import goushala5 from "../../assets/images/goushala5.jpg";
 import goushala6 from "../../assets/images/goushala6.jpg";
 
-export const dakorImage = [dakor];
+export const dakorImage = [{ id: 1, image: dakor }];
 export const goushalaImage = [
-  goushala1,
-  goushala2,
-  goushala3,
-  goushala4,
-  goushala5,
-  goushala6,
+  {
+    id: 1,
+    image: goushala1,
+  },
+  {
+    id: 2,
+    image: goushala2,
+  },
+  {
+    id: 3,
+    image: goushala3,
+  },
+  {
+    id: 4,
+    image: goushala4,
+  },
+  {
+    id: 5,
+    image: goushala5,
+  },
+  { id: 6, image: goushala6 },
 ];
-
 export const dakorInfo = [
   "At the heart of Dakor lies the Ranchhodraiji Temple, a sacred place where Lord Krishna is worshipped in the form of Ranchhodrai. The temple, with its grand architecture and intricate carvings, is a stunning masterpiece that leaves visitors awestruck.",
 

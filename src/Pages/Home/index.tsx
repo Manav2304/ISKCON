@@ -31,7 +31,7 @@ export const HomePage: React.FC = () => {
       {sections.map((section) => (
         <div>
           <HeadingStyle>
-            <h2>{section.title}</h2>
+            <h1>{section.title}</h1>
             <ImageTitle src={titleBaseUrl} alt="Title Image" />
           </HeadingStyle>
           <ImageStyle>
