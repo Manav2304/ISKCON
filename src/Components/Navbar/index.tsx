@@ -23,6 +23,9 @@ export const NavigationBar = () => {
             <Link className="link" to={routes.visitUs}>
               Visit Us
             </Link>
+            <Link className="link" to={routes.media}>
+              Media
+            </Link>
           </div>
         </nav>
       </div>
