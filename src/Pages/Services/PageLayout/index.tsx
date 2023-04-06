@@ -29,7 +29,7 @@ export const ServiceDescription: React.FC<ServiceDescriptionProps> = ({
         <Carousel images={imageUrl} />
         <Paragraph>
           {content.map((paragraph) => (
-            <p>{paragraph}</p>
+            <p key={paragraph}>{paragraph}</p>
           ))}
         </Paragraph>
       </TextWrapper>
