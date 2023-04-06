@@ -1,25 +1,33 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { NavStyle } from "./style";
-const NavigationBar = () => {
+import { NavStyle, StyledLink, ImgStyle } from "./style";
+import { DropDown } from "../Dorpdown";
+import { donationInfo, mediaInfo, socialMediaIcon } from "../Navbar/constant";
+import { MDBIcon } from "mdb-react-ui-kit";
+import logoUrl from "../../assets/images/isckonLogo.png";
+import { servicesInfo, dropdownItems, festivanInfo } from "./constant";
+
+export const NavigationBar = () => {
   return (
     <NavStyle>
-      <nav className="navbar fixed-top navbar-expand-lg bg-dark">
-        <div className="container-fluid">
-          <Link className="nav-logo" to="/">
-            <img
-              src="https://iskconvrindavan.com/_next/image?url=%2Fimages%2Flogo-black.png&w=1920&q=75"
-              alt="Logo"
-            />
-          </Link>
-
-          <Link className="nav-link" to="/Pages/Donation">
-            Donation
-          </Link>
+      <nav className="navbar">
+        <div className="container">
+          <DropDown items={dropdownItems} toggleTitle="ISKCON" />
+          <DropDown items={festivanInfo} toggleTitle="Festival" />
+          <DropDown items={servicesInfo} toggleTitle="Services" />
+          <StyledLink to="/">
+            <ImgStyle src={logoUrl} alt="Logo" />
+          </StyledLink>
+          <DropDown items={mediaInfo} toggleTitle="media" />
+          <StyledLink to="#">Contact</StyledLink>
+          <DropDown items={donationInfo} toggleTitle="Donate" />
+          <div>
+            {socialMediaIcon.map((item) => (
+              <a key={item.name} href={item.href}>
+                <MDBIcon fab icon={item.icon} />
+              </a>
+            ))}
+          </div>
         </div>
       </nav>
     </NavStyle>
   );
 };
-
-export default NavigationBar;
