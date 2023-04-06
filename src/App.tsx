@@ -1,12 +1,12 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { NavigationBar } from "./Components/Navbar";
+import { HomePage } from "./Pages/Home";
 import { DonationPage } from "./Pages/Donation";
 import { Contact } from "./Pages/Contact";
-import VisitUs from "./Pages/Visitus";
+import { VisitUs } from "./Pages/Visitus";
 import { routes } from "./routes";
 import { FestivalPage } from "./Pages/Festival";
-import Home from "./Pages/Home";
 import { BookDistribution } from "./Pages/Services/BookDistribution";
 import { DeityWorship } from "./Pages/Services/DeityWorship";
 import { DevoteeKitchen } from "./Pages/Services/DevoteeKitchen";
@@ -19,10 +19,10 @@ import { LifeTimeMembership } from "./Pages/Services/LifeTimeMembership";
 export const App: React.FunctionComponent = () => {
   return (
     <>
-      <Router>
+      <BrowserRouter>
         <NavigationBar />
         <Routes>
-          <Route caseSensitive path={routes.home} element={<Home />} />
+          <Route caseSensitive path={routes.home} element={<HomePage />} />
           <Route
             caseSensitive
             path={routes.festival}
@@ -72,7 +72,7 @@ export const App: React.FunctionComponent = () => {
             element={<LifeTimeMembership />}
           />
         </Routes>
-      </Router>
+      </BrowserRouter>
     </>
   );
 };
