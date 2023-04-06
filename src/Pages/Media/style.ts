@@ -49,6 +49,28 @@ export const CarouselWrapper = styled.div`
   width: 500px;
   height: 300px;
   margin: 40px 60px 40px;
+  @media only screen and (max-width: 767px) {
+    /* Mobile view */
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Tablet view */
+    margin: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    /* Desktop view */
+    margin: 40px 60px 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 `;
 
 export const TitleName = styled.h2`
