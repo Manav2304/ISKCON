@@ -7,3 +7,11 @@ import darshan3 from "../../assets/images/darshan3.jpg";
 
 export const sringarImages = [sringar1, sringar2, sringar3];
 export const darshanImages = [darshan1, darshan2, darshan3];
+
+export const opts = {
+  height: "300",
+  width: "500",
+  playerVars: {
+    autoplay: 0,
+  },
+};

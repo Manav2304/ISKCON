@@ -8,11 +8,11 @@ import {
   TitleImage,
   TitleName,
 } from "./style";
-import { darshanImages, sringarImages } from "./constant";
+import { darshanImages, sringarImages, opts } from "./constant";
 import Carousel from "./Carousel";
-import { YouTubeVideo } from "./Youtube";
 import AudioContent from "./Audio";
 import titleBaseImg from "../../assets/images/title-base.png";
+import YouTube from "react-youtube";
 
 const Media: React.FC = () => {
   return (
@@ -38,10 +38,10 @@ const Media: React.FC = () => {
         </ImageWrapper>
         <PageWrapper>
           <YouTubeWrapper>
-            <YouTubeVideo videoId="R3tNVAtzaAw" />
+            <YouTube videoId="R3tNVAtzaAw" opts={opts} />
           </YouTubeWrapper>
           <YouTubeWrapper>
-            <YouTubeVideo videoId="Q9TUIuRVc4I" />
+            <YouTube videoId="Q9TUIuRVc4I" opts={opts} />
           </YouTubeWrapper>
           <AudioContent />
         </PageWrapper>
