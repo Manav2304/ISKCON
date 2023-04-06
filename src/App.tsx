@@ -1,20 +1,20 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NavigationBar from "./Components/Navbar";
-import Home from "./Pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { NavigationBar } from "./Components/Navbar";
+import { HomePage } from "./Pages/Home";
 import { DonationPage } from "./Pages/Donation";
 import { FestivalPage } from "./Pages/Festival";
 import { Contact } from "./Pages/Contact";
-import VisitUs from "./Pages/VisitUs";
+import { VisitUs } from "./Pages/VisitUs";
 import { routes } from "./routes";
 
 export const App: React.FunctionComponent = () => {
   return (
     <>
-      <Router>
+      <BrowserRouter>
         <NavigationBar />
         <Routes>
-          <Route caseSensitive path={routes.home} element={<Home />} />
+          <Route caseSensitive path={routes.home} element={<HomePage />} />
           <Route
             caseSensitive
             path={routes.festival}
@@ -28,7 +28,7 @@ export const App: React.FunctionComponent = () => {
             element={<DonationPage />}
           />
         </Routes>
-      </Router>
+      </BrowserRouter>
     </>
   );
 };

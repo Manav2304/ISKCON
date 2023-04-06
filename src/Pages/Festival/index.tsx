@@ -1,3 +1,4 @@
+import React from "react";
 import { festivals } from "./constant";
 import { FestivalCard } from "./FestivalCard";
 import { FestivalContainer, Heading1, ImageDiv, TitleImage } from "./style";
