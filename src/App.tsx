@@ -7,7 +7,7 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 
-import { NavigationBar } from "./Components/Navbar";
+import NavigationBar from "./Components/Navbar";
 
 import HomePage from "./Pages/Home";
 import DonationPage from "./Pages/Donation";
