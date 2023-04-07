@@ -6,7 +6,13 @@ import {
   MDBIcon,
 } from "mdb-react-ui-kit";
 import footerLogo from "../../assets/images/footer-logo.jpeg";
-import { FooterLogoStyle, ContactStyle, BgColor, TimeStyle } from "./style";
+import {
+  FooterLogoStyle,
+  ContactStyle,
+  BgColor,
+  TimeStyle,
+  TermsHeading,
+} from "./style";
 import { contactInfos, schedules } from "./constant";
 import { Link } from "react-router-dom";
 import { routes } from "../../routes";
@@ -53,27 +59,23 @@ export const Footer = () => {
         </section>
         <section className="bg-light py-3">
           <MDBContainer>
-            <MDBRow>
-              <MDBCol>
-                <h6 className="fw-bold mb-3">
+            <TermsHeading>
+              <MDBRow>
+                <MDBCol>
                   <Link to={routes.termsAndCondition}>
                     Terms and Conditions
                   </Link>
-                </h6>
-              </MDBCol>
-              <MDBCol>
-                <h6 className="fw-bold mb-3">
+                </MDBCol>
+                <MDBCol>
                   <Link to={routes.cancellationPolicy}>
                     Cancellation Policy
                   </Link>
-                </h6>
-              </MDBCol>
-              <MDBCol>
-                <h6 className="fw-bold mb-3">
+                </MDBCol>
+                <MDBCol>
                   <Link to={routes.privacyPolicy}>Privacy Policy</Link>
-                </h6>
-              </MDBCol>
-            </MDBRow>
+                </MDBCol>
+              </MDBRow>
+            </TermsHeading>
           </MDBContainer>
         </section>
         <div className="text-center p-4">
