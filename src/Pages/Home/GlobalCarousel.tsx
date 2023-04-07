@@ -15,6 +15,7 @@ export const GlobalCarousel: React.FC<Props> = ({ images }) => {
         indicators
         nextLabel=""
         prevLabel=""
+        interval={3000}
       >
         {images.map((image) => (
           <Carousel.Item key={image.id}>
