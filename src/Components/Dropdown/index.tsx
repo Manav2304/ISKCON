@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Dropdown } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import {
-  DropdownMenuStyle,
-  DropdownToggleStyle,
+  DropdownMenuWrapper,
+  DropdownToggleWrapper,
   TransparentDropdown,
 } from "./style";
 
@@ -17,7 +17,10 @@ interface DropdownProps {
   toggleTitle: string;
 }
 
-export const DropDown: React.FC<DropdownProps> = ({ items, toggleTitle }) => {
+export const PageDropdown: React.FC<DropdownProps> = ({
+  items,
+  toggleTitle,
+}) => {
   const navigate = useNavigate();
   const [isHovered, setIsHovered] = useState(false);
 
@@ -37,10 +40,10 @@ export const DropDown: React.FC<DropdownProps> = ({ items, toggleTitle }) => {
     <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
       <TransparentDropdown>
         <Dropdown show={isHovered}>
-          <DropdownToggleStyle>
+          <DropdownToggleWrapper>
             <Dropdown.Toggle>{toggleTitle}</Dropdown.Toggle>
-          </DropdownToggleStyle>
-          <DropdownMenuStyle>
+          </DropdownToggleWrapper>
+          <DropdownMenuWrapper>
             <Dropdown.Menu>
               {items.map((item) => (
                 <Dropdown.Item
@@ -51,7 +54,7 @@ export const DropDown: React.FC<DropdownProps> = ({ items, toggleTitle }) => {
                 </Dropdown.Item>
               ))}
             </Dropdown.Menu>
-          </DropdownMenuStyle>
+          </DropdownMenuWrapper>
         </Dropdown>
       </TransparentDropdown>
     </div>

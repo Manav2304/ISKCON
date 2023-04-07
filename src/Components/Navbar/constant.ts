@@ -35,7 +35,4 @@ export const dropdownHomeInfo = [
   { title: "Goals", path: "#" },
 ];
 export const festivalInfo = [{ title: "festival", path: routes.festival }];
-export const servicesInfo = [{ title: "services", path: "#" }];
-export const mediaInfo = [{ title: "media", path: routes.media }];
-export const donationInfo = [{ title: "donate", path: routes.donation }];
-export const visitUsInfo = [{ title: "VisitUs", path: routes.visitUs }];
+export const dropdownServicesInfo = [{ title: "services", path: "#" }];

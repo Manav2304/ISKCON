@@ -25,20 +25,13 @@ export const TransparentDropdown = styled.div`
     font-size: 1rem;
   }
 `;
-
-export const DropdownToggleStyle = styled.div`
+export const DropdownToggleWrapper = styled.div`
   color: #7e5959;
   background-color: transparent;
 `;
-
-export const DropdownMenuStyle = styled.div`
+export const DropdownMenuWrapper = styled.div`
   background-color: #7e5959;
 `;
-
-export const DropdownItemStyle = styled.div`
-  color: #f5fffa;
-`;
-
 export const StyledLink = styled(Link)`
   color: #f00;
 `;

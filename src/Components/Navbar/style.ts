@@ -32,7 +32,8 @@ export const ImgStyle = styled.img`
   }
 
   @media (min-width: 1200px) and (max-width: 1399px) {
-    height: 70px;
+    height: 90px;
+    width: 130px;
   }
 
   @media (min-width: 1400px) {

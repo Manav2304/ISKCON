@@ -1,14 +1,9 @@
 import { NavStyle, StyledLink, ImgStyle, SocialMediaIconsStyle } from "./style";
-import { DropDown } from "../Dropdown";
-import {
-  donationInfo,
-  mediaInfo,
-  socialMediaIcon,
-  visitUsInfo,
-} from "../Navbar/constant";
+import { PageDropdown } from "../Dropdown";
+import { dropdownServicesInfo, socialMediaIcon } from "../Navbar/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
 import logoUrl from "../../assets/images/isckon-logo.png";
-import { servicesInfo, dropdownHomeInfo, festivalInfo } from "./constant";
+import { dropdownHomeInfo } from "./constant";
 import { routes } from "../../routes";
 
 export const NavigationBar = () => {
@@ -16,15 +11,15 @@ export const NavigationBar = () => {
     <NavStyle>
       <nav className="navbar fixed-top">
         <div className="container">
-          <DropDown items={dropdownHomeInfo} toggleTitle="ISKCON" />
-          <DropDown items={servicesInfo} toggleTitle="Services" />
-          <DropDown items={visitUsInfo} toggleTitle="Visit Us" />
-          <DropDown items={mediaInfo} toggleTitle="Media" />
+          <PageDropdown items={dropdownHomeInfo} toggleTitle="ISKCON" />
+          <PageDropdown items={dropdownServicesInfo} toggleTitle="Services" />
+          <StyledLink to={routes.visitUs}>Visit Us</StyledLink>
+          <StyledLink to={routes.media}>Media</StyledLink>
           <StyledLink to="/">
             <ImgStyle src={logoUrl} alt="Logo" />
           </StyledLink>
-          <DropDown items={donationInfo} toggleTitle="Donate" />
-          <DropDown items={festivalInfo} toggleTitle="Festival" />
+          <StyledLink to={routes.donation}>Donate</StyledLink>
+          <StyledLink to={routes.festival}>Festival</StyledLink>
           <StyledLink to={routes.contact}>Contact</StyledLink>
           <SocialMediaIconsStyle>
             {socialMediaIcon.map((item) => (

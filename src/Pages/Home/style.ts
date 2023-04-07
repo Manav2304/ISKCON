@@ -89,7 +89,7 @@ export const ImageCarousel = styled.img`
   object-fit: contain cover;
 
   @media only screen and (max-width: 767px) {
-    height: 150px;
+    height: 200px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -172,6 +172,7 @@ export const CarouselStyle = styled.div`
   }
 
   @media only screen and (min-width: 1200px) {
-    padding: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 `;
