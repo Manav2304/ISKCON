@@ -95,11 +95,17 @@ export const TitleImage = styled.img`
   }
 `;
 
-export const ButtonStyle = styled.div`
-  color: transparent;
-  background-color: transparent;
+export const Button = styled.button`
+  background-color: #7e5959;
+  color: #0c090a;
+  font-size: 16px;
   border: none;
+  padding: 10px 20px;
   cursor: pointer;
-  font-size: 1rem;
-  margin-top: 10px;
+  border-radius: 5px;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 `;

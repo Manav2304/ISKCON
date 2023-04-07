@@ -12,7 +12,7 @@ import {
   VisibleParagraph,
   HiddenParagraph,
 } from "./style";
-import { Carousel } from "./carousel";
+import { Carousel } from "./Carousel";
 
 export const VisitUs = () => {
   const [showMoreDakor, setShowMoreDakor] = useState(false);
