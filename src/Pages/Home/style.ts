@@ -120,17 +120,10 @@ export const StyleCarousel = styled(Carousel)`
     height: 10px;
   }
 
-  @media (max-width: 768px) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 10px;
-      width: 10px;
-    }
-
-    .carousel-indicators {
-      height: 5px;
-      width: 5px;
-    }
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
   }
 
   @media (min-width: 1200px) {
@@ -142,8 +135,28 @@ export const StyleCarousel = styled(Carousel)`
     }
 
     .carousel-indicators {
-      height: 15px;
+      height: 5px;
     }
+  }
+`;
+export const PageImageCarousel = styled.img`
+  width: 100%;
+  height: 500px;
+  object-fit: contain cover;
+
+  @media only screen and (max-width: 767px) {
+    height: 200px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 300px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    height: 500px;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 `;
 export const PageStyleCarousel = styled(Carousel)`
@@ -181,25 +194,5 @@ export const PageStyleCarousel = styled(Carousel)`
     .carousel-indicators {
       height: 5px;
     }
-  }
-`;
-export const PageImageCarousel = styled.img`
-  width: 100%;
-  height: 500px;
-  object-fit: contain cover;
-
-  @media only screen and (max-width: 767px) {
-    height: 200px;
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    height: 300px;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    height: 500px;
-    width: 100%;
-    padding-left: 80px;
-    padding-right: 80px;
   }
 `;

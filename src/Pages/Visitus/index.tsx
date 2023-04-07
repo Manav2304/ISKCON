@@ -28,7 +28,6 @@ export const VisitUs = () => {
           <h1>Dakor Dham </h1>
           <ImageTitle src={titleBaseImg} alt="Title Image" />
         </HeadingStyle>
-        {/* <Carousel images={goushalaImage} /> */}
         <GlobalCarousel images={dakorImage} />
         <Paragraph>
           {dakorInfo.map((paragraph) =>
@@ -44,12 +43,7 @@ export const VisitUs = () => {
         <Button onClick={toggleShowMoreDakor}>
           {showMoreDakor ? "Read less" : "Read more"}
         </Button>
-        {/* <Heading>
-          <p>Goverdhan Goushala</p>
-        </Heading>
-        <ImageWrapper>
-          <TitleImage src={titleBaseImg} alt="TitleBase" />
-        </ImageWrapper> */}
+
         <HeadingStyle>
           <h1>Goverdhan Goushala </h1>
           <ImageTitle src={titleBaseImg} alt="Title Image" />

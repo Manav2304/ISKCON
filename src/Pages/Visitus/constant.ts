@@ -45,7 +45,7 @@ export const dakorInfo = [
 export const goushalaInfo = [
   "The Goverdhan gaushala at ISKCON is a haven for cows, providing them with a safe and loving environment where they can thrive and live out their lives in peace. Located on the grounds of the temple, the gaushala is home to a herd of cows who are treated with the utmost care and respect.",
 
-  "We accept these cows and our team led by Gau-premi H.G Laxmikant Das render selfless service to gau mata.",
+  "We are currently serving more than 110 Deshi Cows wholeheartedly, where they are brought from surrounding areas sometimes in critical need for care, sometimes being abandoned because they cannot be milked further, and sometimes the caretakers leaving then with us because they cannot keep them anymore",
 
   "Visitors to the gaushala are immediately struck by the serene and peaceful atmosphere, which is filled with the gentle sound of mooing cows and the rustling of leaves in the breeze. The cows roam freely throughout the spacious grounds, grazing on fresh grass and enjoying the sunshine.",
 
