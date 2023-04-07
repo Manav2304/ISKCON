@@ -18,17 +18,18 @@ export const FestivalContainer = styled.div`
 `;
 
 export const FestivalImage = styled.img`
-  width: 470px;
-  height: 300px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
 
-  @media (max-width: 768px) {
-    width: 100%;
-    height: 200px;
+  @media (min-width: 768px) {
+    width: 350px;
+    height: 250px;
   }
 
-  @media (max-width: 480px) {
-    height: 150px;
+  @media (min-width: 992px) {
+    width: 450px;
+    height: 300px;
   }
 `;
 
