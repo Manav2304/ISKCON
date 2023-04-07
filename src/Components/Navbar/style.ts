@@ -6,7 +6,7 @@ export const NavStyle = styled.div`
 `;
 
 export const NavLink = styled.div`
-    color: dark black;
-    font-weight: 500;
-    margin-right: 1rem;
+  color: dark black;
+  font-weight: 500;
+  margin-right: 1rem;
 `;
