@@ -12,7 +12,7 @@ import {
   VisibleParagraph,
   HiddenParagraph,
 } from "./style";
-import Carousel from "./carousel";
+import Carousel from "./Carousel";
 import { PageWrapperStyle } from "../Home/style";
 
 export const VisitUs = () => {

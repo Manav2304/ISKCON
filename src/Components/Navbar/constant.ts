@@ -1,3 +1,5 @@
+import { routes } from "../../routes";
+
 export const socialMediaIcon = [
   {
     name: "Facebook",
@@ -32,7 +34,8 @@ export const dropdownHomeInfo = [
   { title: "Philosophy", path: "#" },
   { title: "Goals", path: "#" },
 ];
-export const festivanInfo = [{ title: "festival", path: "/festival" }];
+export const festivalInfo = [{ title: "festival", path: routes.festival }];
 export const servicesInfo = [{ title: "services", path: "#" }];
-export const mediaInfo = [{ title: "media", path: "/media" }];
-export const donationInfo = [{ title: "donate", path: "/donation" }];
+export const mediaInfo = [{ title: "media", path: routes.media }];
+export const donationInfo = [{ title: "donate", path: routes.donation }];
+export const visitUsInfo = [{ title: "VisitUs", path: routes.visitUs }];

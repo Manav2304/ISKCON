@@ -1,9 +1,15 @@
 import { NavStyle, StyledLink, ImgStyle, SocialMediaIconsStyle } from "./style";
 import { DropDown } from "../Dropdown";
-import { donationInfo, mediaInfo, socialMediaIcon } from "../Navbar/constant";
+import {
+  donationInfo,
+  mediaInfo,
+  socialMediaIcon,
+  visitUsInfo,
+} from "../Navbar/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
 import logoUrl from "../../assets/images/isckon-logo.png";
-import { servicesInfo, dropdownHomeInfo, festivanInfo } from "./constant";
+import { servicesInfo, dropdownHomeInfo, festivalInfo } from "./constant";
+import { routes } from "../../routes";
 
 export const NavigationBar = () => {
   return (
@@ -11,14 +17,15 @@ export const NavigationBar = () => {
       <nav className="navbar fixed-top">
         <div className="container">
           <DropDown items={dropdownHomeInfo} toggleTitle="ISKCON" />
-          <DropDown items={festivanInfo} toggleTitle="Festival" />
           <DropDown items={servicesInfo} toggleTitle="Services" />
+          <DropDown items={visitUsInfo} toggleTitle="Visit Us" />
+          <DropDown items={mediaInfo} toggleTitle="Media" />
           <StyledLink to="/">
             <ImgStyle src={logoUrl} alt="Logo" />
           </StyledLink>
-          <DropDown items={mediaInfo} toggleTitle="media" />
-          <StyledLink to="/contact">Contact</StyledLink>
           <DropDown items={donationInfo} toggleTitle="Donate" />
+          <DropDown items={festivalInfo} toggleTitle="Festival" />
+          <StyledLink to={routes.contact}>Contact</StyledLink>
           <SocialMediaIconsStyle>
             {socialMediaIcon.map((item) => (
               <a key={item.name} href={item.href}>

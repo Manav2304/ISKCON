@@ -45,7 +45,7 @@ export const SocialMediaIconsStyle = styled.div`
   align-items: center;
 
   a {
-    margin-right: 10px;
+    margin-right: 5px;
     color: #8b0000;
     padding: 5px;
     border-radius: 50%;
