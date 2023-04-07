@@ -19,6 +19,8 @@ export const TextStyle = styled.div`
 
   @media only screen and (min-width: 1200px) {
     font-size: 1.2rem;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 `;
 export const HeadingStyle = styled.div`
@@ -62,18 +64,6 @@ export const ImageTitle = styled.img`
 `;
 export const Reviews = styled.div`
   max-width: 1600px;
-
-  @media only screen and (max-width: 767px) {
-    margin: 4px;
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    margin: 2px;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    margin: 1px;
-  }
 `;
 export const ImageStyle = styled.div`
   display: flex;
@@ -114,8 +104,8 @@ export const Image = styled.img`
   }
 
   @media only screen and (min-width: 1200px) {
-    height: 92%;
-    width: 92%;
+    height: 90%;
+    width: 90%;
   }
 `;
 /*Used class name for handle the size of icon*/
@@ -154,5 +144,62 @@ export const StyleCarousel = styled(Carousel)`
     .carousel-indicators {
       height: 15px;
     }
+  }
+`;
+export const PageStyleCarousel = styled(Carousel)`
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .carousel-indicators {
+    height: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 10px;
+      width: 10px;
+    }
+
+    .carousel-indicators {
+      height: 5px;
+      width: 5px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 30px;
+      width: 30px;
+      margin: 80px;
+    }
+
+    .carousel-indicators {
+      height: 5px;
+    }
+  }
+`;
+export const PageImageCarousel = styled.img`
+  width: 100%;
+  height: 500px;
+  object-fit: contain cover;
+
+  @media only screen and (max-width: 767px) {
+    height: 200px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 300px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    height: 500px;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 `;

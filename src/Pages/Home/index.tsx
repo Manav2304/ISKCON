@@ -9,6 +9,7 @@ import {
   TextStyle,
   Image,
 } from "./style";
+import { PageCarousel } from "./PageCarousel";
 
 export const HomePage: React.FC = () => {
   return (
@@ -20,7 +21,7 @@ export const HomePage: React.FC = () => {
             <h1>{titleTile.title}</h1>
             <ImageTitle src={titleBaseUrl} alt="Title Image" />
           </HeadingStyle>
-          <GlobalCarousel images={titleTile.images} />
+          <PageCarousel images={titleTile.images} />
           <TextStyle>
             {titleTile.paragraphs.map((paragraph) => (
               <p>{paragraph}</p>
