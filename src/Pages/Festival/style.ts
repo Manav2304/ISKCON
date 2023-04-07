@@ -6,8 +6,6 @@ export const FestivalContainer = styled.div`
   gap: 80px;
   margin: 20px;
   padding: 20px;
-  margin-left: 20px;
-  margin-right: 20px:
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
