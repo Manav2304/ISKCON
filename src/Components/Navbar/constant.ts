@@ -35,4 +35,13 @@ export const dropdownHomeInfo = [
   { title: "Goals", path: "#" },
 ];
 export const festivalInfo = [{ title: "festival", path: routes.festival }];
-export const dropdownServicesInfo = [{ title: "services", path: "#" }];
+export const dropdownServicesInfo = [
+  { title: "Life Time Membership", path: routes.lifeTimeMembership },
+  { title: "kirtanAtIskcon", path: routes.kirtanAtIskcon },
+  { title: "iskconYouthForum", path: routes.iskconYouthForum },
+  { title: "guestHouse", path: routes.guestHouse },
+  { title: "goushala", path: routes.goushala },
+  { title: "devoteeKitchen", path: routes.devoteeKitchen },
+  { title: "deityWorship", path: routes.deityWorship },
+  { title: "bookDistribution", path: routes.bookDistribution },
+];
