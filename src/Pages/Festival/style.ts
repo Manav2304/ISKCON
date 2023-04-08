@@ -4,7 +4,7 @@ export const FestivalContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 80px;
-  margin: 20px;
+  margin: 20px auto;
   padding: 20px;
 
   @media (max-width: 768px) {
