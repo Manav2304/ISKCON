@@ -146,10 +146,14 @@ export const PageImageCarousel = styled.img`
 
   @media only screen and (max-width: 767px) {
     height: 200px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1199px) {
     height: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   @media only screen and (min-width: 1200px) {
