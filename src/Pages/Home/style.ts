@@ -94,18 +94,18 @@ export const Image = styled.img`
   object-fit: contain;
 
   @media only screen and (max-width: 767px) {
-    height: 85%;
-    width: 85%;
+    height: 89%;
+    width: 89%;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    height: 88%;
-    width: 88%;
+    height: 89%;
+    width: 89%;
   }
 
   @media only screen and (min-width: 1200px) {
-    height: 90%;
-    width: 90%;
+    height: 89%;
+    width: 89%;
   }
 `;
 /*Used class name for handle the size of icon*/
@@ -146,14 +146,14 @@ export const PageImageCarousel = styled.img`
 
   @media only screen and (max-width: 767px) {
     height: 200px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1199px) {
     height: 300px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   @media only screen and (min-width: 1200px) {
