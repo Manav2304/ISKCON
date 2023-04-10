@@ -13,12 +13,14 @@ import {
   TitleBaseImgWrapper,
   TitleBaseImg,
   BoxStyle,
+  Container,
+  GuestBox,
 } from "./style";
 import titleBaseImg from "../../assets/images/title-base.png";
 
 export const Contact: React.FC = () => {
   return (
-    <>
+    <Container>
       <Heading>Contact Us</Heading>
       <TitleBaseImgWrapper>
         <TitleBaseImg src={titleBaseImg} />
@@ -43,11 +45,11 @@ export const Contact: React.FC = () => {
           <h2>Address</h2>
           <p>{address}</p>
         </Box>
-        <Box>
+        <GuestBox>
           <h2>Guest House Booking </h2>
           <p>{guestHouse}</p>
-        </Box>
+        </GuestBox>
       </BoxStyle>
-    </>
+    </Container>
   );
 };

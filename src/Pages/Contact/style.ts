@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  margin: 5px;
+`;
+
 export const Box = styled.div`
   padding: 20px;
   border: 1px solid #fb3cca;
@@ -30,11 +34,50 @@ export const Box = styled.div`
   }
 
   @media (max-width: 767px) {
-    width: 100%;
+    width: 285px;
     max-width: none;
     grid-column: 1 / -1;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 4px;
+  }
+`;
+
+export const GuestBox = styled.div`
+  padding: 20px;
+  border: 1px solid #fb3cca;
+  border-radius: 5px;
+  background-color: #ffa9a9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 150px;
+  max-width: 300px;
+  margin-bottom: 5px;
+
+  h4 {
+    margin-bottom: 10px;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  p {
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+    max-width: none;
+    align-items: center;
+  }
+
+  @media (max-width: 767px) {
+    width: 285px;
+    max-width: none;
+    grid-column: 1 / -1;
+    align-items: center;
+    margin-left: 4px;
+    height: 200px;
   }
 `;
 
@@ -119,6 +162,8 @@ export const BoxStyle = styled.div`
   padding-left: 50px;
   padding-right: 50px;
   margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
