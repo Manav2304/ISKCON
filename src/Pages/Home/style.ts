@@ -145,19 +145,21 @@ export const PageImageCarousel = styled.img`
   object-fit: contain cover;
 
   @media only screen and (max-width: 767px) {
-    height: 200px;
+    height: 100%;
+    width: 100%;
     padding-left: 20px;
     padding-right: 20px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    height: 300px;
+    height: 100%;
+    width: 100%;
     padding-left: 40px;
     padding-right: 40px;
   }
 
   @media only screen and (min-width: 1200px) {
-    height: 500px;
+    height: 100%;
     width: 100%;
     padding-left: 80px;
     padding-right: 80px;
