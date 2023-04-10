@@ -5,7 +5,6 @@ import { MDBIcon } from "mdb-react-ui-kit";
 import logoUrl from "../../assets/images/isckon-logo.png";
 import { dropdownHomeInfo } from "./constant";
 import { routes } from "../../routes";
-import { Dropdown } from "react-bootstrap";
 
 export const NavigationBar = () => {
   return (
