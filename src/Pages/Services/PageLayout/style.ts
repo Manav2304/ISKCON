@@ -51,4 +51,3 @@ export const Paragraph = styled.p`
   text-align: justify;
   padding: 50px;
 `;
-
