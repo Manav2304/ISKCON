@@ -119,4 +119,7 @@ export const BoxStyle = styled.div`
   padding-left: 50px;
   padding-right: 50px;
   margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
 `;
