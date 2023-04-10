@@ -16,6 +16,7 @@ export const PageCarousel: React.FC<Props> = ({ images }) => {
         nextLabel=""
         prevLabel=""
         interval={3000}
+        className="rounded"
       >
         {images.map((image) => (
           <Carousel.Item key={image.id}>
