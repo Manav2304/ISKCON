@@ -10,6 +10,8 @@ export const Container = styled.div`
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-left: 10px;
   }
 `;
 
@@ -45,12 +47,15 @@ export const Box = styled.div`
   @media (min-width: 768px) {
     width: 100%;
     max-width: none;
+    align-items: center;
   }
 
   @media (max-width: 767px) {
     width: 100%;
     max-width: none;
     grid-column: 1 / -1;
+    align-items: center;
+    margin-left: 10px;
   }
 `;
 
@@ -62,6 +67,7 @@ export const GuestHouseInfo = styled.p`
 export const MapContainer = styled.div`
   margin-bottom: 20px;
   grid-column: 1 / span 2;
+  align-items: center;
 
   h4 {
     margin-bottom: 10px;
@@ -72,13 +78,17 @@ export const MapFrame = styled.iframe`
   border: none;
   height: 350px;
   width: 100%;
+  margin-top: 20px;
 
   @media screen and (max-width: 768px) {
     width: 350px;
+    margin-left: 10px;
   }
 
   @media (min-width: 768px) {
     width: 1160px;
+    margin-left: 2px;
+    margin-right: 2px;
   }
 `;
 
