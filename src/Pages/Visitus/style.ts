@@ -69,21 +69,25 @@ export const Paragraph = styled.p`
   font-size: 20px;
   line-height: 1.5;
   text-align: justify;
-  padding: 0.1px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   @media (max-width: 767px) {
     font-size: 16px;
-    padding: 0.1px 5px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
     font-size: 18px;
-    padding: 0.1px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media (min-width: 992px) {
     font-size: 20px;
-    padding: 0.1px 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 `;
 

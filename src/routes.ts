@@ -4,4 +4,13 @@ export const routes = {
   contact: "/contact",
   donation: "/donation",
   visitUs: "/visit-us",
+  media: "/media",
+  bookDistribution: "/services/book-distribtion",
+  deityWorship: "/services/deity-worship",
+  devoteeKitchen: "/services/devotee-kitchen",
+  goushala: "/services/gaushala",
+  guestHouse: "/services/guest-house",
+  iskconYouthForum: "/srevices/iskcon-youth-forum",
+  kirtanAtIskcon: "/services/kirtan-at-iskcon",
+  lifeTimeMembership: "/services/life-time-membership",
 };
