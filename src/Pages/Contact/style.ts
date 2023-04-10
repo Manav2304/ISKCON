@@ -1,28 +1,5 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
-  align-items: center;
-
-  @media (min-width: 768px) {
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    margin-left: 10px;
-  }
-`;
-
-export const Heading = styled.h1`
-  font-size: 3rem;
-  font-family: "Times New Roman", Times, serif;
-  align-content: center;
-  text-align: center;
-  font-style: bold;
-`;
-
 export const Box = styled.div`
   padding: 20px;
   border: 1px solid #fb3cca;
@@ -35,6 +12,7 @@ export const Box = styled.div`
   width: 100%;
   height: 150px;
   max-width: 300px;
+  margin-bottom: 5px;
 
   h4 {
     margin-bottom: 10px;
@@ -64,32 +42,34 @@ export const GuestHouseInfo = styled.p`
   margin: 0;
   font-weight: bold;
 `;
-
-export const MapContainer = styled.div`
-  margin-bottom: 20px;
-  grid-column: 1 / span 2;
-  align-items: center;
-
-  h4 {
-    margin-bottom: 10px;
-  }
-`;
-
 export const MapFrame = styled.iframe`
   border: none;
   height: 350px;
   width: 100%;
   margin-top: 20px;
 
-  @media screen and (max-width: 768px) {
-    width: 350px;
-    margin-left: 10px;
+  @media only screen and (max-width: 768px) {
+    font-size: 1.5rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
-  @media (min-width: 768px) {
-    width: 1160px;
-    margin-left: 2px;
-    margin-right: 2px;
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 3rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 `;
 
@@ -100,16 +80,43 @@ export const TitleBaseImgWrapper = styled.div`
 `;
 
 export const TitleBaseImg = styled.img`
-  width: 500px;
-  height: 60px;
+  width: 100%;
+  max-width: 400px;
 
-  @media screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
+    width: 70%;
+    max-width: 200px;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    width: 70%;
+    max-width: 300px;
+  }
+
+  @media only screen and (min-width: 1200px) {
     width: 100%;
-    max-width: 100%;
+    max-width: 400px;
+  }
+`;
+export const Heading = styled.div`
+  font-family: "Times New Roman", Times, serif;
+  color: #7e5959;
+  text-align: center;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.5rem;
   }
 
-  @media screen and (min-width: 769px) {
-    width: 60%;
-    max-width: 50%;
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    font-size: 2rem;
   }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 3rem;
+  }
+`;
+export const BoxStyle = styled.div`
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 10px;
 `;
