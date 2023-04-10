@@ -45,3 +45,4 @@ export const Carousel: React.FC<CarouselProps> = ({ images }) => {
     </div>
   );
 };
+
