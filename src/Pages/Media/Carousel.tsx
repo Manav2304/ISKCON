@@ -14,7 +14,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
       data-bs-ride="carousel"
       data-bs-interval="2000"
     >
-      <div className="carousel-inner">
+      <div className="carousel-inner rounded">
         {images.map((image, index) => (
           <div
             key={Math.random()}

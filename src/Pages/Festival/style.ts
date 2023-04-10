@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const FestivalContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 80px;
+  gap: 90px;
   margin: 50px;
+  overflow-x: hidden;
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -18,9 +19,9 @@ export const FestivalContainer = styled.div`
 `;
 
 export const FestivalImage = styled.img`
-  width: 470px;
   height: 300px;
   object-fit: cover;
+  width: 120%;
 
   @media (max-width: 768px) {
     width: 100%;
