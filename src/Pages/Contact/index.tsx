@@ -1,5 +1,11 @@
 import React from "react";
-import { address, email, guestHouse, mobileNumber } from "./constant";
+import {
+  address,
+  email,
+  guestHouse,
+  mobileNumber,
+  phoneNumber,
+} from "./constant";
 import {
   Box,
   Container,
@@ -27,8 +33,10 @@ export const Contact: React.FC = () => {
       </MapContainer>
 
       <Box>
-        <h2>Mobile Number</h2>
-        <p>{mobileNumber}</p>
+        <h2>Contact Number</h2>
+        <p>
+          {mobileNumber}/{phoneNumber}
+        </p>
       </Box>
       <Box>
         <h2>Email</h2>

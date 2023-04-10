@@ -6,7 +6,7 @@ export const Container = styled.div`
   grid-gap: 20px;
   padding: 20px;
   max-width: 1200px;
-  margin: 0 auto;
+  align-items: center;
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
@@ -33,6 +33,7 @@ export const Box = styled.div`
   align-items: center;
   text-align: center;
   width: 100%;
+  height: 150px;
   max-width: 300px;
 
   h4 {
