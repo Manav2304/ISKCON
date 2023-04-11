@@ -10,7 +10,11 @@ import titleBaseImg from "../../assets/images/title-base.png";
 const AudioContent = () => {
   return (
     <div>
-      <a href="https://drive.google.com/" title="Google Drive Link">
+      <a
+        href="https://drive.google.com/"
+        title="Google Drive Link"
+        target="_blank"
+      >
         <LinkName>Google Drive Link</LinkName>
       </a>
       <Heading>Kirtan</Heading>

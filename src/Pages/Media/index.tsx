@@ -7,12 +7,13 @@ import {
   ImageWrapper,
   TitleImage,
   TitleName,
+  TitleWrapper,
 } from "./style";
 import { darshanImages, sringarImages, opts } from "./constant";
-import { Carousel } from "./Carousel";
 import AudioContent from "./Audio";
 import titleBaseImg from "../../assets/images/title-base.png";
 import YouTube from "react-youtube";
+import { MediaCarousel } from "./MediaCarousel";
 
 export const Media: React.FC = () => {
   return (
@@ -21,16 +22,14 @@ export const Media: React.FC = () => {
       <ImageWrapper>
         <TitleImage src={titleBaseImg} alt="TitleBase" />
       </ImageWrapper>
-      <PageWrapper>
-        <CarouselWrapper>
-          <Carousel images={sringarImages} />
-          <TitleName>Yesterday's Darshan </TitleName>
-        </CarouselWrapper>
-        <CarouselWrapper>
-          <Carousel images={darshanImages} />
-          <TitleName>Today's Darshan </TitleName>
-        </CarouselWrapper>
-      </PageWrapper>
+      <CarouselWrapper>
+        <MediaCarousel images={sringarImages} />
+        <MediaCarousel images={darshanImages} />
+      </CarouselWrapper>
+      <TitleWrapper>
+        <TitleName>Yesterday's Darshan </TitleName>
+        <TitleName>Today's Darshan </TitleName>
+      </TitleWrapper>
       <>
         <Heading> Lectures </Heading>
         <ImageWrapper>

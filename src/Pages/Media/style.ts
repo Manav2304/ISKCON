@@ -1,3 +1,4 @@
+import { Carousel } from "react-bootstrap";
 import styled from "styled-components";
 
 export const Heading = styled.h1`
@@ -43,35 +44,6 @@ export const PageWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-`;
-
-export const CarouselWrapper = styled.div`
-  width: 500px;
-  height: 300px;
-  margin: 40px 60px;
-
-  @media only screen and (max-width: 767px) {
-    /* Mobile view */
-    margin: 20px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    /* Tablet view */
-    margin: 30px;
-    flex-flow: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  @media only screen and (min-width: 1024px) {
-    /* Desktop view */
-    margin: 40px 60px;
-    flex-flow: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
 `;
 
 export const TitleName = styled.h2`
@@ -141,4 +113,120 @@ export const LinkName = styled.h1`
   font-family: "Times New Roman", Times, serif;
   margin-top: 30px;
   margin-bottom: 30px;
+`;
+
+export const Reviews = styled.div`
+  height: 300px;
+  width: 500px;
+
+  @media only screen and (max-width: 767px) {
+    margin: 20px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 10px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    margin: 5px;
+  }
+`;
+
+export const ImageCarousel = styled.img`
+  width: 500px;
+  height: 300px;
+  object-fit: contain cover;
+
+  @media only screen and (max-width: 767px) {
+    width: 100%;
+    height: 150px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    width: 80%;
+    height: 200px;
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    width: 60%;
+    height: 250px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 500px;
+    height: 300px;
+  }
+`;
+
+/*Used class name for handle the size of icon*/
+export const StyleCarousel = styled(Carousel)`
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .carousel-indicators {
+    height: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 10px;
+      width: 10px;
+    }
+
+    .carousel-indicators {
+      height: 5px;
+      width: 5px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 30px;
+      width: 30px;
+      margin: 10px;
+    }
+
+    .carousel-indicators {
+      height: 15px;
+    }
+  }
+`;
+export const CarouselWrapper = styled.div`
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  align-items: center;
+  overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 40px;
+    margin: 20px;
+  }
+`;
+export const TitleWrapper = styled.div`
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 40px;
+  }
 `;
