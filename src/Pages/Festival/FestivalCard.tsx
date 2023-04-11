@@ -5,7 +5,7 @@ import {
   Heading2,
   Paragraph1,
   Description,
-  ButtonStyle,
+  Button,
 } from "./style";
 import { Festival } from "./types";
 
@@ -35,11 +35,9 @@ export const FestivalCard = ({ festival }: FestivalCardProps) => {
             ? festival.description
             : `${festival.description.substring(0, 100)}...`}
         </Description>
-        <ButtonStyle>
-          <button onClick={toggleSelected}>
-            {isSelected ? "Show Less" : "Read More"}
-          </button>
-        </ButtonStyle>
+        <Button onClick={toggleSelected}>
+          {isSelected ? "Read less" : "Read more"}
+        </Button>
       </FestivalInfo>
     </div>
   );
