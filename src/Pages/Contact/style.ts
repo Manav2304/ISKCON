@@ -18,15 +18,6 @@ export const Box = styled.div`
   max-width: 300px;
   margin-bottom: 5px;
 
-  h4 {
-    margin-bottom: 10px;
-    font-family: "Times New Roman", Times, serif;
-  }
-
-  p {
-    font-family: "Times New Roman", Times, serif;
-  }
-
   @media (min-width: 768px) {
     width: 100%;
     max-width: none;
@@ -56,15 +47,6 @@ export const GuestBox = styled.div`
   max-width: 300px;
   margin-bottom: 5px;
 
-  h4 {
-    margin-bottom: 10px;
-    font-family: "Times New Roman", Times, serif;
-  }
-
-  p {
-    font-family: "Times New Roman", Times, serif;
-  }
-
   @media (min-width: 768px) {
     width: 100%;
     max-width: none;
@@ -77,7 +59,7 @@ export const GuestBox = styled.div`
     grid-column: 1 / -1;
     align-items: center;
     margin-left: 4px;
-    height: 200px;
+    height: 235px;
   }
 `;
 
@@ -167,4 +149,13 @@ export const BoxStyle = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
+`;
+
+export const BoxHeading = styled.h2`
+  margin-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
+`;
+
+export const BoxDetail = styled.p`
+  font-family: "Times New Roman", Times, serif;
 `;

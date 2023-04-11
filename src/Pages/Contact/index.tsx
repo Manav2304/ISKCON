@@ -15,6 +15,8 @@ import {
   BoxStyle,
   Container,
   GuestBox,
+  BoxHeading,
+  BoxDetail,
 } from "./style";
 import titleBaseImg from "../../assets/images/title-base.png";
 
@@ -32,22 +34,22 @@ export const Contact: React.FC = () => {
       />
       <BoxStyle>
         <Box>
-          <h2>Contact Number</h2>
-          <p>
+          <BoxHeading>Contact Number</BoxHeading>
+          <BoxDetail>
             {mobileNumber}/{phoneNumber}
-          </p>
+          </BoxDetail>
         </Box>
         <Box>
-          <h2>Email</h2>
-          <p>{email}</p>
+          <BoxHeading>Email</BoxHeading>
+          <BoxDetail>{email}</BoxDetail>
         </Box>
         <Box>
-          <h2>Address</h2>
-          <p>{address}</p>
+          <BoxHeading>Address</BoxHeading>
+          <BoxDetail>{address}</BoxDetail>
         </Box>
         <GuestBox>
-          <h2>Guest House Booking </h2>
-          <p>{guestHouse}</p>
+          <BoxHeading>Guest House Booking </BoxHeading>
+          <BoxDetail>{guestHouse}</BoxDetail>
         </GuestBox>
       </BoxStyle>
     </Container>
