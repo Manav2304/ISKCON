@@ -19,12 +19,15 @@ export const ImageWrapper = styled.div`
 export const TitleImage = styled.img`
   width: 100%;
   height: auto;
+
   @media screen and (min-width: 1024px) {
     max-width: 700px;
   }
+
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     max-width: 500px;
   }
+
   @media screen and (max-width: 767px) {
     max-width: 300px;
   }

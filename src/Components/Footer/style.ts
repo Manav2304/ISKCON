@@ -26,19 +26,19 @@ export const ContactStyle = styled.div`
 
 export const BgColor = styled.div`
   background-color: #963;
-  color: #ffffff;
+  color: #fff;
 `;
 
 export const TimeStyle = styled.div`
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   margin-top: 30px;
 `;
 
 export const MDBContainer = styled.div`
   text-align: justify;
   background-color: #963;
-  color: #ffffff;
+  color: #fff;
 `;
 
 export const TermsContainer = styled.div`
@@ -49,12 +49,13 @@ export const TermsContainer = styled.div`
 export const TermsHeading = styled.h6`
   font-style: bold;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 `;
 
 export const PrivacyLink = styled.a`
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
+
   &:hover {
     text-decoration: underline;
   }
@@ -66,9 +67,10 @@ export const FooterLinksContainer = styled.div`
 `;
 
 export const FooterLink = styled.a`
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   margin: 0 10px;
+
   &:hover {
     text-decoration: underline;
   }
@@ -76,5 +78,5 @@ export const FooterLink = styled.a`
 
 export const TimingHeading = styled.h3`
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 `;
