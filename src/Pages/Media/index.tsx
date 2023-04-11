@@ -9,7 +9,7 @@ import {
   TitleName,
 } from "./style";
 import { darshanImages, sringarImages, opts } from "./constant";
-import Carousel from "./Carousel";
+import { Carousel } from "./Carousel";
 import AudioContent from "./Audio";
 import titleBaseImg from "../../assets/images/title-base.png";
 import YouTube from "react-youtube";
@@ -43,8 +43,12 @@ export const Media: React.FC = () => {
           <YouTubeWrapper>
             <YouTube videoId="Q9TUIuRVc4I" opts={opts} />
           </YouTubeWrapper>
-          <AudioContent />
         </PageWrapper>
+        <>
+          <PageWrapper>
+            <AudioContent />
+          </PageWrapper>
+        </>
       </>
     </>
   );

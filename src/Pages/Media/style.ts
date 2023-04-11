@@ -48,7 +48,8 @@ export const PageWrapper = styled.div`
 export const CarouselWrapper = styled.div`
   width: 500px;
   height: 300px;
-  margin: 40px 60px 40px;
+  margin: 40px 60px;
+
   @media only screen and (max-width: 767px) {
     /* Mobile view */
     margin: 20px;
@@ -59,15 +60,15 @@ export const CarouselWrapper = styled.div`
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     /* Tablet view */
     margin: 30px;
-    flex-direction: row;
+    flex-flow: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   @media only screen and (min-width: 1024px) {
     /* Desktop view */
-    margin: 40px 60px 40px;
-    flex-direction: row;
+    margin: 40px 60px;
+    flex-flow: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -81,31 +82,31 @@ export const TitleName = styled.h2`
 `;
 
 export const YouTubeWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  margin: 40px 60px 40px;
+  display: grid;
+  grid-template-rows: repeat(2);
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px;
 
-  @media only screen and (max-width: 767px) {
-    /* Mobile view */
-    margin: 20px;
-    flex-direction: column;
-    align-items: center;
+  @media (max-width: 767px) {
+    /* For mobile devices */
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-rows: repeat(2);
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    /* Tablet view */
-    margin: 30px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* For tablet devices */
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-rows: repeat(2);
   }
 
-  @media only screen and (min-width: 1024px) {
-    /* Desktop view */
-    margin: 40px 60px 40px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  @media (min-width: 1024px) {
+    /* For desktop devices */
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-template-rows: repeat(2);
   }
 `;
 
@@ -130,6 +131,6 @@ export const LinkName = styled.h1`
   color: #ad0d0d;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 `;

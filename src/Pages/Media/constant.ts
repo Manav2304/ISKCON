@@ -10,7 +10,7 @@ export const darshanImages = [darshan1, darshan2, darshan3];
 
 export const opts = {
   height: "300",
-  width: "450",
+  width: "400",
   playerVars: {
     autoplay: 0,
   },

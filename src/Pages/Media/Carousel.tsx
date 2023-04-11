@@ -5,20 +5,20 @@ interface CarouselProps {
   images: string[];
 }
 
-const Carousel: React.FC<CarouselProps> = ({ images }) => {
+export const Carousel: React.FC<CarouselProps> = ({ images }) => {
   const id = `carousel-auto-play-${Math.random()}`;
   return (
     <div
       id={id}
       className="carousel slide"
       data-bs-ride="carousel"
-      data-bs-interval="2000"
+      data-bs-interval="3000"
     >
       <div className="carousel-inner">
         {images.map((image, index) => (
           <div
             key={Math.random()}
-            className={`carousel-item ${index === 0 ? "active" : ""}`}
+            className={`carousel-item ${index === 1 ? "active" : ""}`}
           >
             <ImageSlide src={image} className="d-block w-100" alt="..." />
           </div>
@@ -45,5 +45,3 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
     </div>
   );
 };
-
-export default Carousel;
