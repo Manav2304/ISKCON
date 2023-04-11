@@ -1,3 +1,15 @@
+import devoteeKitchen1 from "../../../assets/images/devotee-kitchen1.jpg";
+import devoteeKitchen2 from "../../../assets/images/devotee-kitchen2.jpg";
+import devoteeKitchen3 from "../../../assets/images/devotee-kitchen3.jpg";
+import devoteeKitchen4 from "../../../assets/images/devotee-kitchen4.jpg";
+
+export const devoteeKitchenImages = [
+  devoteeKitchen1,
+  devoteeKitchen2,
+  devoteeKitchen3,
+  devoteeKitchen4,
+];
+
 export const devoteeKitchen = [
   "Krishna Prasad is one of the most powerful purifiers in this Kali age, and Srila Prabhupad prioritised prasadam distribution, personally cooking and serving visitors to the temple in the west. Our hearts are purified by eating Sri Krishna’s Mahaprasad, allowing devotion to the Lord to enter.",
 
