@@ -86,7 +86,15 @@ export const YouTubeWrapper = styled.div`
   grid-template-rows: repeat(2);
   margin-left: 50px;
   margin-right: 50px;
-  padding: 20px;
+  margin-top: 25px;
+  overflow-x: hidden;
+
+  @media (max-width: 480px) {
+    /* For low screen sizes */
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-template-rows: repeat(2);
+  }
 
   @media (max-width: 767px) {
     /* For mobile devices */
