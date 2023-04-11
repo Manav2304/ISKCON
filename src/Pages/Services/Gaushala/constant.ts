@@ -3,7 +3,7 @@ import goushala2 from "../../../assets/images/goushala2.jpg";
 import goushala3 from "../../../assets/images/goushala3.jpg";
 import goushala4 from "../../../assets/images/goushala4.jpg";
 import goushala5 from "../../../assets/images/goushala5.jpg";
-import goushala6 from "../../../assets/images/goushala5.jpg";
+import goushala6 from "../../../assets/images/goushala6.jpg";
 
 export const goverdhangoushalaImages = [
   goushala1,
