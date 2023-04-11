@@ -14,7 +14,8 @@ export const FooterLogoStyle = styled.div`
 `;
 
 export const ContactStyle = styled.div`
-  margin-top: 50px;
+  margin-top: 110px;
+  margin-left: 90px;
   float: right;
 
   @media only screen and (max-width: 768px) {
@@ -31,6 +32,7 @@ export const BgColor = styled.div`
 export const TimeStyle = styled.div`
   text-align: center;
   color: #ffffff;
+  margin-top: 30px;
 `;
 
 export const MDBContainer = styled.div`
@@ -39,7 +41,40 @@ export const MDBContainer = styled.div`
   color: #ffffff;
 `;
 
+export const TermsContainer = styled.div`
+  background-color: #963;
+  padding: 10px;
+`;
+
 export const TermsHeading = styled.h6`
   font-style: bold;
   text-align: center;
+  color: #ffffff;
+`;
+
+export const PrivacyLink = styled.a`
+  color: #ffffff;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+export const FooterLinksContainer = styled.div`
+  text-align: center;
+  margin-top: 20px;
+`;
+
+export const FooterLink = styled.a`
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+export const TimingHeading = styled.h3`
+  text-align: center;
+  color: #ffffff;
 `;

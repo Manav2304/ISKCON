@@ -24,12 +24,12 @@ export const Footer = () => {
         <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <MDBContainer className="text-center text-md-start mt-5">
             <MDBRow className="mt-3">
-              <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
+              <MDBCol>
                 <h6 className="text-uppercase fw-bold mb-4">
                   <MDBIcon icon="clock" className="me-3" />
                   Timings
                 </h6>
-                <div>
+                <div className="mx-auto mb-4">
                   <TimeStyle>
                     {schedules.map((time) => (
                       <div key={time.name}>
@@ -57,7 +57,7 @@ export const Footer = () => {
             </MDBRow>
           </MDBContainer>
         </section>
-        <section className="bg-light py-3">
+        <section>
           <MDBContainer>
             <TermsHeading>
               <MDBRow>

@@ -5,7 +5,7 @@ import {
   TextWrapper,
   TitleImage,
 } from "./style";
-import titleBaseImage from "../../../assets/images/title-base.png";
+import titleBaseImage from "../../assets/images/title-base.png";
 
 interface FooterTermsProps {
   title: string;

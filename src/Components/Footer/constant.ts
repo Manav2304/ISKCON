@@ -24,6 +24,6 @@ export const contactInfos = [
   },
   {
     icon: "phone",
-    text: "xxxx",
+    text: "02692230796",
   },
 ];
