@@ -1,4 +1,10 @@
-import { NavStyle, StyledLink, ImgStyle, SocialMediaIconsStyle } from "./style";
+import {
+  NavStyle,
+  StyledLink,
+  ImgStyle,
+  SocialMediaIconsStyle,
+  IconsStyle,
+} from "./style";
 import { PageDropdown } from "../Dropdown";
 import { dropdownServicesInfo, socialMediaIcon } from "../Navbar/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
@@ -15,7 +21,7 @@ export const NavigationBar = () => {
           <PageDropdown items={dropdownServicesInfo} toggleTitle="Services" />
           <StyledLink to={routes.visitUs}>Visit Us</StyledLink>
           <StyledLink to={routes.media}>Media</StyledLink>
-          <StyledLink to="/">
+          <StyledLink to={routes.home}>
             <ImgStyle src={logoUrl} alt="Logo" />
           </StyledLink>
           <StyledLink to={routes.donation}>Donate</StyledLink>
@@ -23,9 +29,9 @@ export const NavigationBar = () => {
           <StyledLink to={routes.contact}>Contact</StyledLink>
           <SocialMediaIconsStyle>
             {socialMediaIcon.map((item) => (
-              <a key={item.name} href={item.href}>
+              <IconsStyle key={item.name} href={item.href}>
                 <MDBIcon fab icon={item.icon} />
-              </a>
+              </IconsStyle>
             ))}
           </SocialMediaIconsStyle>
         </div>

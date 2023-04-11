@@ -44,17 +44,16 @@ export const SocialMediaIconsStyle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+export const IconsStyle = styled.a`
+  margin-right: 5px;
+  color: #8b0000;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #f5fffa;
+  transition: background-color 0.2s ease;
 
-  a {
-    margin-right: 5px;
-    color: #8b0000;
-    padding: 5px;
-    border-radius: 50%;
-    background-color: #f5fffa;
-    transition: background-color 0.2s ease;
-
-    &:hover {
-      background-color: #555;
-    }
+  &:hover {
+    background-color: #555;
   }
 `;
