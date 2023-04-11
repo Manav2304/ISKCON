@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { dakorImages, goushalImages, dakorInfo, goushalaInfo } from "./constant";
+import {
+  dakorImages,
+  goushalImages,
+  dakorInfo,
+  goushalaInfo,
+} from "./constant";
 import titleBaseImg from "../../assets/images/title-base.png";
 import {
   ServiceWrapper,
