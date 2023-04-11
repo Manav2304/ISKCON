@@ -26,7 +26,7 @@ export const Heading = styled.h6`
 `;
 
 export const ContactStyle = styled.div`
-  margin-top: 110px;
+  margin-top: 80px;
   margin-left: 90px;
   float: right;
 
