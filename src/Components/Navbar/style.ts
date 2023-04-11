@@ -5,7 +5,7 @@ export const NavStyle = styled.div`
   padding: 1.5rem;
 `;
 
-export const LinkStyle = styled.div`
+export const NavLink = styled.div`
   color: dark black;
   font-weight: 500;
   margin-right: 1rem;

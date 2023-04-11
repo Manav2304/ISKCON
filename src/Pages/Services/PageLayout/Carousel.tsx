@@ -12,19 +12,15 @@ export const Carousel: React.FC<CarouselProps> = ({ images }) => {
       id={id}
       className="carousel slide"
       data-bs-ride="carousel"
-      data-bs-interval="2500"
+      data-bs-interval="3000"
     >
       <div className="carousel-inner">
         {images.map((image, index) => (
           <div
             key={Math.random()}
-            className={`carousel-item ${index === 0 ? "active" : ""}`}
+            className={`carousel-item ${index === 1 ? "active" : ""}`}
           >
-            <ImageSlide
-              src={image}
-              className="d-block w-100"
-              alt="carousel-images"
-            />
+            <ImageSlide src={image} className="d-block w-100" alt="..." />
           </div>
         ))}
         <button
@@ -49,3 +45,4 @@ export const Carousel: React.FC<CarouselProps> = ({ images }) => {
     </div>
   );
 };
+
