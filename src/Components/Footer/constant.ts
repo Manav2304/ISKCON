@@ -20,10 +20,10 @@ export const contactInfos = [
   },
   {
     icon: "envelope",
-    text: "abcd@gmail.com",
+    text: "iskconvvnagar@yahoo.in",
   },
   {
     icon: "phone",
-    text: "02692230796",
+    text: "[02692 230796] / [+91 97272 61159]",
   },
 ];

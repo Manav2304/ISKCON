@@ -12,6 +12,8 @@ import {
   BgColor,
   TimeStyle,
   TermsHeading,
+  Heading,
+  TermsTitle,
 } from "./style";
 import { contactInfos, schedules } from "./constant";
 import { Link } from "react-router-dom";
@@ -25,15 +27,15 @@ export const Footer = () => {
           <MDBContainer className="text-center text-md-start mt-5">
             <MDBRow className="mt-3">
               <MDBCol>
-                <h6 className="text-uppercase fw-bold mb-4">
+                <Heading>
                   <MDBIcon icon="clock" className="me-3" />
                   Timings
-                </h6>
+                </Heading>
                 <div className="mx-auto mb-4">
                   <TimeStyle>
                     {schedules.map((time) => (
                       <div key={time.name}>
-                        {time.name}:{time.time}
+                        {time.name} : {time.time}
                       </div>
                     ))}
                   </TimeStyle>
@@ -63,16 +65,18 @@ export const Footer = () => {
               <MDBRow>
                 <MDBCol>
                   <Link to={routes.termsAndCondition}>
-                    Terms and Conditions
+                    <TermsTitle>Terms and Conditions</TermsTitle>
                   </Link>
                 </MDBCol>
                 <MDBCol>
                   <Link to={routes.cancellationPolicy}>
-                    Cancellation Policy
+                    <TermsTitle>Cancellation Policy</TermsTitle>
                   </Link>
                 </MDBCol>
                 <MDBCol>
-                  <Link to={routes.privacyPolicy}>Privacy Policy</Link>
+                  <Link to={routes.privacyPolicy}>
+                    <TermsTitle>Privacy Policy</TermsTitle>
+                  </Link>
                 </MDBCol>
               </MDBRow>
             </TermsHeading>
