@@ -95,7 +95,7 @@ export const Image = styled.img`
 
   @media only screen and (max-width: 767px) {
     height: 89%;
-    width: 89%;
+    width: 92%;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -104,8 +104,8 @@ export const Image = styled.img`
   }
 
   @media only screen and (min-width: 1200px) {
-    height: 89%;
-    width: 89%;
+    height: 87%;
+    width: 87%;
   }
 `;
 /*Used class name for handle the size of icon*/
@@ -124,6 +124,19 @@ export const StyleCarousel = styled(Carousel)`
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 10px;
+      width: 10px;
+    }
+
+    .carousel-indicators {
+      height: 5px;
+      width: 5px;
+    }
   }
 
   @media (min-width: 1200px) {
