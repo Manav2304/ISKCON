@@ -1,4 +1,4 @@
-import { FooterTerms } from "../PageLayout/index";
+import { FooterTerms } from "../../../Components/PageLayout";
 import { privacyPolicy } from "./constant";
 
 export const PrivacyPolicy: React.FC = () => {

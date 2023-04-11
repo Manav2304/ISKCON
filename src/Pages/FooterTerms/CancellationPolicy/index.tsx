@@ -1,4 +1,4 @@
-import { FooterTerms } from "../PageLayout/index";
+import { FooterTerms } from "../../../Components/PageLayout";
 import { cancellationPolicy } from "./constant";
 
 export const CancellationPolicy: React.FC = () => {

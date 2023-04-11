@@ -1,4 +1,4 @@
-import { FooterTerms } from "../PageLayout/index";
+import { FooterTerms } from "../../../Components/PageLayout";
 import { termsAndCondition } from "./constant";
 
 export const TermsAndCondition: React.FC = () => {
