@@ -29,15 +29,15 @@ export const BgColor = styled.div`
 `;
 
 export const TimeStyle = styled.div`
-  text-align: justify;
+  text-align: center; /* Update to center the text */
   color: #ffffff;
 `;
 
 export const MDBContainer = styled.div`
-  text-align: justify:
+  text-align: justify;
   background-color: #963;
   color: #ffffff;
- `;
+`;
 
 export const TermsHeading = styled.h6`
   font-style: bold;
