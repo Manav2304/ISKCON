@@ -29,7 +29,7 @@ export const BgColor = styled.div`
 `;
 
 export const TimeStyle = styled.div`
-  text-align: center; /* Update to center the text */
+  text-align: center;
   color: #ffffff;
 `;
 
