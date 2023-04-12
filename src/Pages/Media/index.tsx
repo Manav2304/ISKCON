@@ -14,7 +14,7 @@ import {
   darshanTitle,
   opts,
 } from "./constant";
-import AudioContent from "./Audio";
+import { AudioContent } from "./Audio";
 import titleBaseImg from "../../assets/images/title-base.png";
 import YouTube from "react-youtube";
 import { MediaCarousel } from "./MediaCarousel";

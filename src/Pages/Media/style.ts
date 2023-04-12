@@ -11,6 +11,7 @@ export const PageWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 10px;
 `;
 
 export const TitleName = styled.h2`
@@ -91,6 +92,7 @@ export const LinkName = styled.h1`
 export const Reviews = styled.div`
   height: 300px;
   width: 500px;
+
   @media only screen and (max-width: 767px) {
     margin: 20px;
   }
@@ -201,5 +203,24 @@ export const CarouselWrapper = styled.div`
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 40px;
     margin: 20px;
+  }
+`;
+export const SpotifyWrapper = styled.iframe.attrs({
+  width: 800,
+  height: 500,
+})`
+  @media (max-width: 768px) {
+    width: 80%;
+    height: 400px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 800px;
+    height: 500px;
+  }
+
+  @media (max-width: 480px) {
+    width: 80%;
+    height: 400px;
   }
 `;
