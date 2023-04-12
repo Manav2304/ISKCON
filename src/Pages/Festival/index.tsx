@@ -4,24 +4,20 @@ import { FestivalCard } from "./FestivalCard";
 import { FestivalContainer, Heading1, ImageDiv, TitleImage } from "./style";
 import { Festival } from "./types";
 import titleBaseImg from "../../assets/images/title-base.png";
-import { PageWrapperStyle } from "../Home/style";
+import { HeadingStyle, ImageTitle } from "../Home/style";
 
 export const FestivalPage = () => {
   return (
     <>
-      <PageWrapperStyle>
-        <Heading1>
-          <h1>Festival</h1>
-        </Heading1>
-        <ImageDiv>
-          <TitleImage src={titleBaseImg} alt="titleBaseImg" />
-        </ImageDiv>
-        <FestivalContainer>
-          {festivals.map((festival: Festival) => (
-            <FestivalCard key={festival.name} festival={festival} />
-          ))}
-        </FestivalContainer>
-      </PageWrapperStyle>
+      <HeadingStyle>
+        <h1>Festival</h1>
+        <ImageTitle src={titleBaseImg} alt="Title Image" />
+      </HeadingStyle>
+      <FestivalContainer>
+        {festivals.map((festival: Festival) => (
+          <FestivalCard key={festival.name} festival={festival} />
+        ))}
+      </FestivalContainer>
     </>
   );
 };

@@ -15,39 +15,37 @@ import {
 } from "./constant";
 import { CopiedTableRow } from "./CopiedTableRow";
 import titleBaseImg from "../../assets/images/title-base.png";
-import { PageWrapperStyle } from "../Home/style";
+import { HeadingStyle, ImageTitle } from "../Home/style";
 
 export const DonationPage = () => {
   return (
-    <PageWrapperStyle>
-      <Wrapper>
-        <Title>Donation</Title>
-        <ImageWrapper>
-          <Image src={titleBaseImg} />
-        </ImageWrapper>
-        {bhagavadGita.map((paragraph) => (
-          <Paragraph key={paragraph}>{paragraph}</Paragraph>
-        ))}
-        <TableStyle>
-          <Heading>YES bank</Heading>
-          <Table>
-            <tbody>
-              {yesBankAccountInfo.map((info) => (
-                <CopiedTableRow label={info.label} value={info.value} />
-              ))}
-            </tbody>
-          </Table>
-          <br />
-          <Heading>ICICI Bank</Heading>
-          <Table>
-            <tbody>
-              {iciciBankAccountInfo.map((info) => (
-                <CopiedTableRow label={info.label} value={info.value} />
-              ))}
-            </tbody>
-          </Table>
-        </TableStyle>
-      </Wrapper>
-    </PageWrapperStyle>
+    <Wrapper>
+      <HeadingStyle>
+        <h1>Donation</h1>
+        <ImageTitle src={titleBaseImg} alt="Title Image" />
+      </HeadingStyle>
+      {bhagavadGita.map((paragraph) => (
+        <Paragraph key={paragraph}>{paragraph}</Paragraph>
+      ))}
+      <TableStyle>
+        <HeadingStyle>YES bank</HeadingStyle>
+        <Table>
+          <tbody>
+            {yesBankAccountInfo.map((info) => (
+              <CopiedTableRow label={info.label} value={info.value} />
+            ))}
+          </tbody>
+        </Table>
+        <br />
+        <HeadingStyle>ICICI Bank</HeadingStyle>
+        <Table>
+          <tbody>
+            {iciciBankAccountInfo.map((info) => (
+              <CopiedTableRow label={info.label} value={info.value} />
+            ))}
+          </tbody>
+        </Table>
+      </TableStyle>
+    </Wrapper>
   );
 };

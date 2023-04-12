@@ -19,7 +19,7 @@ import {
   BoxDetail,
 } from "./style";
 import titleBaseImg from "../../assets/images/title-base.png";
-import { HeadingStyle, ImageTitle, PageWrapperStyle } from "../Home/style";
+import { HeadingStyle, ImageTitle } from "../Home/style";
 
 export const Contact: React.FC = () => {
   return (
