@@ -19,6 +19,8 @@ export const TextStyle = styled.div`
 
   @media only screen and (min-width: 1200px) {
     font-size: 1.2rem;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 `;
 export const HeadingStyle = styled.div`
@@ -62,18 +64,6 @@ export const ImageTitle = styled.img`
 `;
 export const Reviews = styled.div`
   max-width: 1600px;
-
-  @media only screen and (max-width: 767px) {
-    margin: 20px;
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    margin: 10px;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    margin: 5px;
-  }
 `;
 export const ImageStyle = styled.div`
   display: flex;
@@ -88,15 +78,15 @@ export const ImageCarousel = styled.img`
   object-fit: contain cover;
 
   @media only screen and (max-width: 767px) {
-    height: 150px;
+    height: 200px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    height: 300px;
+    height: 400px;
   }
 
   @media only screen and (min-width: 1200px) {
-    height: 500px;
+    height: 600px;
     width: 100%;
   }
 `;
@@ -104,22 +94,91 @@ export const Image = styled.img`
   object-fit: contain;
 
   @media only screen and (max-width: 767px) {
-    height: 85%;
-    width: 85%;
+    height: 89%;
+    width: 92%;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    height: 88%;
-    width: 88%;
+    height: 89%;
+    width: 89%;
   }
 
   @media only screen and (min-width: 1200px) {
-    height: 92%;
-    width: 92%;
+    height: 87%;
+    width: 87%;
   }
 `;
 /*Used class name for handle the size of icon*/
 export const StyleCarousel = styled(Carousel)`
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .carousel-indicators {
+    height: 10px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 10px;
+      width: 10px;
+    }
+
+    .carousel-indicators {
+      height: 5px;
+      width: 5px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 30px;
+      width: 30px;
+      margin: 80px;
+    }
+
+    .carousel-indicators {
+      height: 5px;
+    }
+  }
+`;
+export const PageImageCarousel = styled.img`
+  width: 100%;
+  height: 500px;
+  object-fit: contain cover;
+
+  @media only screen and (max-width: 767px) {
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 100%;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    height: 100%;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+`;
+export const PageStyleCarousel = styled(Carousel)`
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     height: 40px;
@@ -152,7 +211,7 @@ export const StyleCarousel = styled(Carousel)`
     }
 
     .carousel-indicators {
-      height: 15px;
+      height: 5px;
     }
   }
 `;
