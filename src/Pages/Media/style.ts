@@ -17,7 +17,6 @@ export const TitleName = styled.h2`
   color: #7e5959;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
-  margin-top: 20px;
 `;
 
 export const Heading = styled.h1`
@@ -42,6 +41,7 @@ export const Heading = styled.h1`
 export const TitleImage = styled.img`
   width: 450px;
   height: auto;
+  margin-bottom: 20px;
 
   @media only screen and (max-width: 768px) {
     width: 100%;
@@ -61,29 +61,19 @@ export const YouTubeWrapper = styled.div`
   margin-top: 25px;
   overflow-x: hidden;
 
-  @media (max-width: 480px) {
-    /* For low screen sizes */
-    margin-left: 10px;
-    margin-right: 10px;
-    grid-template-rows: repeat(2);
-  }
-
   @media (max-width: 767px) {
-    /* For mobile devices */
     margin-left: 20px;
     margin-right: 20px;
     grid-template-rows: repeat(2);
   }
 
   @media (min-width: 768px) and (max-width: 1023px) {
-    /* For tablet devices */
     margin-left: 20px;
     margin-right: 20px;
     grid-template-rows: repeat(2);
   }
 
   @media (min-width: 1024px) {
-    /* For desktop devices */
     margin-left: 50px;
     margin-right: 50px;
     grid-template-rows: repeat(2);
@@ -105,11 +95,11 @@ export const Reviews = styled.div`
     margin: 20px;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     margin: 10px;
   }
 
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1024px) {
     margin: 5px;
   }
 `;
@@ -119,22 +109,17 @@ export const ImageCarousel = styled.img`
   height: 300px;
   object-fit: contain cover;
 
-  @media only screen and (max-width: 767px) {
-    width: 100%;
-    height: 150px;
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (min-width: 767px) {
     width: 80%;
     height: 200px;
   }
 
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    width: 60%;
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 100%;
     height: 250px;
   }
 
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1024px) {
     width: 500px;
     height: 300px;
   }
@@ -152,7 +137,7 @@ export const StyleCarousel = styled(Carousel)`
     height: 10px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       height: 10px;
@@ -165,7 +150,21 @@ export const StyleCarousel = styled(Carousel)`
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 20px;
+      width: 20px;
+      margin: 5px;
+    }
+
+    .carousel-indicators {
+      height: 7.5px;
+      width: 7.5px;
+    }
+  }
+
+  @media (min-width: 1024px) {
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       height: 30px;
@@ -186,16 +185,16 @@ export const CarouselWrapper = styled.div`
   align-items: center;
   overflow-x: hidden;
 
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 20px;
     margin: 10px;
   }
 
-  @media (min-width: 769px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 1023px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 30px;
-    margin: 15px;
+    margin: 10px;
   }
 
   @media (min-width: 1024px) {
