@@ -5,6 +5,9 @@ import darshan1 from "../../assets/images/darshan1.jpg";
 import darshan2 from "../../assets/images/darshan2.jpg";
 import darshan3 from "../../assets/images/darshan3.jpg";
 
+export const SringarTitle = "Yesterday's Darshan";
+export const darshanTitle = "Today's Darshan ";
+
 export const sringarImages = [
   {
     id: 1,

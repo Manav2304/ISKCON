@@ -1,6 +1,25 @@
 import { Carousel } from "react-bootstrap";
 import styled from "styled-components";
 
+export const ImageWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const PageWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
+
+export const TitleName = styled.h2`
+  color: #7e5959;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 20px;
+`;
+
 export const Heading = styled.h1`
   text-align: center;
   margin-top: 20px;
@@ -8,22 +27,16 @@ export const Heading = styled.h1`
   font-family: "Times New Roman", Times, serif;
 
   @media screen and (max-width: 768px) {
-    font-size: 24px; /* mobile view */
+    font-size: 24px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1024px) {
-    font-size: 32px; /* tablet view */
+    font-size: 32px;
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: 48px; /* desktop view */
+    font-size: 48px;
   }
-`;
-
-export const ImageWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 
 export const TitleImage = styled.img`
@@ -38,19 +51,6 @@ export const TitleImage = styled.img`
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
     width: 60%;
   }
-`;
-
-export const PageWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-`;
-
-export const TitleName = styled.h2`
-  color: #7e5959;
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  margin-top: 20px;
 `;
 
 export const YouTubeWrapper = styled.div`
@@ -90,25 +90,8 @@ export const YouTubeWrapper = styled.div`
   }
 `;
 
-export const ImageSlide = styled.img`
-  width: 500px;
-  height: 300px;
-  object-fit: auto;
-
-  @media only screen and (max-width: 768px) {
-    /* Mobile view */
-    width: 100%;
-    height: auto;
-  }
-
-  @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    /* Tablet view */
-    width: 60%;
-  }
-`;
-
 export const LinkName = styled.h1`
-  color: #ad0d0d;
+  color: #7e5959;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   margin-top: 30px;
@@ -118,7 +101,6 @@ export const LinkName = styled.h1`
 export const Reviews = styled.div`
   height: 300px;
   width: 500px;
-
   @media only screen and (max-width: 767px) {
     margin: 20px;
   }
@@ -196,37 +178,29 @@ export const StyleCarousel = styled(Carousel)`
     }
   }
 `;
+
 export const CarouselWrapper = styled.div`
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
   align-items: center;
   overflow-x: hidden;
 
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   @media (max-width: 480px) {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px;
+    margin: 10px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1023px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    margin: 15px;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 40px;
     margin: 20px;
-  }
-`;
-export const TitleWrapper = styled.div`
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  align-items: center;
-
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  @media (max-width: 480px) {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 40px;
   }
 `;

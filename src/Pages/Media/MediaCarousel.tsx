@@ -1,12 +1,19 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import { Reviews, ImageCarousel, StyleCarousel, PageWrapper } from "./style";
+import {
+  Reviews,
+  ImageCarousel,
+  StyleCarousel,
+  PageWrapper,
+  TitleName,
+} from "./style";
 
 interface Props {
   images: { id: number; image: string }[];
+  title: string;
 }
 
-export const MediaCarousel: React.FC<Props> = ({ images }) => {
+export const MediaCarousel: React.FC<Props> = ({ images, title }) => {
   return (
     <PageWrapper>
       <Reviews>
@@ -28,6 +35,7 @@ export const MediaCarousel: React.FC<Props> = ({ images }) => {
           ))}
         </StyleCarousel>
       </Reviews>
+      <TitleName>{title}</TitleName>
     </PageWrapper>
   );
 };
