@@ -5,7 +5,7 @@ export const FooterLogoStyle = styled.div`
   align-content: center;
   margin: 5px;
   margin-top: 50px;
-  margin-right: 46px;
+  margin-right: -6px;
 
   @media only screen and (max-width: 768px) {
     width: 100%;
@@ -17,17 +17,17 @@ export const Heading = styled.h6`
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 4px;
-  margin-left: 80px;
+  margin-left: 130px;
 
   @media only screen and (max-width: 768px) {
-    margin-right: 100px;
+    padding-right: 130px;
     margin-top: -50px;
   }
 `;
 
 export const ContactStyle = styled.div`
   margin-top: 80px;
-  margin-left: 90px;
+  margin-left: 120px;
   float: right;
 
   @media only screen and (max-width: 768px) {
@@ -48,13 +48,14 @@ export const BgColor = styled.div`
 `;
 
 export const TimeStyle = styled.div`
-  text-align: center;
+  text-align: right;
   color: #fff;
   margin-top: 30px;
-  margin-right: 90px;
+  margin-right: 130px;
 
   @media only screen and (max-width: 768px) {
-    margin-right: 3px;
+    text-align: center;
+    margin-right: -2%;
     margin-bottom: -40px;
     margin-top: 20px;
   }
