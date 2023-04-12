@@ -1,4 +1,7 @@
-import dakor from "../../assets/images/dakor-image.jpg";
+import dakor1 from "../../assets/images/dakor-image.jpg";
+import dakor2 from "../../assets/images/dakor-image2.jpg";
+import dakor3 from "../../assets/images/dakor-image 3.jpg";
+import dakor4 from "../../assets/images/dakor-image4.jpg";
 import goushala1 from "../../assets/images/goushala1.jpg";
 import goushala2 from "../../assets/images/goushala2.jpg";
 import goushala3 from "../../assets/images/goushala3.jpg";
@@ -9,7 +12,19 @@ import goushala6 from "../../assets/images/goushala6.jpg";
 export const dakorImages = [
   {
     id: 1,
-    image: dakor,
+    image: dakor1,
+  },
+  {
+    id: 2,
+    image: dakor2,
+  },
+  {
+    id: 3,
+    image: dakor3,
+  },
+  {
+    id: 4,
+    image: dakor4,
   },
 ];
 
