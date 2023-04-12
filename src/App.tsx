@@ -1,7 +1,5 @@
 import React from "react";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import "@fortawesome/fontawesome-free/css/fontawesome.css";
-import "@fortawesome/fontawesome-free/css/brands.css";
+import { Footer } from "./Components/Footer";
 import { Media } from "./Pages/Media";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { NavigationBar } from "./Components/Navbar";
@@ -19,6 +17,12 @@ import { GuestHouse } from "./Pages/Services/GuestHouse";
 import { IskconYouthForum } from "./Pages/Services/IskconYouthForum";
 import { KirtanAtIskcon } from "./Pages/Services/KirtanAtIskcon";
 import { LifeTimeMembership } from "./Pages/Services/LifeTimeMembership";
+import { TermsAndCondition } from "./Pages/FooterTerms/TermsAndCondition";
+import { CancellationPolicy } from "./Pages/FooterTerms/CancellationPolicy";
+import { PrivacyPolicy } from "./Pages/FooterTerms/PrivacyPolicy";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "@fortawesome/fontawesome-free/css/fontawesome.css";
+import "@fortawesome/fontawesome-free/css/brands.css";
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -76,7 +80,23 @@ export const App: React.FunctionComponent = () => {
             path={routes.lifeTimeMembership}
             element={<LifeTimeMembership />}
           />
+          <Route
+            caseSensitive
+            path={routes.termsAndCondition}
+            element={<TermsAndCondition />}
+          />
+          <Route
+            caseSensitive
+            path={routes.cancellationPolicy}
+            element={<CancellationPolicy />}
+          />
+          <Route
+            caseSensitive
+            path={routes.privacyPolicy}
+            element={<PrivacyPolicy />}
+          />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
