@@ -15,15 +15,15 @@ export const schedules = [
 
 export const contactInfos = [
   {
-    icon: "home",
-    text: "GWXF+844, Iskcon Road,Opp.B&B Polytechnic College,Mota Bazar,VV Nagar,Anand,Gujarat",
-  },
-  {
     icon: "envelope",
-    text: "iskconvvnagar@yahoo.in",
+    text: "iskconinfovvn@gmail.com",
   },
   {
     icon: "phone",
     text: "[02692 230796] / [+91 97272 61159]",
+  },
+  {
+    icon: "home",
+    text: "Iskcon Road,Opp.B&B Polytechnic College,Mota Bazar,VV Nagar,Anand,Gujarat",
   },
 ];

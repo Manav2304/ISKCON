@@ -75,6 +75,12 @@ export const TermsHeading = styled.h6`
   font-style: bold;
   text-align: center;
   color: #fff;
+  display: inline-flex;
+  margin-left: 35%;
+
+  @media only screen and (max-width: 768px) {
+    margin-left: 5px;
+  }
 `;
 
 export const PrivacyLink = styled.a`

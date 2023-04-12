@@ -62,23 +62,15 @@ export const Footer = () => {
         <section>
           <MDBContainer>
             <TermsHeading>
-              <MDBRow>
-                <MDBCol>
-                  <Link to={routes.termsAndCondition}>
-                    <TermsTitle>Terms and Conditions</TermsTitle>
-                  </Link>
-                </MDBCol>
-                <MDBCol>
-                  <Link to={routes.cancellationPolicy}>
-                    <TermsTitle>Cancellation Policy</TermsTitle>
-                  </Link>
-                </MDBCol>
-                <MDBCol>
-                  <Link to={routes.privacyPolicy}>
-                    <TermsTitle>Privacy Policy</TermsTitle>
-                  </Link>
-                </MDBCol>
-              </MDBRow>
+              <Link to={routes.termsAndCondition}>
+                <TermsTitle>Terms and Conditions | </TermsTitle>
+              </Link>
+              <Link to={routes.cancellationPolicy}>
+                <TermsTitle>Cancellation Policy | </TermsTitle>
+              </Link>
+              <Link to={routes.privacyPolicy}>
+                <TermsTitle>Privacy Policy</TermsTitle>
+              </Link>
             </TermsHeading>
           </MDBContainer>
         </section>
