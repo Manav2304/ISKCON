@@ -2,13 +2,11 @@ import styled from "styled-components";
 import title from "../../assets/images/navbar-bg.png";
 import { Link } from "react-router-dom";
 
-export const NavStyle = styled.div`
-  nav {
-    background-image: url(${title});
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-  }
+export const NavStyle = styled.nav`
+  background-image: url(${title});
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
 `;
 
 export const StyledLink = styled(Link)`
