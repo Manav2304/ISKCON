@@ -248,3 +248,16 @@ export const CarouselStyle = styled.div`
     margin-right: 50px;
   }
 `;
+export const PageReviews = styled.div`
+  @media only screen and (max-width: 767px) {
+    margin-top: 5px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 7px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    margin-top: 9px;
+  }
+`;
