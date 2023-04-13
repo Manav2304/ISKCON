@@ -76,8 +76,6 @@ export const Paragraph = styled.p`
   font-size: 20px;
   line-height: 1.5;
   text-align: justify;
-  padding-left: 2px;
-  padding-right: 2px;
 
   @media (max-width: 767px) {
     font-size: 16px;
@@ -93,8 +91,6 @@ export const Paragraph = styled.p`
 
   @media (min-width: 992px) {
     font-size: 20px;
-    padding-left: 8px;
-    padding-right: 8px;
   }
 `;
 
