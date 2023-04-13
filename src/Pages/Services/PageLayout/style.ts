@@ -15,7 +15,7 @@ export const TextWrapper = styled.div`
 
   @media only screen and (max-width: 480px) {
     /* Styles for mobile view */
-    padding: 0px;
+    padding: 0.1px;
   }
 
   @media only screen and (min-width: 1200px) {
