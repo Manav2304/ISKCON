@@ -15,7 +15,7 @@ export const TextWrapper = styled.div`
 
   @media only screen and (max-width: 480px) {
     /* Styles for mobile view */
-    padding: 5px;
+    padding: 0px;
   }
 
   @media only screen and (min-width: 1200px) {
@@ -51,6 +51,7 @@ export const TitleImage = styled.img`
 export const Heading = styled.h1`
   text-align: center;
   color: #7e5959;
+  padding-top: 100px;
 `;
 
 export const ImageSlide = styled.img`
@@ -58,6 +59,8 @@ export const ImageSlide = styled.img`
   height: 400px;
   object-fit: auto;
   margin-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 
   @media only screen and (max-width: 768px) {
     /* Styles for tablet view */
