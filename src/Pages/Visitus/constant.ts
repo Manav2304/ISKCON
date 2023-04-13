@@ -54,7 +54,6 @@ export const goushalImages = [
     image: goushala6,
   },
 ];
-
 export const dakorInfo = [
   "At the heart of Dakor lies the Ranchhodraiji Temple, a sacred place where Lord Krishna is worshipped in the form of Ranchhodrai. The temple, with its grand architecture and intricate carvings, is a stunning masterpiece that leaves visitors awestruck.",
 
