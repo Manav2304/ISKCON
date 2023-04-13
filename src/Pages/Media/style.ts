@@ -1,6 +1,26 @@
 import { Carousel } from "react-bootstrap";
 import styled from "styled-components";
 
+export const ServiceWrapper = styled.div`
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+`;
+
 export const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -40,7 +60,7 @@ export const Heading = styled.h1`
 `;
 
 export const TitleImage = styled.img`
-  width: 450px;
+  width: 500px;
   height: auto;
   margin-bottom: 20px;
 
@@ -57,8 +77,8 @@ export const TitleImage = styled.img`
 export const YouTubeWrapper = styled.div`
   display: grid;
   grid-template-rows: repeat(2);
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   margin-top: 25px;
   overflow-x: hidden;
 
@@ -75,8 +95,8 @@ export const YouTubeWrapper = styled.div`
   }
 
   @media (min-width: 1024px) {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
     grid-template-rows: repeat(2);
   }
 `;
