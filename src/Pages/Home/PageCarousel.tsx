@@ -1,6 +1,11 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import { Reviews, PageImageCarousel, PageStyleCarousel } from "./style";
+import {
+  Reviews,
+  PageImageCarousel,
+  PageStyleCarousel,
+  PageReviews,
+} from "./style";
 
 interface Props {
   images: { id: number; image: string }[];
@@ -8,7 +13,7 @@ interface Props {
 
 export const PageCarousel: React.FC<Props> = ({ images }) => {
   return (
-    <Reviews>
+    <PageReviews>
       <PageStyleCarousel
         nextIcon={<span className="carousel-control-next-icon" />}
         prevIcon={<span className="carousel-control-prev-icon" />}
@@ -27,6 +32,6 @@ export const PageCarousel: React.FC<Props> = ({ images }) => {
           </Carousel.Item>
         ))}
       </PageStyleCarousel>
-    </Reviews>
+    </PageReviews>
   );
 };

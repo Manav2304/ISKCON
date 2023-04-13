@@ -1,63 +1,38 @@
-import { Link } from "react-router-dom";
-import { NavStyle, NavLink } from "./style";
+import {
+  NavStyle,
+  StyledLink,
+  ImgStyle,
+  SocialMediaIconsStyle,
+  IconsStyle,
+} from "./style";
+import { PageDropdown } from "../Dropdown";
+import { dropdownServicesInfo, socialMediaIcon } from "../Navbar/constant";
+import { MDBIcon } from "mdb-react-ui-kit";
+import logoUrl from "../../assets/images/isckon-logo.png";
+import { dropdownHomeInfo } from "./constant";
 import { routes } from "../../routes";
-import { Dropdown } from "react-bootstrap";
 
 export const NavigationBar = () => {
   return (
-    <NavStyle>
-      <div className="container ">
-        <NavLink>
-          <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-            <div className="container-fluid">
-              <Link className="nav-link" to={routes.donation}>
-                Donation
-              </Link>
-              <Link to={routes.home}>Home</Link>
-              <Link className="link" to={routes.festival}>
-                Festival
-              </Link>
-              <Link className="link" to={routes.contact}>
-                Contact
-              </Link>
-              <Link className="link" to={routes.visitUs}>
-                Visit Us
-              </Link>
-              <Link className="link" to={routes.media}>
-                Media
-              </Link>
-              <Dropdown>
-                <Dropdown.Toggle variant="success">Services</Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item href={routes.lifeTimeMembership}>
-                    Life Time Membership
-                  </Dropdown.Item>
-                  <Dropdown.Item href={routes.iskconYouthForum}>
-                    Iskcon Youth Forum - IYF
-                  </Dropdown.Item>
-                  <Dropdown.Item href={routes.guestHouse}>
-                    Prabhupada Ashrya Guest House
-                  </Dropdown.Item>
-                  <Dropdown.Item href={routes.goushala}>
-                    Goverdhan Gaushala
-                  </Dropdown.Item>
-                  <Dropdown.Item href={routes.deityWorship}>
-                    Deity Worship
-                  </Dropdown.Item>
-                  <Dropdown.Item href={routes.devoteeKitchen}>
-                    Devotee Kitchen
-                  </Dropdown.Item>
-                  <Dropdown.Item href={routes.kirtanAtIskcon}>
-                    Kirtan At Iskcon
-                  </Dropdown.Item>
-                  <Dropdown.Item href={routes.bookDistribution}>
-                    Book Distribution
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </div>
-          </nav>
-        </NavLink>
+    <NavStyle className="navbar fixed-top">
+      <div className="container">
+        <PageDropdown items={dropdownHomeInfo} toggleTitle="ISKCON" />
+        <PageDropdown items={dropdownServicesInfo} toggleTitle="Services" />
+        <StyledLink to={routes.visitUs}>Visit Us</StyledLink>
+        <StyledLink to={routes.media}>Media</StyledLink>
+        <StyledLink to={routes.home}>
+          <ImgStyle src={logoUrl} alt="Logo" />
+        </StyledLink>
+        <StyledLink to={routes.donation}>Donate</StyledLink>
+        <StyledLink to={routes.festival}>Festival</StyledLink>
+        <StyledLink to={routes.contact}>Contact</StyledLink>
+        <SocialMediaIconsStyle>
+          {socialMediaIcon.map((item) => (
+            <IconsStyle key={item.name} href={item.href}>
+              <MDBIcon fab icon={item.icon} />
+            </IconsStyle>
+          ))}
+        </SocialMediaIconsStyle>
       </div>
     </NavStyle>
   );
