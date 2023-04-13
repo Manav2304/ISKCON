@@ -27,7 +27,7 @@ export const iskconYouthForum = [
 
   "This seva is spearheaded by H.G Adi Guru Das, for more details please contact on given details.",
 
-  "Contact No.: +91 XXXXX XXXXX, +91 XXXXX XXXXX",
+  "Contact No.: +91 99987 14977, +91 74051 60363",
 
-  "Email Address: abc@xyz.com",
+  "Email Address: abhishekmishra2@gmil.com",
 ];
