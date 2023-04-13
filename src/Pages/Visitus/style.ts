@@ -5,6 +5,8 @@ export const ServiceWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  margin-top: 70px;
+  margin-bottom: 20px;
 
   @media (max-width: 767px) {
     padding: 10px;
@@ -19,6 +21,11 @@ export const ServiceWrapper = styled.div`
   }
 `;
 
+export const Reviews = styled.div`
+  margin-top: 40px;
+  margin-bottom: 30px;
+`;
+
 export const TextWrapper = styled.div`
   color: #ad0d0d;
   font-family: "Times New Roman", Times, serif;
@@ -28,13 +35,12 @@ export const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
 `;
 
 export const Heading = styled.h1`
   text-align: center;
   color: #7e5959;
-  margin-top: 20px;
+  margin-top: 40px;
 `;
 
 export const TitleImage = styled.img`
@@ -75,8 +81,8 @@ export const Paragraph = styled.p`
 
   @media (max-width: 767px) {
     font-size: 16px;
-    padding-left: 0.5px;
-    padding-right: 0.5px;
+    padding-left: 1px;
+    padding-right: 1px;
   }
 
   @media (min-width: 768px) and (max-width: 991px) {

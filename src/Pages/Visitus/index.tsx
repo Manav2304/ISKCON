@@ -17,7 +17,7 @@ import {
   VisibleParagraph,
   HiddenParagraph,
 } from "./style";
-import { GlobalCarousel } from "../Home/GlobalCarousel";
+import { GlobalCarousel } from "./GlobalCarousel";
 
 export const VisitUs = () => {
   const [showMoreDakor, setShowMoreDakor] = useState(false);
