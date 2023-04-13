@@ -5,7 +5,7 @@ export const ServiceWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  margin-top: 60px;
+  margin-top: 70px;
   margin-bottom: 20px;
 
   @media (max-width: 767px) {
@@ -19,6 +19,11 @@ export const ServiceWrapper = styled.div`
   @media (min-width: 992px) {
     padding: 20px 80px;
   }
+`;
+
+export const Reviews = styled.div`
+  margin-top: 40px;
+  margin-bottom: 30px;
 `;
 
 export const TextWrapper = styled.div`
@@ -76,8 +81,8 @@ export const Paragraph = styled.p`
 
   @media (max-width: 767px) {
     font-size: 16px;
-    padding-left: 0.5px;
-    padding-right: 0.5px;
+    padding-left: 1px;
+    padding-right: 1px;
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
