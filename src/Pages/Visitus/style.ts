@@ -8,11 +8,6 @@ export const ServiceWrapper = styled.div`
   margin-bottom: 20px;
 `;
 
-export const Reviews = styled.div`
-  margin-top: 40px;
-  margin-bottom: 30px;
-`;
-
 export const TextWrapper = styled.div`
   color: #ad0d0d;
   font-family: "Times New Roman", Times, serif;
