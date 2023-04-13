@@ -8,7 +8,10 @@ import {
   ImageStyle,
   TextStyle,
   Image,
+  PageWrapperStyle,
+  CarouselStyle,
 } from "./style";
+import { PageCarousel } from "./PageCarousel";
 
 export const HomePage: React.FC = () => {
   return (
@@ -20,7 +23,7 @@ export const HomePage: React.FC = () => {
             <h1>{titleTile.title}</h1>
             <ImageTitle src={titleBaseUrl} alt="Title Image" />
           </HeadingStyle>
-          <GlobalCarousel images={titleTile.images} />
+          <PageCarousel images={titleTile.images} />
           <TextStyle>
             {titleTile.paragraphs.map((paragraph) => (
               <p>{paragraph}</p>
@@ -31,7 +34,7 @@ export const HomePage: React.FC = () => {
       {sections.map((section) => (
         <div>
           <HeadingStyle>
-            <h2>{section.title}</h2>
+            <h1>{section.title}</h1>
             <ImageTitle src={titleBaseUrl} alt="Title Image" />
           </HeadingStyle>
           <ImageStyle>

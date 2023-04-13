@@ -4,7 +4,8 @@ export const FestivalContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 80px;
-  margin: 50px;
+  margin: 20px auto;
+  padding: 20px;
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -18,17 +19,18 @@ export const FestivalContainer = styled.div`
 `;
 
 export const FestivalImage = styled.img`
-  width: 470px;
-  height: 300px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
 
-  @media (max-width: 768px) {
-    width: 100%;
-    height: 200px;
+  @media (min-width: 768px) {
+    width: 350px;
+    height: 250px;
   }
 
-  @media (max-width: 480px) {
-    height: 150px;
+  @media (min-width: 992px) {
+    width: 450px;
+    height: 300px;
   }
 `;
 
@@ -42,18 +44,18 @@ export const Heading2 = styled.h2`
   margin: 0;
   font-size: 2rem;
   font-weight: bold;
-  color: #333;
+  color: #7e5959;
 `;
 
 export const Paragraph1 = styled.p`
   margin: 0;
   font-size: 1rem;
-  color: #666;
+  color: #7e5959;
 `;
 
 export const Description = styled.p`
   font-size: 1rem;
-  color: #666;
+  color: #7e5959;
   margin: 10px;
 `;
 
@@ -91,11 +93,17 @@ export const TitleImage = styled.img`
   }
 `;
 
-export const ButtonStyle = styled.div`
-  color: transparent;
-  background-color: transparent;
+export const Button = styled.button`
+  background-color: #7e5959;
+  color: #0c090a;
+  font-size: 16px;
   border: none;
+  padding: 10px 20px;
   cursor: pointer;
-  font-size: 1rem;
-  margin-top: 10px;
+  border-radius: 5px;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 `;

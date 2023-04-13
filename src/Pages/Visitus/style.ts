@@ -34,6 +34,7 @@ export const ImageWrapper = styled.div`
 export const Heading = styled.h1`
   text-align: center;
   color: #7e5959;
+  margin-top: 20px;
 `;
 
 export const TitleImage = styled.img`
@@ -69,25 +70,25 @@ export const Paragraph = styled.p`
   font-size: 20px;
   line-height: 1.5;
   text-align: justify;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 2px;
+  padding-right: 2px;
 
   @media (max-width: 767px) {
     font-size: 16px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 0.5px;
+    padding-right: 0.5px;
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
     font-size: 18px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 4px;
+    padding-right: 4px;
   }
 
   @media (min-width: 992px) {
     font-size: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 `;
 
