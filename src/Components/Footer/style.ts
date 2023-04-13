@@ -17,11 +17,16 @@ export const Heading = styled.h6`
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 4px;
-  margin-left: 130px;
+  margin-left: 90px;
 
   @media only screen and (max-width: 768px) {
     padding-right: 130px;
     margin-top: -50px;
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 769px) {
+    text-align: center;
   }
 `;
 
@@ -49,6 +54,10 @@ export const ContactStyle = styled.div`
     margin-left: 20px;
     margin-top: 20px;
     margin-right: 20px;
+  }
+
+  @media only screen and (min-width: 769px) {
+    text-align: center;
   }
 `;
 
