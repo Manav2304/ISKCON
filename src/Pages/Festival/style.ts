@@ -44,18 +44,18 @@ export const Heading2 = styled.h2`
   margin: 0;
   font-size: 2rem;
   font-weight: bold;
-  color: #333;
+  color: #7e5959;
 `;
 
 export const Paragraph1 = styled.p`
   margin: 0;
   font-size: 1rem;
-  color: #666;
+  color: #7e5959;
 `;
 
 export const Description = styled.p`
   font-size: 1rem;
-  color: #666;
+  color: #7e5959;
   margin: 10px;
 `;
 
