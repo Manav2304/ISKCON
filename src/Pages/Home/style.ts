@@ -64,7 +64,21 @@ export const ImageTitle = styled.img`
 `;
 export const Reviews = styled.div`
   max-width: 1600px;
+  margin-top: 100px;
+
+  @media only screen and (max-width: 767px) {
+    margin-top: 80px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 90px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    margin-top: 100px;
+  }
 `;
+
 export const ImageStyle = styled.div`
   display: flex;
   justify-content: center;
@@ -213,5 +227,37 @@ export const PageStyleCarousel = styled(Carousel)`
     .carousel-indicators {
       height: 5px;
     }
+  }
+`;
+export const PageWrapperStyle = styled.div`
+  margin-top: 95px;
+`;
+export const CarouselStyle = styled.div`
+  padding: 50px;
+
+  @media only screen and (max-width: 767px) {
+    padding: 20px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 30px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+`;
+export const PageReviews = styled.div`
+  @media only screen and (max-width: 767px) {
+    margin-top: 5px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 7px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    margin-top: 9px;
   }
 `;

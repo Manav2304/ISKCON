@@ -8,6 +8,8 @@ import {
   ImageStyle,
   TextStyle,
   Image,
+  PageWrapperStyle,
+  CarouselStyle,
 } from "./style";
 import { PageCarousel } from "./PageCarousel";
 
