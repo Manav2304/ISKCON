@@ -27,8 +27,23 @@ export const Heading = styled.h6`
 
 export const ContactStyle = styled.div`
   margin-top: 80px;
-  margin-left: 120px;
+  margin-left: 50px;
   float: right;
+
+  div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  i {
+    margin-right: 4px;
+  }
+
+  span {
+    margin-left: 10px;
+    text-align: left;
+  }
 
   @media only screen and (max-width: 768px) {
     margin-left: 20px;
@@ -51,7 +66,7 @@ export const TimeStyle = styled.div`
   text-align: right;
   color: #fff;
   margin-top: 30px;
-  margin-right: 130px;
+  margin-right: 50px;
 
   @media only screen and (max-width: 768px) {
     text-align: center;
@@ -106,9 +121,4 @@ export const FooterLink = styled.a`
   &:hover {
     text-decoration: underline;
   }
-`;
-
-export const TimingHeading = styled.h3`
-  text-align: center;
-  color: #fff;
 `;
