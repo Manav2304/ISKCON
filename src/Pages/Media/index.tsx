@@ -6,49 +6,49 @@ import {
   Heading,
   ImageWrapper,
   TitleImage,
-  TitleName,
 } from "./style";
-import { darshanImages, sringarImages, opts } from "./constant";
-import Carousel from "./Carousel";
-import AudioContent from "./Audio";
+import {
+  darshanImages,
+  sringarImages,
+  SringarTitle,
+  darshanTitle,
+  opts,
+} from "./constant";
+import { AudioContent } from "./Audio";
 import titleBaseImg from "../../assets/images/title-base.png";
 import YouTube from "react-youtube";
-import { PageWrapperStyle } from "../Home/style";
+import { MediaCarousel } from "./MediaCarousel";
 
 export const Media: React.FC = () => {
   return (
     <>
-      <PageWrapperStyle>
-        <Heading> Daily Darshan </Heading>
+      <Heading> Daily Darshan </Heading>
+      <ImageWrapper>
+        <TitleImage src={titleBaseImg} alt="TitleBase" />
+      </ImageWrapper>
+      <CarouselWrapper>
+        <MediaCarousel images={sringarImages} title={SringarTitle} />
+        <MediaCarousel images={darshanImages} title={darshanTitle} />
+      </CarouselWrapper>
+      <>
+        <Heading> Lectures </Heading>
         <ImageWrapper>
           <TitleImage src={titleBaseImg} alt="TitleBase" />
         </ImageWrapper>
         <PageWrapper>
-          <CarouselWrapper>
-            <Carousel images={sringarImages} />
-            <TitleName>Yesterday's Darshan </TitleName>
-          </CarouselWrapper>
-          <CarouselWrapper>
-            <Carousel images={darshanImages} />
-            <TitleName>Today's Darshan </TitleName>
-          </CarouselWrapper>
+          <YouTubeWrapper>
+            <YouTube videoId="R3tNVAtzaAw" opts={opts} />
+          </YouTubeWrapper>
+          <YouTubeWrapper>
+            <YouTube videoId="Q9TUIuRVc4I" opts={opts} />
+          </YouTubeWrapper>
         </PageWrapper>
         <>
-          <Heading> Lectures </Heading>
-          <ImageWrapper>
-            <TitleImage src={titleBaseImg} alt="TitleBase" />
-          </ImageWrapper>
           <PageWrapper>
-            <YouTubeWrapper>
-              <YouTube videoId="R3tNVAtzaAw" opts={opts} />
-            </YouTubeWrapper>
-            <YouTubeWrapper>
-              <YouTube videoId="Q9TUIuRVc4I" opts={opts} />
-            </YouTubeWrapper>
             <AudioContent />
           </PageWrapper>
         </>
-      </PageWrapperStyle>
+      </>
     </>
   );
 };
