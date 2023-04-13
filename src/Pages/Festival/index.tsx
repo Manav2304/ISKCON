@@ -1,10 +1,9 @@
 import React from "react";
 import { festivals } from "./constant";
 import { FestivalCard } from "./FestivalCard";
-import { FestivalContainer, Heading1, ImageDiv, TitleImage } from "./style";
+import { FestivalContainer, HeadingStyle, ImageTitle } from "./style";
 import { Festival } from "./types";
 import titleBaseImg from "../../assets/images/title-base.png";
-import { HeadingStyle, ImageTitle } from "../Home/style";
 
 export const FestivalPage = () => {
   return (

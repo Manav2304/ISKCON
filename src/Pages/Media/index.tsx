@@ -22,7 +22,7 @@ import { MediaCarousel } from "./MediaCarousel";
 export const Media: React.FC = () => {
   return (
     <>
-      <Heading> Daily Darshan </Heading>
+      <Heading>Daily Darshan</Heading>
       <ImageWrapper>
         <TitleImage src={titleBaseImg} alt="TitleBase" />
       </ImageWrapper>
@@ -30,25 +30,21 @@ export const Media: React.FC = () => {
         <MediaCarousel images={sringarImages} title={SringarTitle} />
         <MediaCarousel images={darshanImages} title={darshanTitle} />
       </CarouselWrapper>
-      <>
-        <Heading> Lectures </Heading>
-        <ImageWrapper>
-          <TitleImage src={titleBaseImg} alt="TitleBase" />
-        </ImageWrapper>
-        <PageWrapper>
-          <YouTubeWrapper>
-            <YouTube videoId="R3tNVAtzaAw" opts={opts} />
-          </YouTubeWrapper>
-          <YouTubeWrapper>
-            <YouTube videoId="Q9TUIuRVc4I" opts={opts} />
-          </YouTubeWrapper>
-        </PageWrapper>
-        <>
-          <PageWrapper>
-            <AudioContent />
-          </PageWrapper>
-        </>
-      </>
+      <Heading>Lectures</Heading>
+      <ImageWrapper>
+        <TitleImage src={titleBaseImg} alt="TitleBase" />
+      </ImageWrapper>
+      <PageWrapper>
+        <YouTubeWrapper>
+          <YouTube videoId="R3tNVAtzaAw" opts={opts} />
+        </YouTubeWrapper>
+        <YouTubeWrapper>
+          <YouTube videoId="Q9TUIuRVc4I" opts={opts} />
+        </YouTubeWrapper>
+      </PageWrapper>
+      <PageWrapper>
+        <AudioContent />
+      </PageWrapper>
     </>
   );
 };

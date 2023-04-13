@@ -1,12 +1,10 @@
 import {
   Wrapper,
-  Title,
   Table,
   Paragraph,
-  ImageWrapper,
-  Image,
   TableStyle,
-  Heading,
+  HeadingStyle,
+  ImageTitle,
 } from "./style";
 import {
   yesBankAccountInfo,
@@ -15,7 +13,7 @@ import {
 } from "./constant";
 import { CopiedTableRow } from "./CopiedTableRow";
 import titleBaseImg from "../../assets/images/title-base.png";
-import { HeadingStyle, ImageTitle } from "../Home/style";
+// import { HeadingStyle, ImageTitle } from "../Home/style";
 
 export const DonationPage = () => {
   return (

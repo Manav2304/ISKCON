@@ -43,34 +43,6 @@ export const Paragraph = styled.div`
   }
 `;
 
-export const Title = styled.h1`
-  font-size: 3rem;
-  color: #7e5959;
-  font-family: "Times New Roman", Times, serif;
-  margin-top: 2rem;
-`;
-
-export const ImageWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const Image = styled.img`
-  width: 450px;
-  height: auto;
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  @media screen and (min-width: 769px) {
-    width: 60%;
-    max-width: 50%;
-  }
-`;
-
 export const TableHeader = styled.th`
   border: 1px solid #ddd;
   padding: 0.5rem;
@@ -113,10 +85,43 @@ export const TableStyle = styled.div`
   margin: 1px 50px 10px;
 `;
 
-export const Heading = styled.h1`
-  font-size: 2rem;
+export const HeadingStyle = styled.div`
   font-family: "Times New Roman", Times, serif;
-  align-content: center;
+  color: #7e5959;
   text-align: center;
-  font-style: bold;
+  margin-top: 80px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    font-size: 2rem;
+    padding: 40px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 3rem;
+    padding: 60px;
+  }
+`;
+export const ImageTitle = styled.img`
+  width: 100%;
+  max-width: 400px;
+
+  @media only screen and (max-width: 768px) {
+    width: 70%;
+    max-width: 200px;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    width: 70%;
+    max-width: 300px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 100%;
+    max-width: 400px;
+  }
 `;

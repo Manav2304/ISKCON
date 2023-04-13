@@ -16,7 +16,7 @@ export const NavigationBar = () => {
   return (
     <NavStyle className="navbar fixed-top">
       <div className="container">
-        <PageDropdown items={dropdownHomeInfo} toggleTitle="ISKCON" />
+        <PageDropdown items={dropdownHomeInfo} toggleTitle="I" />
         <PageDropdown items={dropdownServicesInfo} toggleTitle="Services" />
         <StyledLink to={routes.visitUs}>Visit Us</StyledLink>
         <StyledLink to={routes.media}>Media</StyledLink>
@@ -28,7 +28,7 @@ export const NavigationBar = () => {
         <StyledLink to={routes.contact}>Contact</StyledLink>
         <SocialMediaIconsStyle>
           {socialMediaIcon.map((item) => (
-            <IconsStyle key={item.name} href={item.href}>
+            <IconsStyle key={item.name} href={item.href} target="_blank">
               <MDBIcon fab icon={item.icon} />
             </IconsStyle>
           ))}
