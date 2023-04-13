@@ -85,8 +85,26 @@ export const ImageSlide = styled.img`
 `;
 
 export const Paragraph = styled.p`
-  font-size: 20px;
-  line-height: 1.5;
   text-align: justify;
-  padding: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  color: #ad0d0d;
+  font-family: "Times New Roman", Times, serif;
+
+  @media only screen and (max-width: 768px) {
+    margin: 20px;
+    font-size: 0.8rem;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    margin: 25px;
+    font-size: 1rem;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 1.2rem;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 `;
