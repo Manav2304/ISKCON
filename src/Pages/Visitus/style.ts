@@ -5,6 +5,8 @@ export const ServiceWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  margin-top: 60px;
+  margin-bottom: 20px;
 
   @media (max-width: 767px) {
     padding: 10px;
@@ -28,13 +30,12 @@ export const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
 `;
 
 export const Heading = styled.h1`
   text-align: center;
   color: #7e5959;
-  margin-top: 20px;
+  margin-top: 40px;
 `;
 
 export const TitleImage = styled.img`
