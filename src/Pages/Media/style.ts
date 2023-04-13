@@ -1,6 +1,22 @@
 import { Carousel } from "react-bootstrap";
 import styled from "styled-components";
 
+export const ServiceWrapper = styled.div`
+  padding-top: 100px;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 80px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding-top: 80px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 100px;
+  }
+`;
+
 export const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
