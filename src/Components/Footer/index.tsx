@@ -14,6 +14,9 @@ import {
   TermsHeading,
   Heading,
   TermsTitle,
+  ContactDiv,
+  ContactIcon,
+  ContactText,
 } from "./style";
 import { contactInfos, schedules } from "./constant";
 import { Link } from "react-router-dom";
@@ -49,10 +52,10 @@ export const Footer = () => {
               <MDBCol>
                 <ContactStyle>
                   {contactInfos.map((info) => (
-                    <div key={info.text}>
-                      <i className={`fa fa-${info.icon} `} />
-                      <span>{info.text}</span>
-                    </div>
+                    <ContactDiv key={info.text}>
+                      <ContactIcon className={`fa fa-${info.icon} `} />
+                      <ContactText>{info.text}</ContactText>
+                    </ContactDiv>
                   ))}
                 </ContactStyle>
               </MDBCol>
