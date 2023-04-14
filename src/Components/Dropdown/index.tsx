@@ -27,6 +27,7 @@ export const PageDropdown: React.FC<DropdownProps> = ({
   const handleItemClick = (path: string) => {
     window.scrollTo(0, 0);
     navigate(path);
+    handleMouseOut();
   };
 
   const handleMouseOver = () => {
@@ -40,7 +41,7 @@ export const PageDropdown: React.FC<DropdownProps> = ({
   return (
     <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
       <TransparentDropdown>
-        <Dropdown show={isHovered}>
+        <Dropdown show={isHovered} onSelect={handleMouseOut}>
           <DropdownToggleWrapper>
             <Dropdown.Toggle>{toggleTitle}</Dropdown.Toggle>
           </DropdownToggleWrapper>
