@@ -75,7 +75,7 @@ export const MapFrame = styled.iframe`
 
   @media only screen and (max-width: 768px) {
     font-size: 1.5rem;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 50px;
     padding-left: 50px;
     padding-right: 50px;
