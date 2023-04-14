@@ -127,6 +127,7 @@ export const Heading = styled.div`
   font-family: "Times New Roman", Times, serif;
   color: #7e5959;
   text-align: center;
+  margin-top: 110px;
 
   @media only screen and (max-width: 768px) {
     font-size: 1.5rem;

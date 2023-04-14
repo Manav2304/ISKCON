@@ -4,26 +4,8 @@ export const ServiceWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  margin-top: 70px;
+  margin-top: 80px;
   margin-bottom: 20px;
-
-  @media (max-width: 767px) {
-    padding: 10px;
-  }
-
-  @media (min-width: 768px) and (max-width: 991px) {
-    padding: 20px 40px;
-  }
-
-  @media (min-width: 992px) {
-    padding: 20px 80px;
-  }
-`;
-
-export const Reviews = styled.div`
-  margin-top: 40px;
-  margin-bottom: 30px;
 `;
 
 export const TextWrapper = styled.div`
@@ -46,6 +28,7 @@ export const Heading = styled.h1`
 export const TitleImage = styled.img`
   width: 500px;
   height: auto;
+  margin-bottom: 20px;
 
   @media (max-width: 767px) {
     width: 100%;
@@ -73,28 +56,25 @@ export const ImageSlide = styled.img`
 `;
 
 export const Paragraph = styled.p`
-  font-size: 20px;
-  line-height: 1.5;
   text-align: justify;
-  padding-left: 2px;
-  padding-right: 2px;
+  margin: 40px 50px 50px;
+  color: #ad0d0d;
+  font-family: "Times New Roman", Times, serif;
 
-  @media (max-width: 767px) {
-    font-size: 16px;
-    padding-left: 1px;
-    padding-right: 1px;
+  @media only screen and (max-width: 768px) {
+    margin: 20px;
+    font-size: 0.8rem;
   }
 
-  @media (min-width: 768px) and (max-width: 991px) {
-    font-size: 18px;
-    padding-left: 4px;
-    padding-right: 4px;
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    margin: 25px;
+    font-size: 1rem;
   }
 
-  @media (min-width: 992px) {
-    font-size: 20px;
-    padding-left: 8px;
-    padding-right: 8px;
+  @media only screen and (min-width: 1200px) {
+    font-size: 1.2rem;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 `;
 
