@@ -1,18 +1,17 @@
+import React from "react";
 import { festivals } from "./constant";
 import { FestivalCard } from "./FestivalCard";
-import { FestivalContainer, Heading1, ImageDiv, TitleImage } from "./style";
+import { FestivalContainer, HeadingStyle, ImageTitle } from "./style";
 import { Festival } from "./types";
 import titleBaseImg from "../../assets/images/title-base.png";
 
 export const FestivalPage = () => {
   return (
     <>
-      <Heading1>
+      <HeadingStyle>
         <h1>Festival</h1>
-      </Heading1>
-      <ImageDiv>
-        <TitleImage src={titleBaseImg} alt="titleBaseImg" />
-      </ImageDiv>
+        <ImageTitle src={titleBaseImg} alt="Title Image" />
+      </HeadingStyle>
       <FestivalContainer>
         {festivals.map((festival: Festival) => (
           <FestivalCard key={festival.name} festival={festival} />

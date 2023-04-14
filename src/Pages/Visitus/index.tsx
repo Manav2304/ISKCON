@@ -1,20 +1,24 @@
 import React, { useState } from "react";
-import { dakorImage, goushalaImage, dakorInfo, goushalaInfo } from "./constant";
+import {
+  dakorImages,
+  goushalImages,
+  dakorInfo,
+  goushalaInfo,
+} from "./constant";
 import titleBaseImg from "../../assets/images/title-base.png";
 import {
   ServiceWrapper,
   TextWrapper,
-  Heading,
   Paragraph,
   Button,
-  ImageWrapper,
-  TitleImage,
   VisibleParagraph,
   HiddenParagraph,
+  HeadingStyle,
+  ImageTitle,
 } from "./style";
-import Carousel from "./Carousel";
+import { PageCarousel } from "../Home/PageCarousel";
 
-const VisitUs = () => {
+export const VisitUs = () => {
   const [showMoreDakor, setShowMoreDakor] = useState(false);
   const [showMoreGoushala, setShowMoreGoushala] = useState(false);
   const toggleShowMoreDakor = () => setShowMoreDakor(!showMoreDakor);
@@ -23,11 +27,11 @@ const VisitUs = () => {
   return (
     <ServiceWrapper>
       <TextWrapper>
-        <Heading>Dakor Dham</Heading>
-        <ImageWrapper>
-          <TitleImage src={titleBaseImg} alt="TitleBase" />
-        </ImageWrapper>
-        <Carousel images={dakorImage} />
+        <HeadingStyle>
+          <h1>Dakor Dham</h1>
+          <ImageTitle src={titleBaseImg} alt="Title Image" />
+        </HeadingStyle>
+        <PageCarousel images={dakorImages} />
         <Paragraph>
           {dakorInfo.map((paragraph) =>
             showMoreDakor ||
@@ -39,14 +43,16 @@ const VisitUs = () => {
             ),
           )}
         </Paragraph>
-        <Button onClick={toggleShowMoreDakor}>
-          {showMoreDakor ? "Read less" : "Read more"}
-        </Button>
-        <Heading>Goverdhan Goushala</Heading>
-        <ImageWrapper>
-          <TitleImage src={titleBaseImg} alt="TitleBase" />
-        </ImageWrapper>
-        <Carousel images={goushalaImage} />
+        <Paragraph>
+          <Button onClick={toggleShowMoreDakor}>
+            {showMoreDakor ? "Read less" : "Read more"}
+          </Button>
+        </Paragraph>
+        <HeadingStyle>
+          <h1>Goverdhan Goushala</h1>
+          <ImageTitle src={titleBaseImg} alt="Title Image" />
+        </HeadingStyle>
+        <PageCarousel images={goushalImages} />
         <Paragraph>
           {goushalaInfo.map((paragraph) =>
             showMoreGoushala ||
@@ -58,12 +64,12 @@ const VisitUs = () => {
             ),
           )}
         </Paragraph>
-        <Button onClick={toggleShowMoreGoushala}>
-          {showMoreGoushala ? "Read less" : "Read more"}
-        </Button>
+        <Paragraph>
+          <Button onClick={toggleShowMoreGoushala}>
+            {showMoreGoushala ? "Read less" : "Read more"}
+          </Button>
+        </Paragraph>
       </TextWrapper>
     </ServiceWrapper>
   );
 };
-
-export default VisitUs;

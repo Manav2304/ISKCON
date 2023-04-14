@@ -4,19 +4,8 @@ export const ServiceWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-
-  @media (max-width: 767px) {
-    padding: 10px;
-  }
-
-  @media (min-width: 768px) and (max-width: 991px) {
-    padding: 20px 40px;
-  }
-
-  @media (min-width: 992px) {
-    padding: 20px 80px;
-  }
+  margin-top: 80px;
+  margin-bottom: 20px;
 `;
 
 export const TextWrapper = styled.div`
@@ -24,28 +13,44 @@ export const TextWrapper = styled.div`
   font-family: "Times New Roman", Times, serif;
 `;
 
-export const ImageWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-`;
-
-export const Heading = styled.h1`
-  text-align: center;
+export const HeadingStyle = styled.div`
+  font-family: "Times New Roman", Times, serif;
   color: #7e5959;
-`;
+  text-align: center;
 
-export const TitleImage = styled.img`
-  width: 500px;
-  height: auto;
-
-  @media (max-width: 767px) {
-    width: 100%;
+  @media only screen and (max-width: 768px) {
+    font-size: 1rem;
+    padding: 20px;
   }
 
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    font-size: 1.5rem;
+    padding: 40px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 2rem;
+    padding: 50px;
+  }
+`;
+
+export const ImageTitle = styled.img`
+  width: 100%;
+  max-width: 400px;
+
+  @media only screen and (max-width: 768px) {
     width: 80%;
+    max-width: 500px;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    width: 70%;
+    max-width: 300px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 100%;
+    max-width: 400px;
   }
 `;
 
@@ -66,24 +71,25 @@ export const ImageSlide = styled.img`
 `;
 
 export const Paragraph = styled.p`
-  font-size: 20px;
-  line-height: 1.5;
   text-align: justify;
-  padding: 0px 10px 0px;
+  margin: 40px 50px 50px;
+  color: #ad0d0d;
+  font-family: "Times New Roman", Times, serif;
 
-  @media (max-width: 767px) {
-    font-size: 16px;
-    padding: 0px 5px 0px;
+  @media only screen and (max-width: 768px) {
+    margin: 20px;
+    font-size: 0.8rem;
   }
 
-  @media (min-width: 768px) and (max-width: 991px) {
-    font-size: 18px;
-    padding: 0px 20px 0px;
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    margin: 25px;
+    font-size: 1rem;
   }
 
-  @media (min-width: 992px) {
-    font-size: 20px;
-    padding: 0px 30px 0px;
+  @media only screen and (min-width: 1200px) {
+    font-size: 1.2rem;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 `;
 

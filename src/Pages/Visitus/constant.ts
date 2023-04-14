@@ -1,4 +1,7 @@
-import dakor from "../../assets/images/dakor-image.jpg";
+import dakor1 from "../../assets/images/dakor-image.jpg";
+import dakor2 from "../../assets/images/dakor-image2.jpg";
+import dakor3 from "../../assets/images/dakor-image 3.jpg";
+import dakor4 from "../../assets/images/dakor-image4.jpg";
 import goushala1 from "../../assets/images/goushala1.jpg";
 import goushala2 from "../../assets/images/goushala2.jpg";
 import goushala3 from "../../assets/images/goushala3.jpg";
@@ -6,16 +9,51 @@ import goushala4 from "../../assets/images/goushala4.jpg";
 import goushala5 from "../../assets/images/goushala5.jpg";
 import goushala6 from "../../assets/images/goushala6.jpg";
 
-export const dakorImage = [dakor];
-export const goushalaImage = [
-  goushala1,
-  goushala2,
-  goushala3,
-  goushala4,
-  goushala5,
-  goushala6,
+export const dakorImages = [
+  {
+    id: 1,
+    image: dakor1,
+  },
+  {
+    id: 2,
+    image: dakor2,
+  },
+  {
+    id: 3,
+    image: dakor3,
+  },
+  {
+    id: 4,
+    image: dakor4,
+  },
 ];
 
+export const goushalImages = [
+  {
+    id: 1,
+    image: goushala1,
+  },
+  {
+    id: 2,
+    image: goushala2,
+  },
+  {
+    id: 3,
+    image: goushala3,
+  },
+  {
+    id: 4,
+    image: goushala4,
+  },
+  {
+    id: 5,
+    image: goushala5,
+  },
+  {
+    id: 6,
+    image: goushala6,
+  },
+];
 export const dakorInfo = [
   "At the heart of Dakor lies the Ranchhodraiji Temple, a sacred place where Lord Krishna is worshipped in the form of Ranchhodrai. The temple, with its grand architecture and intricate carvings, is a stunning masterpiece that leaves visitors awestruck.",
 
@@ -31,7 +69,7 @@ export const dakorInfo = [
 export const goushalaInfo = [
   "The Goverdhan gaushala at ISKCON is a haven for cows, providing them with a safe and loving environment where they can thrive and live out their lives in peace. Located on the grounds of the temple, the gaushala is home to a herd of cows who are treated with the utmost care and respect.",
 
-  "We accept these cows and our team led by Gau-premi H.G Laxmikant Das render selfless service to gau mata.",
+  "We are currently serving more than 110 Deshi Cows wholeheartedly, where they are brought from surrounding areas sometimes in critical need for care, sometimes being abandoned because they cannot be milked further, and sometimes the caretakers leaving then with us because they cannot keep them anymore",
 
   "Visitors to the gaushala are immediately struck by the serene and peaceful atmosphere, which is filled with the gentle sound of mooing cows and the rustling of leaves in the breeze. The cows roam freely throughout the spacious grounds, grazing on fresh grass and enjoying the sunshine.",
 
