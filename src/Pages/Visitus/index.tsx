@@ -9,13 +9,12 @@ import titleBaseImg from "../../assets/images/title-base.png";
 import {
   ServiceWrapper,
   TextWrapper,
-  Heading,
   Paragraph,
   Button,
-  ImageWrapper,
-  TitleImage,
   VisibleParagraph,
   HiddenParagraph,
+  HeadingStyle,
+  ImageTitle,
 } from "./style";
 import { PageCarousel } from "../Home/PageCarousel";
 
@@ -28,10 +27,10 @@ export const VisitUs = () => {
   return (
     <ServiceWrapper>
       <TextWrapper>
-        <Heading>Dakor Dham</Heading>
-        <ImageWrapper>
-          <TitleImage src={titleBaseImg} alt="TitleBase" />
-        </ImageWrapper>
+        <HeadingStyle>
+          <h1>Dakor Dham</h1>
+          <ImageTitle src={titleBaseImg} alt="Title Image" />
+        </HeadingStyle>
         <PageCarousel images={dakorImages} />
         <Paragraph>
           {dakorInfo.map((paragraph) =>
@@ -49,10 +48,10 @@ export const VisitUs = () => {
             {showMoreDakor ? "Read less" : "Read more"}
           </Button>
         </Paragraph>
-        <Heading>Goverdhan Goushala</Heading>
-        <ImageWrapper>
-          <TitleImage src={titleBaseImg} alt="TitleBase" />
-        </ImageWrapper>
+        <HeadingStyle>
+          <h1>Goverdhan Goushala</h1>
+          <ImageTitle src={titleBaseImg} alt="Title Image" />
+        </HeadingStyle>
         <PageCarousel images={goushalImages} />
         <Paragraph>
           {goushalaInfo.map((paragraph) =>
