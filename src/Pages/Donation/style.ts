@@ -89,11 +89,11 @@ export const HeadingStyle = styled.div`
   font-family: "Times New Roman", Times, serif;
   color: #7e5959;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 50px;
 
   @media only screen and (max-width: 768px) {
-    font-size: 1.5rem;
-    padding: 20px;
+    font-size: 0.5rem;
+    padding-top: 20px;
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1199px) {
@@ -102,7 +102,7 @@ export const HeadingStyle = styled.div`
   }
 
   @media only screen and (min-width: 1200px) {
-    font-size: 3rem;
+    font-size: 1.5rem;
     padding: 60px;
   }
 `;
@@ -112,7 +112,7 @@ export const ImageTitle = styled.img`
 
   @media only screen and (max-width: 768px) {
     width: 70%;
-    max-width: 200px;
+    max-width: 400px;
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1199px) {
