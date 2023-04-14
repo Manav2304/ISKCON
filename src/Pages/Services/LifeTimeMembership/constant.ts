@@ -10,8 +10,6 @@ export const lifeTimeMembershipImages = [
     id: 2,
     image: lifeTimeMembership2,
   },
-  // lifeTimeMembership1,
-  // lifeTimeMembership2,
 ];
 
 export const lifeTimeMembership = [

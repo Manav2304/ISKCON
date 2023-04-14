@@ -20,10 +20,6 @@ export const devoteeKitchenImages = [
     id: 4,
     image: devoteeKitchen4,
   },
-  // devoteeKitchen1,
-  // devoteeKitchen2,
-  // devoteeKitchen3,
-  // devoteeKitchen4,
 ];
 
 export const devoteeKitchen = [

@@ -35,13 +35,6 @@ export const kirtanAtIskconImages = [
     id: 7,
     image: kirtanAtIskcon7,
   },
-  // kirtanAtIskcon1,
-  // kirtanAtIskcon2,
-  // kirtanAtIskcon3,
-  // kirtanAtIskcon4,
-  // kirtanAtIskcon5,
-  // kirtanAtIskcon6,
-  // kirtanAtIskcon7,
 ];
 
 export const kirtanAtIskcon = [

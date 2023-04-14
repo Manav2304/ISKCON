@@ -30,12 +30,6 @@ export const iskconYouthForumImages = [
     id: 6,
     image: iskconYouthForum6,
   },
-  // iskconYouthForum1,
-  // iskconYouthForum2,
-  // iskconYouthForum3,
-  // iskconYouthForum4,
-  // iskconYouthForum5,
-  // iskconYouthForum6,
 ];
 
 export const iskconYouthForum = [

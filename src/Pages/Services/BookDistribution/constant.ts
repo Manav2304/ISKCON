@@ -45,15 +45,6 @@ export const bookDistributionImages = [
     id: 9,
     image: bookDistribution9,
   },
-  // bookDistribution1,
-  // bookDistribution2,
-  // bookDistribution3,
-  // bookDistribution4,
-  // bookDistribution5,
-  // bookDistribution6,
-  // bookDistribution7,
-  // bookDistribution8,
-  // bookDistribution9,
 ];
 
 export const bookDistribution = [

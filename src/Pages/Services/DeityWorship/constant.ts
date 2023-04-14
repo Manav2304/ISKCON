@@ -25,11 +25,6 @@ export const deityWorshipImages = [
     id: 5,
     image: deityWorship5,
   },
-  // deityWorship1,
-  // deityWorship2,
-  // deityWorship3,
-  // deityWorship4,
-  // deityWorship5,
 ];
 
 export const deityWorship = [

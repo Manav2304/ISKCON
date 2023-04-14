@@ -30,12 +30,6 @@ export const goverdhangoushalaImages = [
     id: 6,
     image: goushala6,
   },
-  // goushala1,
-  // goushala2,
-  // goushala3,
-  // goushala4,
-  // goushala5,
-  // goushala6,
 ];
 
 export const goushala = [
