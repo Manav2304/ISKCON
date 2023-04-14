@@ -35,21 +35,6 @@ export const ContactStyle = styled.div`
   margin-left: 50px;
   float: right;
 
-  // div {
-  //   display: flex;
-  //   align-items: center;
-  //   margin-bottom: 10px;
-  // }
-
-  // i {
-  //   margin-right: 4px;
-  // }
-
-  // span {
-  //   margin-left: 10px;
-  //   text-align: left;
-  // }
-
   @media only screen and (max-width: 768px) {
     margin-left: 20px;
     margin-top: 20px;
