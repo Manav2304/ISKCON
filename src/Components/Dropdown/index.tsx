@@ -25,6 +25,7 @@ export const PageDropdown: React.FC<DropdownProps> = ({
   const [isHovered, setIsHovered] = useState(false);
 
   const handleItemClick = (path: string) => {
+    window.scrollTo(0, 0);
     navigate(path);
   };
 
