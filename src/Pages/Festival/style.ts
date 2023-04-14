@@ -73,6 +73,7 @@ export const Button = styled.button`
     padding: 8px 16px;
   }
 `;
+
 export const HeadingStyle = styled.div`
   font-family: "Times New Roman", Times, serif;
   color: #7e5959;
@@ -80,8 +81,8 @@ export const HeadingStyle = styled.div`
   margin-top: 110px;
 
   @media only screen and (max-width: 768px) {
-    font-size: 1.5rem;
-    padding: 20px;
+    font-size: 0.5rem;
+    padding-top: 5px;
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1199px) {
@@ -90,10 +91,11 @@ export const HeadingStyle = styled.div`
   }
 
   @media only screen and (min-width: 1200px) {
-    font-size: 3rem;
-    padding: 60px;
+    font-size: 1.5rem;
+    padding-top: 40px;
   }
 `;
+
 export const ImageTitle = styled.img`
   width: 100%;
   max-width: 400px;
@@ -111,20 +113,5 @@ export const ImageTitle = styled.img`
   @media only screen and (min-width: 1200px) {
     width: 100%;
     max-width: 400px;
-  }
-`;
-
-export const Button = styled.button`
-  background-color: #7e5959;
-  color: #0c090a;
-  font-size: 16px;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-
-  @media (max-width: 767px) {
-    font-size: 14px;
-    padding: 8px 16px;
   }
 `;
