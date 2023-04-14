@@ -27,23 +27,47 @@ export const ImageWrapper = styled.div`
 `;
 
 export const TitleImage = styled.img`
-  width: 500px;
+  width: 90%;
+  max-width: 600px;
   height: auto;
   margin-bottom: 10px;
 
-  @media (max-width: 767px) {
-    width: 100%;
+  @media only screen and (max-width: 768px) {
+    width: 70%;
+    max-width: 400px;
   }
 
-  @media (min-width: 768px) and (max-width: 991px) {
-    width: 80%;
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    width: 70%;
+    max-width: 300px;
   }
+
+  /* @media only screen and (min-width: 1200px) {
+    width: 100%;
+    max-width: 400px;
+  } */
 `;
 
 export const Heading = styled.h1`
   text-align: center;
   color: #7e5959;
   margin-top: 90px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.5rem;
+    padding-top: 20px;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    font-size: 2rem;
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 3rem;
+    padding-top: 60px;
+  }
 `;
 
 export const Paragraph = styled.p`
