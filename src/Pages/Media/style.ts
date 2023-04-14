@@ -85,6 +85,8 @@ export const YouTubeWrapper = styled.div`
   @media (max-width: 767px) {
     margin-left: 20px;
     margin-right: 20px;
+    max-width: 500px;
+    width: 100%;
     grid-template-rows: repeat(2);
   }
 
