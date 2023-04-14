@@ -12,30 +12,43 @@ export const TextWrapper = styled.div`
   color: #ad0d0d;
   font-family: "Times New Roman", Times, serif;
 `;
-
-export const ImageWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const Heading = styled.h1`
-  text-align: center;
+export const HeadingStyle = styled.div`
+  font-family: "Times New Roman", Times, serif;
   color: #7e5959;
-  margin-top: 40px;
-`;
+  text-align: center;
 
-export const TitleImage = styled.img`
-  width: 500px;
-  height: auto;
-  margin-bottom: 20px;
-
-  @media (max-width: 767px) {
-    width: 100%;
+  @media only screen and (max-width: 768px) {
+    font-size: 1rem;
+    padding: 20px;
   }
 
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    font-size: 1.5rem;
+    padding: 40px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 2rem;
+    padding: 50px;
+  }
+`;
+export const ImageTitle = styled.img`
+  width: 100%;
+  max-width: 500px;
+
+  @media only screen and (max-width: 768px) {
     width: 80%;
+    max-width: 500px;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    width: 70%;
+    max-width: 300px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 100%;
+    max-width: 500px;
   }
 `;
 
