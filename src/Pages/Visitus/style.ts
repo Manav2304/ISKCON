@@ -36,7 +36,7 @@ export const HeadingStyle = styled.div`
 
 export const ImageTitle = styled.img`
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
 
   @media only screen and (max-width: 768px) {
     width: 80%;
@@ -50,7 +50,7 @@ export const ImageTitle = styled.img`
 
   @media only screen and (min-width: 1200px) {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
   }
 `;
 
