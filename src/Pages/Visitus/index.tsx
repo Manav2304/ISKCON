@@ -17,7 +17,7 @@ import {
   VisibleParagraph,
   HiddenParagraph,
 } from "./style";
-import { GlobalCarousel } from "./GlobalCarousel";
+import { PageCarousel } from "../Home/PageCarousel";
 
 export const VisitUs = () => {
   const [showMoreDakor, setShowMoreDakor] = useState(false);
@@ -32,7 +32,7 @@ export const VisitUs = () => {
         <ImageWrapper>
           <TitleImage src={titleBaseImg} alt="TitleBase" />
         </ImageWrapper>
-        <GlobalCarousel images={dakorImages} />
+        <PageCarousel images={dakorImages} />
         <Paragraph>
           {dakorInfo.map((paragraph) =>
             showMoreDakor ||
@@ -44,14 +44,16 @@ export const VisitUs = () => {
             ),
           )}
         </Paragraph>
-        <Button onClick={toggleShowMoreDakor}>
-          {showMoreDakor ? "Read less" : "Read more"}
-        </Button>
+        <Paragraph>
+          <Button onClick={toggleShowMoreDakor}>
+            {showMoreDakor ? "Read less" : "Read more"}
+          </Button>
+        </Paragraph>
         <Heading>Goverdhan Goushala</Heading>
         <ImageWrapper>
           <TitleImage src={titleBaseImg} alt="TitleBase" />
         </ImageWrapper>
-        <GlobalCarousel images={goushalImages} />
+        <PageCarousel images={goushalImages} />
         <Paragraph>
           {goushalaInfo.map((paragraph) =>
             showMoreGoushala ||
@@ -63,9 +65,11 @@ export const VisitUs = () => {
             ),
           )}
         </Paragraph>
-        <Button onClick={toggleShowMoreGoushala}>
-          {showMoreGoushala ? "Read less" : "Read more"}
-        </Button>
+        <Paragraph>
+          <Button onClick={toggleShowMoreGoushala}>
+            {showMoreGoushala ? "Read less" : "Read more"}
+          </Button>
+        </Paragraph>
       </TextWrapper>
     </ServiceWrapper>
   );

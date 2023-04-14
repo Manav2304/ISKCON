@@ -1,11 +1,6 @@
 import styled from "styled-components";
 
 export const TextWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
   color: #ad0d0d;
   font-family: "Times New Roman", Times, serif;
 
@@ -29,37 +24,31 @@ export const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
 `;
 
 export const TitleImage = styled.img`
-  width: 100%;
+  width: 500px;
   height: auto;
+  margin-bottom: 20px;
 
-  @media screen and (min-width: 1024px) {
-    max-width: 700px;
+  @media (max-width: 767px) {
+    width: 100%;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    max-width: 500px;
-  }
-
-  @media screen and (max-width: 767px) {
-    max-width: 300px;
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 80%;
   }
 `;
 
 export const Heading = styled.h1`
   text-align: center;
   color: #7e5959;
-  padding-top: 100px;
+  margin-top: 40px;
 `;
 
 export const Paragraph = styled.p`
   text-align: justify;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 20px;
+  margin: 40px 50px 50px;
   color: #ad0d0d;
   font-family: "Times New Roman", Times, serif;
 

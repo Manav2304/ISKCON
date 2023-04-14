@@ -229,25 +229,7 @@ export const PageStyleCarousel = styled(Carousel)`
     }
   }
 `;
-export const PageWrapperStyle = styled.div`
-  margin-top: 95px;
-`;
-export const CarouselStyle = styled.div`
-  padding: 50px;
 
-  @media only screen and (max-width: 767px) {
-    padding: 20px;
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    padding: 30px;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-`;
 export const PageReviews = styled.div`
   @media only screen and (max-width: 767px) {
     margin-top: 5px;
