@@ -9,15 +9,51 @@ import bookDistribution8 from "../../../assets/images/book-distribution8.jpg";
 import bookDistribution9 from "../../../assets/images/book-distribution9.jpg";
 
 export const bookDistributionImages = [
-  bookDistribution1,
-  bookDistribution2,
-  bookDistribution3,
-  bookDistribution4,
-  bookDistribution5,
-  bookDistribution6,
-  bookDistribution7,
-  bookDistribution8,
-  bookDistribution9,
+  {
+    id: 1,
+    image: bookDistribution1,
+  },
+  {
+    id: 2,
+    image: bookDistribution2,
+  },
+  {
+    id: 3,
+    image: bookDistribution3,
+  },
+  {
+    id: 4,
+    image: bookDistribution4,
+  },
+  {
+    id: 5,
+    image: bookDistribution5,
+  },
+  {
+    id: 6,
+    image: bookDistribution6,
+  },
+  {
+    id: 7,
+    image: bookDistribution7,
+  },
+  {
+    id: 8,
+    image: bookDistribution8,
+  },
+  {
+    id: 9,
+    image: bookDistribution9,
+  },
+  // bookDistribution1,
+  // bookDistribution2,
+  // bookDistribution3,
+  // bookDistribution4,
+  // bookDistribution5,
+  // bookDistribution6,
+  // bookDistribution7,
+  // bookDistribution8,
+  // bookDistribution9,
 ];
 
 export const bookDistribution = [

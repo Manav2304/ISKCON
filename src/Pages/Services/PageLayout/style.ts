@@ -4,7 +4,8 @@ export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: #ad0d0d;
   font-family: "Times New Roman", Times, serif;
 
@@ -54,40 +55,10 @@ export const Heading = styled.h1`
   padding-top: 100px;
 `;
 
-export const ImageSlide = styled.img`
-  width: 600px;
-  height: 400px;
-  object-fit: auto;
-  margin-bottom: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
-
-  @media only screen and (max-width: 768px) {
-    /* Styles for tablet view */
-    width: 400px;
-    height: 400px;
-    margin-bottom: 10px;
-  }
-
-  @media only screen and (max-width: 480px) {
-    /* Styles for mobile view */
-    width: 300px;
-    height: 300px;
-    margin-bottom: 0;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    /* Styles for desktop view */
-    width: 800px;
-    height: 800px;
-    margin-bottom: 30px;
-  }
-`;
-
 export const Paragraph = styled.p`
   text-align: justify;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
   margin-top: 20px;
   color: #ad0d0d;
   font-family: "Times New Roman", Times, serif;

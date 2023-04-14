@@ -4,10 +4,26 @@ import devoteeKitchen3 from "../../../assets/images/devotee-kitchen3.jpg";
 import devoteeKitchen4 from "../../../assets/images/devotee-kitchen4.jpg";
 
 export const devoteeKitchenImages = [
-  devoteeKitchen1,
-  devoteeKitchen2,
-  devoteeKitchen3,
-  devoteeKitchen4,
+  {
+    id: 1,
+    image: devoteeKitchen1,
+  },
+  {
+    id: 2,
+    image: devoteeKitchen2,
+  },
+  {
+    id: 3,
+    image: devoteeKitchen3,
+  },
+  {
+    id: 4,
+    image: devoteeKitchen4,
+  },
+  // devoteeKitchen1,
+  // devoteeKitchen2,
+  // devoteeKitchen3,
+  // devoteeKitchen4,
 ];
 
 export const devoteeKitchen = [

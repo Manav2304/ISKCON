@@ -5,11 +5,31 @@ import deityWorship4 from "../../../assets/images/deity-worship4.jpg";
 import deityWorship5 from "../../../assets/images/deity-worship5.jpg";
 
 export const deityWorshipImages = [
-  deityWorship1,
-  deityWorship2,
-  deityWorship3,
-  deityWorship4,
-  deityWorship5,
+  {
+    id: 1,
+    image: deityWorship1,
+  },
+  {
+    id: 2,
+    image: deityWorship2,
+  },
+  {
+    id: 3,
+    image: deityWorship3,
+  },
+  {
+    id: 4,
+    image: deityWorship4,
+  },
+  {
+    id: 5,
+    image: deityWorship5,
+  },
+  // deityWorship1,
+  // deityWorship2,
+  // deityWorship3,
+  // deityWorship4,
+  // deityWorship5,
 ];
 
 export const deityWorship = [

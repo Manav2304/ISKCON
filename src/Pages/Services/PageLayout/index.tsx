@@ -6,12 +6,12 @@ import {
   TitleImage,
 } from "./style";
 import titlebBaseImage from "../../../assets/images/title-base.png";
-import { Carousel } from "./Carousel";
+import { PageCarousel } from "../../Home/PageCarousel";
 
 interface ServiceDescriptionProps {
   title: string;
   content: string[];
-  imageUrl: string[];
+  imageUrl: { id: number; image: string }[];
 }
 
 export const ServiceDescription: React.FC<ServiceDescriptionProps> = ({
@@ -26,7 +26,7 @@ export const ServiceDescription: React.FC<ServiceDescriptionProps> = ({
         <ImageWrapper>
           <TitleImage src={titlebBaseImage} alt="TitleBase" />
         </ImageWrapper>
-        <Carousel images={imageUrl} />
+        <PageCarousel images={imageUrl} />
         <Paragraph>
           {content.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
