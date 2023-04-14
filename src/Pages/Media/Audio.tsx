@@ -1,26 +1,35 @@
-import { Heading, LinkName, ImageWrapper, TitleImage } from "./style";
+import {
+  Heading,
+  LinkName,
+  ImageWrapper,
+  TitleImage,
+  PageWrapper,
+  SpotifyWrapper,
+} from "./style";
 import titleBaseImg from "../../assets/images/title-base.png";
 
-const AudioContent = () => {
+export const AudioContent = () => {
   return (
     <div>
-      <a href="https://drive.google.com/" title="Google Drive Link">
+      <a
+        href="https://drive.google.com/drive/folders/1H5-PJYvXccYmftDfIdJAKESihoX5FKYG"
+        title="Google Drive Link"
+        target="_blank"
+      >
         <LinkName>Google Drive Link</LinkName>
       </a>
       <Heading>Kirtan</Heading>
       <ImageWrapper>
         <TitleImage src={titleBaseImg} alt="TitleBase" />
       </ImageWrapper>
-      <iframe
-        title="Spotify Playlist"
-        src="https://open.spotify.com/embed/playlist/3ZPZj8PSYOIyJmHpEI4YLK?utm_source=generator"
-        width="1100"
-        height="352"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      />
+      <PageWrapper>
+        <SpotifyWrapper
+          title="Spotify Playlist"
+          src="https://open.spotify.com/embed/playlist/3ZPZj8PSYOIyJmHpEI4YLK?utm_source=generator"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        />
+      </PageWrapper>
     </div>
   );
 };
-
-export default AudioContent;

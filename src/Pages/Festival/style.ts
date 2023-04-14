@@ -44,53 +44,19 @@ export const Heading2 = styled.h2`
   margin: 0;
   font-size: 2rem;
   font-weight: bold;
-  color: #333;
+  color: #7e5959;
 `;
 
 export const Paragraph1 = styled.p`
   margin: 0;
   font-size: 1rem;
-  color: #666;
+  color: #7e5959;
 `;
 
 export const Description = styled.p`
   font-size: 1rem;
-  color: #666;
+  color: #7e5959;
   margin: 10px;
-`;
-
-export const Heading1 = styled.h1`
-  font-size: 1rem;
-  text-align: center;
-
-  @media (max-width: 768px) {
-    font-size: 1.5rem;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 1.2rem;
-  }
-`;
-
-export const ImageDiv = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const TitleImage = styled.img`
-  width: 500px;
-  height: 60px;
-
-  @media (max-width: 768px) {
-    width: 400px;
-    height: 48px;
-  }
-
-  @media (max-width: 480px) {
-    width: 300px;
-    height: 36px;
-  }
 `;
 
 export const Button = styled.button`
@@ -105,5 +71,45 @@ export const Button = styled.button`
   @media (max-width: 767px) {
     font-size: 14px;
     padding: 8px 16px;
+  }
+`;
+export const HeadingStyle = styled.div`
+  font-family: "Times New Roman", Times, serif;
+  color: #7e5959;
+  text-align: center;
+  margin-top: 110px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    font-size: 2rem;
+    padding: 40px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 3rem;
+    padding: 60px;
+  }
+`;
+export const ImageTitle = styled.img`
+  width: 100%;
+  max-width: 400px;
+
+  @media only screen and (max-width: 768px) {
+    width: 70%;
+    max-width: 200px;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    width: 70%;
+    max-width: 300px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 100%;
+    max-width: 400px;
   }
 `;
