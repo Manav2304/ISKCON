@@ -66,16 +66,29 @@ export const Reviews = styled.div`
   max-width: 1600px;
   margin-top: 100px;
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 479px) {
     margin-top: 80px;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-top: 90px;
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    margin-top: 80px;
   }
 
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    margin-top: 64px;
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    margin-top: 75px;
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     margin-top: 100px;
+  }
+
+  @media only screen and (min-width: 1400px) {
+    height: 500px;
+    width: 100%;
   }
 `;
 
@@ -89,18 +102,30 @@ export const ImageStyle = styled.div`
 export const ImageCarousel = styled.img`
   width: 100%;
   height: 500px;
-  object-fit: contain cover;
+  object-fit: cover;
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 479px) {
+    height: 150px;
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
     height: 200px;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    height: 300px;
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
     height: 400px;
   }
 
-  @media only screen and (min-width: 1200px) {
-    height: 600px;
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    height: 480px;
+  }
+
+  @media only screen and (min-width: 1400px) {
+    height: 500px;
     width: 100%;
   }
 `;
