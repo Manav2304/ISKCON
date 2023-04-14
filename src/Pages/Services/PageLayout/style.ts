@@ -29,7 +29,7 @@ export const ImageWrapper = styled.div`
 export const TitleImage = styled.img`
   width: 500px;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   @media (max-width: 767px) {
     width: 100%;
@@ -43,7 +43,7 @@ export const TitleImage = styled.img`
 export const Heading = styled.h1`
   text-align: center;
   color: #7e5959;
-  margin-top: 40px;
+  margin-top: 90px;
 `;
 
 export const Paragraph = styled.p`
