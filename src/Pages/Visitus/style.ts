@@ -12,6 +12,7 @@ export const TextWrapper = styled.div`
   color: #ad0d0d;
   font-family: "Times New Roman", Times, serif;
 `;
+
 export const HeadingStyle = styled.div`
   font-family: "Times New Roman", Times, serif;
   color: #7e5959;
@@ -32,6 +33,7 @@ export const HeadingStyle = styled.div`
     padding: 50px;
   }
 `;
+
 export const ImageTitle = styled.img`
   width: 100%;
   max-width: 500px;
