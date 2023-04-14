@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const TransparentDropdown = styled.div`
   display: inline-block;
@@ -31,7 +30,4 @@ export const DropdownToggleWrapper = styled.div`
 `;
 export const DropdownMenuWrapper = styled.div`
   background-color: #7e5959;
-`;
-export const StyledLink = styled(Link)`
-  color: #f00;
 `;
