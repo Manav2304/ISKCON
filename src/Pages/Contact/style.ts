@@ -75,7 +75,7 @@ export const MapFrame = styled.iframe`
 
   @media only screen and (max-width: 768px) {
     font-size: 1.5rem;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 50px;
     padding-left: 50px;
     padding-right: 50px;
@@ -130,7 +130,7 @@ export const Heading = styled.div`
   margin-top: 110px;
 
   @media only screen and (max-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1199px) {
@@ -138,7 +138,8 @@ export const Heading = styled.div`
   }
 
   @media only screen and (min-width: 1200px) {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    padding-top: 20px;
   }
 `;
 export const BoxStyle = styled.div`
