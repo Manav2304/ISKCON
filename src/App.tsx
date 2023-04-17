@@ -23,11 +23,13 @@ import { PrivacyPolicy } from "./Pages/FooterTerms/PrivacyPolicy";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "@fortawesome/fontawesome-free/css/fontawesome.css";
 import "@fortawesome/fontawesome-free/css/brands.css";
+import ScrollToTop from "./Components/ScrollToTop";
 
 export const App: React.FunctionComponent = () => {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <NavigationBar />
         <Routes>
           <Route caseSensitive path={routes.home} element={<HomePage />} />
