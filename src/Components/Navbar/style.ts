@@ -42,11 +42,11 @@ export const SocialMediaIconsStyle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 5px;
 `;
 export const IconsStyle = styled.a`
-  margin-right: 5px;
   color: #8b0000;
-  padding: 5px;
+  padding: 3px;
   border-radius: 50%;
   background-color: #f5fffa;
   transition: background-color 0.2s ease;

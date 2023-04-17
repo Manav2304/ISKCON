@@ -1,11 +1,6 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import {
-  Reviews,
-  PageImageCarousel,
-  PageStyleCarousel,
-  PageReviews,
-} from "./style";
+import { PageImageCarousel, PageStyleCarousel, PageReviews } from "./style";
 
 interface Props {
   images: { id: number; image: string }[];
