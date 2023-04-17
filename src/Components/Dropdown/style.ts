@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const TransparentDropdown = styled.div`
   display: inline-block;
@@ -18,7 +17,7 @@ export const TransparentDropdown = styled.div`
     border: none;
     padding: 0;
   }
-
+  
   .dropdown-item {
     color: #212529;
     padding: 0.25rem 1.5rem;
@@ -31,7 +30,4 @@ export const DropdownToggleWrapper = styled.div`
 `;
 export const DropdownMenuWrapper = styled.div`
   background-color: #7e5959;
-`;
-export const StyledLink = styled(Link)`
-  color: #f00;
 `;
