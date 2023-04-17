@@ -7,6 +7,18 @@ export const NavStyle = styled.nav`
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+  }
 `;
 
 export const StyledLink = styled(Link)`
@@ -38,12 +50,14 @@ export const ImgStyle = styled.img`
     height: 85px;
   }
 `;
+
 export const SocialMediaIconsStyle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
 `;
+
 export const IconsStyle = styled.a`
   color: #8b0000;
   padding: 3px;

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { NavStyle, SidebarStyle, ToggleButton } from "./style";
-import { ImgStyle, SocialMediaIconsStyle } from "../Navbar/style";
+import { HeadingStyle, ImgStyle, NavStyle, SidebarStyle, ToggleButton } from "./style";
+import { SocialMediaIconsStyle } from "../Navbar/style";
 import {
   socialMediaIcon,
 } from "../Navbar/constant";
@@ -43,9 +43,19 @@ export const Sidebar = () => {
     <div ref={ref}>
       <Navbar />
       <NavStyle>
-        <ToggleButton onClick={handleToggle}>
-          <FontAwesomeIcon icon={faBars} />
-        </ToggleButton>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <StyledLink to={routes.home}>
+              <ImgStyle src={logoUrl} alt="Logo" />
+            </StyledLink>
+            <HeadingStyle>
+              Sri Sri Radha Giridhariji Temple
+            </HeadingStyle>
+          </div>
+          <ToggleButton onClick={handleToggle}>
+            <FontAwesomeIcon icon={faBars} />
+          </ToggleButton>
+        </div>
         <SidebarStyle isOpen={isOpen}>
           <nav>
             <SideBarDropdown items={dropdownHomeInfo} toggleTitle="ISKCON" handleClose={handleClose} />
@@ -75,9 +85,6 @@ export const Sidebar = () => {
           </nav>
         </SidebarStyle>
       </NavStyle>
-      <StyledLink to={routes.home}>
-          <ImgStyle src={logoUrl} alt="Logo" />
-        </StyledLink>
     </div>
   );
 };
