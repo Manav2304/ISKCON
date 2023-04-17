@@ -32,7 +32,8 @@ export const SidebarStyle = styled.div<{ isOpen: boolean }>`
       }
     }
   }
-`
+`;
+
 export const NavStyle = styled.nav`
   margin-top: 0;
   display: block;
