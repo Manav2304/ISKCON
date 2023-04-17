@@ -1,10 +1,64 @@
 import { Carousel } from "react-bootstrap";
 import styled from "styled-components";
 
-export const ImageWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+export const ServiceWrapper = styled.div`
+  padding-top: 80px;
+  padding-bottom: 50px;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+`;
+
+export const HeadingStyle = styled.div`
+  font-family: "Times New Roman", Times, serif;
+  color: #7e5959;
+  text-align: center;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    font-size: 2rem;
+    padding: 40px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 2rem;
+    padding: 50px;
+  }
+`;
+export const ImageTitle = styled.img`
+  width: 100%;
+  max-width: 400px;
+
+  @media only screen and (max-width: 768px) {
+    width: 70%;
+    max-width: 300px;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    width: 70%;
+    max-width: 300px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 100%;
+    max-width: 400px;
+  }
 `;
 
 export const PageWrapper = styled.div`
@@ -20,51 +74,20 @@ export const TitleName = styled.h2`
   font-family: "Times New Roman", Times, serif;
 `;
 
-export const Heading = styled.h1`
-  text-align: center;
-  margin-top: 20px;
-  color: #7e5959;
-  font-family: "Times New Roman", Times, serif;
-
-  @media screen and (max-width: 768px) {
-    font-size: 24px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    font-size: 32px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    font-size: 48px;
-  }
-`;
-
-export const TitleImage = styled.img`
-  width: 450px;
-  height: auto;
-  margin-bottom: 20px;
-
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-    height: auto;
-  }
-
-  @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    width: 60%;
-  }
-`;
-
 export const YouTubeWrapper = styled.div`
   display: grid;
   grid-template-rows: repeat(2);
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   margin-top: 25px;
   overflow-x: hidden;
 
   @media (max-width: 767px) {
     margin-left: 20px;
     margin-right: 20px;
+    max-width: 500px;
+    width: 100%;
+    height: 210px;
     grid-template-rows: repeat(2);
   }
 
@@ -75,8 +98,8 @@ export const YouTubeWrapper = styled.div`
   }
 
   @media (min-width: 1024px) {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
     grid-template-rows: repeat(2);
   }
 `;
