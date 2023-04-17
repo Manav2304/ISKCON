@@ -40,7 +40,6 @@ export const NavStyle = styled.nav`
   align-items: center;
 `;
 
-
 export const ToggleButton = styled.button`
   display: none;
 
