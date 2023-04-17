@@ -21,6 +21,7 @@ export const SidebarStyle = styled.div<{ isOpen: boolean }>`
     align-items: center;
 
     a {
+      display: block;
       font-size: 15px;
       margin: 10px;
       text-align: center;
@@ -92,6 +93,50 @@ export const CloseIcon = styled.div`
 export const StyledLink = styled(Link)`
   color: #f00;
   text-decoration: none;
+`;
+
+export const DropdownWrapper = styled.div`
+  position: relative;
+  display: inline-block;
+`;
+
+export const DropdownButton = styled.button`
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+  padding: 8px 16px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+`;
+
+export const DropdownMenu = styled.div`
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+  min-width: 160px;
+  padding: 8px 0;
+`;
+
+export const DropdownItem = styled(Link)`
+  display: block;
+  color: #333;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 8px 16px;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: #f2f2f2;
+  }
 `;
 
 

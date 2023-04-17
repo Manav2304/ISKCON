@@ -1,10 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { NavStyle, SidebarStyle, ToggleButton } from "./style";
 import { ImgStyle, SocialMediaIconsStyle } from "../Navbar/style";
-import { PageDropdown } from "../Dropdown";
 import {
-  dropdownHomeInfo,
-  dropdownServicesInfo,
   socialMediaIcon,
 } from "../Navbar/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
@@ -14,6 +11,8 @@ import { StyledLink } from "./style";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Navbar } from "react-bootstrap";
+import { SideBarDropdown } from "./SideBarDropdown";
+import { dropdownHomeInfo, dropdownServicesInfo } from "./constant";
 
 export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,8 +48,8 @@ export const Sidebar = () => {
         </ToggleButton>
         <SidebarStyle isOpen={isOpen}>
           <nav>
-            <PageDropdown items={dropdownHomeInfo} toggleTitle="ISKCON" />
-            <PageDropdown items={dropdownServicesInfo} toggleTitle="Services" />
+            <SideBarDropdown items={dropdownHomeInfo} toggleTitle="ISKCON" handleClose={handleClose} />
+            <SideBarDropdown items={dropdownServicesInfo} toggleTitle="Services" handleClose={handleClose} />
             <StyledLink to={routes.donation} onClick={handleClose}>
               Donate
             </StyledLink>
