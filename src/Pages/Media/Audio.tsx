@@ -1,8 +1,7 @@
 import {
-  Heading,
+  HeadingStyle,
+  ImageTitle,
   LinkName,
-  ImageWrapper,
-  TitleImage,
   PageWrapper,
   SpotifyWrapper,
 } from "./style";
@@ -15,13 +14,14 @@ export const AudioContent = () => {
         href="https://drive.google.com/drive/folders/1H5-PJYvXccYmftDfIdJAKESihoX5FKYG"
         title="Google Drive Link"
         target="_blank"
+        rel="noreferrer"
       >
         <LinkName>Google Drive Link</LinkName>
       </a>
-      <Heading>Kirtan</Heading>
-      <ImageWrapper>
-        <TitleImage src={titleBaseImg} alt="TitleBase" />
-      </ImageWrapper>
+      <HeadingStyle>
+        <h1>Kirtan</h1>
+        <ImageTitle src={titleBaseImg} alt="Title Image" />
+      </HeadingStyle>
       <PageWrapper>
         <SpotifyWrapper
           title="Spotify Playlist"
