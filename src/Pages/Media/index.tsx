@@ -3,10 +3,9 @@ import {
   PageWrapper,
   CarouselWrapper,
   YouTubeWrapper,
-  Heading,
-  ImageWrapper,
-  TitleImage,
   ServiceWrapper,
+  HeadingStyle,
+  ImageTitle,
 } from "./style";
 import {
   darshanImages,
@@ -24,18 +23,18 @@ export const Media: React.FC = () => {
   return (
     <>
       <ServiceWrapper>
-        <Heading>Daily Darshan</Heading>
-        <ImageWrapper>
-          <TitleImage src={titleBaseImg} alt="TitleBase" />
-        </ImageWrapper>
+        <HeadingStyle>
+          <h1>Daily Darshan</h1>
+          <ImageTitle src={titleBaseImg} alt="Title Image" />
+        </HeadingStyle>
         <CarouselWrapper>
           <MediaCarousel images={sringarImages} title={SringarTitle} />
           <MediaCarousel images={darshanImages} title={darshanTitle} />
         </CarouselWrapper>
-        <Heading>Lectures</Heading>
-        <ImageWrapper>
-          <TitleImage src={titleBaseImg} alt="TitleBase" />
-        </ImageWrapper>
+        <HeadingStyle>
+          <h1>Lectures</h1>
+          <ImageTitle src={titleBaseImg} alt="Title Image" />
+        </HeadingStyle>
         <PageWrapper>
           <YouTubeWrapper>
             <YouTube videoId="R3tNVAtzaAw" opts={opts} />
