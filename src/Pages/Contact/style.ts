@@ -15,12 +15,11 @@ export const Box = styled.div`
   text-align: center;
   width: 100%;
   height: 150px;
-  max-width: 300px;
+  max-width: 400px;
   margin-bottom: 5px;
 
   @media (min-width: 768px) {
     width: 100%;
-
     max-width: none;
     align-items: center;
   }
@@ -45,7 +44,7 @@ export const GuestBox = styled.div`
   text-align: center;
   width: 100%;
   height: 150px;
-  max-width: 300px;
+  max-width: 400px;
   margin-bottom: 5px;
 
   @media (min-width: 768px) {
@@ -64,12 +63,9 @@ export const GuestBox = styled.div`
   }
 `;
 
-export const GuestHouseInfo = styled.p`
-  margin: 0;
-  font-weight: bold;
-`;
 export const MapFrame = styled.iframe`
   border: none;
+  align-items: center;
   height: 350px;
   width: 100%;
   margin-top: 20px;
@@ -78,24 +74,24 @@ export const MapFrame = styled.iframe`
     font-size: 1.5rem;
     margin-top: 20px;
     margin-bottom: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1199px) {
     font-size: 2rem;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media only screen and (min-width: 1200px) {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 107px;
+    padding-right: 107px;
   }
 `;
 
@@ -144,20 +140,27 @@ export const Heading = styled.div`
   }
 `;
 export const BoxStyle = styled.div`
-  /* padding-left: 3%;
-  padding-right: 3%; */
-  margin-bottom: 10px;
-  margin-left: 3%;
-  margin-right: 3%;
+  align-items: center;
+  border: none;
+  width: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
 
-  @media only screen and (max-width: 768px) {
-    padding-left: 5%;
+  @media only screen and (max-width: 767px) {
+    align-self: center;
+    width: auto;
+    padding-left: 7%;
   }
 
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    // Styles for medium screens
+    align-items: center;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    // Styles for large screens
+    align-items: center;
   }
 `;
 
