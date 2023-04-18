@@ -28,7 +28,7 @@ export const Footer = () => {
             <MDBRow className="mt-3">
               <MDBCol>
                 <Heading>
-                  <MDBIcon icon="clock" className="me-3" />
+                  <MDBIcon icon="clock" className="me-0" />
                   Timings
                 </Heading>
                 <div className="mx-auto mb-4">

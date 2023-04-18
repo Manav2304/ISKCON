@@ -9,15 +9,14 @@ import titleBaseImg from "../../assets/images/title-base.png";
 import {
   ServiceWrapper,
   TextWrapper,
-  Heading,
   Paragraph,
   Button,
-  ImageWrapper,
-  TitleImage,
   VisibleParagraph,
   HiddenParagraph,
+  HeadingStyle,
+  ImageTitle,
 } from "./style";
-import { GlobalCarousel } from "../Home/GlobalCarousel";
+import { PageCarousel } from "../Home/PageCarousel";
 
 export const VisitUs = () => {
   const [showMoreDakor, setShowMoreDakor] = useState(false);
@@ -28,11 +27,11 @@ export const VisitUs = () => {
   return (
     <ServiceWrapper>
       <TextWrapper>
-        <Heading>Dakor Dham</Heading>
-        <ImageWrapper>
-          <TitleImage src={titleBaseImg} alt="TitleBase" />
-        </ImageWrapper>
-        <GlobalCarousel images={dakorImages} />
+        <HeadingStyle>
+          <h1>Dakor Dham</h1>
+          <ImageTitle src={titleBaseImg} alt="Title Image" />
+        </HeadingStyle>
+        <PageCarousel images={dakorImages} />
         <Paragraph>
           {dakorInfo.map((paragraph) =>
             showMoreDakor ||
@@ -44,14 +43,16 @@ export const VisitUs = () => {
             ),
           )}
         </Paragraph>
-        <Button onClick={toggleShowMoreDakor}>
-          {showMoreDakor ? "Read less" : "Read more"}
-        </Button>
-        <Heading>Goverdhan Goushala</Heading>
-        <ImageWrapper>
-          <TitleImage src={titleBaseImg} alt="TitleBase" />
-        </ImageWrapper>
-        <GlobalCarousel images={goushalImages} />
+        <Paragraph>
+          <Button onClick={toggleShowMoreDakor}>
+            {showMoreDakor ? "Read less" : "Read more"}
+          </Button>
+        </Paragraph>
+        <HeadingStyle>
+          <h1>Goverdhan Goushala</h1>
+          <ImageTitle src={titleBaseImg} alt="Title Image" />
+        </HeadingStyle>
+        <PageCarousel images={goushalImages} />
         <Paragraph>
           {goushalaInfo.map((paragraph) =>
             showMoreGoushala ||
@@ -63,9 +64,11 @@ export const VisitUs = () => {
             ),
           )}
         </Paragraph>
-        <Button onClick={toggleShowMoreGoushala}>
-          {showMoreGoushala ? "Read less" : "Read more"}
-        </Button>
+        <Paragraph>
+          <Button onClick={toggleShowMoreGoushala}>
+            {showMoreGoushala ? "Read less" : "Read more"}
+          </Button>
+        </Paragraph>
       </TextWrapper>
     </ServiceWrapper>
   );
