@@ -22,6 +22,7 @@ import { PrivacyPolicy } from "./Pages/FooterTerms/PrivacyPolicy";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "@fortawesome/fontawesome-free/css/fontawesome.css";
 import "@fortawesome/fontawesome-free/css/brands.css";
+import { VisitUs } from "./Pages/VisitUs";
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -36,6 +37,7 @@ export const App: React.FunctionComponent = () => {
             element={<FestivalPage />}
           />
           <Route caseSensitive path={routes.media} element={<Media />} />
+          <Route caseSensitive path={routes.visitUs} element={<VisitUs />} />
           <Route caseSensitive path={routes.contact} element={<Contact />} />
           <Route
             caseSensitive

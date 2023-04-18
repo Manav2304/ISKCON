@@ -32,7 +32,7 @@ export const Footer = () => {
               <MDBCol>
                 <Heading>
                   <MDBIcon icon="clock" />
-                  Timings
+                  Timing
                 </Heading>
                 <div className="mx-auto mb-4">
                   <TimeStyle>
