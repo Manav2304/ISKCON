@@ -1,12 +1,10 @@
 import {
   Wrapper,
-  Title,
   Table,
   Paragraph,
-  ImageWrapper,
-  Image,
   TableStyle,
-  Heading,
+  HeadingStyle,
+  ImageTitle,
 } from "./style";
 import {
   yesBankAccountInfo,
@@ -19,15 +17,15 @@ import titleBaseImg from "../../assets/images/title-base.png";
 export const DonationPage = () => {
   return (
     <Wrapper>
-      <Title>Donation</Title>
-      <ImageWrapper>
-        <Image src={titleBaseImg} />
-      </ImageWrapper>
+      <HeadingStyle>
+        <h1>Donation</h1>
+        <ImageTitle src={titleBaseImg} alt="Title Image" />
+      </HeadingStyle>
       {bhagavadGita.map((paragraph) => (
         <Paragraph key={paragraph}>{paragraph}</Paragraph>
       ))}
       <TableStyle>
-        <Heading>YES bank</Heading>
+        <HeadingStyle>YES bank</HeadingStyle>
         <Table>
           <tbody>
             {yesBankAccountInfo.map((info) => (
@@ -36,7 +34,7 @@ export const DonationPage = () => {
           </tbody>
         </Table>
         <br />
-        <Heading>ICICI Bank</Heading>
+        <HeadingStyle>ICICI Bank</HeadingStyle>
         <Table>
           <tbody>
             {iciciBankAccountInfo.map((info) => (

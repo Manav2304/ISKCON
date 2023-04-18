@@ -20,6 +20,9 @@ import { LifeTimeMembership } from "./Pages/Services/LifeTimeMembership";
 import { TermsAndCondition } from "./Pages/FooterTerms/TermsAndCondition";
 import { CancellationPolicy } from "./Pages/FooterTerms/CancellationPolicy";
 import { PrivacyPolicy } from "./Pages/FooterTerms/PrivacyPolicy";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "@fortawesome/fontawesome-free/css/fontawesome.css";
+import "@fortawesome/fontawesome-free/css/brands.css";
 
 export const App: React.FunctionComponent = () => {
   return (
