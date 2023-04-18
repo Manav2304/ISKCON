@@ -146,7 +146,6 @@ export const HeadingStyle = styled.div`
   }
 `;
 
-
 export const DropdownWrapper = styled.div`
   position: relative;
   display: inline-block;
