@@ -20,6 +20,7 @@ export const Box = styled.div`
 
   @media (min-width: 768px) {
     width: 100%;
+
     max-width: none;
     align-items: center;
   }
@@ -77,8 +78,8 @@ export const MapFrame = styled.iframe`
     font-size: 1.5rem;
     margin-top: 20px;
     margin-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1199px) {
@@ -143,14 +144,21 @@ export const Heading = styled.div`
   }
 `;
 export const BoxStyle = styled.div`
-  padding-left: 50px;
-  padding-right: 50px;
+  /* padding-left: 3%;
+  padding-right: 3%; */
   margin-bottom: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 3%;
+  margin-right: 3%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
+
+  @media only screen and (max-width: 768px) {
+    padding-left: 5%;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+  }
 `;
 
 export const BoxHeading = styled.h2`
