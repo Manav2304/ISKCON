@@ -9,7 +9,6 @@ import { PageDropdown } from "../Dropdown";
 import { dropdownServicesInfo, socialMediaIcon } from "../Navbar/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
 import logoUrl from "../../assets/images/isckon-logo.png";
-import { dropdownHomeInfo } from "./constant";
 import { routes } from "../../routes";
 
 export const NavigationBar = () => {
@@ -20,7 +19,9 @@ export const NavigationBar = () => {
   return (
     <NavStyle className="navbar fixed-top">
       <div className="container">
-        <PageDropdown items={dropdownHomeInfo} toggleTitle="Iskcon" />
+        <StyledLink to={routes.home} onClick={handleLinkClick}>
+          Iskcon
+        </StyledLink>
         <PageDropdown items={dropdownServicesInfo} toggleTitle="Services" />
         <StyledLink to={routes.visitUs} onClick={handleLinkClick}>
           Visit Us
