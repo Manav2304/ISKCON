@@ -14,6 +14,7 @@ export const AudioContent = () => {
         href="https://drive.google.com/drive/folders/1H5-PJYvXccYmftDfIdJAKESihoX5FKYG"
         title="Google Drive Link"
         target="_blank"
+        rel="noreferrer"
       >
         <LinkName>Google Drive Link</LinkName>
       </a>
