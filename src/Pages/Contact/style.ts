@@ -48,6 +48,7 @@ export const GuestBox = styled.div`
     width: 100%;
     max-width: none;
     align-items: center;
+    font-size: 13px;
   }
   @media (max-width: 767px) {
     width: 285px;
