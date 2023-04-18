@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Footer } from "./Components/Footer";
 import { Media } from "./Pages/Media";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
