@@ -29,7 +29,6 @@ export const NavStyle = styled.nav`
   background-size: cover;
   margin-top: 0;
   display: block;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 2px;
   position: fixed;
@@ -44,7 +43,7 @@ export const ToggleButton = styled.button`
   @media (max-width: 768px) {
     display: block;
     position: fixed;
-    top: 0;
+    top: 10px;
     right: 0;
     padding: 10px;
     background-color: transparent;
@@ -91,6 +90,10 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   flex-direction: column;
   align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 20px;
+  padding: 8px 16px;
 `;
 
 export const ImgStyle = styled.img`
@@ -99,6 +102,8 @@ export const ImgStyle = styled.img`
 
   @media (max-width: 767px) {
     height: 50px;
+    margin-left: -20px;
+    margin-right: 5px;
     display: block;
   }
 
@@ -127,24 +132,25 @@ export const ImgStyle = styled.img`
 export const HeadingStyle = styled.div`
   font-family: "Times New Roman", Times, serif;
   color: #7e5959;
-  text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
+  font-weight: bold;
+  margin-left: -40px;
+  margin-right: 5px;
   font-size: 20px;
-  
+
   @media (max-width: 767px) {
-    font-size: 16px;
+    font-size: 18px;
   }
 `;
 
 export const DropdownWrapper = styled.div`
   position: relative;
   display: inline-block;
+  background-color: transparent;
 `;
 
 export const DropdownButton = styled.button`
   background-color: transparent;
-  color: #fff;
+  color: #f00;
   border: none;
   cursor: pointer;
   font-size: 16px;
