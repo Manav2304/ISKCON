@@ -7,7 +7,7 @@ export const dropdownHomeInfo = [
     { name: "Goals", url: "#" },
   ];
   
-  export const dropdownServicesInfo = [
+export const dropdownServicesInfo = [
     { name: "Life Time Membership", url: routes.lifeTimeMembership },
     { name: "Kirtan At Iskcon", url: routes.kirtanAtIskcon },
     { name: "Iskcon Youth Forum", url: routes.iskconYouthForum },
@@ -17,4 +17,7 @@ export const dropdownHomeInfo = [
     { name: "Deity Worship", url: routes.deityWorship },
     { name: "Book Distribution", url: routes.bookDistribution },
   ];
+
+  
+
   
