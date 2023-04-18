@@ -67,11 +67,11 @@ export const Reviews = styled.div`
   margin-top: 100px;
 
   @media only screen and (max-width: 479px) {
-    margin-top: 80px;
+    margin-top: 50px;
   }
 
   @media only screen and (min-width: 480px) and (max-width: 767px) {
-    margin-top: 80px;
+    margin-top: 50px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 991px) {

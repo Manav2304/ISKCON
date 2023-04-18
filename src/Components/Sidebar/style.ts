@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import title from "../../assets/images/navbar-bg.png"
+import title from "../../assets/images/navbar-bg.png";
 
 export const SidebarStyle = styled.div<{ isOpen: boolean }>`
   background-image: url(${title});
@@ -25,7 +25,7 @@ export const nav = styled.nav`
 `;
 
 export const NavStyle = styled.nav`
-   background-image: url(${title});
+  background-image: url(${title});
   background-size: cover;
   margin-top: 0;
   display: block;
@@ -186,5 +186,3 @@ export const DropdownItem = styled(Link)`
     background-color: #f2f2f2;
   }
 `;
-
-

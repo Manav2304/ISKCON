@@ -16,7 +16,7 @@ export const NavStyle = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 120px;
     padding: 0 20px;
   }
 `;

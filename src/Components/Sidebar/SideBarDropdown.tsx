@@ -1,5 +1,10 @@
 import { useState } from "react";
-import { DropdownWrapper, DropdownButton, DropdownMenu, DropdownItem } from "./style";
+import {
+  DropdownWrapper,
+  DropdownButton,
+  DropdownMenu,
+  DropdownItem,
+} from "./style";
 
 type DropdownProps = {
   items: Array<{ name: string; url: string }>;
@@ -7,7 +12,11 @@ type DropdownProps = {
   handleClose: () => void;
 };
 
-export const SideBarDropdown = ({ items, toggleTitle }: DropdownProps) => {
+export const SideBarDropdown = ({
+  items,
+  toggleTitle,
+  handleClose,
+}: DropdownProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
@@ -16,6 +25,7 @@ export const SideBarDropdown = ({ items, toggleTitle }: DropdownProps) => {
 
   const handleItemClick = () => {
     setIsOpen(false);
+    handleClose();
   };
 
   return (
@@ -24,7 +34,11 @@ export const SideBarDropdown = ({ items, toggleTitle }: DropdownProps) => {
       {isOpen && (
         <DropdownMenu>
           {items.map((item) => (
-            <DropdownItem key={item.name} onClick={handleItemClick} to={item.url}>
+            <DropdownItem
+              key={item.name}
+              onClick={handleItemClick}
+              to={item.url} // added the `to` prop here
+            >
               {item.name}
             </DropdownItem>
           ))}
