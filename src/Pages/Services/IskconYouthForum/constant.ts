@@ -6,12 +6,30 @@ import iskconYouthForum5 from "../../../assets/images/iskcon-youth-forum5.jpg";
 import iskconYouthForum6 from "../../../assets/images/iskcon-youth-forum6.jpg";
 
 export const iskconYouthForumImages = [
-  iskconYouthForum1,
-  iskconYouthForum2,
-  iskconYouthForum3,
-  iskconYouthForum4,
-  iskconYouthForum5,
-  iskconYouthForum6,
+  {
+    id: 1,
+    image: iskconYouthForum1,
+  },
+  {
+    id: 2,
+    image: iskconYouthForum2,
+  },
+  {
+    id: 3,
+    image: iskconYouthForum3,
+  },
+  {
+    id: 4,
+    image: iskconYouthForum4,
+  },
+  {
+    id: 5,
+    image: iskconYouthForum5,
+  },
+  {
+    id: 6,
+    image: iskconYouthForum6,
+  },
 ];
 
 export const iskconYouthForum = [
