@@ -17,23 +17,32 @@ export const Heading = styled.h6`
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 4px;
-  margin-left: 130px;
+  margin-left: 90px;
 
   @media only screen and (max-width: 768px) {
     padding-right: 130px;
     margin-top: -50px;
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 769px) {
+    text-align: center;
   }
 `;
 
 export const ContactStyle = styled.div`
   margin-top: 80px;
-  margin-left: 120px;
+  margin-left: 50px;
   float: right;
 
   @media only screen and (max-width: 768px) {
     margin-left: 20px;
     margin-top: 20px;
     margin-right: 20px;
+  }
+
+  @media only screen and (min-width: 769px) {
+    text-align: center;
   }
 `;
 
@@ -51,7 +60,7 @@ export const TimeStyle = styled.div`
   text-align: right;
   color: #fff;
   margin-top: 30px;
-  margin-right: 130px;
+  margin-right: 50px;
 
   @media only screen and (max-width: 768px) {
     text-align: center;
@@ -107,8 +116,17 @@ export const FooterLink = styled.a`
     text-decoration: underline;
   }
 `;
+export const ContactDiv = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+`;
 
-export const TimingHeading = styled.h3`
-  text-align: center;
-  color: #fff;
+export const ContactIcon = styled.i`
+  margin-right: 4px;
+`;
+
+export const ContactText = styled.span`
+  margin-left: 10px;
+  text-align: left;
 `;
