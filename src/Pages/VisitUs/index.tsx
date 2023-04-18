@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   dakorImages,
   goushalImages,
@@ -6,9 +6,17 @@ import {
   goushalaInfo,
 } from "./constant";
 import titleBaseImg from "../../assets/images/title-base.png";
+import {
+  ServiceWrapper,
+  TextWrapper,
+  Paragraph,
+  VisibleParagraph,
+  HiddenParagraph,
+  HeadingStyle,
+  ImageTitle,
+} from "./style";
 import { PageCarousel } from "../Home/PageCarousel";
-import { Button } from "react-bootstrap";
-import { ServiceWrapper, TextWrapper, HeadingStyle, ImageTitle, Paragraph, VisibleParagraph, HiddenParagraph } from "./style";
+import { Button } from "../Festival/style";
 
 export const VisitUs = () => {
   const [showMoreDakor, setShowMoreDakor] = useState(false);
