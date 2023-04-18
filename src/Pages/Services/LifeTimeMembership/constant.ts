@@ -2,8 +2,14 @@ import lifeTimeMembership1 from "../../../assets/images/life-time-membership1.jp
 import lifeTimeMembership2 from "../../../assets/images/life-time-membership2.jpg";
 
 export const lifeTimeMembershipImages = [
-  lifeTimeMembership1,
-  lifeTimeMembership2,
+  {
+    id: 1,
+    image: lifeTimeMembership1,
+  },
+  {
+    id: 2,
+    image: lifeTimeMembership2,
+  },
 ];
 
 export const lifeTimeMembership = [

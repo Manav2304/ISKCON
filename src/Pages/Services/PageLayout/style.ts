@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
 export const TextWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
   color: #ad0d0d;
   font-family: "Times New Roman", Times, serif;
 
@@ -28,65 +24,71 @@ export const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
 `;
 
 export const TitleImage = styled.img`
-  width: 100%;
+  width: 90%;
+  max-width: 600px;
   height: auto;
+  margin-bottom: 10px;
 
-  @media screen and (min-width: 1024px) {
-    max-width: 700px;
+  @media only screen and (max-width: 768px) {
+    width: 70%;
+    max-width: 400px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    max-width: 500px;
-  }
-
-  @media screen and (max-width: 767px) {
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    width: 70%;
     max-width: 300px;
   }
+
+  /* @media only screen and (min-width: 1200px) {
+    width: 100%;
+    max-width: 400px;
+  } */
 `;
 
 export const Heading = styled.h1`
   text-align: center;
   color: #7e5959;
-  padding-top: 100px;
-`;
-
-export const ImageSlide = styled.img`
-  width: 600px;
-  height: 400px;
-  object-fit: auto;
-  margin-bottom: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-top: 90px;
 
   @media only screen and (max-width: 768px) {
-    /* Styles for tablet view */
-    width: 400px;
-    height: 400px;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    padding-top: 20px;
   }
 
-  @media only screen and (max-width: 480px) {
-    /* Styles for mobile view */
-    width: 300px;
-    height: 300px;
-    margin-bottom: 0;
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    font-size: 2rem;
+    padding-top: 40px;
+    padding-bottom: 10px;
   }
 
   @media only screen and (min-width: 1200px) {
-    /* Styles for desktop view */
-    width: 800px;
-    height: 800px;
-    margin-bottom: 30px;
+    font-size: 3rem;
+    padding-top: 60px;
   }
 `;
 
 export const Paragraph = styled.p`
-  font-size: 20px;
-  line-height: 1.5;
   text-align: justify;
-  padding: 50px;
+  margin: 40px 50px 50px;
+  color: #ad0d0d;
+  font-family: "Times New Roman", Times, serif;
+
+  @media only screen and (max-width: 768px) {
+    margin: 20px;
+    font-size: 0.8rem;
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    margin: 25px;
+    font-size: 1rem;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 1.2rem;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 `;
