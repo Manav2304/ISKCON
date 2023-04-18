@@ -15,25 +15,13 @@ export const SidebarStyle = styled.div<{ isOpen: boolean }>`
   overflow-y: auto;
   padding: 1rem;
   flex-direction: column;
+`;
 
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    a {
-      display: block;
-      font-size: 15px;
-      margin: 10px;
-      text-align: center;
-      width: 100%;
-      width: 100;
-
-      &:hover {
-        color: #ff6f00;
-      }
-    }
-  }
+export const nav = styled.nav`
+  display: block;
+  color: #f00;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const NavStyle = styled.nav`
@@ -98,8 +86,11 @@ export const CloseIcon = styled.div`
 `;
 
 export const StyledLink = styled(Link)`
+  display: block;
   color: #f00;
   text-decoration: none;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const ImgStyle = styled.img`
