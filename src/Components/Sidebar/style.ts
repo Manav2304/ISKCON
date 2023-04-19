@@ -15,6 +15,7 @@ export const SidebarStyle = styled.div<{ isOpen: boolean }>`
   overflow-y: auto;
   padding: 1rem;
   flex-direction: column;
+  box-shadow: ${({ isOpen }) => (isOpen ? "0 0 10px rgba(0, 0, 0, 0.5)" : "none")};
 `;
 
 export const nav = styled.nav`
@@ -22,6 +23,7 @@ export const nav = styled.nav`
   color: #f00;
   flex-direction: column;
   align-items: center;
+  margin-top: 3rem;
 `;
 
 export const NavStyle = styled.nav`
@@ -138,7 +140,7 @@ export const HeadingStyle = styled.div`
   font-size: 20px;
 
   @media (max-width: 767px) {
-    font-size: 18px;
+    font-size: 17px;
   }
 `;
 
@@ -185,4 +187,16 @@ export const DropdownItem = styled(Link)`
   &:hover {
     background-color: #f2f2f2;
   }
+`;
+
+export const DropdownArrow = styled.span`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 6px 0;
+  border-color: #333 transparent transparent;
+  margin-left: 10px;
 `;

@@ -12,7 +12,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Navbar } from "react-bootstrap";
 import { SideBarDropdown } from "./SideBarDropdown";
-import { dropdownHomeInfo, dropdownServicesInfo } from "./constant";
+import { dropdownServicesInfo } from "./constant";
 
 export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -58,7 +58,9 @@ export const Sidebar = () => {
         </div>
         <SidebarStyle isOpen={isOpen}>
           <nav>
-            <SideBarDropdown items={dropdownHomeInfo} toggleTitle="ISKCON" handleClose={handleClose} />
+            <StyledLink to={routes.home} onClick={handleClose}>
+              ISCKON
+            </StyledLink>
             <SideBarDropdown items={dropdownServicesInfo} toggleTitle="Services" handleClose={handleClose} />
             <StyledLink to={routes.donation} onClick={handleClose}>
               Donate

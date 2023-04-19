@@ -4,6 +4,7 @@ import {
   DropdownButton,
   DropdownMenu,
   DropdownItem,
+  DropdownArrow
 } from "./style";
 
 type DropdownProps = {
@@ -30,7 +31,7 @@ export const SideBarDropdown = ({
 
   return (
     <DropdownWrapper>
-      <DropdownButton onClick={handleToggle}>{toggleTitle}</DropdownButton>
+      <DropdownButton onClick={handleToggle}>{toggleTitle}<DropdownArrow /></DropdownButton>
       {isOpen && (
         <DropdownMenu>
           {items.map((item) => (
