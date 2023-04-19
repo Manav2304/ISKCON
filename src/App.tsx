@@ -38,7 +38,6 @@ export const App: React.FunctionComponent = () => {
             path={routes.festival}
             element={<FestivalPage />}
           />
-          <Route caseSensitive path={routes.visitUs} element={<VisitUs />} />
           <Route caseSensitive path={routes.media} element={<Media />} />
           <Route caseSensitive path={routes.contact} element={<Contact />} />
           <Route
