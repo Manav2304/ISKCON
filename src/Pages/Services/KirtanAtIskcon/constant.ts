@@ -7,13 +7,34 @@ import kirtanAtIskcon6 from "../../../assets/images/kirtan-at-iskcon6.jpg";
 import kirtanAtIskcon7 from "../../../assets/images/kirtan-at-iskcon7.jpg";
 
 export const kirtanAtIskconImages = [
-  kirtanAtIskcon1,
-  kirtanAtIskcon2,
-  kirtanAtIskcon3,
-  kirtanAtIskcon4,
-  kirtanAtIskcon5,
-  kirtanAtIskcon6,
-  kirtanAtIskcon7,
+  {
+    id: 1,
+    image: kirtanAtIskcon1,
+  },
+  {
+    id: 2,
+    image: kirtanAtIskcon2,
+  },
+  {
+    id: 3,
+    image: kirtanAtIskcon3,
+  },
+  {
+    id: 4,
+    image: kirtanAtIskcon4,
+  },
+  {
+    id: 5,
+    image: kirtanAtIskcon5,
+  },
+  {
+    id: 6,
+    image: kirtanAtIskcon6,
+  },
+  {
+    id: 7,
+    image: kirtanAtIskcon7,
+  },
 ];
 
 export const kirtanAtIskcon = [

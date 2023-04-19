@@ -2,8 +2,14 @@ import guestHouse1 from "../../../assets/images/guest-house1.jpg";
 import guestHouse2 from "../../../assets/images/guest-house2.jpg";
 
 export const guestHouseImages = [
-  guestHouse1,
-  guestHouse2,
+  {
+    id: 1,
+    image: guestHouse1,
+  },
+  {
+    id: 2,
+    image: guestHouse2,
+  },
 ];
 export const guestHouse = [
   "The ISKCON Prabhupada Ashrya Bhavan is a welcoming and comfortable guesthouse located on the grounds of the ISKCON Vallabh Vidya Nagar temple. With 12 guestrooms available, including 2 AC and 10 non-AC rooms, the guesthouse is an ideal place to stay for both life patrons and non-life members who are looking for a comfortable and convenient place to rest during their visit.",
