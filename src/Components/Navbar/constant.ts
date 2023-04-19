@@ -35,7 +35,7 @@ export const dropdownServicesInfo = [
   { title: "Kirtan At Iskcon", path: routes.kirtanAtIskcon },
   { title: "Iskcon Youth Forum", path: routes.iskconYouthForum },
   { title: "Guest House", path: routes.guestHouse },
-  { title: "Goushala", path: routes.goushala },
+  { title: "Goushala", path: routes.gaushala },
   { title: "Devotee Kitchen", path: routes.devoteeKitchen },
   { title: "Deity Worship", path: routes.deityWorship },
   { title: "Book Distribution", path: routes.bookDistribution },
