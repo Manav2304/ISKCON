@@ -17,7 +17,7 @@ export const Heading = styled.h6`
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 4px;
-  margin-left: 90px;
+  margin-left: 130px;
 
   @media only screen and (max-width: 768px) {
     padding-right: 130px;
@@ -25,8 +25,9 @@ export const Heading = styled.h6`
     text-align: center;
   }
 
-  @media only screen and (min-width: 769px) {
-    text-align: center;
+  @media only screen and (max-width: 480px) {
+    padding-right: 50px;
+    margin-left: 50px;
   }
 `;
 
