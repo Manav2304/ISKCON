@@ -67,11 +67,11 @@ export const Reviews = styled.div`
   margin-top: 100px;
 
   @media only screen and (max-width: 479px) {
-    margin-top: 80px;
+    margin-top: 60px;
   }
 
   @media only screen and (min-width: 480px) and (max-width: 767px) {
-    margin-top: 80px;
+    margin-top: 76px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -102,14 +102,13 @@ export const ImageStyle = styled.div`
 export const ImageCarousel = styled.img`
   width: 100%;
   height: 500px;
-  object-fit: cover;
 
   @media only screen and (max-width: 479px) {
-    height: 150px;
+    height: 230px;
   }
 
   @media only screen and (min-width: 480px) and (max-width: 767px) {
-    height: 200px;
+    height: 250px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 991px) {
