@@ -6,12 +6,30 @@ import goushala5 from "../../../assets/images/goushala5.jpg";
 import goushala6 from "../../../assets/images/goushala6.jpg";
 
 export const goverdhangoushalaImages = [
-  goushala1,
-  goushala2,
-  goushala3,
-  goushala4,
-  goushala5,
-  goushala6,
+  {
+    id: 1,
+    image: goushala1,
+  },
+  {
+    id: 2,
+    image: goushala2,
+  },
+  {
+    id: 3,
+    image: goushala3,
+  },
+  {
+    id: 4,
+    image: goushala4,
+  },
+  {
+    id: 5,
+    image: goushala5,
+  },
+  {
+    id: 6,
+    image: goushala6,
+  },
 ];
 
 export const goushala = [
