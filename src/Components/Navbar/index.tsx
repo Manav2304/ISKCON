@@ -15,9 +15,7 @@ export const NavigationBar = () => {
   return (
     <NavStyle className="navbar fixed-top">
       <div className="container">
-        <StyledLink to={routes.home} onClick={handleLinkClick}>
-          Iskcon
-        </StyledLink>
+        <StyledLink to={routes.home}>Iskcon</StyledLink>
         <PageDropdown items={dropdownServicesInfo} toggleTitle="Services" />
         <StyledLink to={routes.visitUs}>Visit Us</StyledLink>
         <StyledLink to={routes.media}>Media</StyledLink>
