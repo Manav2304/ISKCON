@@ -1,16 +1,22 @@
 import { useEffect, useRef, useState } from "react";
-import { HeadingStyle, ImgStyle, NavStyle, SidebarStyle, ToggleButton } from "./style";
-import { SocialMediaIconsStyle } from "../Navbar/style";
 import {
-  socialMediaIcon,
-} from "../Navbar/constant";
+  HeadingStyle,
+  ImgStyle,
+  LogoWrapper,
+  NavStyle,
+  PageWrapper,
+  SidebarStyle,
+  ToggleButton,
+} from "./style";
+import { SocialMediaIconsStyle } from "../Navbar/style";
+import { socialMediaIcon } from "../Navbar/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
 import logoUrl from "../../assets/images/isckon-logo.png";
 import { routes } from "../../routes";
 import { StyledLink } from "./style";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Navbar } from "react-bootstrap";
+import { Container, Navbar } from "react-bootstrap";
 import { SideBarDropdown } from "./SideBarDropdown";
 import { dropdownServicesInfo } from "./constant";
 
@@ -27,7 +33,10 @@ export const Sidebar = () => {
   };
 
   const handleClickOutside = (event: MouseEvent) => {
-    if (ref.current && !(ref.current as HTMLElement).contains(event.target as Node)) {
+    if (
+      ref.current &&
+      !(ref.current as HTMLElement).contains(event.target as Node)
+    ) {
       setIsOpen(false);
     }
   };
@@ -43,25 +52,27 @@ export const Sidebar = () => {
     <div ref={ref}>
       <Navbar />
       <NavStyle>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <div style={{ display: "flex", alignItems: "center" }}>
+        <PageWrapper>
+          <LogoWrapper>
             <StyledLink to={routes.home}>
               <ImgStyle src={logoUrl} alt="Logo" />
             </StyledLink>
-            <HeadingStyle>
-              Sri Sri Radha Giridhariji Temple
-            </HeadingStyle>
-          </div>
+            <HeadingStyle>Sri Sri Radha Giridhariji Temple</HeadingStyle>
+          </LogoWrapper>
           <ToggleButton onClick={handleToggle}>
             <FontAwesomeIcon icon={faBars} />
           </ToggleButton>
-        </div>
+        </PageWrapper>
         <SidebarStyle isOpen={isOpen}>
           <nav>
             <StyledLink to={routes.home} onClick={handleClose}>
               ISCKON
             </StyledLink>
-            <SideBarDropdown items={dropdownServicesInfo} toggleTitle="Services" handleClose={handleClose} />
+            <SideBarDropdown
+              items={dropdownServicesInfo}
+              toggleTitle="Services"
+              handleClose={handleClose}
+            />
             <StyledLink to={routes.donation} onClick={handleClose}>
               Donate
             </StyledLink>

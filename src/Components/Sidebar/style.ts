@@ -15,7 +15,8 @@ export const SidebarStyle = styled.div<{ isOpen: boolean }>`
   overflow-y: auto;
   padding: 1rem;
   flex-direction: column;
-  box-shadow: ${({ isOpen }) => (isOpen ? "0 0 10px rgba(0, 0, 0, 0.5)" : "none")};
+  box-shadow: ${({ isOpen }) =>
+    isOpen ? "0 0 10px rgba(0, 0, 0, 0.5)" : "none"};
 `;
 
 export const nav = styled.nav`
@@ -199,4 +200,15 @@ export const DropdownArrow = styled.span`
   border-width: 6px 6px 0;
   border-color: #333 transparent transparent;
   margin-left: 10px;
+`;
+
+export const PageWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const LogoWrapper = styled.div`
+  display: flex;
+  align-items: center;
 `;
