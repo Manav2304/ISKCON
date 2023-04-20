@@ -1,13 +1,23 @@
 import { useState } from "react";
-import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion'; 
-import { StyledLink } from "./style";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from "react-accessible-accordion";
+import { AccordionStyle, StyledLink } from "./style";
+import "react-accessible-accordion/dist/fancy-example.css";
 
 type AccordionProps = {
-  items: { name: string; url: string; }[];
+  items: { name: string; url: string }[];
   toggleTitle: string;
   handleClose: () => void;
 };
-export const SidebarAccordion = ({ items, toggleTitle, handleClose }: AccordionProps) => {
+export const SidebarAccordion = ({
+  items,
+  toggleTitle,
+  handleClose,
+}: AccordionProps) => {
   const [activeIndex, setActiveIndex] = useState(-1);
 
   const handleAccordionChange = (index: number) => {
@@ -21,17 +31,22 @@ export const SidebarAccordion = ({ items, toggleTitle, handleClose }: AccordionP
   return (
     <Accordion allowZeroExpanded>
       <AccordionItem uuid="toggle">
-        <AccordionItemButton>{toggleTitle}</AccordionItemButton>
+        <AccordionStyle>
+          <AccordionItemButton className="custom-accordion-button">
+            {toggleTitle}
+          </AccordionItemButton>
+        </AccordionStyle>
         <AccordionItemPanel>
           {items.map((item, index) => (
             <AccordionItem key={item.name} uuid={`item-${index}`}>
-              <AccordionItemButton onClick={() => handleAccordionChange(index)}>
+              <AccordionItemButton
+                className="custom-accordion-button"
+                onClick={() => handleAccordionChange(index)}
+              >
                 <StyledLink to={item.url} onClick={handleLinkClick}>
                   {item.name}
                 </StyledLink>
               </AccordionItemButton>
-              <AccordionItemPanel>
-              </AccordionItemPanel>
             </AccordionItem>
           ))}
         </AccordionItemPanel>

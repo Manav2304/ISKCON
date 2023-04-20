@@ -156,7 +156,7 @@ export const LogoWrapper = styled.div`
   align-items: center;
 `;
 
-export const AccordianStyle = styled.div`
+export const AccordionStyle = styled.div`
   display: block;
   color: #f00;
   text-decoration: none;
@@ -166,4 +166,31 @@ export const AccordianStyle = styled.div`
   font-weight: bold;
   margin-right: 20px;
   padding: 8px 16px;
+
+  .custom-accordion-button {
+    position: relative;
+    padding: 10px;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .custom-accordion-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentcolor;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .custom-accordion-button[aria-expanded="true"]::before {
+    transform: translateY(-50%) rotate(90deg);
+  }
 `;
+export const Random = styled.div``;
