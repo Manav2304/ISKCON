@@ -11,8 +11,8 @@ import { StyledLink } from "./style";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Navbar } from "react-bootstrap";
-import { SideBarDropdown } from "./SideBarDropdown";
 import { dropdownServicesInfo } from "./constant";
+import { SidebarAccordion } from "./SidebarAccordion";
 
 export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -61,7 +61,7 @@ export const Sidebar = () => {
             <StyledLink to={routes.home} onClick={handleClose}>
               ISCKON
             </StyledLink>
-            <SideBarDropdown items={dropdownServicesInfo} toggleTitle="Services" handleClose={handleClose} />
+            <SidebarAccordion items={dropdownServicesInfo} toggleTitle="Services" handleClose={handleClose} />
             <StyledLink to={routes.donation} onClick={handleClose}>
               Donate
             </StyledLink>

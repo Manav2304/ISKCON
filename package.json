@@ -28,6 +28,7 @@
     "mdb-react-ui-kit": "^6.0.0",
     "prettier": "^2.8.7",
     "react": "^18.2.0",
+    "react-accessible-accordion": "^5.0.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
