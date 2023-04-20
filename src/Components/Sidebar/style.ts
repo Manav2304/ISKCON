@@ -15,7 +15,8 @@ export const SidebarStyle = styled.div<{ isOpen: boolean }>`
   overflow-y: auto;
   padding: 1rem;
   flex-direction: column;
-  box-shadow: ${({ isOpen }) => (isOpen ? "0 0 10px rgba(0, 0, 0, 0.5)" : "none")};
+  box-shadow: ${({ isOpen }) =>
+    isOpen ? "0 0 10px rgba(0, 0, 0, 0.5)" : "none"};
 `;
 
 export const nav = styled.nav`
@@ -144,3 +145,25 @@ export const HeadingStyle = styled.div`
   }
 `;
 
+export const PageWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const LogoWrapper = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const AccordianStyle = styled.div`
+  display: block;
+  color: #f00;
+  text-decoration: none;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 20px;
+  padding: 8px 16px;
+`;

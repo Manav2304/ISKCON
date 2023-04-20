@@ -24,7 +24,7 @@ export const SidebarAccordion = ({ items, toggleTitle, handleClose }: AccordionP
         <AccordionItemButton>{toggleTitle}</AccordionItemButton>
         <AccordionItemPanel>
           {items.map((item, index) => (
-            <AccordionItem key={item.name} uuid={`item-${index}`}>
+            <AccordionItem  uuid={`item-${index}`}>
               <AccordionItemButton onClick={() => handleAccordionChange(index)}>
                 <StyledLink to={item.url} onClick={handleLinkClick}>
                   {item.name}
