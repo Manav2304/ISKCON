@@ -7,6 +7,7 @@ import {
   PageWrapper,
   SidebarStyle,
   ToggleButton,
+  AccordianStyle,
 } from "./style";
 import { SocialMediaIconsStyle } from "../Navbar/style";
 import { socialMediaIcon } from "../Navbar/constant";
@@ -68,11 +69,13 @@ export const Sidebar = () => {
             <StyledLink to={routes.home} onClick={handleClose}>
               ISCKON
             </StyledLink>
-            <SidebarAccordion
-              items={dropdownServicesInfo}
-              toggleTitle="Services"
-              handleClose={handleClose}
-            />
+            <AccordianStyle>
+              <SidebarAccordion
+                items={dropdownServicesInfo}
+                toggleTitle="Services"
+                handleClose={handleClose}
+              />
+            </AccordianStyle>
             <StyledLink to={routes.donation} onClick={handleClose}>
               Donate
             </StyledLink>

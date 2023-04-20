@@ -155,3 +155,15 @@ export const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
 `;
+
+export const AccordianStyle = styled.div`
+  display: block;
+  color: #f00;
+  text-decoration: none;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 20px;
+  padding: 8px 16px;
+`;
