@@ -144,8 +144,51 @@ export const HeadingStyle = styled.div`
   }
 `;
 
-export const ToggleTitle = styled.div`
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 1rem;
+export const AccordionWrapper = styled.div`
+  margin-top: 10px;
 `;
+
+export const AccordionButton = styled.button`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #f8f8f8;
+  }
+
+  &:focus {
+    outline: none;
+  }
+`;
+
+export const AccordionIcon = styled.span`
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+`;
+
+export const AccordionContent = styled.div`
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+
+  &.open {
+    max-height: 500px;
+    transition: all 0.3s ease-in-out;
+  }
+`;
+
+export const AccordionItem = styled.div`
+  margin-bottom: 5px;
+`;
+
