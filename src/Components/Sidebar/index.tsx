@@ -16,9 +16,9 @@ import { routes } from "../../routes";
 import { StyledLink } from "./style";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Container, Navbar } from "react-bootstrap";
-import { SideBarDropdown } from "./SideBarDropdown";
+import { Navbar } from "react-bootstrap";
 import { dropdownServicesInfo } from "./constant";
+import { SidebarAccordion } from "./SidebarAccordion";
 
 export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -68,7 +68,7 @@ export const Sidebar = () => {
             <StyledLink to={routes.home} onClick={handleClose}>
               ISCKON
             </StyledLink>
-            <SideBarDropdown
+            <SidebarAccordion
               items={dropdownServicesInfo}
               toggleTitle="Services"
               handleClose={handleClose}
