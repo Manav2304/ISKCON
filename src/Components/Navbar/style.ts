@@ -11,14 +11,6 @@ export const NavStyle = styled.nav`
   @media (max-width: 767px) {
     display: none;
   }
-
-  @media (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    padding: 0 20px;
-  }
 `;
 
 export const StyledLink = styled(Link)`

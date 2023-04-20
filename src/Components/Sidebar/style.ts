@@ -1,11 +1,17 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import title from "../../assets/images/navbar-bg.png";
+import {
+  Accordion as AccessibleAccordion,
+  AccordionItem as AccessibleAccordionItem,
+  AccordionItemButton as AccessibleAccordionItemButton,
+  AccordionItemPanel as AccessibleAccordionItemPanel,
+} from "react-accessible-accordion";
 
 export const SidebarStyle = styled.div<{ isOpen: boolean }>`
   background-image: url(${title});
   background-size: cover;
-  width: 200px;
+  width: 300px;
   height: 100%;
   position: fixed;
   top: 0;
@@ -156,7 +162,9 @@ export const LogoWrapper = styled.div`
   align-items: center;
 `;
 
-export const AccordianStyle = styled.div`
+export const AccordionStyle = styled.div`
+  margin-left: -10px;
+  padding: 8px 16px;
   display: block;
   color: #f00;
   text-decoration: none;
@@ -164,6 +172,96 @@ export const AccordianStyle = styled.div`
   align-items: center;
   font-size: 16px;
   font-weight: bold;
-  margin-right: 20px;
-  padding: 8px 16px;
+
+  .custom-accordion-button {
+    position: relative;
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .custom-accordion-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentcolor;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .custom-accordion-button[aria-expanded="true"]::before {
+    transform: translateY(-50%) rotate(90deg);
+  }
 `;
+
+export const Accordion = styled(AccessibleAccordion)`
+
+  .accordion-button {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid #eaeaea;
+    text-align: left;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #f6f6f6;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0.75rem;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-top: 0.4rem solid #ccc;
+      border-right: 0.4rem solid transparent;
+      border-bottom: 0.4rem solid transparent;
+      border-left: 0.4rem solid transparent;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &.accordion-button-active {
+      background-color: #f6f6f6;
+
+      &::after {
+        border-top: 0;
+        border-right: 0.4rem solid transparent;
+        border-bottom: 0.4rem solid #ccc;
+        border-left: 0.4rem solid transparent;
+      }
+    }
+  }
+`;
+
+export const AccordionItem = styled(AccessibleAccordionItem)`
+  &:last-child {
+    border-bottom: none;
+  }
+`;
+
+export const AccordionItemButton = styled(AccessibleAccordionItemButton)`
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: #f4c2c2;
+`;
+
+export const AccordionItemPanel = styled(AccessibleAccordionItemPanel)`
+  padding: 1rem;
+`;
+
