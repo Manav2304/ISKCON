@@ -145,63 +145,6 @@ export const HeadingStyle = styled.div`
   }
 `;
 
-export const DropdownWrapper = styled.div`
-  position: relative;
-  display: inline-block;
-  background-color: transparent;
-`;
-
-export const DropdownButton = styled.button`
-  background-color: transparent;
-  color: #f00;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  margin-right: 10px;
-  padding: 8px 16px;
-
-  &:hover {
-    opacity: 0.8;
-  }
-`;
-
-export const DropdownMenu = styled.div`
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1;
-  background-color: #fff;
-  min-width: 160px;
-  padding: 8px 0;
-`;
-
-export const DropdownItem = styled(Link)`
-  display: block;
-  color: #333;
-  font-size: 14px;
-  font-weight: normal;
-  padding: 8px 16px;
-  text-decoration: none;
-  white-space: nowrap;
-
-  &:hover {
-    background-color: #f2f2f2;
-  }
-`;
-
-export const DropdownArrow = styled.span`
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 6px 6px 0;
-  border-color: #333 transparent transparent;
-  margin-left: 10px;
-`;
-
 export const PageWrapper = styled.div`
   display: flex;
   justify-content: space-between;
