@@ -184,7 +184,7 @@ export const AccordionStyle = styled.div`
     content: "";
     position: absolute;
     top: 50%;
-    right: 100px;
+    right: 150px;
     width: 0;
     height: 0;
     border-top: 5px solid transparent;
@@ -200,7 +200,6 @@ export const AccordionStyle = styled.div`
 `;
 
 export const Accordion = styled(AccessibleAccordion)`
-
   .accordion-button {
     display: block;
     position: relative;
@@ -258,10 +257,21 @@ export const AccordionItemButton = styled(AccessibleAccordionItemButton)`
   align-items: center;
   cursor: pointer;
   border: none;
-  background-color: #f4c2c2;
+  background-color: #ffd9b3;
 `;
 
 export const AccordionItemPanel = styled(AccessibleAccordionItemPanel)`
   padding: 1rem;
 `;
 
+export const BorderStyle = styled(AccordionItemButton)`
+  border-bottom: 1px solid #963;
+  border-top: 1px solid #963;
+`;
+export const IconsStyle = styled.a`
+  color: #8b0000;
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.2s ease;
+`;

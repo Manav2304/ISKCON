@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import {
   HeadingStyle,
+  IconsStyle,
   ImgStyle,
   LogoWrapper,
   NavStyle,
@@ -72,9 +73,10 @@ export const Sidebar = () => {
             <SidebarAccordion
               items={dropdownServicesInfo}
               toggleTitle="Services"
-              handleClose={handleClose} isOpen={false} 
-            /> 
-             <hr />
+              handleClose={handleClose}
+              isOpen={false}
+            />
+            <hr />
             <StyledLink to={routes.donation} onClick={handleClose}>
               Donate
             </StyledLink>
@@ -94,12 +96,12 @@ export const Sidebar = () => {
             <StyledLink to={routes.media} onClick={handleClose}>
               Media
             </StyledLink>
-             <hr />
+            <hr />
             <SocialMediaIconsStyle>
               {socialMediaIcon.map((item) => (
-                <a key={item.name} href={item.href}>
+                <IconsStyle key={item.name} href={item.href} target="_blank">
                   <MDBIcon fab icon={item.icon} />
-                </a>
+                </IconsStyle>
               ))}
             </SocialMediaIconsStyle>
           </nav>

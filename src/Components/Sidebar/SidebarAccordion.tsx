@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionItemButton,
   AccordionItemPanel,
+  BorderStyle,
 } from "./style";
 import "react-accessible-accordion/dist/fancy-example.css";
 
@@ -43,14 +44,17 @@ export const SidebarAccordion = ({
         <AccordionItemPanel>
           {items.map((item, index) => (
             <AccordionItem key={item.name} uuid={`item-${index}`}>
-              <AccordionItemButton
+              <BorderStyle
                 className="custom-accordion-button"
-                onClick={() => handleAccordionChange(index)}
+                onClick={() => {
+                  handleAccordionChange(index);
+                  handleClose();
+                }}
               >
                 <StyledLink to={item.url} onClick={handleLinkClick}>
                   {item.name}
                 </StyledLink>
-              </AccordionItemButton>
+              </BorderStyle>
             </AccordionItem>
           ))}
         </AccordionItemPanel>
