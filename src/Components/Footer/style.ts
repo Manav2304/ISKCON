@@ -74,8 +74,7 @@ export const TimeStyle = styled.div`
   text-align: right;
   color: #fff;
   margin-top: 30px;
-  margin-right: 50px;
-  font-family: "Times New Roman", Times, serif;
+  margin-right: 130px;
 
   @media only screen and (max-width: 768px) {
     text-align: center;
