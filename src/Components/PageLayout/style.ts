@@ -4,7 +4,7 @@ export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 100px;
   color: #ad0d0d;
   font-family: "Times New Roman", Times, serif;
 `;
