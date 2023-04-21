@@ -29,7 +29,7 @@ export const Heading = styled.h6`
 
   @media only screen and (min-width: 769px) {
     text-align: center;
-    margin-left: 40px;
+    margin-left: 30px;
     padding-right: 50px;
   }
 
@@ -43,6 +43,7 @@ export const ContactStyle = styled.div`
   margin-top: 80px;
   margin-left: 50px;
   float: right;
+  font-family: "Times New Roman", Times, serif;
 
   @media only screen and (max-width: 768px) {
     margin-left: 20px;
@@ -77,6 +78,7 @@ export const TimeStyle = styled.div`
   color: #fff;
   margin-top: 30px;
   margin-right: 130px;
+  font-family: "Times New Roman", Times, serif;
 
   @media only screen and (max-width: 768px) {
     text-align: center;
