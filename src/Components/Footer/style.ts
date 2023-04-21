@@ -29,6 +29,8 @@ export const Heading = styled.h6`
 
   @media only screen and (min-width: 769px) {
     text-align: center;
+    margin-left: 40px;
+    padding-right: 50px;
   }
 
   @media only screen and (max-width: 480px) {

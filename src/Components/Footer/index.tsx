@@ -24,7 +24,7 @@ export const Footer = () => {
           <MDBContainer className="text-center text-md-start mt-5">
             <MDBRow className="mt-3">
               <MDBCol>
-                <Heading>Timings</Heading>
+                <Heading>Timing</Heading>
                 <div className="mx-auto mb-4">
                   <TimeStyle>
                     {schedules.map((time) => (
