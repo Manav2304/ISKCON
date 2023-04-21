@@ -1,12 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import title from "../../assets/images/navbar-bg.png";
-import {
-  Accordion as AccessibleAccordion,
-  AccordionItem as AccessibleAccordionItem,
-  AccordionItemButton as AccessibleAccordionItemButton,
-  AccordionItemPanel as AccessibleAccordionItemPanel,
-} from "react-accessible-accordion";
+import { Accordion, AccordionButton } from 'react-bootstrap';
 
 export const SidebarStyle = styled.div<{ isOpen: boolean }>`
   background-image: url(${title});
@@ -163,111 +158,65 @@ export const LogoWrapper = styled.div`
   align-items: center;
 `;
 
-export const AccordionStyle = styled.div`
-  margin-left: -10px;
-  padding: 8px 16px;
-  display: block;
+export const AccordionContainer = styled(Accordion)`
+  background-color: transparent;
+  margin-bottom: none;
+  animation: scroll-out 2s ease-in-out;
+
+  @keyframes scroll-out {
+    0% {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+`;
+
+export const AccordionItemButton = styled(AccordionButton)`
+  display: column;
+  outline: none;
+  background-image: url(${title});
+  background-size: cover; 
+  border: none;
   color: #f00;
-  text-decoration: none;
-  flex-direction: column;
-  align-items: center;
   font-size: 16px;
   font-weight: bold;
+  padding: 1rem;
+  text-align: left;
 
-  .custom-accordion-button {
-    position: relative;
-    padding: 10px;
+  &:hover {
     background-color: transparent;
-    cursor: pointer;
-  }
-
-  .custom-accordion-button::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 150px;
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid currentcolor;
-    transform: translateY(-50%);
-    transition: transform 0.2s ease-in-out;
-  }
-
-  .custom-accordion-button[aria-expanded="true"]::before {
-    transform: translateY(-50%) rotate(90deg);
-  }
-`;
-
-export const Accordion = styled(AccessibleAccordion)`
-  .accordion-button {
-    display: block;
-    position: relative;
-    width: 100%;
-    padding: 1rem;
     border: none;
-    border-bottom: 1px solid #eaeaea;
-    text-align: left;
-    background-color: transparent;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.2s ease-in-out;
-
-    &:hover {
-      background-color: #f6f6f6;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: 0.75rem;
-      transform: translateY(-50%);
-      width: 0;
-      height: 0;
-      border-top: 0.4rem solid #ccc;
-      border-right: 0.4rem solid transparent;
-      border-bottom: 0.4rem solid transparent;
-      border-left: 0.4rem solid transparent;
-      transition: all 0.2s ease-in-out;
-    }
-
-    &.accordion-button-active {
-      background-color: #f6f6f6;
-
-      &::after {
-        border-top: 0;
-        border-right: 0.4rem solid transparent;
-        border-bottom: 0.4rem solid #ccc;
-        border-left: 0.4rem solid transparent;
-      }
-    }
   }
 `;
 
-export const AccordionItem = styled(AccessibleAccordionItem)`
+
+export const AccordionItem = styled.div`
+  background-color: transparent;
+
   &:last-child {
     border-bottom: none;
   }
 `;
 
-export const AccordionItemButton = styled(AccessibleAccordionItemButton)`
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  border: none;
+export const AccordionLink = styled.a`
+  display: block;
   background-color: #ffd9b3;
-`;
+  color: #f00;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 1rem ;
+  text-decoration: none;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
 
-export const AccordionItemPanel = styled(AccessibleAccordionItemPanel)`
-  padding: 1rem;
-`;
-
-export const BorderStyle = styled(AccordionItemButton)`
-  border-bottom: 1px solid #963;
-  border-top: 1px solid #963;
+  &:hover {
+    background-color: transparent;
+    color: #007bff;
+  }
 `;
 
 export const IconsStyle = styled.a`
@@ -277,3 +226,4 @@ export const IconsStyle = styled.a`
   height: 100%;
   transition: background-color 0.2s ease;
 `;
+

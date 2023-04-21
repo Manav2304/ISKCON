@@ -1,14 +1,6 @@
-import { useState } from "react";
-import {
-  AccordionStyle,
-  StyledLink,
-  Accordion,
-  AccordionItem,
-  AccordionItemButton,
-  AccordionItemPanel,
-  BorderStyle,
-} from "./style";
-import "react-accessible-accordion/dist/fancy-example.css";
+import { useState, useEffect, useRef } from "react";
+import { AccordionItemButton, AccordionLink, AccordionContainer } from './style';
+import { Accordion } from "react-bootstrap";
 
 type AccordionProps = {
   items: { name: string; url: string }[];
@@ -23,42 +15,55 @@ export const SidebarAccordion = ({
   handleClose,
   isOpen,
 }: AccordionProps) => {
-  const [activeIndex, setActiveIndex] = useState(-1);
+  const [activeIndex, setActiveIndex] = useState("-1");
+  const accordionRef = useRef<HTMLDivElement>(null); // Fix here
 
   const handleAccordionChange = (index: number) => {
-    setActiveIndex(index === activeIndex ? -1 : index);
+    setActiveIndex(index === parseInt(activeIndex) ? "-1" : String(index));
   };
 
   const handleLinkClick = () => {
     handleClose();
   };
 
+  const handleClickOutsideAccordion = (event: MouseEvent) => {
+    const target = event.target as HTMLElement;
+    if (!accordionRef.current?.contains(target)) {
+      setActiveIndex("-1");
+    }
+  };
+  
+  
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutsideAccordion);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutsideAccordion);
+    };
+  }, []);
+
   return (
-    <Accordion allowZeroExpanded={true} preExpanded={isOpen ? ["toggle"] : []}>
-      <AccordionItem uuid="toggle">
-        <AccordionStyle>
-          <AccordionItemButton className="custom-accordion-button">
-            {toggleTitle}
-          </AccordionItemButton>
-        </AccordionStyle>
-        <AccordionItemPanel>
-          {items.map((item, index) => (
-            <AccordionItem key={item.name} uuid={`item-${index}`}>
-              <BorderStyle
-                className="custom-accordion-button"
-                onClick={() => {
-                  handleAccordionChange(index);
-                  handleClose();
-                }}
-              >
-                <StyledLink to={item.url} onClick={handleLinkClick}>
-                  {item.name}
-                </StyledLink>
-              </BorderStyle>
-            </AccordionItem>
-          ))}
-        </AccordionItemPanel>
-      </AccordionItem>
+    <Accordion ref={accordionRef} defaultActiveKey={isOpen ? "toggle" : ""}>
+      <Accordion.Item eventKey="toggle">
+        <AccordionItemButton>
+          {toggleTitle}
+        </AccordionItemButton>
+        <Accordion.Collapse eventKey="toggle">
+          <AccordionContainer>
+            {items.map((item, index) => (
+              <Accordion.Item key={item.name} eventKey={`item-${index}`}>
+                <div key={item.name} onClick={() => {
+                    handleAccordionChange(index);
+                    handleClose();
+                  }}>
+                  <AccordionLink href={item.url} onClick={handleLinkClick}>
+                    {item.name}
+                  </AccordionLink>
+                </div>
+              </Accordion.Item>
+            ))}
+          </AccordionContainer>
+        </Accordion.Collapse>
+      </Accordion.Item>
     </Accordion>
   );
 };

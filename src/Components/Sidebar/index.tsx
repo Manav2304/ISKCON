@@ -70,13 +70,6 @@ export const Sidebar = () => {
               ISCKON
             </StyledLink>
             <hr />
-            <SidebarAccordion
-              items={dropdownServicesInfo}
-              toggleTitle="Services"
-              handleClose={handleClose}
-              isOpen={false}
-            />
-            <hr />
             <StyledLink to={routes.donation} onClick={handleClose}>
               Donate
             </StyledLink>
@@ -96,6 +89,13 @@ export const Sidebar = () => {
             <StyledLink to={routes.media} onClick={handleClose}>
               Media
             </StyledLink>
+            <hr />
+            <SidebarAccordion
+              items={dropdownServicesInfo}
+              toggleTitle="Services"
+              handleClose={handleClose}
+              isOpen={false}
+            />
             <hr />
             <SocialMediaIconsStyle>
               {socialMediaIcon.map((item) => (
