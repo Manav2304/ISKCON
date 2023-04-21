@@ -164,4 +164,5 @@ export const BoxHeading = styled.h2`
 
 export const BoxDetail = styled.p`
   font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
 `;

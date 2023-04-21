@@ -52,13 +52,14 @@ export const ToggleButton = styled.button`
   @media (max-width: 768px) {
     display: block;
     position: fixed;
-    top: 10px;
+    top: 0;
     right: 0;
     padding: 10px;
     background-color: transparent;
     border: none;
     cursor: pointer;
     z-index: 1000;
+    font-size: 30px;
   }
 `;
 
@@ -268,6 +269,7 @@ export const BorderStyle = styled(AccordionItemButton)`
   border-bottom: 1px solid #963;
   border-top: 1px solid #963;
 `;
+
 export const IconsStyle = styled.a`
   color: #8b0000;
   padding: 15px;
