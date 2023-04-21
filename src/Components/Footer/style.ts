@@ -14,14 +14,20 @@ export const FooterLogoStyle = styled.div`
 `;
 
 export const Heading = styled.h6`
+  font-family: "Times New Roman", Times, serif;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 4px;
   margin-left: 130px;
+  font-size: 20px;
 
   @media only screen and (max-width: 768px) {
     padding-right: 130px;
     margin-top: -50px;
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 769px) {
     text-align: center;
   }
 
@@ -49,7 +55,14 @@ export const ContactStyle = styled.div`
 
 export const TermsTitle = styled.h5`
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
+  margin-bottom: -15px;
+  margin-top: -15px;
+  font-family: "Times New Roman", Times, serif;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 export const BgColor = styled.div`
@@ -62,6 +75,7 @@ export const TimeStyle = styled.div`
   color: #fff;
   margin-top: 30px;
   margin-right: 50px;
+  font-family: "Times New Roman", Times, serif;
 
   @media only screen and (max-width: 768px) {
     text-align: center;
@@ -88,6 +102,7 @@ export const TermsHeading = styled.h6`
   color: #fff;
   display: inline-flex;
   margin-left: 35%;
+  font-family: "Times New Roman", Times, serif;
 
   @media only screen and (max-width: 768px) {
     margin-left: 5px;
@@ -121,6 +136,9 @@ export const ContactDiv = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 50px;
+  padding-right: 50px;
 `;
 
 export const ContactIcon = styled.i`

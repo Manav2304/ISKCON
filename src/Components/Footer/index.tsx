@@ -30,15 +30,12 @@ export const Footer = () => {
           <MDBContainer className="text-center text-md-start mt-5">
             <MDBRow className="mt-3">
               <MDBCol>
-                <Heading>
-                  <MDBIcon icon="clock" />
-                  Timing
-                </Heading>
+                <Heading>Timing</Heading>
                 <div className="mx-auto mb-4">
                   <TimeStyle>
                     {schedules.map((time) => (
                       <div key={time.name}>
-                        {time.name} : {time.time}
+                        {time.name} - {time.time}
                       </div>
                     ))}
                   </TimeStyle>
@@ -78,7 +75,7 @@ export const Footer = () => {
           </MDBContainer>
         </section>
         <div className="text-center p-4">
-          © 2021 ISKCON. All rights reserved.
+          <TermsTitle>© 2021 ISKCON. All rights reserved.</TermsTitle>
         </div>
       </BgColor>
     </MDBFooter>
