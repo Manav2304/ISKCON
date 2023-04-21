@@ -1,10 +1,4 @@
-import {
-  MDBFooter,
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBIcon,
-} from "mdb-react-ui-kit";
+import { MDBFooter, MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
 import footerLogo from "../../assets/images/footer-logo.jpeg";
 import {
   FooterLogoStyle,
