@@ -63,6 +63,15 @@ export const ImageTitle = styled.img`
 
 export const PageWrapper = styled.div`
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: 10px;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const LecturesWrapper = styled.div`
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 10px;
