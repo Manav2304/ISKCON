@@ -33,6 +33,10 @@ export const Sidebar = () => {
     setIsOpen(false);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   const handleClickOutside = (event: MouseEvent) => {
     if (
       ref.current &&
@@ -93,8 +97,7 @@ export const Sidebar = () => {
             <SidebarAccordion
               items={dropdownServicesInfo}
               toggleTitle="Services"
-              handleClose={handleClose}
-              isOpen={false}
+              handleClose={closeMenu}
             />
             <hr />
             <SocialMediaIconsStyle>

@@ -161,16 +161,16 @@ export const LogoWrapper = styled.div`
 export const AccordionContainer = styled(Accordion)`
   background-color: transparent;
   margin-bottom: none;
-  animation: scroll-out 2s ease-in-out;
+  animation: slide-in-right 2s ease-in-out;
 
-  @keyframes scroll-out {
+  @keyframes slide-in-right {
     0% {
-      transform: translateY(-10px);
+      transform: translateX(-100%);
       opacity: 0;
     }
 
     100% {
-      transform: translateY(0);
+      transform: translateX(0);
       opacity: 1;
     }
   }
@@ -178,7 +178,7 @@ export const AccordionContainer = styled(Accordion)`
 
 export const AccordionItemButton = styled(AccordionButton)`
   display: column;
-  outline: none;
+  outline: none; 
   background-image: url(${title});
   background-size: cover; 
   border: none;
@@ -203,7 +203,7 @@ export const AccordionItem = styled.div`
   }
 `;
 
-export const AccordionLink = styled.a`
+export const AccordionLink =  styled(Link)`
   display: block;
   background-color: #ffd9b3;
   color: #f00;
