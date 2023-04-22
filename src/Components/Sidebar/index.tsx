@@ -24,17 +24,15 @@ import { SidebarAccordion } from "./SidebarAccordion";
 export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef(null);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+
+  const handleClose = () => {
+   setIsOpen(false);
+   setIsServicesOpen(false);
+  };
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
-  };
-
-  const handleClose = () => {
-    setIsOpen(false);
-  };
-
-  const closeMenu = () => {
-    setIsOpen(false);
   };
 
   const handleClickOutside = (event: MouseEvent) => {
@@ -74,6 +72,14 @@ export const Sidebar = () => {
               ISCKON
             </StyledLink>
             <hr />
+            <SidebarAccordion
+  items={dropdownServicesInfo}
+  toggleTitle="Services"
+  handleClose={handleClose}
+  isOpen={isServicesOpen}
+  setIsOpen={setIsServicesOpen}
+/>
+            <hr />  
             <StyledLink to={routes.donation} onClick={handleClose}>
               Donate
             </StyledLink>
@@ -93,12 +99,6 @@ export const Sidebar = () => {
             <StyledLink to={routes.media} onClick={handleClose}>
               Media
             </StyledLink>
-            <hr />
-            <SidebarAccordion
-              items={dropdownServicesInfo}
-              toggleTitle="Services"
-              handleClose={closeMenu}
-            />
             <hr />
             <SocialMediaIconsStyle>
               {socialMediaIcon.map((item) => (
