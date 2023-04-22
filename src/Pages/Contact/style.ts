@@ -65,7 +65,7 @@ export const GuestBox = styled.div`
 `;
 
 export const MapFrame = styled.iframe`
-  border: none;
+  border: 3px solid #963;
   height: 350px;
   width: 100%;
   margin-top: 20px;
