@@ -137,7 +137,7 @@ export const FooterLink = styled.a`
 `;
 export const ContactDiv = styled.div`
   display: flex;
-  align-items: center;
+  align-items: baseline;
   margin-bottom: 10px;
   font-family: "Times New Roman", Times, serif;
   margin-left: 50px;
