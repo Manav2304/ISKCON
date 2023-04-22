@@ -22,6 +22,8 @@ export const FestivalImage = styled.img`
   width: 100%;
   height: auto;
   object-fit: cover;
+  border: 3px solid #963;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 
   @media (min-width: 768px) {
     width: 350px;
@@ -61,7 +63,7 @@ export const Description = styled.p`
 
 export const Button = styled.button`
   background-color: #7e5959;
-  color: #0c090a;
+  color: #ffffff;
   font-size: 16px;
   border: none;
   padding: 10px 20px;
