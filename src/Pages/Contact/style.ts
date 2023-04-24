@@ -24,7 +24,7 @@ export const Box = styled.div`
   }
 
   @media (max-width: 767px) {
-    width: 285px;
+    width: auto;
     max-width: none;
     grid-column: -3 / 3;
     align-items: center;
@@ -54,7 +54,7 @@ export const GuestBox = styled.div`
   }
 
   @media (max-width: 767px) {
-    width: 285px;
+    width: auto;
     max-width: none;
     grid-column: -3 / 3;
     align-items: center;
