@@ -6,7 +6,7 @@ import {
   TitleImage,
 } from "./style";
 import titlebBaseImage from "../../../assets/images/title-base.png";
-import { PageCarousel } from "../../Home/PageCarousel";
+import { PageCarousel } from "./PageCarousel";
 
 interface ServiceDescriptionProps {
   title: string;
