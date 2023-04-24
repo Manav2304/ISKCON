@@ -21,4 +21,6 @@ export const guestHouse = [
   "The guesthouse also offers a range of amenities to ensure a comfortable and pleasant stay.These include 24-hour hot water, lifts, spacious and comfortable rooms, and extra bedding as needed. And with a check-out time of 24 hours, guests have the flexibility to depart at a time that is convenient for them, with only a half-day charge applicable for stays beyond the 24-hour period.",
 
   "Whether you are a life member or a non-life member, the ISKCON Prabhupada Ashrya Bhavan is a wonderful place to stay during your visit to ISKCON Vallabh Vidya Nagar. With its welcoming atmosphere, comfortable accommodations, and convenient location, it is the perfect home away from home for anyone seeking spiritual nourishment and peaceful surroundings.",
+
+  "Contact Details: 02692 230796 | 02692 235752 | 02692 233012",
 ];

@@ -1,3 +1,4 @@
+import { Carousel } from "react-bootstrap";
 import styled from "styled-components";
 
 export const TextWrapper = styled.div`
@@ -90,5 +91,83 @@ export const Paragraph = styled.p`
     font-size: 1.2rem;
     padding-left: 30px;
     padding-right: 30px;
+  }
+`;
+export const PageImageCarousel = styled.img`
+  width: 100%;
+  height: 500px;
+  object-fit: contain cover;
+
+  @media only screen and (max-width: 767px) {
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 100%;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    height: 100%;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+`;
+
+export const PageStyleCarousel = styled(Carousel)`
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .carousel-indicators {
+    height: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 10px;
+      width: 10px;
+    }
+
+    .carousel-indicators {
+      height: 5px;
+      width: 5px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 30px;
+      width: 30px;
+      margin: 80px;
+    }
+
+    .carousel-indicators {
+      height: 5px;
+    }
+  }
+`;
+
+export const PageReviews = styled.div`
+  @media only screen and (max-width: 767px) {
+    margin-top: 5px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 7px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    margin-top: 9px;
   }
 `;
