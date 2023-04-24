@@ -1,3 +1,4 @@
+import { MDBCol, MDBContainer, MDBFooter } from "mdb-react-ui-kit";
 import styled from "styled-components";
 
 export const FooterLogoStyle = styled.div`
@@ -11,35 +12,66 @@ export const FooterLogoStyle = styled.div`
     width: 100%;
     margin-left: -1px;
   }
+
+  @media only screen and (max-width: 1380px) and (min-width: 1340px) {
+    margin-left: 45px;
+    padding-left: 40px;
+  }
 `;
 
 export const Heading = styled.h6`
+  font-family: "Times New Roman", Times, serif;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 4px;
   margin-left: 130px;
+  font-size: 20px;
 
   @media only screen and (max-width: 768px) {
     padding-right: 130px;
     margin-top: -50px;
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 769px) {
+    text-align: center;
+    margin-left: 30px;
+    padding-right: 50px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    padding-right: 50px;
+    margin-left: 50px;
   }
 `;
 
 export const ContactStyle = styled.div`
   margin-top: 80px;
-  margin-left: 120px;
+  margin-left: 50px;
   float: right;
+  font-family: "Times New Roman", Times, serif;
 
   @media only screen and (max-width: 768px) {
     margin-left: 20px;
     margin-top: 20px;
     margin-right: 20px;
   }
+
+  @media only screen and (min-width: 769px) {
+    text-align: center;
+  }
 `;
 
 export const TermsTitle = styled.h5`
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
+  margin-bottom: -15px;
+  margin-top: -15px;
+  font-family: "Times New Roman", Times, serif;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 export const BgColor = styled.div`
@@ -52,6 +84,7 @@ export const TimeStyle = styled.div`
   color: #fff;
   margin-top: 30px;
   margin-right: 130px;
+  font-family: "Times New Roman", Times, serif;
 
   @media only screen and (max-width: 768px) {
     text-align: center;
@@ -59,12 +92,21 @@ export const TimeStyle = styled.div`
     margin-bottom: -40px;
     margin-top: 20px;
   }
+  @media only screen and (max-width: 1380px) and (min-width: 1340px) {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
 `;
 
-export const MDBContainer = styled.div`
-  text-align: justify;
-  background-color: #963;
-  color: #fff;
+export const StyledMDBFooter = styled(MDBFooter)`
+  background-color: transparent;
+  text-align: center;
+
+  @media (max-width: 1366px) {
+    padding: 0;
+    font-size: 0.8em;
+  }
 `;
 
 export const TermsContainer = styled.div`
@@ -77,10 +119,16 @@ export const TermsHeading = styled.h6`
   text-align: center;
   color: #fff;
   display: inline-flex;
-  margin-left: 35%;
+  font-family: "Times New Roman", Times, serif;
 
   @media only screen and (max-width: 768px) {
     margin-left: 5px;
+  }
+
+  @media only screen and (max-width: 1380px) and (min-width: 1340px) {
+    justify-content: center;
+    text-align: center;
+    margin-right: 20px;
   }
 `;
 
@@ -108,7 +156,37 @@ export const FooterLink = styled.a`
   }
 `;
 
-export const TimingHeading = styled.h3`
+export const ContactDiv = styled.div`
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 50px;
+  padding-right: 50px;
+`;
+
+export const ContactIcon = styled.i`
+  margin-right: 4px;
+`;
+
+export const ContactText = styled.span`
+  margin-left: 10px;
+  text-align: left;
+`;
+
+export const TermsMDBContainer = styled(MDBContainer)`
+  width: 100%;
+  justify-items: center;
   text-align: center;
+  background-color: #963;
   color: #fff;
+`;
+
+export const ContactMDBCol = styled(MDBCol)`
+  align-content: center;
+`;
+
+export const TimeMDBCol = styled(MDBCol)`
+  align-content: center;
+  justify-content: center;
 `;

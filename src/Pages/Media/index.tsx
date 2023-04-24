@@ -6,6 +6,7 @@ import {
   ServiceWrapper,
   HeadingStyle,
   ImageTitle,
+  LecturesWrapper,
 } from "./style";
 import {
   darshanImages,
@@ -35,14 +36,14 @@ export const Media: React.FC = () => {
           <h1>Lectures</h1>
           <ImageTitle src={titleBaseImg} alt="Title Image" />
         </HeadingStyle>
-        <PageWrapper>
+        <LecturesWrapper>
           <YouTubeWrapper>
             <YouTube videoId="R3tNVAtzaAw" opts={opts} />
           </YouTubeWrapper>
           <YouTubeWrapper>
             <YouTube videoId="Q9TUIuRVc4I" opts={opts} />
           </YouTubeWrapper>
-        </PageWrapper>
+        </LecturesWrapper>
         <PageWrapper>
           <AudioContent />
         </PageWrapper>
