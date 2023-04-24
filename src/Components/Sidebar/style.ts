@@ -140,10 +140,11 @@ export const HeadingStyle = styled.div`
   font-weight: bold;
   margin-left: -40px;
   margin-right: 5px;
-  font-size: 20px;
+  font-size: 25px;
 
   @media (max-width: 767px) {
-    font-size: 17px;
+    font-size: 20px;
+    margin-right: 10px;
   }
 `;
 
