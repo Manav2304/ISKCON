@@ -4,7 +4,7 @@ import {
   Paragraph,
   TextWrapper,
   TitleImage,
-} from "./style";
+} from "../../Pages/Services/PageLayout/style";
 import titleBaseImage from "../../assets/images/title-base.png";
 
 interface FooterTermsProps {

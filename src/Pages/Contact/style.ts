@@ -17,7 +17,7 @@ export const Box = styled.div`
   margin-bottom: 5px;
 
   @media (min-width: 768px) {
-    width: 100%;
+    width: auto;
     max-width: none;
     align-items: center;
   }
@@ -64,10 +64,13 @@ export const GuestBox = styled.div`
 `;
 
 export const MapFrame = styled.iframe`
-  border: none;
-  height: 350px;
+  border: 3px solid #963;
+  border-radius: 10px;
+  height: 500px;
   width: 100%;
   margin-top: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   @media only screen and (max-width: 768px) {
     font-size: 1.5rem;
