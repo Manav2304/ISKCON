@@ -1,7 +1,6 @@
 export const schedules = [
-  { time: "04:10AM", name: "Samadhi Aarti" },
-  { time: "04:30AM", name: "Mangala Aarti" },
-  { time: "07:15AM", name: "Shringar Aarti" },
+  { time: "04:30AM", name: "Mangala Arati" },
+  { time: "07:15AM", name: "Shringar Arati" },
   { time: "07:30AM", name: "Guru Puja" },
   { time: "08:00AM", name: "Bhagavatam" },
   { time: "08:30AM", name: "Pushpa Aarti" },
