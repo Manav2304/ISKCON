@@ -14,17 +14,16 @@ export const Box = styled.div`
   text-align: center;
   width: 100%;
   height: 150px;
-  max-width: 300px;
   margin-bottom: 5px;
 
   @media (min-width: 768px) {
-    width: auto;
+    width: 100%;
     max-width: none;
     align-items: center;
   }
 
   @media (max-width: 767px) {
-    width: 285px;
+    width: auto;
     max-width: none;
     grid-column: -3 / 3;
     align-items: center;
@@ -54,7 +53,7 @@ export const GuestBox = styled.div`
   }
 
   @media (max-width: 767px) {
-    width: 285px;
+    width: auto;
     max-width: none;
     grid-column: -3 / 3;
     align-items: center;
