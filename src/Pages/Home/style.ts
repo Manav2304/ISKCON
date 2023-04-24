@@ -94,7 +94,7 @@ export const Reviews = styled.div`
   }
 
   @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    margin-top: 50px;
+    margin-top: 72px;
   }
 
   @media only screen and (min-width: 1400px) and (max-width: 2500px) {
@@ -173,6 +173,8 @@ export const Image = styled.img`
 `;
 /*Used class name for handle the size of icon*/
 export const StyleCarousel = styled(Carousel)`
+  z-index: 0;
+
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     height: 40px;
