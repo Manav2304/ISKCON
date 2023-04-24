@@ -1,4 +1,4 @@
-import { MDBFooter } from "mdb-react-ui-kit";
+import { MDBCol, MDBContainer, MDBFooter } from "mdb-react-ui-kit";
 import styled from "styled-components";
 
 export const FooterLogoStyle = styled.div`
@@ -14,7 +14,8 @@ export const FooterLogoStyle = styled.div`
   }
 
   @media only screen and (max-width: 1380px) and (min-width: 1340px) {
-    margin-left: 40px;
+    margin-left: 45px;
+    padding-left: 40px;
   }
 `;
 
@@ -98,13 +99,6 @@ export const TimeStyle = styled.div`
   }
 `;
 
-export const MDBContainer = styled.div`
-  text-align: justify;
-  background-color: #963;
-  color: #fff;
-  width: auto;
-`;
-
 export const StyledMDBFooter = styled(MDBFooter)`
   background-color: transparent;
   text-align: center;
@@ -125,7 +119,6 @@ export const TermsHeading = styled.h6`
   text-align: center;
   color: #fff;
   display: inline-flex;
-  margin-left: 35%;
   font-family: "Times New Roman", Times, serif;
 
   @media only screen and (max-width: 768px) {
@@ -133,8 +126,9 @@ export const TermsHeading = styled.h6`
   }
 
   @media only screen and (max-width: 1380px) and (min-width: 1340px) {
-    text-align: right;
-    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 20px;
   }
 `;
 
@@ -178,4 +172,21 @@ export const ContactIcon = styled.i`
 export const ContactText = styled.span`
   margin-left: 10px;
   text-align: left;
+`;
+
+export const TermsMDBContainer = styled(MDBContainer)`
+  width: 100%;
+  justify-items: center;
+  text-align: center;
+  background-color: #963;
+  color: #fff;
+`;
+
+export const ContactMDBCol = styled(MDBCol)`
+  align-content: center;
+`;
+
+export const TimeMDBCol = styled(MDBCol)`
+  align-content: center;
+  justify-content: center;
 `;
