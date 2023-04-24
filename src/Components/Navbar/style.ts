@@ -11,6 +11,19 @@ export const NavStyle = styled.nav`
   @media (max-width: 767px) {
     display: none;
   }
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: 1400px) {
+    height: 105px !important;
+    width:100% !important;
+  }
 `;
 
 export const StyledLink = styled(Link)`
@@ -39,8 +52,8 @@ export const ImgStyle = styled.img`
   }
 
   @media (min-width: 1400px) {
-    height: 100px;
-    width:100%;
+    height: 100px !important;
+    width:100% !important;
   }
 `;
 

@@ -85,7 +85,7 @@ export const Description = styled.p`
 
 export const Button = styled.button`
   background-color: #7e5959;
-  color: #ffffff;
+  color: #fff;
   font-size: 16px;
   border: none;
   padding: 10px 20px;

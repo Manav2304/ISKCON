@@ -139,7 +139,7 @@ export const HeadingStyle = styled.div`
   font-weight: bold;
   margin-left: -40px;
   margin-right: 5px;
-  font-size: 25px;
+  font-size: 1rem !important;
 
   @media (max-width: 767px) {
     font-size: 25px;
