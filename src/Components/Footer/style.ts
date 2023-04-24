@@ -92,6 +92,7 @@ export const TimeStyle = styled.div`
     margin-bottom: -40px;
     margin-top: 20px;
   }
+  
   @media only screen and (max-width: 1380px) and (min-width: 1340px) {
     text-align: right;
     margin-top: 20px;
