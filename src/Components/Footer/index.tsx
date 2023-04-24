@@ -1,10 +1,4 @@
-import {
-  MDBFooter,
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBIcon,
-} from "mdb-react-ui-kit";
+import { MDBContainer, MDBRow } from "mdb-react-ui-kit";
 import footerLogo from "../../assets/images/footer-logo.jpeg";
 import {
   FooterLogoStyle,
@@ -17,6 +11,10 @@ import {
   ContactDiv,
   ContactIcon,
   ContactText,
+  StyledMDBFooter,
+  TermsMDBContainer,
+  ContactMDBCol,
+  TimeMDBCol,
 } from "./style";
 import { contactInfos, schedules } from "./constant";
 import { Link } from "react-router-dom";
@@ -24,32 +22,29 @@ import { routes } from "../../routes";
 
 export const Footer = () => {
   return (
-    <MDBFooter className="text-center text-lg-start text-muted">
+    <StyledMDBFooter className="text-center text-lg-start text-muted">
       <BgColor>
         <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <MDBContainer className="text-center text-md-start mt-5">
             <MDBRow className="mt-3">
-              <MDBCol>
-                <Heading>
-                  <MDBIcon icon="clock" />
-                  Timing
-                </Heading>
-                <div className="mx-auto mb-4">
+              <TimeMDBCol>
+                <Heading>Timing</Heading>
+                <div className="mb-4 text-center">
                   <TimeStyle>
                     {schedules.map((time) => (
                       <div key={time.name}>
-                        {time.name} : {time.time}
+                        {time.name} - {time.time}
                       </div>
                     ))}
                   </TimeStyle>
                 </div>
-              </MDBCol>
+              </TimeMDBCol>
               <FooterLogoStyle>
                 <MDBRow>
                   <img src={footerLogo} alt="Footer Logo" />
                 </MDBRow>
               </FooterLogoStyle>
-              <MDBCol>
+              <ContactMDBCol>
                 <ContactStyle>
                   {contactInfos.map((info) => (
                     <ContactDiv key={info.text}>
@@ -58,12 +53,12 @@ export const Footer = () => {
                     </ContactDiv>
                   ))}
                 </ContactStyle>
-              </MDBCol>
+              </ContactMDBCol>
             </MDBRow>
           </MDBContainer>
         </section>
         <section>
-          <MDBContainer>
+          <TermsMDBContainer>
             <TermsHeading>
               <Link to={routes.termsAndCondition}>
                 <TermsTitle>Terms and Conditions | </TermsTitle>
@@ -75,12 +70,12 @@ export const Footer = () => {
                 <TermsTitle>Privacy Policy</TermsTitle>
               </Link>
             </TermsHeading>
-          </MDBContainer>
+          </TermsMDBContainer>
         </section>
         <div className="text-center p-4">
-          © 2021 ISKCON. All rights reserved.
+          <TermsTitle>© 2021 ISKCON. All rights reserved.</TermsTitle>
         </div>
       </BgColor>
-    </MDBFooter>
+    </StyledMDBFooter>
   );
 };
