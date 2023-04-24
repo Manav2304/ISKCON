@@ -22,7 +22,7 @@ export const NavStyle = styled.nav`
 
   @media (min-width: 1400px) {
     height: 105px !important;
-    width:100% !important;
+    width: 100% !important;
   }
 `;
 
@@ -53,7 +53,7 @@ export const ImgStyle = styled.img`
 
   @media (min-width: 1400px) {
     height: 100px !important;
-    width:100% !important;
+    width: 100% !important;
   }
 `;
 
@@ -65,7 +65,7 @@ export const SocialMediaIconsStyle = styled.div`
 `;
 
 export const IconsStyle = styled.a`
-  color: #8b0000;
+  color: #fff;
   padding: 3px;
   transition: background-color 0.2s ease;
 `;
