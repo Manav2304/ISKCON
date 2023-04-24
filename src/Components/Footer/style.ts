@@ -1,3 +1,4 @@
+import { MDBFooter } from "mdb-react-ui-kit";
 import styled from "styled-components";
 
 export const FooterLogoStyle = styled.div`
@@ -10,6 +11,10 @@ export const FooterLogoStyle = styled.div`
   @media only screen and (max-width: 768px) {
     width: 100%;
     margin-left: -1px;
+  }
+
+  @media only screen and (max-width: 1380px) and (min-width: 1340px) {
+    margin-left: 40px;
   }
 `;
 
@@ -86,12 +91,28 @@ export const TimeStyle = styled.div`
     margin-bottom: -40px;
     margin-top: 20px;
   }
+  @media only screen and (max-width: 1380px) and (min-width: 1340px) {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
 `;
 
 export const MDBContainer = styled.div`
   text-align: justify;
   background-color: #963;
   color: #fff;
+  width: auto;
+`;
+
+export const StyledMDBFooter = styled(MDBFooter)`
+  background-color: transparent;
+  text-align: center;
+
+  @media (max-width: 1366px) {
+    padding: 0;
+    font-size: 0.8em;
+  }
 `;
 
 export const TermsContainer = styled.div`
@@ -109,6 +130,11 @@ export const TermsHeading = styled.h6`
 
   @media only screen and (max-width: 768px) {
     margin-left: 5px;
+  }
+
+  @media only screen and (max-width: 1380px) and (min-width: 1340px) {
+    text-align: right;
+    justify-items: center;
   }
 `;
 
@@ -135,6 +161,7 @@ export const FooterLink = styled.a`
     text-decoration: underline;
   }
 `;
+
 export const ContactDiv = styled.div`
   display: flex;
   align-items: baseline;

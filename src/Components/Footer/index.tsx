@@ -1,4 +1,4 @@
-import { MDBFooter, MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
+import { MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
 import footerLogo from "../../assets/images/footer-logo.jpeg";
 import {
   FooterLogoStyle,
@@ -11,6 +11,7 @@ import {
   ContactDiv,
   ContactIcon,
   ContactText,
+  StyledMDBFooter,
 } from "./style";
 import { contactInfos, schedules } from "./constant";
 import { Link } from "react-router-dom";
@@ -18,14 +19,14 @@ import { routes } from "../../routes";
 
 export const Footer = () => {
   return (
-    <MDBFooter className="text-center text-lg-start text-muted">
+    <StyledMDBFooter className="text-center text-lg-start text-muted">
       <BgColor>
         <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <MDBContainer className="text-center text-md-start mt-5">
             <MDBRow className="mt-3">
               <MDBCol>
                 <Heading>Timing</Heading>
-                <div className="mx-auto mb-4">
+                <div className="mb-4">
                   <TimeStyle>
                     {schedules.map((time) => (
                       <div key={time.name}>
@@ -72,6 +73,6 @@ export const Footer = () => {
           <TermsTitle>© 2021 ISKCON. All rights reserved.</TermsTitle>
         </div>
       </BgColor>
-    </MDBFooter>
+    </StyledMDBFooter>
   );
 };
