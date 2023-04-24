@@ -22,7 +22,6 @@ export const SidebarStyle = styled.div<{ isOpen: boolean }>`
 
 export const nav = styled.nav`
   display: block;
-  color: #f00;
   flex-direction: column;
   align-items: center;
   margin-top: 3rem;
@@ -91,11 +90,11 @@ export const CloseIcon = styled.div`
 
 export const StyledLink = styled(Link)`
   display: block;
-  color: #f00;
+  color: #fff;
   text-decoration: none;
   flex-direction: column;
   align-items: center;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   margin-right: 20px;
   padding: 8px 16px;
@@ -106,19 +105,19 @@ export const ImgStyle = styled.img`
   display: none;
 
   @media (max-width: 767px) {
-    height: 50px;
+    height: 60px;
     margin-left: -20px;
     margin-right: 5px;
     display: block;
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
-    height: 50px;
+    height: 60px;
     display: none;
   }
 
   @media (min-width: 992px) and (max-width: 1199px) {
-    height: 60px;
+    height: 70px;
     display: none;
   }
 
@@ -136,15 +135,16 @@ export const ImgStyle = styled.img`
 
 export const HeadingStyle = styled.div`
   font-family: "Times New Roman", Times, serif;
-  color: #7e5959;
+  color: #fff;
   font-weight: bold;
   margin-left: -40px;
   margin-right: 5px;
   font-size: 25px;
 
   @media (max-width: 767px) {
-    font-size: 20px;
-    margin-right: 10px;
+    font-size: 25px;
+    margin-right: 20px;
+    padding-right:10px;
   }
 `;
 
@@ -183,8 +183,8 @@ export const AccordionItemButton = styled(AccordionButton)`
   background-image: url(${title});
   background-size: cover; 
   border: none;
-  color: #f00;
-  font-size: 16px;
+  color: #fff;
+  font-size: 20px;
   font-weight: bold;
   padding: 1rem;
   text-align: left;
@@ -207,7 +207,7 @@ export const AccordionItem = styled.div`
 export const AccordionLink =  styled(Link)`
   display: block;
   background-color: #ffd9b3;
-  color: #f00;
+  color: #fff;
   font-size: 16px;
   font-weight: bold;
   padding: 1rem ;
