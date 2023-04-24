@@ -106,10 +106,22 @@ export const YouTubeWrapper = styled.div`
     grid-template-rows: repeat(2);
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    margin-left: 90px;
+    margin-right: 90px;
+    grid-template-rows: repeat(2);
+  }
+
+  @media only screen and (min-width: 1440px) and (max-width: 1919px) {
     margin-left: 100px;
     margin-right: 100px;
-    grid-template-rows: repeat(2);
+    grid-template-rows: repeat(2, 150px);
+  }
+
+  @media only screen and (min-width: 1920px) {
+    margin-left: 150px;
+    margin-right: 150px;
+    grid-template-rows: repeat(2, 200px);
   }
 `;
 
@@ -226,7 +238,7 @@ export const CarouselWrapper = styled.div`
   }
 
   @media (min-width: 768px) and (max-width: 1023px) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 30px;
     margin: 10px;
   }
