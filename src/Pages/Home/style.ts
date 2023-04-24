@@ -222,7 +222,7 @@ export const PageImageCarousel = styled.img`
   width: 100%;
   height: 500px;
   object-fit: contain cover;
-
+  
   @media only screen and (max-width: 767px) {
     height: 100%;
     width: 100%;
@@ -246,6 +246,8 @@ export const PageImageCarousel = styled.img`
 `;
 
 export const PageStyleCarousel = styled(Carousel)`
+  z-index: 0;
+
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     height: 40px;
