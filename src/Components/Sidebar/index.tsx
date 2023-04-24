@@ -73,13 +73,21 @@ export const Sidebar = () => {
             </StyledLink>
             <hr />
             <SidebarAccordion
-  items={dropdownServicesInfo}
-  toggleTitle="Services"
-  handleClose={handleClose}
-  isOpen={isServicesOpen}
-  setIsOpen={setIsServicesOpen}
-/>
+            items={dropdownServicesInfo}
+            toggleTitle="Services"
+            handleClose={handleClose}
+            isOpen={isServicesOpen}
+            setIsOpen={setIsServicesOpen}
+            />
             <hr />  
+            <StyledLink to={routes.visitUs} onClick={handleClose}>
+              Visit Us
+            </StyledLink>
+            <hr />
+            <StyledLink to={routes.media} onClick={handleClose}>
+              Media
+            </StyledLink>
+            <hr />
             <StyledLink to={routes.donation} onClick={handleClose}>
               Donate
             </StyledLink>
@@ -90,14 +98,6 @@ export const Sidebar = () => {
             <hr />
             <StyledLink to={routes.contact} onClick={handleClose}>
               Contact
-            </StyledLink>
-            <hr />
-            <StyledLink to={routes.visitUs} onClick={handleClose}>
-              Visit Us
-            </StyledLink>
-            <hr />
-            <StyledLink to={routes.media} onClick={handleClose}>
-              Media
             </StyledLink>
             <hr />
             <SocialMediaIconsStyle>
