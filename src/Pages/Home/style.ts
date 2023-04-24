@@ -42,7 +42,20 @@ export const HeadingStyle = styled.div`
     font-size: 3rem;
     padding: 60px;
   }
+  
+  @media only screen and (min-width: 1400px)and (max-width:2500px) {
+    font-size: 3rem;
+    padding: 60px;
+    margin-top:100px;
+  
+  }
+
+  @media only screen and (min-width:2560px){
+    font-size: 3rem;
+    padding: 60px;
+    margin-top:200px ;  }
 `;
+
 export const ImageTitle = styled.img`
   width: 100%;
   max-width: 400px;
@@ -62,10 +75,9 @@ export const ImageTitle = styled.img`
     max-width: 400px;
   }
 `;
-export const Reviews = styled.div`
-  max-width: 1600px;
-  margin-top: 100px;
 
+export const Reviews = styled.div`
+  
   @media only screen and (max-width: 479px) {
     margin-top: 50px;
   }
@@ -83,13 +95,19 @@ export const Reviews = styled.div`
   }
 
   @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    margin-top: 90px;
+    margin-top: 50px;
   }
 
-  @media only screen and (min-width: 1400px) {
-    height: 500px;
-    width: 100%;
+  @media only screen and (min-width: 1400px)and (max-width:2500px) {
+    margin-top: 85px;
+    height: 600px;
+  
   }
+
+  @media only screen and (min-width:2560px){
+    margin-top: 85px;
+    height: 800px;
+    width: 100%;  }
 `;
 
 export const ImageStyle = styled.div`
@@ -100,8 +118,7 @@ export const ImageStyle = styled.div`
 `;
 
 export const ImageCarousel = styled.img`
-  width: 100%;
-  height: 500px;
+   width: 100%;
 
   @media only screen and (max-width: 479px) {
     height: 230px;
@@ -123,11 +140,15 @@ export const ImageCarousel = styled.img`
     height: 480px;
   }
 
-  @media only screen and (min-width: 1400px) {
-    height: 500px;
-    width: 100%;
+  @media only screen and (min-width: 1400px)and (max-width:2500px) {
+    height: 650px;
+  }
+
+  @media only screen and (min-width:2560px){
+    height: 950px;
   }
 `;
+
 export const Image = styled.img`
   object-fit: contain;
 
@@ -145,6 +166,11 @@ export const Image = styled.img`
     height: 87%;
     width: 87%;
   }
+
+  @media (min-width: 1400px) {
+    height: 90%;
+    width:90%;
+  }
 `;
 /*Used class name for handle the size of icon*/
 export const StyleCarousel = styled(Carousel)`
@@ -152,6 +178,7 @@ export const StyleCarousel = styled(Carousel)`
   .carousel-control-next-icon {
     height: 40px;
     width: 40px;
+ 
   }
 
   .carousel-indicators {
@@ -190,6 +217,7 @@ export const StyleCarousel = styled(Carousel)`
     }
   }
 `;
+
 export const PageImageCarousel = styled.img`
   width: 100%;
   height: 500px;
@@ -216,6 +244,7 @@ export const PageImageCarousel = styled.img`
     padding-right: 80px;
   }
 `;
+
 export const PageStyleCarousel = styled(Carousel)`
   .carousel-control-prev-icon,
   .carousel-control-next-icon {

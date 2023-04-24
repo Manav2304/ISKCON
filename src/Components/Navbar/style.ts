@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import title from "../../assets/images/navbar-bg.png";
+import title from "../../assets/images/navbar-bg.jpg";
 import { Link } from "react-router-dom";
 
 export const NavStyle = styled.nav`
@@ -14,7 +14,7 @@ export const NavStyle = styled.nav`
 `;
 
 export const StyledLink = styled(Link)`
-  color: #f00;
+  color: #fff;
   text-decoration: none;
 `;
 
@@ -39,7 +39,8 @@ export const ImgStyle = styled.img`
   }
 
   @media (min-width: 1400px) {
-    height: 85px;
+    height: 100px;
+    width:100%;
   }
 `;
 

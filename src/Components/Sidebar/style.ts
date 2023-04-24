@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import title from "../../assets/images/navbar-bg.png";
+import title from "../../assets/images/navbar-bg.jpg";
 import { Accordion, AccordionButton } from 'react-bootstrap';
 
 export const SidebarStyle = styled.div<{ isOpen: boolean }>`
@@ -143,7 +143,7 @@ export const HeadingStyle = styled.div`
 
   @media (max-width: 767px) {
     font-size: 25px;
-    margin-right: 20px;
+    margin-right: 30px;
     padding-right:10px;
   }
 `;
@@ -162,7 +162,7 @@ export const LogoWrapper = styled.div`
 export const AccordionContainer = styled(Accordion)`
   background-color: transparent;
   margin-bottom: none;
-  animation: slide-in-right 2s ease-in-out;
+  animation: slide-in-right 0.4s ease-in-out;
 
   @keyframes slide-in-right {
     0% {
@@ -180,13 +180,11 @@ export const AccordionContainer = styled(Accordion)`
 export const AccordionItemButton = styled(AccordionButton)`
   display: column;
   outline: none; 
-  background-image: url(${title});
-  background-size: cover; 
+  background-color: transparent;
   border: none;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
-  padding: 1rem;
   text-align: left;
 
   &:hover {
@@ -196,17 +194,15 @@ export const AccordionItemButton = styled(AccordionButton)`
 `;
 
 
-export const AccordionItem = styled.div`
-  background-color: transparent;
-
-  &:last-child {
-    border-bottom: none;
-  }
+export const AccordionItem = styled(Accordion.Item)`
+    background-color: none;
+    border: none; 
+   outline:none;
 `;
 
 export const AccordionLink =  styled(Link)`
   display: block;
-  background-color: #ffd9b3;
+  background-color: #E9A872;
   color: #fff;
   font-size: 16px;
   font-weight: bold;
