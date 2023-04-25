@@ -8,10 +8,6 @@ type AccordionProps = {
   handleClose: () => void;
 };
 
-type AccordionItemProps = {
-  hasBorder: boolean;
-};
-
 export const SidebarAccordion = ({ items, toggleTitle, handleClose, isOpen, setIsOpen }: AccordionProps & { isOpen: boolean; setIsOpen: React.Dispatch<React.SetStateAction<boolean>>; }) => {
   const accordionToggleRef = useRef<HTMLButtonElement>(null);
 
