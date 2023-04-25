@@ -15,9 +15,10 @@ import {
   TermsMDBContainer,
   ContactMDBCol,
   TimeMDBCol,
+  CopyRights,
 } from "./style";
 import { contactInfos, schedules } from "./constant";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { routes } from "../../routes";
 
 export const Footer = () => {
@@ -60,20 +61,20 @@ export const Footer = () => {
         <section>
           <TermsMDBContainer>
             <TermsHeading>
-              <Link to={routes.termsAndCondition}>
-                <TermsTitle>Terms and Conditions | </TermsTitle>
-              </Link>
-              <Link to={routes.cancellationPolicy}>
-                <TermsTitle>Cancellation Policy | </TermsTitle>
-              </Link>
-              <Link to={routes.privacyPolicy}>
-                <TermsTitle>Privacy Policy</TermsTitle>
-              </Link>
+              <TermsTitle to={routes.termsAndCondition}>
+                Terms and Conditions |
+              </TermsTitle>
+              <TermsTitle to={routes.cancellationPolicy}>
+                | Cancellation Policy |
+              </TermsTitle>
+              <TermsTitle to={routes.privacyPolicy}>
+                | Privacy Policy
+              </TermsTitle>
             </TermsHeading>
           </TermsMDBContainer>
         </section>
         <div className="text-center p-4">
-          <TermsTitle>© 2021 ISKCON. All rights reserved.</TermsTitle>
+          <CopyRights>© 2021 ISKCON. All rights reserved.</CopyRights>
         </div>
       </BgColor>
     </StyledMDBFooter>

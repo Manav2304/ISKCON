@@ -1,4 +1,5 @@
 import { MDBCol, MDBContainer, MDBFooter } from "mdb-react-ui-kit";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const FooterLogoStyle = styled.div`
@@ -62,12 +63,28 @@ export const ContactStyle = styled.div`
   }
 `;
 
-export const TermsTitle = styled.h5`
+export const TermsTitle = styled(Link)`
   color: #fff;
   font-size: 18px;
   margin-bottom: -15px;
   margin-top: -15px;
   font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  text-decoration-color: none;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+`;
+
+export const CopyRights = styled.div`
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: -15px;
+  margin-top: -15px;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  text-decoration-color: none;
 
   @media only screen and (max-width: 768px) {
     font-size: 12px;
@@ -92,7 +109,7 @@ export const TimeStyle = styled.div`
     margin-bottom: -40px;
     margin-top: 20px;
   }
-  
+
   @media only screen and (max-width: 1380px) and (min-width: 1340px) {
     text-align: right;
     margin-top: 20px;
