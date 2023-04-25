@@ -36,7 +36,9 @@ export const Contact: React.FC = () => {
         <Box>
           <BoxHeading>Contact Number</BoxHeading>
           <BoxDetail>
-            {mobileNumber}/{phoneNumber}
+            {mobileNumber}
+            <br />
+            {phoneNumber}
           </BoxDetail>
         </Box>
         <Box>
