@@ -1,5 +1,5 @@
 export const termsAndCondition = [
-  "The website www.abcd.com (The “SITE”) is fully owned by International Society of Krishna Consciousness (ISKCON), Iskcon Road, Opp.B&B Polytechnic College, Mota Bazar, VV Nagar, Anand, Gujarat",
+  "The website iskconvvnagar.com (The “SITE”) is fully owned by International Society of Krishna Consciousness (ISKCON), Iskcon Road, Opp.B&B Polytechnic College, Mota Bazar, VV Nagar, Anand, Gujarat",
 
   "Your use of the Site is governed by the policies, terms, and conditions set forth below. Please read the following information carefully. By using this Site or donating through the site, you indicate your acceptance of, and agreement to be bound by, the terms set forth below. If you do not agree to these terms and conditions, please do not use this Site.",
 
