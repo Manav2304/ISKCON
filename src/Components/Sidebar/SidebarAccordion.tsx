@@ -1,7 +1,6 @@
 import { useRef } from "react";
-import { AccordionContainer, AccordionItemButton, AccordionLink } from "./style";
+import { AccordionContainer, AccordionItemButton, AccordionLink, StyledAccordionItem } from "./style";
 import { Accordion } from "react-bootstrap";
-import styled from "styled-components";
 
 type AccordionProps = {
   items: { name: string; url: string; }[];
@@ -12,11 +11,6 @@ type AccordionProps = {
 type AccordionItemProps = {
   hasBorder: boolean;
 };
-
-const StyledAccordionItem = styled(Accordion.Item)<AccordionItemProps>`
-  border: ${(props) => (props.hasBorder ? "1px solid rgba(0,0,0,.125)" : "none")};
-  background-color: transparent;
-`;
 
 export const SidebarAccordion = ({ items, toggleTitle, handleClose, isOpen, setIsOpen }: AccordionProps & { isOpen: boolean; setIsOpen: React.Dispatch<React.SetStateAction<boolean>>; }) => {
   const accordionToggleRef = useRef<HTMLButtonElement>(null);

@@ -222,3 +222,8 @@ export const IconsStyle = styled.a`
   height: 100%;
   transition: background-color 0.2s ease;
 `;
+
+export const StyledAccordionItem = styled(Accordion.Item)`
+  border: none;
+  background-color: transparent;
+`;
