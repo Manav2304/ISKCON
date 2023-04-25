@@ -22,6 +22,10 @@ export const contactInfos = [
     text: "9998407654",
   },
   {
+    icon: "phone",
+    text: "02692 230796",
+  },
+  {
     icon: "map-marker-alt",
     text: "Iskcon Road, Opp.B&B Polytechnic College, Mota Bazar, VV Nagar, Anand, Gujarat",
   },
