@@ -29,20 +29,30 @@ export const HeadingStyle = styled.div`
   text-align: center;
 
   @media only screen and (max-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 0.5rem;
     padding: 20px;
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1199px) {
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 40px;
   }
 
   @media only screen and (min-width: 1200px) {
-    font-size: 3rem;
+    font-size: 1rem;
+    padding: 60px;
+  }
+
+  @media only screen and (min-width: 1400px) and (max-width: 2500px) {
+    font-size: 1rem;
+  }
+
+  @media only screen and (min-width: 2560px) {
+    font-size: 1rem;
     padding: 60px;
   }
 `;
+
 export const ImageTitle = styled.img`
   width: 100%;
   max-width: 400px;
@@ -62,32 +72,37 @@ export const ImageTitle = styled.img`
     max-width: 400px;
   }
 `;
+
 export const Reviews = styled.div`
-  max-width: 1600px;
-  margin-top: 100px;
-
   @media only screen and (max-width: 479px) {
-    margin-top: 60px;
-  }
-
-  @media only screen and (min-width: 480px) and (max-width: 767px) {
-    margin-top: 76px;
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    margin-top: 64px;
-  }
-
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    height: 250px;
     margin-top: 75px;
   }
 
-  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    margin-top: 100px;
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    margin-top: 50px;
   }
 
-  @media only screen and (min-width: 1400px) {
-    height: 500px;
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    margin-top: 50px;
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    margin-top: 50px;
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    margin-top: 105px;
+  }
+
+  @media only screen and (min-width: 1400px) and (max-width: 2500px) {
+    margin-top: 85px;
+    height: 600px;
+  }
+
+  @media only screen and (min-width: 2560px) {
+    margin-top: 85px;
+    height: 800px;
     width: 100%;
   }
 `;
@@ -101,18 +116,17 @@ export const ImageStyle = styled.div`
 
 export const ImageCarousel = styled.img`
   width: 100%;
-  height: 500px;
 
   @media only screen and (max-width: 479px) {
-    height: 230px;
+    height: 250px !important;
   }
 
   @media only screen and (min-width: 480px) and (max-width: 767px) {
-    height: 250px;
+    height: 500px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    height: 300px;
+    height: 600px;
   }
 
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -120,14 +134,10 @@ export const ImageCarousel = styled.img`
   }
 
   @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    height: 480px;
-  }
-
-  @media only screen and (min-width: 1400px) {
     height: 500px;
-    width: 100%;
   }
 `;
+
 export const Image = styled.img`
   object-fit: contain;
 
@@ -145,9 +155,16 @@ export const Image = styled.img`
     height: 87%;
     width: 87%;
   }
+
+  @media (min-width: 1400px) {
+    height: 90%;
+    width: 90%;
+  }
 `;
 /*Used class name for handle the size of icon*/
 export const StyleCarousel = styled(Carousel)`
+  z-index: 0;
+
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     height: 40px;
@@ -190,6 +207,7 @@ export const StyleCarousel = styled(Carousel)`
     }
   }
 `;
+
 export const PageImageCarousel = styled.img`
   width: 100%;
   height: 500px;
@@ -216,7 +234,10 @@ export const PageImageCarousel = styled.img`
     padding-right: 80px;
   }
 `;
+
 export const PageStyleCarousel = styled(Carousel)`
+  z-index: 0;
+
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     height: 40px;
@@ -265,5 +286,19 @@ export const PageReviews = styled.div`
 
   @media only screen and (min-width: 1200px) {
     margin-top: 9px;
+  }
+`;
+
+export const GlobleCarouselStyle = styled.div`
+  @media only screen and (min-width: 2560px) {
+    margin-bottom: 650px !important;
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    margin-bottom: 50px !important;
+  }
+
+  @media only screen and (min-width: 1400px) and (max-width: 2559px) {
+    margin-bottom: 500px !important;
   }
 `;
