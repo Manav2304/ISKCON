@@ -6,7 +6,6 @@ import { NavigationBar } from "./Components/Navbar";
 import { HomePage } from "./Pages/Home";
 import { DonationPage } from "./Pages/Donation";
 import { Contact } from "./Pages/Contact";
-import { VisitUs } from "./Pages/VisitUs";
 import { routes } from "./routes";
 import { FestivalPage } from "./Pages/Festival";
 import { BookDistribution } from "./Pages/Services/BookDistribution";
@@ -25,6 +24,7 @@ import "@fortawesome/fontawesome-free/css/fontawesome.css";
 import "@fortawesome/fontawesome-free/css/brands.css";
 import ScrollToTop from "./Components/ScrollToTop";
 import { Sidebar } from "./Components/Sidebar";
+import { VisitUs } from "./Pages/VisitUs";
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -35,12 +35,13 @@ export const App: React.FunctionComponent = () => {
         <Sidebar />
         <Routes>
           <Route caseSensitive path={routes.home} element={<HomePage />} />
+          <Route caseSensitive path={routes.visitUs} element={<VisitUs />} />
+
           <Route
             caseSensitive
             path={routes.festival}
             element={<FestivalPage />}
           />
-          <Route caseSensitive path={routes.visitUs} element={<VisitUs />} />
           <Route caseSensitive path={routes.media} element={<Media />} />
           <Route caseSensitive path={routes.contact} element={<Contact />} />
           <Route
