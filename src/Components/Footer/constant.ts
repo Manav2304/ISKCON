@@ -1,5 +1,4 @@
 export const schedules = [
-  { time: "04:10AM", name: "Samadhi Arati" },
   { time: "04:30AM", name: "Mangala Arati" },
   { time: "07:15AM", name: "Shringar Arati" },
   { time: "07:30AM", name: "Guru Puja" },
@@ -21,6 +20,10 @@ export const contactInfos = [
   {
     icon: "phone",
     text: "9998407654",
+  },
+  {
+    icon: "phone",
+    text: "02692 230796",
   },
   {
     icon: "map-marker-alt",
