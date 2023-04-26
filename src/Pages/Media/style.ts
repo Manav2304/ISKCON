@@ -129,7 +129,7 @@ export const LinkName = styled.h1`
   color: #7e5959;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 30px;
 `;
 
@@ -267,4 +267,8 @@ export const SpotifyWrapper = styled.iframe.attrs({
     width: 80%;
     height: 400px;
   }
+`;
+
+export const LinkStyle = styled.a`
+  text-decoration: none;
 `;
