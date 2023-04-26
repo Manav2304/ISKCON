@@ -33,7 +33,7 @@ export const NavStyle = styled.nav`
   margin-top: 0;
   display: block;
   align-items: center;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -57,37 +57,6 @@ export const ToggleButton = styled.button`
   }
 `;
 
-export const CloseIcon = styled.div`
-  display: inline;
-
-  @media screen and (max-width: 768px) {
-    display: flex;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
-
-    &::before,
-    &::after {
-      position: absolute;
-      content: "";
-      width: 2px;
-      height: 10px;
-      background-color: transparent;
-    }
-
-    &::before {
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      transform: rotate(-45deg);
-    }
-  }
-`;
-
 export const StyledLink = styled(Link)`
   display: block;
   color: #fff;
@@ -97,7 +66,12 @@ export const StyledLink = styled(Link)`
   font-size: 20px;
   font-weight: bold;
   margin-right: 20px;
-  padding: 8px 16px;
+  padding: 2px 16px;
+
+  &:hover {
+    background-color: transparent;
+    color: #fff;
+  }
 `;
 
 export const ImgStyle = styled.img`
@@ -162,19 +136,6 @@ export const LogoWrapper = styled.div`
 export const AccordionContainer = styled(Accordion)`
   background-color: transparent;
   margin-bottom: none;
-  animation: slide-in-right 0.4s ease-in-out;
-
-  @keyframes slide-in-right {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
 `;
 
 export const AccordionItemButton = styled(AccordionButton)`
@@ -186,10 +147,14 @@ export const AccordionItemButton = styled(AccordionButton)`
   font-size: 20px;
   font-weight: bold;
   text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1px 16px;
 
   &:hover {
     background-color: transparent;
     border: none;
+    color: #fff;
   }
 `;
 
@@ -211,7 +176,7 @@ export const AccordionLink = styled(Link)`
 
   &:hover {
     background-color: transparent;
-    color: #007bff;
+    color: #fff;
   }
 `;
 
@@ -221,6 +186,11 @@ export const IconsStyle = styled.a`
   width: 100%;
   height: 100%;
   transition: background-color 0.2s ease;
+  
+  &:hover {
+    background-color: transparent;
+    color: #fff;
+  }
 `;
 
 export const StyledAccordionItem = styled(Accordion.Item)`
