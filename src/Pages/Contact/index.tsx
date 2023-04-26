@@ -3,6 +3,8 @@ import {
   address,
   email,
   guestHouse,
+  guestNumber1,
+  guestNumber2,
   mobileNumber,
   phoneNumber,
 } from "./constant";
@@ -17,6 +19,7 @@ import {
   GuestBox,
   BoxHeading,
   BoxDetail,
+  ContactLink,
 } from "./style";
 import titleBaseImg from "../../assets/images/title-base.png";
 
@@ -36,22 +39,44 @@ export const Contact: React.FC = () => {
         <Box>
           <BoxHeading>Contact Number</BoxHeading>
           <BoxDetail>
-            {mobileNumber}
+            <ContactLink href={`tel:${mobileNumber}`}>
+              {mobileNumber}
+            </ContactLink>
             <br />
-            {phoneNumber}
+            <ContactLink href={`tel:${phoneNumber}`}>{phoneNumber}</ContactLink>
           </BoxDetail>
         </Box>
         <Box>
           <BoxHeading>Email</BoxHeading>
-          <BoxDetail>{email}</BoxDetail>
+          <BoxDetail>
+            <ContactLink href={`mailto:${email}`}>{email}</ContactLink>
+          </BoxDetail>
         </Box>
         <Box>
           <BoxHeading>Address</BoxHeading>
-          <BoxDetail>{address}</BoxDetail>
+          <BoxDetail>
+            <ContactLink
+              href={`https://goo.gl/maps/oig1BbDfSinEaxYu9`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {address}
+            </ContactLink>
+          </BoxDetail>
         </Box>
         <GuestBox>
           <BoxHeading>Guest House Booking </BoxHeading>
-          <BoxDetail>{guestHouse}</BoxDetail>
+          <BoxDetail>
+            {guestHouse}
+            <br />
+            <ContactLink href={`tel=${guestNumber1}`}>
+              {guestNumber1}
+            </ContactLink>
+            <br />
+            <ContactLink href={`tel=${guestNumber2}`}>
+              {guestNumber2}
+            </ContactLink>
+          </BoxDetail>
         </GuestBox>
       </BoxStyle>
     </Container>
