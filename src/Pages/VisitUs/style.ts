@@ -59,6 +59,7 @@ export const ImageSlide = styled.img`
   height: 600px;
   object-fit: auto;
   margin-bottom: 20px;
+  border-radius: 5px;
 
   @media (max-width: 767px) {
     width: 100%;

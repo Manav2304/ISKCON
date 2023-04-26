@@ -22,7 +22,7 @@ export const FestivalCard = ({ festival }: FestivalCardProps) => {
 
   return (
     <div>
-      <FestivalImage src={festival.image} className="rounded" />
+      <FestivalImage src={festival.image} className="rounded bordered" />
       <FestivalInfo>
         <Heading2>
           <h2>{festival.name}</h2>

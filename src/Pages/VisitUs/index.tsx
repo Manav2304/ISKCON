@@ -15,7 +15,7 @@ import {
   HeadingStyle,
   ImageTitle,
 } from "./style";
-import { PageCarousel } from "../Home/PageCarousel";
+import { PageCarousel } from "../Services/PageLayout/PageCarousel";
 import { Button } from "../Festival/style";
 
 export const VisitUs = () => {
