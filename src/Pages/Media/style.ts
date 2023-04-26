@@ -138,6 +138,8 @@ export const Reviews = styled.div`
   height: 240px;
 
   @media only screen and (max-width: 767px) {
+    width: 320px;
+    height: 240px;
     margin: 20px;
   }
 
