@@ -8,13 +8,16 @@ import {
   ImageStyle,
   TextStyle,
   Image,
+  GlobleCarouselStyle,
 } from "./style";
 import { PageCarousel } from "./PageCarousel";
 
 export const HomePage: React.FC = () => {
   return (
     <div>
-      <GlobalCarousel images={carouselImages} />
+      <GlobleCarouselStyle>
+        <GlobalCarousel images={carouselImages} />
+      </GlobleCarouselStyle>
       {titleTiles.map((titleTile) => (
         <div>
           <HeadingStyle>

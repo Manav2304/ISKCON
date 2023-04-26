@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import title from "../../assets/images/navbar-bg.png";
+import title from "../../assets/images/navbar-bg.jpg";
 import { Link } from "react-router-dom";
 
 export const NavStyle = styled.nav`
@@ -10,8 +10,12 @@ export const NavStyle = styled.nav`
 `;
 
 export const StyledLink = styled(Link)`
-  color: #f00;
+  color: #fff;
   text-decoration: none;
+
+  &:hover {
+    color: #fff;
+  }
 `;
 
 export const ImgStyle = styled.img`
@@ -45,7 +49,7 @@ export const SocialMediaIconsStyle = styled.div`
   gap: 5px;
 `;
 export const IconsStyle = styled.a`
-  color: #8b0000;
+  color: #fff;
   padding: 3px;
   transition: background-color 0.2s ease;
 `;

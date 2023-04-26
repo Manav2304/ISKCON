@@ -12,15 +12,14 @@ export const TransparentDropdown = styled.div`
   }
 
   .dropdown-toggle {
-    color: #f00;
+    color: #fff;
     background: transparent;
     border: none;
-    padding: 0;
   }
 
   .dropdown-item {
     color: #212529;
-    padding: 0.25rem 1.5rem;
+    padding: 0.4rem 0.5rem;
     font-size: 1rem;
   }
 `;
