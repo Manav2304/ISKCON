@@ -299,6 +299,6 @@ export const GlobleCarouselStyle = styled.div`
   }
 
   @media only screen and (min-width: 1400px) and (max-width: 2559px) {
-    margin-bottom: 500px !important;
+    margin-bottom: 200px !important;
   }
 `;
