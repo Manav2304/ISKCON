@@ -134,18 +134,22 @@ export const LinkName = styled.h1`
 `;
 
 export const Reviews = styled.div`
-  height: 240px;
   width: 320px;
+  height: 240px;
 
   @media only screen and (max-width: 767px) {
     margin: 20px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 480px;
+    height: 360px;
     margin: 10px;
   }
 
   @media only screen and (min-width: 1024px) {
+    width: 640px;
+    height: 480px;
     margin: 5px;
   }
 `;
@@ -156,18 +160,18 @@ export const ImageCarousel = styled.img`
   object-fit: contain cover;
 
   @media only screen and (min-width: 767px) {
-    width: 80%;
-    height: 200px;
+    width: 320px;
+    height: 240px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    width: 100%;
-    height: 240px;
+    width: 480px;
+    height: 360px;
   }
 
   @media only screen and (min-width: 1024px) {
-    width: 320px;
-    height: 240px;
+    width: 640px;
+    height: 480px;
   }
 `;
 
