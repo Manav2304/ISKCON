@@ -268,3 +268,7 @@ export const SpotifyWrapper = styled.iframe.attrs({
     height: 400px;
   }
 `;
+
+export const LinkStyle = styled.a`
+  text-decoration: none;
+`;
