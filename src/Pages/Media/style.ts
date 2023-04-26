@@ -134,8 +134,8 @@ export const LinkName = styled.h1`
 `;
 
 export const Reviews = styled.div`
-  height: 380px;
-  width: 510px;
+  height: 240px;
+  width: 320px;
 
   @media only screen and (max-width: 767px) {
     margin: 20px;
@@ -151,23 +151,23 @@ export const Reviews = styled.div`
 `;
 
 export const ImageCarousel = styled.img`
-  width: 510px;
-  height: 380px;
+  width: 320px;
+  height: 240px;
   object-fit: contain cover;
 
   @media only screen and (min-width: 767px) {
     width: 80%;
-    height: 260px;
+    height: 200px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     width: 100%;
-    height: 320px;
+    height: 240px;
   }
 
   @media only screen and (min-width: 1024px) {
-    width: 510px;
-    height: 380px;
+    width: 320px;
+    height: 240px;
   }
 `;
 
