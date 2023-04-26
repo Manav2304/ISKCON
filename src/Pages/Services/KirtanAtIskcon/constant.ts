@@ -51,4 +51,10 @@ export const kirtanAtIskcon = [
   "The chanting and singing of the 16 syllable “ Hare Krishna Hare Krishna Krishna Krishna Hare Hare, Hare Rama Hare Rama Rama Rama Hare Hare! is the core of our movement as prescribed by Sri Chaitanya Mahaprabhu and as the followers of Sri Mahaprabhu, the ultimate goal is to preach the Mahamantra to each and every town of the world, which was fulfilled by the gracious efforts of Srila Prabhupada.",
 
   "We have the Narasimha’s Kirtan Mandali in our temple for this seva as well various devotees engaged in this service.",
+
+  "Contact Detaiels:",
+];
+
+export const contactDetailes=[
+  "+91 99984 07654",
 ];

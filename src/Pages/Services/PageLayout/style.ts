@@ -171,3 +171,12 @@ export const PageReviews = styled.div`
     margin-top: 9px;
   }
 `;
+
+export const ContactLink = styled.a`
+color: #ad0d0d;
+text-decoration: none;
+
+&:hover{
+  color: #000;
+}
+`;

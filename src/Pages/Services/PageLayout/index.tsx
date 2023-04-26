@@ -1,4 +1,5 @@
 import {
+  ContactLink,
   Heading,
   ImageWrapper,
   Paragraph,
@@ -12,12 +13,18 @@ interface ServiceDescriptionProps {
   title: string;
   content: string[];
   imageUrl: { id: number; image: string }[];
+  contactNumber1: string[];
+  contactNumber2: string[];
+  emailId: string[];
 }
 
 export const ServiceDescription: React.FC<ServiceDescriptionProps> = ({
   title,
   content,
   imageUrl,
+  contactNumber1,
+  contactNumber2,
+  emailId,
 }) => {
   return (
     <div>
@@ -31,6 +38,11 @@ export const ServiceDescription: React.FC<ServiceDescriptionProps> = ({
           {content.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
+          <ContactLink href={`tel:${contactNumber1}`}>{contactNumber1}</ContactLink>
+          <br/>
+          <ContactLink href={`tel:${contactNumber2}`}>{contactNumber2}</ContactLink>
+          <br/>
+          <ContactLink href={`mailto:${emailId}`}>{emailId}</ContactLink>
         </Paragraph>
       </TextWrapper>
     </div>

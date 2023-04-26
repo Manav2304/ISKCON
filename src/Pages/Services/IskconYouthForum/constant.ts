@@ -44,8 +44,16 @@ export const iskconYouthForum = [
   "Overall, the ISKCON Youth Forum in Vallabh Vidya Nagar is a dynamic and vibrant group that provides young people with a supportive and welcoming community in which to explore their spirituality and make a positive impact on the world around them. Whether you are looking to deepen your spiritual practice, make new friends, or get involved in community service, the Youth Forum offers something for everyone.",
 
   "This seva is spearheaded by H.G Adi Guru Das, for more details please contact on given details.",
+];
 
-  "Contact No.: +91 99987 14977, +91 74051 60363",
+export const contactDetailes1=[
+  "+91 99987 14977",
+];
 
-  "Email Address: abhishekmishra2@gmil.com",
+export const contactDetailes2=[
+  "+91 74051 60363",
+];
+
+export const emailDetails=[
+  "Email: abhishekmishra2@gmil.com",
 ];
