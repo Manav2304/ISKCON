@@ -47,11 +47,5 @@ export const SocialMediaIconsStyle = styled.div`
 export const IconsStyle = styled.a`
   color: #8b0000;
   padding: 3px;
-  border-radius: 50%;
-  background-color: #f5fffa;
   transition: background-color 0.2s ease;
-
-  &:hover {
-    background-color: #555;
-  }
 `;

@@ -7,23 +7,34 @@ export const FestivalContainer = styled.div`
   margin: 20px auto;
   padding: 20px;
 
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  @media (max-width: 479px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
   }
 
-  @media (max-width: 480px) {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 40px;
-    margin: 20px;
+  @media (min-width: 480px) and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+  }
+
+  @media only screen and (min-width: 1500px) and (max-width: 2000px) {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 100px;
   }
 `;
 
 export const FestivalImage = styled.img`
   width: 100%;
-  height: auto;
+  height: 100px;
   object-fit: cover;
+  border: 3px solid #963;
 
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     width: 350px;
     height: 250px;
   }
@@ -31,6 +42,19 @@ export const FestivalImage = styled.img`
   @media (min-width: 992px) {
     width: 450px;
     height: 300px;
+    gap: 20px;
+  }
+
+  @media only screen and (min-width: 1900px) and (max-width: 2500px) {
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+  }
+
+  @media only screen and (min-width: 1700px) and (max-width: 1900px) {
+    width: 100%;
+    height: 350px;
+    justify-content: center;
   }
 `;
 
@@ -61,7 +85,7 @@ export const Description = styled.p`
 
 export const Button = styled.button`
   background-color: #7e5959;
-  color: #0c090a;
+  color: #fff;
   font-size: 16px;
   border: none;
   padding: 10px 20px;
@@ -79,6 +103,7 @@ export const HeadingStyle = styled.div`
   color: #7e5959;
   text-align: center;
   margin-top: 110px;
+  margin-bottom: 30px;
 
   @media only screen and (max-width: 768px) {
     font-size: 0.5rem;

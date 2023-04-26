@@ -28,12 +28,7 @@ export const socialMediaIcon = [
     icon: "youtube",
   },
 ];
-export const dropdownHomeInfo = [
-  { title: "History", path: "#" },
-  { title: "Founder", path: "#" },
-  { title: "Philosophy", path: "#" },
-  { title: "Goals", path: "#" },
-];
+
 export const festivalInfo = [{ title: "festival", path: routes.festival }];
 export const dropdownServicesInfo = [
   { title: "Life Time Membership", path: routes.lifeTimeMembership },

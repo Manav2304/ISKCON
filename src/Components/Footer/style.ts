@@ -1,15 +1,21 @@
+import { MDBCol, MDBContainer, MDBFooter } from "mdb-react-ui-kit";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const FooterLogoStyle = styled.div`
   width: 500px;
   align-content: center;
   margin: 5px;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-right: -6px;
 
   @media only screen and (max-width: 768px) {
     width: 100%;
     margin-left: -1px;
+  }
+  @media only screen and (max-width: 1380px) and (min-width: 1340px) {
+    margin-left: 45px;
+    padding-left: 40px;
   }
 `;
 
@@ -26,13 +32,11 @@ export const Heading = styled.h6`
     margin-top: -50px;
     text-align: center;
   }
-
   @media only screen and (min-width: 769px) {
     text-align: center;
     margin-left: 30px;
     padding-right: 50px;
   }
-
   @media only screen and (max-width: 480px) {
     padding-right: 50px;
     margin-left: 50px;
@@ -40,7 +44,7 @@ export const Heading = styled.h6`
 `;
 
 export const ContactStyle = styled.div`
-  margin-top: 80px;
+  margin-top: 35px;
   margin-left: 50px;
   float: right;
   font-family: "Times New Roman", Times, serif;
@@ -50,18 +54,33 @@ export const ContactStyle = styled.div`
     margin-top: 20px;
     margin-right: 20px;
   }
-
   @media only screen and (min-width: 769px) {
     text-align: center;
   }
 `;
 
-export const TermsTitle = styled.h5`
+export const TermsTitle = styled(Link)`
   color: #fff;
   font-size: 18px;
   margin-bottom: -15px;
   margin-top: -15px;
   font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  text-decoration-color: none;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+`;
+
+export const CopyRights = styled.div`
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: -15px;
+  margin-top: -15px;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  text-decoration-color: none;
 
   @media only screen and (max-width: 768px) {
     font-size: 12px;
@@ -76,7 +95,7 @@ export const BgColor = styled.div`
 export const TimeStyle = styled.div`
   text-align: right;
   color: #fff;
-  margin-top: 30px;
+  margin-top: 15px;
   margin-right: 130px;
   font-family: "Times New Roman", Times, serif;
 
@@ -86,12 +105,21 @@ export const TimeStyle = styled.div`
     margin-bottom: -40px;
     margin-top: 20px;
   }
+
+  @media only screen and (max-width: 1380px) and (min-width: 1340px) {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
 `;
 
-export const MDBContainer = styled.div`
-  text-align: justify;
-  background-color: #963;
-  color: #fff;
+export const StyledMDBFooter = styled(MDBFooter)`
+  background-color: transparent;
+  text-align: center;
+  @media (max-width: 1366px) {
+    padding: 0;
+    font-size: 0.8em;
+  }
 `;
 
 export const TermsContainer = styled.div`
@@ -104,18 +132,21 @@ export const TermsHeading = styled.h6`
   text-align: center;
   color: #fff;
   display: inline-flex;
-  margin-left: 35%;
   font-family: "Times New Roman", Times, serif;
 
   @media only screen and (max-width: 768px) {
     margin-left: 5px;
+  }
+  @media only screen and (max-width: 1380px) and (min-width: 1340px) {
+    justify-content: center;
+    text-align: center;
+    margin-right: 20px;
   }
 `;
 
 export const PrivacyLink = styled.a`
   color: #fff;
   text-decoration: none;
-
   &:hover {
     text-decoration: underline;
   }
@@ -130,11 +161,11 @@ export const FooterLink = styled.a`
   color: #fff;
   text-decoration: none;
   margin: 0 10px;
-
   &:hover {
     text-decoration: underline;
   }
 `;
+
 export const ContactDiv = styled.div`
   display: flex;
   align-items: baseline;
@@ -151,4 +182,21 @@ export const ContactIcon = styled.i`
 export const ContactText = styled.span`
   margin-left: 10px;
   text-align: left;
+`;
+
+export const TermsMDBContainer = styled(MDBContainer)`
+  width: 100%;
+  justify-items: center;
+  text-align: center;
+  background-color: #963;
+  color: #fff;
+`;
+
+export const ContactMDBCol = styled(MDBCol)`
+  align-content: center;
+`;
+
+export const TimeMDBCol = styled(MDBCol)`
+  align-content: center;
+  justify-content: center;
 `;

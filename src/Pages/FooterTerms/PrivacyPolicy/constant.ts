@@ -1,5 +1,5 @@
 export const privacyPolicy = [
-  "This privacy notice discloses the privacy practices for www.abcd.com. This privacy notice applies solely to information collected by this website. It will notify you of the following:",
+  "This privacy notice discloses the privacy practices for iskconvvnagar.com. This privacy notice applies solely to information collected by this website. It will notify you of the following:",
 
   "1.What personally identifiable information is collected from you through the website, how it is used and with whom it may be shared.",
   "2.What choices are available to you regarding the use of your data.",
@@ -32,5 +32,5 @@ export const privacyPolicy = [
 
   "While we use encryption to protect sensitive information transmitted online, we also protect your information offline. Only employees who need the information to perform a specific job (for example, billing or customer service) are granted access to personally identifiable information. The computer servers in which we store personally identifiable information are kept in a highly secure environment.",
 
-  "If you feel that we are not abiding by this privacy policy, you should contact our business head immediately via telephone at xxxxxxxxxx or via email a",
+  "If you feel that we are not abiding by this privacy policy, you should contact our business head immediately via telephone at 9998407654 or via email at iskconinfovvn@gmail.com",
 ];
