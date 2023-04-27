@@ -9,11 +9,11 @@ import {
   LecturesWrapper,
 } from "./style";
 import {
-  darshanImages,
-  sringarImages,
   SringarTitle,
   darshanTitle,
   opts,
+  yesterdayDarshanImages,
+  todayDarshanImages,
 } from "./constant";
 import { AudioContent } from "./Audio";
 import titleBaseImg from "../../assets/images/title-base.png";
@@ -29,8 +29,8 @@ export const Media: React.FC = () => {
           <ImageTitle src={titleBaseImg} alt="Title Image" />
         </HeadingStyle>
         <CarouselWrapper>
-          <MediaCarousel images={sringarImages} title={SringarTitle} />
-          <MediaCarousel images={darshanImages} title={darshanTitle} />
+          <MediaCarousel images={yesterdayDarshanImages} title={SringarTitle} />
+          <MediaCarousel images={todayDarshanImages} title={darshanTitle} />
         </CarouselWrapper>
         <HeadingStyle>
           <h1>Lectures</h1>
