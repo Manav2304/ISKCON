@@ -52,9 +52,9 @@ export const kirtanAtIskcon = [
 
   "We have the Narasimha’s Kirtan Mandali in our temple for this seva as well various devotees engaged in this service.",
 
-  "Contact Detaiels:",
+  "Contact Details:",
 ];
 
-export const contactDetailes=[
+export const contactDetails=[
   "+91 99984 07654",
 ];

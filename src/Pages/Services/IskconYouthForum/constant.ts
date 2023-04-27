@@ -46,14 +46,14 @@ export const iskconYouthForum = [
   "This seva is spearheaded by H.G Adi Guru Das, for more details please contact on given details.",
 ];
 
-export const contactDetailes1=[
+export const contactDetails1=[
   "+91 99987 14977",
 ];
 
-export const contactDetailes2=[
+export const contactDetails2=[
   "+91 74051 60363",
 ];
 
 export const emailDetails=[
-  "Email: abhishekmishra2@gmil.com",
+  "Email: abhishekmishra2@gmail.com",
 ];

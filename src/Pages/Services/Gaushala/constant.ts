@@ -55,6 +55,6 @@ export const goushala = [
 
 ];
 
-export const contactDetailes1=[
+export const contactDetails=[
   " +91 9429664102",
 ];

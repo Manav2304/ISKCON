@@ -53,10 +53,10 @@ export const bookDistribution = [
   "Contact Details:"
 ];
 
-export const contactDetailes1=[
+export const contactDetails1=[
   "Adi Guru Pr: +91 99987 14977",
 ];
 
-export const contactDetailes2=[
+export const contactDetails2=[
   "Bhakt Paresh: +91 70161 36585",
 ];

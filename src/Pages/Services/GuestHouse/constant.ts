@@ -25,10 +25,10 @@ export const guestHouse = [
   "Contact Details:",
 ];
 
-export const contactDetailes1=[
+export const contactDetails1=[
   "+91 02692 235752",
 ];
 
-export const contactDetailes2=[
+export const contactDetails2=[
   "+91 02692 233012",
 ];

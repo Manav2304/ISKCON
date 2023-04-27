@@ -18,6 +18,6 @@ export const lifeTimeMembership = [
   "To know more about Life Membership program and to become one kindly contact: ",
 ];
 
-export const contactDetailes=[
+export const contactDetails=[
   "+91 9998407654",
 ];
