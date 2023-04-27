@@ -1,7 +1,6 @@
-import { donationContact, contentNumber } from "./constant";
+import { contentNumber } from "./constant";
 
 export const handleWhatsAppMessage = () => {
-  const message = encodeURIComponent(donationContact);
-  const url = `https://wa.me/${contentNumber}?text=${message}`;
+  const url = `https://wa.me/${contentNumber}`;
   window.open(url, "_blank");
 };
