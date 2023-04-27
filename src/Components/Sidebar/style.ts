@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import title from "../../assets/images/navbar-bg.jpg";
 import { Accordion, AccordionButton } from "react-bootstrap";
+import ArrowIcon from "../../assets/images/arrow-down.png";
 
 export const SidebarStyle = styled.div<{ isOpen: boolean }>`
   background-image: url(${title});
@@ -33,7 +34,7 @@ export const NavStyle = styled.nav`
   margin-top: 0;
   display: block;
   align-items: center;
-  margin-bottom: 1px;
+  margin-bottom: 2px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -57,6 +58,37 @@ export const ToggleButton = styled.button`
   }
 `;
 
+export const CloseIcon = styled.div`
+  display: inline;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 10px;
+      background-color: transparent;
+    }
+    
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+`;
+
 export const StyledLink = styled(Link)`
   display: block;
   color: #fff;
@@ -70,6 +102,7 @@ export const StyledLink = styled(Link)`
 
   &:hover {
     background-color: transparent;
+    border: none;
     color: #fff;
   }
 `;
@@ -147,14 +180,24 @@ export const AccordionItemButton = styled(AccordionButton)`
   font-size: 20px;
   font-weight: bold;
   text-align: left;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 1px 16px;
+  padding: 2px 16px;
 
   &:hover {
     background-color: transparent;
     border: none;
     color: #fff;
+  }
+
+  &::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url(${ArrowIcon});
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
   }
 `;
 
@@ -186,11 +229,6 @@ export const IconsStyle = styled.a`
   width: 100%;
   height: 100%;
   transition: background-color 0.2s ease;
-  
-  &:hover {
-    background-color: transparent;
-    color: #fff;
-  }
 `;
 
 export const StyledAccordionItem = styled(Accordion.Item)`
