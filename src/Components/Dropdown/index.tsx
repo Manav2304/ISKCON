@@ -26,6 +26,7 @@ export const PageDropdown: React.FC<DropdownProps> = ({
 
   const handleItemClick = (path: string) => {
     navigate(path);
+    setIsHovered(false); // close the dropdown after clicking on an item
   };
 
   const handleMouseOver = () => {

@@ -121,6 +121,8 @@ export const PageImageCarousel = styled.img`
 `;
 
 export const PageStyleCarousel = styled(Carousel)`
+  z-index: 0;
+
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     height: 40px;
