@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
 
 export const Table = styled.table`
   border-collapse: collapse;
+  border: 2px solid #7e5959;
   width: 100%;
 `;
 
@@ -24,7 +25,6 @@ export const Paragraph = styled.div`
   position: relative;
   padding: 10px;
   color: #ad0d0d;
-
   &::before,
   &::after {
     content: '"';
@@ -33,11 +33,9 @@ export const Paragraph = styled.div`
     position: absolute;
     top: -0.5rem;
   }
-
   &::before {
     left: -10px;
   }
-
   &::after {
     right: -10px;
   }
@@ -57,7 +55,7 @@ export const TableRow = styled.tr`
 `;
 
 export const TableCell = styled.td`
-  border: 1px solid #ddd;
+  border: 1px solid #7e5959;
   padding: 0.5rem;
   text-align: left;
 `;
@@ -71,11 +69,9 @@ export const CopyButton = styled.button<{ copied: boolean }>`
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
-
   &:hover {
     background-color: #630063;
   }
-
   &:active {
     background-color: #fffffcf4;
   }
@@ -90,17 +86,14 @@ export const HeadingStyle = styled.div`
   color: #7e5959;
   text-align: center;
   margin-top: 50px;
-
   @media only screen and (max-width: 768px) {
     font-size: 0.5rem;
     padding-top: 20px;
   }
-
   @media only screen and (min-width: 769px) and (max-width: 1199px) {
     font-size: 2rem;
     padding: 40px;
   }
-
   @media only screen and (min-width: 1200px) {
     font-size: 1.5rem;
     padding: 60px;
@@ -110,19 +103,49 @@ export const HeadingStyle = styled.div`
 export const ImageTitle = styled.img`
   width: 100%;
   max-width: 400px;
-
   @media only screen and (max-width: 768px) {
     width: 70%;
     max-width: 400px;
   }
-
   @media only screen and (min-width: 769px) and (max-width: 1199px) {
     width: 70%;
     max-width: 300px;
   }
-
   @media only screen and (min-width: 1200px) {
     width: 100%;
     max-width: 400px;
+  }
+`;
+
+export const ContactWrapper = styled.div`
+  font-size: 1.1rem;
+  text-align: justify center;
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #ff0000;
+  &::before,
+  &::after {
+    content: '"';
+    font-size: 3rem;
+    color: #f4c2c2;
+    position: absolute;
+    top: -0.5rem;
+  }
+  &::before {
+    left: -10px;
+  }
+  &::after {
+    right: -10px;
+  }
+`;
+
+export const ContactLink = styled.a`
+  color: #ff0000;
+  text-decoration: none;
+  &:hover {
+    color: #000;
   }
 `;

@@ -49,3 +49,8 @@ export const iciciBankAccountInfo = [
     value: "ICICI0000085",
   },
 ];
+
+export const donationContact =
+  "After the donation, please send the transfer receipt to H.G. Jay Giridhari Das on this Whatsapp Numbers";
+
+export const contentNumber = "+91 878-0287955";

@@ -5,14 +5,19 @@ import {
   TableStyle,
   HeadingStyle,
   ImageTitle,
+  ContactWrapper,
+  ContactLink,
 } from "./style";
 import {
   yesBankAccountInfo,
   iciciBankAccountInfo,
   bhagavadGita,
+  donationContact,
+  contentNumber,
 } from "./constant";
 import { CopiedTableRow } from "./CopiedTableRow";
 import titleBaseImg from "../../assets/images/title-base.png";
+import { handleWhatsAppMessage } from "./WhatsappHandler";
 
 export const DonationPage = () => {
   return (
@@ -25,7 +30,9 @@ export const DonationPage = () => {
         <Paragraph key={paragraph}>{paragraph}</Paragraph>
       ))}
       <TableStyle>
-        <HeadingStyle>YES bank</HeadingStyle>
+        <HeadingStyle>
+          <h1>YES bank</h1>
+        </HeadingStyle>
         <Table>
           <tbody>
             {yesBankAccountInfo.map((info) => (
@@ -34,7 +41,9 @@ export const DonationPage = () => {
           </tbody>
         </Table>
         <br />
-        <HeadingStyle>ICICI Bank</HeadingStyle>
+        <HeadingStyle>
+          <h1>ICICI Bank</h1>
+        </HeadingStyle>
         <Table>
           <tbody>
             {iciciBankAccountInfo.map((info) => (
@@ -43,6 +52,12 @@ export const DonationPage = () => {
           </tbody>
         </Table>
       </TableStyle>
+      <ContactWrapper>
+        {donationContact} :{" "}
+        <ContactLink onClick={handleWhatsAppMessage}>
+          {contentNumber}
+        </ContactLink>
+      </ContactWrapper>
     </Wrapper>
   );
 };
