@@ -190,13 +190,13 @@ export const AccordionItemButton = styled(AccordionButton)`
 
   &::after {
     flex-shrink: 0;
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 20px;
+    height: 20px;
     margin-left: auto;
     content: "";
     background-image: url(${ArrowIcon});
     background-repeat: no-repeat;
-    background-size: 1.25rem;
+    background-size: 20px;
     transition: transform .2s ease-in-out;
   }
 `;
