@@ -5,10 +5,10 @@ import { GlobalCarousel } from "./GlobalCarousel";
 import {
   HeadingStyle,
   ImageTitle,
-  ImageStyle,
   TextStyle,
   Image,
   GlobleCarouselStyle,
+  ImageStyle,
 } from "./style";
 import { PageCarousel } from "./PageCarousel";
 
@@ -38,13 +38,13 @@ export const HomePage: React.FC = () => {
             <h1>{section.title}</h1>
             <ImageTitle src={titleBaseUrl} alt="Title Image" />
           </HeadingStyle>
-          <ImageStyle>
-            <Image
-              src={section.image}
-              alt={`${section.title} Img`}
-              className="rounded"
-            />
-          </ImageStyle>
+          {/* <ImageStyle> */}
+          <Image
+            src={section.image}
+            alt={`${section.title} Img`}
+            className="rounded"
+          />
+          {/* </ImageStyle> */}
           <TextStyle>
             {section.paragraphs.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
