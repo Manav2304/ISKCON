@@ -4,8 +4,6 @@ import {
   CarouselWrapper,
   YouTubeWrapper,
   ServiceWrapper,
-  HeadingStyle,
-  ImageTitle,
   LecturesWrapper,
 } from "./style";
 import {
@@ -19,15 +17,22 @@ import { AudioContent } from "./Audio";
 import titleBaseImg from "../../assets/images/title-base.png";
 import YouTube from "react-youtube";
 import { MediaCarousel } from "./MediaCarousel";
+import {
+  HeadingStyle,
+  ImageTitle,
+  TitleWrapper,
+} from "../../Components/TitleBase/style";
 
 export const Media: React.FC = () => {
   return (
     <>
       <ServiceWrapper>
-        <HeadingStyle>
-          <h1>Daily Darshan</h1>
-          <ImageTitle src={titleBaseImg} alt="Title Image" />
-        </HeadingStyle>
+        <TitleWrapper>
+          <HeadingStyle>
+            <h1>Daily Darshan</h1>
+            <ImageTitle src={titleBaseImg} alt="Title Image" />
+          </HeadingStyle>
+        </TitleWrapper>
         <CarouselWrapper>
           <MediaCarousel images={yesterdayDarshanImages} title={SringarTitle} />
           <MediaCarousel images={todayDarshanImages} title={darshanTitle} />
