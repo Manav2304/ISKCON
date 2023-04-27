@@ -45,11 +45,14 @@ export const HeadingStyle = styled.div`
 
   @media only screen and (min-width: 1400px) and (max-width: 2500px) {
     font-size: 1rem;
+    padding: 60px;
+    margin-top: 100px;
   }
 
   @media only screen and (min-width: 2560px) {
     font-size: 1rem;
     padding: 60px;
+    margin-top: 200px;
   }
 `;
 
@@ -75,8 +78,7 @@ export const ImageTitle = styled.img`
 
 export const Reviews = styled.div`
   @media only screen and (max-width: 479px) {
-    height: 250px;
-    margin-top: 75px;
+    margin-top: 50px;
   }
 
   @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -92,7 +94,7 @@ export const Reviews = styled.div`
   }
 
   @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    margin-top: 105px;
+    margin-top: 72px;
   }
 
   @media only screen and (min-width: 1400px) and (max-width: 2500px) {
@@ -134,7 +136,15 @@ export const ImageCarousel = styled.img`
   }
 
   @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    height: 500px;
+    height: 480px;
+  }
+
+  @media only screen and (min-width: 1400px) and (max-width: 2500px) {
+    height: 650px;
+  }
+
+  @media only screen and (min-width: 2560px) {
+    height: 950px;
   }
 `;
 
