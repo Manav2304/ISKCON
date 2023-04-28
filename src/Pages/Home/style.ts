@@ -26,48 +26,48 @@ export const devices = {
 export const PageImageCarousel = styled.img`
   width: 100%;
 
-  @media (${devices.mobileES}) ) {
+  @media (${devices.mobileES}) {
     height: 130px;
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  @media (${devices.mobileS}) ) {
+  @media (${devices.mobileS}) {
     height: 130px;
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  @media (${devices.mobileM}) ) {
+  @media (${devices.mobileM}) {
     height: 150px;
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  @media (${devices.mobileL}) ) {
+  @media (${devices.mobileL}) {
     height: 180px;
     padding-left: 35px;
     padding-right: 35px;
   }
 
-  @media (${devices.tablet}) ) {
+  @media (${devices.tablet}) {
     height: 320px;
     padding-left: 40px;
     padding-right: 40px;
   }
 
-  @media (${devices.laptop}) ) {
+  @media (${devices.laptop}) {
     height: 480px;
     padding-left: 115px;
     padding-right: 115px;
   }
 
-  @media (${devices.laptopL}) ) {
+  @media (${devices.laptopL}) {
     height: 580px;
   }
 
-  @media (${devices.desktop}) ) {
+  @media (${devices.desktop}) {
     height: 1080px;
   }
 `;
@@ -75,7 +75,7 @@ export const PageImageCarousel = styled.img`
 export const PageStyleCarousel = styled(Carousel)`
   z-index: 0;
 
-  @media (${devices.mobileES}) ) {
+  @media (${devices.mobileES}) {
     .carousel-control-prev-icon {
       margin-left: 20px;
       height: 20px;
@@ -93,7 +93,7 @@ export const PageStyleCarousel = styled(Carousel)`
     }
   }
 
-  @media (${devices.mobileS}) ) {
+  @media (${devices.mobileS}) {
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       height: 20px;
@@ -105,7 +105,7 @@ export const PageStyleCarousel = styled(Carousel)`
     }
   }
 
-  @media (${devices.mobileM}) ) {
+  @media (${devices.mobileM}) {
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       height: 20px;
@@ -117,7 +117,7 @@ export const PageStyleCarousel = styled(Carousel)`
     }
   }
 
-  @media (${devices.mobileL}) ) {
+  @media (${devices.mobileL}) {
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       height: 20px;
@@ -129,7 +129,7 @@ export const PageStyleCarousel = styled(Carousel)`
     }
   }
 
-  @media (${devices.tablet}) ) {
+  @media (${devices.tablet}) {
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       height: 40px;
@@ -142,7 +142,7 @@ export const PageStyleCarousel = styled(Carousel)`
     }
   }
 
-  @media (${devices.laptop}) ) {
+  @media (${devices.laptop}) {
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       height: 40px;
