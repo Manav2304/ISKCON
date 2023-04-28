@@ -1,14 +1,16 @@
-import sringar1 from "../../assets/images/sringar1.jpg";
-import sringar2 from "../../assets/images/sringar2.jpg";
-import sringar3 from "../../assets/images/sringar3.jpg";
-import darshan1 from "../../assets/images/darshan1.jpg";
-import darshan2 from "../../assets/images/darshan2.jpg";
-import darshan3 from "../../assets/images/darshan3.jpg";
+import sringar1 from "../../assets/DailyDarshan/yesterday-darshan1.jpg";
+import sringar2 from "../../assets/DailyDarshan/yesterday-darshan2.jpg";
+import sringar3 from "../../assets/DailyDarshan/yesterday-darshan3.jpg";
+import sringar4 from "../../assets/DailyDarshan/yesterday-darshan4.jpg";
+import darshan1 from "../../assets/DailyDarshan/today-darshan1.jpg";
+import darshan2 from "../../assets/DailyDarshan/today-darshan2.jpg";
+import darshan3 from "../../assets/DailyDarshan/today-darshan3.jpg";
+import darshan4 from "../../assets/DailyDarshan/today-darshan4.jpg";
 
 export const SringarTitle = "Yesterday's Darshan";
 export const darshanTitle = "Today's Darshan ";
 
-export const sringarImages = [
+export const yesterdayDarshanImages = [
   {
     id: 1,
     image: sringar1,
@@ -21,9 +23,13 @@ export const sringarImages = [
     id: 3,
     image: sringar3,
   },
+  {
+    id: 4,
+    image: sringar4,
+  },
 ];
 
-export const darshanImages = [
+export const todayDarshanImages = [
   {
     id: 1,
     image: darshan1,
@@ -35,6 +41,10 @@ export const darshanImages = [
   {
     id: 3,
     image: darshan3,
+  },
+  {
+    id: 4,
+    image: darshan4,
   },
 ];
 

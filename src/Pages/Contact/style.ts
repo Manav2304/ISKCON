@@ -45,7 +45,7 @@ export const GuestBox = styled.div`
   height: 150px;
   max-width: 300px;
   margin-bottom: 5px;
-
+  
   @media (min-width: 768px) {
     width: 100%;
     max-width: none;
@@ -121,6 +121,7 @@ export const TitleBaseImg = styled.img`
     max-width: 400px;
   }
 `;
+
 export const Heading = styled.div`
   font-family: "Times New Roman", Times, serif;
   color: #7e5959;
@@ -140,6 +141,7 @@ export const Heading = styled.div`
     padding-top: 20px;
   }
 `;
+
 export const BoxStyle = styled.div`
   padding-left: 50px;
   padding-right: 50px;
