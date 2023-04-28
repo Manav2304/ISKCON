@@ -166,6 +166,10 @@ export const TermsTitle = styled(Link)`
   font-family: "Times New Roman", Times, serif;
   text-decoration: none;
   text-decoration-color: none;
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
 
   @media (${devices.mobileES}) {
     font-size: 11px;
