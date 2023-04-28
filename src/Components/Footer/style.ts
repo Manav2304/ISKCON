@@ -34,16 +34,16 @@ export const FooterLogoStyle = styled.div`
   @media (${devices.mobileES}) {
     height: 130px;
     width: 100%;
-    margin-top: 90px;
+    margin-top: 100px;
   }
   @media (${devices.mobileS}) {
     height: 130px;
-    margin-top: 70px;
+    margin-top: 150px;
   }
   @media (${devices.mobileM}) {
     height: 150px;
     padding-right: 5px;
-    margin-top: 150px;
+    margin-top: 200px;
   }
   @media (${devices.mobileL}) {
     height: 180px;
@@ -76,7 +76,8 @@ export const Heading = styled.h6`
   font-size: 20px;
 
   @media (${devices.mobileES}) {
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-top: -50px;
   }
   @media (${devices.mobileS}) {
     height: 130px;
@@ -86,8 +87,8 @@ export const Heading = styled.h6`
   }
   @media (${devices.mobileM}) {
     height: 150px;
-    padding-right: 40px;
-    font-size: 20px;
+    padding-right: 30px;
+    font-size: 22px;
     margin-top: -30px;
   }
   @media (${devices.mobileL}) {
@@ -121,17 +122,19 @@ export const ContactStyle = styled.div`
   @media (${devices.mobileES}) {
     height: 130px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 15px;
+    margin-bottom: 90px;
   }
   @media (${devices.mobileS}) {
     height: 130px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-top: 50px;
+    font-size: 18px;
   }
   @media (${devices.mobileM}) {
     margin-top: 50px;
     margin-right: -10px;
-    font-size: 10px;
+    font-size: 20px;
   }
   @media (${devices.mobileL}) {
     margin-right: -55px;
@@ -260,16 +263,18 @@ export const TimeStyle = styled.div`
   @media (${devices.mobileES}) {
     height: 130px;
     width: 100%;
-    padding-right: 50px;
+    padding-right: 35px;
+    font-size: 15px;
   }
   @media (${devices.mobileS}) {
-    padding-right: 80px;
+    padding-right: 50px;
     margin-top: -90px;
+    font-size: 18px;
   }
   @media (${devices.mobileM}) {
-    padding-right: 80px;
+    padding-right: 70px;
     margin-top: -110px;
-    font-size: 18px;
+    font-size: 20px;
   }
   @media (${devices.mobileL}) {
     font-size: 30px;
