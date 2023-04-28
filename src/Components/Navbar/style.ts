@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import title from "../../assets/images/navbarnew-bg.png";
+import title from "../../assets/images/navbar-bg.png";
 import { Link } from "react-router-dom";
 import { devices } from "../../Pages/Home/style";
 

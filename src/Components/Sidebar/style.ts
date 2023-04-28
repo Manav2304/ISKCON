@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import title from "../../assets/images/navbar-bg.jpg";
+import title from "../../assets/images/navbar-bg.png";
 import { Accordion, AccordionButton } from "react-bootstrap";
 import ArrowIcon from "../../assets/images/arrow-down.png";
 
 export const SidebarStyle = styled.div<{ isOpen: boolean }>`
   background-image: url(${title});
-  background-size: cover;
+  background-size: repeat;
   width: 300px;
   height: 100%;
   position: fixed;
@@ -30,7 +30,7 @@ export const nav = styled.nav`
 
 export const NavStyle = styled.nav`
   background-image: url(${title});
-  background-size: cover;
+  background-size: repeat;
   margin-top: 0;
   display: block;
   align-items: center;
@@ -78,7 +78,7 @@ export const CloseIcon = styled.div`
       height: 10px;
       background-color: transparent;
     }
-    
+
     &::before {
       transform: rotate(45deg);
     }
@@ -197,7 +197,7 @@ export const AccordionItemButton = styled(AccordionButton)`
     background-image: url(${ArrowIcon});
     background-repeat: no-repeat;
     background-size: 20px;
-    transition: transform .2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
   }
 `;
 
