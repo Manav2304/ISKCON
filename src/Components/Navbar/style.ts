@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import title from "../../assets/images/navbar-bg.png";
+import title from "../../assets/images/navbar-bg.jpg";
 import { Link } from "react-router-dom";
 
 export const NavStyle = styled.nav`
@@ -7,10 +7,27 @@ export const NavStyle = styled.nav`
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: 1400px) {
+    height: 105px !important;
+    width: 100% !important;
+  }
 `;
 
 export const StyledLink = styled(Link)`
-  color: #f00;
+  color: #fff;
   text-decoration: none;
 `;
 
@@ -35,17 +52,20 @@ export const ImgStyle = styled.img`
   }
 
   @media (min-width: 1400px) {
-    height: 85px;
+    height: 100px !important;
+    width: 100% !important;
   }
 `;
+
 export const SocialMediaIconsStyle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
 `;
+
 export const IconsStyle = styled.a`
-  color: #8b0000;
+  color: #fff;
   padding: 3px;
   transition: background-color 0.2s ease;
 `;

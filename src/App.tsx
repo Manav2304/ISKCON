@@ -23,6 +23,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "@fortawesome/fontawesome-free/css/fontawesome.css";
 import "@fortawesome/fontawesome-free/css/brands.css";
 import ScrollToTop from "./Components/ScrollToTop";
+import { Sidebar } from "./Components/Sidebar";
 import { VisitUs } from "./Pages/VisitUs";
 
 export const App: React.FunctionComponent = () => {
@@ -31,6 +32,7 @@ export const App: React.FunctionComponent = () => {
       <BrowserRouter>
         <ScrollToTop />
         <NavigationBar />
+        <Sidebar />
         <Routes>
           <Route caseSensitive path={routes.home} element={<HomePage />} />
           <Route caseSensitive path={routes.visitUs} element={<VisitUs />} />
