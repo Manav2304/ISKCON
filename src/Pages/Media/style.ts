@@ -134,40 +134,46 @@ export const LinkName = styled.h1`
 `;
 
 export const Reviews = styled.div`
-  height: 300px;
-  width: 500px;
+  width: 320px;
+  height: 240px;
 
   @media only screen and (max-width: 767px) {
+    width: 320px;
+    height: 240px;
     margin: 20px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 480px;
+    height: 360px;
     margin: 10px;
   }
 
   @media only screen and (min-width: 1024px) {
+    width: 640px;
+    height: 480px;
     margin: 5px;
   }
 `;
 
 export const ImageCarousel = styled.img`
-  width: 500px;
-  height: 300px;
+  width: 320px;
+  height: 240px;
   object-fit: contain cover;
 
   @media only screen and (min-width: 767px) {
-    width: 80%;
-    height: 200px;
+    width: 320px;
+    height: 240px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    width: 100%;
-    height: 250px;
+    width: 480px;
+    height: 360px;
   }
 
   @media only screen and (min-width: 1024px) {
-    width: 500px;
-    height: 300px;
+    width: 640px;
+    height: 480px;
   }
 `;
 
@@ -267,4 +273,8 @@ export const SpotifyWrapper = styled.iframe.attrs({
     width: 80%;
     height: 400px;
   }
+`;
+
+export const LinkStyle = styled.a`
+  text-decoration: none;
 `;
