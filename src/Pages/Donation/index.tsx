@@ -25,7 +25,7 @@ export const DonationPage = () => {
         <Paragraph key={paragraph}>{paragraph}</Paragraph>
       ))}
       <TableStyle>
-        <HeadingStyle>YES bank</HeadingStyle>
+        <HeadingStyle><h1>YES bank</h1></HeadingStyle>
         <Table>
           <tbody>
             {yesBankAccountInfo.map((info) => (
@@ -34,7 +34,7 @@ export const DonationPage = () => {
           </tbody>
         </Table>
         <br />
-        <HeadingStyle>ICICI Bank</HeadingStyle>
+        <HeadingStyle><h1>ICICI Bank</h1></HeadingStyle>
         <Table>
           <tbody>
             {iciciBankAccountInfo.map((info) => (
