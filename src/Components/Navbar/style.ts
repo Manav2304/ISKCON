@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import title from "../../assets/images/navbar-bg.png";
 import { Link } from "react-router-dom";
-import { devices } from "../../Pages/Home/style";
 
 export const NavStyle = styled.nav`
   background-image: url(${title});
