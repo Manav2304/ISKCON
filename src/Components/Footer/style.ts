@@ -2,6 +2,28 @@ import { MDBCol, MDBContainer, MDBFooter } from "mdb-react-ui-kit";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+export const sizes = {
+  mobileES: "100px",
+  mobileS: "375px",
+  mobileM: "425px",
+  mobileL: "576px",
+  tablet: "768px",
+  laptop: "1024px",
+  laptopL: "1440px",
+  desktop: "2560px",
+};
+
+export const devices = {
+  mobileES: `min-width: ${sizes.mobileES}`,
+  mobileS: `min-width: ${sizes.mobileS}`,
+  mobileM: `min-width: ${sizes.mobileM}`,
+  mobileL: `min-width: ${sizes.mobileL}`,
+  tablet: `min-width: ${sizes.tablet}`,
+  laptop: `min-width: ${sizes.laptop}`,
+  laptopL: `min-width: ${sizes.laptopL}`,
+  desktop: `min-width: ${sizes.desktop}`,
+};
+
 export const FooterLogoStyle = styled.div`
   width: 500px;
   align-content: center;
@@ -9,13 +31,39 @@ export const FooterLogoStyle = styled.div`
   margin-top: 20px;
   margin-right: -6px;
 
-  @media only screen and (max-width: 768px) {
+  @media (${devices.mobileES}) {
+    height: 130px;
     width: 100%;
-    margin-left: -1px;
+    margin-top: 90px;
   }
-  @media only screen and (max-width: 1380px) and (min-width: 1340px) {
-    margin-left: 45px;
+  @media (${devices.mobileS}) {
+    height: 130px;
+    margin-top: 70px;
+  }
+  @media (${devices.mobileM}) {
+    height: 150px;
+    padding-right: 5px;
+    margin-top: 150px;
+  }
+  @media (${devices.mobileL}) {
+    height: 180px;
+    margin-top: 200px;
+  }
+  @media (${devices.tablet}) {
+    height: 320px;
     padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (${devices.laptop}) {
+    height: 480px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+  @media (${devices.laptopL}) {
+    height: 580px;
+  }
+  @media (${devices.desktop}) {
+    height: 1080px;
   }
 `;
 
@@ -27,19 +75,40 @@ export const Heading = styled.h6`
   margin-left: 130px;
   font-size: 20px;
 
-  @media only screen and (max-width: 768px) {
-    padding-right: 130px;
-    margin-top: -50px;
-    text-align: center;
+  @media (${devices.mobileES}) {
+    margin-left: 10px;
   }
-  @media only screen and (min-width: 769px) {
-    text-align: center;
-    margin-left: 30px;
-    padding-right: 50px;
+  @media (${devices.mobileS}) {
+    height: 130px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
   }
-  @media only screen and (max-width: 480px) {
-    padding-right: 50px;
-    margin-left: 50px;
+  @media (${devices.mobileM}) {
+    height: 150px;
+    padding-right: 40px;
+    font-size: 20px;
+    margin-top: -30px;
+  }
+  @media (${devices.mobileL}) {
+    margin-left: 250px;
+    font-size: 30px;
+  }
+  @media (${devices.tablet}) {
+    height: 320px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (${devices.laptop}) {
+    height: 480px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+  @media (${devices.laptopL}) {
+    height: 580px;
+  }
+  @media (${devices.desktop}) {
+    height: 1080px;
   }
 `;
 
@@ -49,13 +118,40 @@ export const ContactStyle = styled.div`
   float: right;
   font-family: "Times New Roman", Times, serif;
 
-  @media only screen and (max-width: 768px) {
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-right: 20px;
+  @media (${devices.mobileES}) {
+    height: 130px;
+    width: 100%;
+    margin-bottom: 20px;
   }
-  @media only screen and (min-width: 769px) {
-    text-align: center;
+  @media (${devices.mobileS}) {
+    height: 130px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media (${devices.mobileM}) {
+    margin-top: 50px;
+    margin-right: -10px;
+    font-size: 10px;
+  }
+  @media (${devices.mobileL}) {
+    margin-right: -55px;
+    font-size: 30px;
+  }
+  @media (${devices.tablet}) {
+    height: 320px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (${devices.laptop}) {
+    height: 480px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+  @media (${devices.laptopL}) {
+    height: 580px;
+  }
+  @media (${devices.desktop}) {
+    height: 1080px;
   }
 `;
 
@@ -63,13 +159,45 @@ export const TermsTitle = styled(Link)`
   color: #fff;
   font-size: 18px;
   margin-bottom: -15px;
-  margin-top: -15px;
+  margin-top: 15px;
   font-family: "Times New Roman", Times, serif;
   text-decoration: none;
   text-decoration-color: none;
 
-  @media only screen and (max-width: 768px) {
-    font-size: 12px;
+  @media (${devices.mobileES}) {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  @media (${devices.mobileS}) {
+    height: 130px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media (${devices.mobileM}) {
+    height: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media (${devices.mobileL}) {
+    height: 180px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  @media (${devices.tablet}) {
+    height: 320px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (${devices.laptop}) {
+    height: 480px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+  @media (${devices.laptopL}) {
+    height: 580px;
+  }
+  @media (${devices.desktop}) {
+    height: 1080px;
   }
 `;
 
@@ -82,8 +210,38 @@ export const CopyRights = styled.div`
   text-decoration: none;
   text-decoration-color: none;
 
-  @media only screen and (max-width: 768px) {
-    font-size: 12px;
+  @media (${devices.mobileES}) {
+  }
+  @media (${devices.mobileS}) {
+    height: 130px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media (${devices.mobileM}) {
+    height: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media (${devices.mobileL}) {
+    height: 180px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  @media (${devices.tablet}) {
+    height: 320px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (${devices.laptop}) {
+    height: 480px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+  @media (${devices.laptopL}) {
+    height: 580px;
+  }
+  @media (${devices.desktop}) {
+    height: 1080px;
   }
 `;
 
@@ -99,17 +257,40 @@ export const TimeStyle = styled.div`
   margin-right: 130px;
   font-family: "Times New Roman", Times, serif;
 
-  @media only screen and (max-width: 768px) {
-    text-align: center;
-    margin-right: -2%;
-    margin-bottom: -40px;
-    margin-top: 20px;
+  @media (${devices.mobileES}) {
+    height: 130px;
+    width: 100%;
+    padding-right: 50px;
   }
-
-  @media only screen and (max-width: 1380px) and (min-width: 1340px) {
-    text-align: right;
-    margin-top: 20px;
-    margin-right: 20px;
+  @media (${devices.mobileS}) {
+    padding-right: 80px;
+    margin-top: -90px;
+  }
+  @media (${devices.mobileM}) {
+    padding-right: 80px;
+    margin-top: -110px;
+    font-size: 18px;
+  }
+  @media (${devices.mobileL}) {
+    font-size: 30px;
+    margin-left: -150px;
+    margin-top: -240px;
+  }
+  @media (${devices.tablet}) {
+    height: 320px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (${devices.laptop}) {
+    height: 480px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+  @media (${devices.laptopL}) {
+    height: 580px;
+  }
+  @media (${devices.desktop}) {
+    height: 1080px;
   }
 `;
 
@@ -134,13 +315,41 @@ export const TermsHeading = styled.h6`
   display: inline-flex;
   font-family: "Times New Roman", Times, serif;
 
-  @media only screen and (max-width: 768px) {
-    margin-left: 5px;
+  @media (${devices.mobileES}) {
+    height: 130px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  @media only screen and (max-width: 1380px) and (min-width: 1340px) {
-    justify-content: center;
-    text-align: center;
-    margin-right: 20px;
+  @media (${devices.mobileS}) {
+    height: 130px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media (${devices.mobileM}) {
+    height: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media (${devices.mobileL}) {
+    height: 180px;
+    padding-right: 10px;
+  }
+  @media (${devices.tablet}) {
+    height: 320px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (${devices.laptop}) {
+    height: 480px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+  @media (${devices.laptopL}) {
+    height: 580px;
+  }
+  @media (${devices.desktop}) {
+    height: 1080px;
   }
 `;
 
