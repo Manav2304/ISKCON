@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
 
 export const Table = styled.table`
   border-collapse: collapse;
+  border: 2px solid #7e5959;
   width: 100%;
 `;
 
@@ -59,7 +60,7 @@ export const TableRow = styled.tr`
 `;
 
 export const TableCell = styled.td`
-  border: 1px solid #ddd;
+  border: 1px solid #7e5959;
   padding: 0.5rem;
   text-align: left;
 `;

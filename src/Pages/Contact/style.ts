@@ -16,11 +16,13 @@ export const Box = styled.div`
   height: 150px;
   max-width: 300px;
   margin-bottom: 5px;
+
   @media (min-width: 768px) {
     width: auto;
     max-width: none;
     align-items: center;
   }
+
   @media (max-width: 767px) {
     width: auto;
     max-width: none;
@@ -43,12 +45,14 @@ export const GuestBox = styled.div`
   height: 150px;
   max-width: 300px;
   margin-bottom: 5px;
+
   @media (min-width: 768px) {
     width: 100%;
     max-width: none;
     align-items: center;
     font-size: 13px;
   }
+
   @media (max-width: 767px) {
     width: auto;
     max-width: none;
@@ -66,6 +70,7 @@ export const MapFrame = styled.iframe`
   margin-top: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
+
   @media only screen and (max-width: 768px) {
     font-size: 1.5rem;
     margin-top: 20px;
@@ -73,6 +78,7 @@ export const MapFrame = styled.iframe`
     padding-left: 40px;
     padding-right: 40px;
   }
+
   @media only screen and (min-width: 769px) and (max-width: 1199px) {
     font-size: 2rem;
     margin-top: 50px;
@@ -80,6 +86,7 @@ export const MapFrame = styled.iframe`
     padding-left: 50px;
     padding-right: 50px;
   }
+
   @media only screen and (min-width: 1200px) {
     font-size: 3rem;
     margin-top: 50px;
@@ -96,10 +103,12 @@ export const BoxStyle = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   grid-gap: 20px;
+
   @media only screen and (max-width: 768px) {
     justify-content: center;
     width: 100%;
   }
+
   @media only screen and (min-width: 769px) and (max-width: 1199px) {
     justify-content: center;
   }

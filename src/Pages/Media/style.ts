@@ -18,10 +18,10 @@ export const ServiceWrapper = styled.div`
 
 export const PageWrapper = styled.div`
   display: flex;
+  flex-flow: column;
   flex-wrap: nowrap;
   justify-content: center;
   margin-bottom: 10px;
-  flex-direction: column;
   align-items: center;
 `;
 
