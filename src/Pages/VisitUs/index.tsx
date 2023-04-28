@@ -15,11 +15,7 @@ import {
 } from "./style";
 import { PageCarousel } from "../Services/PageLayout/PageCarousel";
 import { Button } from "../Festival/style";
-import {
-  HeadingStyle,
-  ImageTitle,
-  TitleWrapper,
-} from "../../Components/TitleBase/style";
+import { HeadingStyle, ImageTitle, TitleWrapper } from "../TitleBase/style";
 
 export const VisitUs = () => {
   const [showMoreDakor, setShowMoreDakor] = useState(false);

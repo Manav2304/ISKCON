@@ -6,11 +6,7 @@ import {
 } from "./constant";
 import { CopiedTableRow } from "./CopiedTableRow";
 import titleBaseImg from "../../assets/images/title-base.png";
-import {
-  HeadingStyle,
-  ImageTitle,
-  TitleWrapper,
-} from "../../Components/TitleBase/style";
+import { HeadingStyle, ImageTitle, TitleWrapper } from "../TitleBase/style";
 
 export const DonationPage = () => {
   return (

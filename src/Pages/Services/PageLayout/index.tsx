@@ -1,11 +1,7 @@
 import { Paragraph, TextWrapper } from "./style";
 import titlebBaseImage from "../../../assets/images/title-base.png";
 import { PageCarousel } from "./PageCarousel";
-import {
-  HeadingStyle,
-  ImageTitle,
-  TitleWrapper,
-} from "../../../Components/TitleBase/style";
+import { HeadingStyle, ImageTitle, TitleWrapper } from "../../TitleBase/style";
 
 interface ServiceDescriptionProps {
   title: string;

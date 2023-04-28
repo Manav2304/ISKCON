@@ -16,11 +16,7 @@ import {
   BoxDetail,
 } from "./style";
 import titleBaseImg from "../../assets/images/title-base.png";
-import {
-  HeadingStyle,
-  ImageTitle,
-  TitleWrapper,
-} from "../../Components/TitleBase/style";
+import { HeadingStyle, ImageTitle, TitleWrapper } from "../TitleBase/style";
 
 export const Contact: React.FC = () => {
   return (

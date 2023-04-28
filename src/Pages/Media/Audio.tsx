@@ -1,6 +1,6 @@
 import { LinkName, PageWrapper, SpotifyWrapper, LinkStyle } from "./style";
 import titleBaseImg from "../../assets/images/title-base.png";
-import { HeadingStyle, ImageTitle } from "../../Components/TitleBase/style";
+import { HeadingStyle, ImageTitle } from "../TitleBase/style";
 
 export const AudioContent = () => {
   return (

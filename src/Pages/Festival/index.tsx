@@ -4,11 +4,7 @@ import { FestivalCard } from "./FestivalCard";
 import { FestivalContainer } from "./style";
 import { Festival } from "./types";
 import titleBaseImg from "../../assets/images/title-base.png";
-import {
-  HeadingStyle,
-  ImageTitle,
-  TitleWrapper,
-} from "../../Components/TitleBase/style";
+import { HeadingStyle, ImageTitle, TitleWrapper } from "../TitleBase/style";
 
 export const FestivalPage = () => {
   return (

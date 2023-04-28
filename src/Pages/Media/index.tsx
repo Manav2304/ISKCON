@@ -17,11 +17,7 @@ import { AudioContent } from "./Audio";
 import titleBaseImg from "../../assets/images/title-base.png";
 import YouTube from "react-youtube";
 import { MediaCarousel } from "./MediaCarousel";
-import {
-  HeadingStyle,
-  ImageTitle,
-  TitleWrapper,
-} from "../../Components/TitleBase/style";
+import { HeadingStyle, ImageTitle, TitleWrapper } from "../TitleBase/style";
 
 export const Media: React.FC = () => {
   return (
