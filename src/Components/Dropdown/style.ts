@@ -12,7 +12,7 @@ export const TransparentDropdown = styled.div`
   }
 
   .dropdown-toggle {
-    color: #f00;
+    color: #fff;
     background: transparent;
     border: none;
     padding: 0;

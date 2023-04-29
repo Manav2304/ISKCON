@@ -63,10 +63,10 @@ export const ImageTitle = styled.img`
 
 export const PageWrapper = styled.div`
   display: flex;
+  flex-flow: column;
   flex-wrap: nowrap;
   justify-content: center;
   margin-bottom: 10px;
-  flex-direction: column;
   align-items: center;
 `;
 
@@ -143,16 +143,22 @@ export const Reviews = styled.div`
   @media only screen and (max-width: 767px) {
     width: 320px;
     height: 240px;
+    width: 320px;
+    height: 240px;
     margin: 20px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     width: 480px;
     height: 360px;
+    width: 480px;
+    height: 360px;
     margin: 10px;
   }
 
   @media only screen and (min-width: 1024px) {
+    width: 640px;
+    height: 480px;
     width: 640px;
     height: 480px;
     margin: 5px;
@@ -162,9 +168,13 @@ export const Reviews = styled.div`
 export const ImageCarousel = styled.img`
   width: 320px;
   height: 240px;
+  width: 320px;
+  height: 240px;
   object-fit: contain cover;
 
   @media only screen and (min-width: 767px) {
+    width: 320px;
+    height: 240px;
     width: 320px;
     height: 240px;
   }
@@ -172,9 +182,13 @@ export const ImageCarousel = styled.img`
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     width: 480px;
     height: 360px;
+    width: 480px;
+    height: 360px;
   }
 
   @media only screen and (min-width: 1024px) {
+    width: 640px;
+    height: 480px;
     width: 640px;
     height: 480px;
   }
