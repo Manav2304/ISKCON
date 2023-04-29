@@ -81,6 +81,7 @@ export const TitleName = styled.h2`
   color: #7e5959;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
+  margin-top: 15px;
 `;
 
 export const YouTubeWrapper = styled.div`
@@ -90,7 +91,8 @@ export const YouTubeWrapper = styled.div`
   margin-right: 100px;
   margin-top: 25px;
   overflow-x: hidden;
-
+  display: flex;
+  flexdirection: "row";
   @media (max-width: 767px) {
     margin-left: 20px;
     margin-right: 20px;
@@ -136,6 +138,7 @@ export const LinkName = styled.h1`
 export const Reviews = styled.div`
   width: 320px;
   height: 240px;
+  padding: 20px;
 
   @media only screen and (max-width: 767px) {
     width: 320px;
