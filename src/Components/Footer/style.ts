@@ -25,45 +25,51 @@ export const devices = {
 };
 
 export const FooterLogoStyle = styled.div`
-  width: 500px;
   align-content: center;
-  margin: 5px;
-  margin-top: 20px;
-  margin-right: -6px;
 
   @media (${devices.mobileES}) {
     height: 130px;
     width: 100%;
     margin-top: 100px;
   }
+
   @media (${devices.mobileS}) {
     height: 130px;
     margin-top: 150px;
   }
+
   @media (${devices.mobileM}) {
     height: 150px;
     padding-right: 5px;
     margin-top: 200px;
   }
+
   @media (${devices.mobileL}) {
     height: 180px;
     margin-top: 200px;
   }
+
   @media (${devices.tablet}) {
     height: 320px;
     padding-left: 40px;
     padding-right: 40px;
   }
+
   @media (${devices.laptop}) {
-    height: 480px;
-    padding-left: 115px;
-    padding-right: 115px;
+    width: 549px;
+    margin-left: 200px;
+    margin-top: -350px;
   }
   @media (${devices.laptopL}) {
-    height: 580px;
+    margin-top: 10px;
+    margin-left: -90px;
+    width: 600px;
   }
+
   @media (${devices.desktop}) {
-    height: 1080px;
+    margin-top: 20px;
+    margin-right: -670px;
+    width: 650px;
   }
 `;
 
@@ -71,51 +77,54 @@ export const Heading = styled.h6`
   font-family: "Times New Roman", Times, serif;
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 4px;
-  margin-left: 130px;
-  font-size: 20px;
 
   @media (${devices.mobileES}) {
     margin-left: 20px;
     margin-top: -50px;
   }
+
   @media (${devices.mobileS}) {
     height: 130px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 20px;
   }
+
   @media (${devices.mobileM}) {
     height: 150px;
     padding-right: 30px;
     font-size: 22px;
     margin-top: -30px;
   }
+
   @media (${devices.mobileL}) {
     margin-left: 250px;
     font-size: 30px;
   }
+
   @media (${devices.tablet}) {
     height: 320px;
     padding-left: 40px;
     padding-right: 40px;
   }
+
   @media (${devices.laptop}) {
-    height: 480px;
-    padding-left: 115px;
-    padding-right: 115px;
+    margin-left: 30px;
+    font-size: 20px;
   }
+
   @media (${devices.laptopL}) {
-    height: 580px;
+    margin-left: -30px;
+    font-size: 22px;
   }
+
   @media (${devices.desktop}) {
-    height: 1080px;
+    font-size: 25px;
+    margin-left: -90px;
   }
 `;
 
 export const ContactStyle = styled.div`
-  margin-top: 35px;
-  margin-left: 50px;
   float: right;
   font-family: "Times New Roman", Times, serif;
 
@@ -126,43 +135,48 @@ export const ContactStyle = styled.div`
     font-size: 15px;
     margin-bottom: 90px;
   }
+
   @media (${devices.mobileS}) {
     height: 130px;
     margin-top: 50px;
     font-size: 18px;
   }
+
   @media (${devices.mobileM}) {
     margin-top: 50px;
     margin-right: -10px;
     font-size: 20px;
   }
+
   @media (${devices.mobileL}) {
     margin-right: -55px;
     font-size: 30px;
   }
+
   @media (${devices.tablet}) {
     height: 320px;
     padding-left: 40px;
     padding-right: 40px;
   }
   @media (${devices.laptop}) {
-    height: 480px;
-    padding-left: 115px;
-    padding-right: 115px;
+    font-size: 17px;
+    margin-top: -330px;
+    padding-left: 630px;
   }
   @media (${devices.laptopL}) {
-    height: 580px;
+    font-size: 19px;
+    margin-top: 20px;
+    margin-right: -40px;
   }
   @media (${devices.desktop}) {
-    height: 1080px;
+    font-size: 23px;
+    margin-top: 30px;
+    margin-right: -60px;
   }
 `;
 
 export const TermsTitle = styled(Link)`
   color: #fff;
-  font-size: 18px;
-  margin-bottom: -15px;
-  margin-top: 15px;
   font-family: "Times New Roman", Times, serif;
   text-decoration: none;
   text-decoration-color: none;
@@ -191,29 +205,25 @@ export const TermsTitle = styled(Link)`
     height: 320px;
   }
   @media (${devices.laptop}) {
-    height: 480px;
-    font-size: 28px;
+    font-size: 16px;
   }
   @media (${devices.laptopL}) {
-    height: 580px;
+    font-size: 18px;
   }
   @media (${devices.desktop}) {
-    height: 1080px;
-    font-size: 40px;
+    font-size: 25px;
   }
 `;
 
 export const CopyRights = styled.div`
   color: #fff;
-  font-size: 18px;
-  margin-bottom: -15px;
-  margin-top: -15px;
   font-family: "Times New Roman", Times, serif;
   text-decoration: none;
   text-decoration-color: none;
 
   @media (${devices.mobileES}) {
     font-size: 10px;
+    margin-top: -15px;
   }
   @media (${devices.mobileS}) {
     font-size: 15px;
@@ -230,13 +240,14 @@ export const CopyRights = styled.div`
     font-size: 23px;
   }
   @media (${devices.laptop}) {
-    padding-left: 115px;
-    padding-right: 115px;
+    font-size: 16px;
+    margin-right: 10px;
   }
   @media (${devices.laptopL}) {
+    font-size: 18px;
   }
   @media (${devices.desktop}) {
-    font-size: 38px;
+    font-size: 23px;
   }
 `;
 
@@ -248,8 +259,7 @@ export const BgColor = styled.div`
 export const TimeStyle = styled.div`
   text-align: right;
   color: #fff;
-  margin-top: 15px;
-  margin-right: 130px;
+
   font-family: "Times New Roman", Times, serif;
 
   @media (${devices.mobileES}) {
@@ -279,15 +289,18 @@ export const TimeStyle = styled.div`
     padding-right: 40px;
   }
   @media (${devices.laptop}) {
-    height: 480px;
-    padding-left: 115px;
-    padding-right: 115px;
+    margin-left: -700px;
+    margin-top: -280px;
+    font-size: 18px;
   }
   @media (${devices.laptopL}) {
-    height: 580px;
+    font-size: 20px;
+    margin-top: -275px;
+    margin-left: -120px;
   }
   @media (${devices.desktop}) {
-    height: 1080px;
+    font-size: 23px;
+    margin-left: -220px;
   }
 `;
 
@@ -336,15 +349,17 @@ export const TermsHeading = styled.h6`
   }
   @media (${devices.laptop}) {
     height: 10px;
-    margin-left: 75px;
+    margin-left: 240px;
   }
+
   @media (${devices.laptopL}) {
     height: 10px;
-    margin-left: 250px;
+    margin-left: 350px;
   }
+
   @media (${devices.desktop}) {
     height: 10px;
-    margin-left: 130px;
+    margin-left: 300px;
   }
 `;
 
