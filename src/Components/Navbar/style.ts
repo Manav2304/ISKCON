@@ -1,17 +1,30 @@
 import styled from "styled-components";
 import title from "../../assets/images/navbar-bg.png";
 import { Link } from "react-router-dom";
+import { devices } from "../../Pages/Home/style";
 
 export const NavStyle = styled.nav`
   background-image: url(${title});
   background-repeat: repeat;
   position: fixed;
 
-  @media (max-width: 767px) {
+  @media (${devices.mobileES}) {
     display: none;
   }
 
-  @media (min-width: 768px) {
+  @media (${devices.mobileS}) {
+    display: none;
+  }
+
+  @media (${devices.mobileM}) {
+    display: none;
+  }
+
+  @media (${devices.mobileL}) {
+    display: none;
+  }
+
+  @media (${devices.tablet}) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,12 +32,27 @@ export const NavStyle = styled.nav`
     padding: 0 20px;
   }
 
-  @media (min-width: 1400px) {
+  @media (${devices.laptop}) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0 20px;
+  }
+
+  @media (${devices.laptopL}) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0 20px;
+  }
+
+  @media (${devices.desktop}) {
     height: 105px !important;
     width: 100% !important;
   }
 `;
-
 export const StyledLink = styled(Link)`
   color: #fff;
   text-decoration: none;
@@ -37,26 +65,38 @@ export const StyledLink = styled(Link)`
 export const ImgStyle = styled.img`
   height: 70px;
 
-  @media (max-width: 767px) {
-    height: 30px;
+  @media (${devices.mobileES}) {
+    height: 10px;
   }
 
-  @media (min-width: 768px) and (max-width: 991px) {
-    height: 50px;
+  @media (${devices.mobileS}) {
+    display: none;
   }
 
-  @media (min-width: 992px) and (max-width: 1199px) {
-    height: 60px;
+  @media (${devices.mobileM}) {
+    display: none;
   }
 
-  @media (min-width: 1200px) and (max-width: 1399px) {
+  @media (${devices.mobileL}) {
+    display: none;
+  }
+
+  @media (${devices.tablet}) {
+    display: flex;
+    height: 70px;
+  }
+
+  @media (${devices.laptop}) {
+    height: 85px;
+  }
+
+  @media (${devices.laptopL}) {
     height: 90px;
-    width: 130px;
   }
 
-  @media (min-width: 1400px) {
-    height: 100px !important;
-    width: 100% !important;
+  @media (${devices.desktop}) {
+    display: flex;
+    height: 100px;
   }
 `;
 
