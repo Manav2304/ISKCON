@@ -1,12 +1,10 @@
 import React from "react";
 import {
   address,
+  contactNumbers,
   email,
   guestHouse,
-  guestNumber1,
-  guestNumber2,
-  mobileNumber,
-  phoneNumber,
+  guestHouseNumbers,
 } from "./constant";
 import {
   Box,
@@ -39,11 +37,14 @@ export const Contact: React.FC = () => {
         <Box>
           <BoxHeading>Contact Number</BoxHeading>
           <BoxDetail>
-            <ContactLink href={`tel:${mobileNumber}`}>
-              {mobileNumber}
-            </ContactLink>
-            <br />
-            <ContactLink href={`tel:${phoneNumber}`}>{phoneNumber}</ContactLink>
+            {contactNumbers.map((contact) => (
+              <React.Fragment key={contact.id}>
+                <ContactLink href={`tel=${contact.number}`}>
+                  {contact.number}
+                </ContactLink>
+                <br />
+              </React.Fragment>
+            ))}
           </BoxDetail>
         </Box>
         <Box>
@@ -69,13 +70,14 @@ export const Contact: React.FC = () => {
           <BoxDetail>
             {guestHouse}
             <br />
-            <ContactLink href={`tel=${guestNumber1}`}>
-              {guestNumber1}
-            </ContactLink>
-            <br />
-            <ContactLink href={`tel=${guestNumber2}`}>
-              {guestNumber2}
-            </ContactLink>
+            {guestHouseNumbers.map((guestHouse) => (
+              <React.Fragment key={guestHouse.id}>
+                <ContactLink href={`tel=${guestHouse.number}`}>
+                  {guestHouse.number}
+                </ContactLink>
+                <br />
+              </React.Fragment>
+            ))}
           </BoxDetail>
         </GuestBox>
       </BoxStyle>
