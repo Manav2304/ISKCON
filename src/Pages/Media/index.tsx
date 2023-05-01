@@ -38,10 +38,8 @@ export const Media: React.FC = () => {
         </HeadingStyle>
         <LecturesWrapper>
           <YouTubeWrapper>
-            <YouTube videoId="R3tNVAtzaAw" opts={opts} />
-          </YouTubeWrapper>
-          <YouTubeWrapper>
-            <YouTube videoId="Q9TUIuRVc4I" opts={opts} />
+            <YouTube videoId="R3tNVAtzaAw" opts={opts} className="youtube1" />
+            <YouTube videoId="Q9TUIuRVc4I" opts={opts} className="youtube1" />
           </YouTubeWrapper>
         </LecturesWrapper>
         <PageWrapper>

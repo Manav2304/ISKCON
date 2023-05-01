@@ -58,20 +58,28 @@ export const opts = {
 };
 
 // Check screen size and set width and height accordingly
-if (window.matchMedia("(min-width: 1024px)").matches) {
-  opts.width = "500";
-  opts.height = "300";
+if (window.matchMedia("(min-width: 2560px)").matches) {
+  opts.width = "1000px";
+  opts.height = "550px";
+} else if (window.matchMedia("(min-width: 1440px)").matches) {
+  opts.width = "600px";
+  opts.height = "400px";
+} else if (window.matchMedia("(min-width: 1024px)").matches) {
+  opts.width = "500px";
+  opts.height = "300px";
 } else if (window.matchMedia("(min-width: 768px)").matches) {
-  opts.width = "400";
-  opts.height = "225";
+  opts.width = "350px";
+  opts.height = "225px";
+} else if (window.matchMedia("(min-width: 425px)").matches) {
+  opts.width = "400px";
+  opts.height = "400px";
+} else if (window.matchMedia("(min-width: 375px)").matches) {
+  opts.width = "350px";
+  opts.height = "400px";
+} else if (window.matchMedia("(min-width: 320px)").matches) {
+  opts.width = "300px";
+  opts.height = "300px";
 } else {
-  opts.width = "100%";
-  opts.height = "300";
-}
-if (window.matchMedia("(max-width: 767px)").matches) {
-  opts.width = "100%";
-  opts.height = "auto";
-} else {
-  opts.width = "500";
-  opts.height = "300";
+  opts.width = "500px";
+  opts.height = "300px";
 }

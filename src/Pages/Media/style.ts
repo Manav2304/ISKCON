@@ -1,21 +1,68 @@
 import { Carousel } from "react-bootstrap";
 import styled from "styled-components";
 
+export const sizes = {
+  mobileES: "100px",
+  mobileS: "375px",
+  mobileM: "425px",
+  mobileL: "576px",
+  tablet: "768px",
+  laptop: "1024px",
+  laptopL: "1440px",
+  desktop: "2560px",
+};
+
+export const devices = {
+  mobileES: `min-width: ${sizes.mobileES}`,
+  mobileS: `min-width: ${sizes.mobileS}`,
+  mobileM: `min-width: ${sizes.mobileM}`,
+  mobileL: `min-width: ${sizes.mobileL}`,
+  tablet: `min-width: ${sizes.tablet}`,
+  laptop: `min-width: ${sizes.laptop}`,
+  laptopL: `min-width: ${sizes.laptopL}`,
+  desktop: `min-width: ${sizes.desktop}`,
+};
+
 export const ServiceWrapper = styled.div`
   padding-top: 80px;
   padding-bottom: 50px;
 
-  @media screen and (max-width: 768px) {
+  @media (${devices.mobileES}) {
     padding-top: 80px;
     padding-bottom: 30px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media (${devices.mobileS}) {
     padding-top: 80px;
     padding-bottom: 30px;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media (${devices.mobileM}) {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  @media (${devices.mobileL}) {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  @media (${devices.tablet}) {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  @media (${devices.laptop}) {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  @media (${devices.laptopL}) {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  @media (${devices.desktop}) {
     padding-top: 80px;
     padding-bottom: 50px;
   }
@@ -26,17 +73,42 @@ export const HeadingStyle = styled.div`
   color: #7e5959;
   text-align: center;
 
-  @media only screen and (max-width: 768px) {
+  @media (${devices.mobileES}) {
     font-size: 1rem;
     padding: 20px;
   }
 
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+  @media (${devices.mobileS}) {
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  @media (${devices.mobileM}) {
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  @media (${devices.mobileL}) {
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  @media (${devices.tablet}) {
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  @media (${devices.laptop}) {
     font-size: 2rem;
     padding: 40px;
   }
 
-  @media only screen and (min-width: 1200px) {
+  @media (${devices.laptopL}) {
+    font-size: 2rem;
+    padding: 50px;
+  }
+
+  @media (${devices.desktop}) {
     font-size: 2rem;
     padding: 50px;
   }
@@ -45,17 +117,42 @@ export const ImageTitle = styled.img`
   width: 100%;
   max-width: 400px;
 
-  @media only screen and (max-width: 768px) {
+  @media (${devices.mobileES}) {
     width: 70%;
     max-width: 300px;
   }
 
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+  @media (${devices.mobileS}) {
     width: 70%;
     max-width: 300px;
   }
 
-  @media only screen and (min-width: 1200px) {
+  @media (${devices.mobileM}) {
+    width: 70%;
+    max-width: 300px;
+  }
+
+  @media (${devices.mobileL}) {
+    width: 70%;
+    max-width: 300px;
+  }
+
+  @media (${devices.tablet}) {
+    width: 70%;
+    max-width: 300px;
+  }
+
+  @media (${devices.laptop}) {
+    width: 70%;
+    max-width: 300px;
+  }
+
+  @media (${devices.laptopL}) {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  @media (${devices.desktop}) {
     width: 100%;
     max-width: 400px;
   }
@@ -85,45 +182,44 @@ export const TitleName = styled.h2`
 `;
 
 export const YouTubeWrapper = styled.div`
-  display: grid;
-  grid-template-rows: repeat(2);
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 25px;
-  overflow-x: hidden;
   display: flex;
-  flexdirection: "row";
-  @media (max-width: 767px) {
-    margin-left: 20px;
-    margin-right: 20px;
-    max-width: 500px;
-    width: 100%;
-    height: 210px;
-    grid-template-rows: repeat(2);
+
+  @media (${devices.mobileES}) {
+    flex-direction: column;
   }
 
-  @media (min-width: 768px) and (max-width: 1023px) {
-    margin-left: 20px;
-    margin-right: 20px;
-    grid-template-rows: repeat(2);
+  @media (${devices.mobileS}) {
+    flex-direction: column;
   }
 
-  @media (min-width: 1024px) and (max-width: 1439px) {
-    margin-left: 90px;
-    margin-right: 90px;
-    grid-template-rows: repeat(2);
+  @media (${devices.mobileM}) {
+    flex-direction: row;
+    gap: 10px;
   }
 
-  @media only screen and (min-width: 1440px) and (max-width: 1919px) {
-    margin-left: 100px;
-    margin-right: 100px;
-    grid-template-rows: repeat(2, 150px);
+  @media (${devices.mobileL}) {
+    flex-direction: row;
+    gap: 10px;
   }
 
-  @media only screen and (min-width: 1920px) {
-    margin-left: 150px;
-    margin-right: 150px;
-    grid-template-rows: repeat(2, 200px);
+  @media (${devices.tablet}) {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  @media (${devices.laptop}) {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  @media (${devices.laptopL}) {
+    flex-direction: row;
+    gap: 100px;
+  }
+
+  @media (${devices.desktop}) {
+    flex-direction: row;
+    gap: 100px;
   }
 `;
 
@@ -138,59 +234,99 @@ export const LinkName = styled.h1`
 export const Reviews = styled.div`
   width: 320px;
   height: 240px;
+  margin-bottom: 10px;
   padding: 20px;
 
-  @media only screen and (max-width: 767px) {
-    width: 320px;
+  @media (${devices.mobileES}) {
     height: 240px;
     width: 320px;
-    height: 240px;
-    margin: 20px;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    width: 480px;
-    height: 360px;
+  @media (${devices.mobileS}) {
+    height: 240px;
+    width: 320px;
+  }
+
+  @media (${devices.mobileM}) {
+    height: 240px;
+    width: 320px;
+  }
+
+  @media (${devices.mobileL}) {
+    height: 240px;
+    width: 320px;
+  }
+
+  @media (${devices.tablet}) {
     width: 480px;
     height: 360px;
     margin: 10px;
   }
 
-  @media only screen and (min-width: 1024px) {
-    width: 640px;
-    height: 480px;
+  @media (${devices.laptop}) {
     width: 640px;
     height: 480px;
     margin: 5px;
+  }
+
+  @media (${devices.laptopL}) {
+    width: 640px;
+    height: 480px;
+    margin: 5px;
+  }
+
+  @media (${devices.desktop}) {
+    width: 1000px;
+    height: 500px;
+    margin: 5px;
+    margin-bottom: 30px;
   }
 `;
 
 export const ImageCarousel = styled.img`
   width: 320px;
   height: 240px;
-  width: 320px;
-  height: 240px;
+
   object-fit: contain cover;
 
-  @media only screen and (min-width: 767px) {
-    width: 320px;
-    height: 240px;
+  @media (${devices.mobileES}) {
     width: 320px;
     height: 240px;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    width: 480px;
-    height: 360px;
+  @media (${devices.mobileS}) {
+    width: 320px;
+    height: 240px;
+  }
+
+  @media (${devices.mobileM}) {
+    width: 320px;
+    height: 240px;
+  }
+
+  @media (${devices.mobileL}) {
+    width: 320px;
+    height: 240px;
+  }
+
+  @media (${devices.tablet}) {
     width: 480px;
     height: 360px;
   }
 
-  @media only screen and (min-width: 1024px) {
+  @media (${devices.laptop}) {
     width: 640px;
     height: 480px;
+  }
+
+  @media (${devices.laptopL}) {
     width: 640px;
     height: 480px;
+  }
+
+  @media (${devices.desktop}) {
+    width: 1000px;
+    height: 500px;
   }
 `;
 
@@ -206,7 +342,21 @@ export const StyleCarousel = styled(Carousel)`
     height: 10px;
   }
 
-  @media (max-width: 767px) {
+  @media (${devices.mobileES}) {
+    .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        height: 10px;
+        width: 10px;
+      }
+  
+      .carousel-indicators {
+        height: 5px;
+        width: 5px;
+      }
+    }
+  }
+
+  @media (${devices.mobileS}) {
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       height: 10px;
@@ -218,22 +368,66 @@ export const StyleCarousel = styled(Carousel)`
       width: 5px;
     }
   }
+  }
 
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (${devices.mobileM}) {
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-      height: 20px;
-      width: 20px;
-      margin: 5px;
+      height: 10px;
+      width: 10px;
     }
 
     .carousel-indicators {
-      height: 7.5px;
-      width: 7.5px;
+      height: 5px;
+      width: 5px;
+    }
+  }
+  }
+
+  @media (${devices.mobileL}) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 10px;
+      width: 10px;
+    }
+
+    .carousel-indicators {
+      height: 5px;
+      width: 5px;
+    }
+  }
+  }
+
+  @media (${devices.tablet}) {
+    .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        height: 20px;
+        width: 20px;
+        margin: 5px;
+      }
+  
+      .carousel-indicators {
+        height: 7.5px;
+        width: 7.5px;
+      }
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (${devices.laptop}) {
+    .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        height: 30px;
+        width: 30px;
+        margin: 10px;
+      }
+  
+      .carousel-indicators {
+        height: 15px;
+      }
+    }
+  }
+
+  @media (${devices.laptopL}) {
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       height: 30px;
@@ -245,6 +439,21 @@ export const StyleCarousel = styled(Carousel)`
       height: 15px;
     }
   }
+  }
+
+  @media (${devices.desktop}) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 30px;
+      width: 30px;
+      margin: 10px;
+    }
+
+    .carousel-indicators {
+      height: 15px;
+    }
+  }
+}
 `;
 
 export const CarouselWrapper = styled.div`
@@ -254,41 +463,97 @@ export const CarouselWrapper = styled.div`
   align-items: center;
   overflow-x: hidden;
 
-  @media (max-width: 767px) {
+  @media (${devices.mobileES}) {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 20px;
     margin: 10px;
   }
 
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (${devices.mobileS}) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px;
+    margin: 10px;
+  }
+
+  @media (${devices.mobileM}) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px;
+    margin: 10px;
+  }
+
+  @media (${devices.mobileL}) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px;
+    margin: 10px;
+  }
+
+  @media (${devices.tablet}) {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 30px;
     margin: 10px;
   }
 
-  @media (min-width: 1024px) {
+  @media (${devices.laptop}) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+    margin: 20px;
+  }
+
+  @media (${devices.laptopL}) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+    margin: 20px;
+  }
+
+  @media (${devices.desktop}) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 40px;
     margin: 20px;
   }
 `;
+
 export const SpotifyWrapper = styled.iframe.attrs({
   width: 800,
   height: 500,
 })`
-  @media (max-width: 768px) {
+  @media (${devices.mobileES}) {
     width: 80%;
     height: 400px;
   }
 
-  @media (min-width: 1024px) {
+  @media (${devices.mobileS}) {
+    width: 80%;
+    height: 400px;
+  }
+
+  @media (${devices.mobileM}) {
+    width: 80%;
+    height: 400px;
+  }
+
+  @media (${devices.mobileL}) {
+    width: 80%;
+    height: 400px;
+  }
+
+  @media (${devices.tablet}) {
+    width: 80%;
+    height: 400px;
+  }
+
+  @media (${devices.laptop}) {
     width: 800px;
     height: 500px;
   }
 
-  @media (max-width: 480px) {
-    width: 80%;
-    height: 400px;
+  @media (${devices.laptopL}) {
+    width: 800px;
+    height: 500px;
+  }
+
+  @media (${devices.desktop}) {
+    width: 800px;
+    height: 500px;
   }
 `;
 
