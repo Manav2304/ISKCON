@@ -174,21 +174,6 @@ export const PrivacyLink = styled.a`
   }
 `;
 
-// export const FooterLinksContainer = styled.div`
-//   text-align: center;
-//   margin-top: 20px;
-// `;
-
-// export const FooterLink = styled.a`
-//   color: #fff;
-//   text-decoration: none;
-//   margin: 0 10px;
-
-//   &:hover {
-//     text-decoration: underline;
-//   }
-// `;
-
 export const ContactDiv = styled.div`
   display: flex;
   align-items: baseline;
