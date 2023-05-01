@@ -18,6 +18,9 @@ export const lifeTimeMembership = [
   "To know more about Life Membership program and to become one kindly contact: ",
 ];
 
-export const contactDetails=[
-  "+91 9998407654",
+export const contactDetails = [
+  {
+    id: 1,
+    number: "+91 9998407654",
+  },
 ];

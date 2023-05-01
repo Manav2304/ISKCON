@@ -1,6 +1,9 @@
 import { ServiceDescription } from "../PageLayout/index";
-import { bookDistribution ,bookDistributionImages, contactDetails1, contactDetails2 } from "./constant";
-
+import {
+  bookDistribution,
+  bookDistributionImages,
+  contactDetails,
+} from "./constant";
 
 export const BookDistribution: React.FC = () => {
   return (
@@ -8,7 +11,8 @@ export const BookDistribution: React.FC = () => {
       title="Book Distribution"
       content={bookDistribution}
       imageUrl={bookDistributionImages}
-      contactNumber={[contactDetails1,contactDetails2]}
-      emailId={[]}    />
+      contactNumber={contactDetails}
+      emailId={[]}
+    />
   );
 };

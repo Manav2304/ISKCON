@@ -1,5 +1,9 @@
 import { ServiceDescription } from "../PageLayout/index";
-import { lifeTimeMembership, lifeTimeMembershipImages, contactDetails } from "./constant";
+import {
+  lifeTimeMembership,
+  lifeTimeMembershipImages,
+  contactDetails,
+} from "./constant";
 
 export const LifeTimeMembership: React.FC = () => {
   return (
@@ -7,7 +11,8 @@ export const LifeTimeMembership: React.FC = () => {
       title="Life Time Membership"
       content={lifeTimeMembership}
       imageUrl={lifeTimeMembershipImages}
-      contactNumber={[contactDetails]} 
-      emailId={[]}    />
+      contactNumber={contactDetails}
+      emailId={[]}
+    />
   );
 };

@@ -25,10 +25,13 @@ export const guestHouse = [
   "Contact Details:",
 ];
 
-export const contactDetails1=[
-  "+91 02692 235752",
-];
-
-export const contactDetails2=[
-  "+91 02692 233012",
+export const contactDetails = [
+  {
+    id: 1,
+    number: "+91 02692 235752",
+  },
+  {
+    id: 2,
+    number: "+91 02692 233012",
+  },
 ];

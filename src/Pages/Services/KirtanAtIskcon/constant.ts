@@ -55,6 +55,9 @@ export const kirtanAtIskcon = [
   "Contact Details:",
 ];
 
-export const contactDetails=[
-  "+91 99984 07654",
+export const contactDetails = [
+  {
+    id: 1,
+    number: "+91 99984 07654",
+  },
 ];

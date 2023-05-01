@@ -14,7 +14,7 @@ interface ServiceDescriptionProps {
   title: string;
   content: string[];
   imageUrl: { id: number; image: string }[];
-  contactNumber: string[][];
+  contactNumber: { id: number; number: string }[];
   emailId: string[];
 }
 
@@ -37,10 +37,12 @@ export const ServiceDescription: React.FC<ServiceDescriptionProps> = ({
           {content.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
-          {contactNumber.map((contact, index) => (
-            <React.Fragment key={index}>
-              <ContactLink href={`tel:${contactNumber}`}>{contactNumber}</ContactLink>
-              <br/>
+          {contactNumber.map((contact) => (
+            <React.Fragment key={contact.id}>
+              <ContactLink href={`tel=${contact.number}`}>
+                {contact.number}
+              </ContactLink>
+              <br />
             </React.Fragment>
           ))}
           <ContactLink href={`mailto:${emailId}`}>{emailId}</ContactLink>
@@ -49,4 +51,3 @@ export const ServiceDescription: React.FC<ServiceDescriptionProps> = ({
     </div>
   );
 };
-
