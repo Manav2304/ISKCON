@@ -7,67 +7,23 @@ export const TextWrapper = styled.div`
 
   @media only screen and (max-width: 768px) {
     /* Styles for tablet view */
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
   }
 
   @media only screen and (max-width: 480px) {
     /* Styles for mobile view */
-    padding: 0.1px;
+    padding-left: 0.1px;
+    padding-bottom: 0.1px;
+    padding-right: 0.1px;
   }
 
   @media only screen and (min-width: 1200px) {
     /* Styles for desktop view */
-    padding: 30px;
-  }
-`;
-
-export const ImageWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const TitleImage = styled.img`
-  width: 90%;
-  max-width: 600px;
-  height: auto;
-  margin-bottom: 10px;
-
-  @media only screen and (max-width: 768px) {
-    width: 70%;
-    max-width: 400px;
-  }
-
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
-    width: 70%;
-    max-width: 300px;
-  }
-
-  /* @media only screen and (min-width: 1200px) {
-    width: 100%;
-    max-width: 400px;
-  } */
-`;
-
-export const Heading = styled.h1`
-  text-align: center;
-  color: #7e5959;
-  margin-top: 90px;
-
-  @media only screen and (max-width: 768px) {
-    font-size: 1.5rem;
-    padding-top: 20px;
-  }
-
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
-    font-size: 2rem;
-    padding-top: 40px;
-    padding-bottom: 10px;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    font-size: 3rem;
-    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
   }
 `;
 
