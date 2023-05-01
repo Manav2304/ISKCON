@@ -1,5 +1,27 @@
 import styled from "styled-components";
 
+export const sizes = {
+  mobileES: "100px",
+  mobileS: "375px",
+  mobileM: "425px",
+  mobileL: "576px",
+  tablet: "768px",
+  laptop: "1024px",
+  laptopL: "1440px",
+  desktop: "2560px",
+};
+
+export const devices = {
+  mobileES: `min-width: ${sizes.mobileES}`,
+  mobileS: `min-width: ${sizes.mobileS}`,
+  mobileM: `min-width: ${sizes.mobileM}`,
+  mobileL: `min-width: ${sizes.mobileL}`,
+  tablet: `min-width: ${sizes.tablet}`,
+  laptop: `min-width: ${sizes.laptop}`,
+  laptopL: `min-width: ${sizes.laptopL}`,
+  desktop: `min-width: ${sizes.desktop}`,
+};
+
 export const FestivalContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -7,6 +29,51 @@ export const FestivalContainer = styled.div`
   margin: 20px auto;
   padding: 20px;
 
+  /* @media (${devices.mobileES}) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+  }
+
+  @media (${devices.mobileS}) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+  }
+
+  @media (${devices.mobileM}) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+  }
+
+  @media (${devices.mobileL}) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+  }
+
+  @media (${devices.tablet}) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+  }
+
+  @media (${devices.laptop}), (${devices.laptopL}), (${devices.desktop}) {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  @media (${devices.laptopL}), (${devices.desktop}) {
+    gap: 100px;
+  } */
+
+  
   @media (max-width: 479px) {
     display: flex;
     flex-direction: column;
@@ -34,7 +101,49 @@ export const FestivalImage = styled.img`
   object-fit: cover;
   border: 3px solid #963;
 
-  @media (max-width: 768px) {
+  @media (${devices.mobileES}) {
+    width: 350px;
+    height: 250px;
+  }
+
+  @media (${devices.mobileS}) {
+    width: 350px;
+    height: 250px;
+  }
+
+  @media (${devices.mobileM}) {
+    width: 350px;
+    height: 250px;
+  }
+
+  @media (${devices.mobileL}) {
+    width: 350px;
+    height: 250px;
+  }
+
+  @media (${devices.tablet}) {
+    width: 350px;
+    height: 250px;
+  }
+
+  @media (${devices.laptop}) {
+    width: 450px;
+    height: 300px;
+  }
+
+  @media (${devices.laptopL}) {
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+  }
+
+  @media (${devices.desktop}) {
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+  }
+
+  /* @media (max-width: 768px) {
     width: 350px;
     height: 250px;
   }
@@ -55,7 +164,7 @@ export const FestivalImage = styled.img`
     width: 100%;
     height: 350px;
     justify-content: center;
-  }
+  } */
 `;
 
 export const FestivalInfo = styled.div`
@@ -92,8 +201,40 @@ export const Button = styled.button`
   cursor: pointer;
   border-radius: 5px;
 
-  @media (max-width: 767px) {
+  @media (${devices.mobileES}) {
+    font-size: 14px;
+  }
+
+  @media (${devices.mobileS}) {
+    font-size: 14px;
+  }
+
+  @media (${devices.mobileM}) {
+    font-size: 14px;
+  }
+
+  @media (${devices.mobileL}) {
+    font-size: 14px;
+  }
+
+  @media (${devices.tablet}) {
+    font-size: 14px;
+  }
+
+  @media (${devices.laptop}) {
+    font-size: 14px;
+  }
+
+  @media (${devices.laptopL}) {
+    font-size: 14px;
+  }
+
+  @media (${devices.desktop}) {
+    font-size: 14px;
+  }
+
+  /* @media (max-width: 767px) {
     font-size: 14px;
     padding: 8px 16px;
-  }
+  } */
 `;

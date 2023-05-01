@@ -49,6 +49,7 @@ export const Paragraph = styled.p`
     padding-right: 30px;
   }
 `;
+
 export const PageImageCarousel = styled.img`
   width: 100%;
   height: 500px;
@@ -117,6 +118,7 @@ export const PageStyleCarousel = styled(Carousel)`
 `;
 
 export const PageReviews = styled.div`
+
   @media only screen and (max-width: 767px) {
     margin-top: 5px;
   }
