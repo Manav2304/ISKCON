@@ -58,11 +58,13 @@ export const HeadingStyle = styled.div`
 
   @media (${devices.laptop}) {
     font-size: 1.5rem;
-    padding: 40px;  }
+    padding: 40px; 
+  }
 
   @media (${devices.laptopL}) {
     font-size: 2rem;
-    padding: 50px;  }
+    padding: 50px; 
+  }
 
   @media (${devices.desktop}) {
     font-size: 2rem;
