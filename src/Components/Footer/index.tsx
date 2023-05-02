@@ -15,9 +15,10 @@ import {
   TermsMDBContainer,
   ContactMDBCol,
   TimeMDBCol,
+  CopyRights,
+  ContactLink,
 } from "./style";
-import { contactInfos, schedules } from "./constant";
-import { Link } from "react-router-dom";
+import { contactInfos, emailLink, googleMapsLink, schedules } from "./constant";
 import { routes } from "../../routes";
 
 export const Footer = () => {
@@ -49,7 +50,31 @@ export const Footer = () => {
                   {contactInfos.map((info) => (
                     <ContactDiv key={info.text}>
                       <ContactIcon className={`fa fa-${info.icon} `} />
-                      <ContactText>{info.text}</ContactText>
+                      {info.text.startsWith("tel:") ? (
+                        <ContactText>
+                          <ContactLink href={info.text}>
+                            {info.text.replace("tel:", "")}
+                          </ContactLink>
+                        </ContactText>
+                      ) : info.text.startsWith("map:") ? (
+                        <ContactText>
+                          <ContactLink
+                            href={googleMapsLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {info.text.replace("map:", "")}
+                          </ContactLink>
+                        </ContactText>
+                      ) : info.text.startsWith("mailto:") ? (
+                        <ContactText>
+                          <ContactLink href={emailLink}>
+                            {info.text.replace("mailto:", "")}
+                          </ContactLink>
+                        </ContactText>
+                      ) : (
+                        <ContactText>{info.text}</ContactText>
+                      )}
                     </ContactDiv>
                   ))}
                 </ContactStyle>
@@ -60,20 +85,20 @@ export const Footer = () => {
         <section>
           <TermsMDBContainer>
             <TermsHeading>
-              <Link to={routes.termsAndCondition}>
-                <TermsTitle>Terms and Conditions | </TermsTitle>
-              </Link>
-              <Link to={routes.cancellationPolicy}>
-                <TermsTitle>Cancellation Policy | </TermsTitle>
-              </Link>
-              <Link to={routes.privacyPolicy}>
-                <TermsTitle>Privacy Policy</TermsTitle>
-              </Link>
+              <TermsTitle to={routes.termsAndCondition}>
+                Terms and Conditions |
+              </TermsTitle>
+              <TermsTitle to={routes.cancellationPolicy}>
+                | Cancellation Policy |
+              </TermsTitle>
+              <TermsTitle to={routes.privacyPolicy}>
+                | Privacy Policy
+              </TermsTitle>
             </TermsHeading>
           </TermsMDBContainer>
         </section>
         <div className="text-center p-4">
-          <TermsTitle>© 2021 ISKCON. All rights reserved.</TermsTitle>
+          <CopyRights>© 2021 ISKCON. All rights reserved.</CopyRights>
         </div>
       </BgColor>
     </StyledMDBFooter>

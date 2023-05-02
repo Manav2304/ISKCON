@@ -2,71 +2,26 @@ import { Carousel } from "react-bootstrap";
 import styled from "styled-components";
 
 export const ServiceWrapper = styled.div`
-  padding-top: 80px;
   padding-bottom: 50px;
-
   @media screen and (max-width: 768px) {
-    padding-top: 80px;
     padding-bottom: 30px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1024px) {
-    padding-top: 80px;
     padding-bottom: 30px;
   }
 
   @media screen and (min-width: 1024px) {
-    padding-top: 80px;
     padding-bottom: 50px;
-  }
-`;
-
-export const HeadingStyle = styled.div`
-  font-family: "Times New Roman", Times, serif;
-  color: #7e5959;
-  text-align: center;
-
-  @media only screen and (max-width: 768px) {
-    font-size: 1rem;
-    padding: 20px;
-  }
-
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
-    font-size: 2rem;
-    padding: 40px;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    font-size: 2rem;
-    padding: 50px;
-  }
-`;
-export const ImageTitle = styled.img`
-  width: 100%;
-  max-width: 400px;
-
-  @media only screen and (max-width: 768px) {
-    width: 70%;
-    max-width: 300px;
-  }
-
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
-    width: 70%;
-    max-width: 300px;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    width: 100%;
-    max-width: 400px;
   }
 `;
 
 export const PageWrapper = styled.div`
   display: flex;
+  flex-flow: column;
   flex-wrap: nowrap;
   justify-content: center;
   margin-bottom: 10px;
-  flex-direction: column;
   align-items: center;
 `;
 
@@ -134,40 +89,46 @@ export const LinkName = styled.h1`
 `;
 
 export const Reviews = styled.div`
-  height: 300px;
-  width: 500px;
+  width: 320px;
+  height: 240px;
 
   @media only screen and (max-width: 767px) {
+    width: 320px;
+    height: 240px;
     margin: 20px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 480px;
+    height: 360px;
     margin: 10px;
   }
 
   @media only screen and (min-width: 1024px) {
+    width: 640px;
+    height: 480px;
     margin: 5px;
   }
 `;
 
 export const ImageCarousel = styled.img`
-  width: 500px;
-  height: 300px;
+  width: 320px;
+  height: 240px;
   object-fit: contain cover;
 
   @media only screen and (min-width: 767px) {
-    width: 80%;
-    height: 200px;
+    width: 320px;
+    height: 240px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    width: 100%;
-    height: 250px;
+    width: 480px;
+    height: 360px;
   }
 
   @media only screen and (min-width: 1024px) {
-    width: 500px;
-    height: 300px;
+    width: 640px;
+    height: 480px;
   }
 `;
 
