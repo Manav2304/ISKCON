@@ -16,9 +16,9 @@ import {
   ContactMDBCol,
   TimeMDBCol,
   CopyRights,
+  ContactLink,
 } from "./style";
-import { contactInfos, schedules } from "./constant";
-// import { Link } from "react-router-dom";
+import { contactInfos, emailLink, googleMapsLink, schedules } from "./constant";
 import { routes } from "../../routes";
 
 export const Footer = () => {
@@ -50,7 +50,31 @@ export const Footer = () => {
                   {contactInfos.map((info) => (
                     <ContactDiv key={info.text}>
                       <ContactIcon className={`fa fa-${info.icon} `} />
-                      <ContactText>{info.text}</ContactText>
+                      {info.text.startsWith("tel:") ? (
+                        <ContactText>
+                          <ContactLink href={info.text}>
+                            {info.text.replace("tel:", "")}
+                          </ContactLink>
+                        </ContactText>
+                      ) : info.text.startsWith("map:") ? (
+                        <ContactText>
+                          <ContactLink
+                            href={googleMapsLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {info.text.replace("map:", "")}
+                          </ContactLink>
+                        </ContactText>
+                      ) : info.text.startsWith("mailto:") ? (
+                        <ContactText>
+                          <ContactLink href={emailLink}>
+                            {info.text.replace("mailto:", "")}
+                          </ContactLink>
+                        </ContactText>
+                      ) : (
+                        <ContactText>{info.text}</ContactText>
+                      )}
                     </ContactDiv>
                   ))}
                 </ContactStyle>

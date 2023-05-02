@@ -60,6 +60,7 @@ export const FooterLogoStyle = styled.div`
     margin-left: 200px;
     margin-top: -350px;
   }
+
   @media (${devices.laptopL}) {
     margin-top: 10px;
     margin-left: -90px;
@@ -158,16 +159,19 @@ export const ContactStyle = styled.div`
     padding-left: 40px;
     padding-right: 40px;
   }
+
   @media (${devices.laptop}) {
     font-size: 17px;
     margin-top: -330px;
     padding-left: 630px;
   }
+
   @media (${devices.laptopL}) {
     font-size: 19px;
     margin-top: 20px;
     margin-right: -40px;
   }
+
   @media (${devices.desktop}) {
     font-size: 23px;
     margin-top: 30px;
@@ -189,29 +193,45 @@ export const TermsTitle = styled(Link)`
     font-size: 11px;
     margin-top: 10px;
   }
+
   @media (${devices.mobileS}) {
     font-size: 13px;
     margin-top: 10px;
   }
+
   @media (${devices.mobileM}) {
     font-size: 14px;
     margin-top: 10px;
   }
+
   @media (${devices.mobileL}) {
     font-size: 23px;
     margin-top: 10px;
   }
+
   @media (${devices.tablet}) {
     height: 320px;
   }
+
   @media (${devices.laptop}) {
     font-size: 16px;
   }
+
   @media (${devices.laptopL}) {
     font-size: 18px;
   }
+
   @media (${devices.desktop}) {
     font-size: 25px;
+  }
+`;
+
+export const ContactLink = styled.a`
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    color: #ff007f;
   }
 `;
 
@@ -225,27 +245,34 @@ export const CopyRights = styled.div`
     font-size: 10px;
     margin-top: -15px;
   }
+
   @media (${devices.mobileS}) {
     font-size: 15px;
   }
+
   @media (${devices.mobileM}) {
     padding-left: 30px;
     padding-right: 30px;
   }
+
   @media (${devices.mobileL}) {
     padding-left: 35px;
     padding-right: 35px;
   }
+
   @media (${devices.tablet}) {
     font-size: 23px;
   }
+
   @media (${devices.laptop}) {
     font-size: 16px;
     margin-right: 10px;
   }
+
   @media (${devices.laptopL}) {
     font-size: 18px;
   }
+
   @media (${devices.desktop}) {
     font-size: 23px;
   }
@@ -259,7 +286,6 @@ export const BgColor = styled.div`
 export const TimeStyle = styled.div`
   text-align: right;
   color: #fff;
-
   font-family: "Times New Roman", Times, serif;
 
   @media (${devices.mobileES}) {
@@ -268,36 +294,43 @@ export const TimeStyle = styled.div`
     padding-right: 35px;
     font-size: 15px;
   }
+
   @media (${devices.mobileS}) {
     padding-right: 50px;
     margin-top: -90px;
     font-size: 18px;
   }
+
   @media (${devices.mobileM}) {
     padding-right: 70px;
     margin-top: -110px;
     font-size: 20px;
   }
+
   @media (${devices.mobileL}) {
     font-size: 30px;
     margin-left: -150px;
     margin-top: -240px;
   }
+
   @media (${devices.tablet}) {
     height: 320px;
     padding-left: 40px;
     padding-right: 40px;
   }
+
   @media (${devices.laptop}) {
     margin-left: -700px;
     margin-top: -280px;
     font-size: 18px;
   }
+
   @media (${devices.laptopL}) {
     font-size: 20px;
     margin-top: -275px;
     margin-left: -120px;
   }
+
   @media (${devices.desktop}) {
     font-size: 23px;
     margin-left: -220px;
@@ -330,23 +363,28 @@ export const TermsHeading = styled.h6`
     width: 100%;
     margin-left: 20px;
   }
+
   @media (${devices.mobileS}) {
     height: 10px;
     margin-left: 25px;
   }
+
   @media (${devices.mobileM}) {
     height: 10px;
     margin-left: 35px;
   }
+
   @media (${devices.mobileL}) {
     height: 10px;
     margin-left: 30px;
   }
+
   @media (${devices.tablet}) {
     height: 10px;
     padding-left: 40px;
     padding-right: 40px;
   }
+
   @media (${devices.laptop}) {
     height: 10px;
     margin-left: 240px;
