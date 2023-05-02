@@ -113,6 +113,7 @@ export const HeadingStyle = styled.div`
     padding: 50px;
   }
 `;
+
 export const ImageTitle = styled.img`
   width: 100%;
   max-width: 400px;
@@ -161,7 +162,6 @@ export const ImageTitle = styled.img`
 export const PageWrapper = styled.div`
   display: flex;
   flex-flow: column;
-  // flex-wrap: nowrap;
   justify-content: center;
   margin-bottom: 10px;
   align-items: center;
@@ -169,7 +169,6 @@ export const PageWrapper = styled.div`
 
 export const LecturesWrapper = styled.div`
   display: flex;
-  // flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 10px;
 `;
@@ -343,15 +342,14 @@ export const StyleCarousel = styled(Carousel)`
 
   @media (${devices.mobileES}) {
     .carousel-control-prev-icon,
-      .carousel-control-next-icon {
-        height: 10px;
-        width: 10px;
-      }
-  
-      .carousel-indicators {
-        height: 5px;
-        width: 5px;
-      }
+    .carousel-control-next-icon {
+      height: 10px;
+      width: 10px;
+    }
+
+    .carousel-indicators {
+      height: 5px;
+      width: 5px;
     }
   }
 
@@ -367,7 +365,6 @@ export const StyleCarousel = styled(Carousel)`
       width: 5px;
     }
   }
-  }
 
   @media (${devices.mobileM}) {
     .carousel-control-prev-icon,
@@ -380,7 +377,6 @@ export const StyleCarousel = styled(Carousel)`
       height: 5px;
       width: 5px;
     }
-  }
   }
 
   @media (${devices.mobileL}) {
@@ -395,34 +391,31 @@ export const StyleCarousel = styled(Carousel)`
       width: 5px;
     }
   }
-  }
 
   @media (${devices.tablet}) {
     .carousel-control-prev-icon,
-      .carousel-control-next-icon {
-        height: 20px;
-        width: 20px;
-        margin: 5px;
-      }
-  
-      .carousel-indicators {
-        height: 7.5px;
-        width: 7.5px;
-      }
+    .carousel-control-next-icon {
+      height: 20px;
+      width: 20px;
+      margin: 5px;
+    }
+
+    .carousel-indicators {
+      height: 7.5px;
+      width: 7.5px;
     }
   }
 
   @media (${devices.laptop}) {
     .carousel-control-prev-icon,
-      .carousel-control-next-icon {
-        height: 30px;
-        width: 30px;
-        margin: 10px;
-      }
-  
-      .carousel-indicators {
-        height: 15px;
-      }
+    .carousel-control-next-icon {
+      height: 30px;
+      width: 30px;
+      margin: 10px;
+    }
+
+    .carousel-indicators {
+      height: 15px;
     }
   }
 
@@ -438,7 +431,6 @@ export const StyleCarousel = styled(Carousel)`
       height: 15px;
     }
   }
-  }
 
   @media (${devices.desktop}) {
     .carousel-control-prev-icon,
@@ -452,7 +444,6 @@ export const StyleCarousel = styled(Carousel)`
       height: 15px;
     }
   }
-}
 `;
 
 export const CarouselWrapper = styled.div`
