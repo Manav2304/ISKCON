@@ -24,9 +24,8 @@ export const devices = {
 };
 
 export const ServiceWrapper = styled.div`
-  padding-top: 80px;
   padding-bottom: 50px;
-
+  
   @media (${devices.mobileES}) {
     padding-top: 80px;
     padding-bottom: 30px;
@@ -64,6 +63,7 @@ export const ServiceWrapper = styled.div`
 
   @media (${devices.desktop}) {
     padding-top: 80px;
+
     padding-bottom: 50px;
   }
 `;

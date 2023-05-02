@@ -45,7 +45,7 @@ export const GuestBox = styled.div`
   height: 150px;
   max-width: 300px;
   margin-bottom: 5px;
-  
+
   @media (min-width: 768px) {
     width: 100%;
     max-width: none;
@@ -96,52 +96,6 @@ export const MapFrame = styled.iframe`
   }
 `;
 
-export const TitleBaseImgWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const TitleBaseImg = styled.img`
-  width: 100%;
-  max-width: 400px;
-
-  @media only screen and (max-width: 768px) {
-    width: 70%;
-    max-width: 200px;
-  }
-
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
-    width: 70%;
-    max-width: 300px;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    width: 100%;
-    max-width: 400px;
-  }
-`;
-
-export const Heading = styled.div`
-  font-family: "Times New Roman", Times, serif;
-  color: #7e5959;
-  text-align: center;
-  margin-top: 110px;
-
-  @media only screen and (max-width: 768px) {
-    font-size: 1.7rem;
-  }
-
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
-    font-size: 2rem;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    font-size: 2.5rem;
-    padding-top: 20px;
-  }
-`;
-
 export const BoxStyle = styled.div`
   padding-left: 50px;
   padding-right: 50px;
@@ -154,7 +108,7 @@ export const BoxStyle = styled.div`
     justify-content: center;
     width: 100%;
   }
-  
+
   @media only screen and (min-width: 769px) and (max-width: 1199px) {
     justify-content: center;
   }
