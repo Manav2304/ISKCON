@@ -6,7 +6,11 @@ import {
   IconsStyle,
 } from "./style";
 import { PageDropdown } from "../Dropdown";
-import { dropdownServicesInfo, socialMediaIcon } from "../Navbar/constant";
+import {
+  dropdownDonationPagesInfo,
+  dropdownServicesInfo,
+  socialMediaIcon,
+} from "../Navbar/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
 import logoUrl from "../../assets/images/isckon-logo.png";
 import { routes } from "../../routes";
@@ -17,6 +21,10 @@ export const NavigationBar = () => {
       <div className="container">
         <StyledLink to={routes.home}>Iskcon</StyledLink>
         <PageDropdown items={dropdownServicesInfo} toggleTitle="Services" />
+        <PageDropdown
+          items={dropdownDonationPagesInfo}
+          toggleTitle="DonationPages"
+        />
         <StyledLink to={routes.visitUs}>Visit Us</StyledLink>
         <StyledLink to={routes.media}>Media</StyledLink>
         <StyledLink to={routes.home}>

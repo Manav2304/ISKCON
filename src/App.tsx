@@ -25,6 +25,14 @@ import "@fortawesome/fontawesome-free/css/brands.css";
 import ScrollToTop from "./Components/ScrollToTop";
 import { Sidebar } from "./Components/Sidebar";
 import { VisitUs } from "./Pages/VisitUs";
+import { AnnaDaan } from "./Pages/DonationPages/AnnaDaan";
+import { Ekadasi } from "./Pages/DonationPages/Ekadasi";
+import { GauraPurnima } from "./Pages/DonationPages/GauraPurnima";
+import { GauSeva } from "./Pages/DonationPages/GauSeva";
+import { HariNaamKirtanSeva } from "./Pages/DonationPages/HariNaamKirtanSeva";
+import { NaivaidyamSeva } from "./Pages/DonationPages/NaivaidyamSeva";
+import { VaishnavBhojan } from "./Pages/DonationPages/VaishnavBhojan";
+import { VigrahSeva } from "./Pages/DonationPages/VigrahSeva";
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -99,6 +107,34 @@ export const App: React.FunctionComponent = () => {
             caseSensitive
             path={routes.privacyPolicy}
             element={<PrivacyPolicy />}
+          />
+          <Route caseSensitive path={routes.annaDaan} element={<AnnaDaan />} />
+          <Route caseSensitive path={routes.ekadasi} element={<Ekadasi />} />
+          <Route
+            caseSensitive
+            path={routes.gauraPurnima}
+            element={<GauraPurnima />}
+          />
+          <Route caseSensitive path={routes.gauSeva} element={<GauSeva />} />
+          <Route
+            caseSensitive
+            path={routes.hariNaamKirtanSeva}
+            element={<HariNaamKirtanSeva />}
+          />
+          <Route
+            caseSensitive
+            path={routes.naivaidyamSeva}
+            element={<NaivaidyamSeva />}
+          />
+          <Route
+            caseSensitive
+            path={routes.vaishnavBhojan}
+            element={<VaishnavBhojan />}
+          />
+          <Route
+            caseSensitive
+            path={routes.vigarhSeva}
+            element={<VigrahSeva />}
           />
         </Routes>
         <Footer />

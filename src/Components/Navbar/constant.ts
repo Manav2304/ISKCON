@@ -40,3 +40,13 @@ export const dropdownServicesInfo = [
   { title: "Deity Worship", path: routes.deityWorship },
   { title: "Book Distribution", path: routes.bookDistribution },
 ];
+export const dropdownDonationPagesInfo = [
+  { title: "Annna Daan", path: routes.annaDaan },
+  { title: "Ekadasi", path: routes.ekadasi },
+  { title: "Gaura Purnima", path: routes.gauraPurnima },
+  { title: "Gau Seva", path: routes.gauSeva },
+  { title: "HariNaam Kirtan Seva", path: routes.hariNaamKirtanSeva },
+  { title: "Vaishnav Bhojan", path: routes.vaishnavBhojan },
+  { title: "Naivaidyan Seva", path: routes.naivaidyamSeva },
+  { title: "Vigarh Seva", path: routes.vigarhSeva },
+];
