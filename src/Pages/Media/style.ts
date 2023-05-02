@@ -192,12 +192,12 @@ export const YouTubeWrapper = styled.div`
   }
 
   @media (${devices.mobileM}) {
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
   }
 
   @media (${devices.mobileL}) {
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
   }
 

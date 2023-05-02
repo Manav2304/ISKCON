@@ -79,6 +79,9 @@ if (window.matchMedia("(min-width: 2560px)").matches) {
 } else if (window.matchMedia("(min-width: 320px)").matches) {
   opts.width = "300px";
   opts.height = "300px";
+} else if (window.matchMedia("(min-width: 100px)").matches) {
+  opts.width = "250px";
+  opts.height = "150px";
 } else {
   opts.width = "500px";
   opts.height = "300px";
