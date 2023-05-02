@@ -40,8 +40,6 @@ export const Media: React.FC = () => {
         <LecturesWrapper>
           <YouTubeWrapper>
             <YouTube videoId="R3tNVAtzaAw" opts={opts} />
-          </YouTubeWrapper>
-          <YouTubeWrapper>
             <YouTube videoId="Q9TUIuRVc4I" opts={opts} />
           </YouTubeWrapper>
         </LecturesWrapper>
