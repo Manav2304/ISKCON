@@ -161,7 +161,7 @@ export const ImageTitle = styled.img`
 export const PageWrapper = styled.div`
   display: flex;
   flex-flow: column;
-  flex-wrap: nowrap;
+  // flex-wrap: nowrap;
   justify-content: center;
   margin-bottom: 10px;
   align-items: center;
@@ -169,7 +169,7 @@ export const PageWrapper = styled.div`
 
 export const LecturesWrapper = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 10px;
 `;
@@ -264,9 +264,8 @@ export const Reviews = styled.div`
   }
 
   @media (${devices.laptop}) {
-    width: 640px;
-    height: 480px;
-    margin: 5px;
+    width: 480px;
+    height: 360px;
   }
 
   @media (${devices.laptopL}) {
@@ -315,8 +314,8 @@ export const ImageCarousel = styled.img`
   }
 
   @media (${devices.laptop}) {
-    width: 640px;
-    height: 480px;
+    width: 480px;
+    height: 360px;
   }
 
   @media (${devices.laptopL}) {
