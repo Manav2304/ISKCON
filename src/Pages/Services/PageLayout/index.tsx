@@ -15,7 +15,7 @@ interface ServiceDescriptionProps {
   content: string[];
   imageUrl: { id: number; image: string }[];
   contactNumber: { id: number; number: string }[];
-  emailId: string[];
+  emailId?: string[];
 }
 
 export const ServiceDescription: React.FC<ServiceDescriptionProps> = ({
