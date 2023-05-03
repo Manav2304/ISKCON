@@ -1,89 +1,100 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+export const Container = styled.div`
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: transparent;
+`;
+
+export const Title = styled.h1`
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 `;
 
 export const Table = styled.table`
-  border-collapse: collapse;
-  border: 2px solid #7e5959;
   width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background: transparent;
 `;
 
-export const TableColumn = styled.td`
+export const DonationHeader = styled.th`
+  font-weight: bold;
+  font-size: 2rem;
   text-align: left;
   padding: 10px;
-`;
-
-export const Paragraph = styled.div`
-  font-size: 1rem;
-  text-align: justify center;
-  font-family: "Times New Roman", Times, serif;
-  position: relative;
-  padding: 10px;
-  color: #ad0d0d;
-
-  &::before,
-  &::after {
-    content: '"';
-    font-size: 3rem;
-    color: #f4c2c2;
-    position: absolute;
-    top: -0.5rem;
-  }
-
-  &::before {
-    left: -10px;
-  }
-
-  &::after {
-    right: -10px;
-  }
+  border-bottom: 0.3rem solid #a0522d;
 `;
 
 export const TableHeader = styled.th`
-  border: 1px solid #ddd;
-  padding: 0.5rem;
   font-weight: bold;
   text-align: left;
+  padding: 10px;
+  border-bottom: 0.3rem solid #a0522d;
 `;
 
 export const TableRow = styled.tr`
   &:nth-child(even) {
-    background-color: #f4c2c2;
+    background: transparent;
   }
 `;
 
 export const TableCell = styled.td`
-  border: 1px solid #7e5959;
-  padding: 0.5rem;
-  text-align: left;
+  padding: 10px;
+  color: #a52a2a;
+  border-bottom: 0.19rem solid #8b0000;
+  background: transparent;
 `;
 
-export const CopyButton = styled.button<{ copied: boolean }>`
-  margin-left: 1rem;
-  padding: 0.5rem;
-  background-color: #4caf50;
-  color: #fff;
+export const Button = styled.button`
+  background-color: #800000;
+  color: #f5deb3;
+  padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
 
   &:hover {
-    background-color: #630063;
-  }
-
-  &:active {
-    background-color: #fffffcf4;
+    background-color: #3e8e41;
   }
 `;
 
-export const TableStyle = styled.div`
-  margin: 1px 50px 10px;
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Label = styled.label`
+  margin-bottom: 10px;
+`;
+
+export const Input = styled.input`
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 20px;
+  font-size: 16px;
+
+  &:focus {
+    outline: none;
+    border-color: #07f;
+  }
+`;
+
+export const NameInput = styled.form`
+  color: #a52a2a;
+`;
+
+export const PhoneInput = styled.form`
+  color: #a52a2a;
+`;
+
+export const EmailInput = styled.form`
+  color: #a52a2a;
+`;
+export const Container1 = styled.div`
+  margin-top: 100px;
+  text-align: center;
 `;
