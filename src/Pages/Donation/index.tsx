@@ -81,7 +81,7 @@ export const DonationPage: React.FC = () => {
     const res = await loadScript();
 
     const bodyData = new FormData();
-    bodyData.append("amount", amount.toString());
+    bodyData.append("totalDonationAmount", totalDonationAmount.toString());
     bodyData.append("name", name);
 
     const data = await axios({
