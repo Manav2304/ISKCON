@@ -7,8 +7,6 @@ export const Gaushala: React.FC = () => {
       title="Goverdhan Gaushala"
       content={goushala}
       imageUrl={goverdhangoushalaImages}
-      contactNumber={contactDetails}
-      emailId={[]}
-    />
+      contactNumber={contactDetails}    />
   );
 };

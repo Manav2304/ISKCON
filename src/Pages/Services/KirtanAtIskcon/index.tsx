@@ -11,8 +11,6 @@ export const KirtanAtIskcon: React.FC = () => {
       title="Kirtan At Iskcon"
       content={kirtanAtIskcon}
       imageUrl={kirtanAtIskconImages}
-      contactNumber={contactDetails}
-      emailId={[]}
-    />
+      contactNumber={contactDetails}    />
   );
 };

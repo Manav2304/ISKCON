@@ -7,6 +7,6 @@ export const DevoteeKitchen: React.FC = () => {
       title="Devotee Kitchen"
       content={devoteeKitchen}
       imageUrl={devoteeKitchenImages}
-      contactNumber={[]} emailId={[]}    />
+      contactNumber={[]}   />
   );
 };

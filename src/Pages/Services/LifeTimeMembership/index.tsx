@@ -11,8 +11,6 @@ export const LifeTimeMembership: React.FC = () => {
       title="Life Time Membership"
       content={lifeTimeMembership}
       imageUrl={lifeTimeMembershipImages}
-      contactNumber={contactDetails}
-      emailId={[]}
-    />
+      contactNumber={contactDetails}    />
   );
 };

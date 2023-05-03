@@ -11,8 +11,6 @@ export const BookDistribution: React.FC = () => {
       title="Book Distribution"
       content={bookDistribution}
       imageUrl={bookDistributionImages}
-      contactNumber={contactDetails}
-      emailId={[]}
-    />
+      contactNumber={contactDetails}   />
   );
 };

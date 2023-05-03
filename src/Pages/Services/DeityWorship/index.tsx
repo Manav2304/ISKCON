@@ -7,6 +7,6 @@ export const DeityWorship: React.FC = () => {
       title="Deity Worship"
       content={deityWorship}
       imageUrl={deityWorshipImages}
-      contactNumber={[]} emailId={[]}    />
+      contactNumber={[]}    />
   );
 };

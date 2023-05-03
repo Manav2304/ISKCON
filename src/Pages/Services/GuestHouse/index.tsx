@@ -7,8 +7,6 @@ export const GuestHouse: React.FC = () => {
       title="Guest House"
       content={guestHouse}
       imageUrl={guestHouseImages}
-      contactNumber={contactDetails}
-      emailId={[]}
-    />
+      contactNumber={contactDetails}    />
   );
 };
