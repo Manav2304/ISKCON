@@ -57,12 +57,12 @@ export const ContactHeadingStyle = styled.div`
 
   @media (${devices.laptop}) {
     text-align: left;
-    margin-left: 60px;
+    margin-left: 100px;
   }
 
   @media (${devices.laptopL}) {
     text-align: left;
-    margin-left: 60px;
+    margin-left: 112px;
   }
 
   @media (${devices.desktop}) {
@@ -164,6 +164,7 @@ export const ContactDiv = styled.div`
 
 export const ContactIcon = styled.i`
   color: #fff;
+  margin-right: 5px;
 `;
 
 export const ContactText = styled.span`
@@ -266,14 +267,15 @@ export const ContactWrapper = styled.div`
 
   @media (${devices.laptop}) {
     text-align: left;
-    margin-left: 20px;
+    margin-left: 40px;
     padding-left: 40px;
-    justify-content: justify;
+    justify-content: left;
+    margin-right: -100px;
   }
 
   @media (${devices.laptopL}) {
     text-align: left;
-    margin-left: 20px;
+    margin-left: 80px;
     padding-left: 30px;
     justify-content: justify;
   }
