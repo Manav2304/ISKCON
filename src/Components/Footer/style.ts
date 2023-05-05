@@ -164,6 +164,7 @@ export const ContactDiv = styled.div`
 
 export const ContactIcon = styled.i`
   color: #fff;
+  margin-right: 5px;
 `;
 
 export const ContactText = styled.span`
