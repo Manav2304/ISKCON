@@ -32,22 +32,22 @@ export const ContactHeadingStyle = styled.div`
 
   @media (${devices.mobileES}) {
     text-align: center;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   @media (${devices.mobileS}) {
     text-align: center;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   @media (${devices.mobileM}) {
     text-align: center;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   @media (${devices.mobileL}) {
     text-align: center;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   @media (${devices.tablet}) {
@@ -174,35 +174,35 @@ export const FooterLogo = styled.img`
   @media (${devices.mobileES}) {
     margin-top: 5px;
     width: 100% !important;
-    margin-left: 0px;
+    margin-left: 0;
     height: 100% !important;
   }
 
   @media (${devices.mobileS}) {
     margin-top: 5px;
     width: 100% !important;
-    margin-left: 0px;
+    margin-left: 0;
     height: 100% !important;
   }
 
   @media (${devices.mobileM}) {
     margin-top: 5px;
     width: 100% !important;
-    margin-left: 0px;
+    margin-left: 0;
     height: 100% !important;
   }
 
   @media (${devices.mobileL}) {
     margin-top: 5px;
     width: 100% !important;
-    margin-left: 0px;
+    margin-left: 0;
     height: 100% !important;
   }
 
   @media (${devices.tablet}) {
     margin-top: 5px;
     width: 90% !important;
-    margin-left: 0px;
+    margin-left: 0;
     height: 95% !important;
   }
 
