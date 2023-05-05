@@ -61,8 +61,8 @@ export const Footer = () => {
                 </StyledLink>
               </MDBCol>
 
-              <MDBCol md="6" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
-                <ContactHeadingStyle className="text-uppercase fw-bold mb-4">
+              <MDBCol md="5" lg="4" xl="3" className="mx-auto mb-md-0 mb-4">
+                <ContactHeadingStyle className="text-uppercase fw-bold mb-4 ">
                   Contact
                 </ContactHeadingStyle>
                 <ContactWrapper>
