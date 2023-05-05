@@ -26,8 +26,29 @@ export const devices = {
 export const HeadingStyle = styled.h6`
   color: #fff;
 `;
+
 export const ContactHeadingStyle = styled.div`
   color: #fff;
+
+  @media (${devices.mobileES}) {
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  @media (${devices.mobileS}) {
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  @media (${devices.mobileM}) {
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  @media (${devices.mobileL}) {
+    text-align: center;
+    margin-left: 0px;
+  }
 
   @media (${devices.tablet}) {
     text-align: left;
@@ -38,7 +59,18 @@ export const ContactHeadingStyle = styled.div`
     text-align: left;
     margin-left: 60px;
   }
+
+  @media (${devices.laptopL}) {
+    text-align: left;
+    margin-left: 60px;
+  }
+
+  @media (${devices.desktop}) {
+    text-align: left;
+    margin-left: 60px;
+  }
 `;
+
 export const TimeStyle = styled.div`
   color: #fff;
   font-family: "Times New Roman", Times, serif;
@@ -139,13 +171,63 @@ export const ContactText = styled.span`
 `;
 
 export const FooterLogo = styled.img`
+  @media (${devices.mobileES}) {
+    margin-top: 5px;
+    width: 100% !important;
+    margin-left: 0px;
+    height: 100% !important;
+  }
+
+  @media (${devices.mobileS}) {
+    margin-top: 5px;
+    width: 100% !important;
+    margin-left: 0px;
+    height: 100% !important;
+  }
+
+  @media (${devices.mobileM}) {
+    margin-top: 5px;
+    width: 100% !important;
+    margin-left: 0px;
+    height: 100% !important;
+  }
+
+  @media (${devices.mobileL}) {
+    margin-top: 5px;
+    width: 100% !important;
+    margin-left: 0px;
+    height: 100% !important;
+  }
+
+  @media (${devices.tablet}) {
+    margin-top: 5px;
+    width: 90% !important;
+    margin-left: 0px;
+    height: 95% !important;
+  }
+
   @media (${devices.laptop}) {
-    margin-top: 50px;
+    margin-top: -5px;
     width: 250% !important;
-    margin-left: -40px;
-    height: 250px;
+    margin-left: -120px;
+    height: 100% !important;
+  }
+
+  @media (${devices.laptopL}) {
+    margin-top: -5px;
+    width: 250% !important;
+    margin-left: -160px;
+    height: 100% !important;
+  }
+
+  @media (${devices.desktop}) {
+    margin-top: -5px;
+    width: 250% !important;
+    margin-left: -170px;
+    height: 100% !important;
   }
 `;
+
 export const ContactWrapper = styled.div`
   @media (${devices.mobileES}) {
     justify-content: justify;
@@ -188,4 +270,21 @@ export const ContactWrapper = styled.div`
     padding-left: 40px;
     justify-content: justify;
   }
+
+  @media (${devices.laptopL}) {
+    text-align: left;
+    margin-left: 20px;
+    padding-left: 30px;
+    justify-content: justify;
+  }
+
+  @media (${devices.desktop}) {
+    text-align: left;
+    margin-left: 20px;
+    padding-left: 30px;
+    justify-content: justify;
+  }
+`;
+export const CopyRights = styled.div`
+  color: white;
 `;

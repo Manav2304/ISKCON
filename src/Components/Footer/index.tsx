@@ -15,6 +15,7 @@ import {
   ContactLink,
   ContactText,
   ContactWrapper,
+  CopyRights,
   FooterLogo,
   HeadingStyle,
   TermsHeading,
@@ -22,6 +23,7 @@ import {
   TimeStyle,
 } from "./style";
 import { routes } from "../../routes";
+import { StyledLink } from "../Navbar/style";
 
 export const Footer = () => {
   return (
@@ -50,11 +52,13 @@ export const Footer = () => {
                 md="12"
                 className="mb-4 mb-md-0 d-flex justify-content-center"
               >
-                <FooterLogo
-                  src={footerLogo}
-                  alt="Footer Logo"
-                  className="w-100 footer-logo"
-                />
+                <StyledLink to={routes.home}>
+                  <FooterLogo
+                    src={footerLogo}
+                    alt="Footer Logo"
+                    className="w-100 footer-logo"
+                  />
+                </StyledLink>
               </MDBCol>
 
               <MDBCol md="6" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
@@ -109,9 +113,9 @@ export const Footer = () => {
           </TermsHeading>
         </section>
 
-        <div className="text-center p-4" style={{ color: "white" }}>
+        <CopyRights className="text-center p-4">
           © 2021 ISKCON. All rights reserved.
-        </div>
+        </CopyRights>
       </MDBFooter>
     </BgColor>
   );
