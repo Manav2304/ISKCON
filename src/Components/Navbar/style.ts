@@ -1,18 +1,52 @@
 import styled from "styled-components";
-import title from "../../assets/images/navbar-bg.jpg";
+import title from "../../assets/images/navbar-bg.png";
 import { Link } from "react-router-dom";
+import Marquee from "react-fast-marquee";
+
+export const sizes = {
+  mobileES: "100px",
+  mobileS: "375px",
+  mobileM: "425px",
+  mobileL: "576px",
+  tablet: "768px",
+  laptop: "1024px",
+  laptopL: "1440px",
+  desktop: "2560px",
+};
+
+export const devices = {
+  mobileES: `min-width: ${sizes.mobileES}`,
+  mobileS: `min-width: ${sizes.mobileS}`,
+  mobileM: `min-width: ${sizes.mobileM}`,
+  mobileL: `min-width: ${sizes.mobileL}`,
+  tablet: `min-width: ${sizes.tablet}`,
+  laptop: `min-width: ${sizes.laptop}`,
+  laptopL: `min-width: ${sizes.laptopL}`,
+  desktop: `min-width: ${sizes.desktop}`,
+};
 
 export const NavStyle = styled.nav`
   background-image: url(${title});
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
   position: fixed;
 
-  @media (max-width: 767px) {
+  @media (${devices.mobileES}) {
     display: none;
   }
 
-  @media (min-width: 768px) {
+  @media (${devices.mobileS}) {
+    display: none;
+  }
+
+  @media (${devices.mobileM}) {
+    display: none;
+  }
+
+  @media (${devices.mobileL}) {
+    display: none;
+  }
+
+  @media (${devices.tablet}) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,40 +54,76 @@ export const NavStyle = styled.nav`
     padding: 0 20px;
   }
 
-  @media (min-width: 1400px) {
+  @media (${devices.laptop}) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0 10px;
+    margin-top: 50px;
+  }
+
+  @media (${devices.laptopL}) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0 100px;
+    margin-top: 50px;
+  }
+
+  @media (${devices.desktop}) {
     height: 105px !important;
     width: 100% !important;
   }
 `;
-
 export const StyledLink = styled(Link)`
   color: #fff;
   text-decoration: none;
+
+  &:hover {
+    color: #fff;
+  }
 `;
 
 export const ImgStyle = styled.img`
   height: 70px;
 
-  @media (max-width: 767px) {
-    height: 30px;
+  @media (${devices.mobileES}) {
+    height: 10px;
   }
 
-  @media (min-width: 768px) and (max-width: 991px) {
-    height: 50px;
+  @media (${devices.mobileS}) {
+    display: none;
   }
 
-  @media (min-width: 992px) and (max-width: 1199px) {
-    height: 60px;
+  @media (${devices.mobileM}) {
+    display: none;
   }
 
-  @media (min-width: 1200px) and (max-width: 1399px) {
+  @media (${devices.mobileL}) {
+    display: none;
+  }
+
+  @media (${devices.tablet}) {
+    display: flex;
+    height: 70px;
+  }
+
+  @media (${devices.laptop}) {
+    height: 85px;
+    margin-left: -10px;
+  }
+
+  @media (${devices.laptopL}) {
     height: 90px;
-    width: 130px;
+    margin-left: -10px;
   }
 
-  @media (min-width: 1400px) {
-    height: 100px !important;
-    width: 100% !important;
+  @media (${devices.desktop}) {
+    display: flex;
+    height: 100px;
+    margin-left: -10px;
   }
 `;
 
@@ -66,6 +136,155 @@ export const SocialMediaIconsStyle = styled.div`
 
 export const IconsStyle = styled.a`
   color: #fff;
-  padding: 3px;
+  margin-top: 5px;
+  padding: 10px;
   transition: background-color 0.2s ease;
+`;
+
+export const MarqueeWrapper = styled(Marquee)`
+  color: red;
+  background-color: orange;
+  height: 75px;
+  width: 85%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  @media (${devices.mobileES}) {
+    display: none;
+    height: 0%;
+    width: 0%;
+  }
+
+  @media (${devices.mobileS}) {
+    display: none;
+    height: 0%;
+    width: 0%;
+  }
+
+  @media (${devices.mobileM}) {
+    display: none;
+    height: 0%;
+    width: 0%;
+  }
+
+  @media (${devices.mobileL}) {
+    display: none;
+    height: 0%;
+    width: 0%;
+  }
+
+  @media (${devices.tablet}) {
+    display: none;
+    height: 0%;
+    width: 0%;
+  }
+
+  @media (${devices.laptop}) {
+    color: red;
+    background-color: orange;
+    height: 55px;
+    width: 85%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+
+  @media (${devices.laptopL}) {
+    color: red;
+    background-color: orange;
+    height: 55px;
+    width: 85%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+
+  @media (${devices.desktop}) {
+    color: red;
+    background-color: orange;
+    height: 55px;
+    width: 85%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+`;
+
+export const SocialMediaIconWrapper = styled.div`
+  background-color: orange;
+  height: 55px;
+  width: 15%;
+  position: fixed;
+  top: 0;
+  left: 85%;
+  right: 0%;
+  display: flex;
+  display: right;
+
+  @media (${devices.mobileES}) {
+    display: none;
+  }
+
+  @media (${devices.mobileS}) {
+    display: none;
+  }
+
+  @media (${devices.mobileM}) {
+    display: none;
+  }
+
+  @media (${devices.mobileL}) {
+    display: none;
+  }
+
+  @media (${devices.tablet}) {
+    display: none;
+  }
+
+  @media (${devices.laptop}) {
+    background-color: orange;
+    height: 55px;
+    width: 15%;
+    position: fixed;
+    top: 0;
+    left: 85%;
+    right: 0%;
+    z-index: 9999;
+    display: flex;
+    display: right;
+  }
+
+  @media (${devices.laptopL}) {
+    background-color: orange;
+    height: 55px;
+    width: 15%;
+    position: fixed;
+    top: 0;
+    left: 85%;
+    right: 0%;
+    z-index: 9999;
+    display: flex;
+    display: right;
+  }
+
+  @media (${devices.desktop}) {
+    background-color: orange;
+    height: 55px;
+    width: 15%;
+    position: fixed;
+    top: 0;
+    left: 85%;
+    right: 0%;
+    z-index: 9999;
+    display: flex;
+    display: right;
+  }
 `;
