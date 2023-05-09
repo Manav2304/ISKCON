@@ -93,6 +93,7 @@ export const carouselImages = [
     image: krishnaImage,
   },
 ];
+
 export const historyImages = [
   {
     id: 1,
@@ -107,6 +108,7 @@ export const historyImages = [
     image: history3Image,
   },
 ];
+
 export const aboutImages = [
   {
     id: 1,
@@ -115,6 +117,7 @@ export const aboutImages = [
   { id: 2, image: about2Image },
   { id: 3, image: about3Image },
 ];
+
 export const titleTiles = [
   {
     title: "About Us",
@@ -127,6 +130,7 @@ export const titleTiles = [
     paragraphs: histories,
   },
 ];
+
 export const sections = [
   {
     title: "Goals of Iskcon",
@@ -142,5 +146,52 @@ export const sections = [
     title: "Founder",
     image: founderAcharya,
     paragraphs: founders,
+  },
+];
+
+export const DesktopCarouselImages = [
+  {
+    id: 1,
+    image: about1Image,
+  },
+  { id: 2, image: about2Image },
+  { id: 3, image: about3Image },
+];
+
+export const TabletCarouselImages = [
+  {
+    id: 1,
+    image: radhaGiridhariji,
+  },
+  {
+    id: 2,
+    image: founderImage,
+  },
+  {
+    id: 3,
+    image: chantImage,
+  },
+  {
+    id: 4,
+    image: krishnaImage,
+  },
+];
+
+export const MobileCarouselImages = [
+  {
+    id: 1,
+    image: radhaGiridhariji,
+  },
+  {
+    id: 2,
+    image: founderImage,
+  },
+  {
+    id: 3,
+    image: chantImage,
+  },
+  {
+    id: 4,
+    image: krishnaImage,
   },
 ];
