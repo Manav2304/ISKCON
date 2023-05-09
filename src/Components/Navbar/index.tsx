@@ -24,6 +24,7 @@ export const NavigationBar = () => {
         </StyledLink>
         <StyledLink to={routes.donation}>Donate</StyledLink>
         <StyledLink to={routes.festival}>Festival</StyledLink>
+        <StyledLink to={routes.blog}>Blog</StyledLink>
         <StyledLink to={routes.contact}>Contact</StyledLink>
         <SocialMediaIconsStyle>
           {socialMediaIcon.map((item) => (
