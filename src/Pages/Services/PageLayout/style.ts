@@ -131,10 +131,10 @@ export const PageReviews = styled.div`
 `;
 
 export const ContactLink = styled.a`
-color: #ad0d0d;
-text-decoration: none;
+  color: #ad0d0d;
+  text-decoration: none;
 
-&:hover{
-  color: #000;
+  &:hover{
+   color: #000;
 }
 `;

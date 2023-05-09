@@ -87,9 +87,9 @@ export const App: React.FunctionComponent = () => {
             element={<LifeTimeMembership />}
           />
           <Route
-          caseSensitive
-          path={routes.newService}
-          element={<NewService/>}
+            caseSensitive
+            path={routes.newService}
+            element={<NewService />}
           />
           <Route
             caseSensitive
