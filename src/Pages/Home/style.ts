@@ -28,7 +28,6 @@ export const PageImageCarousel = styled.img`
 
   @media (${devices.mobileES}) {
     height: 130px;
-    width: 100%;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -199,15 +198,35 @@ export const PageStyleCarousel = styled(Carousel)`
 `;
 
 export const PageReviews = styled.div`
-  @media only (max-width: 767px) {
+  @media (${devices.mobileES}) {
     margin-top: 5px;
   }
 
-  @media only (min-width: 768px) and (max-width: 1199px) {
+  @media (${devices.mobileS}) {
+    margin-top: 5px;
+  }
+
+  @media (${devices.mobileM}) {
+    margin-top: 5px;
+  }
+
+  @media (${devices.mobileL}) {
+    margin-top: 5px;
+  }
+
+  @media (${devices.tablet}) {
     margin-top: 7px;
   }
 
-  @media only (min-width: 1200px) {
+  @media (${devices.laptop}) {
+    margin-top: 7px;
+  }
+
+  @media (${devices.laptopL}) {
+    margin-top: 9px;
+  }
+
+  @media (${devices.desktop}) {
     margin-top: 9px;
   }
 `;
@@ -346,7 +365,7 @@ export const ImageTitle = styled.img`
 `;
 
 export const Image = styled.img`
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
 
   @media (${devices.mobileES}) {
