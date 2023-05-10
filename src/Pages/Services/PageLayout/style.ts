@@ -1,27 +1,6 @@
 import { Carousel } from "react-bootstrap";
 import styled from "styled-components";
-
-export const sizes = {
-  mobileES: "100px",
-  mobileS: "375px",
-  mobileM: "425px",
-  mobileL: "576px",
-  tablet: "768px",
-  laptop: "1024px",
-  laptopL: "1440px",
-  desktop: "2560px",
-};
-
-export const devices = {
-  mobileES: `min-width: ${sizes.mobileES}`,
-  mobileS: `min-width: ${sizes.mobileS}`,
-  mobileM: `min-width: ${sizes.mobileM}`,
-  mobileL: `min-width: ${sizes.mobileL}`,
-  tablet: `min-width: ${sizes.tablet}`,
-  laptop: `min-width: ${sizes.laptop}`,
-  laptopL: `min-width: ${sizes.laptopL}`,
-  desktop: `min-width: ${sizes.desktop}`,
-};
+import { devices } from "../../ScreenSize/constant";
 
 export const TextWrapper = styled.div`
   color: #ad0d0d;
@@ -124,22 +103,6 @@ export const Paragraph = styled.p`
     padding-left: 30px;
     padding-right: 30px;
   }
-
-  /* @media only screen and (max-width: 768px) {
-    margin: 20px;
-    font-size: 0.8rem;
-  }
-
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
-    margin: 25px;
-    font-size: 1rem;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    font-size: 1.2rem;
-    padding-left: 30px;
-    padding-right: 30px;
-  } */
 `;
 
 export const PageImageCarousel = styled.img`
@@ -203,27 +166,6 @@ export const PageImageCarousel = styled.img`
     padding-left: 80px;
     padding-right: 80px;
   }
-
-  /* @media only screen and (max-width: 767px) {
-    height: 100%;
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    height: 100%;
-    width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    height: 100%;
-    width: 100%;
-    padding-left: 80px;
-    padding-right: 80px;
-  } */
 `;
 
 export const PageStyleCarousel = styled(Carousel)`
@@ -342,34 +284,6 @@ export const PageStyleCarousel = styled(Carousel)`
       height: 5px;
     }
   }
-  
-/* 
- 
-  @media (max-width: 768px) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 10px;
-      width: 10px;
-    }
-
-    .carousel-indicators {
-      height: 5px;
-      width: 5px;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 30px;
-      width: 30px;
-      margin: 80px;
-    }
-
-    .carousel-indicators {
-      height: 5px;
-    }
-  } */
 `;
 
 export const PageReviews = styled.div`
@@ -405,16 +319,4 @@ export const PageReviews = styled.div`
   @media (${devices.desktop}) {
     margin-top: 9px;
   }
-
-  /* @media only screen and (max-width: 767px) {
-    margin-top: 5px;
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-top: 7px;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    margin-top: 9px;
-  } */
 `;

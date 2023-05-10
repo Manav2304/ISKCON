@@ -3,28 +3,7 @@ import { Link } from "react-router-dom";
 import title from "../../assets/images/navbar-bg.jpg";
 import { Accordion, AccordionButton } from "react-bootstrap";
 import ArrowIcon from "../../assets/images/arrow-down.png";
-
-export const sizes = {
-  mobileES: "100px",
-  mobileS: "375px",
-  mobileM: "425px",
-  mobileL: "576px",
-  tablet: "768px",
-  laptop: "1024px",
-  laptopL: "1440px",
-  desktop: "2560px",
-};
-
-export const devices = {
-  mobileES: `min-width: ${sizes.mobileES}`,
-  mobileS: `min-width: ${sizes.mobileS}`,
-  mobileM: `min-width: ${sizes.mobileM}`,
-  mobileL: `min-width: ${sizes.mobileL}`,
-  tablet: `min-width: ${sizes.tablet}`,
-  laptop: `min-width: ${sizes.laptop}`,
-  laptopL: `min-width: ${sizes.laptopL}`,
-  desktop: `min-width: ${sizes.desktop}`,
-};
+import { devices } from "../../Pages/ScreenSize/constant";
 
 export const SidebarStyle = styled.div<{ isOpen: boolean }>`
   background-image: url(${title});
@@ -82,7 +61,7 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   flex-direction: column;
   align-items: center;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: bold;
   margin-right: 20px;
   padding: 2px 16px;
@@ -144,34 +123,6 @@ export const ImgStyle = styled.img`
   @media (${devices.desktop}) {
     display: none;
   }
-
-  /* @media (max-width: 767px) {
-    height: 60px;
-    margin-left: -20px;
-    margin-right: 5px;
-    display: block;
-  }
-
-  @media (min-width: 768px) and (max-width: 991px) {
-    height: 60px;
-    display: none;
-  }
-
-  @media (min-width: 992px) and (max-width: 1199px) {
-    height: 70px;
-    display: none;
-  }
-
-  @media (min-width: 1200px) and (max-width: 1399px) {
-    height: 90px;
-    width: 130px;
-    display: none;
-  }
-
-  @media (min-width: 1400px) {
-    height: 85px;
-    display: none;
-  } */
 `;
 
 export const HeadingStyle = styled.div`
@@ -210,12 +161,6 @@ export const HeadingStyle = styled.div`
     margin-right: 30px;
     padding-right: 10px;
   }
-
-  /* @media (max-width: 767px) {
-    font-size: 25px;
-    margin-right: 30px;
-    padding-right: 10px;
-  } */
 `;
 
 export const PageWrapper = styled.div`

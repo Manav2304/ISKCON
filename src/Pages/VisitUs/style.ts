@@ -1,26 +1,5 @@
 import styled from "styled-components";
-
-export const sizes = {
-  mobileES: "100px",
-  mobileS: "375px",
-  mobileM: "425px",
-  mobileL: "576px",
-  tablet: "768px",
-  laptop: "1024px",
-  laptopL: "1440px",
-  desktop: "2560px",
-};
-
-export const devices = {
-  mobileES: `min-width: ${sizes.mobileES}`,
-  mobileS: `min-width: ${sizes.mobileS}`,
-  mobileM: `min-width: ${sizes.mobileM}`,
-  mobileL: `min-width: ${sizes.mobileL}`,
-  tablet: `min-width: ${sizes.tablet}`,
-  laptop: `min-width: ${sizes.laptop}`,
-  laptopL: `min-width: ${sizes.laptopL}`,
-  desktop: `min-width: ${sizes.desktop}`,
-};
+import { devices } from "../ScreenSize/constant";
 
 export const ServiceWrapper = styled.div`
   display: flex;
@@ -76,15 +55,6 @@ export const ImageSlide = styled.img`
   @media (${devices.desktop}) {
     width: 80%; 
    }
-
-  /* @media (max-width: 767px) {
-    width: 100%;
-    height: auto;
-  }
-
-  @media (min-width: 768px) and (max-width: 991px) {
-    width: 80%;
-  } */
 `;
 
 export const Paragraph = styled.p`
@@ -134,22 +104,6 @@ export const Paragraph = styled.p`
     padding-left: 30px;
     padding-right: 30px;
   }
-
-  /* @media only screen and (max-width: 768px) {
-    margin: 20px;
-    font-size: 0.8rem;
-  }
-
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
-    margin: 25px;
-    font-size: 1rem;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    font-size: 1.2rem;
-    padding-left: 30px;
-    padding-right: 30px;
-  } */
 `;
 
 export const HiddenParagraph = styled.p`
