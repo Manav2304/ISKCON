@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { devices } from "../ScreenSize/constant";
+import { devices } from "../../style";
 
 export const Container = styled.div`
   margin: 5px;

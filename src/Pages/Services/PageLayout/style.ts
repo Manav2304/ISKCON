@@ -1,6 +1,6 @@
 import { Carousel } from "react-bootstrap";
 import styled from "styled-components";
-import { devices } from "../../ScreenSize/constant";
+import { devices } from "../../../style";
 
 export const TextWrapper = styled.div`
   color: #ad0d0d;

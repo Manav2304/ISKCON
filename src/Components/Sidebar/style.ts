@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import title from "../../assets/images/navbar-bg.jpg";
 import { Accordion, AccordionButton } from "react-bootstrap";
 import ArrowIcon from "../../assets/images/arrow-down.png";
-import { devices } from "../../Pages/ScreenSize/constant";
+import { devices } from "../../style";
 
 export const SidebarStyle = styled.div<{ isOpen: boolean }>`
   background-image: url(${title});
