@@ -82,7 +82,7 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
 
   &:hover {
-    color: #fff;
+    color: #ad0d0d;
   }
 `;
 
