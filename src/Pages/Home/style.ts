@@ -143,11 +143,18 @@ export const PageStyleCarousel = styled(Carousel)`
   }
 
   @media (${devices.laptop}) {
-    .carousel-control-prev-icon,
+    .carousel-control-prev-icon {
+      height: 40px;
+      width: 40px;
+      opacity: 0.9;
+      margin-left: 90px;
+    }
+
     .carousel-control-next-icon {
       height: 40px;
       width: 40px;
       opacity: 0.9;
+      margin-right: 90px;
     }
 
     .carousel-indicators {
@@ -291,6 +298,7 @@ export const HeadingStyle = styled.h1`
     margin-top: 100px;
   }
 `;
+
 export const ImageTitle = styled.img`
   width: 100%;
   display: block;
@@ -334,85 +342,6 @@ export const ImageTitle = styled.img`
   @media (${devices.desktop}) {
     width: 20%;
     margin-bottom: 30px;
-  }
-`;
-
-export const Reviews = styled.div`
-  width: 100%;
-
-  @media (${devices.mobileES}) {
-    height: 200px;
-    margin-top: 47px;
-  }
-
-  @media (${devices.mobileS}) {
-    height: 200px;
-    margin-top: 47px;
-  }
-
-  @media (${devices.mobileM}) {
-    height: 200px;
-    margin-top: 47px;
-  }
-
-  @media (${devices.mobileL}) {
-    height: 200px;
-    margin-top: 47px;
-  }
-
-  @media (${devices.tablet}) {
-    margin-top: 73px;
-    height: 320px;
-  }
-
-  @media (${devices.laptop}) {
-    margin-top: 73px;
-    height: 480px;
-  }
-
-  @media (${devices.laptopL}) {
-    margin-top: 75px;
-    height: 580px;
-  }
-
-  @media (${devices.desktop}) {
-    height: 1080px;
-  }
-`;
-
-export const ImageCarousel = styled.img`
-  width: 100%;
-
-  @media (${devices.mobileES}) {
-    height: 200px;
-  }
-
-  @media (${devices.mobileS}) {
-    height: 200px;
-  }
-
-  @media (${devices.mobileM}) {
-    height: 200px;
-  }
-
-  @media (${devices.mobileL}) {
-    height: 200px;
-  }
-
-  @media (${devices.tablet}) {
-    height: 320px;
-  }
-
-  @media (${devices.laptop}) {
-    height: 480px;
-  }
-
-  @media (${devices.laptopL}) {
-    height: 580px;
-  }
-
-  @media (${devices.desktop}) {
-    height: 1080px;
   }
 `;
 
@@ -469,107 +398,36 @@ export const Image = styled.img`
   }
 `;
 
-/*Used class name for handle the size of icon*/
-export const StyleCarousel = styled(Carousel)`
-  z-index: 0;
-
+export const MainWrapper = styled.div`
   @media (${devices.mobileES}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 20px;
-      width: 20px;
-    }
-
-    .carousel-indicators {
-      opacity: 0;
-    }
+    margin-top: 48px;
   }
 
   @media (${devices.mobileS}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 20px;
-      width: 20px;
-    }
-
-    .carousel-indicators {
-      opacity: 0;
-    }
+    margin-top: 48px;
   }
 
   @media (${devices.mobileM}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 20px;
-      width: 20px;
-    }
-
-    .carousel-indicators {
-      opacity: 0;
-    }
+    margin-top: 45px;
   }
 
   @media (${devices.mobileL}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 20px;
-      width: 20px;
-    }
-
-    .carousel-indicators {
-      opacity: 0;
-    }
+    margin-top: 48px;
   }
 
   @media (${devices.tablet}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 40px;
-      width: 40px;
-      opacity: 0.9;
-    }
-
-    .carousel-indicators {
-      opacity: 0.9;
-    }
+    margin-top: 70px;
   }
 
   @media (${devices.laptop}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 40px;
-      width: 40px;
-      opacity: 0.9;
-    }
-
-    .carousel-indicators {
-      opacity: 0.9;
-    }
+    margin-top: 70px;
   }
 
   @media (${devices.laptopL}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 40px;
-      width: 40px;
-      opacity: 0.9;
-    }
-
-    .carousel-indicators {
-      opacity: 0.9;
-    }
+    margin-top: 70px;
   }
 
   @media (${devices.desktop}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 60px;
-      width: 60px;
-      opacity: 0.9;
-    }
-
-    .carousel-indicators {
-      opacity: 0.9;
-    }
+    margin-top: 70px;
   }
 `;

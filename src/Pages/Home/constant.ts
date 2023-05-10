@@ -55,7 +55,6 @@ export const founders = [
   "In 1965, at the age of 69, Srila Prabhupada boarded a cargo ship bound for New York City with only a few belongings and a burning desire to spread the teachings of Lord Krishna to the Western world, as per the instructions of his spiritual master Srila Bhaktisiddhanta Saraswati Goswami Maharaj Prabhupada. Despite numerous obstacles and setbacks, he persevered, living in poverty and facing countless challenges as he worked tirelessly to establish the first ISKCON temple in New York City.",
   "Over the next 11 years, Srila Prabhupada traveled extensively, establishing temples, ashrams, and centers around the world and inspiring countless individuals to embrace the path of bhakti-yoga. His teachings on love, compassion, and devotion to God continue to resonate with people of all backgrounds, and his legacy has touched the lives of millions.",
   "Srila Prabhupada's contributions to the world of spirituality and religion are immeasurable. Through his translations and commentaries on the Bhagavad-gita and Srimad Bhagavatam, he has provided a profound understanding of the ancient wisdom of the Vedic scriptures. His emphasis on the importance of devotional service and compassion for all living beings has inspired countless individuals to embrace a life of spiritual practice and service to others.",
-  "Srila Prabhupada's contributions to the world of spirituality and religion are immeasurable. Through his translations and commentaries on the Bhagavad-gita and Srimad Bhagavatam, he has provided a profound understanding of the ancient wisdom of the Vedic scriptures. His emphasis on the importance of devotional service and compassion for all living beings has inspired countless individuals to embrace a life of spiritual practice and service to others.",
   "Srila Prabhupada's teachings and example continue to inspire new generations of seekers and spiritual aspirants, and his legacy lives on through the vibrant and growing ISKCON movement that he founded. His dedication, wisdom, and unwavering commitment to the path of Krishna consciousness remain an inspiration to all who seek the truth and meaning of life.",
   "Srila Prabhupada Chronology",
   "1954 Left family, vanaprastha",
@@ -146,52 +145,5 @@ export const sections = [
     title: "Founder",
     image: founderAcharya,
     paragraphs: founders,
-  },
-];
-
-export const DesktopCarouselImages = [
-  {
-    id: 1,
-    image: about1Image,
-  },
-  { id: 2, image: about2Image },
-  { id: 3, image: about3Image },
-];
-
-export const TabletCarouselImages = [
-  {
-    id: 1,
-    image: radhaGiridhariji,
-  },
-  {
-    id: 2,
-    image: founderImage,
-  },
-  {
-    id: 3,
-    image: chantImage,
-  },
-  {
-    id: 4,
-    image: krishnaImage,
-  },
-];
-
-export const MobileCarouselImages = [
-  {
-    id: 1,
-    image: radhaGiridhariji,
-  },
-  {
-    id: 2,
-    image: founderImage,
-  },
-  {
-    id: 3,
-    image: chantImage,
-  },
-  {
-    id: 4,
-    image: krishnaImage,
   },
 ];

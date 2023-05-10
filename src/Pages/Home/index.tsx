@@ -1,39 +1,21 @@
 import React from "react";
 import titleBaseUrl from "../../assets/images/title-base.png";
+import { carouselImages, titleTiles, sections } from "./constant";
 import {
-  carouselImages,
-  titleTiles,
-  sections,
-  DesktopCarouselImages,
-  TabletCarouselImages,
-  MobileCarouselImages,
-} from "./constant";
-import { GlobalCarousel } from "./GlobalCarousel";
-import { HeadingStyle, ImageTitle, TextStyle, Image } from "./style";
+  HeadingStyle,
+  ImageTitle,
+  TextStyle,
+  Image,
+  MainWrapper,
+} from "./style";
 import { PageCarousel } from "./PageCarousel";
-import { useMediaQuery } from "react-responsive";
 
 export const HomePage: React.FC = () => {
-  const isDesktop = useMediaQuery({ minDeviceWidth: 2560 });
-  const isLaptopL = useMediaQuery({ minDeviceWidth: 1440 });
-  const isLaptop = useMediaQuery({ minDeviceWidth: 1024 });
-  const isTablet = useMediaQuery({ minDeviceWidth: 768, maxDeviceWidth: 1023 });
-  const isMobileL = useMediaQuery({ minDeviceWidth: 425 });
-  const isMobileM = useMediaQuery({ minDeviceWidth: 375 });
-  const isMobileS = useMediaQuery({ minDeviceWidth: 320 });
-  const isMobileES = useMediaQuery({ minDeviceWidth: 100 });
-
-  let carouselImages: { id: number; image: string }[] = [];
-  if (isDesktop) {
-    carouselImages = DesktopCarouselImages;
-  } else if (isTablet) {
-    carouselImages = TabletCarouselImages;
-  } else if (isMobileL) {
-    carouselImages = MobileCarouselImages;
-  }
   return (
     <div>
-      <GlobalCarousel images={carouselImages} />
+      <MainWrapper>
+        <PageCarousel images={carouselImages} />
+      </MainWrapper>
       {titleTiles.map((titleTile) => (
         <div>
           <HeadingStyle>
