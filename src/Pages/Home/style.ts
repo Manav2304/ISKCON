@@ -429,3 +429,186 @@ export const MainWrapper = styled.div`
     margin-top: 70px;
   }
 `;
+export const Reviews = styled.div`
+  width: 100%;
+
+  @media (${devices.mobileES}) {
+    margin-top: 47px;
+    height: 161px;
+  }
+
+  @media (${devices.mobileS}) {
+    height: 161px;
+    margin-top: 47px;
+  }
+
+  @media (${devices.mobileM}) {
+    height: 183px;
+    margin-top: 47px;
+  }
+
+  @media (${devices.mobileL}) {
+    height: 248px;
+    margin-top: 47px;
+  }
+
+  @media (${devices.tablet}) {
+    margin-top: 47px;
+    height: 330px;
+  }
+
+  @media (${devices.laptop}) {
+    margin-top: 73px;
+    height: 440px;
+  }
+
+  @media (${devices.laptopL}) {
+    margin-top: 75px;
+    height: 619px;
+  }
+
+  @media (${devices.desktop}) {
+    height: 1101px;
+  }
+`;
+
+export const ImageCarousel = styled.img`
+  width: 100%;
+
+  @media (${devices.mobileES}) {
+    height: 161px;
+  }
+
+  @media (${devices.mobileS}) {
+    height: 161px;
+  }
+
+  @media (${devices.mobileM}) {
+    height: 183px;
+  }
+
+  @media (${devices.mobileL}) {
+    height: 248px;
+  }
+
+  @media (${devices.tablet}) {
+    height: 330px;
+  }
+
+  @media (${devices.laptop}) {
+    height: 440px;
+  }
+
+  @media (${devices.laptopL}) {
+    height: 619px;
+  }
+
+  @media (${devices.desktop}) {
+    height: 1101px;
+  }
+`;
+/*Used class name for handle the size of icon*/
+export const StyleCarousel = styled(Carousel)`
+  z-index: 0;
+
+  @media (${devices.mobileES}) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 20px;
+      width: 20px;
+    }
+
+    .carousel-indicators {
+      opacity: 0;
+    }
+  }
+
+  @media (${devices.mobileS}) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 20px;
+      width: 20px;
+    }
+
+    .carousel-indicators {
+      opacity: 0;
+    }
+  }
+
+  @media (${devices.mobileM}) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 20px;
+      width: 20px;
+    }
+
+    .carousel-indicators {
+      opacity: 0;
+    }
+  }
+
+  @media (${devices.mobileL}) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 20px;
+      width: 20px;
+    }
+
+    .carousel-indicators {
+      opacity: 0;
+    }
+  }
+
+  @media (${devices.tablet}) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 40px;
+      width: 40px;
+      opacity: 0.9;
+    }
+
+    .carousel-indicators {
+      opacity: 0.9;
+    }
+  }
+
+  @media (${devices.laptop}) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 40px;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    .carousel-indicators {
+      margin-top: 400px;
+      opacity: 0.9;
+    }
+  }
+
+  @media (${devices.laptopL}) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 40px;
+      width: 40px;
+      opacity: 0.9;
+    }
+
+    .carousel-indicators {
+      opacity: 0.9;
+    }
+  }
+
+  @media (${devices.desktop}) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 60px;
+      width: 60px;
+      opacity: 0.9;
+    }
+
+    .carousel-indicators {
+      opacity: 0.9;
+    }
+  }
+`;

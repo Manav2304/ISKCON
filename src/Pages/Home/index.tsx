@@ -9,13 +9,14 @@ import {
   MainWrapper,
 } from "./style";
 import { PageCarousel } from "./PageCarousel";
+import { GlobalCarousel } from "./GlobalCarousel";
 
 export const HomePage: React.FC = () => {
   return (
     <div>
-      <MainWrapper>
-        <PageCarousel images={carouselImages} />
-      </MainWrapper>
+      {/* <MainWrapper> */}
+      <GlobalCarousel images={carouselImages} />
+      {/* </MainWrapper> */}
       {titleTiles.map((titleTile) => (
         <div>
           <HeadingStyle>
