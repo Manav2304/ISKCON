@@ -2,28 +2,7 @@ import styled from "styled-components";
 import title from "../../assets/images/navbar-bg.png";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
-
-export const sizes = {
-  mobileES: "100px",
-  mobileS: "375px",
-  mobileM: "425px",
-  mobileL: "576px",
-  tablet: "768px",
-  laptop: "1024px",
-  laptopL: "1440px",
-  desktop: "2560px",
-};
-
-export const devices = {
-  mobileES: `min-width: ${sizes.mobileES}`,
-  mobileS: `min-width: ${sizes.mobileS}`,
-  mobileM: `min-width: ${sizes.mobileM}`,
-  mobileL: `min-width: ${sizes.mobileL}`,
-  tablet: `min-width: ${sizes.tablet}`,
-  laptop: `min-width: ${sizes.laptop}`,
-  laptopL: `min-width: ${sizes.laptopL}`,
-  desktop: `min-width: ${sizes.desktop}`,
-};
+import { devices } from "../../style";
 
 export const NavStyle = styled.nav`
   background-image: url(${title});
@@ -142,8 +121,8 @@ export const IconsStyle = styled.a`
 `;
 
 export const MarqueeWrapper = styled(Marquee)`
-  color: red;
-  background-color: orange;
+  color: #fff;
+  background-color: #ad0d0d;
   height: 75px;
   width: 85%;
   position: fixed;
@@ -182,8 +161,6 @@ export const MarqueeWrapper = styled(Marquee)`
   }
 
   @media (${devices.laptop}) {
-    color: red;
-    background-color: orange;
     height: 55px;
     width: 85%;
     position: fixed;
@@ -194,8 +171,6 @@ export const MarqueeWrapper = styled(Marquee)`
   }
 
   @media (${devices.laptopL}) {
-    color: red;
-    background-color: orange;
     height: 55px;
     width: 85%;
     position: fixed;
@@ -206,8 +181,6 @@ export const MarqueeWrapper = styled(Marquee)`
   }
 
   @media (${devices.desktop}) {
-    color: red;
-    background-color: orange;
     height: 55px;
     width: 85%;
     position: fixed;
@@ -219,7 +192,7 @@ export const MarqueeWrapper = styled(Marquee)`
 `;
 
 export const SocialMediaIconWrapper = styled.div`
-  background-color: orange;
+  background-color: #ad0d0d;
   height: 55px;
   width: 15%;
   position: fixed;
@@ -250,7 +223,6 @@ export const SocialMediaIconWrapper = styled.div`
   }
 
   @media (${devices.laptop}) {
-    background-color: orange;
     height: 55px;
     width: 15%;
     position: fixed;
@@ -263,7 +235,6 @@ export const SocialMediaIconWrapper = styled.div`
   }
 
   @media (${devices.laptopL}) {
-    background-color: orange;
     height: 55px;
     width: 15%;
     position: fixed;
@@ -276,7 +247,6 @@ export const SocialMediaIconWrapper = styled.div`
   }
 
   @media (${devices.desktop}) {
-    background-color: orange;
     height: 55px;
     width: 15%;
     position: fixed;

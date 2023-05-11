@@ -1,26 +1,55 @@
 import { Carousel } from "react-bootstrap";
 import styled from "styled-components";
+import { devices } from "../../../style";
 
 export const TextWrapper = styled.div`
   color: #ad0d0d;
   font-family: "Times New Roman", Times, serif;
 
-  @media only screen and (max-width: 768px) {
-    /* Styles for tablet view */
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-  }
-
-  @media only screen and (max-width: 480px) {
-    /* Styles for mobile view */
+  
+  @media (${devices.mobileES}) {
     padding-left: 0.1px;
     padding-bottom: 0.1px;
     padding-right: 0.1px;
   }
 
-  @media only screen and (min-width: 1200px) {
-    /* Styles for desktop view */
+  @media (${devices.mobileS}) {
+    padding-left: 0.1px;
+    padding-bottom: 0.1px;
+    padding-right: 0.1px;
+  }
+
+  @media (${devices.mobileM}) {
+    padding-left: 0.1px;
+    padding-bottom: 0.1px;
+    padding-right: 0.1px;
+  }
+
+  @media (${devices.mobileL}) {
+    padding-left: 0.1px;
+    padding-bottom: 0.1px;
+    padding-right: 0.1px;
+  }
+
+  @media (${devices.tablet}) {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  @media (${devices.laptop}) {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media (${devices.laptopL}) {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media (${devices.desktop}) {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
@@ -33,42 +62,105 @@ export const Paragraph = styled.p`
   color: #ad0d0d;
   font-family: "Times New Roman", Times, serif;
 
-  @media only screen and (max-width: 768px) {
+  @media (${devices.mobileES}) {
     margin: 20px;
     font-size: 0.8rem;
   }
 
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+  @media (${devices.mobileS}) {
+    margin: 20px;
+    font-size: 0.8rem;
+  }
+
+  @media (${devices.mobileM}) {
+    margin: 20px;
+    font-size: 0.8rem;
+  }
+
+  @media (${devices.mobileL}) {
+    margin: 20px;
+    font-size: 0.8rem;
+  }
+
+  @media (${devices.tablet}) {
     margin: 25px;
     font-size: 1rem;
   }
 
-  @media only screen and (min-width: 1200px) {
+  @media (${devices.laptop}) {
+    margin: 25px;
+    font-size: 1rem;
+  }
+
+  @media (${devices.laptopL}) {
+    font-size: 1.2rem;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (${devices.desktop}) {
     font-size: 1.2rem;
     padding-left: 30px;
     padding-right: 30px;
   }
 `;
+
 export const PageImageCarousel = styled.img`
   width: 100%;
   height: 500px;
   object-fit: contain cover;
 
-  @media only screen and (max-width: 767px) {
+  
+  @media (${devices.mobileES}) {
     height: 100%;
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+  @media (${devices.mobileS}) {
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (${devices.mobileM}) {
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (${devices.mobileL}) {
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (${devices.tablet}) {
     height: 100%;
     width: 100%;
     padding-left: 40px;
     padding-right: 40px;
   }
 
-  @media only screen and (min-width: 1200px) {
+  @media (${devices.laptop}) {
+    height: 100%;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (${devices.laptopL}) {
+    height: 100%;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  @media (${devices.desktop}) {
     height: 100%;
     width: 100%;
     padding-left: 80px;
@@ -89,7 +181,7 @@ export const PageStyleCarousel = styled(Carousel)`
     height: 10px;
   }
 
-  @media (max-width: 768px) {
+  @media (${devices.mobileES}) {
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       height: 10px;
@@ -102,7 +194,85 @@ export const PageStyleCarousel = styled(Carousel)`
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (${devices.mobileS}) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 10px;
+      width: 10px;
+    }
+
+    .carousel-indicators {
+      height: 5px;
+      width: 5px;
+    }
+  }
+
+  @media (${devices.mobileM}) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 10px;
+      width: 10px;
+    }
+
+    .carousel-indicators {
+      height: 5px;
+      width: 5px;
+    }
+  }
+
+  @media (${devices.mobileL}) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 10px;
+      width: 10px;
+    }
+
+    .carousel-indicators {
+      height: 5px;
+      width: 5px;
+    }
+  }
+
+  @media (${devices.tablet}) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 10px;
+      width: 10px;
+    }
+
+    .carousel-indicators {
+      height: 5px;
+      width: 5px;
+    }
+  }
+
+  @media (${devices.laptop}) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 30px;
+      width: 30px;
+      margin: 80px;
+    }
+
+    .carousel-indicators {
+      height: 5px;
+    }
+  }
+
+  @media (${devices.laptopL}) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 30px;
+      width: 30px;
+      margin: 80px;
+    }
+
+    .carousel-indicators {
+      height: 5px;
+    }
+  }
+
+  @media (${devices.desktop}) {
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       height: 30px;
@@ -117,15 +287,36 @@ export const PageStyleCarousel = styled(Carousel)`
 `;
 
 export const PageReviews = styled.div`
-  @media only screen and (max-width: 767px) {
+
+  @media (${devices.mobileES}) {
+   margin-top: 5px;
+  }
+
+  @media (${devices.mobileS}) {
     margin-top: 5px;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+  @media (${devices.mobileM}) {
+    margin-top: 5px;
+  }
+
+  @media (${devices.mobileL}) {
+    margin-top: 5px;
+  }
+
+  @media (${devices.tablet}) {
     margin-top: 7px;
   }
 
-  @media only screen and (min-width: 1200px) {
+  @media (${devices.laptop}) {
+    margin-top: 7px;
+  }
+
+  @media (${devices.laptopL}) {
+    margin-top: 9px;
+  }
+
+  @media (${devices.desktop}) {
     margin-top: 9px;
   }
 `;
