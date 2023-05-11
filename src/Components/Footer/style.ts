@@ -120,6 +120,7 @@ export const ContactLink = styled.a`
 
 export const BgColor = styled.div`
   background-color: #963;
+  opacity: 0.8;
   color: #fff;
 `;
 
