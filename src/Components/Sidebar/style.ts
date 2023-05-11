@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import title from "../../assets/images/navbar-bg.jpg";
 import { Accordion, AccordionButton } from "react-bootstrap";
 import ArrowIcon from "../../assets/images/arrow-down.png";
+import { devices } from "../../style";
 
 export const SidebarStyle = styled.div<{ isOpen: boolean }>`
   background-image: url(${title});
@@ -42,9 +43,6 @@ export const NavStyle = styled.nav`
 `;
 
 export const ToggleButton = styled.button`
-  display: none;
-
-  @media (max-width: 768px) {
     display: block;
     position: fixed;
     top: 0;
@@ -55,38 +53,6 @@ export const ToggleButton = styled.button`
     cursor: pointer;
     z-index: 1000;
     font-size: 30px;
-  }
-`;
-
-export const CloseIcon = styled.div`
-  display: inline;
-
-  @media screen and (max-width: 768px) {
-    display: flex;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
-
-    &::before,
-    &::after {
-      position: absolute;
-      content: "";
-      width: 2px;
-      height: 10px;
-      background-color: transparent;
-    }
-    
-    &::before {
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      transform: rotate(-45deg);
-    }
-  }
 `;
 
 export const StyledLink = styled(Link)`
@@ -95,7 +61,7 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   flex-direction: column;
   align-items: center;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: bold;
   margin-right: 20px;
   padding: 2px 16px;
@@ -111,31 +77,50 @@ export const ImgStyle = styled.img`
   height: 70px;
   display: none;
 
-  @media (max-width: 767px) {
+  @media (${devices.mobileES}) {
     height: 60px;
     margin-left: -20px;
     margin-right: 5px;
     display: block;
   }
 
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media (${devices.mobileS}) {
     height: 60px;
+    margin-left: -20px;
+    margin-right: 5px;
+    display: block;
+  }
+
+  @media (${devices.mobileM}) {
+    height: 60px;
+    margin-left: -20px;
+    margin-right: 5px;
+    display: block;
+  }
+
+  @media (${devices.mobileL}) {
+    height: 60px;
+    margin-left: -20px;
+    margin-right: 5px;
+    display: block;
+  }
+
+  @media (${devices.tablet}) {
+   height: 60px;
+    margin-left: -20px;
+    margin-right: 5px;
+    display: block;
+  }
+
+  @media (${devices.laptop}) {
     display: none;
   }
 
-  @media (min-width: 992px) and (max-width: 1199px) {
-    height: 70px;
+  @media (${devices.laptopL}) {
     display: none;
   }
 
-  @media (min-width: 1200px) and (max-width: 1399px) {
-    height: 90px;
-    width: 130px;
-    display: none;
-  }
-
-  @media (min-width: 1400px) {
-    height: 85px;
+  @media (${devices.desktop}) {
     display: none;
   }
 `;
@@ -146,10 +131,33 @@ export const HeadingStyle = styled.div`
   font-weight: bold;
   margin-left: -40px;
   margin-right: 5px;
-  font-size: 1rem !important;
 
-  @media (max-width: 767px) {
+  @media (${devices.mobileES}) {
+    font-size: 17px;
+    margin-right: 30px;
+    padding-right: 10px;
+  }
+
+  @media (${devices.mobileS}) {
+    font-size: 20px;
+    margin-right: 30px;
+    padding-right: 10px;
+  }
+
+  @media (${devices.mobileM}) {
     font-size: 25px;
+    margin-right: 30px;
+    padding-right: 10px;
+  }
+
+  @media (${devices.mobileL}) {
+    font-size: 28px;
+    margin-right: 30px;
+    padding-right: 10px;
+  }
+
+  @media (${devices.tablet}) {
+    font-size: 30px;
     margin-right: 30px;
     padding-right: 10px;
   }
