@@ -1,11 +1,4 @@
-import {
-  Wrapper,
-  Table,
-  Paragraph,
-  TableStyle,
-  HeadingStyle,
-  ImageTitle,
-} from "./style";
+import { Wrapper, Table, Paragraph, TableStyle } from "./style";
 import {
   yesBankAccountInfo,
   iciciBankAccountInfo,
@@ -13,14 +6,17 @@ import {
 } from "./constant";
 import { CopiedTableRow } from "./CopiedTableRow";
 import titleBaseImg from "../../assets/images/title-base.png";
+import { HeadingStyle, ImageTitle, TitleWrapper } from "../TitleBase/style";
 
 export const DonationPage = () => {
   return (
     <Wrapper>
-      <HeadingStyle>
-        <h1>Donation</h1>
-        <ImageTitle src={titleBaseImg} alt="Title Image" />
-      </HeadingStyle>
+      <TitleWrapper>
+        <HeadingStyle>
+          <h1>Donation</h1>
+          <ImageTitle src={titleBaseImg} alt="Title Image" />
+        </HeadingStyle>
+      </TitleWrapper>
       {bhagavadGita.map((paragraph) => (
         <Paragraph key={paragraph}>{paragraph}</Paragraph>
       ))}

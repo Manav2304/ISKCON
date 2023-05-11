@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import title from "../../assets/images/navbar-bg.png";
 import { Link } from "react-router-dom";
-import { devices } from "../../Pages/Home/style";
+import { devices } from "../../style";
 
 export const NavStyle = styled.nav`
   background-image: url(${title});
@@ -25,11 +25,7 @@ export const NavStyle = styled.nav`
   }
 
   @media (${devices.tablet}) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 90px;
-    padding: 0 20px;
+    display: none;
   }
 
   @media (${devices.laptop}) {
@@ -41,11 +37,8 @@ export const NavStyle = styled.nav`
   }
 
   @media (${devices.laptopL}) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 90px;
-    padding: 0 20px;
+    height: 105px !important;
+    width: 100% !important;
   }
 
   @media (${devices.desktop}) {
@@ -56,8 +49,11 @@ export const NavStyle = styled.nav`
 export const StyledLink = styled(Link)`
   color: #fff;
   text-decoration: none;
+  font-size: 1.2rem;
 
   &:hover {
+    background-color: transparent;
+    border: none;
     color: #fff;
   }
 `;
@@ -66,7 +62,7 @@ export const ImgStyle = styled.img`
   height: 70px;
 
   @media (${devices.mobileES}) {
-    height: 10px;
+    display: none;
   }
 
   @media (${devices.mobileS}) {
@@ -82,21 +78,23 @@ export const ImgStyle = styled.img`
   }
 
   @media (${devices.tablet}) {
-    display: flex;
-    height: 70px;
+    display: none;
   }
 
   @media (${devices.laptop}) {
-    height: 85px;
+    display: block;
+    height: 80px;
   }
 
   @media (${devices.laptopL}) {
+    display: block;
     height: 90px;
   }
 
   @media (${devices.desktop}) {
-    display: flex;
-    height: 100px;
+    display: block;
+    height: 100px !important;
+    width: 100% !important;
   }
 `;
 

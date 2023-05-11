@@ -15,18 +15,24 @@ export const schedules = [
 export const contactInfos = [
   {
     icon: "envelope",
-    text: "iskconinfovvn@gmail.com",
+    text: "mailto:iskconinfovvn@gmail.com",
   },
   {
     icon: "phone",
-    text: "9998407654",
+    text: "tel:+919998407654",
   },
   {
     icon: "phone",
-    text: "02692 230796",
+    text: "tel:02692 230796",
   },
   {
     icon: "map-marker-alt",
-    text: "Iskcon Road, Opp.B&B Polytechnic College, Mota Bazar, VV Nagar, Anand, Gujarat",
+    text: "map:Iskcon Road, Opp.B&B Polytechnic College, Mota Bazar, VV Nagar, Anand, Gujarat",
+    link: "https://goo.gl/maps/GgdBcgof6EsLNCQs5",
   },
 ];
+
+export const googleMapsLink =
+  "https://www.google.com/maps?q=ISKCON+Vallabh+Vidyanagar";
+
+export const emailLink = "mailto:iskconinfovvn@gmail.com";
