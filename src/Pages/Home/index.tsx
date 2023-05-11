@@ -1,22 +1,14 @@
 import React from "react";
 import titleBaseUrl from "../../assets/images/title-base.png";
 import { carouselImages, titleTiles, sections } from "./constant";
-import {
-  HeadingStyle,
-  ImageTitle,
-  TextStyle,
-  Image,
-  MainWrapper,
-} from "./style";
+import { HeadingStyle, ImageTitle, TextStyle, Image } from "./style";
 import { PageCarousel } from "./PageCarousel";
 import { GlobalCarousel } from "./GlobalCarousel";
 
 export const HomePage: React.FC = () => {
   return (
     <div>
-      {/* <MainWrapper> */}
       <GlobalCarousel images={carouselImages} />
-      {/* </MainWrapper> */}
       {titleTiles.map((titleTile) => (
         <div>
           <HeadingStyle>

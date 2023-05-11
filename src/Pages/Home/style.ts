@@ -396,39 +396,6 @@ export const Image = styled.img`
   }
 `;
 
-export const MainWrapper = styled.div`
-  @media (${devices.mobileES}) {
-    margin-top: 48px;
-  }
-
-  @media (${devices.mobileS}) {
-    margin-top: 48px;
-  }
-
-  @media (${devices.mobileM}) {
-    margin-top: 45px;
-  }
-
-  @media (${devices.mobileL}) {
-    margin-top: 48px;
-  }
-
-  @media (${devices.tablet}) {
-    margin-top: 70px;
-  }
-
-  @media (${devices.laptop}) {
-    margin-top: 70px;
-  }
-
-  @media (${devices.laptopL}) {
-    margin-top: 70px;
-  }
-
-  @media (${devices.desktop}) {
-    margin-top: 70px;
-  }
-`;
 export const Reviews = styled.div`
   width: 100%;
 
