@@ -202,22 +202,23 @@ export const FooterLogo = styled.img`
 
   @media (${devices.tablet}) {
     margin-top: 5px;
+    padding-left: 30px;
+    padding-bottom: 10px;
     width: 90% !important;
-    margin-left: 0;
     height: 95% !important;
   }
 
   @media (${devices.laptop}) {
     margin-top: -5px;
-    width: 250% !important;
-    margin-left: -120px;
-    height: 100% !important;
+    width: 300% !important;
+    margin-left: -180px;
+    height: 80% !important;
   }
 
   @media (${devices.laptopL}) {
     margin-top: -5px;
-    width: 250% !important;
-    margin-left: -160px;
+    width: 300% !important;
+    margin-left: -220px;
     height: 100% !important;
   }
 
@@ -262,6 +263,7 @@ export const ContactWrapper = styled.div`
     text-align: left;
     margin-left: 20px;
     padding-left: 40px;
+    padding-bottom: 50px;
     justify-content: justify;
   }
 
@@ -271,6 +273,7 @@ export const ContactWrapper = styled.div`
     padding-left: 40px;
     justify-content: left;
     margin-right: -100px;
+    padding-right: 40px;
   }
 
   @media (${devices.laptopL}) {
