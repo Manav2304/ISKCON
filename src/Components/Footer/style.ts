@@ -7,6 +7,7 @@ export const sizes = {
   mobileM: "425px",
   mobileL: "576px",
   tablet: "768px",
+  tabletL: "992px",
   laptop: "1024px",
   laptopL: "1440px",
   desktop: "2560px",
@@ -18,6 +19,7 @@ export const devices = {
   mobileM: `min-width: ${sizes.mobileM}`,
   mobileL: `min-width: ${sizes.mobileL}`,
   tablet: `min-width: ${sizes.tablet}`,
+  tabletL: `min-width: ${sizes.tabletL}`,
   laptop: `min-width: ${sizes.laptop}`,
   laptopL: `min-width: ${sizes.laptopL}`,
   desktop: `min-width: ${sizes.desktop}`,
@@ -53,6 +55,11 @@ export const ContactHeadingStyle = styled.div`
   @media (${devices.tablet}) {
     text-align: left;
     margin-left: 60px;
+  }
+
+  @media (${devices.tabletL}) {
+    text-align: left;
+    margin-left: 120px;
   }
 
   @media (${devices.laptop}) {
@@ -208,25 +215,34 @@ export const FooterLogo = styled.img`
     height: 95% !important;
   }
 
-  @media (${devices.laptop}) {
-    margin-top: -5px;
+  @media (${devices.tabletL}) {
+    margin-top: 5px;
+    height: 75% !important;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin-left: -170px;
     width: 300% !important;
-    margin-left: -180px;
-    height: 80% !important;
+  }
+
+  @media (${devices.laptop}) {
+    margin-top: 15px;
+    width: 300% !important;
+    margin-left: -175px;
+    height: 75% !important;
   }
 
   @media (${devices.laptopL}) {
-    margin-top: -5px;
+    margin-top: 15px;
     width: 300% !important;
-    margin-left: -220px;
-    height: 100% !important;
+    margin-left: -200px;
+    height: 85% !important;
   }
 
   @media (${devices.desktop}) {
-    margin-top: -5px;
+    margin-top: 15px;
     width: 250% !important;
-    margin-left: -170px;
-    height: 100% !important;
+    margin-left: -175px;
+    height: 85% !important;
   }
 `;
 
@@ -248,14 +264,14 @@ export const ContactWrapper = styled.div`
   @media (${devices.mobileM}) {
     justify-content: justify;
     text-align: left;
-    margin-left: 60px;
+    margin-left: 74px;
     padding-left: 40px;
   }
 
   @media (${devices.mobileL}) {
     justify-content: justify;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 120px;
     padding-left: 40px;
   }
 
@@ -290,6 +306,7 @@ export const ContactWrapper = styled.div`
     justify-content: justify;
   }
 `;
+
 export const CopyRights = styled.div`
   color: white;
 `;
