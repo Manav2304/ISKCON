@@ -205,10 +205,19 @@ export const FooterLogo = styled.img`
   @media (${devices.laptop}) {
     margin-top: 15px;
     width: 300% !important;
-    margin-left: -175px;
+    margin-left: -163px;
     padding-left: 0;
     padding-bottom: 0;
     height: 75% !important;
+  }
+
+  @media (${devices.laptopM}) {
+    margin-top: 15px;
+    width: 300% !important;
+    margin-left: -220px;
+    padding-left: 0;
+    padding-bottom: 0;
+    height: 80% !important;
   }
 
   @media (${devices.laptopL}) {
@@ -231,6 +240,7 @@ export const FooterLogo = styled.img`
 `;
 
 export const ContactWrapper = styled.div`
+  width: 100%;
   @media (${devices.mobileES}) {
     justify-content: justify;
     text-align: left;
@@ -266,6 +276,13 @@ export const ContactWrapper = styled.div`
     justify-content: justify;
   }
 
+  @media (${devices.tabletL}) {
+    text-align: left;
+    margin-left: 20px;
+    padding-left: 10px;
+    justify-content: justify;
+  }
+
   @media (${devices.laptop}) {
     text-align: left;
     margin-left: 40px;
@@ -289,7 +306,7 @@ export const ContactWrapper = styled.div`
     margin-left: 20px;
     padding-left: 30px;
     justify-content: justify;
-    margin-right: -100px;
+    margin-right: -500px;
     padding-right: 40px;
   }
 `;
