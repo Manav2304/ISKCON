@@ -206,6 +206,8 @@ export const FooterLogo = styled.img`
     margin-top: 15px;
     width: 300% !important;
     margin-left: -175px;
+    padding-left: 0;
+    padding-bottom: 0;
     height: 75% !important;
   }
 
@@ -213,12 +215,16 @@ export const FooterLogo = styled.img`
     margin-top: 15px;
     width: 300% !important;
     margin-left: -200px;
+    padding-left: 0;
+    padding-bottom: 0;
     height: 85% !important;
   }
 
   @media (${devices.desktop}) {
     margin-top: 15px;
     width: 250% !important;
+    padding-left: 0;
+    padding-bottom: 0;
     margin-left: -175px;
     height: 85% !important;
   }
@@ -256,8 +262,7 @@ export const ContactWrapper = styled.div`
   @media (${devices.tablet}) {
     text-align: left;
     margin-left: 20px;
-    padding-left: 40px;
-    padding-bottom: 50px;
+    padding-left: 10px;
     justify-content: justify;
   }
 
@@ -275,6 +280,8 @@ export const ContactWrapper = styled.div`
     margin-left: 80px;
     padding-left: 30px;
     justify-content: justify;
+    margin-right: -100px;
+    padding-right: 40px;
   }
 
   @media (${devices.desktop}) {
@@ -282,6 +289,8 @@ export const ContactWrapper = styled.div`
     margin-left: 20px;
     padding-left: 30px;
     justify-content: justify;
+    margin-right: -100px;
+    padding-right: 40px;
   }
 `;
 
