@@ -425,7 +425,7 @@ export const Reviews = styled.div`
   }
 
   @media (${devices.laptop}) {
-    margin-top: 73px;
+    margin-top: 123px;
     height: 440px;
   }
 

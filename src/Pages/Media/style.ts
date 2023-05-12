@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const ServiceWrapper = styled.div`
   padding-bottom: 50px;
-  
+
   @media screen and (max-width: 768px) {
     padding-bottom: 30px;
   }
