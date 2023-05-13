@@ -195,52 +195,53 @@ export const FooterLogo = styled.img`
 
   @media (${devices.tabletL}) {
     margin-top: 5px;
-    height: 75% !important;
+    height: 70% !important;
     padding-left: 0;
     padding-bottom: 0;
-    margin-left: -170px;
+    margin-left: -185px;
     width: 300% !important;
   }
 
   @media (${devices.laptop}) {
     margin-top: 15px;
     width: 300% !important;
-    margin-left: -163px;
+    margin-left: -170px;
     padding-left: 0;
     padding-bottom: 0;
-    height: 75% !important;
+    height: 65% !important;
   }
 
   @media (${devices.laptopM}) {
     margin-top: 15px;
-    width: 300% !important;
-    margin-left: -220px;
+    width: 275% !important;
+    margin-left: -205px;
     padding-left: 0;
     padding-bottom: 0;
-    height: 80% !important;
+    height: 70% !important;
   }
 
   @media (${devices.laptopL}) {
     margin-top: 15px;
-    width: 300% !important;
-    margin-left: -200px;
+    width: 270% !important;
+    margin-left: -195px;
     padding-left: 0;
     padding-bottom: 0;
-    height: 85% !important;
+    height: 70% !important;
   }
 
   @media (${devices.desktop}) {
     margin-top: 15px;
-    width: 250% !important;
+    width: 240% !important;
     padding-left: 0;
     padding-bottom: 0;
-    margin-left: -175px;
-    height: 85% !important;
+    margin-left: -180px;
+    height: 65% !important;
   }
 `;
 
 export const ContactWrapper = styled.div`
   width: 100%;
+
   @media (${devices.mobileES}) {
     justify-content: justify;
     text-align: left;
