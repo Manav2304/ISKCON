@@ -25,7 +25,7 @@ export const devices = {
 
 export const ServiceWrapper = styled.div`
   padding-bottom: 50px;
-  
+
   @media (${devices.mobileES}) {
     padding-top: 80px;
     padding-bottom: 30px;
@@ -63,7 +63,6 @@ export const ServiceWrapper = styled.div`
 
   @media (${devices.desktop}) {
     padding-top: 80px;
-
     padding-bottom: 50px;
   }
 `;
@@ -284,7 +283,6 @@ export const Reviews = styled.div`
 export const ImageCarousel = styled.img`
   width: 320px;
   height: 240px;
-
   object-fit: contain cover;
 
   @media (${devices.mobileES}) {
