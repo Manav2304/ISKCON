@@ -1,65 +1,111 @@
-import { MDBCol, MDBContainer, MDBFooter } from "mdb-react-ui-kit";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { devices } from "../../style";
 
-export const FooterLogoStyle = styled.div`
-  width: 500px;
-  align-content: center;
-  margin: 5px;
-  margin-top: 50px;
-  margin-right: -6px;
+export const HeadingStyle = styled.h6`
+  color: #fff;
+`;
 
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-    margin-left: -1px;
+export const ContactHeadingStyle = styled.div`
+  color: #fff;
+
+  @media (${devices.mobileES}) {
+    text-align: center;
+    margin-left: 0;
   }
 
-  @media only screen and (max-width: 1380px) and (min-width: 1340px) {
-    margin-left: 45px;
-    padding-left: 40px;
+  @media (${devices.mobileS}) {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  @media (${devices.mobileM}) {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  @media (${devices.mobileL}) {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  @media (${devices.tablet}) {
+    text-align: left;
+    margin-left: 60px;
+  }
+
+  @media (${devices.tabletL}) {
+    text-align: left;
+    margin-left: 120px;
+  }
+
+  @media (${devices.laptop}) {
+    text-align: left;
+    margin-left: 100px;
+  }
+
+  @media (${devices.laptopL}) {
+    text-align: left;
+    margin-left: 112px;
+  }
+
+  @media (${devices.desktop}) {
+    text-align: left;
+    margin-left: 60px;
   }
 `;
 
-export const Heading = styled.h6`
+export const TimeStyle = styled.div`
+  color: #fff;
   font-family: "Times New Roman", Times, serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 4px;
-  margin-left: 130px;
-  font-size: 20px;
-
-  @media only screen and (max-width: 768px) {
-    padding-right: 130px;
-    margin-top: -50px;
-    text-align: center;
-  }
-
-  @media only screen and (min-width: 769px) {
-    text-align: center;
-    margin-left: 30px;
-    padding-right: 50px;
-  }
-
-  @media only screen and (max-width: 480px) {
-    padding-right: 50px;
-    margin-left: 50px;
-  }
 `;
 
-export const ContactStyle = styled.div`
-  margin-top: 80px;
-  margin-left: 50px;
-  float: right;
+export const TermsTitle = styled(Link)`
+  color: #fff;
+  margin-top: 10px;
   font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  text-decoration-color: none;
 
-  @media only screen and (max-width: 768px) {
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-right: 20px;
+  &:hover {
+    text-decoration: none;
+    color: #fff;
   }
 
-  @media only screen and (min-width: 769px) {
-    text-align: center;
+  @media (${devices.mobileES}) {
+    font-size: 11px;
+    margin-top: 10px;
+  }
+
+  @media (${devices.mobileS}) {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+
+  @media (${devices.mobileM}) {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  @media (${devices.mobileL}) {
+    font-size: 23px;
+    margin-top: 10px;
+  }
+
+  @media (${devices.tablet}) {
+    font-size: 1.5rem;
+  }
+
+  @media (${devices.laptop}) {
+    font-size: 16px;
+  }
+
+  @media (${devices.laptopL}) {
+    font-size: 18px;
+  }
+
+  @media (${devices.desktop}) {
+    font-size: 25px;
   }
 `;
 
@@ -72,101 +118,23 @@ export const ContactLink = styled.a`
   }
 `;
 
-export const TermsTitle = styled(Link)`
-  color: #fff;
-  font-size: 18px;
-  margin-bottom: -15px;
-  margin-top: -15px;
-  font-family: "Times New Roman", Times, serif;
-  text-decoration: none;
-  text-decoration-color: none;
-
-  &:hover {
-    color: #ff007f;
-    text-decoration: underline;
-    text-decoration-color: #ffc0cb;
-  }
-
-  @media only screen and (max-width: 768px) {
-    font-size: 12px;
-  }
-`;
-
-export const CopyRights = styled.div`
-  color: #fff;
-  font-size: 18px;
-  margin-bottom: -15px;
-  margin-top: -15px;
-  font-family: "Times New Roman", Times, serif;
-  text-decoration: none;
-  text-decoration-color: none;
-
-  @media only screen and (max-width: 768px) {
-    font-size: 12px;
-  }
-`;
-
 export const BgColor = styled.div`
   background-color: #963;
-  color: #fff;
-`;
-
-export const TimeStyle = styled.div`
-  text-align: right;
-  color: #fff;
-  margin-top: 30px;
-  margin-right: 130px;
-  font-family: "Times New Roman", Times, serif;
-
-  @media only screen and (max-width: 768px) {
-    text-align: center;
-    margin-right: -2%;
-    margin-bottom: -40px;
-    margin-top: 20px;
-  }
-
-  @media only screen and (max-width: 1380px) and (min-width: 1340px) {
-    text-align: right;
-    margin-top: 20px;
-    margin-right: 20px;
-  }
-`;
-
-export const StyledMDBFooter = styled(MDBFooter)`
-  background-color: transparent;
-  text-align: center;
   opacity: 0.8;
-
-  @media (max-width: 1366px) {
-    padding: 0;
-    font-size: 0.8em;
-  }
-`;
-
-export const TermsContainer = styled.div`
-  background-color: #963;
-  padding: 10px;
+  color: #fff;
 `;
 
 export const TermsHeading = styled.h6`
   font-style: bold;
   text-align: center;
+  justify-content: center;
   color: #fff;
   display: inline-flex;
   font-family: "Times New Roman", Times, serif;
-
-  @media only screen and (max-width: 768px) {
-    margin-left: 5px;
-  }
-
-  @media only screen and (max-width: 1380px) and (min-width: 1340px) {
-    justify-content: center;
-    text-align: center;
-    margin-right: 20px;
-  }
+  width: 100%;
 `;
 
-export const PrivacyLink = styled.a`
+export const FooterLink = styled.a`
   color: #fff;
   text-decoration: none;
 
@@ -176,36 +144,174 @@ export const PrivacyLink = styled.a`
 `;
 
 export const ContactDiv = styled.div`
-  display: flex;
-  align-items: baseline;
-  margin-bottom: 10px;
   font-family: "Times New Roman", Times, serif;
-  margin-left: 50px;
-  padding-right: 50px;
 `;
 
 export const ContactIcon = styled.i`
-  margin-right: 4px;
+  color: #fff;
+  margin-right: 5px;
 `;
 
 export const ContactText = styled.span`
-  margin-left: 10px;
   text-align: left;
 `;
 
-export const TermsMDBContainer = styled(MDBContainer)`
+export const FooterLogo = styled.img`
+  @media (${devices.mobileES}) {
+    margin-top: 5px;
+    width: 100% !important;
+    margin-left: 0;
+    height: 100% !important;
+  }
+
+  @media (${devices.mobileS}) {
+    margin-top: 5px;
+    width: 100% !important;
+    margin-left: 0;
+    height: 100% !important;
+  }
+
+  @media (${devices.mobileM}) {
+    margin-top: 5px;
+    width: 100% !important;
+    margin-left: 0;
+    height: 100% !important;
+  }
+
+  @media (${devices.mobileL}) {
+    margin-top: 5px;
+    width: 100% !important;
+    margin-left: 0;
+    height: 100% !important;
+  }
+
+  @media (${devices.tablet}) {
+    margin-top: 5px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    width: 90% !important;
+    height: 95% !important;
+  }
+
+  @media (${devices.tabletL}) {
+    margin-top: 5px;
+    height: 70% !important;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin-left: -185px;
+    width: 300% !important;
+  }
+
+  @media (${devices.laptop}) {
+    margin-top: 15px;
+    width: 300% !important;
+    margin-left: -170px;
+    padding-left: 0;
+    padding-bottom: 0;
+    height: 65% !important;
+  }
+
+  @media (${devices.laptopM}) {
+    margin-top: 15px;
+    width: 275% !important;
+    margin-left: -205px;
+    padding-left: 0;
+    padding-bottom: 0;
+    height: 70% !important;
+  }
+
+  @media (${devices.laptopL}) {
+    margin-top: 15px;
+    width: 270% !important;
+    margin-left: -195px;
+    padding-left: 0;
+    padding-bottom: 0;
+    height: 70% !important;
+  }
+
+  @media (${devices.desktop}) {
+    margin-top: 15px;
+    width: 240% !important;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin-left: -180px;
+    height: 65% !important;
+  }
+`;
+
+export const ContactWrapper = styled.div`
   width: 100%;
-  justify-items: center;
-  text-align: center;
-  background-color: #963;
-  color: #fff;
+
+  @media (${devices.mobileES}) {
+    justify-content: justify;
+    text-align: left;
+    margin-left: 10px;
+    padding-left: 20px;
+  }
+
+  @media (${devices.mobileS}) {
+    justify-content: justify;
+    text-align: left;
+    margin-left: 10px;
+    padding-left: 40px;
+  }
+
+  @media (${devices.mobileM}) {
+    justify-content: justify;
+    text-align: left;
+    margin-left: 10px;
+    padding-left: 40px;
+  }
+
+  @media (${devices.mobileL}) {
+    justify-content: justify;
+    text-align: left;
+    margin-left: 120px;
+    padding-left: 40px;
+  }
+
+  @media (${devices.tablet}) {
+    text-align: left;
+    margin-left: 20px;
+    padding-left: 10px;
+    justify-content: justify;
+  }
+
+  @media (${devices.tabletL}) {
+    text-align: left;
+    margin-left: 20px;
+    padding-left: 10px;
+    justify-content: justify;
+  }
+
+  @media (${devices.laptop}) {
+    text-align: left;
+    margin-left: 40px;
+    padding-left: 40px;
+    justify-content: left;
+    margin-right: -100px;
+    padding-right: 40px;
+  }
+
+  @media (${devices.laptopL}) {
+    text-align: left;
+    margin-left: 80px;
+    padding-left: 30px;
+    justify-content: justify;
+    margin-right: -100px;
+    padding-right: 40px;
+  }
+
+  @media (${devices.desktop}) {
+    text-align: left;
+    margin-left: 20px;
+    padding-left: 30px;
+    justify-content: justify;
+    margin-right: -500px;
+    padding-right: 40px;
+  }
 `;
 
-export const ContactMDBCol = styled(MDBCol)`
-  align-content: center;
-`;
-
-export const TimeMDBCol = styled(MDBCol)`
-  align-content: center;
-  justify-content: center;
+export const CopyRights = styled.div`
+  color: white;
 `;
