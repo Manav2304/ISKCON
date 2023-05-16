@@ -40,7 +40,7 @@ export const NavigationBar = () => {
           <StyledLink to={routes.donation}>Donate</StyledLink>
           <StyledLink to={routes.festival}>Festival</StyledLink>
           <StyledLink to={routes.contact}>Contact</StyledLink>
-          <StyledLink to={routes.contact}>Blogs</StyledLink>
+          <StyledLink to={routes.blog}>Blogs</StyledLink>
         </div>
       </NavStyle>
     </>

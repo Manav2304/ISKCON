@@ -46,7 +46,6 @@ export const FestivalContainer = styled.div`
 export const FestivalImage = styled.img`
   width: 100%;
   height: 100px;
-  border: 3px solid #963;
 
   @media (${devices.mobileES}) {
     height: 250px;
