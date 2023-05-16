@@ -245,21 +245,21 @@ export const ContactWrapper = styled.div`
   @media (${devices.mobileES}) {
     justify-content: justify;
     text-align: left;
-    margin-left: 40px;
+    margin-left: 10px;
     padding-left: 20px;
   }
 
   @media (${devices.mobileS}) {
     justify-content: justify;
     text-align: left;
-    margin-left: 60px;
+    margin-left: 10px;
     padding-left: 40px;
   }
 
   @media (${devices.mobileM}) {
     justify-content: justify;
     text-align: left;
-    margin-left: 74px;
+    margin-left: 10px;
     padding-left: 40px;
   }
 
