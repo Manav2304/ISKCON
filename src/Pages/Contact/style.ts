@@ -59,38 +59,38 @@ export const BoxStyle = styled.div`
   @media (${devices.mobileES}) {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
-   }
+  }
 
-   @media (${devices.mobileS}) {
+  @media (${devices.mobileS}) {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
     align-items: center;
-   }
+  }
 
-   @media (${devices.mobileM}) {
+  @media (${devices.mobileM}) {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
-     }
+  }
 
   @media (${devices.mobileL}) {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-   }
+  }
 
-   @media (${devices.tablet}) {
+  @media (${devices.tablet}) {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    }
+  }
 
-   @media (${devices.laptop}) {
+  @media (${devices.laptop}) {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-   }
+  }
 
   @media (${devices.laptopL}) {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-   }
+  }
 `;
 
 export const BoxHeading = styled.h2`
