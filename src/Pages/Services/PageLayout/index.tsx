@@ -1,12 +1,7 @@
-import {
-  Heading,
-  ImageWrapper,
-  Paragraph,
-  TextWrapper,
-  TitleImage,
-} from "./style";
+import { Paragraph, TextWrapper } from "./style";
 import titlebBaseImage from "../../../assets/images/title-base.png";
-import { PageCarousel } from "../../Home/PageCarousel";
+import { PageCarousel } from "./PageCarousel";
+import { HeadingStyle, ImageTitle, TitleWrapper } from "../../TitleBase/style";
 
 interface ServiceDescriptionProps {
   title: string;
@@ -22,10 +17,12 @@ export const ServiceDescription: React.FC<ServiceDescriptionProps> = ({
   return (
     <div>
       <TextWrapper>
-        <Heading>{title}</Heading>
-        <ImageWrapper>
-          <TitleImage src={titlebBaseImage} alt="TitleBase" />
-        </ImageWrapper>
+        <TitleWrapper>
+          <HeadingStyle>
+            <h1>{title}</h1>
+            <ImageTitle src={titlebBaseImage} alt="Title Image" />
+          </HeadingStyle>
+        </TitleWrapper>
         <PageCarousel images={imageUrl} />
         <Paragraph>
           {content.map((paragraph) => (

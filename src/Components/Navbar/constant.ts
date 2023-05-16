@@ -3,7 +3,7 @@ import { routes } from "../../routes";
 export const socialMediaIcon = [
   {
     name: "Facebook",
-    href: "https://www.facebook.com/groups/254840054550446",
+    href: "https://www.facebook.com/iskconvvn/",
     icon: "facebook-f",
   },
   {
@@ -19,7 +19,7 @@ export const socialMediaIcon = [
   },
   {
     name: "Instagram",
-    href: "https://instagram.com/iskcon_vallabh_vidhyanagar",
+    href: "https://instagram.com/iskcon_vallabhvidyanagar?igshid=YmMyMTA2M2Y=",
     icon: "instagram",
   },
   {
@@ -28,12 +28,7 @@ export const socialMediaIcon = [
     icon: "youtube",
   },
 ];
-export const dropdownHomeInfo = [
-  { title: "History", path: "#" },
-  { title: "Founder", path: "#" },
-  { title: "Philosophy", path: "#" },
-  { title: "Goals", path: "#" },
-];
+
 export const festivalInfo = [{ title: "festival", path: routes.festival }];
 export const dropdownServicesInfo = [
   { title: "Life Time Membership", path: routes.lifeTimeMembership },

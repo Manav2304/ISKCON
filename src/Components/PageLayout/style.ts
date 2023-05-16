@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import { devices } from "../../style";
 
 export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px;
+  padding: 20px;
   color: #ad0d0d;
   font-family: "Times New Roman", Times, serif;
 `;
@@ -20,16 +21,36 @@ export const TitleImage = styled.img`
   width: 100%;
   height: auto;
 
-  @media screen and (min-width: 1024px) {
+  @media (${devices.mobileES}) {
+    max-width: 300px;
+  }
+
+  @media (${devices.mobileS}) {
+    max-width: 300px;
+  }
+
+  @media (${devices.mobileM}) {
+    max-width: 300px;
+  }
+
+  @media (${devices.mobileL}) {
+    max-width: 300px;
+  }
+
+  @media (${devices.tablet}) {
+    max-width: 300px;
+  }
+
+  @media (${devices.laptop}) {
+    max-width: 300px;
+  }
+
+  @media (${devices.laptopL}) {
     max-width: 700px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    max-width: 500px;
-  }
-
-  @media screen and (max-width: 767px) {
-    max-width: 300px;
+  @media (${devices.desktop}) {
+    max-width: 700px;
   }
 `;
 
@@ -39,7 +60,7 @@ export const Heading = styled.h1`
 `;
 
 export const Paragraph = styled.p`
-  font-size: 20px;
+  font-size: 1.2rem;
   line-height: 1.5;
   text-align: justify;
   padding: 50px;

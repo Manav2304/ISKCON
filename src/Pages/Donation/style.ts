@@ -4,11 +4,14 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 `;
 
 export const Table = styled.table`
   border-collapse: collapse;
+  border: 2px solid #7e5959;
   width: 100%;
 `;
 
@@ -18,7 +21,7 @@ export const TableColumn = styled.td`
 `;
 
 export const Paragraph = styled.div`
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: justify center;
   font-family: "Times New Roman", Times, serif;
   position: relative;
@@ -57,7 +60,7 @@ export const TableRow = styled.tr`
 `;
 
 export const TableCell = styled.td`
-  border: 1px solid #ddd;
+  border: 1px solid #7e5959;
   padding: 0.5rem;
   text-align: left;
 `;
@@ -83,46 +86,4 @@ export const CopyButton = styled.button<{ copied: boolean }>`
 
 export const TableStyle = styled.div`
   margin: 1px 50px 10px;
-`;
-
-export const HeadingStyle = styled.div`
-  font-family: "Times New Roman", Times, serif;
-  color: #7e5959;
-  text-align: center;
-  margin-top: 50px;
-
-  @media only screen and (max-width: 768px) {
-    font-size: 0.5rem;
-    padding-top: 20px;
-  }
-
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
-    font-size: 2rem;
-    padding: 40px;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    font-size: 1.5rem;
-    padding: 60px;
-  }
-`;
-
-export const ImageTitle = styled.img`
-  width: 100%;
-  max-width: 400px;
-
-  @media only screen and (max-width: 768px) {
-    width: 70%;
-    max-width: 400px;
-  }
-
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
-    width: 70%;
-    max-width: 300px;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    width: 100%;
-    max-width: 400px;
-  }
 `;
