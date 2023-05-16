@@ -1,29 +1,44 @@
 import styled from "styled-components";
+import { devices } from "../../style";
 
 export const FestivalContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 80px;
-  margin: 20px auto;
-  padding: 20px;
 
-  @media (max-width: 479px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100px;
-  }
-
-  @media (min-width: 480px) and (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100px;
-  }
-
-  @media only screen and (min-width: 1500px) and (max-width: 2000px) {
+  @media (${devices.mobileES}) {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  @media (${devices.mobileS}) {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  @media (${devices.mobileM}) {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  @media (${devices.mobileL}) {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  @media (${devices.tablet}) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (${devices.laptop}) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  @media (${devices.laptopL}) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 100px;
   }
 `;
@@ -31,30 +46,40 @@ export const FestivalContainer = styled.div`
 export const FestivalImage = styled.img`
   width: 100%;
   height: 100px;
-  object-fit: cover;
   border: 3px solid #963;
 
-  @media (max-width: 768px) {
-    width: 350px;
+  @media (${devices.mobileES}) {
     height: 250px;
   }
 
-  @media (min-width: 992px) {
-    width: 450px;
+  @media (${devices.mobileS}) {
+    height: 250px;
+  }
+
+  @media (${devices.mobileM}) {
+    height: 250px;
+  }
+
+  @media (${devices.mobileL}) {
+    height: 250px;
+  }
+
+  @media (${devices.tablet}) {
+    height: 250px;
+  }
+
+  @media (${devices.laptop}) {
     height: 300px;
-    gap: 20px;
   }
 
-  @media only screen and (min-width: 1900px) and (max-width: 2500px) {
+  @media (${devices.laptopL}) {
     width: 100%;
     height: 350px;
-    justify-content: center;
   }
 
-  @media only screen and (min-width: 1700px) and (max-width: 1900px) {
+  @media (${devices.desktop}) {
     width: 100%;
     height: 350px;
-    justify-content: center;
   }
 `;
 
@@ -73,12 +98,12 @@ export const Heading2 = styled.h2`
 
 export const Paragraph1 = styled.p`
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #7e5959;
 `;
 
 export const Description = styled.p`
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #7e5959;
   margin: 10px;
 `;
@@ -86,14 +111,9 @@ export const Description = styled.p`
 export const Button = styled.button`
   background-color: #7e5959;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
-
-  @media (max-width: 767px) {
-    font-size: 14px;
-    padding: 8px 16px;
-  }
 `;

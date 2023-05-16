@@ -21,7 +21,7 @@ export const TableColumn = styled.td`
 `;
 
 export const Paragraph = styled.div`
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: justify center;
   font-family: "Times New Roman", Times, serif;
   position: relative;
