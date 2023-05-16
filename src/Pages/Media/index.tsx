@@ -5,11 +5,11 @@ import {
   YouTubeWrapper,
   ServiceWrapper,
   LecturesWrapper,
+  opts,
 } from "./style";
 import {
   SringarTitle,
   darshanTitle,
-  opts,
   yesterdayDarshanImages,
   todayDarshanImages,
 } from "./constant";

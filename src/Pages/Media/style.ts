@@ -548,3 +548,42 @@ export const SpotifyWrapper = styled.iframe.attrs({
 export const LinkStyle = styled.a`
   text-decoration: none;
 `;
+
+export const opts = {
+  height: "auto",
+  width: "auto",
+
+  playerVars: {
+    autoplay: 0,
+  },
+};
+
+// Check screen size and set width and height accordingly
+if (window.matchMedia("(min-width: 2560px)").matches) {
+  opts.width = "1000px";
+  opts.height = "550px";
+} else if (window.matchMedia("(min-width: 1440px)").matches) {
+  opts.width = "600px";
+  opts.height = "400px";
+} else if (window.matchMedia("(min-width: 1024px)").matches) {
+  opts.width = "500px";
+  opts.height = "300px";
+} else if (window.matchMedia("(min-width: 768px)").matches) {
+  opts.width = "350px";
+  opts.height = "225px";
+} else if (window.matchMedia("(min-width: 425px)").matches) {
+  opts.width = "400px";
+  opts.height = "400px";
+} else if (window.matchMedia("(min-width: 375px)").matches) {
+  opts.width = "350px";
+  opts.height = "400px";
+} else if (window.matchMedia("(min-width: 320px)").matches) {
+  opts.width = "300px";
+  opts.height = "300px";
+} else if (window.matchMedia("(min-width: 100px)").matches) {
+  opts.width = "250px";
+  opts.height = "150px";
+} else {
+  opts.width = "500px";
+  opts.height = "300px";
+}
