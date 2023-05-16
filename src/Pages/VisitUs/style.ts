@@ -1,57 +1,15 @@
 import styled from "styled-components";
+import { devices } from "../../style";
 
 export const ServiceWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 80px;
-  margin-bottom: 20px;
 `;
 
 export const TextWrapper = styled.div`
   color: #ad0d0d;
   font-family: "Times New Roman", Times, serif;
-`;
-
-export const HeadingStyle = styled.div`
-  font-family: "Times New Roman", Times, serif;
-  color: #7e5959;
-  text-align: center;
-
-  @media only screen and (max-width: 768px) {
-    font-size: 1rem;
-    padding: 20px;
-  }
-
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
-    font-size: 1.5rem;
-    padding: 40px;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    font-size: 2rem;
-    padding: 50px;
-  }
-`;
-
-export const ImageTitle = styled.img`
-  width: 100%;
-  max-width: 400px;
-
-  @media only screen and (max-width: 768px) {
-    width: 80%;
-    max-width: 500px;
-  }
-
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
-    width: 70%;
-    max-width: 300px;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    width: 100%;
-    max-width: 400px;
-  }
 `;
 
 export const ImageSlide = styled.img`
@@ -61,14 +19,42 @@ export const ImageSlide = styled.img`
   margin-bottom: 20px;
   border-radius: 5px;
 
-  @media (max-width: 767px) {
+  @media (${devices.mobileES}) {
     width: 100%;
     height: auto;
   }
 
-  @media (min-width: 768px) and (max-width: 991px) {
-    width: 80%;
+  @media (${devices.mobileS}) {
+    width: 100%;
+    height: auto;
   }
+
+  @media (${devices.mobileM}) {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (${devices.mobileL}) {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (${devices.tablet}) {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (${devices.laptop}) {
+    width: 80%;
+    }
+
+  @media (${devices.laptopL}) {
+    width: 80%;
+    }
+
+  @media (${devices.desktop}) {
+    width: 80%; 
+   }
 `;
 
 export const Paragraph = styled.p`
@@ -77,17 +63,43 @@ export const Paragraph = styled.p`
   color: #ad0d0d;
   font-family: "Times New Roman", Times, serif;
 
-  @media only screen and (max-width: 768px) {
+  @media (${devices.mobileES}) {
     margin: 20px;
     font-size: 0.8rem;
   }
 
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+  @media (${devices.mobileS}) {
+    margin: 20px;
+    font-size: 0.8rem;
+  }
+
+  @media (${devices.mobileM}) {
+    margin: 20px;
+    font-size: 0.8rem;
+  }
+
+  @media (${devices.mobileL}) {
+    margin: 20px;
+    font-size: 0.8rem;
+  }
+
+  @media (${devices.tablet}) {
+    margin: 20px;
+    font-size: 0.8rem;
+  }
+
+  @media (${devices.laptop}) {
     margin: 25px;
     font-size: 1rem;
   }
 
-  @media only screen and (min-width: 1200px) {
+  @media (${devices.laptopL}) {
+    font-size: 1.2rem;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (${devices.desktop}) {
     font-size: 1.2rem;
     padding-left: 30px;
     padding-right: 30px;

@@ -27,8 +27,8 @@ export const Sidebar = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   const handleClose = () => {
-   setIsOpen(false);
-   setIsServicesOpen(false);
+    setIsOpen(false);
+    setIsServicesOpen(false);
   };
 
   const handleToggle = () => {
@@ -73,13 +73,13 @@ export const Sidebar = () => {
             </StyledLink>
             <hr />
             <SidebarAccordion
-            items={dropdownServicesInfo}
-            toggleTitle="Services"
-            handleClose={handleClose}
-            isOpen={isServicesOpen}
-            setIsOpen={setIsServicesOpen}
+              items={dropdownServicesInfo}
+              toggleTitle="Services"
+              handleClose={handleClose}
+              isOpen={isServicesOpen}
+              setIsOpen={setIsServicesOpen}
             />
-            <hr />  
+            <hr />
             <StyledLink to={routes.visitUs} onClick={handleClose}>
               Visit Us
             </StyledLink>
