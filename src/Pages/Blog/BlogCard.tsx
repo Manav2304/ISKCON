@@ -1,16 +1,16 @@
 import { useState } from "react";
 import {
-  FestivalImage,
-  FestivalInfo,
+  BlogImage,
+  BlogInfo,
   Heading2,
   Paragraph1,
   Description,
   Button,
 } from "./style";
-import { Festival } from "./types";
+import { Blog } from "./types";
 
 interface BlogCardProps {
-  festival: Festival;
+  festival: Blog;
 }
 
 export const BlogCard = ({ festival }: BlogCardProps) => {
@@ -22,13 +22,13 @@ export const BlogCard = ({ festival }: BlogCardProps) => {
 
   return (
     <div>
-      <FestivalImage src={festival.image} className="rounded bordered" />
-      <FestivalInfo>
+      <BlogImage src={festival.image} className="rounded bordered" />
+      <BlogInfo>
         <Heading2>
           <h2>{festival.name}</h2>
         </Heading2>
         <Paragraph1>
-          <p>{festival.date}</p>
+          <p>{festival.authority}</p>
         </Paragraph1>
         <Description>
           {isSelected
@@ -38,7 +38,7 @@ export const BlogCard = ({ festival }: BlogCardProps) => {
         <Button onClick={toggleSelected}>
           {isSelected ? "Read less" : "Read more"}
         </Button>
-      </FestivalInfo>
+      </BlogInfo>
     </div>
   );
 };

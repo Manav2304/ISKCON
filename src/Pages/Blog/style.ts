@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { devices } from "../../style";
 
-export const FestivalContainer = styled.div`
+export const BlogContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 
@@ -43,46 +43,46 @@ export const FestivalContainer = styled.div`
   }
 `;
 
-export const FestivalImage = styled.img`
+export const BlogImage = styled.img`
   width: 100%;
   height: 100px;
 
   @media (${devices.mobileES}) {
-    height: 250px;
+    height: 150px;
   }
 
   @media (${devices.mobileS}) {
-    height: 250px;
+    height: 190px;
   }
 
   @media (${devices.mobileM}) {
-    height: 250px;
+    height: 190px;
   }
 
   @media (${devices.mobileL}) {
-    height: 250px;
+    height: 190px;
   }
 
   @media (${devices.tablet}) {
-    height: 250px;
+    height: 190px;
   }
 
   @media (${devices.laptop}) {
-    height: 300px;
+    height: 220px;
   }
 
   @media (${devices.laptopL}) {
     width: 100%;
-    height: 350px;
+    height: 300px;
   }
 
   @media (${devices.desktop}) {
     width: 100%;
-    height: 350px;
+    height: 70%;
   }
 `;
 
-export const FestivalInfo = styled.div`
+export const BlogInfo = styled.div`
   background-color: transparent;
   padding: 10px;
   text-align: center;

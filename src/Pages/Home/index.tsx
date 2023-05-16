@@ -1,9 +1,18 @@
 import React from "react";
 import titleBaseUrl from "../../assets/images/title-base.png";
-import { carouselImages, titleTiles, sections } from "./constant";
-import { HeadingStyle, ImageTitle, TextStyle, Image } from "./style";
+import { carouselImages, titleTiles, sections, blog } from "./constant";
+import {
+  HeadingStyle,
+  ImageTitle,
+  TextStyle,
+  Image,
+  BlogContainer,
+} from "./style";
 import { PageCarousel } from "./PageCarousel";
 import { GlobalCarousel } from "./GlobalCarousel";
+import { TitleWrapper } from "../TitleBase/style";
+import { Blog } from "../Blog/types";
+import { BlogCard } from "../Blog/BlogCard";
 
 export const HomePage: React.FC = () => {
   return (
@@ -41,6 +50,17 @@ export const HomePage: React.FC = () => {
           </TextStyle>
         </div>
       ))}
+      <TitleWrapper>
+        <HeadingStyle>
+          <h1>Blog</h1>
+          <ImageTitle src={titleBaseUrl} alt="Title Image" />
+        </HeadingStyle>
+      </TitleWrapper>
+      <BlogContainer>
+        {blog.map((blog: Blog) => (
+          <BlogCard key={blog.name} festival={blog} />
+        ))}
+      </BlogContainer>
     </div>
   );
 };

@@ -1,6 +1,6 @@
-export interface Festival {
+export interface Blog {
   name: string;
-  date: string;
+  authority: string;
   description: string;
   image: string;
 }
