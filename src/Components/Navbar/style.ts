@@ -91,7 +91,7 @@ export const ImgStyle = styled.img`
 
   @media (${devices.laptop}) {
     height: 85px;
-    margin-left: -10px;
+    margin-left: -40px;
   }
 
   @media (${devices.laptopL}) {
