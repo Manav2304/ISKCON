@@ -15,7 +15,6 @@ export const TransparentDropdown = styled.div`
     color: #fff;
     background: transparent;
     border: none;
-    padding: 0;
   }
 
   .dropdown-item {
