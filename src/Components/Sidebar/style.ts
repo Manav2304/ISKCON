@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import title from "../../assets/images/navbar-bg.jpg";
+import title from "../../assets/images/navbar-bg.png";
 import { Accordion, AccordionButton } from "react-bootstrap";
 import ArrowIcon from "../../assets/images/arrow-down.png";
 import { devices } from "../../style";
 
 export const SidebarStyle = styled.div<{ isOpen: boolean }>`
   background-image: url(${title});
-  background-size: cover;
+  background-size: repeat;
   width: 300px;
   height: 100%;
   position: fixed;
@@ -31,7 +31,7 @@ export const nav = styled.nav`
 
 export const NavStyle = styled.nav`
   background-image: url(${title});
-  background-size: cover;
+  background-size: repeat;
   margin-top: 0;
   display: block;
   align-items: center;
@@ -43,16 +43,16 @@ export const NavStyle = styled.nav`
 `;
 
 export const ToggleButton = styled.button`
-    display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    z-index: 1000;
-    font-size: 30px;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 30px;
 `;
 
 export const StyledLink = styled(Link)`
@@ -106,7 +106,7 @@ export const ImgStyle = styled.img`
   }
 
   @media (${devices.tablet}) {
-   height: 60px;
+    height: 60px;
     margin-left: -20px;
     margin-right: 5px;
     display: block;
@@ -205,7 +205,7 @@ export const AccordionItemButton = styled(AccordionButton)`
     background-image: url(${ArrowIcon});
     background-repeat: no-repeat;
     background-size: 20px;
-    transition: transform .2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
   }
 `;
 
