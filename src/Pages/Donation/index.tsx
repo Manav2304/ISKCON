@@ -16,8 +16,6 @@ import {
   NameInput,
 } from "./style";
 import { ADOPT_A_COW, ANNA_DAAN, FEED_COWS, VAISHNAV_BHOJAN } from "./constant";
-import { Link, useNavigate } from "react-router-dom";
-import { routes } from "../../routes";
 
 type Donation = {
   id: number;
