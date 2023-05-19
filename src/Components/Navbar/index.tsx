@@ -16,7 +16,7 @@ export const NavigationBar = () => {
   return (
     <>
       <MarqueeWrapper pauseOnHover={true}>
-        The official website of the international Society for krishna
+        The Official Website Of The International Society for Krishna
         Consiousness (ISKCON).
       </MarqueeWrapper>
       <div className="container">
