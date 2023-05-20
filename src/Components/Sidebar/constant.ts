@@ -10,3 +10,15 @@ export const dropdownServicesInfo = [
   { name: "Deity Worship", url: routes.deityWorship },
   { name: "Book Distribution", url: routes.bookDistribution },
 ];
+
+export const dropdownDonationInfo = [
+  { name: "Annna Daan", url: routes.annaDaan },
+  { name: "Ekadasi", url: routes.ekadasi },
+  { name: "Gaura Purnima", url: routes.gauraPurnima },
+  { name: "Gau Seva", url: routes.gauSeva },
+  { name: "HariNaam Kirtan Seva", url: routes.hariNaamKirtanSeva },
+  { name: "Vaishnav Bhojan", url: routes.vaishnavBhojan },
+  { name: "Naivaidyan Seva", url: routes.naivaidyamSeva },
+  { name: "Vigarh Seva", url: routes.vigarhSeva },
+];
+

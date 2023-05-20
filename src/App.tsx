@@ -4,7 +4,6 @@ import { Media } from "./Pages/Media";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { NavigationBar } from "./Components/Navbar";
 import { HomePage } from "./Pages/Home";
-import { DonationPage } from "./Pages/Donation";
 import { Contact } from "./Pages/Contact";
 import { routes } from "./routes";
 import { FestivalPage } from "./Pages/Festival";
@@ -33,6 +32,7 @@ import { HariNaamKirtanSeva } from "./Pages/DonationPages/HariNaamKirtanSeva";
 import { NaivaidyamSeva } from "./Pages/DonationPages/NaivaidyamSeva";
 import { VaishnavBhojan } from "./Pages/DonationPages/VaishnavBhojan";
 import { VigrahSeva } from "./Pages/DonationPages/VigrahSeva";
+import { Donation } from "./Pages/DonationPages/Donation";
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -44,7 +44,6 @@ export const App: React.FunctionComponent = () => {
         <Routes>
           <Route caseSensitive path={routes.home} element={<HomePage />} />
           <Route caseSensitive path={routes.visitUs} element={<VisitUs />} />
-
           <Route
             caseSensitive
             path={routes.festival}
@@ -52,11 +51,7 @@ export const App: React.FunctionComponent = () => {
           />
           <Route caseSensitive path={routes.media} element={<Media />} />
           <Route caseSensitive path={routes.contact} element={<Contact />} />
-          <Route
-            caseSensitive
-            path={routes.donation}
-            element={<DonationPage />}
-          />
+          <Route caseSensitive path={routes.donation} element={<Donation />} />
           <Route
             caseSensitive
             path={routes.bookDistribution}
