@@ -35,7 +35,7 @@ export const Payment: React.FC = () => {
   //   navigate("./Form");
   // };
   const [name, setName] = useState("");
-  const [amount, setAmount] = useState<number>(0);
+  const [, setAmount] = useState<number>(0);
 
   const handlePaymentSuccess = async (response: any): Promise<void> => {
     try {
@@ -71,7 +71,6 @@ export const Payment: React.FC = () => {
   };
 
   const showRazorpay = async (): Promise<void> => {
-    const res = await loadScript();
 
     const bodyData = new FormData();
     bodyData.append("totalDonationAmount", totalDonationAmount.toString());
@@ -120,20 +119,6 @@ export const Payment: React.FC = () => {
     event: React.ChangeEvent<HTMLInputElement>,
   ) => {
     setCustomAmount(Number(event.target.value));
-  };
-
-  const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setName(event.target.value);
-  };
-
-  const handleMobileNumberChange = (
-    event: React.ChangeEvent<HTMLInputElement>,
-  ) => {
-    setMobileNumber(event.target.value);
-  };
-
-  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setEmail(event.target.value);
   };
 
   const totalDonationAmount = selectedDonations.reduce(

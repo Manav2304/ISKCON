@@ -43,7 +43,7 @@ export const NavigationBar = () => {
           </StyledLink>
           <PageDropdown
           items={dropdownDonationPagesInfo}
-          toggleTitle="DonationPages"
+          toggleTitle="Donation"
         />
           <StyledLink to={routes.festival}>Festival</StyledLink>
           <StyledLink to={routes.contact}>Contact</StyledLink>
