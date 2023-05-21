@@ -22,8 +22,8 @@ export const Payment: React.FC = () => {
   const [selectedDonations, setSelectedDonations] = useState<Donation[]>([]);
   const [customAmount, setCustomAmount] = useState<number>(0);
   // const [name, setName] = useState<string>("");
-  const [mobileNumber, setMobileNumber] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
+  const [mobileNumber] = useState<string>("");
+  const [email] = useState<string>("");
 
   // const navigate = useNavigate();
 
@@ -51,7 +51,7 @@ export const Payment: React.FC = () => {
           "Content-Type": "application/json",
         },
       })
-        .then((res) => {
+        .then(() => {
           console.log("Everything is OK!");
           setName("");
           setAmount(0);
@@ -62,12 +62,6 @@ export const Payment: React.FC = () => {
     } catch (error) {
       console.error(error);
     }
-  };
-
-  const loadScript = (): void => {
-    const script = document.createElement("script");
-    script.src = "https://checkout.razorpay.com/v1/checkout.js";
-    document.body.appendChild(script);
   };
 
   const showRazorpay = async (): Promise<void> => {
