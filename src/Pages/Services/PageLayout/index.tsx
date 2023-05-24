@@ -35,7 +35,7 @@ export const ServiceDescription: React.FC<ServiceDescriptionProps> = ({
           ))}
           {contactNumber.map((contact) => (
             <React.Fragment key={contact.id}>
-              <ContactLink href={`tel=${contact.number}`}>
+              <ContactLink href={`tel:${contact.number}`}>
                 {contact.number}
               </ContactLink>
               <br />
