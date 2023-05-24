@@ -1,6 +1,6 @@
-import radhaGiridhariji from "../../assets/images/welcome.jpg";
+import radhaGiridhariji from "../../assets/images/radhaGiridhariji.png";
 import founderImage from "../../assets/images/founder.png";
-import chantImage from "../../assets/images/chant.jpg";
+import chantImage from "../../assets/images/chant.png";
 import krishnaImage from "../../assets/images/krishna.jpg";
 import history1Image from "../../assets/images/history-1.jpg";
 import history2Image from "../../assets/images/history-2.jpg";
@@ -13,7 +13,7 @@ import about2Image from "../../assets/images/about2.jpg";
 import about3Image from "../../assets/images/about3.jpg";
 
 export const aboutUs = [
-  "Welcome to Sri Sri Radha Giridhariji Temple, dedicated to the worship of Lord Krishna and the promotion of spiritual awareness among people. His Divine Grace A. C. Bhaktivedanta Swami Prabhupada founded the International Society of Krishna Consciousness (ISKCON), also known as the Hare Krishna Movement, in 1966. ISKCON is a worldwide organisation of devotees of Lord Krishna, the Supreme Personality of Godhead, with 10,000 temple devotees and 250,000 congregational devotees as members. Over the course of four decades, ISKCON has expanded to include over 350 temples, 60 rural communities, 50 schools, and 60 restaurants. One of the primary goals of ISKCON is to promote societal well-being by teaching the science of Krishna consciousness as taught in the Bhagavad-Gita and other timeless Vedic scriptures.",
+  "Welcome to Sri Sri Radha Giridhariji Temple, dedicated to the worship of Lord Krishna and the promotion of spiritual awareness among people. His Divine Grace A.C.Bhaktivedanta Swami Prabhupada founded the International Society of Krishna Consciousness (ISKCON), also known as the Hare Krishna Movement, in 1966. ISKCON is a worldwide organisation of devotees of Lord Krishna, the Supreme Personality of Godhead, with 10,000 temple devotees and 250,000 congregational devotees as members. Over the course of four decades, ISKCON has expanded to include over 350 temples, 60 rural communities, 50 schools, and 60 restaurants. One of the primary goals of ISKCON is to promote societal well-being by teaching the science of Krishna consciousness as taught in the Bhagavad-Gita and other timeless Vedic scriptures.",
   "Our mission is to spread the teachings of Lord Krishna and the Vaishnava tradition to all those who seek spiritual knowledge and enlightenment. We believe that the path of devotion to Lord Krishna is the key to achieving inner peace and happiness in life.",
   "We offer a wide range of religious and spiritual activities for visitors to participate in, including kirtans, bhajans, and discourses on the teachings of Lord Krishna. Our programs are designed to help people connect with their inner selves and develop a deeper understanding of the spiritual world.",
   "Our temple is located in the town of Vallabh Vidya Nagar in the Anand district of the Indian state of Gujarat.",
@@ -22,7 +22,7 @@ export const aboutUs = [
 export const histories = [
   "International Society for Krishna Consciousness), also known as the Hare Krishna movement, is a worldwide spiritual organization that was founded in 1966 by A.C. Bhaktivedanta Swami Prabhupada. The movement is based on the teachings of the Bhagavad-gita and the Srimad Bhagavatam, two ancient Hindu scriptures that describe the philosophy of Krishna consciousness.",
   "The roots of ISKCON can be traced back to the early 20th century, when a young boy named Abhay Charan De (later known as A.C. Bhaktivedanta Swami Prabhupada) was born in Calcutta, India. Abhay Charan De was deeply influenced by his spiritual teacher, Bhaktisiddhanta Sarasvati Thakura, who urged him to spread the teachings of Lord Krishna to the Western world.",
-  "In 1965, at the age of 70, A.C. Bhaktivedanta Swami Prabhupada set sail for New York City with only a few dollars in his pocket and a crate of books containing his translations and commentaries on the Bhagavad-gita. He arrived in America alone and without any contacts or resources, but he was determined to fulfill his spiritual master's wishes.",
+  "In 1965, at the age of 70, A.C.Bhaktivedanta Swami Prabhupada set sail for New York City with only a few dollars in his pocket and a crate of books containing his translations and commentaries on the Bhagavad-gita. He arrived in America alone and without any contacts or resources, but he was determined to fulfill his spiritual master's wishes.",
   "After several months of struggle and hardship, A.C. Bhaktivedanta Swami Prabhupada established the first ISKCON temple in New York City in 1966. The movement quickly gained popularity among young people who were seeking an alternative to the materialistic culture of the 1960s.",
   "By the early 1970s, ISKCON had spread to other parts of the world, including Europe, Australia, and South America. The movement's emphasis on vegetarianism, meditation, and devotion to Lord Krishna resonated with people from all walks of life, and ISKCON grew into a global spiritual community.",
   "Over the years, ISKCON movement has made significant contributions to the fields of spirituality, vegetarianism, and sustainable living.",
@@ -54,7 +54,6 @@ export const founders = [
   "Srila A.C. Bhaktivedanta Swami Prabhupada was a spiritual master, a founder-acharya of the International Society for Krishna Consciousness (ISKCON), and a profound scholar of the Vedic scriptures. Born Abhay Charan De in Calcutta, India, in 1896, and spent his early life studying the Vedic scriptures and practicing devotional service to Lord Krishna.",
   "In 1965, at the age of 69, Srila Prabhupada boarded a cargo ship bound for New York City with only a few belongings and a burning desire to spread the teachings of Lord Krishna to the Western world, as per the instructions of his spiritual master Srila Bhaktisiddhanta Saraswati Goswami Maharaj Prabhupada. Despite numerous obstacles and setbacks, he persevered, living in poverty and facing countless challenges as he worked tirelessly to establish the first ISKCON temple in New York City.",
   "Over the next 11 years, Srila Prabhupada traveled extensively, establishing temples, ashrams, and centers around the world and inspiring countless individuals to embrace the path of bhakti-yoga. His teachings on love, compassion, and devotion to God continue to resonate with people of all backgrounds, and his legacy has touched the lives of millions.",
-  "Srila Prabhupada's contributions to the world of spirituality and religion are immeasurable. Through his translations and commentaries on the Bhagavad-gita and Srimad Bhagavatam, he has provided a profound understanding of the ancient wisdom of the Vedic scriptures. His emphasis on the importance of devotional service and compassion for all living beings has inspired countless individuals to embrace a life of spiritual practice and service to others.",
   "Srila Prabhupada's contributions to the world of spirituality and religion are immeasurable. Through his translations and commentaries on the Bhagavad-gita and Srimad Bhagavatam, he has provided a profound understanding of the ancient wisdom of the Vedic scriptures. His emphasis on the importance of devotional service and compassion for all living beings has inspired countless individuals to embrace a life of spiritual practice and service to others.",
   "Srila Prabhupada's teachings and example continue to inspire new generations of seekers and spiritual aspirants, and his legacy lives on through the vibrant and growing ISKCON movement that he founded. His dedication, wisdom, and unwavering commitment to the path of Krishna consciousness remain an inspiration to all who seek the truth and meaning of life.",
   "Srila Prabhupada Chronology",
@@ -93,6 +92,7 @@ export const carouselImages = [
     image: krishnaImage,
   },
 ];
+
 export const historyImages = [
   {
     id: 1,
@@ -107,6 +107,7 @@ export const historyImages = [
     image: history3Image,
   },
 ];
+
 export const aboutImages = [
   {
     id: 1,
@@ -115,21 +116,23 @@ export const aboutImages = [
   { id: 2, image: about2Image },
   { id: 3, image: about3Image },
 ];
+
 export const titleTiles = [
   {
-    title: "ABOUT US",
+    title: "About Us",
     images: aboutImages,
     paragraphs: aboutUs,
   },
   {
-    title: "HISTORY",
+    title: "History",
     images: historyImages,
     paragraphs: histories,
   },
 ];
+
 export const sections = [
   {
-    title: "Goals of ISKCON",
+    title: "Goals of Iskcon",
     image: goal,
     paragraphs: goals,
   },
