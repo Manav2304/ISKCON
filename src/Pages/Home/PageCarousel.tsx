@@ -22,7 +22,7 @@ export const PageCarousel: React.FC<PageCarouselProps> = ({ images }) => {
     >
       {images.map((image) => (
         <div key={image.id}>
-          <img src={image.image} alt={`Carousel Image ${image.id}`} />
+          <img src={image.image} alt="#" />
         </div>
       ))}
     </StyledPageCarouselWrapper>

@@ -13,7 +13,6 @@ interface GlobalCarouselProps {
 
 export const GlobalCarousel: React.FC<GlobalCarouselProps> = ({ images }) => {
   return (
-
     <CarouselWrapper
       showArrows={true}
       showThumbs={false}
@@ -21,13 +20,11 @@ export const GlobalCarousel: React.FC<GlobalCarouselProps> = ({ images }) => {
       interval={3000}
       infiniteLoop={true}
     >
-      {/* <Carousel > */}
       {images.map((image) => (
         <div key={image.id}>
-          <img src={image.image} />
+          <img src={image.image} alt="#" />
         </div>
       ))}
-      {/* </Carousel> */}
     </CarouselWrapper>
   );
 };
