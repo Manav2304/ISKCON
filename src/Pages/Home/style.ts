@@ -1,214 +1,6 @@
-import { Carousel } from "react-bootstrap";
+import { Carousel } from "react-responsive-carousel";
 import styled from "styled-components";
 import { devices } from "../../style";
-
-export const PageImageCarousel = styled.img`
-  width: 100%;
-
-  @media (${devices.mobileES}) {
-    height: 130px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  @media (${devices.mobileS}) {
-    height: 130px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  @media (${devices.mobileM}) {
-    height: 150px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  @media (${devices.mobileL}) {
-    height: 180px;
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-
-  @media (${devices.tablet}) {
-    height: 320px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  @media (${devices.laptop}) {
-    height: 480px;
-    padding-left: 115px;
-    padding-right: 115px;
-  }
-
-  @media (${devices.laptopL}) {
-    height: 580px;
-  }
-
-  @media (${devices.desktop}) {
-    height: 1080px;
-  }
-`;
-
-export const PageStyleCarousel = styled(Carousel)`
-  z-index: 0;
-
-  @media (${devices.mobileES}) {
-    .carousel-control-prev-icon {
-      margin-left: 20px;
-      height: 20px;
-      width: 20px;
-    }
-
-    .carousel-control-next-icon {
-      height: 20px;
-      width: 20px;
-      margin-right: 20px;
-    }
-
-    .carousel-indicators {
-      opacity: 0;
-    }
-  }
-
-  @media (${devices.mobileS}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 20px;
-      width: 20px;
-    }
-
-    .carousel-indicators {
-      opacity: 0;
-    }
-  }
-
-  @media (${devices.mobileM}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 20px;
-      width: 20px;
-    }
-
-    .carousel-indicators {
-      opacity: 0;
-    }
-  }
-
-  @media (${devices.mobileL}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 20px;
-      width: 20px;
-    }
-
-    .carousel-indicators {
-      opacity: 0;
-    }
-  }
-
-  @media (${devices.tablet}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 40px;
-      width: 40px;
-      opacity: 0.9;
-    }
-
-    .carousel-indicators {
-      opacity: 0.9;
-    }
-  }
-
-  @media (${devices.laptop}) {
-    .carousel-control-prev-icon {
-      height: 40px;
-      width: 40px;
-      opacity: 0.9;
-      margin-left: 90px;
-    }
-
-    .carousel-control-next-icon {
-      height: 40px;
-      width: 40px;
-      opacity: 0.9;
-      margin-right: 90px;
-    }
-
-    .carousel-indicators {
-      opacity: 0.9;
-    }
-  }
-
-  @media (${devices.laptopL}) {
-    .carousel-control-prev-icon {
-      margin-left: 100px;
-      height: 40px;
-      width: 40px;
-      opacity: 0.9;
-      padding: 10px;
-    }
-
-    .carousel-control-next-icon {
-      height: 40px;
-      width: 40px;
-      opacity: 0.9;
-      padding: 10px;
-      margin-right: 100px;
-    }
-
-    .carousel-indicators {
-      opacity: 0.9;
-    }
-  }
-
-  @media (${devices.desktop}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 60px;
-      width: 60px;
-      opacity: 0.9;
-    }
-
-    .carousel-indicators {
-      opacity: 0.9;
-    }
-  }
-`;
-
-export const PageReviews = styled.div`
-  @media (${devices.mobileES}) {
-    margin-top: 5px;
-  }
-
-  @media (${devices.mobileS}) {
-    margin-top: 5px;
-  }
-
-  @media (${devices.mobileM}) {
-    margin-top: 5px;
-  }
-
-  @media (${devices.mobileL}) {
-    margin-top: 5px;
-  }
-
-  @media (${devices.tablet}) {
-    margin-top: 7px;
-  }
-
-  @media (${devices.laptop}) {
-    margin-top: 7px;
-  }
-
-  @media (${devices.laptopL}) {
-    margin-top: 9px;
-  }
-
-  @media (${devices.desktop}) {
-    margin-top: 9px;
-  }
-`;
 
 export const TextStyle = styled.div`
   text-align: justify;
@@ -396,186 +188,128 @@ export const Image = styled.img`
   }
 `;
 
-export const Reviews = styled.div`
-  width: 100%;
+export const CarouselWrapper = styled(Carousel)`
+  .carousel-status {
+    opacity: 0;
+  }
+
+  .control-dots {
+    opacity: 0;
+  }
 
   @media (${devices.mobileES}) {
     margin-top: 47px;
-    height: 161px;
   }
 
   @media (${devices.mobileS}) {
-    height: 161px;
     margin-top: 47px;
   }
 
   @media (${devices.mobileM}) {
-    height: 183px;
     margin-top: 47px;
   }
 
   @media (${devices.mobileL}) {
-    height: 248px;
     margin-top: 47px;
   }
 
   @media (${devices.tablet}) {
     margin-top: 47px;
-    height: 330px;
   }
 
   @media (${devices.laptop}) {
     margin-top: 123px;
-    height: 440px;
   }
 
   @media (${devices.laptopL}) {
     margin-top: 75px;
-    height: 619px;
   }
 
   @media (${devices.desktop}) {
-    height: 1101px;
+    margin-top: 75px;
   }
 `;
 
-export const ImageCarousel = styled.img`
-  width: 100%;
+export const PageCarouselWrapper = styled(Carousel)`
+  .carousel-status {
+    opacity: 0;
+  }
+
+  .control-dots {
+    opacity: 0;
+  }
 
   @media (${devices.mobileES}) {
-    height: 161px;
+    margin-top: 5px;
   }
 
   @media (${devices.mobileS}) {
-    height: 161px;
+    margin-top: 5px;
   }
 
   @media (${devices.mobileM}) {
-    height: 183px;
+    margin-top: 5px;
   }
 
   @media (${devices.mobileL}) {
-    height: 248px;
+    margin-top: 5px;
   }
 
   @media (${devices.tablet}) {
-    height: 330px;
+    margin-top: 7px;
   }
 
   @media (${devices.laptop}) {
-    height: 440px;
+    margin-top: 7px;
   }
 
   @media (${devices.laptopL}) {
-    height: 619px;
+    margin-top: 9px;
   }
 
   @media (${devices.desktop}) {
-    height: 1101px;
+    margin-top: 9px;
   }
 `;
-/*Used class name for handle the size of icon*/
-export const StyleCarousel = styled(Carousel)`
-  z-index: 0;
 
+export const StyledPageCarouselWrapper = styled(PageCarouselWrapper)`
   @media (${devices.mobileES}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 20px;
-      width: 20px;
-    }
-
-    .carousel-indicators {
-      opacity: 0;
-    }
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media (${devices.mobileS}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 20px;
-      width: 20px;
-    }
-
-    .carousel-indicators {
-      opacity: 0;
-    }
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media (${devices.mobileM}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 20px;
-      width: 20px;
-    }
-
-    .carousel-indicators {
-      opacity: 0;
-    }
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (${devices.mobileL}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 20px;
-      width: 20px;
-    }
-
-    .carousel-indicators {
-      opacity: 0;
-    }
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   @media (${devices.tablet}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 40px;
-      width: 40px;
-      opacity: 0.9;
-    }
-
-    .carousel-indicators {
-      opacity: 0.9;
-    }
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   @media (${devices.laptop}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 40px;
-      width: 100%;
-      opacity: 0.9;
-    }
-
-    .carousel-indicators {
-      margin-top: 400px;
-      opacity: 0.9;
-    }
+    padding-left: 115px;
+    padding-right: 115px;
   }
 
   @media (${devices.laptopL}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 40px;
-      width: 40px;
-      opacity: 0.9;
-    }
-
-    .carousel-indicators {
-      opacity: 0.9;
-    }
+    padding-left: 115px;
+    padding-right: 115px;
   }
 
   @media (${devices.desktop}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 60px;
-      width: 60px;
-      opacity: 0.9;
-    }
-
-    .carousel-indicators {
-      opacity: 0.9;
-    }
+    padding-left: 115px;
+    padding-right: 115px;
   }
 `;
