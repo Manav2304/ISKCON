@@ -266,8 +266,8 @@ export const ContactWrapper = styled.div`
   @media (${devices.mobileL}) {
     justify-content: justify;
     text-align: left;
-    margin-left: 120px;
-    padding-left: 40px;
+    margin-left: 10px;
+    padding-left: 150px;
   }
 
   @media (${devices.tablet}) {
@@ -286,11 +286,9 @@ export const ContactWrapper = styled.div`
 
   @media (${devices.laptop}) {
     text-align: left;
-    margin-left: 40px;
-    padding-left: 40px;
+    margin-left: 70px;
     justify-content: left;
     margin-right: -100px;
-    padding-right: 40px;
   }
 
   @media (${devices.laptopL}) {
