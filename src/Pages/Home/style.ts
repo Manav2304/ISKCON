@@ -227,8 +227,7 @@ export const CarouselWrapper = styled(Carousel)`
 
   @media (${devices.desktop}) {
     margin-top: 75px;
-  }
-`;
+  }`;
 
 export const PageCarouselWrapper = styled(Carousel)`
   .carousel-status {
