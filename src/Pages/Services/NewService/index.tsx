@@ -1,16 +1,16 @@
 import { ServiceDescription } from "../PageLayout/index";
 import {
-  kirtanAtIskcon,
-  kirtanAtIskconImages,
   contactDetails,
+  newServiceImages,
+  newService,
 } from "./constant";
 
-export const KirtanAtIskcon: React.FC = () => {
+export const NewService: React.FC = () => {
   return (
     <ServiceDescription
-      title="Kirtan At Iskcon"
-      content={kirtanAtIskcon}
-      imageUrl={kirtanAtIskconImages}
+      title="New Service"
+      content={newService}
+      imageUrl={newServiceImages}
       contactNumber={contactDetails}    />
   );
 };

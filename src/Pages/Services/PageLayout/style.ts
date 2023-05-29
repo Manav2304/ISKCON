@@ -6,7 +6,6 @@ export const TextWrapper = styled.div`
   color: #ad0d0d;
   font-family: "Times New Roman", Times, serif;
 
-  
   @media (${devices.mobileES}) {
     padding-left: 0.1px;
     padding-bottom: 0.1px;
@@ -110,7 +109,6 @@ export const PageImageCarousel = styled.img`
   height: 500px;
   object-fit: contain cover;
 
-  
   @media (${devices.mobileES}) {
     height: 100%;
     width: 100%;
@@ -287,9 +285,8 @@ export const PageStyleCarousel = styled(Carousel)`
 `;
 
 export const PageReviews = styled.div`
-
   @media (${devices.mobileES}) {
-   margin-top: 5px;
+    margin-top: 5px;
   }
 
   @media (${devices.mobileS}) {
@@ -318,5 +315,14 @@ export const PageReviews = styled.div`
 
   @media (${devices.desktop}) {
     margin-top: 9px;
+  }
+`;
+
+export const ContactLink = styled.a`
+  color: #ad0d0d;
+  text-decoration: none;
+
+  &:hover {
+    color: #800000;
   }
 `;
