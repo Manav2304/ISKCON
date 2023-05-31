@@ -1,0 +1,3 @@
+export const prabhupadaAppearanceDay = [
+  "Srila Prabhupada’s Appearance Day is celebrated by ISKCON devotees in joyous glorification of their eternal savior. He was sent by the Lord to fulfill Caitanya Mahaprabhu’s prediction to spread His name everywhere. Srila Prabhupada appeared on the day of Nandotsava, which celebrated Krishna’s birth. He grew up as a pure devotee and distributed Krishna Consciousness everywhere, making a perfect appearance, leading a perfect life, and having a perfect departure. His legacy lives on through his books, which provide Lord Caitanya katha and teach the Maha mantra.",
+];

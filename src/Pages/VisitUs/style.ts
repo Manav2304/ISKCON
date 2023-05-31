@@ -46,15 +46,15 @@ export const ImageSlide = styled.img`
 
   @media (${devices.laptop}) {
     width: 80%;
-    }
+  }
 
   @media (${devices.laptopL}) {
     width: 80%;
-    }
+  }
 
   @media (${devices.desktop}) {
-    width: 80%; 
-   }
+    width: 80%;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -112,4 +112,14 @@ export const HiddenParagraph = styled.p`
 
 export const VisibleParagraph = styled.p`
   display: block;
+`;
+
+export const Button = styled.button`
+  background-color: #7e5959;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
 `;

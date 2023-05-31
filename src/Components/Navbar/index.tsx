@@ -38,7 +38,7 @@ export const NavigationBar = () => {
             <ImgStyle src={logoUrl} alt="Logo" />
           </StyledLink>
           <StyledLink to={routes.donation}>Donate</StyledLink>
-          <StyledLink to={routes.festival}>Festival</StyledLink>
+          <StyledLink to={routes.janmashtami}>Festival</StyledLink>
           <StyledLink to={routes.contact}>Contact</StyledLink>
           <StyledLink to={routes.contact}>Blogs</StyledLink>
         </div>

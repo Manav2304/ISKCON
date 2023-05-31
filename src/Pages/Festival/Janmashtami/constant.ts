@@ -1,0 +1,3 @@
+export const janmashtami = [
+  "Janmashtami is a significant festival at ISKCON Vallabh Vidya Nagar, dedicated to the birth of Lord Krishna. The temple is beautifully decorated, and special prayers and rituals are performed by the priests. The highlight of the festival is the midnight arati, where devotees engage in joyous kirtan and feel a deep sense of devotion towards Lord Krishna. The festival culminates in a grand feast of prasadam, which is prepared with devotion by temple volunteers. Overall, Janmashtami is a time for devotees to connect with their spiritual essence and renew their faith and devotion towards Lord Krishna",
+];

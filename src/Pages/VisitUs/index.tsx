@@ -14,7 +14,7 @@ import {
   HiddenParagraph,
 } from "./style";
 import { PageCarousel } from "../Services/PageLayout/PageCarousel";
-import { Button } from "../Festival/style";
+import { Button } from "./style";
 import { HeadingStyle, ImageTitle, TitleWrapper } from "../TitleBase/style";
 
 export const VisitUs = () => {

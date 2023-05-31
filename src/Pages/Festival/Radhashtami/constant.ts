@@ -1,0 +1,3 @@
+export const radhashtami = [
+  "Radhashtami is a festival celebrated by the devotees of Lord Krishna at ISKCON Vallabh Vidya Nagar in honor of Srimati Radharani, the eternal consort of Lord Krishna. The festival is celebrated on the eighth day of the bright fortnight in the month of Bhadrapada and involves special prayers, rituals, and offerings to Radha. The festival also includes discourses and lectures on the significance of Radhashtami, and culminates in a grand feast. Radhashtami is a time for devotees to connect with their spiritual essence and renew their faith and devotion towards Radha and Krishna.",
+];

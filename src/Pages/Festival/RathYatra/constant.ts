@@ -1,0 +1,3 @@
+export const rathYatra = [
+  "Rath Yatra, also known as the Festival of Chariots, is celebrated at ISKCON Vallabh Vidya Nagar in June or July. Devotees pull huge chariots decorated with colorful flowers and flags, carrying the deities of Lord Jagannath, Lord Baladeva and Subhadra from the temple to a designated location for cultural programs and a grand feast. The festival symbolizes the journey of the soul from material existence to the spiritual realm and purifies the hearts and minds of the devotees. Rath Yatra attracts thousands of devotees who come together to celebrate the divine love and grace of the divine personalities and renew their faith and devotion.",
+];

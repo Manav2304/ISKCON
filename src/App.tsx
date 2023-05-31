@@ -7,7 +7,7 @@ import { HomePage } from "./Pages/Home";
 import { DonationPage } from "./Pages/Donation";
 import { Contact } from "./Pages/Contact";
 import { routes } from "./routes";
-import { FestivalPage } from "./Pages/Festival";
+import { Janmashtami } from "./Pages/Festival/Janmashtami";
 import { BookDistribution } from "./Pages/Services/BookDistribution";
 import { DeityWorship } from "./Pages/Services/DeityWorship";
 import { DevoteeKitchen } from "./Pages/Services/DevoteeKitchen";
@@ -39,8 +39,8 @@ export const App: React.FunctionComponent = () => {
           <Route caseSensitive path={routes.visitUs} element={<VisitUs />} />
           <Route
             caseSensitive
-            path={routes.festival}
-            element={<FestivalPage />}
+            path={routes.janmashtami}
+            element={<Janmashtami />}
           />
           <Route caseSensitive path={routes.media} element={<Media />} />
           <Route caseSensitive path={routes.contact} element={<Contact />} />

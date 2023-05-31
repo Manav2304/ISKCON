@@ -1,0 +1,3 @@
+export const gaurPurnima = [
+  "Gaur Purnima is a festival celebrated at ISKCON Vallabh Vidya Nagar to honor Lord Chaitanya Mahaprabhu, who is considered the most merciful incarnation of Lord Krishna. The festival falls on the full moon day in the Hindu month of Phalguna and is a time for devotees to celebrate Lord Chaitanya's life and teachings through prayer, singing, and dancing. Lord Chaitanya's message of love, compassion, and devotion continues to inspire millions worldwide, and the festival provides an opportunity for devotees to renew their commitment to these values and deepen their understanding of his teachings.",
+];
