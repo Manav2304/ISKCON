@@ -202,11 +202,11 @@ export const CarouselWrapper = styled(Carousel)`
   }
 
   @media (${devices.mobileS}) {
-    margin-top: 47px;
+    margin-top: 48px;
   }
 
   @media (${devices.mobileM}) {
-    margin-top: 47px;
+    margin-top: 59px;
   }
 
   @media (${devices.mobileL}) {
@@ -214,20 +214,21 @@ export const CarouselWrapper = styled(Carousel)`
   }
 
   @media (${devices.tablet}) {
-    margin-top: 47px;
+    margin-top: 74px;
   }
 
   @media (${devices.laptop}) {
-    margin-top: 123px;
+    margin-top: 124px;
   }
 
   @media (${devices.laptopL}) {
-    margin-top: 75px;
+    margin-top: 124px;
   }
 
   @media (${devices.desktop}) {
-    margin-top: 75px;
-  }`;
+    margin-top: 140px;
+  }
+`;
 
 export const PageCarouselWrapper = styled(Carousel)`
   .carousel-status {
