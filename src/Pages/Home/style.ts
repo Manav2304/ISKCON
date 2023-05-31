@@ -202,11 +202,11 @@ export const CarouselWrapper = styled(Carousel)`
   }
 
   @media (${devices.mobileS}) {
-    margin-top: 48px;
+    margin-top: 47px;
   }
 
   @media (${devices.mobileM}) {
-    margin-top: 59px;
+    margin-top: 58px;
   }
 
   @media (${devices.mobileL}) {
