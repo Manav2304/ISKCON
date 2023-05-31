@@ -72,3 +72,65 @@ export const Datestyle = styled.p`
   text-align: justify;
   padding: 50px;
 `;
+
+export const Image = styled.img`
+  width: 100%;
+  height: 500px;
+  object-fit: contain cover;
+
+  @media (${devices.mobileES}) {
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (${devices.mobileS}) {
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (${devices.mobileM}) {
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (${devices.mobileL}) {
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (${devices.tablet}) {
+    height: 100%;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (${devices.laptop}) {
+    height: 100%;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (${devices.laptopL}) {
+    height: 100%;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  @media (${devices.desktop}) {
+    height: 100%;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+`;

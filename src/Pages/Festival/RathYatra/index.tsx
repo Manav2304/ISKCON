@@ -6,7 +6,7 @@ export const RathYatra: React.FC = () => {
     <Festival
       title="Rath Yatra"
       content={rathYatra}
-      imageUrl={[]}
+      imageUrl={""}
       date={"Jun 20, 2023"}
     />
   );
