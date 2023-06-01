@@ -26,6 +26,14 @@ import "@fortawesome/fontawesome-free/css/brands.css";
 import ScrollToTop from "./Components/ScrollToTop";
 import { Sidebar } from "./Components/Sidebar";
 import { VisitUs } from "./Pages/VisitUs";
+import { RathYatra } from "./Pages/Festival/RathYatra";
+import { RamNavami } from "./Pages/Festival/RamNavami";
+import { Radhashtami } from "./Pages/Festival/Radhashtami";
+import { PrabhupadaAppearanceDay } from "./Pages/Festival/PrabhupadaAppearanceDay";
+import { KartikDipawali } from "./Pages/Festival/KartikDipawali";
+import { GovardhanPuja } from "./Pages/Festival/GovardhanPuja";
+import { GaurPurnima } from "./Pages/Festival/GaurPurnima";
+import { FlowerFestival } from "./Pages/Festival/FlowerFestival";
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -41,6 +49,46 @@ export const App: React.FunctionComponent = () => {
             caseSensitive
             path={routes.janmashtami}
             element={<Janmashtami />}
+          />
+          <Route
+            caseSensitive
+            path={routes.rathYatra}
+            element={<RathYatra />}
+          />
+          <Route
+            caseSensitive
+            path={routes.ramNavami}
+            element={<RamNavami />}
+          />
+          <Route
+            caseSensitive
+            path={routes.radhashtami}
+            element={<Radhashtami />}
+          />
+          <Route
+            caseSensitive
+            path={routes.prabhupadaAppearanceDay}
+            element={<PrabhupadaAppearanceDay />}
+          />
+          <Route
+            caseSensitive
+            path={routes.kartikDipawali}
+            element={<KartikDipawali />}
+          />
+          <Route
+            caseSensitive
+            path={routes.govardhanPuja}
+            element={<GovardhanPuja />}
+          />
+          <Route
+            caseSensitive
+            path={routes.gaurPurnima}
+            element={<GaurPurnima />}
+          />
+          <Route
+            caseSensitive
+            path={routes.flowerFestival}
+            element={<FlowerFestival />}
           />
           <Route caseSensitive path={routes.media} element={<Media />} />
           <Route caseSensitive path={routes.contact} element={<Contact />} />

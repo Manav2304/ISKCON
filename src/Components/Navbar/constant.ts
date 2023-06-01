@@ -29,7 +29,17 @@ export const socialMediaIcon = [
   },
 ];
 
-export const festivalInfo = [{ title: "festival", path: routes.festival }];
+export const dropdownFestivalInfo = [
+  { title: "Janmashtami", path: routes.janmashtami },
+  { title: "Rath Yatra", path: routes.rathYatra },
+  { title: "Ram Navami", path: routes.ramNavami },
+  { title: "Radhashtami", path: routes.radhashtami },
+  { title: "Prabhupada Appearance Day", path: routes.prabhupadaAppearanceDay },
+  { title: "Kartik Dipawali", path: routes.kartikDipawali },
+  { title: "Govardhan Puja", path: routes.govardhanPuja },
+  { title: "Gaur Purnima", path: routes.gaurPurnima },
+  { title: "Flower Festival", path: routes.flowerFestival },
+];
 export const dropdownServicesInfo = [
   { title: "Life Time Membership", path: routes.lifeTimeMembership },
   { title: "Kirtan At Iskcon", path: routes.kirtanAtIskcon },
@@ -39,5 +49,5 @@ export const dropdownServicesInfo = [
   { title: "Devotee Kitchen", path: routes.devoteeKitchen },
   { title: "Deity Worship", path: routes.deityWorship },
   { title: "Book Distribution", path: routes.bookDistribution },
-  { title: "New Service", path: routes.newService }
+  { title: "New Service", path: routes.newService },
 ];
