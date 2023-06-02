@@ -5,11 +5,11 @@ export const guestHouse = "To Book Room, please contact us on:";
 export const contactNumbers = [
   {
     id: 1,
-    number: "02692 230 796",
+    number: "02692 230796",
   },
   {
     id: 2,
-    number: "+91 99984 07654",
+    number: "98247 78075",
   },
 ];
 export const guestHouseNumbers = [

@@ -1,5 +1,10 @@
 import { ServiceDescription } from "../PageLayout/index";
-import { iskconYouthForum,iskconYouthForumImages } from "./constant";
+import {
+  iskconYouthForum,
+  iskconYouthForumImages,
+  contactDetails,
+  emailDetails,
+} from "./constant";
 
 export const IskconYouthForum: React.FC = () => {
   return (
@@ -7,6 +12,8 @@ export const IskconYouthForum: React.FC = () => {
       title="Iskon Youth Forum"
       content={iskconYouthForum}
       imageUrl={iskconYouthForumImages}
+      contactNumber={contactDetails}
+      emailId={emailDetails}
     />
   );
 };
