@@ -2,14 +2,14 @@ import titleBaseImage from "../../../assets/images/title-base.png";
 // import { PageCarousel } from "../../Services/PageLayout/PageCarousel";
 import { Paragraph, TextWrapper } from "../../Services/PageLayout/style";
 import { HeadingStyle, ImageTitle, TitleWrapper } from "../../TitleBase/style";
-import { Datestyle } from "./style";
+import { Datestyle, Image } from "./style";
 
 interface FestivalProps {
   title: string;
   content: string[];
   date: string;
   // imageUrl: { id: number; image: string }[];
-  image: any;
+  image: string;
 }
 
 export const Festival: React.FC<FestivalProps> = ({
@@ -28,9 +28,7 @@ export const Festival: React.FC<FestivalProps> = ({
           </HeadingStyle>
         </TitleWrapper>
         {/* <PageCarousel images={imageUrl} /> */}
-        {/* <Image>
-          <img src={image} alt="Festival" />
-        </Image> */}
+        <Image src={image} alt="Festival" />
         <Datestyle> {date}</Datestyle>
         <Paragraph>
           {content.map((paragraph) => (
