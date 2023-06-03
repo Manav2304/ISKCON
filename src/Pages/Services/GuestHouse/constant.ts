@@ -22,5 +22,16 @@ export const guestHouse = [
 
   "Whether you are a life member or a non-life member, the ISKCON Prabhupada Ashrya Bhavan is a wonderful place to stay during your visit to ISKCON Vallabh Vidya Nagar. With its welcoming atmosphere, comfortable accommodations, and convenient location, it is the perfect home away from home for anyone seeking spiritual nourishment and peaceful surroundings.",
 
-  "Contact Details: 02692 230796 | 02692 235752 | 02692 233012",
+  "Contact Details:",
+];
+
+export const contactDetails = [
+  {
+    id: 1,
+    number: "+91 02692 235752",
+  },
+  {
+    id: 2,
+    number: "+91 02692 233012",
+  },
 ];
