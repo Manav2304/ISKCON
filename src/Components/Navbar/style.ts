@@ -56,6 +56,7 @@ export const NavStyle = styled.nav`
     width: 100% !important;
   }
 `;
+
 export const StyledLink = styled(Link)`
   color: #fff;
   text-decoration: none;
@@ -65,8 +66,50 @@ export const StyledLink = styled(Link)`
   }
 `;
 
+// export const ImgStyle = styled.img`
+//   height: 70px;
+
+//   @media (${devices.mobileES}) {
+//     height: 10px;
+//   }
+
+//   @media (${devices.mobileS}) {
+//     display: none;
+//   }
+
+//   @media (${devices.mobileM}) {
+//     display: none;
+//   }
+
+//   @media (${devices.mobileL}) {
+//     display: none;
+//   }
+
+//   @media (${devices.tablet}) {
+//     display: flex;
+//     height: 70px;
+//   }
+
+//   @media (${devices.laptop}) {
+//     height: 80px;
+//     // margin-left: -40px;
+//   }
+
+//   @media (${devices.laptopL}) {
+//     height: 90px;
+//     // margin-left: -10px;
+//   }
+
+//   @media (${devices.desktop}) {
+//     display: flex;
+//     height: 100px;
+//     // margin-left: -10px;
+//   }
+// `;
+
 export const ImgStyle = styled.img`
   height: 70px;
+  margin: auto;
 
   @media (${devices.mobileES}) {
     height: 10px;
@@ -90,19 +133,16 @@ export const ImgStyle = styled.img`
   }
 
   @media (${devices.laptop}) {
-    height: 85px;
-    margin-left: -40px;
+    height: 80px;
   }
 
   @media (${devices.laptopL}) {
-    height: 90px;
-    margin-left: -10px;
+    height: 80px;
   }
 
   @media (${devices.desktop}) {
     display: flex;
     height: 100px;
-    margin-left: -10px;
   }
 `;
 
