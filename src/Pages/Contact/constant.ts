@@ -9,7 +9,7 @@ export const contactNumbers = [
   },
   {
     id: 2,
-    number: "98247 78075",
+    number: "9998407654",
   },
 ];
 export const guestHouseNumbers = [
