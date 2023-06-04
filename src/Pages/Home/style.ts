@@ -136,7 +136,7 @@ export const ImageTitle = styled.img`
 `;
 
 export const Image = styled.img`
-  object-fit: cover;
+  object-fit: contain cover;
   width: 100%;
 
   @media (${devices.mobileES}) {
@@ -170,13 +170,13 @@ export const Image = styled.img`
   }
 
   @media (${devices.laptop}) {
-    height: 480px;
+    height: 420px;
     padding-left: 120px;
     padding-right: 120px;
   }
 
   @media (${devices.laptopL}) {
-    height: 580px;
+    height: 480px;
     padding-left: 105px;
     padding-right: 105px;
   }
