@@ -60,52 +60,12 @@ export const NavStyle = styled.nav`
 export const StyledLink = styled(Link)`
   color: #fff;
   text-decoration: none;
+  font-family: Overlock-Regular, cursive, sans-serif;
 
   &:hover {
     color: #ad0d0d;
   }
 `;
-
-// export const ImgStyle = styled.img`
-//   height: 70px;
-
-//   @media (${devices.mobileES}) {
-//     height: 10px;
-//   }
-
-//   @media (${devices.mobileS}) {
-//     display: none;
-//   }
-
-//   @media (${devices.mobileM}) {
-//     display: none;
-//   }
-
-//   @media (${devices.mobileL}) {
-//     display: none;
-//   }
-
-//   @media (${devices.tablet}) {
-//     display: flex;
-//     height: 70px;
-//   }
-
-//   @media (${devices.laptop}) {
-//     height: 80px;
-//     // margin-left: -40px;
-//   }
-
-//   @media (${devices.laptopL}) {
-//     height: 90px;
-//     // margin-left: -10px;
-//   }
-
-//   @media (${devices.desktop}) {
-//     display: flex;
-//     height: 100px;
-//     // margin-left: -10px;
-//   }
-// `;
 
 export const ImgStyle = styled.img`
   height: 70px;
@@ -163,6 +123,7 @@ export const IconsStyle = styled.a`
 export const MarqueeWrapper = styled(Marquee)`
   color: #fff;
   background-color: #ad0d0d;
+  font-family: Overlock-Regular, cursive, sans-serif;
   height: 75px;
   width: 85%;
   position: fixed;

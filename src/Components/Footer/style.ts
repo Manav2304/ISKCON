@@ -57,13 +57,15 @@ export const ContactHeadingStyle = styled.div`
 
 export const TimeStyle = styled.div`
   color: #fff;
-  font-family: "Times New Roman", Times, serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 `;
 
 export const TermsTitle = styled(Link)`
   color: #fff;
   margin-top: 10px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   text-decoration: none;
   text-decoration-color: none;
 
@@ -130,7 +132,8 @@ export const TermsHeading = styled.h6`
   justify-content: center;
   color: #fff;
   display: inline-flex;
-  font-family: "Times New Roman", Times, serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   width: 100%;
 `;
 
@@ -144,7 +147,8 @@ export const FooterLink = styled.a`
 `;
 
 export const ContactDiv = styled.div`
-  font-family: "Times New Roman", Times, serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 `;
 
 export const ContactIcon = styled.i`
@@ -312,4 +316,6 @@ export const ContactWrapper = styled.div`
 
 export const CopyRights = styled.div`
   color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 `;
