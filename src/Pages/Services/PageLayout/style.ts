@@ -107,6 +107,7 @@ export const ContactLink = styled.a`
   color: #ad0d0d;
   text-decoration: none;
 
+
   &:hover {
     color: #800000;
   }
@@ -193,5 +194,14 @@ export const StyledPageCarouselWrapper = styled(PageCarouselWrapper)`
   @media (${devices.desktop}) {
     padding-left: 115px;
     padding-right: 115px;
+  }
+`;
+
+export const ContactLink = styled.a`
+  color: #ad0d0d;
+  text-decoration: none;
+
+  &:hover {
+    color: #800000;
   }
 `;
