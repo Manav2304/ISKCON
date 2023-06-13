@@ -5,87 +5,128 @@ export const TitleWrapper = styled.div`
   margin-top: 80px;
 `;
 
-export const HeadingStyle = styled.div`
-  font-family: "Times New Roman", Times, serif;
+export const HeadingStyle = styled.p`
   color: #7e5959;
   text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 10px;
 
   @media (${devices.mobileES}) {
-    font-size: 1rem;
-    padding: 20px;
+    margin-top: 20px;
+    font-weight: 700 !important;
+    font-size: 1.5em !important;
+    line-height: 20px !important;
+    letter-spacing: 1.5px !important;
+    margin-bottom: 5px;
   }
 
   @media (${devices.mobileS}) {
-    font-size: 1rem;
-    padding: 20px;
+    margin-top: 20px;
+    font-weight: 700 !important;
+    font-size: 1.5em !important;
+    line-height: 20px !important;
+    letter-spacing: 1.5px !important;
+    margin-bottom: 5px;
   }
 
   @media (${devices.mobileM}) {
-    font-size: 1rem;
-    padding: 20px;
+    margin-top: 20px;
+    font-weight: 700 !important;
+    font-size: 1.5em !important;
+    line-height: 20px !important;
+    letter-spacing: 1.5px !important;
+    margin-bottom: 5px;
   }
 
   @media (${devices.mobileL}) {
-    font-size: 1rem;
-    padding: 20px;
+    margin-top: 40px;
+    font-weight: 700 !important;
+    font-size: 2em !important;
+    line-height: 30px !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 5px;
   }
 
   @media (${devices.tablet}) {
-    font-size: 1.5rem;
-    padding: 30px;
+    margin-top: 30px;
+    font-weight: 700 !important;
+    font-size: 3em !important;
+    line-height: 40px !important;
+    letter-spacing: 2.5px !important;
+    margin-bottom: 5px;
   }
 
   @media (${devices.laptop}) {
-    font-size: 1.5rem;
-    padding: 40px; 
+    margin-top: 150px;
+    font-weight: 700 !important;
+    font-size: 3em !important;
+    line-height: 40px !important;
+    letter-spacing: 4.5px !important;
+    margin-bottom: 20px;
   }
 
   @media (${devices.laptopL}) {
-    font-size: 2rem;
-    padding: 50px; 
+    margin-top: 150px;
+    font-weight: 700 !important;
+    font-size: 3em !important;
+    line-height: 40px !important;
+    letter-spacing: 4.5px !important;
+    margin-bottom: 25px;
   }
 
   @media (${devices.desktop}) {
-    font-size: 2rem;
-    padding: 50px;
+    margin-top: 180px;
+    font-weight: 700 !important;
+    font-size: 4em !important;
+    letter-spacing: 4.5px !important;
+    line-height: 40px !important;
+    margin-bottom: 30px;
   }
 `;
 
 export const ImageTitle = styled.img`
   width: 100%;
-  max-width: 400px;
+  display: block;
+  margin: 0 auto;
 
   @media (${devices.mobileES}) {
-    max-width: 500px;
+    width: 60%;
+    margin-bottom: 15px;
   }
 
   @media (${devices.mobileS}) {
-    width: 80%;
+    width: 60%;
+    margin-bottom: 30px;
   }
 
   @media (${devices.mobileM}) {
-    width: 80%;
+    width: 60%;
+    margin-bottom: 30px;
   }
 
   @media (${devices.mobileL}) {
-    width: 80%;
+    width: 60%;
+    margin-bottom: 30px;
   }
 
   @media (${devices.tablet}) {
-    width: 70%;
+    width: 40%;
+    margin-bottom: 30px;
   }
 
   @media (${devices.laptop}) {
-    width: 80%;
+    width: 40%;
+    margin-bottom: 30px;
   }
 
   @media (${devices.laptopL}) {
-    width: 100%;
-    max-width: 400px; 
+    margin-bottom: 30px;
+    width: 35%;
   }
 
   @media (${devices.desktop}) {
-    width: 100%;
-    max-width: 400px;
+    width: 20%;
+    margin-bottom: 30px;
   }
 `;
