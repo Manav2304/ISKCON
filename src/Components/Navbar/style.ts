@@ -60,7 +60,7 @@ export const NavStyle = styled.nav`
 export const StyledLink = styled(Link)`
   color: #fff;
   text-decoration: none;
-  font-family: Overlock-Regular, cursive, sans-serif;
+  font-family: Overlock-Regular, Arial, Helvetica, sans-serif;
 
   &:hover {
     color: #ad0d0d;
