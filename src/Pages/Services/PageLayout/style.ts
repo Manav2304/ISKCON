@@ -103,16 +103,6 @@ export const Paragraph = styled.p`
   }
 `;
 
-export const ContactLink = styled.a`
-  color: #ad0d0d;
-  text-decoration: none;
-
-
-  &:hover {
-    color: #800000;
-  }
-`;
-
 export const PageCarouselWrapper = styled(Carousel)`
   .carousel-status {
     opacity: 0;

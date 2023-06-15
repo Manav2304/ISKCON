@@ -14,7 +14,6 @@ export const routes = {
   kirtanAtIskcon: "/services/kirtan-at-iskcon",
   lifeTimeMembership: "/services/life-time-membership",
   govindaFood: "/services/govinda-food",
-  newService: "/services/new-service",
   cancellationPolicy: "/footer/cancellation-policy",
   privacyPolicy: "/footer/privacy-policy",
   termsAndCondition: "/footer/terms-and-condition,",
