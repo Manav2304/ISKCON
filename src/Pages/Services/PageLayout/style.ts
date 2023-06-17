@@ -4,7 +4,8 @@ import { devices } from "../../../style";
 
 export const TextWrapper = styled.div`
   color: #ad0d0d;
-  font-family: "Times New Roman", Times, serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
   @media (${devices.mobileES}) {
     padding-left: 0.1px;
