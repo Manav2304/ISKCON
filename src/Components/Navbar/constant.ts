@@ -39,5 +39,5 @@ export const dropdownServicesInfo = [
   { title: "Devotee Kitchen", path: routes.devoteeKitchen },
   { title: "Deity Worship", path: routes.deityWorship },
   { title: "Book Distribution", path: routes.bookDistribution },
-  { title: "New Service", path: routes.newService }
+  { title: "Govinda's Food", path: routes.govindaFood },
 ];
