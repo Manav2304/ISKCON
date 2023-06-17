@@ -12,97 +12,51 @@ export const TextWrapper = styled.div`
   font-family: "Times New Roman", Times, serif;
 `;
 
-export const ImageSlide = styled.img`
-  width: 600px;
-  height: 600px;
-  object-fit: auto;
-  margin-bottom: 20px;
-  border-radius: 5px;
-
-  @media (${devices.mobileES}) {
-    width: 100%;
-    height: auto;
-  }
-
-  @media (${devices.mobileS}) {
-    width: 100%;
-    height: auto;
-  }
-
-  @media (${devices.mobileM}) {
-    width: 100%;
-    height: auto;
-  }
-
-  @media (${devices.mobileL}) {
-    width: 100%;
-    height: auto;
-  }
-
-  @media (${devices.tablet}) {
-    width: 100%;
-    height: auto;
-  }
-
-  @media (${devices.laptop}) {
-    width: 80%;
-    }
-
-  @media (${devices.laptopL}) {
-    width: 80%;
-    }
-
-  @media (${devices.desktop}) {
-    width: 80%; 
-   }
-`;
-
 export const Paragraph = styled.p`
   text-align: justify;
-  margin: 40px 50px 50px;
   color: #ad0d0d;
-  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
   @media (${devices.mobileES}) {
-    margin: 20px;
     font-size: 0.8rem;
+    margin: 30px 20px;
   }
 
   @media (${devices.mobileS}) {
-    margin: 20px;
     font-size: 0.8rem;
+    margin: 30px 20px;
   }
 
   @media (${devices.mobileM}) {
-    margin: 20px;
-    font-size: 0.8rem;
+    margin: 30px;
+    font-size: 1.2rem;
   }
 
   @media (${devices.mobileL}) {
-    margin: 20px;
-    font-size: 0.8rem;
+    margin: 30px 25px;
+    font-size: 1.3rem;
   }
 
   @media (${devices.tablet}) {
-    margin: 20px;
-    font-size: 0.8rem;
+    margin: 30px 40px;
+    font-size: 1.8rem;
   }
 
   @media (${devices.laptop}) {
-    margin: 25px;
-    font-size: 1rem;
+    margin: 30px 120px;
+    font-size: 1.5rem;
   }
 
   @media (${devices.laptopL}) {
-    font-size: 1.2rem;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin: 50px 105px;
+    font-size: 1.8rem;
   }
 
   @media (${devices.desktop}) {
-    font-size: 1.2rem;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin: 50px 120px;
+    font-size: 3rem;
   }
 `;
 
