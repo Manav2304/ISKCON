@@ -9,4 +9,5 @@ export const dropdownServicesInfo = [
   { name: "Devotee Kitchen", url: routes.devoteeKitchen },
   { name: "Deity Worship", url: routes.deityWorship },
   { name: "Book Distribution", url: routes.bookDistribution },
+  { name: "Govinda's Food", url: routes.govindaFood },
 ];

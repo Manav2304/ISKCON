@@ -1,32 +1,30 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
-import { PageImageCarousel, PageStyleCarousel, PageReviews } from "./style";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { StyledPageCarouselWrapper } from "./style";
 
-interface Props {
-  images: { id: number; image: string }[];
+interface CarouselImage {
+  id: number;
+  image: string;
 }
 
-export const PageCarousel: React.FC<Props> = ({ images }) => {
+interface PageCarouselProps {
+  images: CarouselImage[];
+}
+
+export const PageCarousel: React.FC<PageCarouselProps> = ({ images }) => {
   return (
-    <PageReviews>
-      <PageStyleCarousel
-        nextIcon={<span className="carousel-control-next-icon" />}
-        prevIcon={<span className="carousel-control-prev-icon" />}
-        indicators
-        nextLabel=""
-        prevLabel=""
-        interval={3000}
-        className="rounded"
-      >
-        {images.map((image) => (
-          <Carousel.Item key={image.id}>
-            <PageImageCarousel
-              src={image.image}
-              alt={`Carousel Image ${image.id}`}
-            />
-          </Carousel.Item>
-        ))}
-      </PageStyleCarousel>
-    </PageReviews>
+    <StyledPageCarouselWrapper
+      showArrows={true}
+      showThumbs={false}
+      autoPlay={true}
+      interval={3000}
+      infiniteLoop={true}
+    >
+      {images.map((image) => (
+        <div key={image.id}>
+          <img src={image.image} alt={`Product ${image.id}`} />
+        </div>
+      ))}
+    </StyledPageCarouselWrapper>
   );
 };

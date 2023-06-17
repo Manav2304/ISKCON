@@ -4,7 +4,7 @@ export const TransparentDropdown = styled.div`
   display: inline-block;
   position: relative;
   z-index: 1;
-  width: 75px;
+  width: 95px;
 
   .dropdown-menu {
     border: none;
