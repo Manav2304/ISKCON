@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { devices } from "../../style";
 
 export const TitleWrapper = styled.div`
-  margin-top: 80px;
+  margin-top: 95px;
 `;
 
 export const HeadingStyle = styled.p`
@@ -58,30 +58,30 @@ export const HeadingStyle = styled.p`
   }
 
   @media (${devices.laptop}) {
-    margin-top: 150px;
+    margin-top: 40px;
     font-weight: 700 !important;
     font-size: 3em !important;
     line-height: 40px !important;
     letter-spacing: 4.5px !important;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   @media (${devices.laptopL}) {
-    margin-top: 150px;
+    margin-top: 40px;
     font-weight: 700 !important;
     font-size: 3em !important;
     line-height: 40px !important;
     letter-spacing: 4.5px !important;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 
   @media (${devices.desktop}) {
-    margin-top: 180px;
+    margin-top: 100px;
     font-weight: 700 !important;
     font-size: 4em !important;
     letter-spacing: 4.5px !important;
     line-height: 40px !important;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 `;
 
