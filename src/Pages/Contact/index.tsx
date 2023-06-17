@@ -57,7 +57,7 @@ export const Contact: React.FC = () => {
           <BoxHeading>Address</BoxHeading>
           <BoxDetail>
             <ContactLink
-              href={`https://goo.gl/maps/oig1BbDfSinEaxYu9`}
+              href="https://goo.gl/maps/oig1bbdfsineaxyu9"
               target="_blank"
               rel="noopener noreferrer"
             >
