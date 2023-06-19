@@ -12,6 +12,18 @@ import about1Image from "../../assets/images/about1.jpg";
 import about2Image from "../../assets/images/about2.jpg";
 import about3Image from "../../assets/images/about3.jpg";
 
+import blogdndasa from "../../assets/images/blog-dn-dasa.png";
+import { Blog } from "../Blog/types";
+
+export const blog: Blog[] = [
+  {
+    name: "H.G Saccidananda Dasa",
+    authority: "(Temple President)",
+    description: "",
+    image: blogdndasa,
+  },
+];
+
 export const aboutUs = [
   "Welcome to Sri Sri Radha Giridhariji Temple, dedicated to the worship of Lord Krishna and the promotion of spiritual awareness among people. His Divine Grace A.C.Bhaktivedanta Swami Prabhupada founded the International Society of Krishna Consciousness (ISKCON), also known as the Hare Krishna Movement, in 1966. ISKCON is a worldwide organisation of devotees of Lord Krishna, the Supreme Personality of Godhead, with 10,000 temple devotees and 250,000 congregational devotees as members. Over the course of four decades, ISKCON has expanded to include over 350 temples, 60 rural communities, 50 schools, and 60 restaurants. One of the primary goals of ISKCON is to promote societal well-being by teaching the science of Krishna consciousness as taught in the Bhagavad-Gita and other timeless Vedic scriptures.",
   "Our mission is to spread the teachings of Lord Krishna and the Vaishnava tradition to all those who seek spiritual knowledge and enlightenment. We believe that the path of devotion to Lord Krishna is the key to achieving inner peace and happiness in life.",

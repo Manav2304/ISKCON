@@ -100,6 +100,10 @@ export const Sidebar = () => {
               Contact
             </StyledLink>
             <hr />
+            <StyledLink to={routes.blog} onClick={handleClose}>
+              Blog
+            </StyledLink>
+            <hr />
             <SocialMediaIconsStyle>
               {socialMediaIcon.map((item) => (
                 <IconsStyle key={item.name} href={item.href} target="_blank">

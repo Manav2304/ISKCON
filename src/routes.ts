@@ -17,4 +17,5 @@ export const routes = {
   cancellationPolicy: "/footer/cancellation-policy",
   privacyPolicy: "/footer/privacy-policy",
   termsAndCondition: "/footer/terms-and-condition,",
+  blog: "/blog",
 };
