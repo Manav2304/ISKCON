@@ -20,6 +20,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Navbar } from "react-bootstrap";
 import { dropdownDonationInfo, dropdownServicesInfo } from "./constant";
 import { SidebarAccordion } from "./SidebarAccordion";
+import { Link } from "react-router-dom";
 
 export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,6 +54,12 @@ export const Sidebar = () => {
     };
   },
   );
+
+const toggleTitle = (
+  <Link to={routes.donationMainPage}>
+    Donation
+  </Link>
+);
 
   return (
     <div ref={ref}>
@@ -92,12 +99,12 @@ export const Sidebar = () => {
             </StyledLink>
             <hr />
             <SidebarAccordion
-              items={dropdownDonationInfo}
-              toggleTitle="Donation"
-              handleClose={handleClose}
-              isOpen={isDonationOpen}
-              setIsOpen={setIsDonationOpen}
-            />
+  items={dropdownDonationInfo}
+  toggleTitle={toggleTitle.props.children}
+  handleClose={handleClose}
+  isOpen={isDonationOpen}
+  setIsOpen={setIsDonationOpen}
+/>
             <hr />
             <StyledLink to={routes.festival} onClick={handleClose}>
               Festival

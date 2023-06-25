@@ -3,7 +3,7 @@ import { yesBankAccountInfo, iciciBankAccountInfo } from "./constant";
 import { CopiedTableRow } from "./CopiedTableRow";
 import { HeadingStyle } from "../../TitleBase/style";
 
-export const Donation = () => {
+export const DonationBankDetails = () => {
   return (
     <Wrapper>
       <TableStyle>

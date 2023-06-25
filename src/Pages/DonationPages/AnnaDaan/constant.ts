@@ -6,3 +6,14 @@ export const annaDaan = [
   "Please grab the opportunity to get the blessings of Lord Krishna by rendering this important service of Anna Daan Seva.",
 ];
 
+
+export const donationCategories=[
+  {
+    title: "Category 1",
+    donations: [
+      { id: 1, title: "Donation 1", amount: 100 },
+      { id: 2, title: "Donation 2", amount: 200 },
+    ],
+  },
+  // Add more categories and donations as needed
+];

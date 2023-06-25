@@ -1,12 +1,12 @@
-import { Carousel } from "react-bootstrap";
+import { Carousel } from "react-responsive-carousel";
 import styled from "styled-components";
 import { devices } from "../../../style";
 
 export const TextWrapper = styled.div`
   color: #ad0d0d;
-  font-family: "Times New Roman", Times, serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
-  
   @media (${devices.mobileES}) {
     padding-left: 0.1px;
     padding-bottom: 0.1px;
@@ -58,238 +58,63 @@ export const TextWrapper = styled.div`
 
 export const Paragraph = styled.p`
   text-align: justify;
-  margin: 40px 50px 50px;
   color: #ad0d0d;
-  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
   @media (${devices.mobileES}) {
-    margin: 20px;
     font-size: 0.8rem;
+    margin: 30px 20px;
   }
 
   @media (${devices.mobileS}) {
-    margin: 20px;
     font-size: 0.8rem;
+    margin: 30px 20px;
   }
 
   @media (${devices.mobileM}) {
-    margin: 20px;
-    font-size: 0.8rem;
-  }
-
-  @media (${devices.mobileL}) {
-    margin: 20px;
-    font-size: 0.8rem;
-  }
-
-  @media (${devices.tablet}) {
-    margin: 25px;
-    font-size: 1rem;
-  }
-
-  @media (${devices.laptop}) {
-    margin: 25px;
-    font-size: 1rem;
-  }
-
-  @media (${devices.laptopL}) {
+    margin: 30px;
     font-size: 1.2rem;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  @media (${devices.desktop}) {
-    font-size: 1.2rem;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-`;
-
-export const PageImageCarousel = styled.img`
-  width: 100%;
-  height: 500px;
-  object-fit: contain cover;
-
-  
-  @media (${devices.mobileES}) {
-    height: 100%;
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  @media (${devices.mobileS}) {
-    height: 100%;
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  @media (${devices.mobileM}) {
-    height: 100%;
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   @media (${devices.mobileL}) {
-    height: 100%;
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 30px 25px;
+    font-size: 1.3rem;
   }
 
   @media (${devices.tablet}) {
-    height: 100%;
-    width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin: 30px 40px;
+    font-size: 1.8rem;
   }
 
   @media (${devices.laptop}) {
-    height: 100%;
-    width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin: 30px 120px;
+    font-size: 1.5rem;
   }
 
   @media (${devices.laptopL}) {
-    height: 100%;
-    width: 100%;
-    padding-left: 80px;
-    padding-right: 80px;
+    margin: 50px 105px;
+    font-size: 1.8rem;
   }
 
   @media (${devices.desktop}) {
-    height: 100%;
-    width: 100%;
-    padding-left: 80px;
-    padding-right: 80px;
+    margin: 50px 120px;
+    font-size: 3rem;
   }
 `;
 
-export const PageStyleCarousel = styled(Carousel)`
-  z-index: 0;
-
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    height: 40px;
-    width: 40px;
+export const PageCarouselWrapper = styled(Carousel)`
+  .carousel-status {
+    opacity: 0;
   }
 
-  .carousel-indicators {
-    height: 10px;
+  .control-dots {
+    opacity: 0;
   }
 
   @media (${devices.mobileES}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 10px;
-      width: 10px;
-    }
-
-    .carousel-indicators {
-      height: 5px;
-      width: 5px;
-    }
-  }
-
-  @media (${devices.mobileS}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 10px;
-      width: 10px;
-    }
-
-    .carousel-indicators {
-      height: 5px;
-      width: 5px;
-    }
-  }
-
-  @media (${devices.mobileM}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 10px;
-      width: 10px;
-    }
-
-    .carousel-indicators {
-      height: 5px;
-      width: 5px;
-    }
-  }
-
-  @media (${devices.mobileL}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 10px;
-      width: 10px;
-    }
-
-    .carousel-indicators {
-      height: 5px;
-      width: 5px;
-    }
-  }
-
-  @media (${devices.tablet}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 10px;
-      width: 10px;
-    }
-
-    .carousel-indicators {
-      height: 5px;
-      width: 5px;
-    }
-  }
-
-  @media (${devices.laptop}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 30px;
-      width: 30px;
-      margin: 80px;
-    }
-
-    .carousel-indicators {
-      height: 5px;
-    }
-  }
-
-  @media (${devices.laptopL}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 30px;
-      width: 30px;
-      margin: 80px;
-    }
-
-    .carousel-indicators {
-      height: 5px;
-    }
-  }
-
-  @media (${devices.desktop}) {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      height: 30px;
-      width: 30px;
-      margin: 80px;
-    }
-
-    .carousel-indicators {
-      height: 5px;
-    }
-  }
-`;
-
-export const PageReviews = styled.div`
-
-  @media (${devices.mobileES}) {
-   margin-top: 5px;
+    margin-top: 5px;
   }
 
   @media (${devices.mobileS}) {
@@ -318,5 +143,56 @@ export const PageReviews = styled.div`
 
   @media (${devices.desktop}) {
     margin-top: 9px;
+  }
+`;
+
+export const StyledPageCarouselWrapper = styled(PageCarouselWrapper)`
+  @media (${devices.mobileES}) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (${devices.mobileS}) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (${devices.mobileM}) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (${devices.mobileL}) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  @media (${devices.tablet}) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (${devices.laptop}) {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+
+  @media (${devices.laptopL}) {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+
+  @media (${devices.desktop}) {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+`;
+
+export const ContactLink = styled.a`
+  color: #ad0d0d;
+  text-decoration: none;
+
+  &:hover {
+    color: #800000;
   }
 `;

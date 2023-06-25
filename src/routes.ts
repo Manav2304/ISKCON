@@ -13,6 +13,7 @@ export const routes = {
   iskconYouthForum: "/srevices/iskcon-youth-forum",
   kirtanAtIskcon: "/services/kirtan-at-iskcon",
   lifeTimeMembership: "/services/life-time-membership",
+  govindaFood: "/services/govinda-food",
   cancellationPolicy: "/footer/cancellation-policy",
   privacyPolicy: "/footer/privacy-policy",
   termsAndCondition: "/footer/terms-and-condition,",
@@ -24,4 +25,5 @@ export const routes = {
   vaishnavBhojan: "/donation-pages/vaishnav-bhojan",
   naivaidyamSeva: "/donation-pages/naivaidyam-seva",
   vigarhSeva: "/donation-pages/vigrah-seva",
+  donationMainPage: "/donation-pages/donation-main-page",
 };

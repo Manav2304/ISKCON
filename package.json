@@ -13,6 +13,7 @@
     "trailingComma": "all"
   },
   "dependencies": {
+    "@coreui/react": "^4.8.0",
     "@fortawesome/fontawesome-free": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
@@ -34,8 +35,9 @@
     "react-bootstrap": "^2.7.2",
     "react-div-100vh": "^0.7.0",
     "react-dom": "^18.2.0",
-    "react-fast-marquee": "^1.5.2",
+    "react-fast-marquee": "^1.6.0",
     "react-responsive": "^9.0.2",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
     "react-youtube": "^10.1.0",

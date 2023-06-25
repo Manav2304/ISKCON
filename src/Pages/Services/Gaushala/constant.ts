@@ -49,7 +49,9 @@ export const goushala = [
 
   "In short, the goushala at ISKCON is a beautiful and inspiring testament to the power of compassion, sustainability, and spiritual connection. Whether you are a devotee of Lord Krishna or simply someone who appreciates the beauty and majesty of the natural world, a visit to the goushala is sure to leave a lasting impression on your heart and mind.",
 
-  "Contact Details: ",
+  "Contact Details:",
 
-  "H. G. Laxmikant Das : +91 9429664102",
+  "H. G. Laxmikant Das : ",
 ];
+
+export const contactDetails = [{ id: 1, number: " +91 9429664102" }];

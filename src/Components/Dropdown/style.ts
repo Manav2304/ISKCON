@@ -4,6 +4,7 @@ export const TransparentDropdown = styled.div`
   display: inline-block;
   position: relative;
   z-index: 1;
+  width: 95px;
 
   .dropdown-menu {
     border: none;
@@ -23,10 +24,12 @@ export const TransparentDropdown = styled.div`
     font-size: 1.2rem;
   }
 `;
+
 export const DropdownToggleWrapper = styled.div`
   color: #7e5959;
   background-color: transparent;
 `;
+
 export const DropdownMenuWrapper = styled.div`
   background-color: #7e5959;
 `;

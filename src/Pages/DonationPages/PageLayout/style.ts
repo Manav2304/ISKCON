@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const TextWrapper = styled.div`
   color: #ad0d0d;
   font-family: "Times New Roman", Times, serif;
+  padding-top: 40px;
 
   @media only screen and (max-width: 768px) {
     /* Styles for tablet view */

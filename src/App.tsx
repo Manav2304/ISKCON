@@ -15,6 +15,7 @@ import { GuestHouse } from "./Pages/Services/GuestHouse";
 import { IskconYouthForum } from "./Pages/Services/IskconYouthForum";
 import { KirtanAtIskcon } from "./Pages/Services/KirtanAtIskcon";
 import { LifeTimeMembership } from "./Pages/Services/LifeTimeMembership";
+import { GovindaFood } from "./Pages/Services/GovindaFood";
 import { TermsAndCondition } from "./Pages/FooterTerms/TermsAndCondition";
 import { CancellationPolicy } from "./Pages/FooterTerms/CancellationPolicy";
 import { PrivacyPolicy } from "./Pages/FooterTerms/PrivacyPolicy";
@@ -32,7 +33,8 @@ import { HariNaamKirtanSeva } from "./Pages/DonationPages/HariNaamKirtanSeva";
 import { NaivaidyamSeva } from "./Pages/DonationPages/NaivaidyamSeva";
 import { VaishnavBhojan } from "./Pages/DonationPages/VaishnavBhojan";
 import { VigrahSeva } from "./Pages/DonationPages/VigrahSeva";
-import { Donation } from "./Pages/DonationPages/Donation";
+import { DonationBankDetails } from "./Pages/DonationPages/DonationBankDetails";
+import { DonationMainPage } from "./Pages/DonationPages/DonationMainPage";
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -51,7 +53,7 @@ export const App: React.FunctionComponent = () => {
           />
           <Route caseSensitive path={routes.media} element={<Media />} />
           <Route caseSensitive path={routes.contact} element={<Contact />} />
-          <Route caseSensitive path={routes.donation} element={<Donation />} />
+          <Route caseSensitive path={routes.donation} element={<DonationBankDetails />} />
           <Route
             caseSensitive
             path={routes.bookDistribution}
@@ -87,6 +89,11 @@ export const App: React.FunctionComponent = () => {
             caseSensitive
             path={routes.lifeTimeMembership}
             element={<LifeTimeMembership />}
+          />
+          <Route
+            caseSensitive
+            path={routes.govindaFood}
+            element={<GovindaFood />}
           />
           <Route
             caseSensitive
@@ -130,6 +137,11 @@ export const App: React.FunctionComponent = () => {
             caseSensitive
             path={routes.vigarhSeva}
             element={<VigrahSeva />}
+          />
+           <Route
+            caseSensitive
+            path={routes.donationMainPage}
+            element={<DonationMainPage />}
           />
         </Routes>
         <Footer />
