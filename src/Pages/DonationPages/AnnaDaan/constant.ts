@@ -1,3 +1,5 @@
+import { DonationCategory } from "../Payment/constant";
+
 export const annaDaan = [
   " Anna Daan is Maha Daan. Lord Krishna is extremely pleased to bless a devotee who renders even a little service to Him.",
 
@@ -6,14 +8,12 @@ export const annaDaan = [
   "Please grab the opportunity to get the blessings of Lord Krishna by rendering this important service of Anna Daan Seva.",
 ];
 
-
-export const donationCategories=[
+export const donationCategories: DonationCategory[] = [
   {
-    title: "Category 1",
+    title: "AnnaDaan",
     donations: [
-      { id: 1, title: "Donation 1", amount: 100 },
-      { id: 2, title: "Donation 2", amount: 200 },
+      { id: 1, title: "Donation 1", amount: 10 },
+      { id: 2, title: "Donation 2", amount: 20 },
     ],
   },
-  // Add more categories and donations as needed
 ];

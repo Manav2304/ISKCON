@@ -53,7 +53,11 @@ export const App: React.FunctionComponent = () => {
           />
           <Route caseSensitive path={routes.media} element={<Media />} />
           <Route caseSensitive path={routes.contact} element={<Contact />} />
-          <Route caseSensitive path={routes.donation} element={<DonationBankDetails />} />
+          <Route
+            caseSensitive
+            path={routes.donation}
+            element={<DonationBankDetails />}
+          />
           <Route
             caseSensitive
             path={routes.bookDistribution}
@@ -138,7 +142,7 @@ export const App: React.FunctionComponent = () => {
             path={routes.vigarhSeva}
             element={<VigrahSeva />}
           />
-           <Route
+          <Route
             caseSensitive
             path={routes.donationMainPage}
             element={<DonationMainPage />}
