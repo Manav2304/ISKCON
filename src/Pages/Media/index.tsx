@@ -9,7 +9,6 @@ import {
 import {
   SringarTitle,
   darshanTitle,
-  opts,
   yesterdayDarshanImages,
   todayDarshanImages,
 } from "./constant";
@@ -18,8 +17,11 @@ import titleBaseImg from "../../assets/images/title-base.png";
 import YouTube from "react-youtube";
 import { MediaCarousel } from "./MediaCarousel";
 import { HeadingStyle, ImageTitle, TitleWrapper } from "../TitleBase/style";
+import { getOptsForYoutube } from "./YouTube";
 
 export const Media: React.FC = () => {
+  const opts = getOptsForYoutube();
+
   return (
     <>
       <ServiceWrapper>
@@ -40,8 +42,6 @@ export const Media: React.FC = () => {
         <LecturesWrapper>
           <YouTubeWrapper>
             <YouTube videoId="R3tNVAtzaAw" opts={opts} />
-          </YouTubeWrapper>
-          <YouTubeWrapper>
             <YouTube videoId="Q9TUIuRVc4I" opts={opts} />
           </YouTubeWrapper>
         </LecturesWrapper>
