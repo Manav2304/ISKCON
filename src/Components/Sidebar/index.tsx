@@ -18,17 +18,20 @@ import { StyledLink } from "./style";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Navbar } from "react-bootstrap";
-import { dropdownServicesInfo } from "./constant";
+import { dropdownDonationInfo, dropdownServicesInfo } from "./constant";
 import { SidebarAccordion } from "./SidebarAccordion";
+import { Link } from "react-router-dom";
 
 export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef(null);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isDonationOpen, setIsDonationOpen] = useState(false);
 
   const handleClose = () => {
     setIsOpen(false);
     setIsServicesOpen(false);
+    setIsDonationOpen(false);
   };
 
   const handleToggle = () => {
@@ -49,7 +52,14 @@ export const Sidebar = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  },
+  );
+
+const toggleTitle = (
+  <Link to={routes.donationMainPage}>
+    Donation
+  </Link>
+);
 
   return (
     <div ref={ref}>
@@ -88,9 +98,13 @@ export const Sidebar = () => {
               Media
             </StyledLink>
             <hr />
-            <StyledLink to={routes.donation} onClick={handleClose}>
-              Donate
-            </StyledLink>
+            <SidebarAccordion
+  items={dropdownDonationInfo}
+  toggleTitle={toggleTitle.props.children}
+  handleClose={handleClose}
+  isOpen={isDonationOpen}
+  setIsOpen={setIsDonationOpen}
+/>
             <hr />
             <StyledLink to={routes.festival} onClick={handleClose}>
               Festival

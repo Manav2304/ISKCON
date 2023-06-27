@@ -86,4 +86,15 @@ export const CopyButton = styled.button<{ copied: boolean }>`
 
 export const TableStyle = styled.div`
   margin: 1px 50px 10px;
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+`;
+
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
 `;

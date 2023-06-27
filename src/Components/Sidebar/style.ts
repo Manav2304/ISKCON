@@ -7,7 +7,7 @@ import { devices } from "../../style";
 
 export const SidebarStyle = styled.div<{ isOpen: boolean }>`
   background-image: url(${title});
-  background-size: repeat;
+  background-size: cover;
   width: 300px;
   height: 100%;
   position: fixed;

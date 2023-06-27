@@ -17,4 +17,13 @@ export const routes = {
   cancellationPolicy: "/footer/cancellation-policy",
   privacyPolicy: "/footer/privacy-policy",
   termsAndCondition: "/footer/terms-and-condition,",
+  annaDaan: "/donation-pages/anna-daan",
+  ekadasi: "/donation-pages/ekadasi",
+  gauraPurnima: "/donation-pages/gaura-purnima",
+  gauSeva: "/donation-pages/gau-seva",
+  hariNaamKirtanSeva: "/donation-pages/harinaam-kirtan-seva",
+  vaishnavBhojan: "/donation-pages/vaishnav-bhojan",
+  naivaidyamSeva: "/donation-pages/naivaidyam-seva",
+  vigarhSeva: "/donation-pages/vigrah-seva",
+  donationMainPage: "/donation-pages/donation-main-page",
 };
