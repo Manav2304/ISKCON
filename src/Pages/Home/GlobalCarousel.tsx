@@ -1,31 +1,30 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
-import { Reviews, ImageCarousel, StyleCarousel } from "./style";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { CarouselWrapper } from "./style";
 
-interface Props {
-  images: { id: number; image: string }[];
+interface CarouselImage {
+  id: number;
+  image: string;
 }
 
-export const GlobalCarousel: React.FC<Props> = ({ images }) => {
+interface GlobalCarouselProps {
+  images: CarouselImage[];
+}
+
+export const GlobalCarousel: React.FC<GlobalCarouselProps> = ({ images }) => {
   return (
-    <Reviews>
-      <StyleCarousel
-        nextIcon={<span className="carousel-control-next-icon" />}
-        prevIcon={<span className="carousel-control-prev-icon" />}
-        indicators
-        nextLabel=""
-        prevLabel=""
-        interval={3000}
-      >
-        {images.map((image) => (
-          <Carousel.Item key={image.id}>
-            <ImageCarousel
-              src={image.image}
-              alt={`Carousel Image ${image.id}`}
-            />
-          </Carousel.Item>
-        ))}
-      </StyleCarousel>
-    </Reviews>
+    <CarouselWrapper
+      showArrows={true}
+      showThumbs={false}
+      autoPlay={true}
+      interval={3000}
+      infiniteLoop={true}
+    >
+      {images.map((image) => (
+        <div key={image.id}>
+          <img src={image.image} alt="#" />
+        </div>
+      ))}
+    </CarouselWrapper>
   );
 };

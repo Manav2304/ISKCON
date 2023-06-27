@@ -39,7 +39,7 @@ export const NavStyle = styled.nav`
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 999;
 `;
 
 export const ToggleButton = styled.button`
