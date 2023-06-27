@@ -56,9 +56,11 @@ export const NavStyle = styled.nav`
     width: 100% !important;
   }
 `;
+
 export const StyledLink = styled(Link)`
   color: #fff;
   text-decoration: none;
+  font-family: Overlock-Regular, Arial, Helvetica, sans-serif;
 
   &:hover {
     color: #ad0d0d;
@@ -67,6 +69,7 @@ export const StyledLink = styled(Link)`
 
 export const ImgStyle = styled.img`
   height: 70px;
+  margin: auto;
 
   @media (${devices.mobileES}) {
     height: 10px;
@@ -90,19 +93,16 @@ export const ImgStyle = styled.img`
   }
 
   @media (${devices.laptop}) {
-    height: 85px;
-    margin-left: -40px;
+    height: 80px;
   }
 
   @media (${devices.laptopL}) {
-    height: 90px;
-    margin-left: -10px;
+    height: 80px;
   }
 
   @media (${devices.desktop}) {
     display: flex;
     height: 100px;
-    margin-left: -10px;
   }
 `;
 
@@ -123,6 +123,7 @@ export const IconsStyle = styled.a`
 export const MarqueeWrapper = styled(Marquee)`
   color: #fff;
   background-color: #ad0d0d;
+  font-family: Overlock-Regular, cursive, sans-serif;
   height: 75px;
   width: 85%;
   position: fixed;

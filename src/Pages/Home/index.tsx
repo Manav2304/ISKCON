@@ -1,7 +1,7 @@
 import React from "react";
 import titleBaseUrl from "../../assets/images/title-base.png";
 import { carouselImages, titleTiles, sections } from "./constant";
-import { HeadingStyle, ImageTitle, TextStyle, Image } from "./style";
+import { ImageTitle, TextStyle, Image, HeadingStyle } from "./style";
 import { PageCarousel } from "./PageCarousel";
 import { GlobalCarousel } from "./GlobalCarousel";
 
@@ -11,9 +11,7 @@ export const HomePage: React.FC = () => {
       <GlobalCarousel images={carouselImages} />
       {titleTiles.map((titleTile) => (
         <div>
-          <HeadingStyle>
-            <h1> {titleTile.title}</h1>
-          </HeadingStyle>
+          <HeadingStyle> {titleTile.title}</HeadingStyle>
           <ImageTitle src={titleBaseUrl} alt="Title Image" />
           <PageCarousel images={titleTile.images} />
           <TextStyle>
@@ -25,14 +23,12 @@ export const HomePage: React.FC = () => {
       ))}
       {sections.map((section) => (
         <div>
-          <HeadingStyle>
-            <h1>{section.title}</h1>
-          </HeadingStyle>
+          <HeadingStyle>{section.title}</HeadingStyle>
           <ImageTitle src={titleBaseUrl} alt="Title Image" />
           <Image
             src={section.image}
             alt={`${section.title} Img`}
-            className="rounded"
+            className="img-fluid"
           />
           <TextStyle>
             {section.paragraphs.map((paragraph) => (
