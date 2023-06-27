@@ -16,6 +16,7 @@ import { GuestHouse } from "./Pages/Services/GuestHouse";
 import { IskconYouthForum } from "./Pages/Services/IskconYouthForum";
 import { KirtanAtIskcon } from "./Pages/Services/KirtanAtIskcon";
 import { LifeTimeMembership } from "./Pages/Services/LifeTimeMembership";
+import { GovindaFood } from "./Pages/Services/GovindaFood";
 import { TermsAndCondition } from "./Pages/FooterTerms/TermsAndCondition";
 import { CancellationPolicy } from "./Pages/FooterTerms/CancellationPolicy";
 import { PrivacyPolicy } from "./Pages/FooterTerms/PrivacyPolicy";
@@ -83,6 +84,11 @@ export const App: React.FunctionComponent = () => {
             caseSensitive
             path={routes.lifeTimeMembership}
             element={<LifeTimeMembership />}
+          />
+          <Route
+            caseSensitive
+            path={routes.govindaFood}
+            element={<GovindaFood />}
           />
           <Route
             caseSensitive

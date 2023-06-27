@@ -13,6 +13,7 @@ export const routes = {
   iskconYouthForum: "/srevices/iskcon-youth-forum",
   kirtanAtIskcon: "/services/kirtan-at-iskcon",
   lifeTimeMembership: "/services/life-time-membership",
+  govindaFood: "/services/govinda-food",
   cancellationPolicy: "/footer/cancellation-policy",
   privacyPolicy: "/footer/privacy-policy",
   termsAndCondition: "/footer/terms-and-condition,",

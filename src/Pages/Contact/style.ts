@@ -10,7 +10,7 @@ export const ContactLink = styled.a`
   text-decoration: none;
 
   &:hover {
-    color: #ff007f;
+    color: #800000;
   }
 `;
 

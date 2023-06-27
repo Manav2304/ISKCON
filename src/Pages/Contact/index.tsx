@@ -39,7 +39,7 @@ export const Contact: React.FC = () => {
           <BoxDetail>
             {contactNumbers.map((contact) => (
               <React.Fragment key={contact.id}>
-                <ContactLink href={`tel=${contact.number}`}>
+                <ContactLink href={`tel:${contact.number}`}>
                   {contact.number}
                 </ContactLink>
                 <br />
@@ -57,7 +57,7 @@ export const Contact: React.FC = () => {
           <BoxHeading>Address</BoxHeading>
           <BoxDetail>
             <ContactLink
-              href="https://goo.gl/maps/oig1BbDfSinEaxYu9"
+              href="https://goo.gl/maps/oig1bbdfsineaxyu9"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -72,7 +72,7 @@ export const Contact: React.FC = () => {
             <br />
             {guestHouseNumbers.map((guestHouse) => (
               <React.Fragment key={guestHouse.id}>
-                <ContactLink href={`tel=${guestHouse.number}`}>
+                <ContactLink href={`tel:${guestHouse.number}`}>
                   {guestHouse.number}
                 </ContactLink>
                 <br />

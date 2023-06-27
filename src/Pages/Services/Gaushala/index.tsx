@@ -1,5 +1,5 @@
 import { ServiceDescription } from "../PageLayout/index";
-import { goushala, goverdhangoushalaImages } from "./constant";
+import { goushala, goverdhangoushalaImages, contactDetails } from "./constant";
 
 export const Gaushala: React.FC = () => {
   return (
@@ -7,6 +7,6 @@ export const Gaushala: React.FC = () => {
       title="Goverdhan Gaushala"
       content={goushala}
       imageUrl={goverdhangoushalaImages}
-    />
+      contactNumber={contactDetails}    />
   );
 };
