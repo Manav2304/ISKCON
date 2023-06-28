@@ -8,7 +8,7 @@ import {
   TableCell,
   DonationHeader,
 } from "./style";
-import { server } from "../../../server";
+// import { server } from "../../../server";
 import { DonationCategory } from "./constant";
 
 type Donation = {
@@ -23,75 +23,14 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
   const [selectedDonations, setSelectedDonations] = useState<Donation[]>([]);
   const [customAmount, setCustomAmount] = useState<number>(0);
   const [mobileNumber] = useState<string>("");
-  const [email] = useState<string>("");
-  const [name, setName] = useState("");
-  const [, setAmount] = useState<number>(0);
-
-  const handlePaymentSuccess = async (response: any): Promise<void> => {
-    try {
-      const bodyData = new FormData();
-      bodyData.append("response", JSON.stringify(response));
-
-      await axios({
-        url: `${server}/razorpay/payment/success/`,
-        method: "POST",
-        data: bodyData,
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-      })
-        .then(() => {
-          console.log("Everything is OK!");
-          setName("");
-          setAmount(0);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  const showRazorpay = async (): Promise<void> => {
-    const bodyData = new FormData();
-    bodyData.append("totalDonationAmount", totalDonationAmount.toString());
-    bodyData.append("name", name);
-
-    const data = await axios({
-      url: `${server}/razorpay/pay/`,
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      data: bodyData,
-    }).then((res) => {
-      return res;
-    });
-
-    const options = {
-      key_id: process.env.REACT_APP_PUBLIC_KEY!,
-      key_secret: process.env.REACT_APP_SECRET_KEY!,
-      amount: data.data.payment.amount,
-      currency: "INR",
-      name: "ISKCON",
-      description: "Test transaction",
-      order_id: data.data.payment.id,
-      handler: function (response: any): void {
-        handlePaymentSuccess(response);
-      },
-    };
-
-    const rzp1 = new window.Razorpay(options);
-    rzp1.open();
-  };
+  // const [email] = useState<string>("");
+  // const [name, setName] = useState("");
+  // const [, setAmount] = useState<number>(0);
 
   const handleDonationSelect = (donation: Donation) => {
     if (selectedDonations.find((d) => d.id === donation.id)) {
       setSelectedDonations((prevState) =>
-        prevState.filter((d) => d.id !== donation.id)
+        prevState.filter((d) => d.id !== donation.id),
       );
     } else {
       setSelectedDonations((prevState) => [...prevState, donation]);
@@ -99,26 +38,28 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
   };
 
   const handleCustomAmountChange = (
-    event: React.ChangeEvent<HTMLInputElement>
+    event: React.ChangeEvent<HTMLInputElement>,
   ) => {
     setCustomAmount(Number(event.target.value));
   };
 
   const totalDonationAmount = selectedDonations.reduce(
     (acc, curr) => acc + curr.amount,
-    customAmount
+    customAmount,
   );
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    console.log("Submit", {
-      name,
-      mobileNumber,
-      email,
-      selectedDonations,
-      customAmount,
-      totalDonationAmount,
-    });
+  const [amount, setAmount] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post("/donate", { amount, name, email });
+      console.log(response.data); // Handle the response
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
@@ -176,7 +117,7 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
           </tfoot>
         </Table>
         <div className="container" style={{ marginTop: "20vh" }}>
-          <button onClick={showRazorpay} className="btn btn-primary btn-block">
+          <button type="submit" className="btn btn-primary btn-block">
             Pay with Razorpay
           </button>
         </div>
