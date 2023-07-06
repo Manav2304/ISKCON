@@ -147,6 +147,11 @@ export const App: React.FunctionComponent = () => {
             path={routes.donationMainPage}
             element={<DonationMainPage />}
           />
+          <Route
+            caseSensitive
+            path={routes.donationBankDetails}
+            element={<DonationBankDetails />}
+          />
         </Routes>
         <Footer />
       </BrowserRouter>

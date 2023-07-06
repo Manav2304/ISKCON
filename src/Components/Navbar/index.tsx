@@ -36,21 +36,22 @@ export const NavigationBar = () => {
         <div className="container">
           <StyledLink to={routes.home}>Iskcon</StyledLink>
           <PageDropdown items={dropdownServicesInfo} toggleTitle="Services" />
-        <StyledLink to={routes.visitUs}>Visit Us</StyledLink>
+          <StyledLink to={routes.visitUs}>Visit Us</StyledLink>
           <StyledLink to={routes.media}>Media</StyledLink>
           <StyledLink to={routes.home}>
             <ImgStyle src={logoUrl} alt="Logo" />
           </StyledLink>
           <StyledLink to={routes.media}>Media</StyledLink>
           <StyledLink to={routes.donationMainPage}>
-          <PageDropdown
-          items={dropdownDonationPagesInfo}
-          toggleTitle="Donation"
-        />
-        </StyledLink>
+            <PageDropdown
+              items={dropdownDonationPagesInfo}
+              toggleTitle="Donation"
+            />
+          </StyledLink>
           <StyledLink to={routes.festival}>Festival</StyledLink>
           <StyledLink to={routes.contact}>Contact</StyledLink>
           <StyledLink to={routes.contact}>Blogs</StyledLink>
+          <StyledLink to={routes.donationBankDetails}>Donation-Page</StyledLink>
         </div>
       </NavStyle>
     </>

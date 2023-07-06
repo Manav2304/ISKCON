@@ -1,12 +1,12 @@
+import { CardMedia } from "@mui/material";
 import styled from "styled-components";
+import { devices } from "../../../style";
 
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 100px 2rem 2rem;
 `;
 
 export const Table = styled.table`
@@ -92,9 +92,28 @@ export const TableStyle = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
+
+  @media screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .table-container {
+      width: 50%;
+    }
+  }
 `;
 
 export const Container = styled.div`
   display: flex;
+  justify-content: center;
+`;
+
+export const CardWrapper = styled.div`
+  margin-top: 50px;
+  margin-bottom: 50px;
   justify-content: center;
 `;

@@ -21,5 +21,5 @@ export const dropdownDonationInfo = [
   { name: "Vaishnav Bhojan", url: routes.vaishnavBhojan },
   { name: "Naivaidyan Seva", url: routes.naivaidyamSeva },
   { name: "Vigarh Seva", url: routes.vigarhSeva },
+  { name: "Donation Page", url: routes.donationBankDetails },
 ];
-

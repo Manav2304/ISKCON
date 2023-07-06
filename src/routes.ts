@@ -26,4 +26,5 @@ export const routes = {
   naivaidyamSeva: "/donation-pages/naivaidyam-seva",
   vigarhSeva: "/donation-pages/vigrah-seva",
   donationMainPage: "/donation-pages/donation-main-page",
+  donationBankDetails: "/donation-pages/donation-bank-details",
 };
