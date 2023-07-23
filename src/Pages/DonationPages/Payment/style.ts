@@ -5,6 +5,7 @@ export const Container = styled.div`
   margin: 0 auto;
   padding: 20px;
   background: transparent;
+  margin-top: 115px;
 `;
 
 export const Title = styled.h1`
@@ -42,10 +43,12 @@ export const TableRow = styled.tr`
 `;
 
 export const TableCell = styled.td`
-  padding: 10px;
   color: #a52a2a;
-  border-bottom: 0.19rem solid #8b0000;
-  background: transparent;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  border-top: 1px solid #ddd;
 `;
 
 export const Button = styled.button`
@@ -98,3 +101,9 @@ export const Container1 = styled.div`
   margin-top: 100px;
   text-align: center;
 `;
+
+export const Wrapper = styled.div`
+  margin-top: -130px;
+`;
+
+export const INPUT = styled.input``;

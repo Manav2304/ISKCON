@@ -30,6 +30,7 @@ export const socialMediaIcon = [
 ];
 
 export const festivalInfo = [{ title: "festival", path: routes.festival }];
+
 export const dropdownServicesInfo = [
   { title: "Life Time Membership", path: routes.lifeTimeMembership },
   { title: "Kirtan At Iskcon", path: routes.kirtanAtIskcon },
@@ -51,4 +52,5 @@ export const dropdownDonationPagesInfo = [
   { title: "Vaishnav Bhojan", path: routes.vaishnavBhojan },
   { title: "Naivaidyan Seva", path: routes.naivaidyamSeva },
   { title: "Vigarh Seva", path: routes.vigarhSeva },
+  { title: "Donation-Page", path: routes.donationBankDetails },
 ];

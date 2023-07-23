@@ -1,7 +1,14 @@
-import styled from 'styled-components';
-import { CRow, CCol, CCard, CCardBody, CCardTitle, CCardImage } from '@coreui/react';
-import { devices } from '../../../style';
-import { Link } from 'react-router-dom';
+import styled from "styled-components";
+import {
+  CRow,
+  CCol,
+  CCard,
+  CCardBody,
+  CCardTitle,
+  CCardImage,
+} from "@coreui/react";
+import { devices } from "../../../style";
+import { Link } from "react-router-dom";
 
 export const CustomRow = styled(CRow)`
   margin-bottom: 20px;
@@ -176,4 +183,8 @@ export const StyledLink = styled(Link)`
   &:hover {
     color: #ad0d0d;
   }
+`;
+
+export const PageWrapper = styled.div`
+  margin-top: 150px;
 `;
