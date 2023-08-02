@@ -1,7 +1,6 @@
 import { Paragraph, TextWrapper } from "./style";
 import titlebBaseImage from "../../../assets/images/title-base.png";
 import { HeadingStyle, ImageTitle, TitleWrapper } from "../../TitleBase/style";
-import { DonationBankDetails } from "../DonationBankDetails";
 
 interface DonationPagesDescriptionProps {
   title: string;

@@ -106,4 +106,7 @@ export const Wrapper = styled.div`
   margin-top: -130px;
 `;
 
-export const INPUT = styled.input``;
+export const INPUT = styled.input`
+  display: flex;
+  justify-content: end;
+`;

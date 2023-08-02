@@ -96,14 +96,14 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
                 </React.Fragment>
               ))}
               <TableRow>
-                <TableCell>
-                  <INPUT
-                    type="number"
-                    placeholder="Enter custom amount"
-                    value={customAmount}
-                    onChange={handleCustomAmountChange}
-                  />
-                </TableCell>
+                {/* <TableCell> */}
+                <INPUT
+                  type="number"
+                  placeholder="Enter custom amount"
+                  value={customAmount}
+                  onChange={handleCustomAmountChange}
+                />
+                {/* </TableCell> */}
                 <TableCell></TableCell>
               </TableRow>
             </tbody>
