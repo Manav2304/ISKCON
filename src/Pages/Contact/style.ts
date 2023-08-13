@@ -104,3 +104,84 @@ export const BoxDetail = styled.p`
   font-size: 1.2rem;
   color: #fff;
 `;
+
+
+export const HeadingStyle = styled.h1`
+  color: #7e5959;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 10px;
+
+  @media (${devices.mobileES}) {
+    margin-top: 20px;
+    font-weight: 700 !important;
+    font-size: 1.5em !important;
+    line-height: 20px !important;
+    letter-spacing: 1.5px !important;
+    margin-bottom: 5px;
+  }
+
+  @media (${devices.mobileS}) {
+    margin-top: 20px;
+    font-weight: 700 !important;
+    font-size: 1.5em !important;
+    line-height: 20px !important;
+    letter-spacing: 1.5px !important;
+    margin-bottom: 5px;
+  }
+
+  @media (${devices.mobileM}) {
+    margin-top: 20px;
+    font-weight: 700 !important;
+    font-size: 1.5em !important;
+    line-height: 20px !important;
+    letter-spacing: 1.5px !important;
+    margin-bottom: 5px;
+  }
+
+  @media (${devices.mobileL}) {
+    margin-top: 40px;
+    font-weight: 700 !important;
+    font-size: 2em !important;
+    line-height: 30px !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 5px;
+  }
+
+  @media (${devices.tablet}) {
+    margin-top: 30px;
+    font-weight: 700 !important;
+    font-size: 2em !important;
+    line-height: 40px !important;
+    letter-spacing: 2.5px !important;
+    margin-bottom: 5px;
+  }
+
+  @media (${devices.laptop}) {
+    margin-top: 135px;
+    font-weight: 700 !important;
+    font-size: 3em !important;
+    line-height: 40px !important;
+    letter-spacing: 4.5px !important;
+    margin-bottom: 10px;
+  }
+
+  @media (${devices.laptopL}) {
+    margin-top: 135px;
+    font-weight: 700 !important;
+    font-size: 3em !important;
+    line-height: 40px !important;
+    letter-spacing: 4.5px !important;
+    margin-bottom: 10px;
+  }
+
+  @media (${devices.desktop}) {
+    margin-top: 145px;
+    font-weight: 700 !important;
+    font-size: 4em !important;
+    letter-spacing: 4.5px !important;
+    line-height: 40px !important;
+    margin-bottom: 10px;
+  }
+`;

@@ -24,9 +24,9 @@ export const ServiceDescription: React.FC<ServiceDescriptionProps> = ({
       <TextWrapper>
         <TitleWrapper>
           <HeadingStyle>
-            <h1>{title}</h1>
-            <ImageTitle src={titlebBaseImage} alt="Title Image" />
+         {title}
           </HeadingStyle>
+            <ImageTitle src={titlebBaseImage} alt="Title Image" />
         </TitleWrapper>
         <PageCarousel images={imageUrl} />
         <Paragraph>

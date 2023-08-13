@@ -5,7 +5,7 @@ export const TitleWrapper = styled.div`
   margin-top: 95px;
 `;
 
-export const HeadingStyle = styled.p`
+export const HeadingStyle = styled.h1`
   color: #7e5959;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -13,7 +13,7 @@ export const HeadingStyle = styled.p`
   margin-bottom: 10px;
 
   @media (${devices.mobileES}) {
-    margin-top: 20px;
+    margin-top: -28px;
     font-weight: 700 !important;
     font-size: 1.5em !important;
     line-height: 20px !important;
@@ -22,7 +22,7 @@ export const HeadingStyle = styled.p`
   }
 
   @media (${devices.mobileS}) {
-    margin-top: 20px;
+    margin-top: -30px;
     font-weight: 700 !important;
     font-size: 1.5em !important;
     line-height: 20px !important;
@@ -31,7 +31,7 @@ export const HeadingStyle = styled.p`
   }
 
   @media (${devices.mobileM}) {
-    margin-top: 20px;
+    margin-top: -20px;
     font-weight: 700 !important;
     font-size: 1.5em !important;
     line-height: 20px !important;
@@ -43,7 +43,7 @@ export const HeadingStyle = styled.p`
     margin-top: 40px;
     font-weight: 700 !important;
     font-size: 2em !important;
-    line-height: 30px !important;
+    line-height: 20px !important;
     letter-spacing: 2px !important;
     margin-bottom: 5px;
   }
@@ -51,14 +51,14 @@ export const HeadingStyle = styled.p`
   @media (${devices.tablet}) {
     margin-top: 30px;
     font-weight: 700 !important;
-    font-size: 3em !important;
+    font-size: 2em !important;
     line-height: 40px !important;
     letter-spacing: 2.5px !important;
     margin-bottom: 5px;
   }
 
   @media (${devices.laptop}) {
-    margin-top: 40px;
+    margin-top: 135px;
     font-weight: 700 !important;
     font-size: 3em !important;
     line-height: 40px !important;
@@ -67,7 +67,7 @@ export const HeadingStyle = styled.p`
   }
 
   @media (${devices.laptopL}) {
-    margin-top: 40px;
+    margin-top: 135px;
     font-weight: 700 !important;
     font-size: 3em !important;
     line-height: 40px !important;
@@ -84,7 +84,6 @@ export const HeadingStyle = styled.p`
     margin-bottom: 10px;
   }
 `;
-
 export const ImageTitle = styled.img`
   width: 100%;
   display: block;

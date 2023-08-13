@@ -11,10 +11,12 @@ import {
   Paragraph,
   VisibleParagraph,
   HiddenParagraph,
+  HeadingStyle1,
 } from "./style";
 import { PageCarousel } from "../Services/PageLayout/PageCarousel";
 import { Button } from "../Festival/style";
-import { HeadingStyle, ImageTitle, TitleWrapper } from "../TitleBase/style";
+import {  ImageTitle, TitleWrapper } from "../TitleBase/style";
+import { HeadingStyle } from "./style";
 
 export const VisitUs = () => {
   const [showMoreDakor, setShowMoreDakor] = useState(false);
@@ -26,9 +28,9 @@ export const VisitUs = () => {
     <ServiceWrapper>
       <TitleWrapper>
         <HeadingStyle>
-          <h1>Dakor Dham</h1>
-          <ImageTitle src={titleBaseImg} alt="Title Image" />
+          Dakor Dham
         </HeadingStyle>
+          <ImageTitle src={titleBaseImg} alt="Title Image" />
       </TitleWrapper>
       <PageCarousel images={dakorImages} />
       <Paragraph>
@@ -47,10 +49,10 @@ export const VisitUs = () => {
           {showMoreDakor ? "Read less" : "Read more"}
         </Button>
       </Paragraph>
-      <HeadingStyle>
-        <h1>Goverdhan Goushala</h1>
+      <HeadingStyle1>
+      Goverdhan Goushala
+      </HeadingStyle1>
         <ImageTitle src={titleBaseImg} alt="Title Image" />
-      </HeadingStyle>
       <PageCarousel images={goushalImages} />
       <Paragraph>
         {goushalaInfo.map((paragraph) =>

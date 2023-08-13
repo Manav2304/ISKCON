@@ -1,6 +1,6 @@
-import { LinkName, PageWrapper, SpotifyWrapper, LinkStyle } from "./style";
+import { LinkName, PageWrapper, SpotifyWrapper, LinkStyle, HeadingStyle1 } from "./style";
 import titleBaseImg from "../../assets/images/title-base.png";
-import { HeadingStyle, ImageTitle } from "../TitleBase/style";
+import {  ImageTitle } from "../TitleBase/style";
 
 export const AudioContent = () => {
   return (
@@ -11,12 +11,14 @@ export const AudioContent = () => {
         target="_blank"
         rel="noreferrer"
       >
+        <br/>
         <LinkName>Google Drive Link</LinkName>
+        <br/>
       </LinkStyle>
-      <HeadingStyle>
-        <h1>Kirtan</h1>
+      <HeadingStyle1>
+        Kirtan
+      </HeadingStyle1>
         <ImageTitle src={titleBaseImg} alt="Title Image" />
-      </HeadingStyle>
       <PageWrapper>
         <SpotifyWrapper
           title="Spotify Playlist"

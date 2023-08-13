@@ -10,7 +10,7 @@ import {
   Wrapper,
   INPUT,
 } from "./style";
-import { DonationCategory } from "./constant";
+import { DonationCategory } from "../Payment/constant";
 
 type Donation = {
   id: number;

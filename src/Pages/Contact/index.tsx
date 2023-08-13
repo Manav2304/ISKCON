@@ -17,16 +17,17 @@ import {
   ContactLink,
 } from "./style";
 import titleBaseImg from "../../assets/images/title-base.png";
-import { HeadingStyle, ImageTitle, TitleWrapper } from "../TitleBase/style";
+import {  ImageTitle, TitleWrapper } from "../TitleBase/style";
+import { HeadingStyle } from "./style";
 
 export const Contact: React.FC = () => {
   return (
     <Container>
       <TitleWrapper>
         <HeadingStyle>
-          <h1>Contact Us</h1>
-          <ImageTitle src={titleBaseImg} alt="Title Image" />
+          Contact Us
         </HeadingStyle>
+          <ImageTitle src={titleBaseImg} alt="Title Image" />
       </TitleWrapper>
       <MapFrame
         title="Google Map"
