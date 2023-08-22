@@ -103,14 +103,11 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
                   value={customAmount}
                   onChange={handleCustomAmountChange}
                 />
-                {/* </TableCell> */}
-                <TableCell></TableCell>
               </TableRow>
             </tbody>
             <tfoot>
               <TableRow>
                 <TableCell>Total Donation Amount</TableCell>
-                <TableCell></TableCell>
                 <TableCell>₹{totalDonationAmount} </TableCell>
               </TableRow>
             </tfoot>

@@ -45,12 +45,18 @@ export const dropdownServicesInfo = [
 
 export const dropdownDonationPagesInfo = [
   { title: "Annna Daan", path: routes.annaDaan },
-  { title: "Ekadasi", path: routes.ekadasi },
-  { title: "Gaura Purnima", path: routes.gauraPurnima },
+  { title: "E-Hindu", path: routes.ehindu },
+  { title: "General-Donation", path: routes.generaldonation },
   { title: "Gau Seva", path: routes.gauSeva },
-  { title: "HariNaam Kirtan Seva", path: routes.hariNaamKirtanSeva },
-  { title: "Vaishnav Bhojan", path: routes.vaishnavBhojan },
-  { title: "Naivaidyan Seva", path: routes.naivaidyamSeva },
-  { title: "Vigarh Seva", path: routes.vigarhSeva },
+  { title: "Monthly Radharani's Kitchen Seva", path: routes.monthlySeva },
+  { title: "Vidya Daan", path: routes.vidyadaan },
+  { title: "Give-Shrimad-Bhagavatam", path: routes.givesrimadbhagavatam },
+  { title: "recurrium donation", path: routes.recurriumdonation },
   { title: "Donation-Page", path: routes.donationBankDetails },
+  { title: "Janmashtmi-Seva", path:routes.janmashtmiSeva },
+  { title: "Sadhu-Bhojan", path:routes.sadhubhojan },
+  { title: "Radharani-Kitchen-Seva", path:routes.radharaniKitchenSeva },
+  { title: "Gita-Daan", path:routes.gitaDaan },
+  {title:"Deity-Seva", path:routes.deityseva}
+
 ];

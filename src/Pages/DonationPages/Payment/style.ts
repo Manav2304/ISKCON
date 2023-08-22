@@ -1,4 +1,5 @@
 import styled from "styled-components";
+// import { devices } from "../../../style";
 
 export const Container = styled.div`
   max-width: 800px;
@@ -34,6 +35,11 @@ export const TableHeader = styled.th`
   text-align: left;
   padding: 10px;
   border-bottom: 0.3rem solid #a0522d;
+
+  @media (max-width: 320px) {
+    font-size: 14px; 
+   
+  }
 `;
 
 export const TableRow = styled.tr`
@@ -84,6 +90,8 @@ export const Input = styled.input`
     outline: none;
     border-color: #07f;
   }
+
+
 `;
 
 export const NameInput = styled.form`

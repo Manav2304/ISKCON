@@ -13,13 +13,19 @@ export const dropdownServicesInfo = [
 ];
 
 export const dropdownDonationInfo = [
-  { name: "Annna Daan", url: routes.annaDaan },
-  { name: "Ekadasi", url: routes.ekadasi },
-  { name: "Gaura Purnima", url: routes.gauraPurnima },
+  { name: "Annna-Daan", url: routes.annaDaan },
+  { name: "E-Hindu", url: routes.ehindu },
+  { name: "General-Donation", url: routes.generaldonation },
   { name: "Gau Seva", url: routes.gauSeva },
-  { name: "HariNaam Kirtan Seva", url: routes.hariNaamKirtanSeva },
-  { name: "Vaishnav Bhojan", url: routes.vaishnavBhojan },
-  { name: "Naivaidyan Seva", url: routes.naivaidyamSeva },
-  { name: "Vigarh Seva", url: routes.vigarhSeva },
-  { name: "Donation Page", url: routes.donationBankDetails },
+  { name: "Monthly Radharani's Kitchen Seva", url: routes.monthlySeva },
+  { name: "Vidya-Daan", url: routes.vidyadaan },
+  { name: "Give-Srimad-donation ", url: routes.givesrimadbhagavatam },
+  { name: "Recurrium-Donation", url: routes.recurriumdonation },
+  { name: "Donation-Page", url: routes.donationBankDetails },
+  { name: "Janmashtmi-Seva", url:routes.janmashtmiSeva },
+  { name: "Sadhu-Bhojan", url:routes.sadhubhojan },
+  { name: "Radharani-Kitchen-Seva", url:routes.radharaniKitchenSeva },
+  { name: "Gita-Daan", url:routes.gitaDaan },
+  {name:"Deity-Seva", url:routes.deityseva}
+
 ];

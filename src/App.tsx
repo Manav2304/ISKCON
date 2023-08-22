@@ -26,15 +26,25 @@ import ScrollToTop from "./Components/ScrollToTop";
 import { Sidebar } from "./Components/Sidebar";
 import { VisitUs } from "./Pages/VisitUs";
 import { AnnaDaan } from "./Pages/DonationPages/AnnaDaan";
-import { Ekadasi } from "./Pages/DonationPages/Ekadasi";
-import { GauraPurnima } from "./Pages/DonationPages/GauraPurnima";
+// import { GauraPurnima } from "./Pages/DonationPages/GauraPurnima";
 import { GauSeva } from "./Pages/DonationPages/GauSeva";
-import { HariNaamKirtanSeva } from "./Pages/DonationPages/HariNaamKirtanSeva";
-import { NaivaidyamSeva } from "./Pages/DonationPages/NaivaidyamSeva";
-import { VaishnavBhojan } from "./Pages/DonationPages/VaishnavBhojan";
-import { VigrahSeva } from "./Pages/DonationPages/VigrahSeva";
+// import { HariNaamKirtanSeva } from "./Pages/DonationPages/HariNaamKirtanSeva";
+// import { NaivaidyamSeva } from "./Pages/DonationPages/NaivaidyamSeva";
+// import { VaishnavBhojan } from "./Pages/DonationPages/VaishnavBhojan";
+// import { VigrahSeva } from "./Pages/DonationPages/VigrahSeva";
 import { DonationBankDetails } from "./Pages/DonationPages/DonationBankDetails";
 import { DonationMainPage } from "./Pages/DonationPages/DonationMainPage";
+import { JanmashtmiSeva } from "./Pages/DonationPages/JanmashtamiSeva";
+import { RadharaniKitchenSeva } from "./Pages/DonationPages/Radharani'sKitchenSeva";
+import { SadhuBhojan } from "./Pages/DonationPages/SadhuBhojan";
+import { RecurriumDonation } from "./Pages/DonationPages/RecurriumDonation";
+import { GiveShrimadBhagavatam } from "./Pages/DonationPages/GiveSrimadBhagavatam";
+import { VidyaDaan } from "./Pages/DonationPages/VidyaDaan";
+import { EHindu } from "./Pages/DonationPages/E-hindu";
+import { GeneralDonation } from "./Pages/DonationPages/GenralDonation";
+import { MonthlySeva } from "./Pages/DonationPages/MonthlyRadharaniKithcenSeva";
+import { GitaDaan } from "./Pages/DonationPages/GitaDaan";
+import { DeitySeva } from "./Pages/DonationPages/DeitySeva";
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -115,33 +125,34 @@ export const App: React.FunctionComponent = () => {
             element={<PrivacyPolicy />}
           />
           <Route caseSensitive path={routes.annaDaan} element={<AnnaDaan />} />
-          <Route caseSensitive path={routes.ekadasi} element={<Ekadasi />} />
           <Route
             caseSensitive
-            path={routes.gauraPurnima}
-            element={<GauraPurnima />}
+            path={routes.recurriumdonation}
+            element={<RecurriumDonation />}
+          />
+          <Route
+            caseSensitive
+            path={routes.givesrimadbhagavatam}
+            element={<GiveShrimadBhagavatam />}
+          />
+          <Route
+            caseSensitive
+            path={routes.vidyadaan}
+            element={<VidyaDaan />}
+          />
+          <Route caseSensitive path={routes.ehindu} element={<EHindu />} />
+          <Route
+            caseSensitive
+            path={routes.generaldonation}
+            element={<GeneralDonation />}
+          />
+          <Route
+            caseSensitive
+            path={routes.monthlySeva}
+            element={<MonthlySeva />}
           />
           <Route caseSensitive path={routes.gauSeva} element={<GauSeva />} />
-          <Route
-            caseSensitive
-            path={routes.hariNaamKirtanSeva}
-            element={<HariNaamKirtanSeva />}
-          />
-          <Route
-            caseSensitive
-            path={routes.naivaidyamSeva}
-            element={<NaivaidyamSeva />}
-          />
-          <Route
-            caseSensitive
-            path={routes.vaishnavBhojan}
-            element={<VaishnavBhojan />}
-          />
-          <Route
-            caseSensitive
-            path={routes.vigarhSeva}
-            element={<VigrahSeva />}
-          />
+
           <Route
             caseSensitive
             path={routes.donationMainPage}
@@ -152,7 +163,30 @@ export const App: React.FunctionComponent = () => {
             path={routes.donationBankDetails}
             element={<DonationBankDetails />}
           />
+          <Route
+            caseSensitive
+            path={routes.janmashtmiSeva}
+            element={<JanmashtmiSeva />}
+          />
+          <Route
+            caseSensitive
+            path={routes.sadhubhojan}
+            element={<SadhuBhojan />}
+          />
+          <Route
+            caseSensitive
+            path={routes.radharaniKitchenSeva}
+            element={<RadharaniKitchenSeva />}
+          />
+          <Route caseSensitive path={routes.gitaDaan} element={<GitaDaan />} />
+
+          <Route
+            caseSensitive
+            path={routes.deityseva}
+            element={<DeitySeva />}
+          />
         </Routes>
+
         <Footer />
       </BrowserRouter>
     </>

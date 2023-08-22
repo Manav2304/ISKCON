@@ -14,7 +14,7 @@ import {
 } from "./style";
 import { paragraphs } from "./constant";
 import titlebBaseImage from "../../../assets/images/title-base.png";
-import { donationItems } from "./constant"; // Assuming you have an array of donation items
+import { donationItems } from "./constant"; 
 
 export const DonationMainPage = () => {
   return (
@@ -22,7 +22,7 @@ export const DonationMainPage = () => {
       <PageWrapper>
         <div>
           <HeadingStyle>
-            <h1>Donate </h1>
+            Donate
           </HeadingStyle>
           <ImageTitle src={titlebBaseImage} alt="Title Image" />
           <TextStyle>

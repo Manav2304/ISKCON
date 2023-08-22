@@ -46,52 +46,6 @@ export const ServiceWrapper = styled.div`
   }
 `;
 
-// export const HeadingStyle = styled.div`
-//   font-family: "Times New Roman", Times, serif;
-//   color: #7e5959;
-//   text-align: center;
-
-//   @media (${devices.mobileES}) {
-//     font-size: 1rem;
-//     padding: 20px;
-//   }
-
-//   @media (${devices.mobileS}) {
-//     font-size: 1rem;
-//     padding: 20px;
-//   }
-
-//   @media (${devices.mobileM}) {
-//     font-size: 1rem;
-//     padding: 20px;
-//   }
-
-//   @media (${devices.mobileL}) {
-//     font-size: 1rem;
-//     padding: 20px;
-//   }
-
-//   @media (${devices.tablet}) {
-//     font-size: 1rem;
-//     padding: 20px;
-//   }
-
-//   @media (${devices.laptop}) {
-//     font-size: 1rem;
-//     padding: 40px;
-//   }
-
-//   @media (${devices.laptopL}) {
-//     font-size: 2rem;
-//     padding: 50px;
-//   }
-
-//   @media (${devices.desktop}) {
-//     font-size: 2rem;
-//     padding: 50px;
-//   }
-// `;
-
 export const ImageTitle = styled.img`
   width: 100%;
   max-width: 400px;
