@@ -29,3 +29,7 @@ export const DonationTableCell = styled.td`
 `;
 
 export const DonationCheckbox = styled.input``;
+
+export const Wrapper = styled.div`
+  margin-top: -400px;
+`;

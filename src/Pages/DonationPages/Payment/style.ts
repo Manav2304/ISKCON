@@ -37,8 +37,7 @@ export const TableHeader = styled.th`
   border-bottom: 0.3rem solid #a0522d;
 
   @media (max-width: 320px) {
-    font-size: 14px; 
-   
+    font-size: 14px;
   }
 `;
 
@@ -90,8 +89,6 @@ export const Input = styled.input`
     outline: none;
     border-color: #07f;
   }
-
-
 `;
 
 export const NameInput = styled.form`

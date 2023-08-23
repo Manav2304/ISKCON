@@ -33,7 +33,7 @@
     "axios": "^1.4.0",
     "bootstrap": "^5.2.3",
     "card": "^2.5.4",
-    "firebase": "^9.21.0",
+    "firebase": "^9.23.0",
     "lint-staged": "^13.2.0",
     "mdb-react-ui-kit": "^6.0.0",
     "prettier": "^2.8.7",
