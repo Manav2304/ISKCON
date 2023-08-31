@@ -1,6 +1,7 @@
 import { Paragraph, TextWrapper } from "./style";
 import titlebBaseImage from "../../../assets/images/title-base.png";
 import { HeadingStyle, ImageTitle, TitleWrapper } from "../../TitleBase/style";
+// import { HeadingStyle } from "./style";
 
 interface DonationPagesDescriptionProps {
   title: string;
@@ -15,9 +16,9 @@ export const DonationPagesDescription: React.FC<
       <TextWrapper>
         <TitleWrapper>
           <HeadingStyle>
-            <h1>{title}</h1>
-            <ImageTitle src={titlebBaseImage} alt="Title Image" />
+            <p>{title}</p>
           </HeadingStyle>
+          <ImageTitle src={titlebBaseImage} alt="Title Image" />
         </TitleWrapper>
         <Paragraph>
           {content.map((paragraph) => (

@@ -1,10 +1,20 @@
 import React, { useState } from "react";
-import { options,option1, option2, option3,  option4, option5, option6, monthlyRadharani } from "./constant";
-import { Button, Table } from "./style";
+import {
+  options,
+  option1,
+  option2,
+  option3,
+  option4,
+  option5,
+  option6,
+  monthlyRadharani,
+} from "./constant";
+import { Table, Button } from "./style";
 import { DonationPagesDescription } from "../PageLayout";
 import { Payment } from "../Payment/donationTable";
+import { ButtonContainer } from "../GauSeva/style";
 
-export const  MonthlySeva= () => {
+export const MonthlySeva = () => {
   const [selectedOption, setSelectedOption] = useState("");
 
   const handleOptionClick = (value: React.SetStateAction<string>) => {
@@ -36,39 +46,45 @@ export const  MonthlySeva= () => {
       );
     }
     if (selectedOption === "option4") {
-        return (
-          <Table>
-            <Payment donationCategories={option4} />
-          </Table>
-        );
-      }  if (selectedOption === "option5") {
-        return (
-          <Table>
-            <Payment donationCategories={option5} />
-          </Table>
-        );
-      }  if (selectedOption === "option6") {
-        return (
-          <Table>
-            <Payment donationCategories={option6} />
-          </Table>
-        );
-      }
-     
+      return (
+        <Table>
+          <Payment donationCategories={option4} />
+        </Table>
+      );
+    }
+    if (selectedOption === "option5") {
+      return (
+        <Table>
+          <Payment donationCategories={option5} />
+        </Table>
+      );
+    }
+    if (selectedOption === "option6") {
+      return (
+        <Table>
+          <Payment donationCategories={option6} />
+        </Table>
+      );
+    }
 
     return null;
   };
 
   return (
     <>
-      <DonationPagesDescription title="Monthly Radharani's Kitchen Seva" content={monthlyRadharani} />
-      {options.map((option) => (
-        <div key={option.value}>
-          <Button onClick={() => handleOptionClick(option.value)}>
-            {option.label}
-          </Button>
-        </div>
-      ))}
+      <DonationPagesDescription
+        title="Monthly Radharani's Kitchen Seva"
+        content={monthlyRadharani}
+      />
+      <ButtonContainer>
+        {options.map((option) => (
+          <div key={option.value}>
+            <Button onClick={() => handleOptionClick(option.value)}>
+              {option.label}
+            </Button>
+          </div>
+        ))}
+      </ButtonContainer>
       {renderTable()}
     </>
   );

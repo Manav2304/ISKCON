@@ -1,10 +1,18 @@
 import React, { useState } from "react";
-import { options,option1, option2, option3,  option4,  generaldonation } from "./constant";
+import {
+  options,
+  option1,
+  option2,
+  option3,
+  option4,
+  generaldonation,
+} from "./constant";
 import { Button, Table } from "./style";
 import { DonationPagesDescription } from "../PageLayout";
 import { Payment } from "../Payment/donationTable";
+import { ButtonContainer } from "../GauSeva/style";
 
-export const  GitaDaan= () => {
+export const GitaDaan = () => {
   const [selectedOption, setSelectedOption] = useState("");
 
   const handleOptionClick = (value: React.SetStateAction<string>) => {
@@ -36,13 +44,12 @@ export const  GitaDaan= () => {
       );
     }
     if (selectedOption === "option4") {
-        return (
-          <Table>
-            <Payment donationCategories={option4} />
-          </Table>
-        );
-      }
-     
+      return (
+        <Table>
+          <Payment donationCategories={option4} />
+        </Table>
+      );
+    }
 
     return null;
   };
@@ -50,13 +57,15 @@ export const  GitaDaan= () => {
   return (
     <>
       <DonationPagesDescription title="Gita Daan" content={generaldonation} />
-      {options.map((option) => (
-        <div key={option.value}>
-          <Button onClick={() => handleOptionClick(option.value)}>
-            {option.label}
-          </Button>
-        </div>
-      ))}
+      <ButtonContainer>
+        {options.map((option) => (
+          <div key={option.value}>
+            <Button onClick={() => handleOptionClick(option.value)}>
+              {option.label}
+            </Button>
+          </div>
+        ))}
+      </ButtonContainer>
       {renderTable()}
     </>
   );

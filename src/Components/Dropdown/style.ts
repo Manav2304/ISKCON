@@ -27,8 +27,10 @@ export const TransparentDropdown = styled.div`
 
 export const DropdownToggleWrapper = styled.div`
   color: #7e5959;
-  background-color: transparent;
   font-family: Overlock-Regular, Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  padding: 10px 15px;
+  cursor: pointer;
 `;
 
 export const DropdownMenuWrapper = styled.div`

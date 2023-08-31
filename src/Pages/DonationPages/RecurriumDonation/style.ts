@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../../style";
 
 export const Container = styled.div`
   max-width: 800px;
@@ -51,19 +52,6 @@ export const TableCell = styled.td`
   border-top: 1px solid #ddd;
 `;
 
-export const Button = styled.button`
-  background-color: #800000;
-  color: #f5deb3;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #3e8e41;
-  }
-`;
-
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
@@ -109,4 +97,62 @@ export const Wrapper = styled.div`
 export const INPUT = styled.input`
   display: flex;
   justify-content: end;
+`;
+
+export const Button = styled.button`
+  background-color: #800000;
+  color: #f5deb3;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  margin: 10px 5px;
+  transition: background-color 0.3s ease;
+
+  &:active {
+    background-color: #fff;
+    transform: scale(0.95);
+  }
+`;
+
+export const ButtonContainer = styled.div`
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  overflow-x: auto;
+  white-space: nowrap;
+
+  @media (${devices.mobileES}) {
+    justify-content: left;
+  }
+
+  @media (${devices.mobileS}) {
+    justify-content: left;
+  }
+
+  @media (${devices.mobileM}) {
+    justify-content: left;
+  }
+
+  @media (${devices.mobileL}) {
+    justify-content: left;
+  }
+
+  @media (${devices.tablet}) {
+    justify-content: center;
+  }
+
+  @media (${devices.laptop}) {
+    justify-content: center;
+  }
+
+  @media (${devices.laptopL}) {
+    justify-content: center;
+  }
+
+  @media (${devices.desktop}) {
+    justify-content: center;
+  }
 `;

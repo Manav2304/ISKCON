@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { options, gauSeva, option1, option2, option3 } from "./constant";
-import { Button, Table } from "./style";
+import { Button, ButtonContainer, Table } from "./style";
 import { DonationPagesDescription } from "../PageLayout";
 import { Payment } from "../Payment/donationTable";
 
@@ -42,13 +42,18 @@ export const GauSeva = () => {
   return (
     <>
       <DonationPagesDescription title="Gau Seva" content={gauSeva} />
-      {options.map((option) => (
-        <div key={option.value}>
-          <Button onClick={() => handleOptionClick(option.value)}>
-            {option.label}
-          </Button>
-        </div>
-      ))}
+      <ButtonContainer>
+        {options.map((option) => (
+          <div key={option.value}>
+            <Button
+              className="Button"
+              onClick={() => handleOptionClick(option.value)}
+            >
+              {option.label}
+            </Button>
+          </div>
+        ))}
+      </ButtonContainer>
       {renderTable()}
     </>
   );

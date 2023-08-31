@@ -2,45 +2,45 @@ import styled from "styled-components";
 import { devices } from "../../style";
 
 export const FestivalContainer = styled.div`
-   display: grid;
-   grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 
-   @media (${devices.mobileES}) {
+  @media (${devices.mobileES}) {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-   }
+  }
 
-   @media (${devices.mobileS}) {
+  @media (${devices.mobileS}) {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-   }
+  }
 
-   @media (${devices.mobileM}) {
+  @media (${devices.mobileM}) {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-     }
+  }
 
   @media (${devices.mobileL}) {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-   }
+  }
 
-   @media (${devices.tablet}) {
+  @media (${devices.tablet}) {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+  }
 
-   @media (${devices.laptop}) {
+  @media (${devices.laptop}) {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap:10px;
-   }
+    gap: 10px;
+  }
 
   @media (${devices.laptopL}) {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 100px;  
-   }
+    gap: 100px;
+  }
 `;
 
 export const FestivalImage = styled.img`

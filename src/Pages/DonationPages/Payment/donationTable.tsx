@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import axios from "axios";
 import {
   Container,
   Table,
@@ -8,9 +7,11 @@ import {
   TableCell,
   DonationHeader,
   Wrapper,
-  INPUT,
+  Input,
 } from "./style";
 import { DonationCategory } from "./constant";
+import axios from "axios";
+import { TableFoot } from "./style";
 
 type Donation = {
   id: number;
@@ -21,8 +22,56 @@ type Donation = {
 export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
   donationCategories,
 }) => {
+  const checkoutHandler = async (
+    event: React.MouseEvent<HTMLButtonElement>,
+  ) => {
+    // Extract the amount from state or props
+    const amount = totalDonationAmount;
+
+    try {
+      const {
+        data: { key },
+      } = await axios.get<{ key: string }>(
+        "http://www.localhost:4000/api/getkey",
+      );
+
+      const {
+        data: { order },
+      } = await axios.post<{ order: { amount: number; id: string } }>(
+        "http://localhost:4000/api/checkout",
+        { amount },
+      );
+
+      const options = {
+        key,
+        amount: order.amount,
+        currency: "INR",
+        name: "6 Pack Programmer",
+        description: "Tutorial of RazorPay",
+        image: "https://avatars.githubusercontent.com/u/25058652?v=4",
+        order_id: order.id,
+        callback_url: "http://localhost:4000/api/paymentverification",
+        prefill: {
+          name: "Gaurav Kumar",
+          email: "gaurav.kumar@example.com",
+          contact: "9999999999",
+        },
+        notes: {
+          address: "Razorpay Corporate Office",
+        },
+        theme: {
+          color: "#121212",
+        },
+      };
+
+      const razor = new window.Razorpay(options);
+      razor.open();
+    } catch (error) {
+      console.error("Error during checkout:", error);
+    }
+  };
   const [selectedDonations, setSelectedDonations] = useState<Donation[]>([]);
-  const [customAmount, setCustomAmount] = useState<number>(0);
+  const [customAmount, setCustomAmount] = useState<number | string>(0);
   // const [mobileNumber] = useState<string>("");
 
   const handleDonationSelect = (donation: Donation) => {
@@ -38,32 +87,21 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
   const handleCustomAmountChange = (
     event: React.ChangeEvent<HTMLInputElement>,
   ) => {
-    setCustomAmount(Number(event.target.value));
+    const newValue = event.target.value;
+    if (newValue === "" || newValue === "0" || /^\d+$/.test(newValue)) {
+      setCustomAmount(newValue);
+    }
   };
 
   const totalDonationAmount = selectedDonations.reduce(
     (acc, curr) => acc + curr.amount,
-    customAmount,
+    Number(customAmount),
   );
-
-  // const [amount, setAmount] = useState("");
-  // const [name, setName] = useState("");
-  // const [email, setEmail] = useState("");
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    try {
-      // const response = await axios.post("/donate", { amount, name, email });
-      // console.log(response.data);
-    } catch (error) {
-      console.error(error);
-    }
-  };
 
   return (
     <Wrapper>
       <Container>
-        <form onSubmit={handleSubmit}>
+        <form>
           <Table>
             <thead>
               <tr>
@@ -95,26 +133,24 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
                   ))}
                 </React.Fragment>
               ))}
-              <TableRow>
-                {/* <TableCell> */}
-                <INPUT
-                  type="number"
-                  placeholder="Enter custom amount"
-                  value={customAmount}
-                  onChange={handleCustomAmountChange}
-                />
-              </TableRow>
             </tbody>
-            <tfoot>
-              <TableRow>
-                <TableCell>Total Donation Amount</TableCell>
-                <TableCell>₹{totalDonationAmount} </TableCell>
-              </TableRow>
-            </tfoot>
           </Table>
-          {/* handle payment */}
+          <Input
+            type="number"
+            placeholder="Enter custom amount"
+            value={customAmount}
+            onChange={handleCustomAmountChange}
+          />
+          <TableFoot>
+            <TableCell>Total Donation Amount :- </TableCell>
+            <TableCell>₹{totalDonationAmount} </TableCell>
+          </TableFoot>
           <div className="container" style={{ marginTop: "20vh" }}>
-            <button type="submit" className="btn btn-primary btn-block">
+            <button
+              type="submit"
+              onClick={checkoutHandler}
+              className="btn btn-primary btn-block"
+            >
               Pay with Razorpay
             </button>
           </div>

@@ -56,11 +56,15 @@ export const Button = styled.button`
   color: #f5deb3;
   padding: 10px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  width: 100%;
+  margin: 10px;
+  transition: background-color 0.3s ease; /* Add a transition for background-color */
 
-  &:hover {
-    background-color: #3e8e41;
+  &:active {
+    background-color: #fff; /* New color for button when active (clicked) */
+    transform: scale(0.95); /* Add a scale transformation on click */
   }
 `;
 

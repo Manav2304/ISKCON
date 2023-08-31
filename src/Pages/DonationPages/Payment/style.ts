@@ -1,5 +1,5 @@
 import styled from "styled-components";
-// import { devices } from "../../../style";
+import { devices } from "../../../style";
 
 export const Container = styled.div`
   max-width: 800px;
@@ -20,6 +20,62 @@ export const Table = styled.table`
   border-collapse: collapse;
   margin-bottom: 20px;
   background: transparent;
+
+  @media (${devices.mobileES}) {
+    margin-bottom: 20px;
+  }
+
+  @media (${devices.mobileS}) {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: transparent;
+  }
+
+  @media (${devices.mobileM}) {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: transparent;
+  }
+
+  @media (${devices.mobileL}) {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: transparent;
+  }
+
+  @media (${devices.tablet}) {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: transparent;
+  }
+
+  @media (${devices.laptop}) {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: transparent;
+    margin-top: 20px;
+  }
+
+  @media (${devices.laptopL}) {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: transparent;
+    margin-top: 20px;
+  }
+
+  @media (${devices.desktop}) {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: transparent;
+    margin-top: 20px;
+  }
 `;
 
 export const DonationHeader = styled.th`
@@ -28,16 +84,100 @@ export const DonationHeader = styled.th`
   text-align: left;
   padding: 10px;
   border-bottom: 0.3rem solid #a0522d;
+
+  @media (${devices.mobileES}) {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    padding: 1px;
+    border-bottom: 0.3rem solid #a0522d;
+  }
+
+  @media (${devices.mobileS}) {
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 0.3rem solid #a0522d;
+  }
+
+  @media (${devices.mobileM}) {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 0.3rem solid #a0522d;
+  }
+
+  @media (${devices.mobileL}) {
+    margin: 30px 25px;
+    font-size: 1.3rem;
+  }
+
+  @media (${devices.tablet}) {
+    margin: 30px 40px;
+    font-size: 1.8rem;
+  }
+
+  @media (${devices.laptop}) {
+    margin: 30px 120px;
+    font-size: 1.5rem;
+  }
+
+  @media (${devices.laptopL}) {
+    margin: 50px 105px;
+    font-size: 1.8rem;
+  }
+
+  @media (${devices.desktop}) {
+    margin: 50px 120px;
+    font-size: 3rem;
+  }
 `;
 
 export const TableHeader = styled.th`
   font-weight: bold;
-  text-align: left;
-  padding: 10px;
   border-bottom: 0.3rem solid #a0522d;
 
-  @media (max-width: 320px) {
-    font-size: 14px;
+  @media (${devices.mobileES}) {
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 0.3rem solid #a0522d;
+  }
+
+  @media (${devices.mobileS}) {
+    font-size: 0.8rem;
+    margin: 30px 20px;
+  }
+
+  @media (${devices.mobileM}) {
+    margin: 30px;
+    font-size: 1.2rem;
+  }
+
+  @media (${devices.mobileL}) {
+    margin: 30px 25px;
+    font-size: 1.3rem;
+  }
+
+  @media (${devices.tablet}) {
+    margin: 30px 40px;
+    font-size: 1.8rem;
+  }
+
+  @media (${devices.laptop}) {
+    margin: 30px 120px;
+    font-size: 1.5rem;
+  }
+
+  @media (${devices.laptopL}) {
+    margin: 50px 105px;
+    font-size: 1.8rem;
+  }
+
+  @media (${devices.desktop}) {
+    margin: 50px 120px;
+    font-size: 3rem;
   }
 `;
 
@@ -63,6 +203,7 @@ export const Button = styled.button`
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  gap: 10px;
 
   &:hover {
     background-color: #3e8e41;
@@ -80,10 +221,6 @@ export const Label = styled.label`
 
 export const Input = styled.input`
   border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 8px;
-  margin-bottom: 20px;
-  font-size: 16px;
 
   &:focus {
     outline: none;
@@ -114,4 +251,8 @@ export const Wrapper = styled.div`
 export const INPUT = styled.input`
   display: flex;
   justify-content: end;
+`;
+
+export const TableFoot = styled.tfoot`
+  align-items: space-around;
 `;

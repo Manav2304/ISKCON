@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../../style";
 
 export const Container = styled.div`
   max-width: 800px;
@@ -6,6 +7,52 @@ export const Container = styled.div`
   padding: 20px;
   background: transparent;
   margin-top: 115px;
+
+  @media (${devices.mobileES}) {
+    max-width: 325px;
+    margin: 0 auto;
+    padding: 20px;
+    background: transparent;
+    margin-top: 115px;
+  }
+
+  @media (${devices.mobileS}) {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: transparent;
+    margin-top: 115px;
+  }
+
+  @media (${devices.mobileM}) {
+    margin: 30px;
+    font-size: 1.2rem;
+  }
+
+  @media (${devices.mobileL}) {
+    margin: 30px 25px;
+    font-size: 1.3rem;
+  }
+
+  @media (${devices.tablet}) {
+    margin: 30px 40px;
+    font-size: 1.8rem;
+  }
+
+  @media (${devices.laptop}) {
+    margin: 300px 120px;
+    font-size: 1.5rem;
+  }
+
+  @media (${devices.laptopL}) {
+    margin: 50px 105px;
+    font-size: 1.8rem;
+  }
+
+  @media (${devices.desktop}) {
+    margin: 50px 120px;
+    font-size: 3rem;
+  }
 `;
 
 export const Title = styled.h1`
@@ -51,21 +98,7 @@ export const TableCell = styled.td`
   border-top: 1px solid #ddd;
 `;
 
-export const Button = styled.button`
-  background-color: #800000;
-  color: #f5deb3;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #3e8e41;
-  }
-`;
-
 export const Form = styled.form`
-  display: flex;
   flex-direction: column;
 `;
 
@@ -107,6 +140,29 @@ export const Wrapper = styled.div`
 `;
 
 export const INPUT = styled.input`
-  display: flex;
   justify-content: end;
+`;
+
+export const Button = styled.button`
+  background-color: #800000;
+  color: #f5deb3;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  margin: 10px 5px;
+  transition: background-color 0.3s ease;
+
+  &:active {
+    background-color: #fff;
+    transform: scale(0.95);
+  }
+`;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  white-space: nowrap;
 `;

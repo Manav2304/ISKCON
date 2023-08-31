@@ -1,39 +1,43 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
+import * as React from "react";
+
+import CardActions from "@mui/material/CardActions";
+
+import {
+  CardContentStyle,
+  CardMediaStyle,
+  CardStyle,
+  TypoGraphy,
+  // TypoGraphy,
+} from "./style";
 
 interface DeityCardProps {
   image: string;
   title: string;
   description: string;
+  maintitle: string;
 }
 
-export const DeityCard: React.FC<DeityCardProps> = ({ image, title, description }) => {
+export const DeityCard: React.FC<DeityCardProps> = ({
+  image,
+  title,
+  description,
+  maintitle,
+}) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        sx={{ height: 140 }}
-        image={image}
-        title={title}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h6" component="div">
-          {title}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {description}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <button type="submit" className="btn btn-primary btn-block">
-              Pay with Razorpay
-        </button>
-      </CardActions>
-    </Card>
+    <>
+      <CardStyle>
+        <CardMediaStyle image={image} title={title} />
+        <CardContentStyle>
+          <TypoGraphy>{maintitle}</TypoGraphy>
+          <TypoGraphy>{title}</TypoGraphy>
+          <TypoGraphy>{description}</TypoGraphy>
+          <CardActions>
+            <button type="submit" className="btn btn-primary btn-block">
+              Donate Now
+            </button>
+          </CardActions>
+        </CardContentStyle>
+      </CardStyle>
+    </>
   );
 };
-
-

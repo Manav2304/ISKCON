@@ -50,17 +50,20 @@ export const TableCell = styled.td`
   position: relative;
   border-top: 1px solid #ddd;
 `;
-
 export const Button = styled.button`
   background-color: #800000;
   color: #f5deb3;
   padding: 10px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  width: 100%;
+  margin: 10px 5px; /* Added margin to create gap between buttons */
+  transition: background-color 0.3s ease;
 
-  &:hover {
-    background-color: #3e8e41;
+  &:active {
+    background-color: #fff;
+    transform: scale(0.95);
   }
 `;
 
