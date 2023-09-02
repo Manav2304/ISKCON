@@ -134,14 +134,14 @@ export const TermsHeading = styled.h6`
   width: 100%;
 `;
 
-export const FooterLink = styled.a`
-  color: #fff;
-  text-decoration: none;
+// export const FooterLink = styled.a`
+//   color: #fff;
+//   text-decoration: none;
 
-  &:hover {
-    text-decoration: underline;
-  }
-`;
+//   &:hover {
+//     text-decoration: underline;
+//   }
+// `;
 
 export const ContactDiv = styled.div`
   font-family: Rosario-Light, sans-serif;
@@ -313,4 +313,30 @@ export const ContactWrapper = styled.div`
 export const CopyRights = styled.div`
   color: white;
   font-family: Rosario-Light, sans-serif;
+`;
+
+export const FooterSection = styled.section`
+  padding: 20px 0;
+  text-align: center;
+`;
+
+export const FooterLinks = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow links to wrap to the next line on smaller screens */
+`;
+
+export const FooterLink = styled(Link)`
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+
+  &:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;

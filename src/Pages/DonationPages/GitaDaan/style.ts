@@ -59,12 +59,15 @@ export const Button = styled.button`
   border-radius: 6px;
   cursor: pointer;
   width: 100%;
-  margin: 10px;
-  transition: background-color 0.3s ease; /* Add a transition for background-color */
+  margin: 10px 5px; /* Added margin to create a gap between buttons */
+  transition: background-color 0.3s ease;
+
+  &.active-button {
+    background-color: #f00; /* Change to the desired background color for the clicked state */
+  }
 
   &:active {
-    background-color: #fff; /* New color for button when active (clicked) */
-    transform: scale(0.95); /* Add a scale transformation on click */
+    transform: scale(0.95);
   }
 `;
 

@@ -8,6 +8,7 @@ import {
   DonationHeader,
   Wrapper,
   Input,
+  // TableCellCheckbox,
 } from "./style";
 import { DonationCategory } from "./constant";
 import axios from "axios";
@@ -113,11 +114,13 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
             <tbody>
               {donationCategories.map((category) => (
                 <React.Fragment key={category.title}>
-                  <DonationHeader>{category.title}</DonationHeader>
+                  <TableCell colSpan={3}>
+                    <DonationHeader>{category.title}</DonationHeader>
+                  </TableCell>
                   {category.donations.map((donation) => (
                     <TableRow key={donation.id}>
                       <TableCell>
-                        <input
+                        <Input
                           type="checkbox"
                           checked={
                             selectedDonations.find((d) => d.id === donation.id)
@@ -135,12 +138,14 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
               ))}
             </tbody>
           </Table>
-          <Input
-            type="number"
-            placeholder="Enter custom amount"
-            value={customAmount}
-            onChange={handleCustomAmountChange}
-          />
+          <label>
+            Enter Custom Amount:-
+            <Input
+              type="number"
+              value={customAmount}
+              onChange={handleCustomAmountChange}
+            />
+          </label>
           <TableFoot>
             <TableCell>Total Donation Amount :- </TableCell>
             <TableCell>₹{totalDonationAmount} </TableCell>

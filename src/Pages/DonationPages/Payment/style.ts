@@ -81,16 +81,16 @@ export const Table = styled.table`
 export const DonationHeader = styled.th`
   font-weight: bold;
   font-size: 2rem;
-  text-align: left;
   padding: 10px;
-  border-bottom: 0.3rem solid #a0522d;
+  text-align: ceter;
+  background-color: #fcfcfc1a;
+  box-shadow: 0 4px 8px 0 #00000045, 0 6px 20px 0 #00000038;
 
   @media (${devices.mobileES}) {
     font-weight: bold;
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     padding: 1px;
-    border-bottom: 0.3rem solid #a0522d;
   }
 
   @media (${devices.mobileS}) {
@@ -98,7 +98,6 @@ export const DonationHeader = styled.th`
     font-size: 1rem;
     text-align: left;
     padding: 10px;
-    border-bottom: 0.3rem solid #a0522d;
   }
 
   @media (${devices.mobileM}) {
@@ -106,7 +105,6 @@ export const DonationHeader = styled.th`
     font-size: 1.5rem;
     text-align: left;
     padding: 10px;
-    border-bottom: 0.3rem solid #a0522d;
   }
 
   @media (${devices.mobileL}) {
@@ -141,7 +139,7 @@ export const TableHeader = styled.th`
 
   @media (${devices.mobileES}) {
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     border-bottom: 0.3rem solid #a0522d;
   }
 
@@ -188,12 +186,65 @@ export const TableRow = styled.tr`
 `;
 
 export const TableCell = styled.td`
-  color: #a52a2a;
-  justify-content: space-between;
-  align-items: center;
+  color: #333;
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
   cursor: pointer;
   position: relative;
-  border-top: 1px solid #ddd;
+
+  &:first-child {
+    font-weight: bold;
+  }
+
+  @media (${devices.mobileES}) {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  @media (${devices.mobileS}) {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  @media (${devices.mobileM}) {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  @media (${devices.mobileL}) {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  @media (${devices.tablet}) {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  @media (${devices.laptop}) {
+    padding: 16px;
+    font-size: 18px;
+    border-bottom: none;
+    border-right: 1px solid #ddd;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  @media (${devices.laptopL}) {
+    padding: 16px;
+    font-size: 20px;
+  }
+
+  @media (${devices.desktop}) {
+    padding: 20px;
+    font-size: 22px;
+  }
 `;
 
 export const Button = styled.button`
@@ -219,8 +270,16 @@ export const Label = styled.label`
   margin-bottom: 10px;
 `;
 
+export const TableCelltotal = styled.td`
+  width: 100px;
+`;
+
 export const Input = styled.input`
   border: 1px solid #ccc;
+
+  &::placeholder {
+    color: #999;
+  }
 
   &:focus {
     outline: none;

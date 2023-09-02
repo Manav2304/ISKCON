@@ -1,6 +1,4 @@
-import { CardMedia } from "@mui/material";
 import styled from "styled-components";
-import { devices } from "../../../style";
 
 export const Wrapper = styled.div`
   display: flex;

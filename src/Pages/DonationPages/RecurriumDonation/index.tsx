@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
-  options,
   option1,
   option2,
   option3,
-  recurrium,
   option4,
   option5,
   option6,
+  options,
+  recurrium,
 } from "./constant";
 import { Button, ButtonContainer, Table } from "./style";
 import { DonationPagesDescription } from "../PageLayout";
@@ -68,6 +68,10 @@ export const RecurriumDonation = () => {
 
     return null;
   };
+  useEffect(() => {
+    // Set a default option when the component is first mounted
+    handleOptionClick("option1");
+  }, []); // Empty dependency array to run this effect only once
 
   return (
     <>
@@ -78,7 +82,12 @@ export const RecurriumDonation = () => {
       <ButtonContainer>
         {options.map((option) => (
           <div key={option.value}>
-            <Button onClick={() => handleOptionClick(option.value)}>
+            <Button
+              className={`Button ${
+                selectedOption === option.value ? "active-button" : ""
+              }`}
+              onClick={() => handleOptionClick(option.value)}
+            >
               {option.label}
             </Button>
           </div>

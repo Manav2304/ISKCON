@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react"; // Import useEffect
 import {
   options,
   option1,
@@ -14,7 +14,7 @@ import { DonationPagesDescription } from "../PageLayout";
 import { Payment } from "../Payment/donationTable";
 
 export const GeneralDonation = () => {
-  const [selectedOption, setSelectedOption] = useState("");
+  const [selectedOption, setSelectedOption] = useState("option1"); // Set a default value
 
   const handleOptionClick = (value: React.SetStateAction<string>) => {
     setSelectedOption(value);
@@ -69,16 +69,26 @@ export const GeneralDonation = () => {
     return null;
   };
 
+  useEffect(() => {
+    // Set a default option when the component is first mounted
+    handleOptionClick("option1");
+  }, []); // Empty dependency array to run this effect only once
+
   return (
     <>
       <DonationPagesDescription
-        title="Recurrium Donation"
+        title="General Donation"
         content={generaldonation}
       />
       <ButtonContainer>
         {options.map((option) => (
           <div key={option.value}>
-            <Button onClick={() => handleOptionClick(option.value)}>
+            <Button
+              className={`Button ${
+                selectedOption === option.value ? "active-button" : ""
+              }`}
+              onClick={() => handleOptionClick(option.value)}
+            >
               {option.label}
             </Button>
           </div>

@@ -16,10 +16,13 @@ import {
   ContactText,
   ContactWrapper,
   CopyRights,
+  FooterLink,
+  FooterLinks,
   FooterLogo,
+  FooterSection,
   HeadingStyle,
-  TermsHeading,
-  TermsTitle,
+  // TermsHeading,
+  // TermsTitle,
   TimeStyle,
 } from "./style";
 import { routes } from "../../routes";
@@ -101,7 +104,7 @@ export const Footer = () => {
             </MDBRow>
           </MDBContainer>
         </section>
-        <section className="d-flex justify-content-center justify-content-lg-between p-4 border-top border-bottom">
+        {/* <section className="d-flex justify-content-center justify-content-lg-between p-4 border-top border-bottom">
           <TermsHeading>
             <TermsTitle to={routes.termsAndCondition}>
               Terms and Conditions |
@@ -111,7 +114,19 @@ export const Footer = () => {
             </TermsTitle>
             <TermsTitle to={routes.privacyPolicy}>| Privacy Policy</TermsTitle>
           </TermsHeading>
-        </section>
+        </section> */}
+
+        <FooterSection>
+          <FooterLinks>
+            <FooterLink to={routes.termsAndCondition}>
+              Terms and Conditions
+            </FooterLink>
+            <FooterLink to={routes.cancellationPolicy}>
+              Cancellation Policy
+            </FooterLink>
+            <FooterLink to={routes.privacyPolicy}>Privacy Policy</FooterLink>
+          </FooterLinks>
+        </FooterSection>
 
         <CopyRights className="text-center p-4">
           © 2021 ISKCON. All rights reserved.

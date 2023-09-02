@@ -50,6 +50,7 @@ export const TableCell = styled.td`
   position: relative;
   border-top: 1px solid #ddd;
 `;
+
 export const Button = styled.button`
   background-color: #800000;
   color: #f5deb3;
@@ -58,11 +59,14 @@ export const Button = styled.button`
   border-radius: 6px;
   cursor: pointer;
   width: 100%;
-  margin: 10px 5px; /* Added margin to create gap between buttons */
+  margin: 10px 5px;
   transition: background-color 0.3s ease;
 
+  &.active-button {
+    background-color: #f00;
+  }
+
   &:active {
-    background-color: #fff;
     transform: scale(0.95);
   }
 `;

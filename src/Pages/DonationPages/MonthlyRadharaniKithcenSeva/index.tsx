@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   options,
   option1,
@@ -69,6 +69,10 @@ export const MonthlySeva = () => {
 
     return null;
   };
+  useEffect(() => {
+    // Set a default option when the component is first mounted
+    handleOptionClick("option1");
+  }, []); // Empty dependency array to run this effect only once
 
   return (
     <>
@@ -79,7 +83,12 @@ export const MonthlySeva = () => {
       <ButtonContainer>
         {options.map((option) => (
           <div key={option.value}>
-            <Button onClick={() => handleOptionClick(option.value)}>
+            <Button
+              className={`Button ${
+                selectedOption === option.value ? "active-button" : ""
+              }`}
+              onClick={() => handleOptionClick(option.value)}
+            >
               {option.label}
             </Button>
           </div>
