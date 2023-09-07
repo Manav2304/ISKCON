@@ -118,6 +118,7 @@ export const Button = styled.button`
     transform: scale(0.95);
   }
 `;
+
 export const ButtonContainer = styled.div`
   gap: 10px;
   display: flex;

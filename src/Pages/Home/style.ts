@@ -255,7 +255,7 @@ export const CarouselWrapper = styled(Carousel)`
   }
 
   @media (${devices.tablet}) {
-    margin-top: 74px;
+    margin-top: 47px;
   }
 
   @media (${devices.laptop}) {

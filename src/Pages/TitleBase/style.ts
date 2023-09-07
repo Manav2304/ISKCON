@@ -49,7 +49,7 @@ export const HeadingStyle = styled.h1`
   }
 
   @media (${devices.tablet}) {
-    margin-top: 30px;
+    margin-top: -35px;
     font-weight: 700 !important;
     font-size: 2em !important;
     line-height: 40px !important;
@@ -76,7 +76,7 @@ export const HeadingStyle = styled.h1`
   }
 
   @media (${devices.desktop}) {
-    margin-top: 100px;
+    margin-top: 200px;
     font-weight: 700 !important;
     font-size: 4em !important;
     letter-spacing: 4.5px !important;

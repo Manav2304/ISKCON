@@ -7,7 +7,7 @@ import {
   CardMediaStyle,
   CardStyle,
   TypoGraphy,
-  // TypoGraphy,
+  TypoGraphyMain,
 } from "./style";
 
 interface DeityCardProps {
@@ -26,9 +26,9 @@ export const DeityCard: React.FC<DeityCardProps> = ({
   return (
     <>
       <CardStyle>
-        <CardMediaStyle image={image} title={title} />
+        <CardMediaStyle image={image} />
         <CardContentStyle>
-          <TypoGraphy>{maintitle}</TypoGraphy>
+          <TypoGraphyMain>{maintitle}</TypoGraphyMain>
           <TypoGraphy>{title}</TypoGraphy>
           <TypoGraphy>{description}</TypoGraphy>
           <CardActions>

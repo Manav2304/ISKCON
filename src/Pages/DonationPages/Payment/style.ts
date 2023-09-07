@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { devices } from "../../../style";
+import { CardContent, CardMedia, Typography } from "@mui/material";
+import { Card } from "react-bootstrap";
 
 export const Container = styled.div`
   max-width: 800px;
@@ -276,6 +278,8 @@ export const TableCelltotal = styled.td`
 
 export const Input = styled.input`
   border: 1px solid #ccc;
+  width: 50%;
+  margin-left: 10px;
 
   &::placeholder {
     color: #999;
@@ -314,4 +318,180 @@ export const INPUT = styled.input`
 
 export const TableFoot = styled.tfoot`
   align-items: space-around;
+`;
+
+export const Labelstyle = styled.label`
+  width: 100%;
+  margin-top: 50px;
+  margin-left: 20px;
+`;
+
+export const CardStyle = styled(Card)`
+  width: 100%;
+  height: 100%;
+  background-color: #fcfcfc1a;
+  box-shadow: 0 4px 8px 0 #00000045, 0 6px 20px 0 #00000038;
+  border-radius: 20px;
+  margin: 20px 10px;
+
+  @media (${devices.mobileES}) {
+    width: 100%;
+    height: 100%;
+    margin: 1px 20px;
+  }
+
+  @media (${devices.tablet}) {
+    width: 100%;
+    height: 100%;
+  }
+`;
+
+// image of card but text is moving accordingly
+export const CardMediaStyle = styled(CardMedia)`
+  display: flex;
+  width: 350px;
+  height: 200px;
+  margin-top: 31px;
+  margin-left: 30px;
+  border-radius: 5%;
+
+  @media (${devices.mobileES}) {
+    width: 100%;
+    height: 160px;
+    border-radius: 20px;
+    margin-top: 1px;
+    margin-left: 1px;
+    align-items: center;
+  }
+
+  @media (${devices.mobileS}) {
+    width: 100%;
+    height: 160px;
+    border-radius: 20px;
+    margin-top: 1px;
+    margin-left: 1px;
+    align-items: center;
+  }
+
+  @media (${devices.mobileM}) {
+    width: 100%;
+    height: 187.5px;
+    border-radius: 20px;
+    margin-top: 1px;
+    margin-left: 1px;
+    align-items: center;
+  }
+
+  @media (${devices.mobileL}) {
+    width: 100%;
+    height: 212.5px;
+    border-radius: 20px;
+    margin-top: 1px;
+    margin-left: 1px;
+    align-items: center;
+  }
+
+  @media (${devices.tablet}) {
+    width: 350px;
+    height: 192px;
+    margin-top: 31px;
+    margin-left: 30px;
+    border-radius: 5%;
+  }
+`;
+
+export const TypoGraphy = styled(Typography)`
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #ad0d0d;
+`;
+
+// texts in card
+export const CardContentStyle = styled(CardContent)`
+  width: 125px;
+  overflow-x: auto;
+
+  @media (${devices.mobileES}) {
+    width: 240px;
+  }
+
+  @media (${devices.mobileS}) {
+    width: 300px;
+  }
+
+  @media (${devices.mobileM}) {
+    width: 350px;
+  }
+
+  @media (${devices.mobileL}) {
+    width: 320px;
+  }
+
+  @media (${devices.tablet}) {
+    width: 100%;
+  }
+`;
+
+export const PageWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin: 10px 20px;
+
+  @media (${devices.laptopL}) {
+    margin: 10px 120px;
+  }
+`;
+
+export const TypoGraphyMain = styled.p`
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #ad0d0d;
+  font-size: 1.5rem;
+`;
+
+export const TableWrapper = styled.tbody`
+  max-width: 100%; /* Use full width on larger screens */
+
+  @media (${devices.mobileL}) {
+    margin: 10px 120px;
+  }
+`;
+
+export const CopyButton = styled.button<{ copied: boolean }>`
+  margin-left: 1rem;
+  padding: 0.5rem;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #630063;
+  }
+
+  &:active {
+    background-color: #fffffcf4;
+  }
+`;
+
+export const TableRowCard = styled.tr`
+  &:nth-child(even) {
+    background-color: #f4c2c2;
+  }
+`;
+
+export const TableCellCard = styled.td`
+  border: 1px solid #7e5959;
+  padding: 0.5rem;
+  text-align: left;
+  width: 50px;
+
+  @media (${devices.mobileL}) {
+    width: 2000px;
+  }
 `;

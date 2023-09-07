@@ -26,11 +26,7 @@ export const NavStyle = styled.nav`
   }
 
   @media (${devices.tablet}) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 90px;
-    padding: 0 20px;
+    display: none;
   }
 
   @media (${devices.laptop}) {

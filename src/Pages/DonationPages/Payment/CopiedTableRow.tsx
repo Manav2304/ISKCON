@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CopyButton, TableCell, TableRow } from "./style";
+import { CopyButton, TableCellCard, TableRow } from "./style";
 
 export const CopiedTableRow = ({
   label,
@@ -18,13 +18,13 @@ export const CopiedTableRow = ({
 
   return (
     <TableRow>
-      <TableCell>{label}</TableCell>
-      <TableCell>{value}</TableCell>
-      <TableCell>
+      <TableCellCard>{label}</TableCellCard>
+      <TableCellCard>{value}</TableCellCard>
+      <TableCellCard>
         <CopyButton copied={isCopied} onClick={copyToClipboard}>
           {isCopied ? "Copied!" : "Copy"}
         </CopyButton>
-      </TableCell>
+      </TableCellCard>
     </TableRow>
   );
 };

@@ -13,14 +13,15 @@ import {
   socialMediaIcon,
 } from "../Navbar/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
-import logoUrl from "../../assets/images/isckon-logo.png";
+import logoUrl from "../../assets/images/iskcon-logo.png";
 import { routes } from "../../routes";
 
 export const NavigationBar = () => {
   return (
     <>
       <MarqueeWrapper pauseOnHover={true}>
-      The Official Website Of The International Society for Krishna Consiousness (ISKCON).
+        The Official Website Of The International Society for Krishna
+        Consiousness (ISKCON).
       </MarqueeWrapper>
       <div className="container">
         <SocialMediaIconWrapper>

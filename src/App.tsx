@@ -26,13 +26,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 import { Sidebar } from "./Components/Sidebar";
 import { VisitUs } from "./Pages/VisitUs";
 import { AnnaDaan } from "./Pages/DonationPages/AnnaDaan";
-// import { GauraPurnima } from "./Pages/DonationPages/GauraPurnima";
 import { GauSeva } from "./Pages/DonationPages/GauSeva";
-// import { HariNaamKirtanSeva } from "./Pages/DonationPages/HariNaamKirtanSeva";
-// import { NaivaidyamSeva } from "./Pages/DonationPages/NaivaidyamSeva";
-// import { VaishnavBhojan } from "./Pages/DonationPages/VaishnavBhojan";
-// import { VigrahSeva } from "./Pages/DonationPages/VigrahSeva";
-import { DonationBankDetails } from "./Pages/DonationPages/DonationBankDetails";
 import { DonationMainPage } from "./Pages/DonationPages/DonationMainPage";
 import { JanmashtmiSeva } from "./Pages/DonationPages/JanmashtamiSeva";
 import { RadharaniKitchenSeva } from "./Pages/DonationPages/Radharani'sKitchenSeva";
@@ -63,11 +57,6 @@ export const App: React.FunctionComponent = () => {
           />
           <Route caseSensitive path={routes.media} element={<Media />} />
           <Route caseSensitive path={routes.contact} element={<Contact />} />
-          <Route
-            caseSensitive
-            path={routes.donation}
-            element={<DonationBankDetails />}
-          />
           <Route
             caseSensitive
             path={routes.bookDistribution}
@@ -158,11 +147,7 @@ export const App: React.FunctionComponent = () => {
             path={routes.donationMainPage}
             element={<DonationMainPage />}
           />
-          <Route
-            caseSensitive
-            path={routes.donationBankDetails}
-            element={<DonationBankDetails />}
-          />
+
           <Route
             caseSensitive
             path={routes.janmashtmiSeva}
