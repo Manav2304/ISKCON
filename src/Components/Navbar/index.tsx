@@ -41,12 +41,12 @@ export const NavigationBar = () => {
           <StyledLink to={routes.home}>
             <ImgStyle src={logoUrl} alt="Logo" />
           </StyledLink>
-          <StyledLink to={routes.donationMainPage}>
-            <PageDropdown
-              items={dropdownDonationPagesInfo}
-              toggleTitle="Donation"
-            />
-          </StyledLink>
+          {/* <StyledLink to={routes.donationMainPage}> */}
+          <PageDropdown
+            items={dropdownDonationPagesInfo}
+            toggleTitle="Donation"
+          />
+          {/* </StyledLink> */}
           <StyledLink to={routes.festival}>Festival</StyledLink>
           <StyledLink to={routes.contact}>Contact</StyledLink>
           <StyledLink to={routes.contact}>Blogs</StyledLink>

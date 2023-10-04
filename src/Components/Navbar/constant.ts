@@ -32,9 +32,9 @@ export const socialMediaIcon = [
 export const festivalInfo = [{ title: "festival", path: routes.festival }];
 
 export const dropdownServicesInfo = [
-  { title: "Life Time Membership", path: routes.lifeTimeMembership },
+  { title: "Life Membership", path: routes.lifeTimeMembership },
   { title: "Kirtan At Iskcon", path: routes.kirtanAtIskcon },
-  { title: "Iskcon Youth Forum", path: routes.iskconYouthForum },
+  { title: "ISKCON Youth Forum", path: routes.iskconYouthForum },
   { title: "Guest House", path: routes.guestHouse },
   { title: "Goushala", path: routes.gaushala },
   { title: "Devotee Kitchen", path: routes.devoteeKitchen },

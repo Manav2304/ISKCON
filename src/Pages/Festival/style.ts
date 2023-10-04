@@ -43,51 +43,51 @@ export const FestivalContainer = styled.div`
   }
 `;
 
-export const FestivalImage = styled.img`
-  width: 100%;
-  height: 100px;
-  border: 3px solid #963;
+// export const FestivalImage = styled.img`
+//   width: 100%;
+//   height: 100px;
+//   border: 3px solid #963;
 
-  @media (${devices.mobileES}) {
-    width: 317px;
-    height: 250px;
-  }
+//   @media (${devices.mobileES}) {
+//     width: 317px;
+//     height: 250px;
+//   }
 
-  @media (${devices.mobileS}) {
-    width: 375px;
-    height: 250px;
-  }
+//   @media (${devices.mobileS}) {
+//     width: 375px;
+//     height: 250px;
+//   }
 
-  @media (${devices.mobileM}) {
-    width: 425px;
-    height: 250px;
-  }
+//   @media (${devices.mobileM}) {
+//     width: 425px;
+//     height: 250px;
+//   }
 
-  @media (${devices.mobileL}) {
-    width: 425px;
-    height: 250px;
-  }
+//   @media (${devices.mobileL}) {
+//     width: 425px;
+//     height: 250px;
+//   }
 
-  @media (${devices.tablet}) {
-    width: 350px;
-    height: 250px;
-  }
+//   @media (${devices.tablet}) {
+//     width: 350px;
+//     height: 250px;
+//   }
 
-  @media (${devices.laptop}) {
-    width: 300px;
-    height: 300px;
-  }
+//   @media (${devices.laptop}) {
+//     width: 300px;
+//     height: 300px;
+//   }
 
-  @media (${devices.laptopL}) {
-    width: 100%;
-    height: 350px;
-  }
+//   @media (${devices.laptopL}) {
+//     width: 100%;
+//     height: 350px;
+//   }
 
-  @media (${devices.desktop}) {
-    width: 100%;
-    height: 350px;
-  }
-`;
+//   @media (${devices.desktop}) {
+//     width: 100%;
+//     height: 350px;
+//   }
+// `;
 
 export const FestivalInfo = styled.div`
   background-color: transparent;
@@ -201,5 +201,54 @@ export const HeadingStyle = styled.h1`
     letter-spacing: 4.5px !important;
     line-height: 40px !important;
     margin-bottom: 10px;
+  }
+`;
+
+export const FestivalImage = styled.img`
+  width: 100%;
+  height: 100px;
+  border: 3px solid #963;
+  display: block; /* Ensure the image is a block-level element */
+  margin: 0 auto; /* Center the image horizontally */
+  margin-bottom: 20px; /* Add some gap between images */
+
+  @media (${devices.mobileES}) {
+    width: 317px;
+    height: 250px;
+  }
+
+  @media (${devices.mobileS}) {
+    width: 375px;
+    height: 250px;
+  }
+
+  @media (${devices.mobileM}) {
+    width: 425px;
+    height: 250px;
+  }
+
+  @media (${devices.mobileL}) {
+    width: 425px;
+    height: 250px;
+  }
+
+  @media (${devices.tablet}) {
+    width: 350px;
+    height: 250px;
+  }
+
+  @media (${devices.laptop}) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (${devices.laptopL}) {
+    width: 100%;
+    height: 350px;
+  }
+
+  @media (${devices.desktop}) {
+    width: 100%;
+    height: 350px;
   }
 `;

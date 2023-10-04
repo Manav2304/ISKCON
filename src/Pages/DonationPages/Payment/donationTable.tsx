@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { CopiedTableRow } from "./CopiedTableRow";
 import {
   Container,
   Table,
@@ -15,8 +14,16 @@ import {
   TypoGraphyMain,
   PageWrapper,
   TableWrapper,
-  CardMediaStyle,
   TypoGraphy,
+  BarcodeImgStyle,
+  // DonateButton,
+  DonateButton1,
+  LabelWrapper,
+  Input1,
+  LabelWrapper1,
+  Labelstyle1,
+  Span,
+  Span1,
 } from "./style";
 import {
   DonationCategory,
@@ -26,9 +33,10 @@ import {
   subtitle1,
   yesBankAccountInfo,
 } from "./constant";
-import axios from "axios";
-import { TableFoot } from "./style";
-import BarCode from "../../../assets/images/barcode.jpeg";
+import BarCode from "../../../assets/images/barcode.png";
+import { BankInfo } from "./CopiedTableRow";
+// import { RazorpayComponent } from "./RazorpayWrapper";
+// import axios from "axios";
 
 type Donation = {
   id: number;
@@ -36,59 +44,25 @@ type Donation = {
   amount: number;
 };
 
+function loadScript(src: string): Promise<boolean> {
+  return new Promise<boolean>((resolve) => {
+    const script = document.createElement("script");
+    script.src = src;
+    script.onload = () => {
+      resolve(true);
+    };
+    script.onerror = () => {
+      resolve(false);
+    };
+    document.body.appendChild(script);
+  });
+}
+
 export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
   donationCategories,
 }) => {
-  const checkoutHandler = async (
-    event: React.MouseEvent<HTMLButtonElement>,
-  ) => {
-    // Extract the amount from state or props
-    const amount = totalDonationAmount;
-
-    try {
-      const {
-        data: { key },
-      } = await axios.get<{ key: string }>(
-        "http://www.localhost:4000/api/getkey",
-      );
-
-      const {
-        data: { order },
-      } = await axios.post<{ order: { amount: number; id: string } }>(
-        "http://localhost:4000/api/checkout",
-        { amount },
-      );
-
-      const options = {
-        key,
-        amount: order.amount,
-        currency: "INR",
-        name: "6 Pack Programmer",
-        description: "Tutorial of RazorPay",
-        image: "https://avatars.githubusercontent.com/u/25058652?v=4",
-        order_id: order.id,
-        callback_url: "http://localhost:4000/api/paymentverification",
-        prefill: {
-          name: "Gaurav Kumar",
-          email: "gaurav.kumar@example.com",
-          contact: "9999999999",
-        },
-        notes: {
-          address: "Razorpay Corporate Office",
-        },
-        theme: {
-          color: "#121212",
-        },
-      };
-
-      const razor = new window.Razorpay(options);
-      razor.open();
-    } catch (error) {
-      console.error("Error during checkout:", error);
-    }
-  };
   const [selectedDonations, setSelectedDonations] = useState<Donation[]>([]);
-  const [customAmount, setCustomAmount] = useState<number | string>(0);
+  const [customAmount] = useState<number | string>(0);
 
   const handleDonationSelect = (donation: Donation) => {
     if (selectedDonations.find((d) => d.id === donation.id)) {
@@ -100,19 +74,57 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
     }
   };
 
-  const handleCustomAmountChange = (
-    event: React.ChangeEvent<HTMLInputElement>,
-  ) => {
-    const newValue = event.target.value;
-    if (newValue === "" || newValue === "0" || /^\d+$/.test(newValue)) {
-      setCustomAmount(newValue);
-    }
-  };
-
   const totalDonationAmount = selectedDonations.reduce(
     (acc, curr) => acc + curr.amount,
     Number(customAmount),
   );
+
+  async function showRazorpay(): Promise<void> {
+    const res = await loadScript(
+      "https://checkout.razorpay.com/v1/checkout.js",
+    );
+
+    if (!res) {
+      alert("Razorpay SDK failed to load. Are you online?");
+      return;
+    }
+    const totalAmount = totalDonationAmount;
+    const data = await fetch("http://localhost:1337/razorpay", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ amount: totalAmount }), // Send the total amount to the backend
+    }).then((t) => t.json());
+
+    console.log(data);
+
+    const options = {
+      key: "rzp_test_4twsScIlfpBGfM",
+      currency: data.currency,
+      amount: data.amount.toString(),
+      order_id: data.id,
+      name: "Donation",
+      description: "Thank you for nothing. Please give us some money",
+      image: "http://localhost:1337/logo.svg",
+      handler: function (response: any) {
+        // alert(response.razorpay_payment_id);
+        // alert(response.razorpay_order_id);
+        // alert(response.razorpay_signature);
+
+        alert("Transaction successful");
+      },
+      prefill: {
+        name: "",
+        email: "",
+        phone_number: "",
+      },
+    };
+
+    // Use "any" for paymentObject since Razorpay doesn't provide TypeScript typings
+    const paymentObject: any = new window.Razorpay(options);
+    paymentObject.open();
+  }
 
   return (
     <>
@@ -156,48 +168,46 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
                 ))}
               </tbody>
             </Table>
-            <Labelstyle>
-              Or, Donation of your choice:-
-              <Input
-                type="number"
-                value={customAmount}
-                onChange={handleCustomAmountChange}
-              />
-            </Labelstyle>
-            <TableFoot>
-              <TableCell>Total Donation Amount :- </TableCell>
-              <TableCell>₹{totalDonationAmount} </TableCell>
-            </TableFoot>
-            <div className="container">
-              <button
-                type="submit"
-                onClick={checkoutHandler}
-                className="btn btn-primary btn-block"
+            <LabelWrapper1>
+              <Labelstyle1>Total Amount:- ₹{totalDonationAmount}</Labelstyle1>
+
+              {/* <DonateButton onClick={showRazorpay}>Donate</DonateButton> */}
+              <a
+                className="App-link"
+                onClick={showRazorpay}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Pay with Razorpay
-              </button>
-            </div>
+                Pay now
+              </a>
+            </LabelWrapper1>
+            <Labelstyle>Or, Donation of your choice:-</Labelstyle>
+            <LabelWrapper>
+              <Input1 type="number" placeholder="Enter amount" />
+              <DonateButton1>Donate</DonateButton1>
+            </LabelWrapper>
           </form>
         </Container>
       </Wrapper>
+      <br />
+      <Span>Donate via NEFT/RTGS/UPI</Span>
+      <br />
+      <Span1>Only for Indian Citizen/Indian Passport Holder</Span1>
+
       <PageWrapper>
         <CardStyle>
           <CardContentStyle>
-            <TypoGraphyMain>YES BANK</TypoGraphyMain>
+            <TypoGraphyMain>Donate via NEFT/RTGS</TypoGraphyMain>
             <TableWrapper>
-              {yesBankAccountInfo.map((info) => (
-                <CopiedTableRow label={info.label} value={info.value} />
-              ))}
+              <BankInfo accountInfo={yesBankAccountInfo} />
             </TableWrapper>
           </CardContentStyle>
         </CardStyle>
         <CardStyle>
           <CardContentStyle>
-            <TypoGraphyMain>ICICI BANK</TypoGraphyMain>
+            <TypoGraphyMain>Donate via NEFT/RTGS</TypoGraphyMain>
             <TableWrapper>
-              {iciciBankAccountInfo.map((info) => (
-                <CopiedTableRow label={info.label} value={info.value} />
-              ))}
+              <BankInfo accountInfo={iciciBankAccountInfo} />
             </TableWrapper>
           </CardContentStyle>
         </CardStyle>
@@ -206,7 +216,7 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
             <TypoGraphyMain>{maintitle}</TypoGraphyMain>
             <TypoGraphy>{subtitle1}</TypoGraphy>
             <TypoGraphy>{subtitle2}</TypoGraphy>
-            <CardMediaStyle image={BarCode} />
+            <BarcodeImgStyle image={BarCode} />
           </CardContentStyle>
         </CardStyle>
       </PageWrapper>

@@ -21,8 +21,7 @@ import {
   FooterLogo,
   FooterSection,
   HeadingStyle,
-  // TermsHeading,
-  // TermsTitle,
+  Separator,
   TimeStyle,
 } from "./style";
 import { routes } from "../../routes";
@@ -31,9 +30,9 @@ import { StyledLink } from "../Navbar/style";
 export const Footer = () => {
   return (
     <BgColor>
-      <section className="d-flex justify-content-center justify-content-lg-between p-4 "></section>
+      <section className="d-flex justify-content-center justify-content-lg-between  "></section>
       <MDBFooter className="text-center text-lg-start text-muted">
-        <section className="">
+        <section>
           <MDBContainer className="text-center text-md-start mt-5">
             <MDBRow className="mt-3">
               <MDBCol md="4" lg="4" xl="3" className="mx-auto mb-5 mr-10">
@@ -49,7 +48,6 @@ export const Footer = () => {
                   ))}
                 </TimeStyle>
               </MDBCol>
-
               <MDBCol
                 lg="2"
                 md="12"
@@ -63,7 +61,6 @@ export const Footer = () => {
                   />
                 </StyledLink>
               </MDBCol>
-
               <MDBCol md="5" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
                 <ContactHeadingStyle className="text-uppercase fw-bold mb-4 ">
                   Contact
@@ -104,18 +101,7 @@ export const Footer = () => {
             </MDBRow>
           </MDBContainer>
         </section>
-        {/* <section className="d-flex justify-content-center justify-content-lg-between p-4 border-top border-bottom">
-          <TermsHeading>
-            <TermsTitle to={routes.termsAndCondition}>
-              Terms and Conditions |
-            </TermsTitle>
-            <TermsTitle to={routes.cancellationPolicy}>
-              | Cancellation Policy |
-            </TermsTitle>
-            <TermsTitle to={routes.privacyPolicy}>| Privacy Policy</TermsTitle>
-          </TermsHeading>
-        </section> */}
-
+        <Separator />
         <FooterSection>
           <FooterLinks>
             <FooterLink to={routes.termsAndCondition}>
@@ -127,7 +113,7 @@ export const Footer = () => {
             <FooterLink to={routes.privacyPolicy}>Privacy Policy</FooterLink>
           </FooterLinks>
         </FooterSection>
-
+        <Separator />
         <CopyRights className="text-center p-4">
           © 2021 ISKCON. All rights reserved.
         </CopyRights>

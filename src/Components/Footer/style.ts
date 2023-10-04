@@ -340,3 +340,8 @@ export const FooterLink = styled(Link)`
     font-size: 14px;
   }
 `;
+
+export const Separator = styled.hr`
+  border: 1px solid #ccc; /* Adjust the style as needed */
+  margin: 20px 0; /* Adjust the margin as needed */
+`;

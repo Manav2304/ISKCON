@@ -52,14 +52,9 @@ export const Sidebar = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  },
-  );
+  });
 
-const toggleTitle = (
-  <Link to={routes.donationMainPage}>
-    Donation
-  </Link>
-);
+  const toggleTitle = <Link to={routes.donationMainPage}>Donation</Link>;
 
   return (
     <div ref={ref}>
@@ -99,12 +94,12 @@ const toggleTitle = (
             </StyledLink>
             <hr />
             <SidebarAccordion
-  items={dropdownDonationInfo}
-  toggleTitle={toggleTitle.props.children}
-  handleClose={handleClose}
-  isOpen={isDonationOpen}
-  setIsOpen={setIsDonationOpen}
-/>
+              items={dropdownDonationInfo}
+              toggleTitle={toggleTitle.props.children}
+              handleClose={handleClose}
+              isOpen={isDonationOpen}
+              setIsOpen={setIsDonationOpen}
+            />
             <hr />
             <StyledLink to={routes.festival} onClick={handleClose}>
               Festival

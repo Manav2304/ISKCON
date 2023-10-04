@@ -254,6 +254,10 @@ export const CarouselWrapper = styled(Carousel)`
     margin-top: 47px;
   }
 
+  @media (min-width: 500px) {
+    margin-top: 47px;
+  }
+
   @media (${devices.tablet}) {
     margin-top: 47px;
   }

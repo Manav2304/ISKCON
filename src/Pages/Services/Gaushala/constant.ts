@@ -47,7 +47,7 @@ export const goushala = [
 
   "But perhaps the most powerful aspect of the goushala is the sense of connection and reverence that it inspires in visitors. Cows are considered sacred in Vedic culture, and the goushala provides a tangible and meaningful way for people to connect with this tradition and to develop a deeper appreciation for the natural world and the divine presence that permeates it.",
 
-  "In short, the goushala at ISKCON is a beautiful and inspiring testament to the power of compassion, sustainability, and spiritual connection. Whether you are a devotee of Lord Krishna or simply someone who appreciates the beauty and majesty of the natural world, a visit to the goushala is sure to leave a lasting impression on your heart and mind.",
+  "The goushala at ISKCON is a beautiful and inspiring testament to the power of compassion, sustainability, and spiritual connection. Whether you are a devotee of Lord Krishna or simply someone who appreciates the beauty and majesty of the natural world, a visit to the goushala is sure to leave a lasting impression on your heart and mind.",
 
   "Contact Details:",
 

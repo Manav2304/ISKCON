@@ -4,7 +4,8 @@ import styled from "styled-components";
 
 export const TextWrapper = styled.div`
   color: #ad0d0d;
-  font-family: "Times New Roman", Times, serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   padding-top: 10px;
 
   @media only screen and (max-width: 768px) {
@@ -33,7 +34,8 @@ export const Paragraph = styled.p`
   text-align: justify;
   margin: 40px 50px 50px;
   color: #ad0d0d;
-  font-family: "Times New Roman", Times, serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
   @media only screen and (max-width: 768px) {
     margin: 20px;

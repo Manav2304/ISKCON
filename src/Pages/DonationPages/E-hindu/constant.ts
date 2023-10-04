@@ -6,7 +6,7 @@ export const eHindu = [
 
 export const donationCategories: DonationCategory[] = [
   {
-    title: "E hindu",
+    title: "E hundi",
     donations: [],
   },
 ];
