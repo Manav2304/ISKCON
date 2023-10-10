@@ -8,7 +8,6 @@ import {
   DonationHeader,
   Wrapper,
   Input,
-  Labelstyle,
   CardStyle,
   CardContentStyle,
   TypoGraphyMain,
@@ -21,9 +20,10 @@ import {
   LabelWrapper,
   Input1,
   LabelWrapper1,
-  Labelstyle1,
+  Labelstyle,
   Span,
   Span1,
+  Span2,
 } from "./style";
 import {
   DonationCategory,
@@ -36,7 +36,8 @@ import {
 import BarCode from "../../../assets/images/barcode.png";
 import { BankInfo } from "./CopiedTableRow";
 // import { RazorpayComponent } from "./RazorpayWrapper";
-// import axios from "axios";
+import axios from "axios";
+import Logo from "../../../assets/images/isckon-logo.png";
 
 type Donation = {
   id: number;
@@ -88,43 +89,55 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
       alert("Razorpay SDK failed to load. Are you online?");
       return;
     }
+
     const totalAmount = totalDonationAmount;
-    const data = await fetch("http://localhost:1337/razorpay", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ amount: totalAmount }), // Send the total amount to the backend
-    }).then((t) => t.json());
 
-    console.log(data);
+    try {
+      const response = await axios.post("http://localhost:1337/razorpay", {
+        amount: totalAmount,
+      });
 
-    const options = {
-      key: "rzp_test_4twsScIlfpBGfM",
-      currency: data.currency,
-      amount: data.amount.toString(),
-      order_id: data.id,
-      name: "Donation",
-      description: "Thank you for nothing. Please give us some money",
-      image: "http://localhost:1337/logo.svg",
-      handler: function (response: any) {
-        // alert(response.razorpay_payment_id);
-        // alert(response.razorpay_order_id);
-        // alert(response.razorpay_signature);
+      const data = response.data;
 
-        alert("Transaction successful");
-      },
-      prefill: {
-        name: "",
-        email: "",
-        phone_number: "",
-      },
-    };
+      console.log(data);
 
-    // Use "any" for paymentObject since Razorpay doesn't provide TypeScript typings
-    const paymentObject: any = new window.Razorpay(options);
-    paymentObject.open();
+      const options = {
+        key: "rzp_test_4twsScIlfpBGfM",
+        currency: data.currency,
+        amount: data.amount.toString(),
+        order_id: data.id,
+        name: "Donation",
+        description: "Thank you for nothing. Please give us some money",
+        image: Logo,
+        handler: function (response: any) {
+          // alert(response.razorpay_payment_id);
+          // alert(response.razorpay_order_id);
+          // alert(response.razorpay_signature);
+
+          alert("Transaction successful");
+        },
+        prefill: {
+          name: "",
+          email: "",
+          phone_number: "",
+        },
+      };
+      const paymentObject: any = new window.Razorpay(options);
+      paymentObject.open();
+    } catch (error) {
+      console.error("Error while fetching data from the server:", error);
+      alert("An error occurred while processing your request.");
+    }
   }
+
+  const formatAmountInINR = (amount: number | bigint) => {
+    const formattedAmount = new Intl.NumberFormat("en-IN", {
+      style: "currency",
+      currency: "INR",
+    }).format(amount);
+
+    return formattedAmount.replace(/\.00$/, "");
+  };
 
   return (
     <>
@@ -161,7 +174,9 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
                           />
                         </TableCell>
                         <TableCell>{donation.title}</TableCell>
-                        <TableCell>₹{donation.amount} </TableCell>
+                        <TableCell>
+                          {formatAmountInINR(donation.amount)}
+                        </TableCell>
                       </TableRow>
                     ))}
                   </React.Fragment>
@@ -169,19 +184,23 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
               </tbody>
             </Table>
             <LabelWrapper1>
-              <Labelstyle1>Total Amount:- ₹{totalDonationAmount}</Labelstyle1>
+              <Labelstyle>
+                Total Amount:- {formatAmountInINR(totalDonationAmount)}
+              </Labelstyle>
 
-              {/* <DonateButton onClick={showRazorpay}>Donate</DonateButton> */}
+              {/* <DonateButton>  Doante  </DonateButton> */}
+
               <a
                 className="App-link"
                 onClick={showRazorpay}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Pay now
+                Donate
               </a>
             </LabelWrapper1>
-            <Labelstyle>Or, Donation of your choice:-</Labelstyle>
+            <br />
+            <Span2>Or, Donation of your choice:-</Span2>
             <LabelWrapper>
               <Input1 type="number" placeholder="Enter amount" />
               <DonateButton1>Donate</DonateButton1>

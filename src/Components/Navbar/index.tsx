@@ -13,7 +13,7 @@ import {
   socialMediaIcon,
 } from "../Navbar/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
-import logoUrl from "../../assets/images/iskcon-logo.png";
+import logoUrl from "../../assets/images/isckon-logo.png";
 import { routes } from "../../routes";
 
 export const NavigationBar = () => {

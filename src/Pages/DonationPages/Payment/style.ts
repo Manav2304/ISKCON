@@ -360,54 +360,6 @@ export const TableFoot = styled.tfoot`
 `;
 
 export const Labelstyle = styled.label`
-  width: 100%;
-  margin-top: 50px;
-  margin-left: 20px;
-  border-radius: 20px;
-  color: #ad0d0d;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-
-  @media (${devices.mobileES}) {
-    font-size: 0.8rem;
-    margin-left: -18px;
-  }
-
-  @media (${devices.mobileS}) {
-    font-size: 0.8rem;
-  }
-
-  @media (${devices.mobileM}) {
-    font-size: 1.2rem;
-  }
-
-  @media (${devices.mobileL}) {
-    font-size: 1.3rem;
-  }
-
-  @media (${devices.tablet}) {
-    font-size: 1.1rem;
-    width: 100%;
-    margin-left: 5px;
-  }
-
-  @media (${devices.laptop}) {
-    font-size: 1.1rem;
-    margin-left: -100px;
-  }
-
-  @media (${devices.laptopL}) {
-    font-size: 1.1rem;
-    margin-left: -185px;
-  }
-
-  @media (${devices.desktop}) {
-    font-size: 1.5rem;
-    margin-left: -743px;
-  }
-`;
-
-export const Labelstyle1 = styled.label`
   margin-left: 20px;
   margin-right: 10px;
   font-weight: bold;
@@ -1090,28 +1042,72 @@ export const Span1 = styled.span`
   }
 
   @media (${devices.mobileM}) {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
 
   @media (${devices.mobileL}) {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
   }
 
   @media (${devices.tablet}) {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     margin-left: 30px;
   }
 
   @media (${devices.laptop}) {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   @media (${devices.laptopL}) {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin-left: 156px;
   }
 
   @media (${devices.desktop}) {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+`;
+
+export const Span2 = styled.span`
+  color: #ad0d0d;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+  @media (${devices.mobileES}) {
+    font-size: 0.8rem;
+    margin-left: -19px;
+  }
+
+  @media (${devices.mobileS}) {
+    font-size: 0.8rem;
+  }
+
+  @media (${devices.mobileM}) {
+    font-size: 1.2rem;
+  }
+
+  @media (${devices.mobileL}) {
+    font-size: 1.3rem;
+  }
+
+  @media (${devices.tablet}) {
+    font-size: 1.8rem;
+    margin-left: 8px;
+  }
+
+  @media (${devices.laptop}) {
+    font-size: 1.5rem;
+    margin-left: -97px;
+  }
+
+  @media (${devices.laptopL}) {
+    font-size: 1.8rem;
+    margin-left: -189px;
+  }
+
+  @media (${devices.desktop}) {
+    font-size: 3rem;
+    margin-left: -736px;
   }
 `;
