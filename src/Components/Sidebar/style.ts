@@ -189,6 +189,7 @@ export const AccordionItemButton = styled(AccordionButton)`
   font-weight: bold;
   text-align: left;
   padding: 2px 16px;
+  box-shadow: none;
 
   &:hover {
     background-color: transparent;

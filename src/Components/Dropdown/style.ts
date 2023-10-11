@@ -23,6 +23,12 @@ export const TransparentDropdown = styled.div`
     padding: 0.25rem 1.5rem;
     font-size: 1.2rem;
   }
+
+  .dropdown .dropdown-toggle:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: initial;
+  }
 `;
 
 export const DropdownToggleWrapper = styled.div`
