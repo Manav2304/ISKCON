@@ -57,4 +57,4 @@ export const contactDetails = [
   },
 ];
 
-export const emailDetails = ["abhishekmishra2@gmail.com"];
+export const emailDetails = ["adigurudasa.lok@gmail.com"];
