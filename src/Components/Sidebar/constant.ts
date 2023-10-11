@@ -1,7 +1,7 @@
 import { routes } from "../../routes";
 
 export const dropdownServicesInfo = [
-  { name: "Life Time Membership", url: routes.lifeTimeMembership },
+  { name: "Life Membership", url: routes.lifeTimeMembership },
   { name: "Kirtan At Iskcon", url: routes.kirtanAtIskcon },
   { name: "Iskcon Youth Forum", url: routes.iskconYouthForum },
   { name: "Guest House", url: routes.guestHouse },
