@@ -45,7 +45,7 @@ export const dropdownServicesInfo = [
 
 export const dropdownDonationPagesInfo = [
   { title: "Annna Daan", path: routes.annaDaan },
-  { title: "E-Hindu", path: routes.ehindu },
+  { title: "E-Hundi", path: routes.ehindu },
   { title: "General-Donation", path: routes.generaldonation },
   { title: "Gau Seva", path: routes.gauSeva },
   { title: "Monthly Radharani's Kitchen Seva", path: routes.monthlySeva },

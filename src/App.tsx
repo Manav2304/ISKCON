@@ -34,7 +34,7 @@ import { SadhuBhojan } from "./Pages/DonationPages/SadhuBhojan";
 import { RecurriumDonation } from "./Pages/DonationPages/RecurriumDonation";
 import { GiveShrimadBhagavatam } from "./Pages/DonationPages/GiveSrimadBhagavatam";
 import { VidyaDaan } from "./Pages/DonationPages/VidyaDaan";
-import { EHindu } from "./Pages/DonationPages/E-hindu";
+import { EHindu } from "./Pages/DonationPages/E-hundi";
 import { GeneralDonation } from "./Pages/DonationPages/GenralDonation";
 import { MonthlySeva } from "./Pages/DonationPages/MonthlyRadharaniKithcenSeva";
 import { GitaDaan } from "./Pages/DonationPages/GitaDaan";

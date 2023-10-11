@@ -9,7 +9,7 @@ import {
 export const IskconYouthForum: React.FC = () => {
   return (
     <ServiceDescription
-      title="Iskon Youth Forum"
+      title="ISKCON Youth Forum"
       content={iskconYouthForum}
       imageUrl={iskconYouthForumImages}
       contactNumber={contactDetails}

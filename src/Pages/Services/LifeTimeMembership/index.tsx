@@ -8,9 +8,10 @@ import {
 export const LifeTimeMembership: React.FC = () => {
   return (
     <ServiceDescription
-      title="Life Time Membership"
+      title="Life Membership"
       content={lifeTimeMembership}
       imageUrl={lifeTimeMembershipImages}
-      contactNumber={contactDetails}    />
+      contactNumber={contactDetails}
+    />
   );
 };
