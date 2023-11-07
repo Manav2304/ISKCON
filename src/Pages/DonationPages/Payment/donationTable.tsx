@@ -15,7 +15,6 @@ import {
   TableWrapper,
   TypoGraphy,
   BarcodeImgStyle,
-  // DonateButton,
   DonateButton1,
   LabelWrapper,
   Input1,
@@ -36,6 +35,7 @@ import {
 } from "./constant";
 import BarCode from "../../../assets/images/barcode.png";
 import { BankInfo } from "./CopiedTableRow";
+import { DonationForm } from "./DonationForm";
 
 type Donation = {
   id: number;
@@ -43,25 +43,21 @@ type Donation = {
   amount: number;
 };
 
-// function loadScript(src: string): Promise<boolean> {
-//   return new Promise<boolean>((resolve) => {
-//     const script = document.createElement("script");
-//     script.src = src;
-//     script.onload = () => {
-//       resolve(true);
-//     };
-//     script.onerror = () => {
-//       resolve(false);
-//     };
-//     document.body.appendChild(script);
-//   });
-// }
-
 export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
   donationCategories,
 }) => {
   const [selectedDonations, setSelectedDonations] = useState<Donation[]>([]);
   const [customAmount] = useState<number | string>(0);
+  const [isDonationFormOpen, setDonationFormOpen] = useState(false);
+
+  const openDonationForm = () => {
+    setDonationFormOpen(true);
+  };
+
+  const handleDonationSubmit = (formData: any) => {
+    // Handle the form submission here, e.g., send the data to the backend
+    console.log(formData);
+  };
 
   const handleDonationSelect = (donation: Donation) => {
     if (selectedDonations.find((d) => d.id === donation.id)) {
@@ -77,56 +73,6 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
     (acc, curr) => acc + curr.amount,
     Number(customAmount),
   );
-
-  // async function showRazorpay(): Promise<void> {
-  //   const res = await loadScript(
-  //     "https://checkout.razorpay.com/v1/checkout.js",
-  //   );
-
-  //   if (!res) {
-  //     alert("Razorpay SDK failed to load. Are you online?");
-  //     return;
-  //   }
-
-  //   const totalAmount = totalDonationAmount;
-
-  //   try {
-  //     const response = await axios.post("http://localhost:1337/razorpay", {
-  //       amount: totalAmount,
-  //     });
-
-  //     const data = response.data;
-
-  //     console.log(data);
-
-  //     const options = {
-  //       key: "rzp_test_4twsScIlfpBGfM",
-  //       currency: data.currency,
-  //       amount: data.amount.toString(),
-  //       order_id: data.id,
-  //       name: "Donation",
-  //       description: "Thank you for nothing. Please give us some money",
-  //       image: Logo,
-  //       handler: function (response: any) {
-  //         // alert(response.razorpay_payment_id);
-  //         // alert(response.razorpay_order_id);
-  //         // alert(response.razorpay_signature);
-
-  //         alert("Transaction successful");
-  //       },
-  //       prefill: {
-  //         name: "",
-  //         email: "",
-  //         phone_number: "",
-  //       },
-  //     };
-  //     const paymentObject: any = new window.Razorpay(options);
-  //     paymentObject.open();
-  //   } catch (error) {
-  //     console.error("Error while fetching data from the server:", error);
-  //     alert("An error occurred while processing your request.");
-  //   }
-  // }
 
   const formatAmountInINR = (amount: number | bigint) => {
     const formattedAmount = new Intl.NumberFormat("en-IN", {
@@ -185,18 +131,14 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
               <Labelstyle>
                 Total Amount:- {formatAmountInINR(totalDonationAmount)}
               </Labelstyle>
-
-              <DonateButton> Doante </DonateButton>
-
-              {/* <a
-                className="App-link"
-                onClick={showRazorpay}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Donate
-              </a> */}
+              <DonateButton onClick={openDonationForm}>Donate</DonateButton>
             </LabelWrapper1>
+
+            {/* Render the DonationForm component only if the form is open */}
+            {isDonationFormOpen && (
+              <DonationForm onClose={() => setDonationFormOpen(false)} onSubmit={handleDonationSubmit} />
+            )}
+
             <br />
             <Span2>Or, Donation of your choice:-</Span2>
             <LabelWrapper>
