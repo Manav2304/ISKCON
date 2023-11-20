@@ -48,16 +48,8 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
 }) => {
   const [selectedDonations, setSelectedDonations] = useState<Donation[]>([]);
   const [customAmount] = useState<number | string>(0);
-  const [isDonationFormOpen, setDonationFormOpen] = useState(false);
 
-  const openDonationForm = () => {
-    setDonationFormOpen(true);
-  };
-
-  const handleDonationSubmit = (formData: any) => {
-    // Handle the form submission here, e.g., send the data to the backend
-    console.log(formData);
-  };
+  const [isDonationFormVisible, setIsDonationFormVisible] = useState(false);
 
   const handleDonationSelect = (donation: Donation) => {
     if (selectedDonations.find((d) => d.id === donation.id)) {
@@ -74,6 +66,17 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
     Number(customAmount),
   );
 
+  // Event handler to close the form
+  const handleCloseForm = () => {
+    setIsDonationFormVisible(false);
+  };
+
+  // Event handler to submit the form data and show Razorpay
+  const handleSubmitDonationForm = (formData: any) => {
+    // Handle form data, e.g., display a thank you message
+    console.log("Form Data:", formData);
+  };
+
   const formatAmountInINR = (amount: number | bigint) => {
     const formattedAmount = new Intl.NumberFormat("en-IN", {
       style: "currency",
@@ -81,6 +84,10 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
     }).format(amount);
 
     return formattedAmount.replace(/\.00$/, "");
+  };
+
+  const handleDonateButtonClick = () => {
+    setIsDonationFormVisible(true);
   };
 
   return (
@@ -131,14 +138,15 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
               <Labelstyle>
                 Total Amount:- {formatAmountInINR(totalDonationAmount)}
               </Labelstyle>
-              <DonateButton onClick={openDonationForm}>Donate</DonateButton>
+
+              <DonateButton
+                className="App-button" // Add a class for styling if needed
+                onClick={handleDonateButtonClick}
+                type="button" // Add this attribute to prevent form submission
+              >
+                Donate
+              </DonateButton>
             </LabelWrapper1>
-
-            {/* Render the DonationForm component only if the form is open */}
-            {isDonationFormOpen && (
-              <DonationForm onClose={() => setDonationFormOpen(false)} onSubmit={handleDonationSubmit} />
-            )}
-
             <br />
             <Span2>Or, Donation of your choice:-</Span2>
             <LabelWrapper>
@@ -148,6 +156,16 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
           </form>
         </Container>
       </Wrapper>
+
+      {/* Conditionally render the DonationForm */}
+      {isDonationFormVisible && (
+        <DonationForm
+          onClose={handleCloseForm}
+          onSubmit={handleSubmitDonationForm}
+          totalDonationAmount={totalDonationAmount}
+          // displayRazorpay={showRazorpay}
+        />
+      )}
       <br />
       <Span>Donate via NEFT/RTGS/UPI</Span>
       <br />

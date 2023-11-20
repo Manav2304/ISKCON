@@ -1,109 +1,187 @@
-import React, { useState } from "react";
+import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
+import axios from "axios";
+import { CloseButton, FormLabel } from "react-bootstrap";
 import {
-  CloseButton,
-  FormButton,
+  Popup,
+  PopupContent,
   FormInput,
-  FormLabel,
-  FormTextArea,
-  ModalContent,
-  ModalWrapper,
+  SubmitButton,
 } from "./DonationFormStyle";
 
-export const DonationForm: React.FC<{
+type DonationFormProps = {
   onClose: () => void;
-  onSubmit: (formData: any) => void;
-}> = ({ onClose, onSubmit }) => {
-  const [formData, setFormData] = useState({
-    name: "",
-    mobile: "",
-    email: "",
-    address: "",
+  onSubmit: (formData: any, title: string) => void;
+};
+
+function loadScript(src: string): Promise<boolean> {
+  return new Promise<boolean>((resolve) => {
+    const script = document.createElement("script");
+    script.src = src;
+    script.onload = () => {
+      resolve(true);
+    };
+    script.onerror = () => {
+      resolve(false);
+    };
+    document.body.appendChild(script);
   });
+}
 
-  const [isFormOpen, setIsFormOpen] = useState(true); // Manage the form open state
+export const DonationForm: React.FC<
+  DonationFormProps & { totalDonationAmount: number }
+> = ({ onClose, onSubmit, totalDonationAmount }) => {
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [contactNumber, setContactNumber] = useState<string>("");
+  const [submitted, setSubmitted] = useState<boolean>(false);
 
-  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = event.target;
-    setFormData({ ...formData, [name]: value });
-  };
+  useEffect(() => {
+    // Load Razorpay script when the component mounts
+    loadRazorpayScript();
+  }, []);
 
-  const handleTextareaChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-    const { name, value } = event.target;
-    setFormData({ ...formData, [name]: value });
-  };
+  const loadRazorpayScript = async () => {
+    const existingScript = document.getElementById("razorpay-script");
 
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
+    if (!existingScript) {
+      const res = await loadScript(
+        "https://checkout.razorpay.com/v1/checkout.js",
+      );
 
-    if (formData.name && formData.mobile && formData.email && formData.address) {
-      onSubmit(formData);
-      setFormData({
-        name: "",
-        mobile: "",
-        email: "",
-        address: "",
-      });
-      setIsFormOpen(false); // Close the form after submitting
+      if (!res) {
+        alert("Razorpay SDK failed to load. Are you online?");
+      }
     }
   };
 
-  const closeForm = () => {
-    setIsFormOpen(false);
-    onClose();
+  const handleNameChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setName(event.target.value);
+  };
+
+  const handleEmailChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
+
+  const handleContactNumberChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setContactNumber(event.target.value);
+  };
+
+  const handleRazorpayAndSubmit = async () => {
+    try {
+      // Fetch the order details from the backend
+      const responseRazorpay = await axios.post(
+        "http://localhost:1337/orders",
+        {
+          amount: totalDonationAmount,
+        },
+      );
+
+      const dataRazorpay = responseRazorpay.data;
+
+      console.log("Razorpay response data:", dataRazorpay);
+
+      const options = {
+        key: "rzp_test_4twsScIlfpBGfM",
+        currency: dataRazorpay.currency,
+        amount: dataRazorpay.amount.toString(),
+        order_id: dataRazorpay.order_id,
+        name: "Donation",
+        description: "Thank you for nothing. Please give us some money",
+        image: "Logo",
+        handler: async () => {
+          // Handle Razorpay success
+          alert("Transaction successful");
+
+          const formData = {
+            name,
+            email,
+            contactNumber,
+            title: "Your Title Here",
+            amount: totalDonationAmount,
+            razorpayData: {
+              // Add Razorpay data here if needed
+            },
+          };
+
+          try {
+            const responseSave = await axios.post(
+              "http://localhost:1337/donate",
+              formData,
+              {
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              },
+            );
+
+            if (responseSave.status === 200) {
+              console.log("Data saved successfully");
+
+              // Log the Razorpay Order ID from the backend response
+              console.log(
+                "Backend Razorpay Order ID:",
+                responseSave.data.orderId,
+              );
+
+              setSubmitted(true);
+              window.location.href = "/";
+            } else {
+              console.error("Data could not be saved");
+            }
+          } catch (errorSave) {
+            console.error("Error while saving data:", errorSave);
+          } finally {
+            onClose();
+          }
+        },
+        prefill: {
+          name,
+          email,
+          phone_number: contactNumber,
+        },
+      };
+
+      // Create Razorpay payment object and open it
+      const paymentObject: any = new window.Razorpay(options);
+      paymentObject.open();
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    if (submitted) {
+      // If already submitted, return to avoid duplicate submissions
+      return;
+    }
+
+    handleRazorpayAndSubmit();
   };
 
   return (
-    <ModalWrapper isOpen={isFormOpen}>
-      <ModalContent>
-        <CloseButton onClick={closeForm}>&times;</CloseButton>
+    <Popup>
+      <PopupContent>
+        <CloseButton onClick={onClose}></CloseButton>
         <h2>Donation Information</h2>
         <form onSubmit={handleSubmit}>
-          <div>
-            <FormLabel htmlFor="name">Name:</FormLabel>
-            <FormInput
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleInputChange}
-              required
-            />
-          </div>
-          <div>
-            <FormLabel htmlFor="mobile">Mobile Number:</FormLabel>
-            <FormInput
-              type="text"
-              id="mobile"
-              name="mobile"
-              value={formData.mobile}
-              onChange={handleInputChange}
-              required
-            />
-          </div>
-          <div>
-            <FormLabel htmlFor="email">Email:</FormLabel>
-            <FormInput
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleInputChange}
-              required
-            />
-          </div>
-          <div>
-            <FormLabel htmlFor="address">Address:</FormLabel>
-            <FormTextArea
-              id="address"
-              name="address"
-              value={formData.address}
-              onChange={handleTextareaChange}
-              required
-            />
-          </div>
-          <FormButton type="submit">Submit</FormButton>
+          <FormLabel>Name:</FormLabel>
+          <FormInput type="text" value={name} onChange={handleNameChange} />
+
+          <FormLabel>Email:</FormLabel>
+          <FormInput type="email" value={email} onChange={handleEmailChange} />
+
+          <FormLabel>Contact Number:</FormLabel>
+          <FormInput
+            type="tel"
+            value={contactNumber}
+            onChange={handleContactNumberChange}
+          />
+
+          <SubmitButton type="submit">Submit</SubmitButton>
         </form>
-      </ModalContent>
-    </ModalWrapper>
+      </PopupContent>
+    </Popup>
   );
 };

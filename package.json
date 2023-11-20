@@ -1,5 +1,6 @@
 {
   "name": "iskcontmp",
+  "homepage": "http://iskconvvnagar.com/",
   "version": "0.1.0",
   "private": true,
   "husky": {
@@ -35,7 +36,7 @@
     "@types/react-currency-format": "^1.0.1",
     "@types/react-dom": "^18.0.11",
     "assert": "^2.1.0",
-    "axios": "^1.5.1",
+    "axios": "^1.6.1",
     "bootstrap": "^5.2.3",
     "card": "^2.5.4",
     "cors": "^2.8.5",
@@ -49,7 +50,7 @@
     "razorpay": "^2.9.2",
     "react": "^18.2.0",
     "react-accessible-accordion": "^5.0.0",
-    "react-bootstrap": "^2.7.2",
+    "react-bootstrap": "^2.9.1",
     "react-div-100vh": "^0.7.0",
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.6.0",

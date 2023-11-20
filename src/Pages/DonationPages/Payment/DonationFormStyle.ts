@@ -1,66 +1,56 @@
 import styled from "styled-components";
 
-export const ModalWrapper = styled.div<{ isOpen: boolean }>`
-  display: ${(props) => (props.isOpen ? "block" : "none")};
+export const Popup = styled.div`
+  display: block;
   position: fixed;
-  top: 0;
+  z-index: 1;
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  background-color: rgb(0 0 0 / 70%);
 `;
 
-export const ModalContent = styled.div`
+export const PopupContent = styled.div`
+  background-color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
   padding: 20px;
-  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 20%);
+  width: 400px;
 `;
 
-export const CloseButton = styled.button`
+export const CloseButton = styled.span`
   position: absolute;
   top: 10px;
   right: 10px;
-  background: none;
-  border: none;
-  font-size: 24px;
   cursor: pointer;
+  font-size: 20px;
 `;
 
 export const FormLabel = styled.label`
+  display: block;
+  margin-bottom: 10px;
   font-weight: bold;
 `;
 
 export const FormInput = styled.input`
   width: 100%;
   padding: 10px;
-  margin: 5px 0;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 `;
 
-export const FormTextArea = styled.textarea`
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-`;
-
-export const FormButton = styled.button`
+export const SubmitButton = styled.button`
   background-color: #007bff;
-  color: white;
-  border: none;
+  color: #fff;
   padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-`;
-
-export const FormError = styled.div`
-  color: red;
-  margin-top: 5px;
-`;
-
-export const FormSuccess = styled.div`
-  color: green;
-  margin-top: 5px;
+  margin-top: 10px;
 `;

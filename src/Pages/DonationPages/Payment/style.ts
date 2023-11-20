@@ -715,38 +715,44 @@ export const CopyImg = styled.img`
   }
 
   @media (min-width: 1105px) {
-    margin-top: -742px;
-    margin-left: 235px;
-    height: 20px;
-  }
-
-  @media (min-width: 1108px) {
-    margin-top: -697px;
-    margin-left: 246px;
-    height: 20px;
-  }
-
-  @media (min-width: 1172px) {
-    margin-top: -646px;
+    margin-top: -561px;
     margin-left: 263px;
     height: 20px;
   }
 
+  @media (min-width: 1108px) {
+    margin-top: -561px;
+    margin-left: 263px;
+    height: 20px;
+  }
+
+  @media (min-width: 1172px) {
+    margin-top: -520px;
+    margin-left: 285px;
+    height: 20px;
+  }
+
+  @media (min-width: 1258px) {
+    margin-top: -480px;
+    margin-left: 305px;
+    height: 20px;
+  }
+
   @media (min-width: 1274px) {
-    margin-top: -600px;
-    margin-left: 275px;
+    margin-top: -480px;
+    margin-left: 305px;
     height: 20px;
   }
 
   @media (min-width: 1337px) {
-    margin-top: -551px;
-    margin-left: 308px;
+    margin-top: -480px;
+    margin-left: 341px;
     height: 20px;
   }
 
   @media (${devices.laptopM}) {
-    margin-top: -600px;
-    margin-left: 300px;
+    margin-top: -480px;
+    margin-left: 332px;
     height: 20px;
   }
 
@@ -758,7 +764,7 @@ export const CopyImg = styled.img`
 
   @media (min-width: 1500px) {
     margin-top: -489px;
-    margin-left: 276px;
+    margin-left: 300px;
     height: 20px;
   }
 
@@ -775,8 +781,8 @@ export const CopyImg = styled.img`
   }
 
   @media (min-width: 2000px) {
-    margin-top: -500px;
-    margin-left: 375px;
+    margin-top: -485px;
+    margin-left: 444px;
     height: 20px;
   }
 
@@ -787,8 +793,8 @@ export const CopyImg = styled.img`
   }
 
   @media (${devices.desktop}) {
-    margin-top: -450px;
-    margin-left: 650px;
+    margin-top: -443px;
+    margin-left: 627px;
     height: 20px;
   }
 `;

@@ -49,7 +49,7 @@ export const NavigationBar = () => {
           {/* </StyledLink> */}
           <StyledLink to={routes.festival}>Festival</StyledLink>
           <StyledLink to={routes.contact}>Contact</StyledLink>
-          <StyledLink to={routes.contact}>Blogs</StyledLink>
+          <StyledLink to={routes.home}>Blogs</StyledLink>
         </div>
       </NavStyle>
     </>
