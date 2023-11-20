@@ -7,6 +7,8 @@ import {
   FormInput,
   SubmitButton,
 } from "./DonationFormStyle";
+import { Donation } from "./constant";
+import Logo from "../../../assets/images/iskcon-logo.png";
 
 type DonationFormProps = {
   onClose: () => void;
@@ -28,8 +30,11 @@ function loadScript(src: string): Promise<boolean> {
 }
 
 export const DonationForm: React.FC<
-  DonationFormProps & { totalDonationAmount: number }
-> = ({ onClose, onSubmit, totalDonationAmount }) => {
+  DonationFormProps & {
+    totalDonationAmount: number;
+    selectedDonations: Donation[];
+  }
+> = ({ onClose, onSubmit, totalDonationAmount, selectedDonations }) => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [contactNumber, setContactNumber] = useState<string>("");
@@ -87,23 +92,46 @@ export const DonationForm: React.FC<
         order_id: dataRazorpay.order_id,
         name: "Donation",
         description: "Thank you for nothing. Please give us some money",
-        image: "Logo",
-        handler: async () => {
+        image: Logo,
+        handler: async (response: any) => {
           // Handle Razorpay success
           alert("Transaction successful");
 
-          const formData = {
+          const { razorpay_payment_id, razorpay_order_id, razorpay_signature } =
+            response;
+
+          const formData: {
+            name: string;
+            email: string;
+            contactNumber: string;
+            title: string;
+            amount: number;
+            selectedDonations: Donation[];
+            razorpayData: {
+              order_id: any;
+              payment_id: any;
+              status: string;
+            };
+            order_id: any; // Add this line to explicitly define order_id
+          } = {
             name,
             email,
             contactNumber,
             title: "Your Title Here",
             amount: totalDonationAmount,
+            selectedDonations,
             razorpayData: {
-              // Add Razorpay data here if needed
+              order_id: razorpay_order_id,
+              payment_id: razorpay_payment_id,
+              status: "success", // Assuming it's successful, adjust as needed
+              // Add other Razorpay data here if needed
             },
+            order_id: razorpay_order_id, // Add this line to assign the order_id
           };
 
           try {
+            formData.order_id = razorpay_order_id;
+
             const responseSave = await axios.post(
               "http://localhost:1337/donate",
               formData,
@@ -117,10 +145,14 @@ export const DonationForm: React.FC<
             if (responseSave.status === 200) {
               console.log("Data saved successfully");
 
-              // Log the Razorpay Order ID from the backend response
+              // Log the Razorpay Order ID and Payment ID from the backend response
               console.log(
                 "Backend Razorpay Order ID:",
                 responseSave.data.orderId,
+              );
+              console.log(
+                "Backend Razorpay Payment ID:",
+                responseSave.data.paymentId,
               );
 
               setSubmitted(true);
@@ -138,6 +170,9 @@ export const DonationForm: React.FC<
           name,
           email,
           phone_number: contactNumber,
+        },
+        theme: {
+          color: "#ad0d0d",
         },
       };
 

@@ -46,13 +46,19 @@ type Donation = {
 export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
   donationCategories,
 }) => {
-  const [selectedDonations, setSelectedDonations] = useState<Donation[]>([]);
+  const [selectedDonations, setSelectedDonations] = useState<
+    { id: number; title: string; amount: number }[]
+  >([]);
   const [customAmount] = useState<number | string>(0);
 
   const [isDonationFormVisible, setIsDonationFormVisible] = useState(false);
 
   const handleDonationSelect = (donation: Donation) => {
-    if (selectedDonations.find((d) => d.id === donation.id)) {
+    const existingDonation = selectedDonations.find(
+      (d) => d.id === donation.id,
+    );
+
+    if (existingDonation) {
       setSelectedDonations((prevState) =>
         prevState.filter((d) => d.id !== donation.id),
       );
@@ -89,6 +95,12 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
   const handleDonateButtonClick = () => {
     setIsDonationFormVisible(true);
   };
+  React.useEffect(() => {
+    console.log(
+      "Selected Donations:",
+      selectedDonations.map((donation) => donation.title),
+    );
+  }, [selectedDonations]);
 
   return (
     <>
@@ -164,6 +176,7 @@ export const Payment: React.FC<{ donationCategories: DonationCategory[] }> = ({
           onSubmit={handleSubmitDonationForm}
           totalDonationAmount={totalDonationAmount}
           // displayRazorpay={showRazorpay}
+          selectedDonations={selectedDonations}
         />
       )}
       <br />
