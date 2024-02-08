@@ -22,6 +22,7 @@ import { HeadingStyle, ImageTitle, TitleWrapper } from "../TitleBase/style";
 export const Media: React.FC = () => {
   return (
     <>
+      {/* rushi rajpara */}
       <ServiceWrapper>
         <TitleWrapper>
           <HeadingStyle>
