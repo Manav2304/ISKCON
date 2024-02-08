@@ -5,6 +5,7 @@ export const routes = {
   donation: "/donation",
   visitUs: "/visit-us",
   media: "/media",
+  DailyDarshan: "/media/daily-darshan",
   bookDistribution: "/services/book-distribtion",
   deityWorship: "/services/deity-worship",
   devoteeKitchen: "/services/devotee-kitchen",

@@ -1,6 +1,5 @@
 import React from "react";
 import { Footer } from "./Components/Footer";
-import { Media } from "./Pages/Media";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { NavigationBar } from "./Components/Navbar";
 import { HomePage } from "./Pages/Home";
@@ -26,6 +25,7 @@ import "@fortawesome/fontawesome-free/css/brands.css";
 import ScrollToTop from "./Components/ScrollToTop";
 import { Sidebar } from "./Components/Sidebar";
 import { VisitUs } from "./Pages/VisitUs";
+import { DailyDarshan } from "./Pages/Media/DaliyDarshan";
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -42,7 +42,11 @@ export const App: React.FunctionComponent = () => {
             path={routes.festival}
             element={<FestivalPage />}
           />
-          <Route caseSensitive path={routes.media} element={<Media />} />
+          <Route
+            caseSensitive
+            path={routes.DailyDarshan}
+            element={<DailyDarshan />}
+          />
           <Route caseSensitive path={routes.contact} element={<Contact />} />
           <Route
             caseSensitive

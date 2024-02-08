@@ -7,7 +7,7 @@ import {
   SocialMediaIconWrapper,
 } from "./style";
 import { PageDropdown } from "../Dropdown";
-import { dropdownServicesInfo, socialMediaIcon } from "../Navbar/constant";
+import { dropdownServices, dropdownServicesInfo, socialMediaIcon } from "../Navbar/constant";
 import { MDBIcon } from "mdb-react-ui-kit";
 import logoUrl from "../../assets/images/isckon-logo.png";
 import { routes } from "../../routes";
@@ -33,7 +33,8 @@ export const NavigationBar = () => {
           <StyledLink to={routes.home}>Iskcon</StyledLink>
           <PageDropdown items={dropdownServicesInfo} toggleTitle="Services" />
           <StyledLink to={routes.visitUs}>Visit Us</StyledLink>
-          <StyledLink to={routes.media}>Media</StyledLink>
+          <PageDropdown items={dropdownServices} toggleTitle="Media" />
+          {/* <StyledLink to={routes.media}>Media</StyledLink> */}
           <StyledLink to={routes.home}>
             <ImgStyle src={logoUrl} alt="Logo" />
           </StyledLink>
