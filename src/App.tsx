@@ -45,7 +45,7 @@ export const App: React.FunctionComponent = () => {
           <Route
             caseSensitive
             path={routes.DailyDarshan}
-            element={<DailyDarshan />}
+            element={<DailyDarshan photos={[]} title={""} />}
           />
           <Route caseSensitive path={routes.contact} element={<Contact />} />
           <Route
