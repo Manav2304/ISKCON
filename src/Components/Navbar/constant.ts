@@ -41,3 +41,9 @@ export const dropdownServicesInfo = [
   { title: "Book Distribution", path: routes.bookDistribution },
   { title: "Govinda's Food", path: routes.govindaFood },
 ];
+
+export const dropdownServices = [
+  { title: "Live Darshan", path: routes.lifeTimeMembership },
+  { title: "Daily Darshan Gallery", path: routes.DailyDarshan },
+  { title: "Kirtan & Lectures", path: routes.iskconYouthForum },
+];
