@@ -56,7 +56,7 @@ export const bookDistribution = [
 export const contactDetails = [
   {
     id: 1,
-    number: "Adi Guru Das: +91 99987 14977",
+    number: "Adi Guru Das: +91 74051 60363",
   },
   {
     id: 2,

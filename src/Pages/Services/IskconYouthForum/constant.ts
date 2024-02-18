@@ -48,10 +48,6 @@ export const iskconYouthForum = [
 
 export const contactDetails = [
   {
-    id: 1,
-    number: "+91 99987 14977",
-  },
-  {
     id: 2,
     number: "+91 74051 60363",
   },
