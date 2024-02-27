@@ -86,7 +86,7 @@ export const DonationForm: React.FC<
       console.log("Razorpay response data:", dataRazorpay);
 
       const options = {
-        key: "rzp_test_4twsScIlfpBGfM",
+        key: "rzp_test_IUgMwcFACVruoS",
         currency: dataRazorpay.currency,
         amount: dataRazorpay.amount.toString(),
         order_id: dataRazorpay.order_id,
@@ -97,8 +97,7 @@ export const DonationForm: React.FC<
           // Handle Razorpay success
           alert("Transaction successful");
 
-          const { razorpay_payment_id, razorpay_order_id, razorpay_signature } =
-            response;
+          const { razorpay_payment_id, razorpay_order_id } = response;
 
           const formData: {
             name: string;
